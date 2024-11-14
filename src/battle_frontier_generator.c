@@ -2363,7 +2363,7 @@ bool32 GenerateTrainerPokemonHandleForme(struct Pokemon * mon, u16 speciesId, st
                         speciesId = RANDOM_RANGE(SPECIES_PIKACHU_COSPLAY, SPECIES_PICHU_SPIKY_EARED);
 
                     // Hat Pikachu-Exclusive Z-Move
-                    if (((properties->fixedIV) >= BFG_ITEM_IV_ALLOW_ZMOVE) && ((properties->allowZMove) == TRUE) && IN_INCLUSIVE_RANGE(SPECIES_PIKACHU_ORIGINAL_CAP,SPECIES_PIKACHU_WORLD_CAP,speciesId) && RANDOM_CHANCE(BFG_ZMOVE_CHANCE_PIKASHUNIUM_Z)) 
+                    if (((properties->fixedIV) >= BFG_ITEM_IV_ALLOW_ZMOVE) && ((properties->allowZMove) == TRUE) && IN_INCLUSIVE_RANGE(SPECIES_PIKACHU_ORIGINAL,SPECIES_PIKACHU_WORLD,speciesId) && RANDOM_CHANCE(BFG_ZMOVE_CHANCE_PIKASHUNIUM_Z)) 
                     {
                         properties->allowZMove = FALSE;
                         

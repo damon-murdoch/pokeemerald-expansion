@@ -33,10 +33,6 @@ def get_species_constant(species_name):
     # Update characers / constants
     constant = (
         constant.replace("É", "E")
-        .replace("_ALOLA", "_ALOLAN")
-        .replace("_GALAR", "_GALARIAN")
-        .replace("_HISUI", "_HISUIAN")
-        .replace("_PALDEA", "_PALDEAN")
     )
 
     return f"SPECIES_{constant}"

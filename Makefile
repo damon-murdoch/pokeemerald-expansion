@@ -428,7 +428,6 @@ $(OBJ_DIR)/sym_ewram.ld: sym_ewram.txt
 $(DATA_SRC_SUBDIR)/pokemon/teachable_learnsets.h: $(DATA_ASM_BUILDDIR)/event_scripts.o
 	python3 $(TOOLS_DIR)/learnset_helpers/teachable.py
 
-
 BFG_TOOLS = ./tools/bfg_helpers
 BFG_DATA_FILES = $(wildcard $(BFG_TOOLS)/data/*.json) $(wildcard $(BFG_TOOLS)/custom/*.json)
 

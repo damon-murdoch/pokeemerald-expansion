@@ -14,7 +14,7 @@ OUTPUT_FILENAME = "battle_frontier_generator_trainer_class_mons.h"
 IGNORE_SPECIAL = True
 
 # Ignored species
-ignore_species = ["terapagos", "pecharunt", "cosmog", "cosmoem", "meltan"]
+ignore_species = ["cosmog", "cosmoem", "meltan"]
 
 # Seperate tables for restricted mons
 # e.g. Mythicals, Box Legends, etc.
