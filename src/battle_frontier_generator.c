@@ -2380,7 +2380,7 @@ bool32 GenerateTrainerPokemonHandleForme(struct Pokemon * mon, u16 speciesId, st
             }; break;
             case SPECIES_TAUROS: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_TAUROS_PALDEA))
-                    speciesId = RANDOM_RANGE(SPECIES_TAUROS_PALDEAN_COMBAT_BREED,SPECIES_WOOPER_PALDEAN);
+                    speciesId = RANDOM_RANGE(SPECIES_TAUROS_PALDEA_COMBAT,SPECIES_WOOPER_PALDEA);
             }; break;
             case SPECIES_UNOWN: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_UNOWN))
@@ -2392,23 +2392,23 @@ bool32 GenerateTrainerPokemonHandleForme(struct Pokemon * mon, u16 speciesId, st
             }; break;
             case SPECIES_DEOXYS: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_DEOXYS))
-                    speciesId = RANDOM_RANGE(SPECIES_DEOXYS_ATTACK, SPECIES_BURMY_SANDY_CLOAK);
+                    speciesId = RANDOM_RANGE(SPECIES_DEOXYS_ATTACK, SPECIES_BURMY_SANDY);
             }; break;
             case SPECIES_BURMY: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_BURMY_WORMADAM))
-                    speciesId = RANDOM_RANGE(SPECIES_BURMY_SANDY_CLOAK, SPECIES_WORMADAM_SANDY_CLOAK);
+                    speciesId = RANDOM_RANGE(SPECIES_BURMY_SANDY, SPECIES_WORMADAM_SANDY);
             }; break;
             case SPECIES_WORMADAM: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_BURMY_WORMADAM))
-                    speciesId = RANDOM_RANGE(SPECIES_WORMADAM_SANDY_CLOAK, SPECIES_CHERRIM_SUNSHINE);
+                    speciesId = RANDOM_RANGE(SPECIES_WORMADAM_SANDY, SPECIES_CHERRIM_SUNSHINE);
             }; break;
             case SPECIES_SHELLOS: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_SHELLOS_GASTRODON))
-                    speciesId = SPECIES_SHELLOS_EAST_SEA;
+                    speciesId = SPECIES_SHELLOS_EAST;
             }; break;
             case SPECIES_GASTRODON: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_SHELLOS_GASTRODON))
-                    speciesId = SPECIES_GASTRODON_EAST_SEA;
+                    speciesId = SPECIES_GASTRODON_EAST;
             }; break;
             case SPECIES_ROTOM: {
                 if ((440 <= (properties->minBST)) || ((520 <= (properties->maxBST)) && RANDOM_CHANCE(BFG_FORME_CHANCE_ROTOM)))
@@ -2470,7 +2470,7 @@ bool32 GenerateTrainerPokemonHandleForme(struct Pokemon * mon, u16 speciesId, st
             }; break;
             case SPECIES_BASCULIN: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_BASCULIN))
-                    speciesId = RANDOM_RANGE(SPECIES_BASCULIN_BLUE_STRIPED, SPECIES_DARMANITAN_ZEN_MODE);
+                    speciesId = RANDOM_RANGE(SPECIES_BASCULIN_BLUE_STRIPED, SPECIES_DARMANITAN_ZEN);
             }; break;
             case SPECIES_DEERLING: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_DEERLING_SAWSBUCK))
@@ -2506,13 +2506,13 @@ bool32 GenerateTrainerPokemonHandleForme(struct Pokemon * mon, u16 speciesId, st
             case SPECIES_GENESECT: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_GENESECT)) 
                 {
-                    speciesId = RANDOM_RANGE(SPECIES_GENESECT_DOUSE_DRIVE, SPECIES_GRENINJA_BATTLE_BOND);
+                    speciesId = RANDOM_RANGE(SPECIES_GENESECT_DOUSE, SPECIES_GRENINJA_BATTLE_BOND);
                     switch(speciesId) 
                     {
-                        case SPECIES_GENESECT_DOUSE_DRIVE: item = ITEM_DOUSE_DRIVE; break;
-                        case SPECIES_GENESECT_SHOCK_DRIVE: item = ITEM_SHOCK_DRIVE; break;
-                        case SPECIES_GENESECT_BURN_DRIVE: item = ITEM_BURN_DRIVE; break;
-                        case SPECIES_GENESECT_CHILL_DRIVE: item = ITEM_CHILL_DRIVE; break;
+                        case SPECIES_GENESECT_DOUSE: item = ITEM_DOUSE_DRIVE; break;
+                        case SPECIES_GENESECT_SHOCK: item = ITEM_SHOCK_DRIVE; break;
+                        case SPECIES_GENESECT_BURN: item = ITEM_BURN_DRIVE; break;
+                        case SPECIES_GENESECT_CHILL: item = ITEM_CHILL_DRIVE; break;
                     }
                 }
             }; break;
@@ -2525,29 +2525,29 @@ bool32 GenerateTrainerPokemonHandleForme(struct Pokemon * mon, u16 speciesId, st
             }; break;
             case SPECIES_VIVILLON: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_VIVILLON))
-                    speciesId = RANDOM_RANGE(SPECIES_VIVILLON_POLAR, SPECIES_FLABEBE_YELLOW_FLOWER);
+                    speciesId = RANDOM_RANGE(SPECIES_VIVILLON_POLAR, SPECIES_FLABEBE_YELLOW);
             }; break;
             case SPECIES_FLABEBE: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_FLABEBE_FLOETTE_FLORGES))
-                    speciesId = RANDOM_RANGE(SPECIES_FLABEBE_YELLOW_FLOWER, SPECIES_FLOETTE_YELLOW_FLOWER);
+                    speciesId = RANDOM_RANGE(SPECIES_FLABEBE_YELLOW, SPECIES_FLOETTE_YELLOW);
             }; break;
             case SPECIES_FLOETTE: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_FLABEBE_FLOETTE_FLORGES))
-                    speciesId = RANDOM_RANGE(SPECIES_FLOETTE_YELLOW_FLOWER, SPECIES_FLORGES_YELLOW_FLOWER);
+                    speciesId = RANDOM_RANGE(SPECIES_FLOETTE_YELLOW, SPECIES_FLORGES_YELLOW);
             }; break;
             case SPECIES_FLORGES: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_FLABEBE_FLOETTE_FLORGES))
-                    speciesId = RANDOM_RANGE(SPECIES_FLORGES_YELLOW_FLOWER, SPECIES_FURFROU_HEART_TRIM);
+                    speciesId = RANDOM_RANGE(SPECIES_FLORGES_YELLOW, SPECIES_FURFROU_HEART_TRIM);
             }; break;
             case SPECIES_FURFROU: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_FURFROU))
-                    speciesId = RANDOM_RANGE(SPECIES_FURFROU_HEART_TRIM, SPECIES_MEOWSTIC_FEMALE);
+                    speciesId = RANDOM_RANGE(SPECIES_FURFROU_HEART_TRIM, SPECIES_MEOWSTIC_F);
             }; break;
             case SPECIES_MEOWSTIC: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_MEOWSTIC))
-                    speciesId = SPECIES_MEOWSTIC_FEMALE;
+                    speciesId = SPECIES_MEOWSTIC_F;
                 else 
-                    speciesId = SPECIES_MEOWSTIC_MALE;
+                    speciesId = SPECIES_MEOWSTIC_M;
             }; break;
             case SPECIES_PUMPKABOO: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_PUMPKABOO_GOURGEIST))
@@ -2633,22 +2633,22 @@ bool32 GenerateTrainerPokemonHandleForme(struct Pokemon * mon, u16 speciesId, st
             }; break;
             case SPECIES_MAGEARNA: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_MAGEARNA))
-                    speciesId = SPECIES_MAGEARNA_ORIGINAL_COLOR;
+                    speciesId = SPECIES_MAGEARNA_ORIGINAL;
             }; break;
             case SPECIES_ALCREMIE: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_ALCREMIE))
-                    speciesId = RANDOM_RANGE(SPECIES_ALCREMIE_RUBY_CREAM, SPECIES_EISCUE_NOICE_FACE);
+                    speciesId = RANDOM_RANGE(SPECIES_ALCREMIE_RUBY_CREAM, SPECIES_EISCUE_NOICE);
             }; break;
             case SPECIES_INDEEDEE: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_INDEEDEE))
-                    speciesId = SPECIES_INDEEDEE_FEMALE;
+                    speciesId = SPECIES_INDEEDEE_F;
                 else
-                    speciesId = SPECIES_INDEEDEE_MALE;
+                    speciesId = SPECIES_INDEEDEE_M;
             }; break;
             case SPECIES_ZACIAN: {
                 if ((700 <= (properties->maxBST))) 
                 {
-                    speciesId = SPECIES_ZACIAN_CROWNED_SWORD;
+                    speciesId = SPECIES_ZACIAN_CROWNED;
                     item = ITEM_RUSTED_SWORD;
                     move = MOVE_BEHEMOTH_BLADE;
                 }
@@ -2656,34 +2656,34 @@ bool32 GenerateTrainerPokemonHandleForme(struct Pokemon * mon, u16 speciesId, st
             case SPECIES_ZAMAZENTA: {
                 if ((700 <= (properties->maxBST))) 
                 {
-                    speciesId = SPECIES_ZAMAZENTA_CROWNED_SHIELD;
+                    speciesId = SPECIES_ZAMAZENTA_CROWNED;
                     item = ITEM_RUSTED_SHIELD;
                     move = MOVE_BEHEMOTH_BASH;
                 }
             }; break;
             case SPECIES_URSHIFU: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_URSHIFU))
-                    speciesId = SPECIES_URSHIFU_RAPID_STRIKE_STYLE;
+                    speciesId = SPECIES_URSHIFU_RAPID_STRIKE;
             }; break;
             case SPECIES_BASCULEGION: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_BASCULEGION))
-                    speciesId = SPECIES_BASCULEGION_FEMALE;
+                    speciesId = SPECIES_BASCULEGION_F;
                 else 
-                    speciesId = SPECIES_BASCULEGION_MALE;
+                    speciesId = SPECIES_BASCULEGION_M;
             }; break;
             case SPECIES_OINKOLOGNE: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_OINKOLOGNE))
-                    speciesId = SPECIES_OINKOLOGNE_FEMALE;
+                    speciesId = SPECIES_OINKOLOGNE_F;
                 else 
-                    speciesId = SPECIES_OINKOLOGNE_MALE;
+                    speciesId = SPECIES_OINKOLOGNE_M;
             }; break;
             case SPECIES_MAUSHOLD: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_MAUSHOLD))
-                    speciesId = SPECIES_MAUSHOLD_FAMILY_OF_FOUR;
+                    speciesId = SPECIES_MAUSHOLD_FOUR;
             }; break;
             case SPECIES_SQUAWKABILLY: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_SQUAWKABILLY))
-                    speciesId = RANDOM_RANGE(SPECIES_SQUAWKABILLY_BLUE_PLUMAGE, SPECIES_NACLI);
+                    speciesId = RANDOM_RANGE(SPECIES_SQUAWKABILLY_BLUE, SPECIES_NACLI);
             }; break;
             case SPECIES_TATSUGIRI: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_TATSUGIRI))
@@ -2700,13 +2700,13 @@ bool32 GenerateTrainerPokemonHandleForme(struct Pokemon * mon, u16 speciesId, st
             case SPECIES_OGERPON: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_OGERPON)) 
                 {
-                    speciesId = RANDOM_RANGE(SPECIES_OGERPON_WELLSPRING_MASK, SPECIES_OGERPON_TEAL_MASK_TERA);
+                    speciesId = RANDOM_RANGE(SPECIES_OGERPON_WELLSPRING, SPECIES_OGERPON_TEAL_TERA);
                     // Required hold item
                     switch(speciesId) 
                     {
-                        case SPECIES_OGERPON_WELLSPRING_MASK: item = ITEM_WELLSPRING_MASK; break;
-                        case SPECIES_OGERPON_HEARTHFLAME_MASK: item = ITEM_HEARTHFLAME_MASK; break;
-                        case SPECIES_OGERPON_CORNERSTONE_MASK: item = ITEM_CORNERSTONE_MASK; break;
+                        case SPECIES_OGERPON_WELLSPRING: item = ITEM_WELLSPRING_MASK; break;
+                        case SPECIES_OGERPON_HEARTHFLAME: item = ITEM_HEARTHFLAME_MASK; break;
+                        case SPECIES_OGERPON_CORNERSTONE: item = ITEM_CORNERSTONE_MASK; break;
                     }; 
                     // Signature move
                     move = MOVE_IVY_CUDGEL;
@@ -2718,14 +2718,14 @@ bool32 GenerateTrainerPokemonHandleForme(struct Pokemon * mon, u16 speciesId, st
             }; break;
             // Species-specific items
             case SPECIES_FARFETCHD:
-            case SPECIES_FARFETCHD_GALARIAN:
+            case SPECIES_FARFETCHD_GALAR:
             case SPECIES_SIRFETCHD: 
                 if (BFG_NO_ITEM_SELECTION_CHANCE != 1 && RANDOM_CHANCE(BFG_ITEM_LEEK_SELECTION_CHANCE))
                     item = ITEM_LEEK;
             break;
             case SPECIES_MAROWAK:
-            case SPECIES_MAROWAK_ALOLAN:
-            case SPECIES_MAROWAK_ALOLAN_TOTEM:
+            case SPECIES_MAROWAK_ALOLA:
+            case SPECIES_MAROWAK_ALOLA_TOTEM:
                 if (BFG_NO_ITEM_SELECTION_CHANCE != 1 && RANDOM_CHANCE(BFG_ITEM_THICK_CLUB_SELECTION_CHANCE))
                     item = ITEM_THICK_CLUB;
             break; 
@@ -2856,7 +2856,7 @@ bool32 GenerateTrainerPokemonHandleForme(struct Pokemon * mon, u16 speciesId, st
                     item = ITEM_MARSHADIUM_Z;
                 }
             break;
-            case SPECIES_RAICHU_ALOLAN: 
+            case SPECIES_RAICHU_ALOLA: 
                 if (((properties->fixedIV) >= BFG_ITEM_IV_ALLOW_ZMOVE) && ((properties->allowZMove) == TRUE)  && RANDOM_CHANCE(BFG_ZMOVE_CHANCE_ALORAICHIUM_Z)) 
                 {
                     properties->allowZMove = FALSE;
@@ -2968,14 +2968,14 @@ bool32 GenerateTrainerPokemonHandleForme(struct Pokemon * mon, u16 speciesId, st
             case SPECIES_CALYREX: {
                 if ((680 <= (properties->maxBST)) && RANDOM_CHANCE(BFG_FUSION_CHANCE_CALYREX)) 
                 {
-                    speciesId = RANDOM_RANGE(SPECIES_CALYREX_ICE_RIDER, SPECIES_CALYREX_SHADOW_RIDER);
+                    speciesId = RANDOM_RANGE(SPECIES_CALYREX_ICE, SPECIES_CALYREX_SHADOW);
                     switch(speciesId) 
                     {
                         // Signature Moves
-                        case SPECIES_CALYREX_ICE_RIDER: {
+                        case SPECIES_CALYREX_ICE: {
                             move = MOVE_GLACIAL_LANCE;
                         }; break;
-                        case SPECIES_CALYREX_SHADOW_RIDER: {
+                        case SPECIES_CALYREX_SHADOW: {
                             move = MOVE_ASTRAL_BARRAGE;
                         }; break;
                     }
