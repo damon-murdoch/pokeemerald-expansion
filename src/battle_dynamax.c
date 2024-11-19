@@ -85,14 +85,14 @@ bool32 CanDynamax(u32 battler)
     #endif
         return FALSE;
 
-    // Prevents Zigzagoon from dynamaxing in vanilla.
-    if (gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE && GetBattlerSide(battler) == B_SIDE_OPPONENT)
-        return FALSE;
-
     #if BFG_FLAG_FRONTIER_GENERATOR != 0
     if ((gBattleTypeFlags & BATTLE_TYPE_FRONTIER) && FlagGet(BFG_FLAG_FRONTIER_GENERATOR) && (FrontierBattlerCanDynamax(&(GetSideParty(GetBattlerSide(battler))[gBattlerPartyIndexes[battler]])) == FALSE))
         return FALSE;
     #endif
+
+    // Prevents Zigzagoon from dynamaxing in vanilla.
+    if (gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE && GetBattlerSide(battler) == B_SIDE_OPPONENT)
+        return FALSE;
 
     // Check if Player has a Dynamax Band.
     if (!TESTING && (GetBattlerPosition(battler) == B_POSITION_PLAYER_LEFT
