@@ -273,6 +273,8 @@ script BattleFrontierController_EventScript_ControllerChangeMusicPage4 {
 			setvar(VAR_FRONTIER_BGM, 18)
 		case 1:
 			setvar(VAR_FRONTIER_BGM, 19)
+		case 2:
+			setvar(VAR_FRONTIER_BGM, 20)
 		case MULTI_L_PRESSED:
 			goto(BattleFrontierController_EventScript_ControllerChangeMusicPage3)
 		case MULTI_R_PRESSED:
@@ -381,5 +383,6 @@ text BattleFrontierController_Text_ControllerMusicSelectPage3 {
 text BattleFrontierController_Text_ControllerMusicSelectPage4 {
 	"VS.Mewtwo (FRLG)$"
 	"VS.Legend (FRLG)$"
+	"RANDOM SONG$"
 	""
 }

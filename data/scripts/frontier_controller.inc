@@ -570,13 +570,15 @@ BattleFrontierController_EventScript_ControllerChangeMusicPage4::
 # 274 "data/scripts/frontier_controller.pory"
 	case 1, BattleFrontierController_EventScript_ControllerChangeMusicPage4_4
 # 276 "data/scripts/frontier_controller.pory"
-	case MULTI_L_PRESSED, BattleFrontierController_EventScript_ControllerChangeMusicPage4_5
+	case 2, BattleFrontierController_EventScript_ControllerChangeMusicPage4_5
 # 278 "data/scripts/frontier_controller.pory"
-	case MULTI_R_PRESSED, BattleFrontierController_EventScript_ControllerChangeMusicPage4_6
-# 281 "data/scripts/frontier_controller.pory"
+	case MULTI_L_PRESSED, BattleFrontierController_EventScript_ControllerChangeMusicPage4_6
+# 280 "data/scripts/frontier_controller.pory"
+	case MULTI_R_PRESSED, BattleFrontierController_EventScript_ControllerChangeMusicPage4_7
+# 283 "data/scripts/frontier_controller.pory"
 	goto BattleFrontierController_EventScript_ControllerAsk
 BattleFrontierController_EventScript_ControllerChangeMusicPage4_1:
-# 283 "data/scripts/frontier_controller.pory"
+# 285 "data/scripts/frontier_controller.pory"
 	goto BattleFrontierController_EventScript_ControllerChangeMusicSuccess
 	return
 
@@ -592,49 +594,54 @@ BattleFrontierController_EventScript_ControllerChangeMusicPage4_4:
 
 BattleFrontierController_EventScript_ControllerChangeMusicPage4_5:
 # 277 "data/scripts/frontier_controller.pory"
-	goto BattleFrontierController_EventScript_ControllerChangeMusicPage3
+	setvar VAR_FRONTIER_BGM, 20
 	goto BattleFrontierController_EventScript_ControllerChangeMusicPage4_1
 
 BattleFrontierController_EventScript_ControllerChangeMusicPage4_6:
 # 279 "data/scripts/frontier_controller.pory"
+	goto BattleFrontierController_EventScript_ControllerChangeMusicPage3
+	goto BattleFrontierController_EventScript_ControllerChangeMusicPage4_1
+
+BattleFrontierController_EventScript_ControllerChangeMusicPage4_7:
+# 281 "data/scripts/frontier_controller.pory"
 	goto BattleFrontierController_EventScript_ControllerChangeMusicPage1
 	goto BattleFrontierController_EventScript_ControllerChangeMusicPage4_1
 
 
 BattleFrontierController_EventScript_ControllerChangeMusicSuccess::
-# 287 "data/scripts/frontier_controller.pory"
-	playse SE_SUCCESS
-# 288 "data/scripts/frontier_controller.pory"
-	msgbox BattleFrontierController_EventScript_ControllerChangeMusicSuccess_Text_0
 # 289 "data/scripts/frontier_controller.pory"
-	waitse
+	playse SE_SUCCESS
 # 290 "data/scripts/frontier_controller.pory"
+	msgbox BattleFrontierController_EventScript_ControllerChangeMusicSuccess_Text_0
+# 291 "data/scripts/frontier_controller.pory"
+	waitse
+# 292 "data/scripts/frontier_controller.pory"
 	goto BattleFrontierController_EventScript_ControllerAsk
 	return
 
 
 BattleFrontierController_EventScript_ControllerAsk::
-# 294 "data/scripts/frontier_controller.pory"
-	msgbox BattleFrontierController_EventScript_ControllerAsk_Text_0
-# 295 "data/scripts/frontier_controller.pory"
-	yesnobox 0, 8
 # 296 "data/scripts/frontier_controller.pory"
+	msgbox BattleFrontierController_EventScript_ControllerAsk_Text_0
+# 297 "data/scripts/frontier_controller.pory"
+	yesnobox 0, 8
+# 298 "data/scripts/frontier_controller.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleFrontierController_EventScript_ControllerAsk_1
-# 299 "data/scripts/frontier_controller.pory"
+# 301 "data/scripts/frontier_controller.pory"
 	goto BattleFrontierController_EventScript_ControllerEnd
 	return
 
 BattleFrontierController_EventScript_ControllerAsk_1:
-# 297 "data/scripts/frontier_controller.pory"
+# 299 "data/scripts/frontier_controller.pory"
 	goto BattleFrontierController_EventScript_ControllerOptions
 	return
 
 
 BattleFrontierController_EventScript_ControllerEnd::
-# 304 "data/scripts/frontier_controller.pory"
+# 306 "data/scripts/frontier_controller.pory"
 	msgbox BattleFrontierController_EventScript_ControllerEnd_Text_0
-# 305 "data/scripts/frontier_controller.pory"
+# 307 "data/scripts/frontier_controller.pory"
 	release
 	end
 
@@ -836,20 +843,20 @@ BattleFrontierController_EventScript_ControllerChangeBanlistDynamax_Text_2:
 	.string "Okay! Gigantamax Formes will be banned.$"
 
 BattleFrontierController_EventScript_ControllerChangeMusicSuccess_Text_0:
-# 288 "data/scripts/frontier_controller.pory"
+# 290 "data/scripts/frontier_controller.pory"
 	.string "All done! Your music selection has been\n"
 	.string "changed.$"
 
 BattleFrontierController_EventScript_ControllerAsk_Text_0:
-# 294 "data/scripts/frontier_controller.pory"
+# 296 "data/scripts/frontier_controller.pory"
 	.string "Do you need me for anything else?$"
 
 BattleFrontierController_EventScript_ControllerEnd_Text_0:
-# 304 "data/scripts/frontier_controller.pory"
+# 306 "data/scripts/frontier_controller.pory"
 	.string "I hope you have some good battles!$"
 
 BattleFrontierController_Text_ControllerOptionSelect::
-# 309 "data/scripts/frontier_controller.pory"
+# 311 "data/scripts/frontier_controller.pory"
 	.string "CHANGE DIFFICULTY$"
 	.string "CHANGE OPPONENTS$"
 	.string "CHANGE BEHAVIOR$"
@@ -859,7 +866,7 @@ BattleFrontierController_Text_ControllerOptionSelect::
 	.string "$"
 
 BattleFrontierController_Text_ControllerOptionSelectBehavior::
-# 319 "data/scripts/frontier_controller.pory"
+# 321 "data/scripts/frontier_controller.pory"
 	.string "DEFAULT$"
 	.string "RANDOM$"
 	.string "FILTERED$"
@@ -869,13 +876,13 @@ BattleFrontierController_Text_ControllerOptionSelectBehavior::
 	.string "$"
 
 BattleFrontierController_Text_ControllerChangeRules::
-# 329 "data/scripts/frontier_controller.pory"
+# 331 "data/scripts/frontier_controller.pory"
 	.string "STANDARD BATTLE$"
 	.string "DYNAMAX BATTLE$"
 	.string "$"
 
 BattleFrontierController_Text_ControllerChangeRulesStandard::
-# 335 "data/scripts/frontier_controller.pory"
+# 337 "data/scripts/frontier_controller.pory"
 	.string "ALLOW MEGAS$"
 	.string "BAN MEGAS$"
 	.string "ALLOW ZMOVES$"
@@ -885,13 +892,13 @@ BattleFrontierController_Text_ControllerChangeRulesStandard::
 	.string "$"
 
 BattleFrontierController_Text_ControllerChangeRulesDynamax::
-# 345 "data/scripts/frontier_controller.pory"
+# 347 "data/scripts/frontier_controller.pory"
 	.string "ALLOW GMAX$"
 	.string "BAN GMAX$"
 	.string "$"
 
 BattleFrontierController_Text_ControllerMusicSelectPage1::
-# 351 "data/scripts/frontier_controller.pory"
+# 353 "data/scripts/frontier_controller.pory"
 	.string "DEFAULT$"
 	.string "VS.Frontier Brain$"
 	.string "VS.Mew$"
@@ -901,7 +908,7 @@ BattleFrontierController_Text_ControllerMusicSelectPage1::
 	.string "$"
 
 BattleFrontierController_Text_ControllerMusicSelectPage2::
-# 361 "data/scripts/frontier_controller.pory"
+# 363 "data/scripts/frontier_controller.pory"
 	.string "VS.Gym Leader$"
 	.string "VS.Champion$"
 	.string "VS.Regi$"
@@ -911,7 +918,7 @@ BattleFrontierController_Text_ControllerMusicSelectPage2::
 	.string "$"
 
 BattleFrontierController_Text_ControllerMusicSelectPage3::
-# 371 "data/scripts/frontier_controller.pory"
+# 373 "data/scripts/frontier_controller.pory"
 	.string "VS.Aqua & Magma Leader$"
 	.string "VS.Gym Leader (FRLG)$"
 	.string "VS.Trainer (FRLG)$"
@@ -921,7 +928,8 @@ BattleFrontierController_Text_ControllerMusicSelectPage3::
 	.string "$"
 
 BattleFrontierController_Text_ControllerMusicSelectPage4::
-# 381 "data/scripts/frontier_controller.pory"
+# 383 "data/scripts/frontier_controller.pory"
 	.string "VS.Mewtwo (FRLG)$"
 	.string "VS.Legend (FRLG)$"
+	.string "RANDOM SONG$"
 	.string "$"

@@ -119,6 +119,7 @@ static const struct CombinedMove sCombinedMoves[2] =
 
 
 #define FRONTIER_BGM_COUNT 19
+#define FRONTIER_BGM_RANDOM FRONTIER_BGM_COUNT + 1
 
 // Songs which can be selected by the player
 // to play during matches at the Battle Frontier
@@ -5913,13 +5914,20 @@ u16 GetBattleBGM(void)
     const u16 frontierBGM = VarGet(VAR_FRONTIER_BGM);
 
     // Custom battle frontier bgm is set
-    if (frontierBGM > 0 && 
-        frontierBGM <= FRONTIER_BGM_COUNT && (
-        gBattleTypeFlags & BATTLE_TYPE_FRONTIER || 
-        gBattleTypeFlags & BATTLE_TYPE_TRAINER_HILL
-    )){
-        // Return the selected custom battle frontier song
-        return customFrontierSongs[frontierBGM - 1];
+    if ((frontierBGM > 0) && (gBattleTypeFlags & BATTLE_TYPE_FRONTIER || gBattleTypeFlags & BATTLE_TYPE_TRAINER_HILL))
+    {
+        // Dereference index
+        u8 index = (u8)(frontierBGM);
+
+        // Random music selection
+        if (index == FRONTIER_BGM_RANDOM) {
+
+            //  Select random song within the limit
+            index = Random() % FRONTIER_BGM_COUNT;
+        } 
+
+        // Return the selected song
+        return customFrontierSongs[index - 1];
     }
     else if (gBattleTypeFlags & BATTLE_TYPE_LEGENDARY)
     {
