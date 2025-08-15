@@ -141,6 +141,90 @@ script BattleFrontierController_EventScript_ControllerChangeBanlist {
 	}
 }
 
+script BattleFrontierController_EventScript_ControllerChangeBanlistStandardMegas {
+	// Megas Allowed
+	if(flag(FLAG_BATTLE_FRONTIER_ALLOW_MEGA)) {
+		msgbox(format("Megas are currently allowed. Would you like them to be banned?"))
+		yesnobox(0, 8)
+		if (var(VAR_RESULT) == YES){
+			msgbox(format("Got it! Megas will now be banned."))
+			clearflag(FLAG_BATTLE_FRONTIER_ALLOW_MEGA)
+		} else {
+			msgbox(format("Got it! Megas will now be allowed."))
+			setflag(FLAG_BATTLE_FRONTIER_ALLOW_MEGA)
+		}
+	} 
+	else // Megas banned
+	{
+		msgbox(format("Megas are currently banned. Would you like them to be allowed?"))
+		yesnobox(0, 8)
+		if (var(VAR_RESULT) == YES){
+			msgbox(format("Got it! Megas will now be allowed."))
+			setflag(FLAG_BATTLE_FRONTIER_ALLOW_MEGA)
+		} else {
+			msgbox(format("Got it! Megas will now be banned."))
+			clearflag(FLAG_BATTLE_FRONTIER_ALLOW_MEGA)
+		}
+	}
+	goto(BattleFrontierController_EventScript_ControllerChangeBanlist)
+}
+
+script BattleFrontierController_EventScript_ControllerChangeBanlistStandardZmoves {
+	// Z-Moves Allowed
+	if(flag(FLAG_BATTLE_FRONTIER_ALLOW_ZMOVE)) {
+		msgbox(format("Z-Moves are currently allowed. Would you like them to be banned?"))
+		yesnobox(0, 8)
+		if (var(VAR_RESULT) == YES){
+			msgbox(format("Got it! Z-Moves will now be banned."))
+			clearflag(FLAG_BATTLE_FRONTIER_ALLOW_ZMOVE)
+		} else {
+			msgbox(format("Got it! Z-Moves will now be allowed."))
+			setflag(FLAG_BATTLE_FRONTIER_ALLOW_ZMOVE)
+		}
+	} 
+	else // Z-Moves banned
+	{
+		msgbox(format("Z-Moves are currently banned. Would you like them to be allowed?"))
+		yesnobox(0, 8)
+		if (var(VAR_RESULT) == YES){
+			msgbox(format("Got it! Z-Moves will now be allowed."))
+			setflag(FLAG_BATTLE_FRONTIER_ALLOW_ZMOVE)
+		} else {
+			msgbox(format("Got it! Z-Moves will now be banned."))
+			clearflag(FLAG_BATTLE_FRONTIER_ALLOW_ZMOVE)
+		}
+	}
+	goto(BattleFrontierController_EventScript_ControllerChangeBanlist)
+}
+
+script BattleFrontierController_EventScript_ControllerChangeBanlistStandardTeras {
+	// Tera Allowed
+	if(flag(FLAG_BATTLE_FRONTIER_ALLOW_TERA)) {
+		msgbox(format("Tera is currently allowed. Would you like it to be banned?"))
+		yesnobox(0, 8)
+		if (var(VAR_RESULT) == YES){
+			msgbox(format("Got it! Tera will now be banned."))
+			clearflag(FLAG_BATTLE_FRONTIER_ALLOW_TERA)
+		} else {
+			msgbox(format("Got it! Tera will now be allowed."))
+			setflag(FLAG_BATTLE_FRONTIER_ALLOW_TERA)
+		}
+	} 
+	else // Tera banned
+	{
+		msgbox(format("Tera is currently banned. Would you like it to be allowed?"))
+		yesnobox(0, 8)
+		if (var(VAR_RESULT) == YES){
+			msgbox(format("Got it! Tera will now be allowed."))
+			setflag(FLAG_BATTLE_FRONTIER_ALLOW_TERA)
+		} else {
+			msgbox(format("Got it! Tera will now be banned."))
+			clearflag(FLAG_BATTLE_FRONTIER_ALLOW_TERA)
+		}
+	}
+	goto(BattleFrontierController_EventScript_ControllerChangeBanlistStandard)
+}
+
 script BattleFrontierController_EventScript_ControllerChangeBanlistStandard {
 	msgbox(format("These are the options for standard battles."))
 	msgbox(format("Please remember, these rules apply to both you and your opponents!"))
@@ -148,28 +232,44 @@ script BattleFrontierController_EventScript_ControllerChangeBanlistStandard {
 	multichoice2(0,0,BattleFrontierController_Text_ControllerChangeRulesStandard)
 	switch(var(VAR_RESULT))
 	{
-		case 0: # ALLOW MEGAS
-			msgbox(format("Okay! Mega Evolutions will be allowed."))
-			setflag(FLAG_BATTLE_FRONTIER_ALLOW_MEGA)
-		case 1: # BAN MEGAS
-			msgbox(format("Okay! Mega Evolutions will be banned."))
-			clearflag(FLAG_BATTLE_FRONTIER_ALLOW_MEGA)
-		case 2: # ALLOW ZMOVES
-			msgbox(format("Okay! Z-Moves will be allowed."))
-			setflag(FLAG_BATTLE_FRONTIER_ALLOW_ZMOVE)
-		case 3: # BAN ZMOVES
-			msgbox(format("Okay! Z-Moves will be banned."))
-			clearflag(FLAG_BATTLE_FRONTIER_ALLOW_ZMOVE)
-		case 4: # ALLOW TERA
-			msgbox(format("Okay! Terastalisation will be allowed."))
-			setflag(FLAG_BATTLE_FRONTIER_ALLOW_TERA)
-		case 5: # BAN TERA
-			msgbox(format("Okay! Terastalisation will be banned."))
-			clearflag(FLAG_BATTLE_FRONTIER_ALLOW_TERA)
+		case 0: # Megas
+			goto(BattleFrontierController_EventScript_ControllerChangeBanlistStandardMegas)
+		case 1: # Z Moves
+			goto(BattleFrontierController_EventScript_ControllerChangeBanlistStandardZmoves)
+		case 2: # Teras
+			goto(BattleFrontierController_EventScript_ControllerChangeBanlistStandardTeras)
 		default:
 			goto(BattleFrontierController_EventScript_ControllerChangeBanlist)
 	}
 	goto(BattleFrontierController_EventScript_ControllerChangeBanlist)
+}
+
+script BattleFrontierController_EventScript_ControllerChangeBanlistDynamaxGmax {
+	// Gigantamax Allowed
+	if(flag(FLAG_BATTLE_FRONTIER_ALLOW_GMAX)) {
+		msgbox(format("Gmax is currently allowed. Would you like it to be banned?"))
+		yesnobox(0, 8)
+		if (var(VAR_RESULT) == YES){
+			msgbox(format("Got it! Gmax will now be banned."))
+			clearflag(FLAG_BATTLE_FRONTIER_ALLOW_GMAX)
+		} else {
+			msgbox(format("Got it! Gmax will now be allowed."))
+			setflag(FLAG_BATTLE_FRONTIER_ALLOW_GMAX)
+		}
+	} 
+	else // Tera banned
+	{
+		msgbox(format("Gmax is currently banned. Would you like it to be allowed?"))
+		yesnobox(0, 8)
+		if (var(VAR_RESULT) == YES){
+			msgbox(format("Got it! Gmax will now be allowed."))
+			setflag(FLAG_BATTLE_FRONTIER_ALLOW_GMAX)
+		} else {
+			msgbox(format("Got it! Gmax will now be banned."))
+			clearflag(FLAG_BATTLE_FRONTIER_ALLOW_GMAX)
+		}
+	}
+	goto(BattleFrontierController_EventScript_ControllerChangeBanlistDynamax)
 }
 
 script BattleFrontierController_EventScript_ControllerChangeBanlistDynamax {
@@ -179,12 +279,8 @@ script BattleFrontierController_EventScript_ControllerChangeBanlistDynamax {
 	multichoice2(0,0,BattleFrontierController_Text_ControllerChangeRulesDynamax)
 	switch(var(VAR_RESULT))
 	{
-		case 0: # ALLOW GMAX
-			msgbox(format("Okay! Gigantamax Formes will be allowed."))
-			setflag(FLAG_BATTLE_FRONTIER_ALLOW_GMAX)
-		case 1: # BAN GMAX
-			msgbox(format("Okay! Gigantamax Formes will be banned."))
-			clearflag(FLAG_BATTLE_FRONTIER_ALLOW_GMAX)
+		case 0: # Gigantamax
+			goto(BattleFrontierController_EventScript_ControllerChangeBanlistDynamaxGmax)
 		default:
 			goto(BattleFrontierController_EventScript_ControllerChangeBanlist)
 	}
@@ -197,15 +293,15 @@ script BattleFrontierController_EventScript_ControllerChangeMusicPage1 {
 		case 0:
 			setvar(VAR_FRONTIER_BGM, 0)
 		case 1:
-			setvar(VAR_FRONTIER_BGM, 1)
+			setvar(VAR_FRONTIER_BGM, 20)
 		case 2:
-			setvar(VAR_FRONTIER_BGM, 2)
+			setvar(VAR_FRONTIER_BGM, 1)
 		case 3:
-			setvar(VAR_FRONTIER_BGM, 3)
+			setvar(VAR_FRONTIER_BGM, 2)
 		case 4:
-			setvar(VAR_FRONTIER_BGM, 4)
+			setvar(VAR_FRONTIER_BGM, 3)
 		case 5:
-			setvar(VAR_FRONTIER_BGM, 5)
+			setvar(VAR_FRONTIER_BGM, 4)
 		case MULTI_L_PRESSED:
 			goto(BattleFrontierController_EventScript_ControllerChangeMusicPage4)
 		case MULTI_R_PRESSED:
@@ -220,17 +316,17 @@ script BattleFrontierController_EventScript_ControllerChangeMusicPage2 {
 	multichoice2(0,0,BattleFrontierController_Text_ControllerMusicSelectPage2)
 	switch(var(VAR_RESULT)){
 		case 0:
-			setvar(VAR_FRONTIER_BGM, 6)
+			setvar(VAR_FRONTIER_BGM, 5)
 		case 1:
-			setvar(VAR_FRONTIER_BGM, 7)
+			setvar(VAR_FRONTIER_BGM, 6)
 		case 2:
-			setvar(VAR_FRONTIER_BGM, 8)
+			setvar(VAR_FRONTIER_BGM, 7)
 		case 3:
-			setvar(VAR_FRONTIER_BGM, 9)
+			setvar(VAR_FRONTIER_BGM, 8)
 		case 4:
-			setvar(VAR_FRONTIER_BGM, 10)
+			setvar(VAR_FRONTIER_BGM, 9)
 		case 5:
-			setvar(VAR_FRONTIER_BGM, 11)
+			setvar(VAR_FRONTIER_BGM, 10)
 		case MULTI_L_PRESSED:
 			goto(BattleFrontierController_EventScript_ControllerChangeMusicPage1)
 		case MULTI_R_PRESSED:
@@ -245,17 +341,17 @@ script BattleFrontierController_EventScript_ControllerChangeMusicPage3 {
 	multichoice2(0,0,BattleFrontierController_Text_ControllerMusicSelectPage3)
 	switch(var(VAR_RESULT)){
 		case 0:
-			setvar(VAR_FRONTIER_BGM, 12)
+			setvar(VAR_FRONTIER_BGM, 11)
 		case 1:
-			setvar(VAR_FRONTIER_BGM, 13)
+			setvar(VAR_FRONTIER_BGM, 12)
 		case 2:
-			setvar(VAR_FRONTIER_BGM, 14)
+			setvar(VAR_FRONTIER_BGM, 13)
 		case 3:
-			setvar(VAR_FRONTIER_BGM, 15)
+			setvar(VAR_FRONTIER_BGM, 14)
 		case 4:
-			setvar(VAR_FRONTIER_BGM, 16)
+			setvar(VAR_FRONTIER_BGM, 15)
 		case 5:
-			setvar(VAR_FRONTIER_BGM, 17)
+			setvar(VAR_FRONTIER_BGM, 16)
 		case MULTI_L_PRESSED:
 			goto(BattleFrontierController_EventScript_ControllerChangeMusicPage2)
 		case MULTI_R_PRESSED:
@@ -270,8 +366,10 @@ script BattleFrontierController_EventScript_ControllerChangeMusicPage4 {
 	multichoice2(0,0,BattleFrontierController_Text_ControllerMusicSelectPage4)
 	switch(var(VAR_RESULT)){
 		case 0:
-			setvar(VAR_FRONTIER_BGM, 18)
+			setvar(VAR_FRONTIER_BGM, 17)
 		case 1:
+			setvar(VAR_FRONTIER_BGM, 18)
+		case 2:
 			setvar(VAR_FRONTIER_BGM, 19)
 		case MULTI_L_PRESSED:
 			goto(BattleFrontierController_EventScript_ControllerChangeMusicPage3)
@@ -333,52 +431,49 @@ text BattleFrontierController_Text_ControllerChangeRules {
 }
 
 text BattleFrontierController_Text_ControllerChangeRulesStandard {
-	"ALLOW MEGAS$"
-	"BAN MEGAS$"
-	"ALLOW ZMOVES$"
-	"BAN ZMOVES$"
-	"ALLOW TERA$"
-	"BAN TERA$"
+	"MEGA EVOLUTIONS$"
+	"Z-MOVES$"
+	"TERASTALISATION$"
 	""
 }
 
 text BattleFrontierController_Text_ControllerChangeRulesDynamax {
-	"ALLOW GMAX$"
-	"BAN GMAX$"
+	"GIGANTAMAX$"
 	""
 }
 
 text BattleFrontierController_Text_ControllerMusicSelectPage1 {
 	"DEFAULT$"
+	"RANDOM$"
 	"VS.Frontier Brain$"
 	"VS.Mew$"
 	"VS.Wild Pokemon$"
 	"VS.Team Aqua & Magma$"
-	"VS.Trainer$"
 	""
 }
 
 text BattleFrontierController_Text_ControllerMusicSelectPage2 {
+	"VS.Trainer$"
 	"VS.Gym Leader$"
 	"VS.Champion$"
 	"VS.Regi$"
 	"VS.Kyogre & Groudon$"
 	"VS.Rival$"
-	"VS.Elite Four$"
 	""
 }
 
 text BattleFrontierController_Text_ControllerMusicSelectPage3 {
+	"VS.Elite Four$"
 	"VS.Aqua & Magma Leader$"
 	"VS.Gym Leader (FRLG)$"
 	"VS.Trainer (FRLG)$"
 	"VS.Wild Pokemon (FRLG)$"
 	"VS.Champion (FRLG)$"
-	"VS.Deoxys (FRLG)$"
 	""
 }
 
 text BattleFrontierController_Text_ControllerMusicSelectPage4 {
+	"VS.Deoxys (FRLG)$"
 	"VS.Mewtwo (FRLG)$"
 	"VS.Legend (FRLG)$"
 	""
