@@ -3252,6 +3252,32 @@ void UpdateGeneratorForLvlMode(struct GeneratorProperties * properties, u8 lvlMo
     }
 }
 
+void ShuffleTrainerParty(u8 firstMonId, u8 monCount) {
+    u8 i, j;
+    struct Pokemon temp;
+
+    // Shuffle team slots
+    for(i = (monCount - 1); i > 0; i--)
+    {
+        // Select random index
+        j = Random() % (i + 1);
+
+        // Non-matching
+        if (i != j) {
+            DebugPrintf("Swapping team index %d to %d ...", i, j);
+
+            // Copy 'i' ptr to 'temp'
+            temp = gEnemyParty[(firstMonId + i)];
+
+            // Copy 'j' ptr to 'i'
+            gEnemyParty[(firstMonId + i)] = gEnemyParty[(firstMonId + j)];
+
+            // Copy 'temp' ptr to 'j'
+            gEnemyParty[(firstMonId + j)] = temp;
+        }
+    }
+}
+
 void GenerateTrainerParty(u16 trainerId, u8 firstMonId, u8 monCount, u8 level)
 {
     u16 speciesId, bst;
@@ -3377,10 +3403,12 @@ void GenerateTrainerParty(u16 trainerId, u8 firstMonId, u8 monCount, u8 level)
         }
     }
 
+    // Shuffle trainer party members
+    ShuffleTrainerParty(firstMonId, monCount);
+
+    // If battle tent items disabled, exit before applying items
     if (lvlMode == FRONTIER_LVL_TENT && BFG_TENT_ALLOW_ITEM == FALSE)
-        return; // Battle Tent items disabled
-    else if (BFG_FACTORY_ALLOW_ITEM == FALSE)
-        return; // Battle Frontier items disabled
+        return; 
 
     // Allocate remaining items
     for(i=0; i < monCount; i++)
@@ -3391,7 +3419,7 @@ void GenerateTrainerParty(u16 trainerId, u8 firstMonId, u8 monCount, u8 level)
             SetMonData(&gEnemyParty[i + firstMonId], MON_DATA_HELD_ITEM, &(items[i]));
         }
     }
-    
+
     DebugPrintf("Done.");
 }
 
