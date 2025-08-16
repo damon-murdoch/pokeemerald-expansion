@@ -568,7 +568,7 @@ static void GiveQuickStartItems(void)
     AddBagItemIfNotOwned(ITEM_GRACIDEA);
     AddBagItemIfNotOwned(ITEM_REVEAL_GLASS);
     AddBagItemIfNotOwned(ITEM_DNA_SPLICERS);
-    AddBagItemIfNotOwned(ITEM_ZYGARDE_CUBE);
+    // AddBagItemIfNotOwned(ITEM_ZYGARDE_CUBE);
     AddBagItemIfNotOwned(ITEM_PRISON_BOTTLE);
     AddBagItemIfNotOwned(ITEM_N_SOLARIZER);
     AddBagItemIfNotOwned(ITEM_N_LUNARIZER);
@@ -580,8 +580,8 @@ static void GiveQuickStartItems(void)
     AddBagItemIfNotOwned(ITEM_EXP_SHARE);
     AddBagItemIfNotOwned(ITEM_ACRO_BIKE);
     AddBagItemIfNotOwned(ITEM_MACH_BIKE);
-    AddBagItemIfNotOwned(ITEM_OLD_ROD);
-    AddBagItemIfNotOwned(ITEM_GOOD_ROD);
+    // AddBagItemIfNotOwned(ITEM_OLD_ROD);
+    // AddBagItemIfNotOwned(ITEM_GOOD_ROD);
     AddBagItemIfNotOwned(ITEM_SUPER_ROD);
     AddBagItemIfNotOwned(ITEM_DOWSING_MACHINE);
     AddBagItemIfNotOwned(ITEM_SOOT_SACK);
@@ -629,7 +629,7 @@ static void GiveQuickStartItems(void)
 
     // If escape rope is a key item
     #if I_KEY_ESCAPE_ROPE >= GEN_9
-    AddBagItemIfNotOwned(I_KEY_ESCAPE_ROPE);
+    AddBagItemIfNotOwned(ITEM_ESCAPE_ROPE);
     #endif
 
     // Other items may be added later :)
