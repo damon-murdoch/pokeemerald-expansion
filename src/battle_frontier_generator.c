@@ -3677,12 +3677,11 @@ void SetFacilityPlayerAndOpponentParties()
     }
 
     u8 battleMode = VarGet(VAR_FRONTIER_BATTLE_MODE);
-    u8 challengeNum = GET_CHALLENGE_NUM(battleMode, lvlMode);
 
     #if BFG_VAR_FACTORY_GENERATOR_SEED != 0
     u16 fixedSeed = VarGet(BFG_VAR_FACTORY_GENERATOR_SEED);
     #else
-    u16 fixedSeed = (GET_TRAINER_ID() + challengeNum);
+    u16 fixedSeed = (GET_TRAINER_ID() + GET_CHALLENGE_NUM(battleMode, lvlMode));
     #endif
 
     DebugPrintf("Restoring facility selected Pokemon ...");
