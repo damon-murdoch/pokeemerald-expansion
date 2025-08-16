@@ -24,11 +24,11 @@ script BattleFrontierController_EventScript_ControllerManiac {
 
 script BattleFrontierController_EventScript_ControllerInfo {
 	msgbox(format("I can help you customise your Battle Frontier experience."))
-	msgbox(format("What would you like to do?"))
 	goto(BattleFrontierController_EventScript_ControllerOptions)
 }
 
 script BattleFrontierController_EventScript_ControllerOptions {
+	msgbox(format("What would you like to do?"))
 	multichoice2(18,0,BattleFrontierController_Text_ControllerOptionSelect)
 	switch(var(VAR_RESULT)) {
 		case 0: # Change Difficulty
@@ -47,7 +47,6 @@ script BattleFrontierController_EventScript_ControllerOptions {
 }
 
 script BattleFrontierController_EventScript_ControllerChangeDifficulty {
-
 	if (flag(FLAG_BATTLE_FRONTIER_FIXED_IV) == TRUE) {
 		msgbox(format("You are currently playing hard mode, where you will face up against difficult opponents regardless of win streak."))
 		msgbox(format("Would you like to switch to normal mode, where opponent difficulty will scale based on your win streak?"))
@@ -57,7 +56,6 @@ script BattleFrontierController_EventScript_ControllerChangeDifficulty {
 		msgbox(format("You are currently playing normal mode, where your opponents strength will scale from easy to hard at 49 wins."))
 		msgbox(format("Would you like to switch to hard mode, with all opponents scaled up from the start?"))
 	}
-
 	yesnobox(0, 8)
 	if (var(VAR_RESULT) == YES) {
 		if (flag(FLAG_BATTLE_FRONTIER_FIXED_IV) == TRUE) {
@@ -70,27 +68,21 @@ script BattleFrontierController_EventScript_ControllerChangeDifficulty {
 			msgbox(format("Done! You'll now play against difficult Battle Frontier opponents only."))
 		}
 	}
-
-	msgbox(format("Feel free to ask me again if you change your mind!"))
-	goto(BattleFrontierController_EventScript_ControllerAsk)
+	goto(BattleFrontierController_EventScript_ControllerOptions)
 }
 
 script BattleFrontierController_EventScript_ControllerChangeOpponents {
-
 	if (flag(FLAG_BATTLE_FRONTIER_GENERATOR) == TRUE) {
 		msgbox(format("You are currently playing against modern Battle Frontier opponents."))
-		msgbox(format("Keep in mind, you may experience bugs or crashes using this mode during development."))
 		msgbox(format("Please note, all other opponent behavior-related settings will be ignored in legacy mode."))
 		msgbox(format("Would you like to switch to legacy Battle Frontier opponents?"))
 	}
 	else # Frontier Generator not enabled
 	{
 		msgbox(format("You are currently playing against legacy Battle Frontier opponents."))
-		msgbox(format("Modern Battle Frontier opponents are randomly generated, and include new species, items, formes and more."))
-		msgbox(format("Keep in mind, you may experience bugs or crashes using this mode during development."))
+		msgbox(format("Modern Battle Frontier opponents are randomly generated and include new species, items, formes and more."))
 		msgbox(format("Would you like to switch to modern Battle Frontier opponents?"))
 	}
-
 	yesnobox(0, 8)
 	if (var(VAR_RESULT) == YES){
 		if (flag(FLAG_BATTLE_FRONTIER_GENERATOR) == TRUE) {
@@ -103,22 +95,36 @@ script BattleFrontierController_EventScript_ControllerChangeOpponents {
 			msgbox(format("Done! You'll now play against modern Battle Frontier opponents."))
 		}
 	}
-
-	msgbox(format("Feel free to ask me again if you change your mind!"))
-	goto(BattleFrontierController_EventScript_ControllerAsk)
+	goto(BattleFrontierController_EventScript_ControllerOptions)
 }
 
 script BattleFrontierController_EventScript_ControllerChangeBehavior {
-
 	msgbox(format("I can change how modern Battle Frontier teams are built."))
+
+	switch(var(VAR_FRONTIER_METHOD)) {
+		case 0: # Default
+			msgbox(format("You are currently using the DEFAULT setting."))
+		case 1: # Random
+			msgbox(format("You are currently using the RANDOM setting."))
+		case 2: # Filtered
+			msgbox(format("You are currently using the FILTERED setting."))
+		case 3: # Filtered (Attacks Only)
+			msgbox(format("You are currently using the FILTERED ATTACKS setting."))
+		case 4: # Filtered (Ranking)
+			msgbox(format("You are currently using the RANKED setting."))
+		case 5: # Filtered (Ranking, Attacks Only)
+			msgbox(format("You are currently using the RANKED ATTACKS setting."))
+	}
+
 	msgbox(format("Which option would you like to use?"))
 
 	multichoice2(18,0,BattleFrontierController_Text_ControllerOptionSelectBehavior)
-	copyvar(VAR_FRONTIER_METHOD, VAR_RESULT)
+	if (var(VAR_RESULT) != MULTI_B_PRESSED) {
+		copyvar(VAR_FRONTIER_METHOD, VAR_RESULT)
+		msgbox(format("Modern teams have been updated successfully!"))
+	}
 
-	msgbox(format("Modern teams have been updated successfully!"))
-
-	goto(BattleFrontierController_EventScript_ControllerAsk)
+	goto(BattleFrontierController_EventScript_ControllerOptions)
 }
 
 script BattleFrontierController_EventScript_ControllerChangeMusic {
@@ -137,7 +143,7 @@ script BattleFrontierController_EventScript_ControllerChangeBanlist {
 		case 1: # Dynamax Battle
 			goto(BattleFrontierController_EventScript_ControllerChangeBanlistDynamax)
 		default: # Fallback
-			goto(BattleFrontierController_EventScript_ControllerAsk)
+			goto(BattleFrontierController_EventScript_ControllerOptions)
 	}
 }
 
@@ -149,9 +155,6 @@ script BattleFrontierController_EventScript_ControllerChangeBanlistStandardMegas
 		if (var(VAR_RESULT) == YES){
 			msgbox(format("Got it! Megas will now be banned."))
 			clearflag(FLAG_BATTLE_FRONTIER_ALLOW_MEGA)
-		} else {
-			msgbox(format("Got it! Megas will now be allowed."))
-			setflag(FLAG_BATTLE_FRONTIER_ALLOW_MEGA)
 		}
 	} 
 	else // Megas banned
@@ -161,9 +164,6 @@ script BattleFrontierController_EventScript_ControllerChangeBanlistStandardMegas
 		if (var(VAR_RESULT) == YES){
 			msgbox(format("Got it! Megas will now be allowed."))
 			setflag(FLAG_BATTLE_FRONTIER_ALLOW_MEGA)
-		} else {
-			msgbox(format("Got it! Megas will now be banned."))
-			clearflag(FLAG_BATTLE_FRONTIER_ALLOW_MEGA)
 		}
 	}
 	goto(BattleFrontierController_EventScript_ControllerChangeBanlist)
@@ -177,9 +177,6 @@ script BattleFrontierController_EventScript_ControllerChangeBanlistStandardZmove
 		if (var(VAR_RESULT) == YES){
 			msgbox(format("Got it! Z-Moves will now be banned."))
 			clearflag(FLAG_BATTLE_FRONTIER_ALLOW_ZMOVE)
-		} else {
-			msgbox(format("Got it! Z-Moves will now be allowed."))
-			setflag(FLAG_BATTLE_FRONTIER_ALLOW_ZMOVE)
 		}
 	} 
 	else // Z-Moves banned
@@ -189,9 +186,6 @@ script BattleFrontierController_EventScript_ControllerChangeBanlistStandardZmove
 		if (var(VAR_RESULT) == YES){
 			msgbox(format("Got it! Z-Moves will now be allowed."))
 			setflag(FLAG_BATTLE_FRONTIER_ALLOW_ZMOVE)
-		} else {
-			msgbox(format("Got it! Z-Moves will now be banned."))
-			clearflag(FLAG_BATTLE_FRONTIER_ALLOW_ZMOVE)
 		}
 	}
 	goto(BattleFrontierController_EventScript_ControllerChangeBanlist)
@@ -205,9 +199,6 @@ script BattleFrontierController_EventScript_ControllerChangeBanlistStandardTeras
 		if (var(VAR_RESULT) == YES){
 			msgbox(format("Got it! Tera will now be banned."))
 			clearflag(FLAG_BATTLE_FRONTIER_ALLOW_TERA)
-		} else {
-			msgbox(format("Got it! Tera will now be allowed."))
-			setflag(FLAG_BATTLE_FRONTIER_ALLOW_TERA)
 		}
 	} 
 	else // Tera banned
@@ -217,17 +208,12 @@ script BattleFrontierController_EventScript_ControllerChangeBanlistStandardTeras
 		if (var(VAR_RESULT) == YES){
 			msgbox(format("Got it! Tera will now be allowed."))
 			setflag(FLAG_BATTLE_FRONTIER_ALLOW_TERA)
-		} else {
-			msgbox(format("Got it! Tera will now be banned."))
-			clearflag(FLAG_BATTLE_FRONTIER_ALLOW_TERA)
 		}
 	}
 	goto(BattleFrontierController_EventScript_ControllerChangeBanlistStandard)
 }
 
 script BattleFrontierController_EventScript_ControllerChangeBanlistStandard {
-	msgbox(format("These are the options for standard battles."))
-	msgbox(format("Please remember, these rules apply to both you and your opponents!"))
 	msgbox(format("What would you like to change?"))
 	multichoice2(0,0,BattleFrontierController_Text_ControllerChangeRulesStandard)
 	switch(var(VAR_RESULT))
@@ -252,9 +238,6 @@ script BattleFrontierController_EventScript_ControllerChangeBanlistDynamaxGmax {
 		if (var(VAR_RESULT) == YES){
 			msgbox(format("Got it! Gmax will now be banned."))
 			clearflag(FLAG_BATTLE_FRONTIER_ALLOW_GMAX)
-		} else {
-			msgbox(format("Got it! Gmax will now be allowed."))
-			setflag(FLAG_BATTLE_FRONTIER_ALLOW_GMAX)
 		}
 	} 
 	else // Tera banned
@@ -264,17 +247,12 @@ script BattleFrontierController_EventScript_ControllerChangeBanlistDynamaxGmax {
 		if (var(VAR_RESULT) == YES){
 			msgbox(format("Got it! Gmax will now be allowed."))
 			setflag(FLAG_BATTLE_FRONTIER_ALLOW_GMAX)
-		} else {
-			msgbox(format("Got it! Gmax will now be banned."))
-			clearflag(FLAG_BATTLE_FRONTIER_ALLOW_GMAX)
 		}
 	}
 	goto(BattleFrontierController_EventScript_ControllerChangeBanlistDynamax)
 }
 
 script BattleFrontierController_EventScript_ControllerChangeBanlistDynamax {
-	msgbox(format("These are the options for dynamax battles."))
-	msgbox(format("Please remember, these rules apply to both you and your opponents!"))
 	msgbox(format("What would you like to change?"))
 	multichoice2(0,0,BattleFrontierController_Text_ControllerChangeRulesDynamax)
 	switch(var(VAR_RESULT))
@@ -307,7 +285,7 @@ script BattleFrontierController_EventScript_ControllerChangeMusicPage1 {
 		case MULTI_R_PRESSED:
 			goto(BattleFrontierController_EventScript_ControllerChangeMusicPage2)
 		default: 
-			goto(BattleFrontierController_EventScript_ControllerAsk)
+			goto(BattleFrontierController_EventScript_ControllerOptions)
 	}
 	goto(BattleFrontierController_EventScript_ControllerChangeMusicSuccess)
 }
@@ -332,7 +310,7 @@ script BattleFrontierController_EventScript_ControllerChangeMusicPage2 {
 		case MULTI_R_PRESSED:
 			goto(BattleFrontierController_EventScript_ControllerChangeMusicPage3)
 		default: 
-			goto(BattleFrontierController_EventScript_ControllerAsk)
+			goto(BattleFrontierController_EventScript_ControllerOptions)
 	}
 	goto(BattleFrontierController_EventScript_ControllerChangeMusicSuccess)
 }
@@ -357,7 +335,7 @@ script BattleFrontierController_EventScript_ControllerChangeMusicPage3 {
 		case MULTI_R_PRESSED:
 			goto(BattleFrontierController_EventScript_ControllerChangeMusicPage4)
 		default: 
-			goto(BattleFrontierController_EventScript_ControllerAsk)
+			goto(BattleFrontierController_EventScript_ControllerOptions)
 	}
 	goto(BattleFrontierController_EventScript_ControllerChangeMusicSuccess)
 }
@@ -376,7 +354,7 @@ script BattleFrontierController_EventScript_ControllerChangeMusicPage4 {
 		case MULTI_R_PRESSED:
 			goto(BattleFrontierController_EventScript_ControllerChangeMusicPage1)
 		default: 
-			goto(BattleFrontierController_EventScript_ControllerAsk)
+			goto(BattleFrontierController_EventScript_ControllerOptions)
 	}
 	goto(BattleFrontierController_EventScript_ControllerChangeMusicSuccess)
 }
@@ -385,17 +363,7 @@ script BattleFrontierController_EventScript_ControllerChangeMusicSuccess {
 	playse(SE_SUCCESS)
 	msgbox(format("All done! Your music selection has been changed."))
 	waitse
-	goto(BattleFrontierController_EventScript_ControllerAsk)
-}
-
-script BattleFrontierController_EventScript_ControllerAsk {
-	msgbox(format("Do you need me for anything else?"))
-	yesnobox(0, 8)
-    if (var(VAR_RESULT) == YES){
-        goto(BattleFrontierController_EventScript_ControllerOptions)
-    } else {
-		goto(BattleFrontierController_EventScript_ControllerEnd)
-	}
+	goto(BattleFrontierController_EventScript_ControllerOptions)
 }
 
 script BattleFrontierController_EventScript_ControllerEnd {
