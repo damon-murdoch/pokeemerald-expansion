@@ -1060,6 +1060,17 @@ u16 GetGeneratorSpecies(struct GeneratorSpecies * species)
     }
 }
 
+u16 GetDefaultSpecies(void) 
+{
+    #if SPECIES_LIST_TRAINER_CLASS_DEFAULT_STANDARD_COUNT == 0
+    return SPECIES_NONE;
+    #elif SPECIES_LIST_TRAINER_CLASS_DEFAULT_STANDARD_COUNT == 1
+    return gSpeciesListTrainerClassDefaultStandard[0];
+    #else
+    return gSpeciesListTrainerClassDefaultStandard[Random() % SPECIES_LIST_TRAINER_CLASS_DEFAULT_STANDARD_COUNT];
+    #endif
+}
+
 u16 GetGeneratorRestricted(struct GeneratorSpecies * species)
 {
     // Switch on number of restricteds
@@ -1072,4 +1083,15 @@ u16 GetGeneratorRestricted(struct GeneratorSpecies * species)
         default: // Other cases
             return (species->restricted[Random() % (species->restrictedCount)]);
     }
+}
+
+u16 GetDefaultRestricted(void)
+{
+    #if SPECIES_LIST_TRAINER_CLASS_DEFAULT_RESTRICTED_COUNT == 0
+    return SPECIES_NONE;
+    #elif SPECIES_LIST_TRAINER_CLASS_DEFAULT_RESTRICTED_COUNT == 1
+    return gSpeciesListTrainerClassDefaultRestricted[0];
+    #else
+    return gSpeciesListTrainerClassDefaultRestricted[Random() % SPECIES_LIST_TRAINER_CLASS_DEFAULT_RESTRICTED_COUNT];
+    #endif
 }
