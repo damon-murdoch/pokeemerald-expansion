@@ -19,4 +19,7 @@ void InitGeneratorSpeciesForTrainerClass(struct GeneratorSpecies * species, u8 t
 bool8 InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 trainerClass, bool8 force);
 
 u16 GetGeneratorSpecies(struct GeneratorSpecies * species);
+u16 GetDefaultSpecies(void);
+
 u16 GetGeneratorRestricted(struct GeneratorSpecies * species);
+u16 GetDefaultRestricted(void);

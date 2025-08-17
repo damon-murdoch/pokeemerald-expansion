@@ -94,7 +94,7 @@
 // If you do not wish to use these values, please comment them out :)
 
 // #define BFG_IV_LVL_50 x
-// #define BFG_IV_LVL_OPEN x
+// #define BFG_IV_LVL_OPEN 31
 
 #define BFG_BST_LVL_TENT_MIN 200
 #define BFG_BST_LVL_TENT_MAX 500
@@ -174,6 +174,9 @@
 #define BFG_IV_HA_CHANCE_MAX 2 // 1/2
 
 // *** SPECIES ***
+
+#define BFG_TEAM_GENERATOR_MON_SELECT_SET_FAILURE_LIMIT 10  // Number of times mon selection can fail consecutively before loosening restrictions
+#define BFG_TEAM_GENERATOR_MON_SELECT_BST_FAILURE_LIMIT 20  // Number of times mon selection can fail consecutively before loosening restrictions
 
 #define BFG_LVL_50_ALLOW_BANNED_SPECIES FALSE   // Allow banned species (e.g. Kyogre,Groudon) in Frontier Lvl. 50 Mode
 #define BFG_LVL_OPEN_ALLOW_BANNED_SPECIES TRUE  // Allow banned species (e.g. Kyogre,Groudon) in Frontier Open Level Mode

@@ -3104,7 +3104,7 @@ bool32 GenerateTrainerPokemonHandleForme(struct Pokemon * mon, u16 speciesId, st
                     }
                 }; break;
                 default:
-                    DebugPrintf("No form changes/fusions for speciesId %d ...", speciesId);
+                    DebugPrintf("No form changes/fusions for speciesId %S ...", GetSpeciesName(speciesId));
                 break;
             }
         }
@@ -3281,7 +3281,7 @@ void ShuffleTrainerParty(u8 firstMonId, u8 monCount) {
 void GenerateTrainerParty(u16 trainerId, u8 firstMonId, u8 monCount, u8 level)
 {
     u16 speciesId, bst;
-    u8 i,j;
+    u8 i,j,attempts;
 
     struct GeneratorProperties properties;
     InitGeneratorProperties(&properties, level, 0);
@@ -3337,9 +3337,12 @@ void GenerateTrainerParty(u16 trainerId, u8 firstMonId, u8 monCount, u8 level)
     // or duplicate held items.
 
     i = 0;
-    while(i != monCount) 
-    {
-        DebugPrintf("Generating mon number %d ...", i);
+    attempts = 0;
+    while(i != monCount)
+    {        
+        attempts++;
+
+        DebugPrintf("Generating mon number %d ... (attempt: %d)", i, attempts);
 
         // Special mons switch set
         if (specialMons) {
@@ -3354,44 +3357,66 @@ void GenerateTrainerParty(u16 trainerId, u8 firstMonId, u8 monCount, u8 level)
             properties.maxBST = fixedIVMaxBSTLookup[properties.fixedIV];
         }
 
+        // Update generator mode (handle fixed values)
+        UpdateGeneratorForLvlMode(&properties, lvlMode);
+
         // Sample random species from the mon count
         if (((BFG_LVL_50_ALLOW_BANNED_SPECIES && GET_LVL_MODE() == FRONTIER_LVL_50) || (BFG_LVL_OPEN_ALLOW_BANNED_SPECIES && GET_LVL_MODE() == FRONTIER_LVL_OPEN) || (BFG_LVL_TENT_ALLOW_BANNED_SPECIES && GET_LVL_MODE() == FRONTIER_LVL_TENT)) && (i % 2 == 1))
         {
-            // Restricted species
-            speciesId = GetGeneratorRestricted(&species); // Pick restricteds when eligible on 2nd, 4th species
-            properties.maxBST = BFG_BST_MAX; // Ignore Max. BST
+            // Pick restricteds when eligible on 2nd, 4th species
+
+            // If attempts have exceeded 'set' failure limit, use default set
+            if (attempts < BFG_TEAM_GENERATOR_MON_SELECT_SET_FAILURE_LIMIT) 
+                speciesId = GetGeneratorRestricted(&species);
+            else
+                speciesId = GetDefaultRestricted();
+
+            // Ignore Max. BST
+            properties.maxBST = BFG_BST_MAX;
         }
         else // Standard species
-            speciesId = GetGeneratorSpecies(&species); // Pick normal species
-        bst = GetTotalBaseStat(speciesId);
+        {
+            // If attempts have exceeded 'set' failure limit, use default set
+            if (attempts < BFG_TEAM_GENERATOR_MON_SELECT_SET_FAILURE_LIMIT)
+                speciesId = GetGeneratorSpecies(&species);
+            else
+                speciesId = GetDefaultSpecies();
+        }
+            
+        // If we have not reached the selection failure limit
+        if (attempts < BFG_TEAM_GENERATOR_MON_SELECT_BST_FAILURE_LIMIT) 
+        {
+            bst = GetTotalBaseStat(speciesId);
 
-        DebugPrintf("Species selected: '%d' ...", speciesId);
+            DebugPrintf("Species selected: '%S' ...", GetSpeciesName(speciesId));
 
-        if ((HAS_MEGA_EVOLUTION(speciesId) && ((properties.fixedIV) >= BFG_ITEM_IV_ALLOW_MEGA)) || ((speciesId == SPECIES_ROTOM) && (BFG_FORME_CHANCE_ROTOM >= 1)))
-            properties.minBST = BFG_BST_MIN; // Ignore Min. BST
+            if ((HAS_MEGA_EVOLUTION(speciesId) && ((properties.fixedIV) >= BFG_ITEM_IV_ALLOW_MEGA)) || ((speciesId == SPECIES_ROTOM) && (BFG_FORME_CHANCE_ROTOM >= 1)))
+                properties.minBST = BFG_BST_MIN; // Ignore Min. BST
 
-        DebugPrintf("Checking min (%d) / max (%d) bst requirements ...", properties.minBST, properties.maxBST);
+            DebugPrintf("Checking min (%d) / max (%d) bst requirements ...", properties.minBST, properties.maxBST);
 
-        // Check BST limits
-        if ((bst < (properties.minBST)) || (bst > (properties.maxBST)))
-            continue; // Next species
+            // Check BST limits
+            if ((bst < (properties.minBST)) || (bst > (properties.maxBST)))
+                continue; // Next species
 
-        DebugPrintf("Checking species validity for frontier level ...");
+            DebugPrintf("Checking species validity for frontier level ...");
 
-        // Species is not allowed for this format
-        if (!(SpeciesValidForFrontierLevel(speciesId)))
-            continue; // Next species
+            // Species is not allowed for this format
+            if (!(SpeciesValidForFrontierLevel(speciesId)))
+                continue; // Next species
+        }
 
+        // Ignore BST checks if limit reached
+        
         DebugPrintf("Checking for duplicate species ...");
 
-        // Ensure this pokemon species isn't a duplicate.
         for (j = 0; j < i + firstMonId; j++)
-            if (GetMonData(&gEnemyParty[j], MON_DATA_SPECIES, NULL) == speciesId)
+            if (GET_BASE_SPECIES_ID(GetMonData(&gEnemyParty[j], MON_DATA_SPECIES, NULL)) == GET_BASE_SPECIES_ID(speciesId))
                 break;
         if (j != i + firstMonId)
             continue;
 
-        DebugPrintf("Generating set for species %d ...", speciesId);
+        DebugPrintf("Generating set for species %S ...", GetSpeciesName(speciesId));
 
         // Generate Trainer Pokemon
         if (GenerateTrainerPokemonHandleForme(&gEnemyParty[i + firstMonId], speciesId, &properties))
@@ -3399,26 +3424,29 @@ void GenerateTrainerParty(u16 trainerId, u8 firstMonId, u8 monCount, u8 level)
             // Add Pokemon item to items list
             items[i] = GetMonData(&gEnemyParty[i + firstMonId], MON_DATA_HELD_ITEM);
             DebugPrintMonData(&gEnemyParty[i + firstMonId]);
+            attempts = 0;
             i++;
+        }
+    }
+
+    // If items are allowed
+    if (!(lvlMode == FRONTIER_LVL_TENT && BFG_TENT_ALLOW_ITEM == FALSE)) {
+
+        DebugPrintf("Allocating remaining items ...");
+
+        // Allocate remaining items
+        for(i=0; i < monCount; i++)
+        {
+            if (((items[i]) == ITEM_NONE) && (!(RANDOM_CHANCE(BFG_NO_ITEM_SELECTION_CHANCE))))
+            {
+                items[i] = GetSpeciesItem(&gEnemyParty[i + firstMonId], items, PARTY_SIZE);
+                SetMonData(&gEnemyParty[i + firstMonId], MON_DATA_HELD_ITEM, &(items[i]));
+            }
         }
     }
 
     // Shuffle trainer party members
     ShuffleTrainerParty(firstMonId, monCount);
-
-    // If battle tent items disabled, exit before applying items
-    if (lvlMode == FRONTIER_LVL_TENT && BFG_TENT_ALLOW_ITEM == FALSE)
-        return; 
-
-    // Allocate remaining items
-    for(i=0; i < monCount; i++)
-    {
-        if (((items[i]) == ITEM_NONE) && (!(RANDOM_CHANCE(BFG_NO_ITEM_SELECTION_CHANCE))))
-        {
-            items[i] = GetSpeciesItem(&gEnemyParty[i + firstMonId], items, PARTY_SIZE);
-            SetMonData(&gEnemyParty[i + firstMonId], MON_DATA_HELD_ITEM, &(items[i]));
-        }
-    }
 
     DebugPrintf("Done.");
 }
@@ -3899,7 +3927,7 @@ void FillFacilityTrainerParty(u16 trainerId, u32 otID, u8 firstMonId, u8 challen
     while(i != FRONTIER_PARTY_SIZE)
     {
         speciesId = gFrontierTempParty[i];
-        DebugPrintf("Generating set for species %d ...", speciesId);
+        DebugPrintf("Generating set for species %S ...", GetSpeciesName(speciesId));
 
         // Use challenge num as seed
         SeedRng2(fixedSeed);
