@@ -24,7 +24,6 @@
 #define ALWAYS_SELECT_COMMON \
 	[MOVE_SPORE] = TRUE, \
 	[MOVE_FAKE_OUT] = TRUE, \
-	[MOVE_METEOR_BEAM] = TRUE, \
 	[MOVE_REVIVAL_BLESSING] = TRUE
 
 const bool8 gBattleFrontierMoveAlwaysSelectSingles[MOVES_COUNT] =

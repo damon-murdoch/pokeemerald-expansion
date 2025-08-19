@@ -1702,8 +1702,42 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
         if (move->soundMove == TRUE)
             numSound++;
 
+        // Common move effects
+        switch(move->effect) {
+            case EFFECT_MULTI_HIT:
+                numMultiHit++;
+            break;
+            case EFFECT_TWO_TURNS_ATTACK: 
+            case EFFECT_SEMI_INVULNERABLE:
+                hasTwoTurn = TRUE;
+            break;
+            case EFFECT_LIGHT_SCREEN:
+            case EFFECT_REFLECT:
+            case EFFECT_AURORA_VEIL:
+                numScreens++;
+            break;
+            case EFFECT_FOCUS_ENERGY:
+                numCritModifier++;
+            break;
+            case EFFECT_TRICK_ROOM:
+                hasTrickRoom = TRUE;
+            break;
+            case EFFECT_RECYCLE:
+                hasRecycle = TRUE;
+            break;
+            case EFFECT_FLATTER:
+                hasFlatter = TRUE;
+            break;
+            case EFFECT_SWAGGER:
+                hasSwagger = TRUE;
+            break;
+            case EFFECT_REST:
+                hasRest = TRUE;
+            break;
+        }
+
         // Status Move
-        if (move->category == DAMAGE_CATEGORY_STATUS) 
+        if (move->category == DAMAGE_CATEGORY_STATUS)
         {
             // Increment status counter
             numStatus++; 
@@ -1720,49 +1754,9 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
             // Terrain
             else if (IS_TERRAIN_EFFECT(move->effect))
                 hasTerrain = TRUE; 
-
-            else // Other cases
-            {
-
-                // Other Effects
-                switch(move->effect)
-                {
-                    case EFFECT_LIGHT_SCREEN:
-                    case EFFECT_REFLECT:
-                    case EFFECT_AURORA_VEIL:
-                        numScreens++;
-                    break;
-                    case EFFECT_FOCUS_ENERGY:
-                        numCritModifier++;
-                    break;
-                    case EFFECT_TWO_TURNS_ATTACK: 
-                    case EFFECT_SEMI_INVULNERABLE:
-                        hasTwoTurn = TRUE;
-                    break;
-                    case EFFECT_TRICK_ROOM:
-                        hasTrickRoom = TRUE;
-                    break;
-                    case EFFECT_RECYCLE:
-                        hasRecycle = TRUE;
-                    break;
-                    case EFFECT_FLATTER:
-                        hasFlatter = TRUE;
-                    break;
-                    case EFFECT_SWAGGER:
-                        hasSwagger = TRUE;
-                    break;
-                    case EFFECT_REST:
-                        hasRest = TRUE;
-                    break;
-                }
-            }
         } 
         else // Non-Status Move
         {
-            // Multi-hit moves
-            if (move->effect == EFFECT_MULTI_HIT)
-                numMultiHit++;
-
             // Stat-dropping moves
             if (IS_STAT_REDUCING_EFFECT(move->effect))
                 numStatDrop++;
