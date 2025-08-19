@@ -70,6 +70,7 @@
 #define IS_HAIL_ABILITY(a) ((a == ABILITY_SNOW_WARNING))
 
 #define IS_WEATHER_ABILITY(a) (IS_SUN_ABILITY(a) || IS_RAIN_ABILITY(a) || IS_SAND_ABILITY(a) || IS_HAIL_ABILITY(a))
+#define IS_WEATHER_BONUS_ABILITY(a) (IS_SUN_BONUS_ABILITY(a) || IS_RAIN_BONUS_ABILITY(a) || IS_SAND_BONUS_ABILITY(a) || IS_HAIL_BONUS_ABILITY(a))
 
 #define IS_MISTY_ABILITY(a) (a == ABILITY_MISTY_SURGE)
 #define IS_GRASSY_ABILITY(a) ((a == ABILITY_GRASSY_SURGE) || (a == ABILITY_SEED_SOWER))
@@ -1142,11 +1143,52 @@ static bool8 HandleMove(struct Pokemon * mon, u16 moveId, struct GeneratorProper
                     return TryAddMove(mon, moveId, options);
             }; break;
             // Weather-Reliant Moves
+            case MOVE_WEATHER_BALL: {
+                u16 ability = GetMonAbility(mon);
 
+                // Get spread Physical / Special focus
+                u8 spreadCategory = GetSpreadCategory(mon);
+
+                // If the mon has a weather (or weather bonus) ability, the spread category is special, and the weather ball selection chance is met
+                if ((IS_WEATHER_ABILITY(ability) || IS_WEATHER_BONUS_ABILITY(ability)) && (spreadCategory == BFG_SPREAD_CATEGORY_SPECIAL) && RANDOM_CHANCE(BFG_MOVE_WEATHER_BALL_SELECTION_CHANCE))
+                    return TryAddMove(mon, moveId, options);
+            }; break;
             // Setup Moves (Special)
 
             // Setup Moves (Physical)
 
+            // Self-Destructing Moves
+            case MOVE_MISTY_EXPLOSION: {
+                u16 ability = GetMonAbility(mon);
+
+                // Get spread Physical / Special focus
+                u8 spreadCategory = GetSpreadCategory(mon);
+
+                // Mon has misty surge, spread is special and random selection check passes
+                if ((ability == ABILITY_MISTY_SURGE) && (spreadCategory == BFG_SPREAD_CATEGORY_SPECIAL) && RANDOM_CHANCE(BFG_MOVE_EXPLODE_SELECTION_CHANCE))
+                    return TryAddMove(mon, moveId, options);
+            }; break;
+            case MOVE_SELF_DESTRUCT:
+            case MOVE_EXPLOSION: {
+                // Get spread Physical / Special focus
+                u8 spreadCategory = GetSpreadCategory(mon);
+
+                // Spread is physical and random selection check passes
+                if ((spreadCategory == BFG_SPREAD_CATEGORY_PHYSICAL) && RANDOM_CHANCE(BFG_MOVE_EXPLODE_SELECTION_CHANCE))
+                    return TryAddMove(mon, moveId, options);
+            }; break;
+            // OHKO Moves
+            case MOVE_GUILLOTINE:
+            case MOVE_HORN_DRILL:
+            case MOVE_SHEER_COLD:
+            case MOVE_FISSURE: {
+                // Get spread offensive / defensive focus
+                u8 type = GetSpreadType(mon);
+
+                // Spread is defensive, and the ohko random selection check passed
+                if ((type == BFG_SPREAD_TYPE_DEFENSIVE) && (RANDOM_CHANCE(BFG_MOVE_OHKO_SELECTION_CHANCE)))
+                    return TryAddMove(mon, moveId, options);
+            }; break;
             // General Case
             default: {
                 // Move is not a never-select move, and meets move power requirements
