@@ -361,9 +361,12 @@
 // Unique Attacks / Other
 #define BFG_MOVE_SPECIAL_PROTECT_SELECTION_CHANCE   1   // Protect Selection Chance (Speed Boost / Moody)
 #define BFG_MOVE_PROTECT_SELECTION_CHANCE           0   // Protect Selection Chance (Speed Boost / Moody)
-#define BFG_MOVE_RECOVER_SELECTION_CHANCE           12  // Recovery Selection Chance (Per-Move)
-#define BFG_MOVE_FOUL_PLAY_SELECTION_CHANCE         1   // Foul Play Selection Chance (Non-Physical Set)
+#define BFG_MOVE_RECOVER_SELECTION_CHANCE           4   // Recovery Selection Chance (Per-Move)
+#define BFG_MOVE_WEATHER_BALL_SELECTION_CHANCE      4   // Weather Ball Selection Chance (Weather abilities)
+#define BFG_MOVE_FOUL_PLAY_SELECTION_CHANCE         4   // Foul Play Selection Chance (Non-Physical Set)
 #define BFG_MOVE_WEATHER_SELECTION_CHANCE           1   // Weather Selection Chance (for relevant ability mons)
+#define BFG_MOVE_EXPLODE_SELECTION_CHANCE           28  // Explosion Selection Chance (Per-Move)
+#define BFG_MOVE_OHKO_SELECTION_CHANCE              28  // OHKO Move Selection Chance (Bulky mons)
 
 // *** ITEMS ***
 
