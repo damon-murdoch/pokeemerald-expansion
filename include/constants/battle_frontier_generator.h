@@ -29,21 +29,21 @@
 #ifdef BFG_RANDOM_BOOL_FIXED
 #define RANDOM_BOOL() (BFG_RANDOM_BOOL_FIXED)
 #else
-#define RANDOM_BOOL() ((bool8)(Random() % 2))
+#define RANDOM_BOOL() ((bool8)(Random2() % 2))
 #endif
 
 // Random Chance (1/x)
 #ifdef BFG_RANDOM_CHANCE_FIXED
 #define RANDOM_CHANCE(x) ((x == 1) ? TRUE : (BFG_RANDOM_CHANCE_FIXED))
 #else
-#define RANDOM_CHANCE(x) (((x) != 0) && ((Random() % (x)) == 0))
+#define RANDOM_CHANCE(x) (((x) != 0) && ((Random2() % (x)) == 0))
 #endif
 
 // Random Range (x-inclusive, y-exclusive)
 #ifdef BFG_RANDOM_RANGE_FIXED
 #define RANDOM_RANGE(x, y) ((x) + ((BFG_RANDOM_RANGE_FIXED) % ((y) - (x))))
 #else
-#define RANDOM_RANGE(x, y) ((x) + (Random() % ((y) - (x))))
+#define RANDOM_RANGE(x, y) ((x) + (Random2() % ((y) - (x))))
 #endif
 
 // Random Offset
@@ -79,6 +79,14 @@ enum {
     BFG_TEAM_GENERATOR_FILTERED_RANKING,
     BFG_TEAM_GENERATOR_FILTERED_RANKING_ATTACKS_ONLY,
     BFG_TEAM_GENERATOR_VARIABLE,
+};
+
+enum {
+    BFG_OPEN_RULES_RESTRICTED_NONE,
+    BFG_OPEN_RULES_RESTRICTED_1,
+    BFG_OPEN_RULES_RESTRICTED_2,
+    BFG_OPEN_RULES_RESTRICTED_ALL,
+    BFG_OPEN_RULES_RESTRICTED_VARIABLE,
 };
 
 enum {

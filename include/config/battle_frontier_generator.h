@@ -17,6 +17,9 @@
 #define BFG_TEAM_GENERATION_METHOD      BFG_TEAM_GENERATOR_FILTERED_RANKING
 #define BFG_VAR_TEAM_GENERATION_METHOD  0   // Used if BFG_TEAM_GENERATION_METHOD is set to 'BFG_TEAM_GENERATOR_VARIABLE'
 
+#define BFG_TEAM_RESTRICTED_COUNT BFG_OPEN_RULES_RESTRICTED_2
+#define BFG_VAR_TEAM_RESTRICTED_COUNT  0   // Used to set how many restricteds should be allowed
+
 // If this variable is set, a random seed will be generated
 // and saved for generating consistent battle factory sets
 // randomly. If this is not set, the challenge number + 
@@ -38,12 +41,12 @@
 #define BFG_TM_INCLUDE_MYTHICAL TRUE   // Allow mythical pokemon to be selected
 #define BFG_TM_CHECK_RECURSIVE  TRUE   // Check recursively for regional formes
 
-#define BFG_TM_OPTIONS_STANDARD_MIN     4   // Min. Number of mons required before fallback is used
-#define BFG_TM_OPTIONS_RESTRICTED_MIN   2   // Min. Number of restricteds required before fallback is used
+#define BFG_TM_OPTIONS_STANDARD_MIN     6   // Min. Number of mons required before fallback is used
+#define BFG_TM_OPTIONS_RESTRICTED_MIN   6   // Min. Number of restricteds required before fallback is used
 
 // Mono-Type Teams
 #define BFG_TM_MONOTYPE_MIN_IV  0       // Min. IVs before monotype teams are allowed
-#define BFG_TM_MONOTYPE_OPEN    TRUE    // Allow Monotype teams in open rules (Restricteds)
+#define BFG_TM_MONOTYPE_OPEN    FALSE   // Allow Monotype teams in open rules (Restricteds)
 #define BFG_TM_MONOTYPE_CHANCE  8       // Chance for monotype teams to be selected by any trainer
 
 // Special Teams (Limited)
@@ -176,7 +179,7 @@
 // *** SPECIES ***
 
 #define BFG_TEAM_GENERATOR_MON_SELECT_SET_FAILURE_LIMIT 10  // Number of times mon selection can fail consecutively before loosening restrictions
-#define BFG_TEAM_GENERATOR_MON_SELECT_BST_FAILURE_LIMIT 20  // Number of times mon selection can fail consecutively before loosening restrictions
+#define BFG_TEAM_GENERATOR_MON_SELECT_STRICT_FAILURE_LIMIT 20  // Number of times mon selection can fail consecutively before loosening restrictions
 
 #define BFG_LVL_50_ALLOW_BANNED_SPECIES FALSE   // Allow banned species (e.g. Kyogre,Groudon) in Frontier Lvl. 50 Mode
 #define BFG_LVL_OPEN_ALLOW_BANNED_SPECIES TRUE  // Allow banned species (e.g. Kyogre,Groudon) in Frontier Open Level Mode
