@@ -565,3 +565,4 @@ gSpecials::
 	def_special EnterCode
 	def_special GetCodeFeedback
 	def_special RefreshQuickStart
+	def_special SetHiddenNature

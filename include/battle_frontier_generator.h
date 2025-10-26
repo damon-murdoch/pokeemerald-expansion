@@ -38,6 +38,8 @@ struct GeneratorMoves {
 // Forme / Gimmick not allowed
 #define BFG_ITEM_IV_BANNED 32
 
+u16 GetFixedSeed(u8 challengeNum);
+
 bool8 HasPhysicalMove(struct Pokemon * mon);
 bool32 GenerateTrainerPokemon(struct Pokemon * mon, u16 speciesId, u8 formeIndex, u16 move, u16 item, struct GeneratorProperties * properties);
 bool32 GenerateTrainerPokemonHandleForme(struct Pokemon * mon, u16 speciesId, struct GeneratorProperties * properties);

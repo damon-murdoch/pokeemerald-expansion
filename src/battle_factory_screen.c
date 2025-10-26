@@ -1742,11 +1742,7 @@ void GenerateFacilitySelectableMons(u8 firstMonId, u8 challengeNum, u8 rentalRan
     u16 speciesId;
     u16 oldSeed = Random2();
 
-    #if BFG_VAR_FACTORY_GENERATOR_SEED != 0
-    u16 fixedSeed = VarGet(BFG_VAR_FACTORY_GENERATOR_SEED);
-    #else
-    u16 fixedSeed = (GET_TRAINER_ID() + challengeNum);
-    #endif
+    u16 fixedSeed = GetFixedSeed(challengeNum);
 
     DebugPrintf("Generating facility selectable Pokemon ...");
 
@@ -1812,7 +1808,7 @@ void GenerateFacilitySelectableMons(u8 firstMonId, u8 challengeNum, u8 rentalRan
 
         // Otherwise, leave as-is
     }
-    SeedRng(oldSeed); // Revert seed
+    SeedRng2(oldSeed); // Revert seed
 
     DebugPrintf("Done.");
 }

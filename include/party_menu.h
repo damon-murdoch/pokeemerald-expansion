@@ -16,9 +16,11 @@ struct PartyMenu
     s8 slotId2;
     u8 action;
     u16 bagItem;
-    s16 data1;           // used variously as a move, counter, moveSlotId, or cursorPos
+    s16 data1;           // used variously as a move, counter, moveSlotId, cursorPos, or indicator that the menu is opened from the field
     s16 learnMoveState;  // data2, used only as a learn move state
 };
+
+#define DATA1_PARTY_MENU_FROM_FIELD -1
 
 extern struct PartyMenu gPartyMenu;
 extern bool8 gPartyMenuUseExitCallback;
@@ -106,6 +108,12 @@ void BufferMoveDeleterNicknameAndMove(void);
 void GetNumMovesSelectedMonHas(void);
 void MoveDeleterChooseMoveToForget(void);
 
+bool32 SetUpFieldMove_Surf(void);
+bool32 SetUpFieldMove_Fly(void);
+bool32 SetUpFieldMove_Waterfall(void);
+bool32 SetUpFieldMove_Dive(void);
+bool32 SetUpFieldMove_RockClimb(void);
+
 void ItemUseCB_ReduceIV(u8 taskId, TaskFunc task);
 void ItemUseCB_IncreaseIV(u8 taskId, TaskFunc task);
 void ItemUseCB_Pokeball(u8 taskId, TaskFunc task);
@@ -132,5 +140,4 @@ static const u8 teraShardTypeLookup[] = {
     [ITEM_STEEL_TERA_SHARD] = TYPE_STEEL,
     [ITEM_WATER_TERA_SHARD] = TYPE_WATER,
 };
-
 #endif // GUARD_PARTY_MENU_H
