@@ -90,7 +90,7 @@ bool8 GetStrictSpeciesChecks(u16 speciesId, struct GeneratorProperties * propert
 #define HAS_HIDDEN_ABILITY(species) (species->abilities[2] != ABILITY_NONE)
 
 #define IS_SPEED_CONTROL_EFFECT(e) (((e) == EFFECT_TRICK_ROOM) || ((e) == EFFECT_TAILWIND))
-#define IS_STAT_REDUCING_EFFECT(e) (((e) == MOVE_EFFECT_ATK_MINUS_1) || ((e) == MOVE_EFFECT_DEF_MINUS_1) || ((e) == MOVE_EFFECT_SPD_MINUS_1) ||  ((e) == MOVE_EFFECT_SP_ATK_MINUS_1) || ((e) == MOVE_EFFECT_SP_ATK_MINUS_2) || ((e) == MOVE_EFFECT_V_CREATE) || ((e) == MOVE_EFFECT_ATK_DEF_DOWN) || ((e) == MOVE_EFFECT_DEF_SPDEF_DOWN) || ((e) == MOVE_EFFECT_SP_DEF_MINUS_1) || ((e) == MOVE_EFFECT_SP_DEF_MINUS_2))
+#define IS_STAT_REDUCING_EFFECT(e) (((e) == EFFECT_ATTACK_DOWN) || ((e) == EFFECT_DEFENSE_DOWN) || ((e) == EFFECT_SPEED_DOWN) ||  ((e) == EFFECT_SPECIAL_ATTACK_DOWN) || ((e) == EFFECT_SPECIAL_DEFENSE_DOWN) || ((e) == EFFECT_ACCURACY_DOWN) || ((e) == EFFECT_EVASION_DOWN) || ((e) == EFFECT_ATTACK_DOWN_2) || ((e) == EFFECT_DEFENSE_DOWN_2) || ((e) == EFFECT_SPEED_DOWN_2) || ((e) == EFFECT_SPECIAL_ATTACK_DOWN_2) || ((e) == EFFECT_SPECIAL_DEFENSE_DOWN_2) || ((e) == EFFECT_ACCURACY_DOWN_2) || ((e) == EFFECT_EVASION_DOWN_2))
 
 #define IS_SLEEP_IMMUNE(ability) ((ability == ABILITY_INSOMNIA) || (ability == ABILITY_VITAL_SPIRIT) || IS_ELECTRIC_ABILITY(ability) || IS_MISTY_ABILITY(ability))
 
@@ -1763,6 +1763,8 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
             case EFFECT_REST:
                 hasRest = TRUE;
             break;
+            default: 
+                DebugPrintf("Unhandled moveEffect: %d", move->effect);
         }
 
         // Status Move

@@ -11186,10 +11186,8 @@ static const u16 sUrsalunaTeachableLearnset[] = {
 };
 
 static const u16 sUrsalunaBloodmoonTeachableLearnset[] = {
-    MOVE_AERIAL_ACE,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
-    MOVE_BULK_UP,
     MOVE_CALM_MIND,
     MOVE_COUNTER,
     MOVE_DIG,
@@ -11202,13 +11200,11 @@ static const u16 sUrsalunaBloodmoonTeachableLearnset[] = {
     MOVE_FURY_CUTTER,
     MOVE_HYPER_BEAM,
     MOVE_ICE_PUNCH,
-    MOVE_METRONOME,
     MOVE_PROTECT,
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_ROAR,
     MOVE_ROCK_SLIDE,
-    MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
     MOVE_SEISMIC_TOSS,
     MOVE_SLEEP_TALK,
@@ -35566,28 +35562,20 @@ static const u16 sWalkingWakeTeachableLearnset[] = {
 #if P_FAMILY_IRON_LEAVES
 static const u16 sIronLeavesTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
-    MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
     MOVE_CALM_MIND,
     MOVE_DOUBLE_EDGE,
-    MOVE_DRAGON_CLAW,
     MOVE_ENDURE,
     MOVE_FACADE,
-    MOVE_FLAMETHROWER,
     MOVE_GIGA_DRAIN,
     MOVE_HYPER_BEAM,
     MOVE_PROTECT,
-    MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_SLEEP_TALK,
     MOVE_SOLAR_BEAM,
-    MOVE_SUNNY_DAY,
-    MOVE_SURF,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
     MOVE_TAUNT,
-    MOVE_WATERFALL,
-    MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_IRON_LEAVES
