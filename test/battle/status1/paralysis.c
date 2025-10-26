@@ -66,7 +66,7 @@ AI_SINGLE_BATTLE_TEST("AI avoids Thunder Wave when it can not paralyse target")
 SINGLE_BATTLE_TEST("Thunder Wave doesn't affect Electric types in Gen6+")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_PIKACHU].types[0] == TYPE_ELECTRIC);
+        ASSUME(GetSpeciesType(SPECIES_PIKACHU, 0) == TYPE_ELECTRIC);
         ASSUME(B_PARALYZE_ELECTRIC >= GEN_6);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_PIKACHU);
@@ -75,5 +75,19 @@ SINGLE_BATTLE_TEST("Thunder Wave doesn't affect Electric types in Gen6+")
     } SCENE {
         MESSAGE("Wobbuffet used Thunder Wave!");
         MESSAGE("It doesn't affect the opposing Pikachu…");
+    }
+}
+
+SINGLE_BATTLE_TEST("Thunder Wave doesn't print an effectiveness message")
+{
+    GIVEN {
+        ASSUME(gSpeciesInfo[SPECIES_PIDGEY].types[1] == TYPE_FLYING);
+        PLAYER(SPECIES_PIDGEY);
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(opponent, MOVE_THUNDER_WAVE); }
+    } SCENE {
+        MESSAGE("The opposing Wobbuffet used Thunder Wave!");
+        NOT MESSAGE("It's super effective!");
     }
 }
