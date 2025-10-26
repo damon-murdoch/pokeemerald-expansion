@@ -5918,8 +5918,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #if P_GEN_8_CROSS_EVOS
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_PEAT_BLOCK, SPECIES_URSALUNA, CONDITIONS({IF_TIME, TIME_NIGHT})},
                                 {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_URSALUNA_BLOODMOON}),
-    },
     #endif
+    },
+    
 #if P_GEN_8_CROSS_EVOS
     [SPECIES_URSALUNA] =
     {
