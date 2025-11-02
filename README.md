@@ -1,213 +1,53 @@
-# Emerald Battle Revolution
-## Pokémon Emerald Decompilation Project, based on the PokeEmerald Expansion Project
-### Created by Damon Murdoch ([@SirScrubbington](https://twitter.com/SirScrubbington))
+# About `pokeemerald-expansion`
 
-## About
+![Gif that shows debugging functionality that is unique to pokeemerald-expansion such as rerolling Trainer ID, Cheat Start, PC from Debug Menu, Debug PC Fill, Pokémon Sprite Visualizer, Debug Warp to Map, and Battle Debug Menu](https://github.com/user-attachments/assets/cf9dfbee-4c6b-4bca-8e0a-07f116ef891c) ![Gif that shows overworld functionality that is unique to pokeemerald-expansion such as indoor running, BW2 style map popups, overworld followers, DNA Splicers, Gen 1 style fishing, OW Item descriptions, Quick Run from Battle, Use Last Ball, Wild Double Battles, and Catch from EXP](https://github.com/user-attachments/assets/383af243-0904-4d41-bced-721492fbc48e) ![Gif that shows off a number of modern Pokémon battle mechanics happening in the pokeemerald-expansion engine: 2 vs 1 battles, modern Pokémon, items, moves, abilities, fully customizable opponents and partners, Trainer Slides, and generational gimmicks](https://github.com/user-attachments/assets/50c576bc-415e-4d66-a38f-ad712f3316be)
 
-Emerald Battle Revolution is a Pokémon Emerald decompilation project which uses the PokeEmerald Expansion project as a base. 
-The goal for this project is to create a sandbox for players to enjoy the incredible post-game content in Emerald such as 
-the Battle Frontier and other facilities using new Pokémon and simple methods for obtaining properly trained, competitive 
-Pokémon easily without the need for modifying save files.
+<!-- If you want to re-record or change these gifs, here are some notes that I used: https://files.catbox.moe/05001g.md -->
 
-## Key Features
+**`pokeemerald-expansion`** is a GBA ROM hack base that equips developers with a comprehensive toolkit for creating Pokémon ROM hacks. **`pokeemerald-expansion`** is built on top of [pret's `pokeemerald`](https://github.com/pret/pokeemerald) decompilation project. **It is not a playable Pokémon game on its own.** 
 
-All of the features provided by the pokeemerald-expanded upcoming branch are included, of which there are too many to feature here. 
-Many of these features are still in development, so you are likely to encounter bugs or other mechanical issues while playing. 
-If you experience an issue and would like to report it, please open an issue [here](https://github.com/damon-murdoch/pokeemerald-expansion/issues).
+# [Features](FEATURES.md)
 
-For more information about the pokeemerald-expanded project, please 
-check out their [github repository](https://github.com/rh-hideout/pokeemerald-expansion).
+**`pokeemerald-expansion`** offers hundreds of features from various [core series Pokémon games](https://bulbapedia.bulbagarden.net/wiki/Core_series), along with popular quality-of-life enhancements designed to streamline development and improve the player experience. A full list of those features can be found in [`FEATURES.md`](FEATURES.md).
 
-### Quick Start
+# [Credits](CREDITS.md)
 
-When starting the game you will be given $500,000 and a Volcarona for ingame battling and Flame Body, 
-as well as a Smeargle for using HMs (Waterfall, Dive, Surf, Fly). You will spawn outside the 
-Battle Tower, with the story completed up to becoming the champion.
+ [![](https://img.shields.io/github/all-contributors/rh-hideout/pokeemerald-expansion/upcoming)](CREDITS.md)
 
-All essential items can be purchased from the Battle Frontier Underground, for which the 
-closest entrance is immediately South of the Battle Tower.
+If you use **`pokeemerald-expansion`**, please credit **RHH (Rom Hacking Hideout)**. Optionally, include the version number for clarity.
 
-### Battle Frontier Underground
+```
+Based off RHH's pokeemerald-expansion 1.13.3 https://github.com/rh-hideout/pokeemerald-expansion/
+```
 
-The Battle Frontier Underground is a new underground shopping area in the Battle Frontier, which 
-allows the players to buy pretty much anything you could need for making a competitive team. 
+Please consider [crediting all contributors](CREDITS.md) involved in the project!
 
-This includes, but is not limited to:
+# Choosing `pokeemerald` or **`pokeemerald-expansion`**
 
-* Legendary Pokémon Shop
-* Legendary Forme-Changing Item Shop
+- **`pokeemerald-expansion`** supports multiplayer functionality with other games built on **`pokeemerald-expansion`**. It is not compatible with official Pokémon games.
+- If compatibility with official games is important, use [`pokeemerald`](https://github.com/pret/pokeemerald). Otherwise, we recommend using **`pokeemerald-expansion`**.
+- **`pokeemerald-expansion`** incorporates regular updates from `pokeemerald`, including bug fixes and documentation improvements.
 
-* Pokémon Day Care, containing the following:
-  * Pokémon Breeder (Purchase any level 1 first evolution for $4,000)
-  * Evolution Item Shop
+# [Getting Started](INSTALL.md)
 
-* PokeDrugs Shop (Feathers/Drugs, Ability Changers, PP Up/Max, Bottle Cap)
-* Nature Mint Shop
+❗❗ **Important**: Do not use GitHub's "Download Zip" option as it will not include commit history. This is necessary if you want to update or merge other feature branches. 
 
-* Training Item Shop (Rare/XP Candy, Macho/Power Items, etc.)
-* Tera Shard Shop (Can be used directly on Pokémon to change Tera Type)
+If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/) has a [guide to forking and cloning the repository](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/The-Basics-of-GitHub). Then you can follow one of the following guides:
 
-* Pokémon Center, containing the following:
-  * Quick Start Refresh NPC, for updating any missing values from newer EBR versions
+## 📥 [Installing **`pokeemerald-expansion`**](INSTALL.md)
+## 🏗️ [Building **`pokeemerald-expansion`**](INSTALL.md#Building-pokeemerald-expansion)
+## 🚚 [Migrating from **`pokeemerald`**](INSTALL.md#Migrating-from-pokeemerald)
+## 🚀 [Updating **`pokeemerald-expansion`**](INSTALL.md#Updating-pokeemerald-expansion)
 
-* IV Berry Shop (IV Increasing / Decreasing Berries)
-* EV Berry Shop (EV Mochi / EV Decreasing Berries)
+# [Documentation](https://rh-hideout.github.io/pokeemerald-expansion/)
 
-* Games Corner, containing the following:
-  * Bi-directional currency Converter between $ and coins
+For detailed documentation, visit the [pokeemerald-expansion documentation page](https://rh-hideout.github.io/pokeemerald-expansion/).
 
-* Mega Stone Shop
-* Z-Crystal Shop
+# [Contributions](CONTRIBUTING.md)
+If you are looking to [report a bug](CONTRIBUTING.md#Bug-Report), [open a pull request](CONTRIBUTING.md#Pull-Requests), or [request a feature](CONTRIBUTING.md#Feature-Request), our [`CONTRIBUTING.md`](CONTRIBUTING.md) has guides for each.
 
-* Common Battle Item Shop (Choice Items, Life Orb, Assault Vest, etc.)
-* Uncommon / Signature Battle Item Shop (Big Root, Light Ball, etc.)
+# [Community](https://discord.gg/6CzjAG6GZk)
 
-* Type-Specific Battle Item Shop (Silk Scarf, Mystic Water, etc.)
-* Battle Gem Shop (Normal Gem, Fire Gem, etc.)
+[![](https://dcbadge.limes.pink/api/server/6CzjAG6GZk)](https://discord.gg/6CzjAG6GZk)
 
-* Battle Status Berry Shop (e.g. Lum Berry, Sitrus Berry, etc.)
-* Battle Resist Berry Shop (e.g. Coba Berry, Yache Berry, etc.)
-
-* TM/HM Shop (TM01-25)
-* TM/HM Shop (TM26-50)
-
-* Move Tutor (Relearnable Moves, including ones not learnt yet)
-* Move Tutor (Teachable Moves, e.g. Egg/Tutor Moves, other gen TR/TMs, etc.)
-
-* Standard Pokemart
-* All Pokeballs (Including Apricorn Balls)
-
-* High-value item trader (Cherish/Gold Bottle Caps for BP)
-* Gigantamax Expert (Change Pokémon Gigantamax Factor)
-
-The Battle Frontier underground is also filled with machines which
-you can use to convert between Battle Points and $, at an exchange
-rate of $9800 to 1 BP.
-
-### Quality of Life Improvements
-
-#### Battle
-* EV Feathers give 4 EVs per use, Drugs/Mochis give 28 EVs
-* EV decreasing berries reduce by 28 evs
-* IV increasing/decreasing berries added for all types
-* Bottle Cap can be used on a Pokémon to max out all IVs
-* Dynamaxing can be turned on or off from the bag menu
-  * Use the Dynamax Band to enable or disable dynamaxing
-    * While the band is turned on, you will be unable to use Z-Moves/Megas/Tera
-    * While the band is turned off, you will be unable to use Dynamax
-
-#### Overworld / Other
-* Pokeballs can be swapped by using them on a Pokémon from the bag menu
-* Gold Bottle Cap can be exchanged for shiny Pokémon at Pokémon Shops
-* Move Relearner can teach pre-evolution moves
-
-#### Battle Frontier
-* NPCs can be found in all battle facilities for changing battle rules, bgm, etc.
-* Pokémon above or below level 50 will be scaled to level 50
-  * This means over-levelled Pokémon can now compete in level 50 battles
-* Open Level ruleset has also been scaled down to level 50
-  * However, restricted Pokémon (i.e. Groudon, Kyogre, etc.) are now allowed
-
-##### Feature Table
-
-Please see below for the list of features which are supported in each Battle Frontier facility.
-
-| Facility Name  | Level Scaling   | New Species   | 4 Pokémon (Doubles) | Total |
-| -------------- | --------------- | ------------- | ------------------- | ----- |
-| Battle Arena   | Yes             | Yes           | N/A                 | 2/2   |
-| Battle Dome    | Yes             | No            | No                  | 2/3   |
-| Battle Factory | Yes             | Yes           | No                  | 3/3   |
-| Battle Palace  | Yes             | Yes           | No                  | 3/3   |
-| Battle Pike    | Yes             | Yes           | N/A                 | 2/2   |
-| Battle Pyramid | Yes             | Yes           | N/A                 | 2/2   |
-| Battle Tower   | Yes             | Yes           | Yes                 | 3/3   |
-
-Please see below for the list of features which are supported in each Battle Tent.
-
-| Facility Name   | Level Scaling   | New Species   | Total |
-| --------------- | --------------- | ------------- | ----- |
-| Fallarbor  Tent | Yes             | Yes           | 2/2   |
-| Slateport  Tent | Yes             | Yes           | 2/2   |
-| Verdanturf Tent | Yes             | Yes           | 2/2   |
-
-## Future Changes
-For a list of future changes which are intended for this project, 
-please check the [issues page](https://github.com/damon-murdoch/pokeemerald-expansion/issues). 
-
-Please note, that this list is subject to change and planned features may be added or removed at any time.
-
-### Bug Fixes / Suggestions
-If you experience any issues with the application, or would like to suggest improvements you can [open an issue](https://github.com/damon-murdoch/emerald-battle-revolution/issues/new/choose) or please feel free to contact me on twitter at [@SirScrubbington](https://twitter.com/SirScrubbington).
-
-## Useful Links 
-
-* [PokeEmerald Expansion Repository](https://github.com/rh-hideout/pokeemerald-expansion)
-* [PokeEmerald Install / Build Guide](./INSTALL.md)
-* [PokeEmerald Tutorials](https://github.com/pret/pokeemerald/wiki/Tutorials)
-* [Dragapult.xyz Main Site](https://www.dragapult.xyz)
-* [Github Project](https://github.com/users/damon-murdoch/projects/1)
-* [Github Issues & Milestones](https://github.com/damon-murdoch/dragapult-emerald/milestones)
-
-## Credits
-
-Not all of the below features have persisted in the latest version, but these tutorials helped me learn the
-codebase and otherwise contributed to development of the project greatly.
-
-* The entire [PokeEmerald-Expansion development team](https://github.com/rh-hideout/pokeemerald-expansion/wiki/Credits/_edit), for developing and maintaining the incredible source image this project uses
-
-* [Avara](https://www.pokecommunity.com/member.php?u=294199), for creating the [Changing Birch's Intro Pokémon](https://www.pokecommunity.com/showpost.php?p=9967857&postcount=6) tutorial
-
-* `SonikkuA-DatH`, for creating the [Make space for EWRAM Data for Summary Screen](https://github.com/pret/pokeemerald/wiki/Make-space-for-EWRAM-Data-for-Summary-screen) tutorial
-
-* `Jaizu`, for creating the [Not showing dex entries until getting the Pokédex](https://github.com/pret/pokeemerald/wiki/Not-showing-dex-entries-until-getting-the-Pok%C3%A9dex) tutorial
-
-* `Anon822`, for creating the [Wrong Save Type Error Screen](https://www.pokecommunity.com/showpost.php?p=10449518) tutorial
-
-* `FlameTix`, for creating the [Implement Missing Text Function RESET_FONT](https://github.com/pret/pokeemerald/wiki/Implement-Missing-Text-Function-RESET_FONT) tutorial
-
-* `Ghoulslash`, for creating the following tutorials: 
-  * [Surf Dismount Fix](https://github.com/pret/pokeemerald/wiki/Surfing-Dismount-Ground-Effects)
-  * [Better Reflections](https://github.com/pret/pokeemerald/wiki/Reflections)
-  * [Repeated Medicine Use](https://github.com/pret/pokeemerald/wiki/Repeated-Field-Medicine-Use)
-  * [Plural Give-Item Command](https://github.com/pret/pokeemerald/wiki/Plural-Giveitem)
-
-* `LOuroboros`, for creating the following tutorials:
-  * [Camera Wave Fix](https://github.com/pret/pokeemerald/wiki/Keep-the-Camera-from-Making-Waves)
-  * [Infinite TM usage](https://github.com/pret/pokeemerald/wiki/Infinite-TM-usage)
-  * [DPPt Style 2-in-1 Bike](https://www.pokecommunity.com/showpost.php?p=10217718&postcount=172)
-  * [Party swap with select](https://github.com/pret/pokeemerald/compare/master...LOuroboros:partyScrQuickSwap)
-  * [Nicknaming as an option in the Pokémon Party Screen](https://github.com/pret/pokeemerald/wiki/Nickname-your-Pok%C3%A9mon-from-the-party-menu)
-  * [Hidden Power type in battle menu](https://www.pokecommunity.com/showpost.php?p=10269149)
-
-* `Jirachii`, for creating the [Hidden Power type in summary screen](https://www.pokecommunity.com/threads/simple-modifications-directory.416647/post-10269132) tutorial.
-
-* `EllaBrella`, for creating the [Increase Text Speed Beyond Fast](https://www.pokecommunity.com/showpost.php?p=10400198) tutorial
-
-* `Hiram Anderson`, for creating the [Extra Save Space](https://github.com/pret/pokeemerald/wiki/Extra-save-space-with-two-lines-of-code) tutorial
-
-* `FieryMewtwo`, for creating the following tutorials: 
-  * [Keyboard auto switch](https://github.com/pret/pokeemerald/wiki/Automatically-make-the-keyboard-switch-to-lowercase-after-the-first-character/) 
-  * [Trade with FRLG without beating the game](https://github.com/pret/pokeemerald/wiki/Enable-trade-with-FRLG-without-beating-the-game)
-
-* `voloved`, for creating the following tutorials: 
-  * [Add Sleep Mode](https://github.com/pret/pokeemerald/wiki/Add-Sleep-Mode)
-  * [PC Access in PokeNav](https://github.com/pret/pokeemerald/wiki/Add-PC-Access-in-PokeNav)
-  * [Allow Move Relearner to Teach Moves that Pre Evolutions Know](https://github.com/pret/pokeemerald/wiki/Allow-Move-Relearner-to-Teach-Moves-that-Pre-Evolutions-Know)
-
-* `Mkol103`, for creating the [mid-battle test skip](https://www.pokecommunity.com/showpost.php?p=10266925) tutorial
-
-* `DizzyEgg`, for creating the [Coloured Stats by Nature](https://github.com/pret/pokeemerald/wiki/Colored-stats-by-nature-in-summary-screen) tutorial
-
-* `PokemonCrazy`, for creating the [Show EVs / IVs in Summary](https://www.pokecommunity.com/showpost.php?p=10161688&postcount=77) tutorial
-
-* `huderlem`, for creating [Poryscript](https://github.com/huderlem/poryscript)
-
-## Changelog
-
-For the full changelog for this project, please see the readme [here](./ebr-changelog.md).
-
-## Sponsor this Project
-If you'd like to support this project and other future projects, 
-please feel free to use the paypal domation link below.
-
-https://www.paypal.com/paypalme/sirsc
+Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discord.gg/6CzjAG6GZk) to communicate and organize. Most of our discussions take place there, and we welcome anybody to join us!
