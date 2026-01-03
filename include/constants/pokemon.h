@@ -79,6 +79,10 @@ enum __attribute__((packed)) Type
 // For Silver Bottle Cap
 #define STAT_ALL_MAX   6
 
+// For IV-Reducing Berries
+#define STAT_ATK_MIN 6
+#define STAT_SPE_MIN 7
+
 // Pokémon Stats
 enum __attribute__((packed)) Stat
 {
@@ -176,8 +180,7 @@ enum __attribute__((packed)) Stat
 #define LEVEL_UP_MOVE_LV   0xFE00
 #define LEVEL_UP_MOVE_END  0xFFFF
 
-#define MAX_LEVEL_UP_MOVES  20
-#define MAX_TUTOR_MOVES     255
+#define MAX_LEVEL_UP_MOVES       20
 
 #define MON_MALE       0x00
 #define MON_FEMALE     0xFE

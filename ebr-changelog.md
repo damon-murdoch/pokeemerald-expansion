@@ -3,6 +3,14 @@
 Please see below for the Emerald Battle Revolution project changelog. For changes related to
 the PokeEmerald Expanded project, please see the [PokeEmerald Changelog](./CHANGELOG.md).
 
+## Ver. 3.4.0
+
+Merged upstream changes, changed move relearner to use new expansion system - Moves can now be 
+relearned using the menus, rather than needing an NPC. The actual NPC has been reverted to
+the original behavior, and the extra NPCs have been removed from the underground. The 
+Sample Team shop has been moved to the previous location of the relearners, and the
+existing Sample Team area has been removed.
+
 ## Ver. 3.3.0
 
 Money box window is now hidden while multichoice menus are displayed, increasing the available size

@@ -72,8 +72,6 @@
 #include "constants/rgb.h"
 #include "palette.h"
 #include "battle_util.h"
-#include "pokedex.h"
-
 #include "naming_screen.h"
 
 #define TAG_ITEM_ICON 5500

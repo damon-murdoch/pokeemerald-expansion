@@ -163,16 +163,17 @@ def get_givemon_str(pokemon):
     for _ in range(move_count, 4):
         args.append("MOVE_NONE")
 
-    # Other arguments
-    for arg in OTHER_ARGS:
-        # (GMAX Only) Gmax Switch Forced
-        if arg == "gigantamax" and force_gmax:
-            args.append("TRUE")
-        else:  # General Case
-            if arg in other and other[arg] == "Yes":
-                args.append("TRUE")
-            else:
-                args.append("FALSE")
+    # Shiny
+    if "shiny" in other and other["shiny"] == "Yes":
+        args.append("0") # Always shiny
+    else: 
+        args.append("2") # Never shiny
+
+    # Gigantamax
+    if force_gmax or "gigantamax" in other and other ["gigantamax"] == "Yes":
+        args.append("TRUE")
+    else:
+        args.append("FALSE")
 
     # Tera Type provided
     if "tera type" in other:
@@ -182,6 +183,9 @@ def get_givemon_str(pokemon):
     else: 
         # Use default type
         args.append("FALSE")
+
+    # Set the dynamax level to 10
+    args.append("10")
 
     # Return give-mon string
     return f"givemon({','.join(args)})"

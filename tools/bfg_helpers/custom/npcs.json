@@ -5,39 +5,42 @@
   "BattleFrontier_Underground_B1F": {
     "BattleDomeGreeter": [
       "Welcome to the Battle Frontier Underground!",
-      "You can find anything you need for battling here.",
       "This is the closest entrance for the Battle Dome facility.",
       "Feel free to use your bike!"
     ],
     "BattlePikeGreeter": [
       "Welcome to the Battle Frontier Underground!",
-      "You can find anything you need for battling here.",
       "This is the closest entrance for the Battle Factory and Battle Pike facilities.",
       "Feel free to use your bike!"
     ],
     "BattleTowerGreeter": [
       "Welcome to the Battle Frontier Underground!",
-      "You can find anything you need for battling here.",
       "This is the closest entrance for the Battle Tower, Ranking Hall and BP Exchange Service facilities.",
       "Feel free to use your bike!"
     ],
     "BattlePalaceGreeter": [
       "Welcome to the Battle Frontier Underground!",
-      "You can find anything you need for battling here.",
       "This is the closest entrance for the Battle Palace, POKéMON Center and POKéMART facilities.",
       "Feel free to use your bike!"
     ],
     "BattlePyramidGreeter": [
       "Welcome to the Battle Frontier Underground!",
-      "You can find anything you need for battling here.",
       "This is the best entrance for the Battle Pyramid and Battle Arena facilities.",
       "Feel free to use your bike!"
     ],
     "PokemonCenterGreeter": [
       "Welcome to the Battle Frontier Underground!",
-      "You can find anything you need for battling here.",
       "This is the entrance to the Battle Frontier Underground Pokémon Center.",
       "I hope you enjoy your stay!"
+    ],
+    "ClosedAreaGreeter": [
+      "Welcome to the Battle Frontier Underground!",
+      "This area is currently closed for renovations.",
+      "Sorry for the inconvenience!"
+    ],
+    "ClosedAreaBlocker": [
+      "This area is currently closed for renovations.",
+      "Sorry for the inconvenience!"
     ],
     "LegendaryShop_Visitor1": [
       "Have you been into the POKéMON Day Care yet?",
@@ -60,9 +63,6 @@
     "ChemistShop_Visitor2": [
       "My WEAVILE had a calm nature, but I used a mint to change it to a jolly nature.",
       "It's much faster and stronger now!"
-    ],
-    "ChemistShop_Visitor3": [
-      "If you want to make a simple ev spreads, all you need is 7 of two different types of ev training medicine, and one feather for the leftover stat."
     ],
     "OtherShop_Visitor1": [
       "Have you entered a DYNAMAX BATTLE yet?",
@@ -124,10 +124,6 @@
       "You see that vending machine over there? You can use that to convert BATTLE POINTS to money!",
       "You can't buy anything down here with BP, so you'll need to convert it first."
     ],
-    "BattleSpotEntrance_Visitor1": [
-      "Just inside here is the Rental Hall - Where you can buy pre-trained POKéMON, or even an entire team!",
-      "If you are stuck or just want to try something new, definitely give it a look!"
-    ],
     "GemShop_Visitor1": [
       "Gems are great! They boost the power of a POKéMON's move of the same type once by 30%, but are only used if the move connects!",
       "They pair great with Unburden and Acrobatics, too.",
@@ -160,18 +156,19 @@
       "Wow, they have the complete set of TMs and HMs here!", 
       "I found a few while exploring, but I'll have to buy the rest when I need them."
     ],
-    "MoveRelearner_Visitor1": [
-      "I just finished training up my WHIMSICOTT - And it's only Level 1!",
-      "Any level-up moves it needed, I could teach them to it right here!"
-    ],
-    "MoveTutor_Visitor1": [
-      "I just taught my INCINEROAR FAKE OUT - a move it can normally only learn through breeding!",
-      "I'll definitely have to come back here with my RILLABOOM later!"
-    ],
     "PokeBall_Visitor1": [
       "Did you know? You can swap a POKéMON's POKéBALL by simply using the ball you want on them from your bag!",
       "You'll even get back the ball it was originally captured in, too.",
       "Try it out for yourself!"
+    ],
+    "SampleShop_Visitor1": [
+      "Have you had a look at the sample teams shop yet?",
+      "It's a great way to get started if you aren't sure what to use!",
+      "I hope they add some single battle teams soon, though."
+    ],
+    "SampleShop_Visitor2": [
+      "The sample sets shop is really useful if you want to try some new POKéMON, but aren't sure how to train them.",
+      "It's a great way to save time when experimenting or building a new team!"
     ]
   },
   "BattleFrontier_Underground_B2F_PokeCenter_1F": {
@@ -195,17 +192,6 @@
     "Visitor2": [
       "I've won lots of games at the Battle Frontier, but I'm not sure I'm ready for union room battles just yet ...",
       "I guess the only way to find out is to try!"
-    ]
-  },
-  "BattleFrontier_Underground_B2F_BattleSpot_1F": {
-    "Visitor1": [
-      "Have you had a look at the sample teams shop yet?",
-      "It's a great way to get started if you aren't sure what to use!",
-      "I hope they add some single battle teams soon, though."
-    ],
-    "Visitor2": [
-      "The sample sets shop is really useful if you want to try some new POKéMON, but aren't sure how to train them.",
-      "It's a great way to save time when experimenting or building a new team!"
     ]
   }
 }
