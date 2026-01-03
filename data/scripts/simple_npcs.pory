@@ -18,7 +18,6 @@ script BattleFrontier_Underground_B1F_EventScript_BattleDomeGreeter {
     lock
     faceplayer
     msgbox(format("Welcome to the Battle Frontier Underground!"))
-    msgbox(format("You can find anything you need for battling here."))
     msgbox(format("This is the closest entrance for the Battle Dome facility."))
     msgbox(format("Feel free to use your bike!"))
     release
@@ -30,7 +29,6 @@ script BattleFrontier_Underground_B1F_EventScript_BattlePikeGreeter {
     lock
     faceplayer
     msgbox(format("Welcome to the Battle Frontier Underground!"))
-    msgbox(format("You can find anything you need for battling here."))
     msgbox(format("This is the closest entrance for the Battle Factory and Battle Pike facilities."))
     msgbox(format("Feel free to use your bike!"))
     release
@@ -42,7 +40,6 @@ script BattleFrontier_Underground_B1F_EventScript_BattleTowerGreeter {
     lock
     faceplayer
     msgbox(format("Welcome to the Battle Frontier Underground!"))
-    msgbox(format("You can find anything you need for battling here."))
     msgbox(format("This is the closest entrance for the Battle Tower, Ranking Hall and BP Exchange Service facilities."))
     msgbox(format("Feel free to use your bike!"))
     release
@@ -54,7 +51,6 @@ script BattleFrontier_Underground_B1F_EventScript_BattlePalaceGreeter {
     lock
     faceplayer
     msgbox(format("Welcome to the Battle Frontier Underground!"))
-    msgbox(format("You can find anything you need for battling here."))
     msgbox(format("This is the closest entrance for the Battle Palace, POKéMON Center and POKéMART facilities."))
     msgbox(format("Feel free to use your bike!"))
     release
@@ -66,7 +62,6 @@ script BattleFrontier_Underground_B1F_EventScript_BattlePyramidGreeter {
     lock
     faceplayer
     msgbox(format("Welcome to the Battle Frontier Underground!"))
-    msgbox(format("You can find anything you need for battling here."))
     msgbox(format("This is the best entrance for the Battle Pyramid and Battle Arena facilities."))
     msgbox(format("Feel free to use your bike!"))
     release
@@ -78,9 +73,29 @@ script BattleFrontier_Underground_B1F_EventScript_PokemonCenterGreeter {
     lock
     faceplayer
     msgbox(format("Welcome to the Battle Frontier Underground!"))
-    msgbox(format("You can find anything you need for battling here."))
     msgbox(format("This is the entrance to the Battle Frontier Underground Pokémon Center."))
     msgbox(format("I hope you enjoy your stay!"))
+    release
+    end
+}
+
+# ClosedAreaGreeter
+script BattleFrontier_Underground_B1F_EventScript_ClosedAreaGreeter {
+    lock
+    faceplayer
+    msgbox(format("Welcome to the Battle Frontier Underground!"))
+    msgbox(format("This area is currently closed for renovations."))
+    msgbox(format("Sorry for the inconvenience!"))
+    release
+    end
+}
+
+# ClosedAreaBlocker
+script BattleFrontier_Underground_B1F_EventScript_ClosedAreaBlocker {
+    lock
+    faceplayer
+    msgbox(format("This area is currently closed for renovations."))
+    msgbox(format("Sorry for the inconvenience!"))
     release
     end
 }
@@ -133,15 +148,6 @@ script BattleFrontier_Underground_B1F_EventScript_ChemistShop_Visitor2 {
     faceplayer
     msgbox(format("My WEAVILE had a calm nature, but I used a mint to change it to a jolly nature."))
     msgbox(format("It's much faster and stronger now!"))
-    release
-    end
-}
-
-# ChemistShop_Visitor3
-script BattleFrontier_Underground_B1F_EventScript_ChemistShop_Visitor3 {
-    lock
-    faceplayer
-    msgbox(format("If you want to make a simple ev spreads, all you need is 7 of two different types of ev training medicine, and one feather for the leftover stat."))
     release
     end
 }
@@ -272,16 +278,6 @@ script BattleFrontier_Underground_B1F_EventScript_BattleDomeEntrance_Visitor1 {
     end
 }
 
-# BattleSpotEntrance_Visitor1
-script BattleFrontier_Underground_B1F_EventScript_BattleSpotEntrance_Visitor1 {
-    lock
-    faceplayer
-    msgbox(format("Just inside here is the Rental Hall - Where you can buy pre-trained POKéMON, or even an entire team!"))
-    msgbox(format("If you are stuck or just want to try something new, definitely give it a look!"))
-    release
-    end
-}
-
 # GemShop_Visitor1
 script BattleFrontier_Underground_B1F_EventScript_GemShop_Visitor1 {
     lock
@@ -356,26 +352,6 @@ script BattleFrontier_Underground_B1F_EventScript_TMHMShop_Visitor1 {
     end
 }
 
-# MoveRelearner_Visitor1
-script BattleFrontier_Underground_B1F_EventScript_MoveRelearner_Visitor1 {
-    lock
-    faceplayer
-    msgbox(format("I just finished training up my WHIMSICOTT - And it's only Level 1!"))
-    msgbox(format("Any level-up moves it needed, I could teach them to it right here!"))
-    release
-    end
-}
-
-# MoveTutor_Visitor1
-script BattleFrontier_Underground_B1F_EventScript_MoveTutor_Visitor1 {
-    lock
-    faceplayer
-    msgbox(format("I just taught my INCINEROAR FAKE OUT - a move it can normally only learn through breeding!"))
-    msgbox(format("I'll definitely have to come back here with my RILLABOOM later!"))
-    release
-    end
-}
-
 # PokeBall_Visitor1
 script BattleFrontier_Underground_B1F_EventScript_PokeBall_Visitor1 {
     lock
@@ -383,6 +359,27 @@ script BattleFrontier_Underground_B1F_EventScript_PokeBall_Visitor1 {
     msgbox(format("Did you know? You can swap a POKéMON's POKéBALL by simply using the ball you want on them from your bag!"))
     msgbox(format("You'll even get back the ball it was originally captured in, too."))
     msgbox(format("Try it out for yourself!"))
+    release
+    end
+}
+
+# SampleShop_Visitor1
+script BattleFrontier_Underground_B1F_EventScript_SampleShop_Visitor1 {
+    lock
+    faceplayer
+    msgbox(format("Have you had a look at the sample teams shop yet?"))
+    msgbox(format("It's a great way to get started if you aren't sure what to use!"))
+    msgbox(format("I hope they add some single battle teams soon, though."))
+    release
+    end
+}
+
+# SampleShop_Visitor2
+script BattleFrontier_Underground_B1F_EventScript_SampleShop_Visitor2 {
+    lock
+    faceplayer
+    msgbox(format("The sample sets shop is really useful if you want to try some new POKéMON, but aren't sure how to train them."))
+    msgbox(format("It's a great way to save time when experimenting or building a new team!"))
     release
     end
 }
@@ -430,29 +427,6 @@ script BattleFrontier_Underground_B2F_PokeCenter_2F_EventScript_Visitor2 {
     faceplayer
     msgbox(format("I've won lots of games at the Battle Frontier, but I'm not sure I'm ready for union room battles just yet ..."))
     msgbox(format("I guess the only way to find out is to try!"))
-    release
-    end
-}
-
-# BattleFrontier_Underground_B2F_BattleSpot_1F Scripts
-
-# Visitor1
-script BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Visitor1 {
-    lock
-    faceplayer
-    msgbox(format("Have you had a look at the sample teams shop yet?"))
-    msgbox(format("It's a great way to get started if you aren't sure what to use!"))
-    msgbox(format("I hope they add some single battle teams soon, though."))
-    release
-    end
-}
-
-# Visitor2
-script BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Visitor2 {
-    lock
-    faceplayer
-    msgbox(format("The sample sets shop is really useful if you want to try some new POKéMON, but aren't sure how to train them."))
-    msgbox(format("It's a great way to save time when experimenting or building a new team!"))
     release
     end
 }

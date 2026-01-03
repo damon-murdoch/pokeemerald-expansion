@@ -76,9 +76,6 @@
 #define P_FLAG_FORCE_SHINY      FLAG_FORCE_SHINY       // If this flag is set, all wild and gift Pokémon will forced into being Shiny.
 #define P_FLAG_FORCE_NO_SHINY   FLAG_FORCE_NO_SHINY    // If this flag is set, all wild and gift Pokémon will forced into NOT being Shiny.
 
-// [voloved] Allow Move Relearner to Teach Moves that Pre-Evolutions Know
-#define P_MAX_LEVEL_DIFF_PRE_EV 5
-
 // Go here if you want to disable specific families of Pokémon.
 #include "config/species_enabled.h"
 

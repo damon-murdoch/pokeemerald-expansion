@@ -324,7 +324,7 @@ BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCantAff
 # 183 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCantAfford_Text_0
 # 184 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
-	goto FallarborTown_MoveRelearnersHouse_EventScript_MoveTutorEnd
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertEnd
 	return
 
 

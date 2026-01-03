@@ -181,7 +181,7 @@ script BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpert
 
 script BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCantAfford {
 	msgbox(format("Sorry, you need ¥500 for me to change your POKéMON's gigantamax state!"))
-	goto(FallarborTown_MoveRelearnersHouse_EventScript_MoveTutorEnd)
+	goto(BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertEnd)
 }
 
 script BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCantTeachEgg {
