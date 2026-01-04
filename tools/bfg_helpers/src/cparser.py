@@ -80,6 +80,7 @@ def parse_level_up_learnsets(content):
 
             # Line contains a move
             if clean.startswith("LEVEL_UP_MOVE("):
+
                 # Parse the move name from the level-up move data
                 move = (
                     clean.replace("LEVEL_UP_MOVE(", "")
@@ -88,11 +89,18 @@ def parse_level_up_learnsets(content):
                     .strip()
                 )
 
+                # Parse name, level from the string
+                tokens = clean.replace("LEVEL_UP_MOVE(", "").replace(")", "").replace(",","").strip().split(" ")
+
+                move = {
+                    "name": tokens[1], 
+                    "level": int(tokens[0])
+                }
+
                 # Add sanitised move to the list
                 moves.append(move)
 
     return data
-
 
 def parse_learnsets(content, type="Teachable"):
     # Output data
@@ -128,16 +136,6 @@ def parse_learnsets(content, type="Teachable"):
 
     return data
 
+def parse_species_info(content):
 
-if __name__ == "__main__":
-    with open("include\\constants\\species.h") as f:
-        species = parse_defines(f.readlines())
-
-    with open("src\\data\\pokemon\\teachable_learnsets.h") as f:
-        teachable = parse_learnsets(f.readlines(), "Teachable")
-
-    with open("src\\data\\pokemon\\egg_moves.h") as f:
-        eggmoves = parse_learnsets(f.readlines(), "EggMove")
-
-    with open("src\\data\\pokemon\\level_up_learnsets\\gen_2.h") as f:
-        levelup = parse_level_up_learnsets(f.readlines())
+    print(content)
