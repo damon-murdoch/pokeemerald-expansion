@@ -60,3 +60,4 @@ tools/compresSmol/compresSmolTilemap
 __pycache__
 tools/bfg_helpers/trainer_mons_coverage.json
 tools/bfg_helpers/ingame_trainer_mons_types.json
+tools/bfg_helpers/learnset_data.json

@@ -51,6 +51,30 @@ def parse_defines(content):
     return data
 
 
+def substitute_defines(content, defines):
+
+    new_content = []
+
+    for line in content:
+
+        new_line = []
+
+        tokens = line.split(" ")
+
+        for token in tokens:
+            while token in defines:
+                # Infinite loop failsafe
+                if token == defines[token]:
+                    break
+                print("token replaced:", token, defines[token])
+                token = defines[token]
+            new_line.append(str(token))
+
+        new_content.append(" ".join(new_line))
+
+    return new_content
+
+
 def parse_level_up_learnsets(content):
     # Output data
     data = {}
@@ -90,17 +114,21 @@ def parse_level_up_learnsets(content):
                 )
 
                 # Parse name, level from the string
-                tokens = clean.replace("LEVEL_UP_MOVE(", "").replace(")", "").replace(",","").strip().split(" ")
+                tokens = (
+                    clean.replace("LEVEL_UP_MOVE(", "")
+                    .replace(")", "")
+                    .replace(",", "")
+                    .strip()
+                    .split(" ")
+                )
 
-                move = {
-                    "name": tokens[1], 
-                    "level": int(tokens[0])
-                }
+                move = {"name": tokens[1], "level": int(tokens[0])}
 
                 # Add sanitised move to the list
                 moves.append(move)
 
     return data
+
 
 def parse_learnsets(content, type="Teachable"):
     # Output data
@@ -135,7 +163,3 @@ def parse_learnsets(content, type="Teachable"):
                 moves.append(clean.replace(",", ""))
 
     return data
-
-def parse_species_info(content):
-
-    print(content)

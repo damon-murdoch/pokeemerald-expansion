@@ -93,6 +93,7 @@ def is_tagged(species, tag):
 def is_forme(species, forme):
     return "forme" in species and species["forme"] == forme
 
+
 def log_error(message):
     if config.check_config("BFG_PY_LOG_ERRORS") == True:
         print(message)
