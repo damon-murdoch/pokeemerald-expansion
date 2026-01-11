@@ -6,13 +6,13 @@ import os, math, json
 
 # Modify text before printing
 # Allowed options: 'upper', 'lower', None
-TEXT_MODIFIER = 'upper'
+TEXT_MODIFIER = "upper"
 
 # Input File Folder
 INPUT_FOLDER = "tools/bfg_helpers/select"
 
 # Output Directory
-# Please note, any auto-generated scripts 
+# Please note, any auto-generated scripts
 # will need to be added to 'event_scripts.s' manually!
 # Otherwise, the .inc file will not be compiled or used.
 OUTPUT_DIRECTORY = "data/scripts"
@@ -29,16 +29,24 @@ TEXT_GO_BACK = "Go Back"
 # Number of items per page
 ITEMS_PER_PAGE = 6 - INCLUDE_GO_BACK
 
-MENU_X = 0 # X-Coordinate 
-MENU_Y = 0 # Y-Coordinate
+MENU_X = 0  # X-Coordinate
+MENU_Y = 0  # Y-Coordinate
 
 # Controls
 CONTROLS = 'msgbox("L: Previous Page                    R: Next Page\\nA: Confirm                               B: Go Back")'
 
 # Argument Prefixes
-PREFIX = "Auto" # Auto-Generated Prefix
+PREFIX = "Auto"  # Auto-Generated Prefix
 
-def get_multi_select(name:str, items:list, subtitle: str = "", parent: str = "", page: int = 1, page_count: int = 0):
+
+def get_multi_select(
+    name: str,
+    items: list,
+    subtitle: str = "",
+    parent: str = "",
+    page: int = 1,
+    page_count: int = 0,
+):
 
     prefix = common.pory_format(f"{name}")
 
@@ -61,18 +69,15 @@ def get_multi_select(name:str, items:list, subtitle: str = "", parent: str = "",
 
     # Multi-Choice EventScript
     multi_eventscript = [
-        f"script {script_name}_Page{str(page)}", 
-        "{", 
-        f"    multichoice2({MENU_X},{MENU_Y},{text_name}_Page{str(page)})", 
-        "    switch(var(VAR_RESULT))", 
-        "    {"
+        f"script {script_name}_Page{str(page)}",
+        "{",
+        f"    multichoice2({MENU_X},{MENU_Y},{text_name}_Page{str(page)})",
+        "    switch(var(VAR_RESULT))",
+        "    {",
     ]
 
     # Multi-Choice Text
-    multi_text = [
-        f"text {text_name}_Page{str(page)}", 
-        "{"
-    ]
+    multi_text = [f"text {text_name}_Page{str(page)}", "{"]
 
     # Array for sub-menus
     # These will be processed after
@@ -85,28 +90,28 @@ def get_multi_select(name:str, items:list, subtitle: str = "", parent: str = "",
     case_number = 0
     # Loop over the current page items
     for item in current_page:
-        item_name = item['name']
-        item_action = item['action']
+        item_name = item["name"]
+        item_action = item["action"]
 
         # Apply text modifier
-        if TEXT_MODIFIER == 'upper':
+        if TEXT_MODIFIER == "upper":
             item_name = item_name.upper()
-        elif TEXT_MODIFIER == 'lower':
+        elif TEXT_MODIFIER == "lower":
             item_name = item_name.lower()
 
         item_str = f"{script_name}_{common.pory_format(item_name)}_Page1"
-        
+
         multi_eventscript.append(f"        case {case_number}: # {item_name}")
         multi_text.append(f'    "{item_name}$"')
 
         # Item action is string (single script)
         if type(item_action) is str:
             # Split the 'line' on the semicolons
-            for line in item_action.split(';'):
+            for line in item_action.split(";"):
                 multi_eventscript.append(f"            {line}")
         # Item action is list (sub-menu)
-        elif type(item_action) is list: 
-            submenus.append(item) # Add to post-processing
+        elif type(item_action) is list:
+            submenus.append(item)  # Add to post-processing
 
             multi_eventscript.append(f"            goto({item_str})")
 
@@ -120,27 +125,30 @@ def get_multi_select(name:str, items:list, subtitle: str = "", parent: str = "",
     # More than one page
     if page_count > 1:
         # First Page
-        if (page == 1):
+        if page == 1:
             prev_page = page_count
             next_page = 2
         # Last Page
-        elif (page == page_count):
+        elif page == page_count:
             prev_page = page_count - 1
             next_page = 1
-        else: # Other 
+        else:  # Other
             prev_page = page - 1
             next_page = page + 1
 
     # Add Multi-Page Left/Right Options
-    multi_eventscript.append('        case MULTI_L_PRESSED:') # Left Bumper
-    multi_eventscript.append(f'            goto({prefix}_EventScript_{suffix}_Page{str(prev_page)})')
+    multi_eventscript.append("        case MULTI_L_PRESSED:")  # Left Bumper
+    multi_eventscript.append(
+        f"            goto({prefix}_EventScript_{suffix}_Page{str(prev_page)})"
+    )
 
-    multi_eventscript.append('        case MULTI_R_PRESSED:') # Right Bumper
-    multi_eventscript.append(f'            goto({prefix}_EventScript_{suffix}_Page{str(next_page)})')
-
+    multi_eventscript.append("        case MULTI_R_PRESSED:")  # Right Bumper
+    multi_eventscript.append(
+        f"            goto({prefix}_EventScript_{suffix}_Page{str(next_page)})"
+    )
 
     # Add 'Default' Option
-    multi_eventscript.append('        default:')
+    multi_eventscript.append("        default:")
     multi_eventscript.append(f"            goto({parent})")
 
     # Include 'Go Back' Option
@@ -160,27 +168,35 @@ def get_multi_select(name:str, items:list, subtitle: str = "", parent: str = "",
 
     # Leftover options
     if len(leftovers):
-        
-        next_eventscript, next_text = get_multi_select(name, leftovers, subtitle, parent, (page + 1), page_count)
 
-        multi_eventscript.append("") # Add blank line
-        multi_eventscript += next_eventscript # Add next page
+        next_eventscript, next_text = get_multi_select(
+            name, leftovers, subtitle, parent, (page + 1), page_count
+        )
 
-        multi_text.append("") # Add blank line
-        multi_text += next_text # Add next page
+        multi_eventscript.append("")  # Add blank line
+        multi_eventscript += next_eventscript  # Add next page
+
+        multi_text.append("")  # Add blank line
+        multi_text += next_text  # Add next page
 
     # Loop over the sub menus
     for submenu in submenus:
 
-        submenu_eventscript, submenu_text = get_multi_select(name, submenu["action"], f"{suffix}_{submenu['name']}", f"{script_name}_Page{str(page)}")
+        submenu_eventscript, submenu_text = get_multi_select(
+            name,
+            submenu["action"],
+            f"{suffix}_{submenu['name']}",
+            f"{script_name}_Page{str(page)}",
+        )
 
-        multi_eventscript.append("") # Add blank line
-        multi_eventscript += submenu_eventscript # Add next page
+        multi_eventscript.append("")  # Add blank line
+        multi_eventscript += submenu_eventscript  # Add next page
 
-        multi_text.append("") # Add blank line
-        multi_text += submenu_text # Add next page
+        multi_text.append("")  # Add blank line
+        multi_text += submenu_text  # Add next page
 
     return multi_eventscript, multi_text
+
 
 if __name__ == "__main__":
 
@@ -200,7 +216,7 @@ if __name__ == "__main__":
             ]
 
             # Remove the extension from the filename
-            no_extension = file_name.split('.')[0]
+            no_extension = file_name.split(".")[0]
 
             # Combine the file path for the input file
             file_path = os.path.join(INPUT_FOLDER, file_name)
@@ -212,14 +228,14 @@ if __name__ == "__main__":
                 pory_name = common.pory_format(no_extension)
 
                 # Generate the multi-select content
-                event,text = get_multi_select(pory_prefix, content, pory_name)
+                event, text = get_multi_select(pory_prefix, content, pory_name)
 
                 prompt = [
-                    f'script {pory_prefix}_EventScript_{pory_name}_Controls', 
+                    f"script {pory_prefix}_EventScript_{pory_name}_Controls",
                     "{",
-                    f'    {CONTROLS}', # Do not consume \n
-                    f'    goto({pory_prefix}_EventScript_{pory_name}_Page1)', # Entrypoint
-                    "}"
+                    f"    {CONTROLS}",  # Do not consume \n
+                    f"    goto({pory_prefix}_EventScript_{pory_name}_Page1)",  # Entrypoint
+                    "}",
                 ]
 
                 # Control Prompt
@@ -242,8 +258,7 @@ if __name__ == "__main__":
 
             os.makedirs(OUTPUT_DIRECTORY, exist_ok=True)
             outpath = os.path.join(
-                OUTPUT_DIRECTORY, 
-                f"{no_extension}_{OUTPUT_FILENAME}"
+                OUTPUT_DIRECTORY, f"{no_extension}_{OUTPUT_FILENAME}"
             )
 
             with open(outpath, "w+", encoding="utf8") as f:

@@ -9,7 +9,7 @@ INPUT_FOLDER = "tools/bfg_helpers/custom"
 # Input File Folders
 # .set files will be treated as individual sets
 # .team files will be treated as an entire team
-INPUT_FILE = os.path.join(INPUT_FOLDER, "npcs.json") 
+INPUT_FILE = os.path.join(INPUT_FOLDER, "npcs.json")
 
 # Simple NPCs Output File
 OUTPUT_FILE = "data/scripts/simple_npcs.pory"
@@ -20,7 +20,7 @@ OUTPUT_DIRECTORY = "/data/scripts/"
 # Command Delimiter
 COMMAND_DELIMITER = ":"
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     # Output String Contents
     output = [
@@ -57,8 +57,8 @@ if __name__ == '__main__':
                     # Message contains 'COMMAND_DELIMITER'
                     if COMMAND_DELIMITER in message:
                         # Only split on first instance
-                        cmd,msg = message.split(COMMAND_DELIMITER, 1)
-                        output.append(f'    {cmd}({msg})')
+                        cmd, msg = message.split(COMMAND_DELIMITER, 1)
+                        output.append(f"    {cmd}({msg})")
                     else:
                         output.append(f'    msgbox(format("{message}"))')
 
