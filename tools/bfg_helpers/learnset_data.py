@@ -5,9 +5,6 @@ import re, os, json
 # C file parsing library
 import src.cparser as cparser
 
-# Common library
-import src.common as common
-
 # Teachable Learnsets file
 TEACHABLE_LEARNSETS = "src/data/pokemon/teachable_learnsets.h"
 
@@ -88,7 +85,7 @@ def parse_learnsets(file, trailing):
     return learnsets
 
 
-if __name__ == "__main__":
+def get_learnset_data():
 
     # Species lookup table
     learnset_data = {}
@@ -178,6 +175,14 @@ if __name__ == "__main__":
 
                     # Initialise species data
                     learnset_data[species]["levelup"] = level_up_moves
+
+    return learnset_data
+
+
+if __name__ == "__main__":
+
+    # Build learnset data file
+    learnset_data = get_learnset_data()
 
     # Get the path to the running script
     script_path = os.path.dirname(os.path.realpath(__file__))
