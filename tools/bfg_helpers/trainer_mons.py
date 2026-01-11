@@ -902,7 +902,7 @@ def add_key_to_lists(key, lists, lookup):
 if __name__ == "__main__":
     # If Trainer Mon Set Generation is Enabled
     if config.check_config("BFG_TM_GENERATE_TRAINER_MONS") == True:
-        
+
         # Get showdown data files
         MOVES, POKEMON = showdown.get_showdown_data()
 

@@ -34,17 +34,17 @@ def get_set_spread(set):
     spread = set["evs"]
 
     # Loop over the spread items (in-order)
-    for key in ["hp","atk","def","spa","spd","spe"]:
+    for key in ["hp", "atk", "def", "spa", "spd", "spe"]:
 
         # Convert num to string
         string = str(spread[key])
 
         # Add '+' if boosted
-        if nature['pos'] == key:
+        if nature["pos"] == key:
             string = f"{string}+"
-            
+
         # Add '-' if reduced
-        elif nature['neg'] == key:
+        elif nature["neg"] == key:
             string = f"{string}-"
 
         # Add string to spread
@@ -53,7 +53,8 @@ def get_set_spread(set):
     # Return joined string
     return "/".join(spread_str)
 
-def get_set_name(set, use_custom_name = False):
+
+def get_set_name(set, use_custom_name=False):
 
     # Get the species name
     name = set["species"]
@@ -72,6 +73,7 @@ def get_set_name(set, use_custom_name = False):
 
     # Return set name
     return name
+
 
 def get_species_constants():
 
@@ -96,13 +98,16 @@ def get_species_constants():
     # Return species table
     return species
 
+
 def remove_accented_chars(text):
-    normalized_text = unicodedata.normalize('NFKD', text)
-    ascii_text = normalized_text.encode('ascii', 'ignore').decode('utf-8')
+    normalized_text = unicodedata.normalize("NFKD", text)
+    ascii_text = normalized_text.encode("ascii", "ignore").decode("utf-8")
     return ascii_text
+
 
 def get_timestamp(time=datetime.now()):
     return time.strftime("%d-%m-%y %H:%M:%S")
+
 
 def pory_format(string, delim="_"):
 
@@ -131,6 +136,7 @@ def pory_format(string, delim="_"):
 
     # Return rejoined string
     return delim.join(split)
+
 
 def convert_str_to_capital_case(string):
     list = []
@@ -220,6 +226,7 @@ def is_tagged(species, tag):
 def is_forme(species, forme):
     return "forme" in species and species["forme"] == forme
 
+
 def insert_data(data, path, value):
 
     # Depth not reached
@@ -304,6 +311,7 @@ def insert_data(data, path, value):
                     data.insert(index, template)
                 else:  # Insert key and continue
                     data.append(template)
+
 
 def log_error(message):
     if config.check_config("BFG_PY_LOG_ERRORS") == True:
