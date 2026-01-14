@@ -17,6 +17,15 @@ EGG_MOVE_LEARNSETS = "src/data/pokemon/egg_moves.h"
 # Output data file
 LEARNSET_DATA_OUT = "learnset_data.json"
 
+# Ignored Moves
+IGNORE_MOVES = [
+    "MOVE_UNAVAILABLE"
+]
+
+# Ignored Species
+IGNORE_SPECIES = [
+    "None"
+]
 
 # Convert species name to pretty string
 def format_species_name(name, sep=" "):
@@ -96,20 +105,25 @@ def get_learnset_data():
         # Loop over the species
         for species in teachable:
 
-            # Moves list
-            teachable_moves = []
+            # Species not in ignored species list
+            if not species in IGNORE_SPECIES:
 
-            # Loop over all of the moves
-            for move in teachable[species]:
-                # Add pretty name to teachable moves list
-                teachable_moves.append(format_move_name(move))
+                # Moves list
+                teachable_moves = []
 
-            # Species not inserted, add it
-            if species not in learnset_data:
-                learnset_data[species] = {"name": format_species_name(species)}
+                # Loop over all of the moves
+                for move in teachable[species]:
+                    # Move not in ignored moves list
+                    if not move in IGNORE_MOVES:
+                        # Add pretty name to teachable moves list
+                        teachable_moves.append(format_move_name(move))
 
-            # Initialise species data
-            learnset_data[species]["teachable"] = teachable_moves
+                # Species not inserted, add it
+                if species not in learnset_data:
+                    learnset_data[species] = {"name": format_species_name(species)}
+
+                # Initialise species data
+                learnset_data[species]["teachable"] = teachable_moves
 
     with open(EGG_MOVE_LEARNSETS, "r", encoding="utf8") as f:
         eggmoves = cparser.parse_learnsets(f.readlines(), "EggMove")
@@ -117,23 +131,28 @@ def get_learnset_data():
         # Loop over the species
         for species in eggmoves:
 
-            # Moves list
-            egg_moves = []
+            # Species not in ignored species list
+            if not species in IGNORE_SPECIES:
 
-            # Loop over all of the moves
-            for move in eggmoves[species]:
-                # Add pretty name to egg moves list
-                egg_moves.append(format_move_name(move))
+                # Moves list
+                egg_moves = []
 
-            # Species not inserted, add it
-            if species not in learnset_data:
-                learnset_data[species] = {
-                    "name": format_species_name(species),
-                    "teachable": [],
-                }
+                # Loop over all of the moves
+                for move in eggmoves[species]:
+                    # Move not in ignored moves list
+                    if not move in IGNORE_MOVES:
+                        # Add pretty name to egg moves list
+                        egg_moves.append(format_move_name(move))
 
-            # Initialise species data
-            learnset_data[species]["egg"] = teachable_moves
+                # Species not inserted, add it
+                if species not in learnset_data:
+                    learnset_data[species] = {
+                        "name": format_species_name(species),
+                        "teachable": [],
+                    }
+
+                # Initialise species data
+                learnset_data[species]["egg"] = teachable_moves
 
     # Get all of the level up learnset files
     files = os.listdir(LEVEL_UP_LEARNSETS)
@@ -153,28 +172,29 @@ def get_learnset_data():
 
                 # Loop over the species
                 for species in levelup:
+                    # Species not in ignored species list
+                    if not species in IGNORE_SPECIES:
+                        # Moves list
+                        level_up_moves = []
 
-                    # Moves list
-                    level_up_moves = []
+                        # Loop over all of the moves
+                        for move in levelup[species]:
+                            # Convert move name to pretty name
+                            move["name"] = format_move_name(move["name"])
 
-                    # Loop over all of the moves
-                    for move in levelup[species]:
-                        # Convert move name to pretty name
-                        move["name"] = format_move_name(move["name"])
+                            # Add move to the moves list
+                            level_up_moves.append(move)
 
-                        # Add move to the moves list
-                        level_up_moves.append(move)
+                        # Species not inserted, add it
+                        if species not in learnset_data:
+                            learnset_data[species] = {
+                                "name": format_species_name(species),
+                                "teachable": [],
+                                "egg": [],
+                            }
 
-                    # Species not inserted, add it
-                    if species not in learnset_data:
-                        learnset_data[species] = {
-                            "name": format_species_name(species),
-                            "teachable": [],
-                            "egg": [],
-                        }
-
-                    # Initialise species data
-                    learnset_data[species]["levelup"] = level_up_moves
+                        # Initialise species data
+                        learnset_data[species]["levelup"] = level_up_moves
 
     return learnset_data
 
