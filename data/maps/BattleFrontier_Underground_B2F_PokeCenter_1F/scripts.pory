@@ -54,15 +54,15 @@ script BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Gentleman {
 
 script BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckBattlePoints {
 	specialvar(VAR_TEMP_1, GetFrontierBattlePoints)
-	if(var(VAR_TEMP_1) >= 50) {
+	if(var(VAR_TEMP_1) >= 100) {
 		goto(BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection)
 	}
-	msgbox(format("You'll need at least 50 BP before you can buy anything from me."))
+	msgbox(format("You'll need at least 100 BP before you can buy anything from me."))
 	goto(BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanEnd)
 }
 
 script BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection {
-	msgbox(format("What would you like? All of my items cost 50 BP."))
+	msgbox(format("What would you like? All of my items cost 100 BP."))
 	special(ShowBattlePointsWindow)
 	multichoice2(18,0,BattleFrontier_Underground_B2F_PokeCenter_1F_Text_Gentleman)
 	switch(var(VAR_RESULT)) {
@@ -74,7 +74,7 @@ script BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSe
 			special(CloseBattlePointsWindow)
 			goto(BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanEnd)
 	}
-	setvar(VAR_0x8004, 50)
+	setvar(VAR_0x8004, 100)
 	msgbox(format("I'll take your payment now, please."))
 	special(TakeFrontierBattlePoints)
 	playse(SE_SHOP)
