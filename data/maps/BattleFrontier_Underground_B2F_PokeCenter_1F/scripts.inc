@@ -100,7 +100,7 @@ BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckBattlePoi
 # 56 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	specialvar VAR_TEMP_1, GetFrontierBattlePoints
 # 57 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
-	compare VAR_TEMP_1, 50
+	compare VAR_TEMP_1, 100
 	goto_if_ge BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckBattlePoints_2
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckBattlePoints_1:
 # 60 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
@@ -134,7 +134,7 @@ BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanEnd
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_1:
 # 77 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
-	setvar VAR_0x8004, 50
+	setvar VAR_0x8004, 100
 # 78 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_Text_1
 # 79 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
@@ -377,13 +377,13 @@ BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Gentleman_Text_0:
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckBattlePoints_Text_0:
 # 60 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
-	.string "You'll need at least 50 BP before you\n"
+	.string "You'll need at least 100 BP before you\n"
 	.string "can buy anything from me.$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_Text_0:
 # 65 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	.string "What would you like? All of my items\n"
-	.string "cost 50 BP.$"
+	.string "cost 100 BP.$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_Text_1:
 # 78 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
