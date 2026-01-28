@@ -2677,7 +2677,7 @@ const struct Item gItemsInfo[] =
     [ITEM_GOLD_BOTTLE_CAP] =
     {
         .name = ITEM_NAME("Gold Bottle Cap"),
-        .price = IP_PRICE_BOTTLE_CAP * 10,
+        .price = 0,
         .description = COMPOUND_STRING(
             "A beautiful bottle\n"
             "cap that gives off\n"

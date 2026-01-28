@@ -22,8 +22,8 @@ OUTPUT_DIRECTORY = "tools/bfg_helpers/select"
 SETS_OUTFILE = "sample_sets.json"
 TEAMS_OUTFILE = "sample_teams.json"
 
-# Create a folder in the 'sets' shop, 
-# which allows you to purchase the 
+# Create a folder in the 'sets' shop,
+# which allows you to purchase the
 # individual Pokemon from the teams
 # shop with the provided name
 # To ignore this, set to None
@@ -99,13 +99,13 @@ if __name__ == "__main__":
                     # Loop over the sets
                     for set in sets:
                         # Add set to simple sets (For post-processing)
-                        formatted_sets.append({"set": set, "path": names })
+                        formatted_sets.append({"set": set, "path": names})
 
                 else:  # Unhandled extension
                     raise Exception(
                         f"Unhandled file extension {extension}! Accepted: .sets, .team ..."
                     )
-                
+
             except Exception as e:
                 print(f"Failed for file {file_name}! Error: {str(e)}")
 
@@ -115,8 +115,8 @@ if __name__ == "__main__":
     # Auto-formatted sets
     for fs in formatted_sets:
 
-        set = fs['set']
-        path = fs['path']
+        set = fs["set"]
+        path = fs["path"]
 
         # Get the species name
         name = set["species"]
@@ -156,7 +156,7 @@ if __name__ == "__main__":
 
         # Add the sample sets to the table
         common.insert_data(sample_sets, names, givemon_str)
-        
+
     # Create output directory (if not exists)
     os.makedirs(OUTPUT_DIRECTORY, exist_ok=True)
 

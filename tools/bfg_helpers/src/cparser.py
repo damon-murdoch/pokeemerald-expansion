@@ -51,6 +51,30 @@ def parse_defines(content):
     return data
 
 
+def substitute_defines(content, defines):
+
+    new_content = []
+
+    for line in content:
+
+        new_line = []
+
+        tokens = line.split(" ")
+
+        for token in tokens:
+            while token in defines:
+                # Infinite loop failsafe
+                if token == defines[token]:
+                    break
+                print("token replaced:", token, defines[token])
+                token = defines[token]
+            new_line.append(str(token))
+
+        new_content.append(" ".join(new_line))
+
+    return new_content
+
+
 def parse_level_up_learnsets(content):
     # Output data
     data = {}
@@ -80,6 +104,7 @@ def parse_level_up_learnsets(content):
 
             # Line contains a move
             if clean.startswith("LEVEL_UP_MOVE("):
+
                 # Parse the move name from the level-up move data
                 move = (
                     clean.replace("LEVEL_UP_MOVE(", "")
@@ -87,6 +112,17 @@ def parse_level_up_learnsets(content):
                     .replace(")", "")
                     .strip()
                 )
+
+                # Parse name, level from the string
+                tokens = (
+                    clean.replace("LEVEL_UP_MOVE(", "")
+                    .replace(")", "")
+                    .replace(",", "")
+                    .strip()
+                    .split(" ")
+                )
+
+                move = {"name": tokens[1], "level": int(tokens[0])}
 
                 # Add sanitised move to the list
                 moves.append(move)
@@ -127,17 +163,3 @@ def parse_learnsets(content, type="Teachable"):
                 moves.append(clean.replace(",", ""))
 
     return data
-
-
-if __name__ == "__main__":
-    with open("include\\constants\\species.h") as f:
-        species = parse_defines(f.readlines())
-
-    with open("src\\data\\pokemon\\teachable_learnsets.h") as f:
-        teachable = parse_learnsets(f.readlines(), "Teachable")
-
-    with open("src\\data\\pokemon\\egg_moves.h") as f:
-        eggmoves = parse_learnsets(f.readlines(), "EggMove")
-
-    with open("src\\data\\pokemon\\level_up_learnsets\\gen_2.h") as f:
-        levelup = parse_level_up_learnsets(f.readlines())

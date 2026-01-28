@@ -45,15 +45,15 @@
 // Pokeball Replacements
 
 // Allow replacing Cherish Ball
-#define I_REPLACE_CHERISH_BALL TRUE
+#define I_REPLACE_CHERISH_BALL FALSE
 
 // Allow replacing Master Ball
-#define I_REPLACE_MASTER_BALL TRUE
+#define I_REPLACE_MASTER_BALL FALSE
 
 // If this is set to true, the player will
 // get back a copy of the original ball when
 // it is replaced with the new ball
-#define I_RETURN_OLD_BALL TRUE
+#define I_RETURN_OLD_BALL FALSE
 
 // ORAS Dowsing Machine
 #define I_ORAS_DOWSING_FLAG         0           // Replace 0 with an unused flag to enable the Dowsing Machine mechanic from ORAS.

@@ -19,7 +19,7 @@ OUTPUT_FILENAME = "givemon_from_json.pory"
 # Default values
 DEFAULT_LEVEL = "65"
 DEFAULT_NATURE = "HARDY"
-DEFAULT_POKEBALL = "ITEM_SPORT_BALL"
+DEFAULT_POKEBALL = "ITEM_POKE_BALL"
 
 STATS = ["hp", "atk", "def", "spe", "spa", "spd"]
 
@@ -89,7 +89,7 @@ def get_givemon_str(pokemon):
     # Pokeball
     if "ball" in other:
         args.append(common.convert_string_to_const(other["ball"]))
-    else: # No ball selected
+    else:  # No ball selected
         args.append(DEFAULT_POKEBALL)
 
     # Nature
@@ -102,7 +102,6 @@ def get_givemon_str(pokemon):
     if "ability" in pokemon:
         ability = pokemon["ability"]
 
-        ability_num = 0
         found = False
 
         # Loop over all of the abilities
@@ -111,12 +110,16 @@ def get_givemon_str(pokemon):
 
             # Required ability matched
             if ability == ability_name:
-                args.append(str(ability_num))
+
+                # Add ability index, 
+                # otherwise '2' for hidden
+                if ability_index == 'H':
+                    args.append("2")
+                else:
+                    args.append(str(ability_index))
+
                 found = True
                 break
-
-            # Increment ability counter
-            ability_num += 1
 
         # No matching ability found
         if found == False:
@@ -165,12 +168,12 @@ def get_givemon_str(pokemon):
 
     # Shiny
     if "shiny" in other and other["shiny"] == "Yes":
-        args.append("0") # Always shiny
-    else: 
-        args.append("2") # Never shiny
+        args.append("0")  # Always shiny
+    else:
+        args.append("2")  # Never shiny
 
     # Gigantamax
-    if force_gmax or "gigantamax" in other and other ["gigantamax"] == "Yes":
+    if force_gmax or "gigantamax" in other and other["gigantamax"] == "Yes":
         args.append("TRUE")
     else:
         args.append("FALSE")
@@ -178,9 +181,9 @@ def get_givemon_str(pokemon):
     # Tera Type provided
     if "tera type" in other:
         # Set tera type to provided type
-        tera_type = other['tera type'].upper()
+        tera_type = other["tera type"].upper()
         args.append(f"TYPE_{tera_type}")
-    else: 
+    else:
         # Use default type
         args.append("FALSE")
 
