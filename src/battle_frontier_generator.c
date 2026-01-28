@@ -1927,11 +1927,10 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
         #if BFG_ITEM_SCOPE_LENS_SELECTION_CHANCE || BFG_ITEM_RAZOR_CLAW_SELECTION_CHANCE
         for(i=0; i < numCritModifier; i++)
         {
-            if (RANDOM_CHANCE(BFG_ITEM_SCOPE_LENS_SELECTION_CHANCE)) {
+            if (RANDOM_CHANCE(BFG_ITEM_SCOPE_LENS_SELECTION_CHANCE))
                 RETURN_IF_UNIQUE(ITEM_SCOPE_LENS);
-            } else if (RANDOM_CHANCE(BFG_ITEM_RAZOR_CLAW_SELECTION_CHANCE)) {
+            if (RANDOM_CHANCE(BFG_ITEM_RAZOR_CLAW_SELECTION_CHANCE))
                 RETURN_IF_UNIQUE(ITEM_RAZOR_CLAW);
-            }
         }
         #endif
         
@@ -2192,62 +2191,68 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
         }
     }
 
-    // Default item id
-    itemId = ITEM_NONE;
+    // Current type is not 'NONE'
+    if (currentType != TYPE_NONE) {
+        // Default item id
+        itemId = ITEM_NONE;
 
-    // Switch on type selected
-    switch(currentType) 
-    {
-        case TYPE_NORMAL: itemId = ITEM_CHILAN_BERRY; break;
-        case TYPE_FIRE: itemId = ITEM_OCCA_BERRY; break;
-        case TYPE_WATER: itemId = ITEM_PASSHO_BERRY; break;
-        case TYPE_ELECTRIC: itemId = ITEM_WACAN_BERRY; break;
-        case TYPE_GRASS: itemId = ITEM_RINDO_BERRY; break;
-        case TYPE_ICE: itemId = ITEM_YACHE_BERRY; break;
-        case TYPE_FIGHTING: itemId = ITEM_CHOPLE_BERRY; break;
-        case TYPE_POISON: itemId = ITEM_KEBIA_BERRY; break;
-        case TYPE_GROUND: itemId = ITEM_SHUCA_BERRY; break;
-        case TYPE_FLYING: itemId = ITEM_COBA_BERRY; break;
-        case TYPE_PSYCHIC: itemId = ITEM_PAYAPA_BERRY; break;
-        case TYPE_BUG: itemId = ITEM_TANGA_BERRY; break;
-        case TYPE_ROCK: itemId = ITEM_CHARTI_BERRY; break;
-        case TYPE_GHOST: itemId = ITEM_KASIB_BERRY; break;
-        case TYPE_DRAGON: itemId = ITEM_HABAN_BERRY; break;
-        case TYPE_DARK: itemId = ITEM_COLBUR_BERRY; break;
-        case TYPE_STEEL: itemId = ITEM_BABIRI_BERRY; break;
-        case TYPE_FAIRY: itemId = ITEM_ROSELI_BERRY; break;
+        // Switch on type selected
+        switch(currentType) 
+        {
+            case TYPE_NORMAL: itemId = ITEM_CHILAN_BERRY; break;
+            case TYPE_FIRE: itemId = ITEM_OCCA_BERRY; break;
+            case TYPE_WATER: itemId = ITEM_PASSHO_BERRY; break;
+            case TYPE_ELECTRIC: itemId = ITEM_WACAN_BERRY; break;
+            case TYPE_GRASS: itemId = ITEM_RINDO_BERRY; break;
+            case TYPE_ICE: itemId = ITEM_YACHE_BERRY; break;
+            case TYPE_FIGHTING: itemId = ITEM_CHOPLE_BERRY; break;
+            case TYPE_POISON: itemId = ITEM_KEBIA_BERRY; break;
+            case TYPE_GROUND: itemId = ITEM_SHUCA_BERRY; break;
+            case TYPE_FLYING: itemId = ITEM_COBA_BERRY; break;
+            case TYPE_PSYCHIC: itemId = ITEM_PAYAPA_BERRY; break;
+            case TYPE_BUG: itemId = ITEM_TANGA_BERRY; break;
+            case TYPE_ROCK: itemId = ITEM_CHARTI_BERRY; break;
+            case TYPE_GHOST: itemId = ITEM_KASIB_BERRY; break;
+            case TYPE_DRAGON: itemId = ITEM_HABAN_BERRY; break;
+            case TYPE_DARK: itemId = ITEM_COLBUR_BERRY; break;
+            case TYPE_STEEL: itemId = ITEM_BABIRI_BERRY; break;
+            case TYPE_FAIRY: itemId = ITEM_ROSELI_BERRY; break;
+        }
+
+        // Return if not duplicate
+        RETURN_IF_UNIQUE(itemId);
     }
-
-    // Return if not duplicate
-    RETURN_IF_UNIQUE(itemId);
     #endif
 
     #if BFG_ITEM_STAT_BOOST_BERRY_SELECTION_CHANCE
-    // Default item id
-    itemId = ITEM_NONE;
+    if (RANDOM_CHANCE(BFG_ITEM_STAT_BOOST_BERRY_SELECTION_CHANCE)) {
 
-    // Get the stat boosting berry for the nature-boosted stat
-    switch(nature->posStat) 
-    {
-        case STAT_ATK: 
-            itemId = ITEM_LIECHI_BERRY; 
-        break;
-        case STAT_DEF: 
-            itemId = ITEM_GANLON_BERRY;
-        break;
-        case STAT_SPATK:
-            itemId = ITEM_PETAYA_BERRY;
-        break;
-        case STAT_SPDEF: 
-            itemId = ITEM_APICOT_BERRY;
-        break;
-        case STAT_SPEED: 
-            itemId = ITEM_SALAC_BERRY;
-        break;
+        // Default item id
+        itemId = ITEM_NONE;
+
+        // Get the stat boosting berry for the nature-boosted stat
+        switch(nature->posStat) 
+        {
+            case STAT_ATK: 
+                itemId = ITEM_LIECHI_BERRY; 
+            break;
+            case STAT_DEF: 
+                itemId = ITEM_GANLON_BERRY;
+            break;
+            case STAT_SPATK:
+                itemId = ITEM_PETAYA_BERRY;
+            break;
+            case STAT_SPDEF: 
+                itemId = ITEM_APICOT_BERRY;
+            break;
+            case STAT_SPEED: 
+                itemId = ITEM_SALAC_BERRY;
+            break;
+        }
+
+        // Return if not duplicate
+        RETURN_IF_UNIQUE(itemId);
     }
-
-    // Return if not duplicate
-    RETURN_IF_UNIQUE(itemId);
     #endif
 
     // *** Competitive items with specific use cases ***
@@ -2257,7 +2262,19 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
         RETURN_IF_UNIQUE(ITEM_BOOSTER_ENERGY);
     #endif
 
-    #if BFG_ITEM_LUM_BERRY_SELECTION_CHANCE
+    #if BFG_ITEM_LUM_BERRY_PHYSICAL_SELECTION_CHANCE || BFG_ITEM_RAWST_BERRY_PHYSICAL_SELECTION_CHANCE
+    // Better chance to select lum berry (or rawst berry as backup) for physical Pokemon
+    if ((!IS_TYPE(species, TYPE_FIRE)) && ((abilityId != ABILITY_WATER_VEIL) || (abilityId != ABILITY_WATER_BUBBLE) || (abilityId != ABILITY_COMATOSE) || (abilityId != ABILITY_THERMAL_EXCHANGE) || (abilityId != ABILITY_PURIFYING_SALT)  || (abilityId != ABILITY_GOOD_AS_GOLD) || (abilityId != ABILITY_GUTS) || (abilityId != ABILITY_FLARE_BOOST))) {
+        for(i=0; i<numPhysical; i++) {
+            if (RANDOM_CHANCE(BFG_ITEM_LUM_BERRY_PHYSICAL_SELECTION_CHANCE))
+                RETURN_IF_UNIQUE(ITEM_LUM_BERRY)
+            if (RANDOM_CHANCE(BFG_ITEM_RAWST_BERRY_PHYSICAL_SELECTION_CHANCE))
+                RETURN_IF_UNIQUE(ITEM_RAWST_BERRY)
+        }
+    }
+    #endif
+
+    #if BFG_ITEM_LUM_BERRY_SELECTION_CHANCE    
     if (RANDOM_CHANCE(BFG_ITEM_LUM_BERRY_SELECTION_CHANCE))
         RETURN_IF_UNIQUE(ITEM_LUM_BERRY);
     #endif
