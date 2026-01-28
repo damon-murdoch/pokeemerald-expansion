@@ -575,21 +575,21 @@ Auto_EventScript_Sample_Sets_Doubles_Ursaluna_Bloodmoon_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Ursaluna_Bloodmoon_Page1_2:
 # 243 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_URSALUNA_BLOODMOON, 65, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 244, 0, 4, 12, 196, 52, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_EARTH_POWER, MOVE_HYPER_VOICE, MOVE_BLOOD_MOON, 2, FALSE, TYPE_NORMAL, 10
+	givemon SPECIES_URSALUNA_BLOODMOON, 65, ITEM_LIFE_ORB, ITEM_POKE_BALL, NATURE_MODEST, 0, 0, 244, 0, 4, 12, 196, 52, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_EARTH_POWER, MOVE_HYPER_VOICE, MOVE_BLOOD_MOON, 2, FALSE, TYPE_NORMAL, 10
 # 244 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Ursaluna_Bloodmoon_Page1_3:
 # 246 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_URSALUNA_BLOODMOON, 65, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_QUIET, 0, 0, 244, 0, 0, 0, 196, 68, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_EARTH_POWER, MOVE_HYPER_VOICE, MOVE_BLOOD_MOON, 2, FALSE, TYPE_NORMAL, 10
+	givemon SPECIES_URSALUNA_BLOODMOON, 65, ITEM_LIFE_ORB, ITEM_POKE_BALL, NATURE_QUIET, 0, 0, 244, 0, 0, 0, 196, 68, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_EARTH_POWER, MOVE_HYPER_VOICE, MOVE_BLOOD_MOON, 2, FALSE, TYPE_NORMAL, 10
 # 247 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Ursaluna_Bloodmoon_Page1_4:
 # 249 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_URSALUNA_BLOODMOON, 65, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 4, 0, 4, 252, 196, 52, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_EARTH_POWER, MOVE_HYPER_VOICE, MOVE_BLOOD_MOON, 2, FALSE, TYPE_NORMAL, 10
+	givemon SPECIES_URSALUNA_BLOODMOON, 65, ITEM_LIFE_ORB, ITEM_POKE_BALL, NATURE_MODEST, 0, 0, 4, 0, 4, 252, 196, 52, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_EARTH_POWER, MOVE_HYPER_VOICE, MOVE_BLOOD_MOON, 2, FALSE, TYPE_NORMAL, 10
 # 250 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -626,21 +626,21 @@ Auto_EventScript_Sample_Sets_Doubles_Urshifu_Rs_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Urshifu_Rs_Page1_2:
 # 266 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_URSHIFU_RAPID_STRIKE, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 1, 0, 252, 0, 252, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_AQUA_JET, MOVE_CLOSE_COMBAT, MOVE_SURGING_STRIKES, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_URSHIFU_RAPID_STRIKE, 65, ITEM_FOCUS_SASH, ITEM_POKE_BALL, NATURE_ADAMANT, 0, 1, 0, 252, 0, 252, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_AQUA_JET, MOVE_CLOSE_COMBAT, MOVE_SURGING_STRIKES, 2, FALSE, TYPE_WATER, 10
 # 267 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Urshifu_Rs_Page1_3:
 # 269 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_URSHIFU_RAPID_STRIKE, 65, ITEM_MYSTIC_WATER, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 1, 12, 156, 4, 252, 0, 84, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_AQUA_JET, MOVE_CLOSE_COMBAT, MOVE_SURGING_STRIKES, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_URSHIFU_RAPID_STRIKE, 65, ITEM_MYSTIC_WATER, ITEM_POKE_BALL, NATURE_ADAMANT, 0, 1, 12, 156, 4, 252, 0, 84, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_AQUA_JET, MOVE_CLOSE_COMBAT, MOVE_SURGING_STRIKES, 2, FALSE, TYPE_WATER, 10
 # 270 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Urshifu_Rs_Page1_4:
 # 272 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_URSHIFU_RAPID_STRIKE, 65, ITEM_CHOICE_SCARF, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 12, 156, 4, 252, 0, 84, 31, 31, 31, 31, 31, 31, MOVE_U_TURN, MOVE_AQUA_JET, MOVE_CLOSE_COMBAT, MOVE_SURGING_STRIKES, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_URSHIFU_RAPID_STRIKE, 65, ITEM_CHOICE_SCARF, ITEM_POKE_BALL, NATURE_ADAMANT, 0, 0, 12, 156, 4, 252, 0, 84, 31, 31, 31, 31, 31, 31, MOVE_U_TURN, MOVE_AQUA_JET, MOVE_CLOSE_COMBAT, MOVE_SURGING_STRIKES, 2, FALSE, TYPE_WATER, 10
 # 273 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -675,14 +675,14 @@ Auto_EventScript_Sample_Sets_Doubles_Urshifu_Ss_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Urshifu_Ss_Page1_2:
 # 289 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_URSHIFU, 65, ITEM_CHOICE_BAND, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 1, 0, 236, 0, 252, 0, 20, 31, 31, 31, 31, 31, 31, MOVE_U_TURN, MOVE_WICKED_BLOW, MOVE_CLOSE_COMBAT, MOVE_SUCKER_PUNCH, 2, FALSE, TYPE_DARK, 10
+	givemon SPECIES_URSHIFU, 65, ITEM_CHOICE_BAND, ITEM_POKE_BALL, NATURE_ADAMANT, 0, 1, 0, 236, 0, 252, 0, 20, 31, 31, 31, 31, 31, 31, MOVE_U_TURN, MOVE_WICKED_BLOW, MOVE_CLOSE_COMBAT, MOVE_SUCKER_PUNCH, 2, FALSE, TYPE_DARK, 10
 # 290 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Urshifu_Ss_Page1_3:
 # 292 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_URSHIFU, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 0, 252, 0, 252, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WICKED_BLOW, MOVE_CLOSE_COMBAT, MOVE_SUCKER_PUNCH, 2, FALSE, TYPE_GHOST, 10
+	givemon SPECIES_URSHIFU, 65, ITEM_FOCUS_SASH, ITEM_POKE_BALL, NATURE_ADAMANT, 0, 0, 0, 252, 0, 252, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WICKED_BLOW, MOVE_CLOSE_COMBAT, MOVE_SUCKER_PUNCH, 2, FALSE, TYPE_GHOST, 10
 # 293 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -715,7 +715,7 @@ Auto_EventScript_Sample_Sets_Doubles_Ting_Lu_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Ting_Lu_Page1_2:
 # 309 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_TING_LU, 65, ITEM_ROCKY_HELMET, ITEM_SPORT_BALL, NATURE_IMPISH, 0, 0, 52, 4, 196, 4, 0, 252, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SAND_TOMB, MOVE_RUINATION, MOVE_BODY_PRESS, 2, FALSE, TYPE_POISON, 10
+	givemon SPECIES_TING_LU, 65, ITEM_ROCKY_HELMET, ITEM_POKE_BALL, NATURE_IMPISH, 0, 0, 52, 4, 196, 4, 0, 252, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SAND_TOMB, MOVE_RUINATION, MOVE_BODY_PRESS, 2, FALSE, TYPE_POISON, 10
 # 310 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -748,7 +748,7 @@ Auto_EventScript_Sample_Sets_Doubles_Tinkaton_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Tinkaton_Page1_2:
 # 326 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_TINKATON, 65, ITEM_ASSAULT_VEST, ITEM_SPORT_BALL, NATURE_CAREFUL, 0, 1, 180, 172, 100, 12, 0, 44, 31, 31, 31, 31, 31, 31, MOVE_GIGATON_HAMMER, MOVE_PLAY_ROUGH, MOVE_FEINT, MOVE_FAKE_OUT, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_TINKATON, 65, ITEM_ASSAULT_VEST, ITEM_POKE_BALL, NATURE_CAREFUL, 0, 1, 180, 172, 100, 12, 0, 44, 31, 31, 31, 31, 31, 31, MOVE_GIGATON_HAMMER, MOVE_PLAY_ROUGH, MOVE_FEINT, MOVE_FAKE_OUT, 2, FALSE, TYPE_WATER, 10
 # 327 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -783,14 +783,14 @@ Auto_EventScript_Sample_Sets_Doubles_Torkoal_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Torkoal_Page1_2:
 # 343 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_TORKOAL, 65, ITEM_CHARCOAL, ITEM_SPORT_BALL, NATURE_QUIET, 1, 1, 204, 0, 0, 0, 196, 108, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_ERUPTION, MOVE_HEAT_WAVE, MOVE_EARTH_POWER, 2, FALSE, TYPE_FIRE, 10
+	givemon SPECIES_TORKOAL, 65, ITEM_CHARCOAL, ITEM_POKE_BALL, NATURE_QUIET, 1, 1, 204, 0, 0, 0, 196, 108, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_ERUPTION, MOVE_HEAT_WAVE, MOVE_EARTH_POWER, 2, FALSE, TYPE_FIRE, 10
 # 344 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Torkoal_Page1_3:
 # 346 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_TORKOAL, 65, ITEM_CHOICE_SPECS, ITEM_SPORT_BALL, NATURE_QUIET, 1, 0, 204, 0, 0, 0, 196, 108, 31, 0, 31, 0, 31, 31, MOVE_ERUPTION, MOVE_HEAT_WAVE, MOVE_WEATHER_BALL, MOVE_EARTH_POWER, 2, FALSE, TYPE_FIRE, 10
+	givemon SPECIES_TORKOAL, 65, ITEM_CHOICE_SPECS, ITEM_POKE_BALL, NATURE_QUIET, 1, 0, 204, 0, 0, 0, 196, 108, 31, 0, 31, 0, 31, 31, MOVE_ERUPTION, MOVE_HEAT_WAVE, MOVE_WEATHER_BALL, MOVE_EARTH_POWER, 2, FALSE, TYPE_FIRE, 10
 # 347 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -827,21 +827,21 @@ Auto_EventScript_Sample_Sets_Doubles_Tornadus_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Tornadus_Page1_2:
 # 363 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_TORNADUS, 65, ITEM_COVERT_CLOAK, ITEM_SPORT_BALL, NATURE_BOLD, 0, 0, 196, 0, 228, 4, 4, 76, 31, 0, 31, 31, 31, 31, MOVE_TAUNT, MOVE_TAILWIND, MOVE_RAIN_DANCE, MOVE_BLEAKWIND_STORM, 2, FALSE, TYPE_DARK, 10
+	givemon SPECIES_TORNADUS, 65, ITEM_COVERT_CLOAK, ITEM_POKE_BALL, NATURE_BOLD, 0, 0, 196, 0, 228, 4, 4, 76, 31, 0, 31, 31, 31, 31, MOVE_TAUNT, MOVE_TAILWIND, MOVE_RAIN_DANCE, MOVE_BLEAKWIND_STORM, 2, FALSE, TYPE_DARK, 10
 # 364 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Tornadus_Page1_3:
 # 366 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_TORNADUS, 65, ITEM_ROCKY_HELMET, ITEM_SPORT_BALL, NATURE_BOLD, 0, 0, 196, 0, 228, 4, 4, 76, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_TAILWIND, MOVE_RAIN_DANCE, MOVE_BLEAKWIND_STORM, 2, FALSE, TYPE_DARK, 10
+	givemon SPECIES_TORNADUS, 65, ITEM_ROCKY_HELMET, ITEM_POKE_BALL, NATURE_BOLD, 0, 0, 196, 0, 228, 4, 4, 76, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_TAILWIND, MOVE_RAIN_DANCE, MOVE_BLEAKWIND_STORM, 2, FALSE, TYPE_DARK, 10
 # 367 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Tornadus_Page1_4:
 # 369 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_TORNADUS, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_TIMID, 0, 0, 4, 0, 0, 252, 252, 0, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_TAILWIND, MOVE_RAIN_DANCE, MOVE_BLEAKWIND_STORM, 2, FALSE, TYPE_DARK, 10
+	givemon SPECIES_TORNADUS, 65, ITEM_FOCUS_SASH, ITEM_POKE_BALL, NATURE_TIMID, 0, 0, 4, 0, 0, 252, 252, 0, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_TAILWIND, MOVE_RAIN_DANCE, MOVE_BLEAKWIND_STORM, 2, FALSE, TYPE_DARK, 10
 # 370 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -876,14 +876,14 @@ Auto_EventScript_Sample_Sets_Doubles_Ursaluna_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Ursaluna_Page1_2:
 # 386 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_URSALUNA, 65, ITEM_FLAME_ORB, ITEM_SPORT_BALL, NATURE_BRAVE, 0, 0, 140, 236, 0, 0, 0, 132, 31, 31, 31, 0, 31, 31, MOVE_PROTECT, MOVE_FACADE, MOVE_EARTHQUAKE, MOVE_HEADLONG_RUSH, 2, FALSE, TYPE_GHOST, 10
+	givemon SPECIES_URSALUNA, 65, ITEM_FLAME_ORB, ITEM_POKE_BALL, NATURE_BRAVE, 0, 0, 140, 236, 0, 0, 0, 132, 31, 31, 31, 0, 31, 31, MOVE_PROTECT, MOVE_FACADE, MOVE_EARTHQUAKE, MOVE_HEADLONG_RUSH, 2, FALSE, TYPE_GHOST, 10
 # 387 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Ursaluna_Page1_3:
 # 389 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_URSALUNA, 65, ITEM_FLAME_ORB, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 140, 236, 4, 12, 0, 116, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_FACADE, MOVE_EARTHQUAKE, MOVE_HEADLONG_RUSH, 2, FALSE, TYPE_GHOST, 10
+	givemon SPECIES_URSALUNA, 65, ITEM_FLAME_ORB, ITEM_POKE_BALL, NATURE_ADAMANT, 0, 0, 140, 236, 4, 12, 0, 116, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_FACADE, MOVE_EARTHQUAKE, MOVE_HEADLONG_RUSH, 2, FALSE, TYPE_GHOST, 10
 # 390 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -916,7 +916,7 @@ Auto_EventScript_Sample_Sets_Doubles_Regidrago_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Regidrago_Page1_2:
 # 406 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_REGIDRAGO, 65, ITEM_DRAGON_FANG, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 12, 0, 4, 252, 236, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_DRAGON_ENERGY, MOVE_DRACO_METEOR, MOVE_EARTH_POWER, 2, FALSE, TYPE_STEEL, 10
+	givemon SPECIES_REGIDRAGO, 65, ITEM_DRAGON_FANG, ITEM_POKE_BALL, NATURE_MODEST, 0, 0, 12, 0, 4, 252, 236, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_DRAGON_ENERGY, MOVE_DRACO_METEOR, MOVE_EARTH_POWER, 2, FALSE, TYPE_STEEL, 10
 # 407 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -1091,7 +1091,7 @@ Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Miraidon_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Miraidon_Page1_2:
 # 485 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_MIRAIDON, 65, ITEM_CHOICE_SPECS, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 92, 0, 4, 212, 196, 4, 31, 31, 31, 31, 31, 31, MOVE_VOLT_SWITCH, MOVE_ELECTRO_DRIFT, MOVE_DRACO_METEOR, MOVE_DAZZLING_GLEAM, 2, FALSE, TYPE_FAIRY, 10
+	givemon SPECIES_MIRAIDON, 65, ITEM_CHOICE_SPECS, ITEM_POKE_BALL, NATURE_MODEST, 0, 0, 92, 0, 4, 212, 196, 4, 31, 31, 31, 31, 31, 31, MOVE_VOLT_SWITCH, MOVE_ELECTRO_DRIFT, MOVE_DRACO_METEOR, MOVE_DAZZLING_GLEAM, 2, FALSE, TYPE_FAIRY, 10
 # 486 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -1126,14 +1126,14 @@ Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Xerneas_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Xerneas_Page1_2:
 # 502 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_XERNEAS, 65, ITEM_POWER_HERB, ITEM_SPORT_BALL, NATURE_TIMID, 0, 0, 4, 0, 4, 252, 244, 4, 31, 0, 31, 31, 31, 31, MOVE_MOONBLAST, MOVE_DAZZLING_GLEAM, MOVE_GEOMANCY, MOVE_PROTECT, 2, FALSE, FALSE, 10
+	givemon SPECIES_XERNEAS, 65, ITEM_POWER_HERB, ITEM_POKE_BALL, NATURE_TIMID, 0, 0, 4, 0, 4, 252, 244, 4, 31, 0, 31, 31, 31, 31, MOVE_MOONBLAST, MOVE_DAZZLING_GLEAM, MOVE_GEOMANCY, MOVE_PROTECT, 2, FALSE, FALSE, 10
 # 503 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Xerneas_Page1_3:
 # 505 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_XERNEAS, 65, ITEM_POWER_HERB, ITEM_SPORT_BALL, NATURE_TIMID, 0, 0, 44, 0, 20, 252, 188, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_GEOMANCY, MOVE_DAZZLING_GLEAM, MOVE_MOONBLAST, 2, FALSE, FALSE, 10
+	givemon SPECIES_XERNEAS, 65, ITEM_POWER_HERB, ITEM_POKE_BALL, NATURE_TIMID, 0, 0, 44, 0, 20, 252, 188, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_GEOMANCY, MOVE_DAZZLING_GLEAM, MOVE_MOONBLAST, 2, FALSE, FALSE, 10
 # 506 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -1168,14 +1168,14 @@ Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Zacian_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Zacian_Page1_2:
 # 522 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_ZACIAN, 65, ITEM_RUSTED_SWORD, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 252, 76, 4, 164, 0, 12, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_BEHEMOTH_BLADE, MOVE_PLAY_ROUGH, MOVE_TERA_BLAST, 2, FALSE, TYPE_GROUND, 10
+	givemon SPECIES_ZACIAN, 65, ITEM_RUSTED_SWORD, ITEM_POKE_BALL, NATURE_ADAMANT, 0, 0, 252, 76, 4, 164, 0, 12, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_BEHEMOTH_BLADE, MOVE_PLAY_ROUGH, MOVE_TERA_BLAST, 2, FALSE, TYPE_GROUND, 10
 # 523 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Zacian_Page1_3:
 # 525 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_ZACIAN, 65, ITEM_RUSTED_SWORD, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 252, 76, 4, 164, 0, 12, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_IRON_HEAD, MOVE_SACRED_SWORD, MOVE_PLAY_ROUGH, 2, FALSE, TYPE_STELLAR, 10
+	givemon SPECIES_ZACIAN, 65, ITEM_RUSTED_SWORD, ITEM_POKE_BALL, NATURE_ADAMANT, 0, 0, 252, 76, 4, 164, 0, 12, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_IRON_HEAD, MOVE_SACRED_SWORD, MOVE_PLAY_ROUGH, 2, FALSE, TYPE_STELLAR, 10
 # 526 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -1208,7 +1208,7 @@ Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Zamazenta_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Zamazenta_Page1_2:
 # 542 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_ZAMAZENTA, 65, ITEM_RUSTED_SHIELD, ITEM_SPORT_BALL, NATURE_IMPISH, 0, 0, 76, 0, 244, 188, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WIDE_GUARD, MOVE_HEAVY_SLAM, MOVE_BODY_PRESS, 2, FALSE, TYPE_DRAGON, 10
+	givemon SPECIES_ZAMAZENTA, 65, ITEM_RUSTED_SHIELD, ITEM_POKE_BALL, NATURE_IMPISH, 0, 0, 76, 0, 244, 188, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WIDE_GUARD, MOVE_HEAVY_SLAM, MOVE_BODY_PRESS, 2, FALSE, TYPE_DRAGON, 10
 # 543 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -1247,28 +1247,28 @@ Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Calyrex_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Calyrex_Page1_2:
 # 559 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_CALYREX, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_TIMID, 0, 0, 0, 0, 4, 252, 252, 0, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_NASTY_PLOT, MOVE_PSYCHIC, MOVE_NONE, 2, FALSE, TYPE_GHOST, 10
+	givemon SPECIES_CALYREX, 65, ITEM_FOCUS_SASH, ITEM_POKE_BALL, NATURE_TIMID, 0, 0, 0, 0, 4, 252, 252, 0, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_NASTY_PLOT, MOVE_PSYCHIC, MOVE_NONE, 2, FALSE, TYPE_GHOST, 10
 # 560 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Calyrex_Page1_3:
 # 562 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_CALYREX, 65, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_TIMID, 0, 0, 20, 0, 4, 252, 220, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_NASTY_PLOT, MOVE_PSYCHIC, MOVE_NONE, 2, FALSE, TYPE_GHOST, 10
+	givemon SPECIES_CALYREX, 65, ITEM_LIFE_ORB, ITEM_POKE_BALL, NATURE_TIMID, 0, 0, 20, 0, 4, 252, 220, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_NASTY_PLOT, MOVE_PSYCHIC, MOVE_NONE, 2, FALSE, TYPE_GHOST, 10
 # 563 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Calyrex_Page1_4:
 # 565 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_CALYREX, 65, ITEM_CLEAR_AMULET, ITEM_SPORT_BALL, NATURE_BRAVE, 0, 0, 252, 116, 0, 0, 0, 140, 31, 31, 31, 0, 31, 31, MOVE_PROTECT, MOVE_TRICK_ROOM, MOVE_CLOSE_COMBAT, MOVE_NONE, 2, FALSE, TYPE_FIRE, 10
+	givemon SPECIES_CALYREX, 65, ITEM_CLEAR_AMULET, ITEM_POKE_BALL, NATURE_BRAVE, 0, 0, 252, 116, 0, 0, 0, 140, 31, 31, 31, 0, 31, 31, MOVE_PROTECT, MOVE_TRICK_ROOM, MOVE_CLOSE_COMBAT, MOVE_NONE, 2, FALSE, TYPE_FIRE, 10
 # 566 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Calyrex_Page1_5:
 # 568 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_CALYREX, 65, ITEM_CLEAR_AMULET, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 252, 116, 4, 12, 0, 124, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_TRICK_ROOM, MOVE_CLOSE_COMBAT, MOVE_NONE, 2, FALSE, TYPE_FIRE, 10
+	givemon SPECIES_CALYREX, 65, ITEM_CLEAR_AMULET, ITEM_POKE_BALL, NATURE_ADAMANT, 0, 0, 252, 116, 4, 12, 0, 124, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_TRICK_ROOM, MOVE_CLOSE_COMBAT, MOVE_NONE, 2, FALSE, TYPE_FIRE, 10
 # 569 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -1305,21 +1305,21 @@ Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Groudon_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Groudon_Page1_2:
 # 585 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_GROUDON, 65, ITEM_CLEAR_AMULET, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 252, 156, 4, 12, 0, 84, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_BULK_UP, MOVE_PRECIPICE_BLADES, MOVE_HEAT_CRASH, 2, FALSE, TYPE_FIRE, 10
+	givemon SPECIES_GROUDON, 65, ITEM_CLEAR_AMULET, ITEM_POKE_BALL, NATURE_ADAMANT, 0, 0, 252, 156, 4, 12, 0, 84, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_BULK_UP, MOVE_PRECIPICE_BLADES, MOVE_HEAT_CRASH, 2, FALSE, TYPE_FIRE, 10
 # 586 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Groudon_Page1_3:
 # 588 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_GROUDON, 65, ITEM_RED_ORB, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 252, 156, 4, 12, 0, 84, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SWORDS_DANCE, MOVE_PRECIPICE_BLADES, MOVE_FIRE_PUNCH, 2, FALSE, FALSE, 10
+	givemon SPECIES_GROUDON, 65, ITEM_RED_ORB, ITEM_POKE_BALL, NATURE_ADAMANT, 0, 0, 252, 156, 4, 12, 0, 84, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SWORDS_DANCE, MOVE_PRECIPICE_BLADES, MOVE_FIRE_PUNCH, 2, FALSE, FALSE, 10
 # 589 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Groudon_Page1_4:
 # 591 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_GROUDON, 65, ITEM_RED_ORB, ITEM_SPORT_BALL, NATURE_TIMID, 0, 0, 4, 0, 4, 252, 244, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_EARTH_POWER, MOVE_ERUPTION, MOVE_ROAR, 2, FALSE, FALSE, 10
+	givemon SPECIES_GROUDON, 65, ITEM_RED_ORB, ITEM_POKE_BALL, NATURE_TIMID, 0, 0, 4, 0, 4, 252, 244, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_EARTH_POWER, MOVE_ERUPTION, MOVE_ROAR, 2, FALSE, FALSE, 10
 # 592 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -1354,14 +1354,14 @@ Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Koraidon_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Koraidon_Page1_2:
 # 608 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_KORAIDON, 65, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 108, 116, 4, 212, 0, 68, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_FLAME_CHARGE, MOVE_CLOSE_COMBAT, MOVE_FLARE_BLITZ, 2, FALSE, TYPE_FIRE, 10
+	givemon SPECIES_KORAIDON, 65, ITEM_LIFE_ORB, ITEM_POKE_BALL, NATURE_ADAMANT, 0, 0, 108, 116, 4, 212, 0, 68, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_FLAME_CHARGE, MOVE_CLOSE_COMBAT, MOVE_FLARE_BLITZ, 2, FALSE, TYPE_FIRE, 10
 # 609 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Koraidon_Page1_3:
 # 611 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_KORAIDON, 65, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_JOLLY, 0, 0, 28, 220, 4, 252, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_FLAME_CHARGE, MOVE_CLOSE_COMBAT, MOVE_FLARE_BLITZ, 2, FALSE, TYPE_FIRE, 10
+	givemon SPECIES_KORAIDON, 65, ITEM_LIFE_ORB, ITEM_POKE_BALL, NATURE_JOLLY, 0, 0, 28, 220, 4, 252, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_FLAME_CHARGE, MOVE_CLOSE_COMBAT, MOVE_FLARE_BLITZ, 2, FALSE, TYPE_FIRE, 10
 # 612 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -1398,21 +1398,21 @@ Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Kyogre_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Kyogre_Page1_2:
 # 628 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_KYOGRE, 65, ITEM_MYSTIC_WATER, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 252, 0, 132, 44, 76, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WATER_SPOUT, MOVE_ORIGIN_PULSE, MOVE_ICE_BEAM, 2, FALSE, TYPE_GRASS, 10
+	givemon SPECIES_KYOGRE, 65, ITEM_MYSTIC_WATER, ITEM_POKE_BALL, NATURE_MODEST, 0, 0, 252, 0, 132, 44, 76, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WATER_SPOUT, MOVE_ORIGIN_PULSE, MOVE_ICE_BEAM, 2, FALSE, TYPE_GRASS, 10
 # 629 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Kyogre_Page1_3:
 # 631 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_KYOGRE, 65, ITEM_BLUE_ORB, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 252, 0, 164, 12, 76, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WATER_SPOUT, MOVE_ORIGIN_PULSE, MOVE_ICE_BEAM, 2, FALSE, TYPE_GRASS, 10
+	givemon SPECIES_KYOGRE, 65, ITEM_BLUE_ORB, ITEM_POKE_BALL, NATURE_MODEST, 0, 0, 252, 0, 164, 12, 76, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WATER_SPOUT, MOVE_ORIGIN_PULSE, MOVE_ICE_BEAM, 2, FALSE, TYPE_GRASS, 10
 # 632 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Kyogre_Page1_4:
 # 634 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_KYOGRE, 65, ITEM_CHOICE_SCARF, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 4, 0, 4, 252, 244, 4, 31, 0, 31, 31, 31, 31, MOVE_WATER_SPOUT, MOVE_ORIGIN_PULSE, MOVE_SCALD, MOVE_THUNDER, 2, FALSE, FALSE, 10
+	givemon SPECIES_KYOGRE, 65, ITEM_CHOICE_SCARF, ITEM_POKE_BALL, NATURE_MODEST, 0, 0, 4, 0, 4, 252, 244, 4, 31, 0, 31, 31, 31, 31, MOVE_WATER_SPOUT, MOVE_ORIGIN_PULSE, MOVE_SCALD, MOVE_THUNDER, 2, FALSE, FALSE, 10
 # 635 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -1445,7 +1445,7 @@ Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Lunala_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Restricted_Sets_Lunala_Page1_2:
 # 651 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_LUNALA, 65, ITEM_POWER_HERB, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 140, 0, 132, 52, 180, 4, 31, 0, 31, 31, 31, 31, MOVE_WIDE_GUARD, MOVE_MOONGEIST_BEAM, MOVE_METEOR_BEAM, MOVE_TRICK_ROOM, 2, FALSE, TYPE_DARK, 10
+	givemon SPECIES_LUNALA, 65, ITEM_POWER_HERB, ITEM_POKE_BALL, NATURE_MODEST, 0, 0, 140, 0, 132, 52, 180, 4, 31, 0, 31, 31, 31, 31, MOVE_WIDE_GUARD, MOVE_MOONGEIST_BEAM, MOVE_METEOR_BEAM, MOVE_TRICK_ROOM, 2, FALSE, TYPE_DARK, 10
 # 652 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -1480,14 +1480,14 @@ Auto_EventScript_Sample_Sets_Doubles_Rillaboom_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Rillaboom_Page1_2:
 # 668 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_RILLABOOM, 65, ITEM_ASSAULT_VEST, ITEM_SPORT_BALL, NATURE_ADAMANT, 1, 1, 140, 116, 12, 4, 0, 236, 31, 31, 31, 31, 31, 31, MOVE_U_TURN, MOVE_WOOD_HAMMER, MOVE_GRASSY_GLIDE, MOVE_FAKE_OUT, 2, FALSE, TYPE_FIRE, 10
+	givemon SPECIES_RILLABOOM, 65, ITEM_ASSAULT_VEST, ITEM_POKE_BALL, NATURE_ADAMANT, 2, 1, 140, 116, 12, 4, 0, 236, 31, 31, 31, 31, 31, 31, MOVE_U_TURN, MOVE_WOOD_HAMMER, MOVE_GRASSY_GLIDE, MOVE_FAKE_OUT, 2, FALSE, TYPE_FIRE, 10
 # 669 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Rillaboom_Page1_3:
 # 671 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_RILLABOOM, 65, ITEM_ASSAULT_VEST, ITEM_SPORT_BALL, NATURE_ADAMANT, 1, 1, 140, 196, 12, 4, 0, 156, 31, 31, 31, 31, 31, 31, MOVE_U_TURN, MOVE_WOOD_HAMMER, MOVE_GRASSY_GLIDE, MOVE_FAKE_OUT, 2, FALSE, TYPE_FIRE, 10
+	givemon SPECIES_RILLABOOM, 65, ITEM_ASSAULT_VEST, ITEM_POKE_BALL, NATURE_ADAMANT, 2, 1, 140, 196, 12, 4, 0, 156, 31, 31, 31, 31, 31, 31, MOVE_U_TURN, MOVE_WOOD_HAMMER, MOVE_GRASSY_GLIDE, MOVE_FAKE_OUT, 2, FALSE, TYPE_FIRE, 10
 # 672 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -1520,7 +1520,7 @@ Auto_EventScript_Sample_Sets_Doubles_Roaring_Moon_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Roaring_Moon_Page1_2:
 # 688 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_ROARING_MOON, 65, ITEM_BOOSTER_ENERGY, ITEM_SPORT_BALL, NATURE_JOLLY, 0, 0, 4, 220, 28, 252, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_TAILWIND, MOVE_ACROBATICS, MOVE_KNOCK_OFF, 2, FALSE, TYPE_FLYING, 10
+	givemon SPECIES_ROARING_MOON, 65, ITEM_BOOSTER_ENERGY, ITEM_POKE_BALL, NATURE_JOLLY, 0, 0, 4, 220, 28, 252, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_TAILWIND, MOVE_ACROBATICS, MOVE_KNOCK_OFF, 2, FALSE, TYPE_FLYING, 10
 # 689 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -1555,14 +1555,14 @@ Auto_EventScript_Sample_Sets_Doubles_Talonflame_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Talonflame_Page1_2:
 # 705 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_TALONFLAME, 65, ITEM_CHOICE_BAND, ITEM_SPORT_BALL, NATURE_ADAMANT, 1, 1, 4, 252, 0, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_BRAVE_BIRD, MOVE_FLARE_BLITZ, MOVE_SLEEP_TALK, MOVE_U_TURN, 2, FALSE, TYPE_FLYING, 10
+	givemon SPECIES_TALONFLAME, 65, ITEM_CHOICE_BAND, ITEM_POKE_BALL, NATURE_ADAMANT, 2, 1, 4, 252, 0, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_BRAVE_BIRD, MOVE_FLARE_BLITZ, MOVE_SLEEP_TALK, MOVE_U_TURN, 2, FALSE, TYPE_FLYING, 10
 # 706 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Talonflame_Page1_3:
 # 708 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_TALONFLAME, 65, ITEM_CHOICE_BAND, ITEM_SPORT_BALL, NATURE_JOLLY, 1, 0, 4, 252, 0, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_BRAVE_BIRD, MOVE_FLARE_BLITZ, MOVE_U_TURN, MOVE_TAUNT, 2, FALSE, TYPE_FLYING, 10
+	givemon SPECIES_TALONFLAME, 65, ITEM_CHOICE_BAND, ITEM_POKE_BALL, NATURE_JOLLY, 2, 0, 4, 252, 0, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_BRAVE_BIRD, MOVE_FLARE_BLITZ, MOVE_U_TURN, MOVE_TAUNT, 2, FALSE, TYPE_FLYING, 10
 # 709 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -1595,7 +1595,7 @@ Auto_EventScript_Sample_Sets_Doubles_Ogerpon_Ws_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Ogerpon_Ws_Page1_2:
 # 725 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_OGERPON_WELLSPRING, 65, ITEM_WELLSPRING_MASK, ITEM_SPORT_BALL, NATURE_JOLLY, 0, 1, 220, 60, 44, 180, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_SPIKY_SHIELD, MOVE_FOLLOW_ME, MOVE_IVY_CUDGEL, MOVE_HORN_LEECH, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_OGERPON_WELLSPRING, 65, ITEM_WELLSPRING_MASK, ITEM_POKE_BALL, NATURE_JOLLY, 0, 1, 220, 60, 44, 180, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_SPIKY_SHIELD, MOVE_FOLLOW_ME, MOVE_IVY_CUDGEL, MOVE_HORN_LEECH, 2, FALSE, TYPE_WATER, 10
 # 726 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -1628,7 +1628,7 @@ Auto_EventScript_Sample_Sets_Doubles_Pelipper_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Pelipper_Page1_2:
 # 742 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_PELIPPER, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_MODEST, 1, 0, 0, 0, 4, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WIDE_GUARD, MOVE_WEATHER_BALL, MOVE_HURRICANE, 2, FALSE, TYPE_GHOST, 10
+	givemon SPECIES_PELIPPER, 65, ITEM_FOCUS_SASH, ITEM_POKE_BALL, NATURE_MODEST, 1, 0, 0, 0, 4, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WIDE_GUARD, MOVE_WEATHER_BALL, MOVE_HURRICANE, 2, FALSE, TYPE_GHOST, 10
 # 743 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -1661,7 +1661,7 @@ Auto_EventScript_Sample_Sets_Doubles_Politoed_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Politoed_Page1_2:
 # 759 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_POLITOED, 65, ITEM_LEFTOVERS, ITEM_SPORT_BALL, NATURE_CALM, 2, 1, 220, 0, 196, 12, 4, 76, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ENCORE, MOVE_PERISH_SONG, MOVE_SCALD, 2, FALSE, TYPE_GRASS, 10
+	givemon SPECIES_POLITOED, 65, ITEM_LEFTOVERS, ITEM_POKE_BALL, NATURE_CALM, 2, 1, 220, 0, 196, 12, 4, 76, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ENCORE, MOVE_PERISH_SONG, MOVE_SCALD, 2, FALSE, TYPE_GRASS, 10
 # 760 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -1696,14 +1696,14 @@ Auto_EventScript_Sample_Sets_Doubles_Porygon2_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Porygon2_Page1_2:
 # 776 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_PORYGON2, 65, ITEM_EVIOLITE, ITEM_SPORT_BALL, NATURE_MODEST, 1, 0, 244, 0, 92, 4, 116, 52, 31, 0, 31, 31, 31, 31, MOVE_TERA_BLAST, MOVE_ICE_BEAM, MOVE_TRICK_ROOM, MOVE_RECOVER, 2, FALSE, TYPE_FLYING, 10
+	givemon SPECIES_PORYGON2, 65, ITEM_EVIOLITE, ITEM_POKE_BALL, NATURE_MODEST, 1, 0, 244, 0, 92, 4, 116, 52, 31, 0, 31, 31, 31, 31, MOVE_TERA_BLAST, MOVE_ICE_BEAM, MOVE_TRICK_ROOM, MOVE_RECOVER, 2, FALSE, TYPE_FLYING, 10
 # 777 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Porygon2_Page1_3:
 # 779 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_PORYGON2, 65, ITEM_EVIOLITE, ITEM_SPORT_BALL, NATURE_QUIET, 1, 0, 244, 0, 92, 0, 116, 52, 31, 0, 31, 0, 31, 31, MOVE_TERA_BLAST, MOVE_ICE_BEAM, MOVE_TRICK_ROOM, MOVE_RECOVER, 2, FALSE, TYPE_FLYING, 10
+	givemon SPECIES_PORYGON2, 65, ITEM_EVIOLITE, ITEM_POKE_BALL, NATURE_QUIET, 1, 0, 244, 0, 92, 0, 116, 52, 31, 0, 31, 0, 31, 31, MOVE_TERA_BLAST, MOVE_ICE_BEAM, MOVE_TRICK_ROOM, MOVE_RECOVER, 2, FALSE, TYPE_FLYING, 10
 # 780 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -1738,14 +1738,14 @@ Auto_EventScript_Sample_Sets_Doubles_Raging_Bolt_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Raging_Bolt_Page1_2:
 # 796 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_RAGING_BOLT, 65, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 148, 0, 36, 180, 100, 44, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_THUNDERBOLT, MOVE_DRACO_METEOR, MOVE_THUNDERCLAP, 2, FALSE, TYPE_ELECTRIC, 10
+	givemon SPECIES_RAGING_BOLT, 65, ITEM_LIFE_ORB, ITEM_POKE_BALL, NATURE_MODEST, 0, 0, 148, 0, 36, 180, 100, 44, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_THUNDERBOLT, MOVE_DRACO_METEOR, MOVE_THUNDERCLAP, 2, FALSE, TYPE_ELECTRIC, 10
 # 797 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Raging_Bolt_Page1_3:
 # 799 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_RAGING_BOLT, 65, ITEM_ASSAULT_VEST, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 244, 0, 124, 4, 100, 36, 31, 0, 31, 31, 31, 31, MOVE_SNARL, MOVE_THUNDERBOLT, MOVE_DRACO_METEOR, MOVE_THUNDERCLAP, 2, FALSE, TYPE_ELECTRIC, 10
+	givemon SPECIES_RAGING_BOLT, 65, ITEM_ASSAULT_VEST, ITEM_POKE_BALL, NATURE_MODEST, 0, 0, 244, 0, 124, 4, 100, 36, 31, 0, 31, 31, 31, 31, MOVE_SNARL, MOVE_THUNDERBOLT, MOVE_DRACO_METEOR, MOVE_THUNDERCLAP, 2, FALSE, TYPE_ELECTRIC, 10
 # 800 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -1784,28 +1784,28 @@ Auto_EventScript_Sample_Sets_Doubles_Lando_T_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Lando_T_Page1_2:
 # 816 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_LANDORUS_THERIAN, 65, ITEM_CHOICE_SCARF, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 12, 196, 4, 252, 0, 44, 31, 31, 31, 31, 31, 31, MOVE_U_TURN, MOVE_STOMPING_TANTRUM, MOVE_ROCK_SLIDE, MOVE_TERA_BLAST, 2, FALSE, TYPE_FLYING, 10
+	givemon SPECIES_LANDORUS_THERIAN, 65, ITEM_CHOICE_SCARF, ITEM_POKE_BALL, NATURE_ADAMANT, 0, 0, 12, 196, 4, 252, 0, 44, 31, 31, 31, 31, 31, 31, MOVE_U_TURN, MOVE_STOMPING_TANTRUM, MOVE_ROCK_SLIDE, MOVE_TERA_BLAST, 2, FALSE, TYPE_FLYING, 10
 # 817 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Lando_T_Page1_3:
 # 819 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_LANDORUS_THERIAN, 65, ITEM_ASSAULT_VEST, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 12, 196, 4, 252, 0, 44, 31, 31, 31, 31, 31, 31, MOVE_U_TURN, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_SUPERPOWER, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_LANDORUS_THERIAN, 65, ITEM_ASSAULT_VEST, ITEM_POKE_BALL, NATURE_ADAMANT, 0, 0, 12, 196, 4, 252, 0, 44, 31, 31, 31, 31, 31, 31, MOVE_U_TURN, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_SUPERPOWER, 2, FALSE, TYPE_WATER, 10
 # 820 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Lando_T_Page1_4:
 # 822 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_LANDORUS_THERIAN, 65, ITEM_GROUNDIUM_Z, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 156, 116, 36, 92, 0, 108, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SWORDS_DANCE, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_LANDORUS_THERIAN, 65, ITEM_GROUNDIUM_Z, ITEM_POKE_BALL, NATURE_ADAMANT, 0, 0, 156, 116, 36, 92, 0, 108, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SWORDS_DANCE, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, 2, FALSE, TYPE_WATER, 10
 # 823 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Lando_T_Page1_5:
 # 825 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_LANDORUS_THERIAN, 65, ITEM_GROUNDIUM_Z, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 20, 164, 4, 252, 0, 68, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_SUPERPOWER, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_LANDORUS_THERIAN, 65, ITEM_GROUNDIUM_Z, ITEM_POKE_BALL, NATURE_ADAMANT, 0, 0, 20, 164, 4, 252, 0, 68, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_SUPERPOWER, 2, FALSE, TYPE_WATER, 10
 # 826 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -1840,14 +1840,14 @@ Auto_EventScript_Sample_Sets_Doubles_Landorus_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Landorus_Page1_2:
 # 842 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_LANDORUS, 65, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_MODEST, 1, 0, 132, 0, 4, 252, 116, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SANDSEAR_STORM, MOVE_EARTH_POWER, MOVE_SLUDGE_BOMB, 2, FALSE, TYPE_POISON, 10
+	givemon SPECIES_LANDORUS, 65, ITEM_LIFE_ORB, ITEM_POKE_BALL, NATURE_MODEST, 2, 0, 132, 0, 4, 252, 116, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SANDSEAR_STORM, MOVE_EARTH_POWER, MOVE_SLUDGE_BOMB, 2, FALSE, TYPE_POISON, 10
 # 843 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Landorus_Page1_3:
 # 845 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_LANDORUS, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_TIMID, 1, 0, 4, 0, 0, 252, 252, 0, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SANDSEAR_STORM, MOVE_EARTH_POWER, MOVE_SLUDGE_BOMB, 2, FALSE, TYPE_POISON, 10
+	givemon SPECIES_LANDORUS, 65, ITEM_FOCUS_SASH, ITEM_POKE_BALL, NATURE_TIMID, 2, 0, 4, 0, 0, 252, 252, 0, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SANDSEAR_STORM, MOVE_EARTH_POWER, MOVE_SLUDGE_BOMB, 2, FALSE, TYPE_POISON, 10
 # 846 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2029,7 +2029,7 @@ Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Manectric_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Manectric_Page1_2:
 # 926 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_MANECTRIC, 65, ITEM_MANECTITE, ITEM_SPORT_BALL, NATURE_TIMID, 1, 1, 244, 0, 4, 220, 36, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_VOLT_SWITCH, MOVE_OVERHEAT, MOVE_SNARL, 2, FALSE, TYPE_GRASS, 10
+	givemon SPECIES_MANECTRIC, 65, ITEM_MANECTITE, ITEM_POKE_BALL, NATURE_TIMID, 1, 1, 244, 0, 4, 220, 36, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_VOLT_SWITCH, MOVE_OVERHEAT, MOVE_SNARL, 2, FALSE, TYPE_GRASS, 10
 # 927 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2064,14 +2064,14 @@ Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Mawile_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Mawile_Page1_2:
 # 943 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_MAWILE, 65, ITEM_MAWILITE, ITEM_SPORT_BALL, NATURE_BRAVE, 1, 1, 156, 196, 0, 0, 0, 156, 31, 31, 31, 0, 31, 31, MOVE_PROTECT, MOVE_IRON_HEAD, MOVE_PLAY_ROUGH, MOVE_SUCKER_PUNCH, 2, FALSE, TYPE_FIRE, 10
+	givemon SPECIES_MAWILE, 65, ITEM_MAWILITE, ITEM_POKE_BALL, NATURE_BRAVE, 1, 1, 156, 196, 0, 0, 0, 156, 31, 31, 31, 0, 31, 31, MOVE_PROTECT, MOVE_IRON_HEAD, MOVE_PLAY_ROUGH, MOVE_SUCKER_PUNCH, 2, FALSE, TYPE_FIRE, 10
 # 944 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Mawile_Page1_3:
 # 946 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_MAWILE, 65, ITEM_MAWILITE, ITEM_SPORT_BALL, NATURE_ADAMANT, 1, 0, 156, 196, 4, 4, 0, 148, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_IRON_HEAD, MOVE_PLAY_ROUGH, MOVE_SUCKER_PUNCH, 2, FALSE, TYPE_FIRE, 10
+	givemon SPECIES_MAWILE, 65, ITEM_MAWILITE, ITEM_POKE_BALL, NATURE_ADAMANT, 1, 0, 156, 196, 4, 4, 0, 148, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_IRON_HEAD, MOVE_PLAY_ROUGH, MOVE_SUCKER_PUNCH, 2, FALSE, TYPE_FIRE, 10
 # 947 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2104,7 +2104,7 @@ Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Metagross_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Metagross_Page1_2:
 # 963 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_METAGROSS, 65, ITEM_METAGROSSITE, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 124, 196, 12, 140, 0, 36, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_IRON_HEAD, MOVE_ICE_PUNCH, MOVE_STOMPING_TANTRUM, 2, FALSE, TYPE_FIRE, 10
+	givemon SPECIES_METAGROSS, 65, ITEM_METAGROSSITE, ITEM_POKE_BALL, NATURE_ADAMANT, 0, 0, 124, 196, 12, 140, 0, 36, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_IRON_HEAD, MOVE_ICE_PUNCH, MOVE_STOMPING_TANTRUM, 2, FALSE, TYPE_FIRE, 10
 # 964 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2141,21 +2141,21 @@ Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Salamence_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Salamence_Page1_2:
 # 980 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_SALAMENCE, 65, ITEM_SALAMENCITE, ITEM_SPORT_BALL, NATURE_NAIVE, 0, 0, 0, 44, 0, 212, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_TAILWIND, MOVE_HYPER_VOICE, MOVE_DOUBLE_EDGE, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_SALAMENCE, 65, ITEM_SALAMENCITE, ITEM_POKE_BALL, NATURE_NAIVE, 0, 0, 0, 44, 0, 212, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_TAILWIND, MOVE_HYPER_VOICE, MOVE_DOUBLE_EDGE, 2, FALSE, TYPE_WATER, 10
 # 981 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Salamence_Page1_3:
 # 983 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_SALAMENCE, 65, ITEM_SALAMENCITE, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 252, 36, 4, 92, 0, 124, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ROOST, MOVE_DOUBLE_EDGE, MOVE_DRAGON_DANCE, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_SALAMENCE, 65, ITEM_SALAMENCITE, ITEM_POKE_BALL, NATURE_ADAMANT, 0, 0, 252, 36, 4, 92, 0, 124, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ROOST, MOVE_DOUBLE_EDGE, MOVE_DRAGON_DANCE, 2, FALSE, TYPE_WATER, 10
 # 984 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Salamence_Page1_4:
 # 986 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_SALAMENCE, 65, ITEM_SALAMENCITE, ITEM_SPORT_BALL, NATURE_MODEST, 0, 1, 4, 0, 4, 252, 244, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_TAILWIND, MOVE_HYPER_VOICE, MOVE_DRACO_METEOR, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_SALAMENCE, 65, ITEM_SALAMENCITE, ITEM_POKE_BALL, NATURE_MODEST, 0, 1, 4, 0, 4, 252, 244, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_TAILWIND, MOVE_HYPER_VOICE, MOVE_DRACO_METEOR, 2, FALSE, TYPE_WATER, 10
 # 987 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2188,7 +2188,7 @@ Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Tyranitar_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Tyranitar_Page1_2:
 # 1003 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_TYRANITAR, 65, ITEM_TYRANITARITE, ITEM_SPORT_BALL, NATURE_JOLLY, 0, 1, 44, 164, 20, 252, 0, 28, 31, 31, 31, 31, 31, 31, MOVE_ROCK_SLIDE, MOVE_CRUNCH, MOVE_DRAGON_DANCE, MOVE_PROTECT, 2, FALSE, FALSE, 10
+	givemon SPECIES_TYRANITAR, 65, ITEM_TYRANITARITE, ITEM_POKE_BALL, NATURE_JOLLY, 0, 1, 44, 164, 20, 252, 0, 28, 31, 31, 31, 31, 31, 31, MOVE_ROCK_SLIDE, MOVE_CRUNCH, MOVE_DRAGON_DANCE, MOVE_PROTECT, 2, FALSE, FALSE, 10
 # 1004 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2223,14 +2223,14 @@ Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Charizard_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Charizard_Page1_2:
 # 1020 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_CHARIZARD, 65, ITEM_CHARIZARDITE_Y, ITEM_SPORT_BALL, NATURE_MODEST, 0, 1, 204, 0, 108, 188, 4, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SCORCHING_SANDS, MOVE_FLAMETHROWER, MOVE_SOLAR_BEAM, 2, FALSE, TYPE_GRASS, 10
+	givemon SPECIES_CHARIZARD, 65, ITEM_CHARIZARDITE_Y, ITEM_POKE_BALL, NATURE_MODEST, 0, 1, 204, 0, 108, 188, 4, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SCORCHING_SANDS, MOVE_FLAMETHROWER, MOVE_SOLAR_BEAM, 2, FALSE, TYPE_GRASS, 10
 # 1021 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Charizard_Page1_3:
 # 1023 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_CHARIZARD, 65, ITEM_CHARIZARDITE_X, ITEM_SPORT_BALL, NATURE_JOLLY, 0, 0, 236, 44, 4, 220, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_FLARE_BLITZ, MOVE_WILL_O_WISP, MOVE_ROOST, 2, FALSE, TYPE_GRASS, 10
+	givemon SPECIES_CHARIZARD, 65, ITEM_CHARIZARDITE_X, ITEM_POKE_BALL, NATURE_JOLLY, 0, 0, 236, 44, 4, 220, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_FLARE_BLITZ, MOVE_WILL_O_WISP, MOVE_ROOST, 2, FALSE, TYPE_GRASS, 10
 # 1024 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2263,7 +2263,7 @@ Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Gardevoir_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Gardevoir_Page1_2:
 # 1040 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_GARDEVOIR, 65, ITEM_GARDEVOIRITE, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 244, 0, 196, 28, 36, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_HYPER_VOICE, MOVE_TRICK_ROOM, MOVE_PSYCHIC, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_GARDEVOIR, 65, ITEM_GARDEVOIRITE, ITEM_POKE_BALL, NATURE_MODEST, 0, 0, 244, 0, 196, 28, 36, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_HYPER_VOICE, MOVE_TRICK_ROOM, MOVE_PSYCHIC, 2, FALSE, TYPE_WATER, 10
 # 1041 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2298,14 +2298,14 @@ Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Gengar_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Gengar_Page1_2:
 # 1057 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_GENGAR, 65, ITEM_GENGARITE, ITEM_SPORT_BALL, NATURE_TIMID, 0, 0, 252, 0, 68, 180, 4, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SHADOW_BALL, MOVE_PERISH_SONG, MOVE_DISABLE, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_GENGAR, 65, ITEM_GENGARITE, ITEM_POKE_BALL, NATURE_TIMID, 0, 0, 252, 0, 68, 180, 4, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SHADOW_BALL, MOVE_PERISH_SONG, MOVE_DISABLE, 2, FALSE, TYPE_WATER, 10
 # 1058 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Gengar_Page1_3:
 # 1060 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_GENGAR, 65, ITEM_GENGARITE, ITEM_SPORT_BALL, NATURE_TIMID, 0, 1, 76, 0, 28, 180, 220, 4, 31, 0, 31, 31, 31, 31, MOVE_SHADOW_BALL, MOVE_SLUDGE_BOMB, MOVE_DISABLE, MOVE_PROTECT, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_GENGAR, 65, ITEM_GENGARITE, ITEM_POKE_BALL, NATURE_TIMID, 0, 1, 76, 0, 28, 180, 220, 4, 31, 0, 31, 31, 31, 31, MOVE_SHADOW_BALL, MOVE_SLUDGE_BOMB, MOVE_DISABLE, MOVE_PROTECT, 2, FALSE, TYPE_WATER, 10
 # 1061 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2338,7 +2338,7 @@ Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Kangaskhan_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Kangaskhan_Page1_2:
 # 1077 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_KANGASKHAN, 65, ITEM_KANGASKHANITE, ITEM_SPORT_BALL, NATURE_ADAMANT, 1, 1, 36, 196, 20, 20, 0, 236, 31, 31, 31, 31, 31, 31, MOVE_RETURN, MOVE_LOW_KICK, MOVE_SUCKER_PUNCH, MOVE_FAKE_OUT, 2, FALSE, TYPE_GHOST, 10
+	givemon SPECIES_KANGASKHAN, 65, ITEM_KANGASKHANITE, ITEM_POKE_BALL, NATURE_ADAMANT, 1, 1, 36, 196, 20, 20, 0, 236, 31, 31, 31, 31, 31, 31, MOVE_RETURN, MOVE_LOW_KICK, MOVE_SUCKER_PUNCH, MOVE_FAKE_OUT, 2, FALSE, TYPE_GHOST, 10
 # 1078 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2371,7 +2371,7 @@ Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Latias_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Mega_Sets_Latias_Page1_2:
 # 1094 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_LATIAS, 65, ITEM_LATIASITE, ITEM_SPORT_BALL, NATURE_MODEST, 0, 1, 252, 0, 60, 108, 76, 12, 31, 0, 31, 31, 31, 31, MOVE_PSYSHOCK, MOVE_ICE_BEAM, MOVE_CALM_MIND, MOVE_RECOVER, 2, FALSE, FALSE, 10
+	givemon SPECIES_LATIAS, 65, ITEM_LATIASITE, ITEM_POKE_BALL, NATURE_MODEST, 0, 1, 252, 0, 60, 108, 76, 12, 31, 0, 31, 31, 31, 31, MOVE_PSYSHOCK, MOVE_ICE_BEAM, MOVE_CALM_MIND, MOVE_RECOVER, 2, FALSE, FALSE, 10
 # 1095 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2404,7 +2404,7 @@ Auto_EventScript_Sample_Sets_Doubles_Ogerpon_Cs_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Ogerpon_Cs_Page1_2:
 # 1111 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_OGERPON_CORNERSTONE, 65, ITEM_CORNERSTONE_MASK, ITEM_SPORT_BALL, NATURE_JOLLY, 0, 1, 0, 252, 4, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_SPIKY_SHIELD, MOVE_FOLLOW_ME, MOVE_POWER_WHIP, MOVE_IVY_CUDGEL, 2, FALSE, TYPE_ROCK, 10
+	givemon SPECIES_OGERPON_CORNERSTONE, 65, ITEM_CORNERSTONE_MASK, ITEM_POKE_BALL, NATURE_JOLLY, 0, 1, 0, 252, 4, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_SPIKY_SHIELD, MOVE_FOLLOW_ME, MOVE_POWER_WHIP, MOVE_IVY_CUDGEL, 2, FALSE, TYPE_ROCK, 10
 # 1112 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2439,14 +2439,14 @@ Auto_EventScript_Sample_Sets_Doubles_Ogerpon_Hf_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Ogerpon_Hf_Page1_2:
 # 1128 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_OGERPON_HEARTHFLAME, 65, ITEM_HEARTHFLAME_MASK, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 1, 188, 76, 52, 188, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_SPIKY_SHIELD, MOVE_FOLLOW_ME, MOVE_WOOD_HAMMER, MOVE_IVY_CUDGEL, 2, FALSE, TYPE_FIRE, 10
+	givemon SPECIES_OGERPON_HEARTHFLAME, 65, ITEM_HEARTHFLAME_MASK, ITEM_POKE_BALL, NATURE_ADAMANT, 0, 1, 188, 76, 52, 188, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_SPIKY_SHIELD, MOVE_FOLLOW_ME, MOVE_WOOD_HAMMER, MOVE_IVY_CUDGEL, 2, FALSE, TYPE_FIRE, 10
 # 1129 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Ogerpon_Hf_Page1_3:
 # 1131 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_OGERPON_HEARTHFLAME, 65, ITEM_HEARTHFLAME_MASK, ITEM_SPORT_BALL, NATURE_JOLLY, 0, 1, 28, 220, 4, 252, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_SPIKY_SHIELD, MOVE_FOLLOW_ME, MOVE_WOOD_HAMMER, MOVE_IVY_CUDGEL, 2, FALSE, TYPE_FIRE, 10
+	givemon SPECIES_OGERPON_HEARTHFLAME, 65, ITEM_HEARTHFLAME_MASK, ITEM_POKE_BALL, NATURE_JOLLY, 0, 1, 28, 220, 4, 252, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_SPIKY_SHIELD, MOVE_FOLLOW_ME, MOVE_WOOD_HAMMER, MOVE_IVY_CUDGEL, 2, FALSE, TYPE_FIRE, 10
 # 1132 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2479,7 +2479,7 @@ Auto_EventScript_Sample_Sets_Doubles_Indeedee_F_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Indeedee_F_Page1_2:
 # 1148 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_INDEEDEE_F, 65, ITEM_PSYCHIC_SEED, ITEM_SPORT_BALL, NATURE_CALM, 2, 1, 252, 0, 204, 4, 4, 44, 31, 31, 31, 31, 31, 31, MOVE_FOLLOW_ME, MOVE_HELPING_HAND, MOVE_TRICK_ROOM, MOVE_PSYCHIC, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_INDEEDEE_F, 65, ITEM_PSYCHIC_SEED, ITEM_POKE_BALL, NATURE_CALM, 2, 1, 252, 0, 204, 4, 4, 44, 31, 31, 31, 31, 31, 31, MOVE_FOLLOW_ME, MOVE_HELPING_HAND, MOVE_TRICK_ROOM, MOVE_PSYCHIC, 2, FALSE, TYPE_WATER, 10
 # 1149 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2512,7 +2512,7 @@ Auto_EventScript_Sample_Sets_Doubles_Iron_Bundle_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Iron_Bundle_Page1_2:
 # 1165 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_IRON_BUNDLE, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_TIMID, 0, 0, 0, 0, 0, 252, 252, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ICY_WIND, MOVE_FREEZE_DRY, MOVE_HYDRO_PUMP, 2, FALSE, TYPE_GRASS, 10
+	givemon SPECIES_IRON_BUNDLE, 65, ITEM_FOCUS_SASH, ITEM_POKE_BALL, NATURE_TIMID, 0, 0, 0, 0, 0, 252, 252, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ICY_WIND, MOVE_FREEZE_DRY, MOVE_HYDRO_PUMP, 2, FALSE, TYPE_GRASS, 10
 # 1166 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2547,14 +2547,14 @@ Auto_EventScript_Sample_Sets_Doubles_Iron_Hands_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Iron_Hands_Page1_2:
 # 1182 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_IRON_HANDS, 65, ITEM_ASSAULT_VEST, ITEM_SPORT_BALL, NATURE_BRAVE, 0, 0, 100, 156, 0, 0, 0, 252, 31, 31, 31, 31, 31, 31, MOVE_DRAIN_PUNCH, MOVE_WILD_CHARGE, MOVE_HEAVY_SLAM, MOVE_FAKE_OUT, 2, FALSE, TYPE_GRASS, 10
+	givemon SPECIES_IRON_HANDS, 65, ITEM_ASSAULT_VEST, ITEM_POKE_BALL, NATURE_BRAVE, 0, 0, 100, 156, 0, 0, 0, 252, 31, 31, 31, 31, 31, 31, MOVE_DRAIN_PUNCH, MOVE_WILD_CHARGE, MOVE_HEAVY_SLAM, MOVE_FAKE_OUT, 2, FALSE, TYPE_GRASS, 10
 # 1183 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Iron_Hands_Page1_3:
 # 1185 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_IRON_HANDS, 65, ITEM_ASSAULT_VEST, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 60, 156, 36, 4, 0, 252, 31, 31, 31, 31, 31, 31, MOVE_DRAIN_PUNCH, MOVE_WILD_CHARGE, MOVE_HEAVY_SLAM, MOVE_FAKE_OUT, 2, FALSE, TYPE_GRASS, 10
+	givemon SPECIES_IRON_HANDS, 65, ITEM_ASSAULT_VEST, ITEM_POKE_BALL, NATURE_ADAMANT, 0, 0, 60, 156, 36, 4, 0, 252, 31, 31, 31, 31, 31, 31, MOVE_DRAIN_PUNCH, MOVE_WILD_CHARGE, MOVE_HEAVY_SLAM, MOVE_FAKE_OUT, 2, FALSE, TYPE_GRASS, 10
 # 1186 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2587,7 +2587,7 @@ Auto_EventScript_Sample_Sets_Doubles_Kartana_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Kartana_Page1_2:
 # 1202 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_KARTANA, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_JOLLY, 0, 0, 4, 252, 0, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_LEAF_BLADE, MOVE_SACRED_SWORD, MOVE_TAILWIND, MOVE_DETECT, 2, FALSE, FALSE, 10
+	givemon SPECIES_KARTANA, 65, ITEM_FOCUS_SASH, ITEM_POKE_BALL, NATURE_JOLLY, 0, 0, 4, 252, 0, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_LEAF_BLADE, MOVE_SACRED_SWORD, MOVE_TAILWIND, MOVE_DETECT, 2, FALSE, FALSE, 10
 # 1203 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2622,14 +2622,14 @@ Auto_EventScript_Sample_Sets_Doubles_Kingambit_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Kingambit_Page1_2:
 # 1219 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_KINGAMBIT, 65, ITEM_BLACK_GLASSES, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 1, 204, 196, 4, 12, 0, 92, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SWORDS_DANCE, MOVE_KOWTOW_CLEAVE, MOVE_SUCKER_PUNCH, 2, FALSE, TYPE_DARK, 10
+	givemon SPECIES_KINGAMBIT, 65, ITEM_BLACK_GLASSES, ITEM_POKE_BALL, NATURE_ADAMANT, 0, 1, 204, 196, 4, 12, 0, 92, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SWORDS_DANCE, MOVE_KOWTOW_CLEAVE, MOVE_SUCKER_PUNCH, 2, FALSE, TYPE_DARK, 10
 # 1220 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Kingambit_Page1_3:
 # 1222 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_KINGAMBIT, 65, ITEM_ASSAULT_VEST, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 204, 196, 4, 12, 0, 92, 31, 31, 31, 31, 31, 31, MOVE_KOWTOW_CLEAVE, MOVE_SUCKER_PUNCH, MOVE_TERA_BLAST, MOVE_IRON_HEAD, 2, FALSE, TYPE_FLYING, 10
+	givemon SPECIES_KINGAMBIT, 65, ITEM_ASSAULT_VEST, ITEM_POKE_BALL, NATURE_ADAMANT, 0, 0, 204, 196, 4, 12, 0, 92, 31, 31, 31, 31, 31, 31, MOVE_KOWTOW_CLEAVE, MOVE_SUCKER_PUNCH, MOVE_TERA_BLAST, MOVE_IRON_HEAD, 2, FALSE, TYPE_FLYING, 10
 # 1223 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2664,14 +2664,14 @@ Auto_EventScript_Sample_Sets_Doubles_Garganacl_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Garganacl_Page1_2:
 # 1239 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_GARGANACL, 65, ITEM_LEFTOVERS, ITEM_SPORT_BALL, NATURE_SASSY, 0, 0, 252, 0, 20, 0, 0, 236, 31, 31, 31, 0, 31, 31, MOVE_PROTECT, MOVE_WIDE_GUARD, MOVE_SALT_CURE, MOVE_RECOVER, 2, FALSE, TYPE_GHOST, 10
+	givemon SPECIES_GARGANACL, 65, ITEM_LEFTOVERS, ITEM_POKE_BALL, NATURE_SASSY, 0, 0, 252, 0, 20, 0, 0, 236, 31, 31, 31, 0, 31, 31, MOVE_PROTECT, MOVE_WIDE_GUARD, MOVE_SALT_CURE, MOVE_RECOVER, 2, FALSE, TYPE_GHOST, 10
 # 1240 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Garganacl_Page1_3:
 # 1242 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_GARGANACL, 65, ITEM_LEFTOVERS, ITEM_SPORT_BALL, NATURE_CAREFUL, 0, 1, 252, 4, 12, 4, 0, 236, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WIDE_GUARD, MOVE_SALT_CURE, MOVE_RECOVER, 2, FALSE, TYPE_GHOST, 10
+	givemon SPECIES_GARGANACL, 65, ITEM_LEFTOVERS, ITEM_POKE_BALL, NATURE_CAREFUL, 0, 1, 252, 4, 12, 4, 0, 236, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WIDE_GUARD, MOVE_SALT_CURE, MOVE_RECOVER, 2, FALSE, TYPE_GHOST, 10
 # 1243 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2708,21 +2708,21 @@ Auto_EventScript_Sample_Sets_Doubles_Gholdengo_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Gholdengo_Page1_2:
 # 1259 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_GHOLDENGO, 65, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 212, 0, 4, 60, 212, 20, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_NASTY_PLOT, MOVE_SHADOW_BALL, MOVE_MAKE_IT_RAIN, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_GHOLDENGO, 65, ITEM_LIFE_ORB, ITEM_POKE_BALL, NATURE_MODEST, 0, 0, 212, 0, 4, 60, 212, 20, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_NASTY_PLOT, MOVE_SHADOW_BALL, MOVE_MAKE_IT_RAIN, 2, FALSE, TYPE_WATER, 10
 # 1260 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Gholdengo_Page1_3:
 # 1262 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_GHOLDENGO, 65, ITEM_LEFTOVERS, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 244, 0, 4, 36, 212, 12, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_NASTY_PLOT, MOVE_SHADOW_BALL, MOVE_MAKE_IT_RAIN, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_GHOLDENGO, 65, ITEM_LEFTOVERS, ITEM_POKE_BALL, NATURE_MODEST, 0, 0, 244, 0, 4, 36, 212, 12, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_NASTY_PLOT, MOVE_SHADOW_BALL, MOVE_MAKE_IT_RAIN, 2, FALSE, TYPE_WATER, 10
 # 1263 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Gholdengo_Page1_4:
 # 1265 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_GHOLDENGO, 65, ITEM_CHOICE_SPECS, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 36, 0, 4, 252, 212, 4, 31, 0, 31, 31, 31, 31, MOVE_STEEL_BEAM, MOVE_SHADOW_BALL, MOVE_MAKE_IT_RAIN, MOVE_DAZZLING_GLEAM, 2, FALSE, TYPE_STEEL, 10
+	givemon SPECIES_GHOLDENGO, 65, ITEM_CHOICE_SPECS, ITEM_POKE_BALL, NATURE_MODEST, 0, 0, 36, 0, 4, 252, 212, 4, 31, 0, 31, 31, 31, 31, MOVE_STEEL_BEAM, MOVE_SHADOW_BALL, MOVE_MAKE_IT_RAIN, MOVE_DAZZLING_GLEAM, 2, FALSE, TYPE_STEEL, 10
 # 1266 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2755,7 +2755,7 @@ Auto_EventScript_Sample_Sets_Doubles_Hatterene_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Hatterene_Page1_2:
 # 1282 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_HATTERENE, 65, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_QUIET, 2, 1, 212, 0, 84, 0, 188, 20, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_TRICK_ROOM, MOVE_EXPANDING_FORCE, MOVE_DAZZLING_GLEAM, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_HATTERENE, 65, ITEM_LIFE_ORB, ITEM_POKE_BALL, NATURE_QUIET, 2, 1, 212, 0, 84, 0, 188, 20, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_TRICK_ROOM, MOVE_EXPANDING_FORCE, MOVE_DAZZLING_GLEAM, 2, FALSE, TYPE_WATER, 10
 # 1283 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2790,14 +2790,14 @@ Auto_EventScript_Sample_Sets_Doubles_Heatran_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Heatran_Page1_2:
 # 1299 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_HEATRAN, 65, ITEM_SHUCA_BERRY, ITEM_SPORT_BALL, NATURE_MODEST, 0, 1, 244, 0, 4, 20, 236, 4, 31, 0, 31, 31, 31, 31, MOVE_HEAT_WAVE, MOVE_EARTH_POWER, MOVE_SUBSTITUTE, MOVE_PROTECT, 2, FALSE, TYPE_GRASS, 10
+	givemon SPECIES_HEATRAN, 65, ITEM_SHUCA_BERRY, ITEM_POKE_BALL, NATURE_MODEST, 0, 1, 244, 0, 4, 20, 236, 4, 31, 0, 31, 31, 31, 31, MOVE_HEAT_WAVE, MOVE_EARTH_POWER, MOVE_SUBSTITUTE, MOVE_PROTECT, 2, FALSE, TYPE_GRASS, 10
 # 1300 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Heatran_Page1_3:
 # 1302 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_HEATRAN, 65, ITEM_LEFTOVERS, ITEM_SPORT_BALL, NATURE_MODEST, 0, 1, 252, 0, 36, 36, 180, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_EARTH_POWER, MOVE_TERA_BLAST, MOVE_HEAT_WAVE, 2, FALSE, TYPE_GRASS, 10
+	givemon SPECIES_HEATRAN, 65, ITEM_LEFTOVERS, ITEM_POKE_BALL, NATURE_MODEST, 0, 1, 252, 0, 36, 36, 180, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_EARTH_POWER, MOVE_TERA_BLAST, MOVE_HEAT_WAVE, 2, FALSE, TYPE_GRASS, 10
 # 1303 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2834,21 +2834,21 @@ Auto_EventScript_Sample_Sets_Doubles_Incineroar_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Incineroar_Page1_2:
 # 1319 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_INCINEROAR, 65, ITEM_SITRUS_BERRY, ITEM_SPORT_BALL, NATURE_ADAMANT, 1, 1, 236, 36, 4, 28, 0, 204, 31, 31, 31, 31, 31, 31, MOVE_PARTING_SHOT, MOVE_FLARE_BLITZ, MOVE_KNOCK_OFF, MOVE_FAKE_OUT, 2, FALSE, TYPE_GHOST, 10
+	givemon SPECIES_INCINEROAR, 65, ITEM_SITRUS_BERRY, ITEM_POKE_BALL, NATURE_ADAMANT, 2, 1, 236, 36, 4, 28, 0, 204, 31, 31, 31, 31, 31, 31, MOVE_PARTING_SHOT, MOVE_FLARE_BLITZ, MOVE_KNOCK_OFF, MOVE_FAKE_OUT, 2, FALSE, TYPE_GHOST, 10
 # 1320 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Incineroar_Page1_3:
 # 1322 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_INCINEROAR, 65, ITEM_ROCKY_HELMET, ITEM_SPORT_BALL, NATURE_ADAMANT, 1, 1, 236, 4, 236, 4, 0, 28, 31, 31, 31, 31, 31, 31, MOVE_PARTING_SHOT, MOVE_WILL_O_WISP, MOVE_KNOCK_OFF, MOVE_FAKE_OUT, 2, FALSE, TYPE_GHOST, 10
+	givemon SPECIES_INCINEROAR, 65, ITEM_ROCKY_HELMET, ITEM_POKE_BALL, NATURE_ADAMANT, 2, 1, 236, 4, 236, 4, 0, 28, 31, 31, 31, 31, 31, 31, MOVE_PARTING_SHOT, MOVE_WILL_O_WISP, MOVE_KNOCK_OFF, MOVE_FAKE_OUT, 2, FALSE, TYPE_GHOST, 10
 # 1323 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Incineroar_Page1_4:
 # 1325 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_INCINEROAR, 65, ITEM_SAFETY_GOGGLES, ITEM_SPORT_BALL, NATURE_ADAMANT, 1, 0, 244, 36, 4, 4, 0, 220, 31, 31, 31, 31, 31, 31, MOVE_PARTING_SHOT, MOVE_FLARE_BLITZ, MOVE_KNOCK_OFF, MOVE_FAKE_OUT, 2, FALSE, TYPE_GHOST, 10
+	givemon SPECIES_INCINEROAR, 65, ITEM_SAFETY_GOGGLES, ITEM_POKE_BALL, NATURE_ADAMANT, 2, 0, 244, 36, 4, 4, 0, 220, 31, 31, 31, 31, 31, 31, MOVE_PARTING_SHOT, MOVE_FLARE_BLITZ, MOVE_KNOCK_OFF, MOVE_FAKE_OUT, 2, FALSE, TYPE_GHOST, 10
 # 1326 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2883,14 +2883,14 @@ Auto_EventScript_Sample_Sets_Doubles_Chi_Yu_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Chi_Yu_Page1_2:
 # 1342 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_CHI_YU, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_TIMID, 0, 0, 4, 0, 0, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_HEAT_WAVE, MOVE_DARK_PULSE, MOVE_SNARL, 2, FALSE, TYPE_GHOST, 10
+	givemon SPECIES_CHI_YU, 65, ITEM_FOCUS_SASH, ITEM_POKE_BALL, NATURE_TIMID, 0, 0, 4, 0, 0, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_HEAT_WAVE, MOVE_DARK_PULSE, MOVE_SNARL, 2, FALSE, TYPE_GHOST, 10
 # 1343 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Chi_Yu_Page1_3:
 # 1345 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_CHI_YU, 65, ITEM_CHOICE_SCARF, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 52, 0, 4, 252, 196, 4, 31, 31, 31, 31, 31, 31, MOVE_HEAT_WAVE, MOVE_DARK_PULSE, MOVE_OVERHEAT, MOVE_SNARL, 2, FALSE, TYPE_GHOST, 10
+	givemon SPECIES_CHI_YU, 65, ITEM_CHOICE_SCARF, ITEM_POKE_BALL, NATURE_MODEST, 0, 0, 52, 0, 4, 252, 196, 4, 31, 31, 31, 31, 31, 31, MOVE_HEAT_WAVE, MOVE_DARK_PULSE, MOVE_OVERHEAT, MOVE_SNARL, 2, FALSE, TYPE_GHOST, 10
 # 1346 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2923,7 +2923,7 @@ Auto_EventScript_Sample_Sets_Doubles_Chien_Pao_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Chien_Pao_Page1_2:
 # 1362 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_CHIEN_PAO, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_JOLLY, 0, 0, 0, 252, 4, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ICICLE_CRASH, MOVE_SACRED_SWORD, MOVE_SUCKER_PUNCH, 2, FALSE, TYPE_GHOST, 10
+	givemon SPECIES_CHIEN_PAO, 65, ITEM_FOCUS_SASH, ITEM_POKE_BALL, NATURE_JOLLY, 0, 0, 0, 252, 4, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ICICLE_CRASH, MOVE_SACRED_SWORD, MOVE_SUCKER_PUNCH, 2, FALSE, TYPE_GHOST, 10
 # 1363 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -2960,21 +2960,21 @@ Auto_EventScript_Sample_Sets_Doubles_Cresselia_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Cresselia_Page1_2:
 # 1379 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_CRESSELIA, 65, ITEM_ROCKY_HELMET, ITEM_SPORT_BALL, NATURE_BOLD, 0, 1, 252, 0, 156, 4, 4, 76, 31, 0, 31, 31, 31, 31, MOVE_LUNAR_BLESSING, MOVE_TRICK_ROOM, MOVE_HELPING_HAND, MOVE_MOONBLAST, 2, FALSE, TYPE_FAIRY, 10
+	givemon SPECIES_CRESSELIA, 65, ITEM_ROCKY_HELMET, ITEM_POKE_BALL, NATURE_BOLD, 0, 1, 252, 0, 156, 4, 4, 76, 31, 0, 31, 31, 31, 31, MOVE_LUNAR_BLESSING, MOVE_TRICK_ROOM, MOVE_HELPING_HAND, MOVE_MOONBLAST, 2, FALSE, TYPE_FAIRY, 10
 # 1380 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Cresselia_Page1_3:
 # 1382 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_CRESSELIA, 65, ITEM_SAFETY_GOGGLES, ITEM_SPORT_BALL, NATURE_CALM, 0, 1, 252, 0, 172, 4, 4, 76, 31, 0, 31, 31, 31, 31, MOVE_LUNAR_BLESSING, MOVE_TRICK_ROOM, MOVE_HELPING_HAND, MOVE_MOONBLAST, 2, FALSE, TYPE_FAIRY, 10
+	givemon SPECIES_CRESSELIA, 65, ITEM_SAFETY_GOGGLES, ITEM_POKE_BALL, NATURE_CALM, 0, 1, 252, 0, 172, 4, 4, 76, 31, 0, 31, 31, 31, 31, MOVE_LUNAR_BLESSING, MOVE_TRICK_ROOM, MOVE_HELPING_HAND, MOVE_MOONBLAST, 2, FALSE, TYPE_FAIRY, 10
 # 1383 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Cresselia_Page1_4:
 # 1385 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_CRESSELIA, 65, ITEM_SAFETY_GOGGLES, ITEM_SPORT_BALL, NATURE_SASSY, 0, 1, 252, 0, 180, 0, 0, 76, 31, 0, 31, 0, 31, 31, MOVE_LUNAR_BLESSING, MOVE_TRICK_ROOM, MOVE_HELPING_HAND, MOVE_MOONBLAST, 2, FALSE, TYPE_FAIRY, 10
+	givemon SPECIES_CRESSELIA, 65, ITEM_SAFETY_GOGGLES, ITEM_POKE_BALL, NATURE_SASSY, 0, 1, 252, 0, 180, 0, 0, 76, 31, 0, 31, 0, 31, 31, MOVE_LUNAR_BLESSING, MOVE_TRICK_ROOM, MOVE_HELPING_HAND, MOVE_MOONBLAST, 2, FALSE, TYPE_FAIRY, 10
 # 1386 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -3007,7 +3007,7 @@ Auto_EventScript_Sample_Sets_Doubles_Farigiraf_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Farigiraf_Page1_2:
 # 1402 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_FARIGIRAF, 65, ITEM_SITRUS_BERRY, ITEM_SPORT_BALL, NATURE_CALM, 1, 1, 228, 0, 116, 4, 4, 156, 31, 0, 31, 31, 31, 31, MOVE_TRICK_ROOM, MOVE_HELPING_HAND, MOVE_HYPER_VOICE, MOVE_PSYCHIC, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_FARIGIRAF, 65, ITEM_SITRUS_BERRY, ITEM_POKE_BALL, NATURE_CALM, 1, 1, 228, 0, 116, 4, 4, 156, 31, 0, 31, 31, 31, 31, MOVE_TRICK_ROOM, MOVE_HELPING_HAND, MOVE_HYPER_VOICE, MOVE_PSYCHIC, 2, FALSE, TYPE_WATER, 10
 # 1403 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -3044,21 +3044,21 @@ Auto_EventScript_Sample_Sets_Doubles_Flutter_Mane_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Flutter_Mane_Page1_2:
 # 1419 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_FLUTTER_MANE, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_TIMID, 0, 0, 0, 0, 4, 252, 252, 0, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ICY_WIND, MOVE_MOONBLAST, MOVE_SHADOW_BALL, 2, FALSE, TYPE_FAIRY, 10
+	givemon SPECIES_FLUTTER_MANE, 65, ITEM_FOCUS_SASH, ITEM_POKE_BALL, NATURE_TIMID, 0, 0, 0, 0, 4, 252, 252, 0, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ICY_WIND, MOVE_MOONBLAST, MOVE_SHADOW_BALL, 2, FALSE, TYPE_FAIRY, 10
 # 1420 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Flutter_Mane_Page1_3:
 # 1422 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_FLUTTER_MANE, 65, ITEM_CHOICE_SPECS, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 116, 0, 156, 196, 36, 4, 31, 0, 31, 31, 31, 31, MOVE_DAZZLING_GLEAM, MOVE_SHADOW_BALL, MOVE_MOONBLAST, MOVE_ICY_WIND, 2, FALSE, TYPE_FAIRY, 10
+	givemon SPECIES_FLUTTER_MANE, 65, ITEM_CHOICE_SPECS, ITEM_POKE_BALL, NATURE_MODEST, 0, 0, 116, 0, 156, 196, 36, 4, 31, 0, 31, 31, 31, 31, MOVE_DAZZLING_GLEAM, MOVE_SHADOW_BALL, MOVE_MOONBLAST, MOVE_ICY_WIND, 2, FALSE, TYPE_FAIRY, 10
 # 1423 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Flutter_Mane_Page1_4:
 # 1425 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_FLUTTER_MANE, 65, ITEM_BOOSTER_ENERGY, ITEM_SPORT_BALL, NATURE_TIMID, 0, 0, 228, 0, 204, 68, 4, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ICY_WIND, MOVE_MOONBLAST, MOVE_SHADOW_BALL, 2, FALSE, TYPE_FAIRY, 10
+	givemon SPECIES_FLUTTER_MANE, 65, ITEM_BOOSTER_ENERGY, ITEM_POKE_BALL, NATURE_TIMID, 0, 0, 228, 0, 204, 68, 4, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ICY_WIND, MOVE_MOONBLAST, MOVE_SHADOW_BALL, 2, FALSE, TYPE_FAIRY, 10
 # 1426 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -3095,21 +3095,21 @@ Auto_EventScript_Sample_Sets_Doubles_Aegislash_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Aegislash_Page1_2:
 # 1442 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_AEGISLASH, 65, ITEM_GHOSTIUM_Z, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 140, 0, 0, 116, 252, 0, 31, 0, 31, 31, 31, 31, MOVE_KINGS_SHIELD, MOVE_SUBSTITUTE, MOVE_SHADOW_BALL, MOVE_FLASH_CANNON, 2, FALSE, FALSE, 10
+	givemon SPECIES_AEGISLASH, 65, ITEM_GHOSTIUM_Z, ITEM_POKE_BALL, NATURE_MODEST, 0, 0, 140, 0, 0, 116, 252, 0, 31, 0, 31, 31, 31, 31, MOVE_KINGS_SHIELD, MOVE_SUBSTITUTE, MOVE_SHADOW_BALL, MOVE_FLASH_CANNON, 2, FALSE, FALSE, 10
 # 1443 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Aegislash_Page1_3:
 # 1445 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_AEGISLASH, 65, ITEM_LEFTOVERS, ITEM_SPORT_BALL, NATURE_MODEST, 0, 1, 236, 0, 0, 20, 252, 0, 31, 0, 31, 31, 31, 31, MOVE_SHADOW_BALL, MOVE_KINGS_SHIELD, MOVE_FLASH_CANNON, MOVE_SUBSTITUTE, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_AEGISLASH, 65, ITEM_LEFTOVERS, ITEM_POKE_BALL, NATURE_MODEST, 0, 1, 236, 0, 0, 20, 252, 0, 31, 0, 31, 31, 31, 31, MOVE_SHADOW_BALL, MOVE_KINGS_SHIELD, MOVE_FLASH_CANNON, MOVE_SUBSTITUTE, 2, FALSE, TYPE_WATER, 10
 # 1446 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Aegislash_Page1_4:
 # 1448 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_AEGISLASH, 65, ITEM_WEAKNESS_POLICY, ITEM_SPORT_BALL, NATURE_QUIET, 0, 0, 252, 0, 4, 0, 180, 68, 31, 0, 31, 0, 31, 31, MOVE_SHADOW_BALL, MOVE_FLASH_CANNON, MOVE_WIDE_GUARD, MOVE_KINGS_SHIELD, 2, FALSE, FALSE, 10
+	givemon SPECIES_AEGISLASH, 65, ITEM_WEAKNESS_POLICY, ITEM_POKE_BALL, NATURE_QUIET, 0, 0, 252, 0, 4, 0, 180, 68, 31, 0, 31, 0, 31, 31, MOVE_SHADOW_BALL, MOVE_FLASH_CANNON, MOVE_WIDE_GUARD, MOVE_KINGS_SHIELD, 2, FALSE, FALSE, 10
 # 1449 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -3148,28 +3148,28 @@ Auto_EventScript_Sample_Sets_Doubles_Amoonguss_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Amoonguss_Page1_2:
 # 1465 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_AMOONGUSS, 65, ITEM_ROCKY_HELMET, ITEM_SPORT_BALL, NATURE_RELAXED, 1, 1, 236, 0, 236, 0, 0, 36, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_POLLEN_PUFF, MOVE_RAGE_POWDER, MOVE_SPORE, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_AMOONGUSS, 65, ITEM_ROCKY_HELMET, ITEM_POKE_BALL, NATURE_RELAXED, 2, 1, 236, 0, 236, 0, 0, 36, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_POLLEN_PUFF, MOVE_RAGE_POWDER, MOVE_SPORE, 2, FALSE, TYPE_WATER, 10
 # 1466 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Amoonguss_Page1_3:
 # 1468 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_AMOONGUSS, 65, ITEM_SITRUS_BERRY, ITEM_SPORT_BALL, NATURE_SASSY, 1, 1, 244, 0, 108, 0, 0, 156, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_POLLEN_PUFF, MOVE_RAGE_POWDER, MOVE_SPORE, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_AMOONGUSS, 65, ITEM_SITRUS_BERRY, ITEM_POKE_BALL, NATURE_SASSY, 2, 1, 244, 0, 108, 0, 0, 156, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_POLLEN_PUFF, MOVE_RAGE_POWDER, MOVE_SPORE, 2, FALSE, TYPE_WATER, 10
 # 1469 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Amoonguss_Page1_4:
 # 1471 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_AMOONGUSS, 65, ITEM_EJECT_BUTTON, ITEM_SPORT_BALL, NATURE_SASSY, 1, 1, 252, 0, 180, 0, 0, 76, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_POLLEN_PUFF, MOVE_SPORE, MOVE_RAGE_POWDER, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_AMOONGUSS, 65, ITEM_EJECT_BUTTON, ITEM_POKE_BALL, NATURE_SASSY, 2, 1, 252, 0, 180, 0, 0, 76, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_POLLEN_PUFF, MOVE_SPORE, MOVE_RAGE_POWDER, 2, FALSE, TYPE_WATER, 10
 # 1472 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Amoonguss_Page1_5:
 # 1474 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_AMOONGUSS, 65, ITEM_SITRUS_BERRY, ITEM_SPORT_BALL, NATURE_SASSY, 1, 1, 252, 0, 20, 0, 0, 236, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_POLLEN_PUFF, MOVE_RAGE_POWDER, MOVE_SPORE, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_AMOONGUSS, 65, ITEM_SITRUS_BERRY, ITEM_POKE_BALL, NATURE_SASSY, 2, 1, 252, 0, 20, 0, 0, 236, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_POLLEN_PUFF, MOVE_RAGE_POWDER, MOVE_SPORE, 2, FALSE, TYPE_WATER, 10
 # 1475 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -3204,14 +3204,14 @@ Auto_EventScript_Sample_Sets_Doubles_Arcanine_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Arcanine_Page1_2:
 # 1491 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_ARCANINE, 65, ITEM_SAFETY_GOGGLES, ITEM_SPORT_BALL, NATURE_JOLLY, 0, 1, 236, 68, 4, 196, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_EXTREME_SPEED, MOVE_WILL_O_WISP, MOVE_FLARE_BLITZ, 2, FALSE, TYPE_FLYING, 10
+	givemon SPECIES_ARCANINE, 65, ITEM_SAFETY_GOGGLES, ITEM_POKE_BALL, NATURE_JOLLY, 0, 1, 236, 68, 4, 196, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_EXTREME_SPEED, MOVE_WILL_O_WISP, MOVE_FLARE_BLITZ, 2, FALSE, TYPE_FLYING, 10
 # 1492 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Arcanine_Page1_3:
 # 1494 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_ARCANINE, 65, ITEM_SAFETY_GOGGLES, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 1, 252, 68, 4, 76, 0, 108, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WILL_O_WISP, MOVE_FLARE_BLITZ, MOVE_SNARL, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_ARCANINE, 65, ITEM_SAFETY_GOGGLES, ITEM_POKE_BALL, NATURE_ADAMANT, 0, 1, 252, 68, 4, 76, 0, 108, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WILL_O_WISP, MOVE_FLARE_BLITZ, MOVE_SNARL, 2, FALSE, TYPE_WATER, 10
 # 1495 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -3246,14 +3246,14 @@ Auto_EventScript_Sample_Sets_Doubles_Archaludon_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Archaludon_Page1_2:
 # 1511 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_ARCHALUDON, 65, ITEM_POWER_HERB, ITEM_SPORT_BALL, NATURE_MODEST, 1, 0, 0, 0, 0, 252, 252, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ELECTRO_SHOT, MOVE_FLASH_CANNON, MOVE_DRACO_METEOR, 2, FALSE, TYPE_ELECTRIC, 10
+	givemon SPECIES_ARCHALUDON, 65, ITEM_POWER_HERB, ITEM_POKE_BALL, NATURE_MODEST, 1, 0, 0, 0, 0, 252, 252, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ELECTRO_SHOT, MOVE_FLASH_CANNON, MOVE_DRACO_METEOR, 2, FALSE, TYPE_ELECTRIC, 10
 # 1512 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Doubles_Archaludon_Page1_3:
 # 1514 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_ARCHALUDON, 65, ITEM_ASSAULT_VEST, ITEM_SPORT_BALL, NATURE_MODEST, 0, 1, 252, 0, 4, 4, 44, 204, 31, 31, 31, 31, 31, 31, MOVE_ELECTRO_SHOT, MOVE_FLASH_CANNON, MOVE_DRAGON_PULSE, MOVE_BODY_PRESS, 2, FALSE, TYPE_GRASS, 10
+	givemon SPECIES_ARCHALUDON, 65, ITEM_ASSAULT_VEST, ITEM_POKE_BALL, NATURE_MODEST, 0, 1, 252, 0, 4, 4, 44, 204, 31, 31, 31, 31, 31, 31, MOVE_ELECTRO_SHOT, MOVE_FLASH_CANNON, MOVE_DRAGON_PULSE, MOVE_BODY_PRESS, 2, FALSE, TYPE_GRASS, 10
 # 1515 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
@@ -3286,7 +3286,7 @@ Auto_EventScript_Sample_Sets_Doubles_Basculegion_Page1::
 
 Auto_EventScript_Sample_Sets_Doubles_Basculegion_Page1_2:
 # 1531 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_BASCULEGION, 65, ITEM_CHOICE_BAND, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 164, 220, 4, 116, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_FLIP_TURN, MOVE_AQUA_JET, MOVE_WAVE_CRASH, MOVE_LAST_RESPECTS, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_BASCULEGION, 65, ITEM_CHOICE_BAND, ITEM_POKE_BALL, NATURE_ADAMANT, 0, 0, 164, 220, 4, 116, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_FLIP_TURN, MOVE_AQUA_JET, MOVE_WAVE_CRASH, MOVE_LAST_RESPECTS, 2, FALSE, TYPE_WATER, 10
 # 1532 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return

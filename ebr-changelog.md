@@ -3,6 +3,12 @@
 Please see below for the Emerald Battle Revolution project changelog. For changes related to
 the PokeEmerald Expanded project, please see the [PokeEmerald Changelog](./CHANGELOG.md).
 
+## Ver. 3.4.1
+
+RTC is now initialised to 12PM when game is first started (can be fixed for existing saves 
+using the quick-start updater NPC), fixed incorrect abilities being assigned in rental sets, 
+converted rental mons to use Pokeballs instead of Park Balls
+
 ## Ver. 3.4.0
 
 Merged upstream changes, changed move relearner to use new expansion system - Moves can now be 

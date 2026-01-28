@@ -11,4 +11,7 @@
 
 #define EBR_HARD_MODE_BONUS 5   // Bonus 'challengeNum' added to BP earned playing hard mode
 
+#define EBR_START_TIME_HOUR     12   // Starting hour (12PM)
+#define EBR_START_TIME_MINUTE   0   // Starting minute (0)
+
 #endif // GUARD_CONFIG_EBR_H

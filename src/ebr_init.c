@@ -13,11 +13,14 @@
 #include "config/item.h"
 #include "config/ebr.h"
 #include "ebr_init.h"
+#include "clock.h"
+#include "rtc.h"
 
 #if EBR_QUICK_START_ENABLED == TRUE
 
 #define AddBagItemIfNotOwned(item) if (CheckBagHasItem(item, 1) == FALSE) {AddBagItem(item, 1);}
 
+static void SetStartingTime(void);
 static void SetQuickStartFlags(void);
 static void SetQuickStartVars(void);
 static void GiveQuickStartItems(void);
@@ -32,6 +35,7 @@ void InitQuickStart(void)
     // Quick Start Enabled
     #if EBR_QUICK_START_ENABLED == TRUE
     // Basic Setup
+	SetStartingTime();
     SetQuickStartFlags();
     SetQuickStartVars();
     GiveQuickStartItems();
@@ -54,6 +58,7 @@ void RefreshQuickStart(void) {
 	// Quick Start Enabled
     #if EBR_QUICK_START_ENABLED == TRUE
 	// Basic Setup
+	SetStartingTime();
     SetQuickStartFlags();
     SetQuickStartVars();
     GiveQuickStartItems();
@@ -64,6 +69,12 @@ void RefreshQuickStart(void) {
 }
 
 #if EBR_QUICK_START_ENABLED == TRUE
+static void SetStartingTime(void) {
+	if (!FlagGet(FLAG_SYS_CLOCK_SET))
+        RtcInitLocalTimeOffset(EBR_START_TIME_HOUR, EBR_START_TIME_MINUTE);
+    InitTimeBasedEvents();
+}
+
 static void SetQuickStartFlags(void)
 {
     // Running Shoes
