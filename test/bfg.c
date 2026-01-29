@@ -174,6 +174,9 @@ BFG_RandomPokemonGenerator_Test("Generate Random Nihilego (D,LVL50,31IV)",SPECIE
 BFG_RandomPokemonGenerator_Test("Generate Random Zamazenta (D,LVL50,31IV)",SPECIES_ZAMAZENTA, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES,1);
 BFG_RandomPokemonGenerator_Test("Generate Random Zacian (D,LVL50,31IV)",SPECIES_ZACIAN, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES,1);
 
+BFG_RandomPokemonGenerator_Test("Generate Random Kangaskhan (D,LVL50,31IV)",SPECIES_KANGASKHAN, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Greninja (No Mega) (D,LVL50,31IV)",SPECIES_GRENINJA, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES,1);
+
 BFG_RandomPokemonGenerator_Test("Generate Random Ogerpon (Any) (D,LVL50,31IV)",SPECIES_OGERPON, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES,1);
 BFG_RandomPokemonGenerator_Test("Generate Random Ludicolo (Any) (D,LVL50,31IV)",SPECIES_LUDICOLO, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
 BFG_RandomPokemonGenerator_Test("Generate Random Flutter Mane (Any) (D,LVL50,31IV)",SPECIES_FLUTTER_MANE, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);

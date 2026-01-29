@@ -128,6 +128,14 @@ bool8 GetStrictSpeciesChecks(u16 speciesId, struct GeneratorProperties * propert
     (x == SPECIES_LUCARIO) || (x == SPECIES_ABOMASNOW) || (x == SPECIES_GALLADE) || (x == SPECIES_AUDINO) || \
     (x == SPECIES_DIANCIE) || (x == SPECIES_RAYQUAZA))
 
+#define IS_UNIMPLEMENTED_MEGA(x) ((x == SPECIES_CLEFABLE_MEGA) || (x == SPECIES_VICTREEBEL_MEGA) || (x == SPECIES_STARMIE_MEGA) || \
+    (x == SPECIES_DRAGONITE_MEGA) || (x == SPECIES_MEGANIUM_MEGA) || (x == SPECIES_FERALIGATR_MEGA) || (x == SPECIES_SKARMORY_MEGA) || \
+    (x == SPECIES_FROSLASS_MEGA) || (x == SPECIES_EMBOAR_MEGA) || (x == SPECIES_EXCADRILL_MEGA) || (x == SPECIES_SCOLIPEDE_MEGA) || \
+    (x == SPECIES_SCRAFTY_MEGA) || (x == SPECIES_CHANDELURE_MEGA) || (x == SPECIES_CHESNAUGHT_MEGA) || (x == SPECIES_DELPHOX_MEGA) || \
+    (x == SPECIES_GRENINJA_MEGA) || (x == SPECIES_PYROAR_MEGA) || (x == SPECIES_FLOETTE_MEGA) || (x == SPECIES_MALAMAR_MEGA) || \
+    (x == SPECIES_BARBARACLE_MEGA) || (x == SPECIES_DRAGALGE_MEGA) || (x == SPECIES_HAWLUCHA_MEGA) || (x == SPECIES_ZYGARDE_MEGA) || \
+    (x == SPECIES_DRAMPA_MEGA) || (x == SPECIES_FALINKS_MEGA))
+
 #define CHECK_ARCEUS_ZMOVE (((properties->fixedIV) >= BFG_ITEM_IV_ALLOW_ZMOVE) && (properties->allowZMove == TRUE)  && RANDOM_CHANCE(BFG_ZMOVE_CHANCE_ARCEUS))
 
 #ifdef P_SILVALLY_TYPE_CHANGE_Z_CRYSTAL
@@ -3099,7 +3107,7 @@ bool32 GenerateTrainerPokemonHandleForme(struct Pokemon * mon, u16 speciesId, st
                         }
                     }; break;
                     case FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM: {
-                        if ((item == ITEM_NONE) && ((properties->fixedIV) >= BFG_ITEM_IV_ALLOW_MEGA) && ((bst + 100 <= (properties->maxBST))) && ((properties->allowMega) == TRUE) && RANDOM_CHANCE(BFG_FORME_CHANCE_MEGA))
+                        if ((item == ITEM_NONE) && ((properties->fixedIV) >= BFG_ITEM_IV_ALLOW_MEGA) && ((bst + 100 <= (properties->maxBST))) && ((properties->allowMega) == TRUE) && (!(IS_UNIMPLEMENTED_MEGA((formChanges[i].targetSpecies)))) && RANDOM_CHANCE(BFG_FORME_CHANCE_MEGA))
                         {
                             item = formChanges[i].param1; // ItemId
                             properties->allowMega = FALSE;
