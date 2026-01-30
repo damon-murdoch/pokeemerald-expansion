@@ -15,4 +15,4 @@ python3 "$SCRIPT_DIR/tools/bfg_helpers/multi_select.py"
 
 echo "Running makefile ... "
 
-make
+make release
