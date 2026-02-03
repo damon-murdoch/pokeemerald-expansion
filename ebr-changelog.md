@@ -3,6 +3,11 @@
 Please see below for the Emerald Battle Revolution project changelog. For changes related to
 the PokeEmerald Expanded project, please see the [PokeEmerald Changelog](./CHANGELOG.md).
 
+## Ver. 3.5.0
+
+Customised make_teachables logic to support adding all teachable moves, 
+increased number of teachable moves for all species
+
 ## Ver. 3.4.1
 
 RTC is now initialised to 12PM when game is first started (can be fixed for existing saves 
