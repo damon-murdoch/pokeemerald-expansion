@@ -41,6 +41,7 @@ TEACHABLE_ARRAY_DECL_PAT = re.compile(r"(?P<decl>static const u16 s(?P<name>\w+)
 SNAKIFY_PAT = re.compile(r"(?!^)([A-Z]+)")
 TUTOR_ARRAY_ENABLED_PAT = re.compile(r"#define\s+P_TUTOR_MOVES_ARRAY\s+(?P<cfg_val>[^ ]*)")
 
+ALL_TEACHABLES = True
 
 def enabled() -> bool:
     """
@@ -90,7 +91,21 @@ def extract_repo_universals() -> list[str]:
         if match := UNIVERSAL_MOVES_PAT.search(pokemon_fp.read()):
             return list(filter(lambda s: s, map(lambda s: s.strip(), match.group(1).split(','))))
         return list()
+    
 
+def extract_all_teachables(file) -> list[str]:
+    """
+    Return a list of all of the MOVE constants which are found inside 'file'
+    """
+    teachables_list = set()
+
+    with open(file, "r") as teachables_fp: 
+        teachables = json.load(teachables_fp)
+
+        for key in teachables:
+            teachables_list = teachables_list.union(teachables[key])
+
+    return teachables_list
 
 def prepare_output(all_learnables: dict[str, set[str]], repo_teachables: set[str], header: str) -> str:
     """
@@ -210,14 +225,24 @@ def main():
     assert SOURCE_LEARNSETS_JSON.is_file(), f"{SOURCE_LEARNSETS_JSON=} is not a file"
 
     repo_universals = extract_repo_universals()
-    repo_tms = list(extract_repo_tms())
     repo_tutors = list(extract_repo_tutors())
-    repo_teachables = set(filter(
-        lambda move: move not in set(repo_universals),
-        chain(repo_tms, repo_tutors)
-    ))
+    repo_tms = list(extract_repo_tms())
+    
+    # Placeholders
+    repo_teachables = []
 
-    create_tutor_moves_array(repo_tutors)
+    if ALL_TEACHABLES:
+        all_teachables = list(extract_all_teachables(SOURCE_LEARNSETS_JSON))
+
+        repo_teachables = set(filter(
+            lambda move: move not in set(repo_universals),
+            all_teachables
+        ))
+    else:
+        repo_teachables = set(filter(
+            lambda move: move not in set(repo_universals),
+            chain(repo_tms, repo_tutors)
+        ))
 
     h_align = max(map(lambda move: len(move), chain(repo_universals, repo_teachables))) + 2
     header = prepare_header(h_align, repo_tms, repo_tutors, repo_universals)
