@@ -3,6 +3,11 @@
 Please see below for the Emerald Battle Revolution project changelog. For changes related to
 the PokeEmerald Expanded project, please see the [PokeEmerald Changelog](./CHANGELOG.md).
 
+## Ver. 3.5.1
+
+Removed time setting code which was causing crashes, 
+updated expansion version to latest release
+
 ## Ver. 3.5.0
 
 Customised make_teachables logic to support adding all teachable moves, 
