@@ -270,8 +270,8 @@ static u8 GetTeamRestrictedCount()
     u8 count = BFG_TEAM_RESTRICTED_COUNT;
 
     #if BFG_VAR_TEAM_RESTRICTED_COUNT != 0
-    if (method == BFG_OPEN_RULES_RESTRICTED_VARIABLE)
-        method = VarGet(BFG_VAR_TEAM_RESTRICTED_COUNT);
+    if (count == BFG_OPEN_RULES_RESTRICTED_VARIABLE)
+        count = VarGet(BFG_VAR_TEAM_RESTRICTED_COUNT);
     #endif
 
     return count;

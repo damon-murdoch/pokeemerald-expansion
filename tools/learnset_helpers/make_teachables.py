@@ -238,11 +238,18 @@ def main():
             lambda move: move not in set(repo_universals),
             all_teachables
         ))
+
+        repo_tutors = set(filter(
+            lambda move: move not in set(repo_universals) and move not in set (repo_tms),
+            repo_teachables
+        ))
     else:
         repo_teachables = set(filter(
             lambda move: move not in set(repo_universals),
             chain(repo_tms, repo_tutors)
         ))
+
+    create_tutor_moves_array(repo_tutors)
 
     h_align = max(map(lambda move: len(move), chain(repo_universals, repo_teachables))) + 2
     header = prepare_header(h_align, repo_tms, repo_tutors, repo_universals)

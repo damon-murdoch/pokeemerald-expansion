@@ -555,6 +555,9 @@ static void SetQuickStartVars(void)
 
     // (New!) Set Frontier Set Generation Method
     VarSet(VAR_FRONTIER_METHOD, BFG_TEAM_GENERATOR_FILTERED_RANKING);
+
+	// (New!) Number of restricteds allowed in Open Rules (Default: 2)
+    VarSet(VAR_FRONTIER_RESTRICTED_COUNT, BFG_OPEN_RULES_RESTRICTED_2);
 }
 
 static void GiveQuickStartItems(void)
