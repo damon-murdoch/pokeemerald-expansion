@@ -3,6 +3,12 @@
 Please see below for the Emerald Battle Revolution project changelog. For changes related to
 the PokeEmerald Expanded project, please see the [PokeEmerald Changelog](./CHANGELOG.md).
 
+## Ver. 3.6.0
+
+Massively increased the tutor movepool for most Pokemon, which can be accessed from the party menu and 
+added the option to select the number of restricted Pokemon available to Open Rules opponents, from the
+'Banlists' menu in the battle frontier controller
+
 ## Ver. 3.5.1
 
 Removed time setting code which was causing crashes, 

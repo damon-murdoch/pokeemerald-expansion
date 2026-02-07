@@ -268,7 +268,7 @@
 #define VAR_FRONTIER_METHOD                              0x40F8 // Modern Battle Frontier Team Generation Method (Default: 0)
 #define VAR_FACTORY_GENERATOR_SEED                       0x40F9 // Battle Factory Seed
 #define VAR_LAST_REPEL_OR_LURE_USED                      0x40FA // Last repel / lure type used
-#define VAR_UNUSED_0x40FB                                0x40FB // Unused Var
+#define VAR_FRONTIER_RESTRICTED_COUNT                    0x40FB // Number of restricteds allowed in the Battle Frontier
 #define VAR_UNUSED_0x40FC                                0x40FC // Unused Var
 #define VAR_UNUSED_0x40FD                                0x40FD // Unused Var
 #define VAR_UNUSED_0x40FE                                0x40FE // Unused Var

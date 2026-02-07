@@ -20,8 +20,8 @@
 
 #define BFG_FLAG_FRONTIER_FIXED_IV FLAG_BATTLE_FRONTIER_FIXED_IV // Flag to enable or disable fixed IVs
 
-#define BFG_TEAM_RESTRICTED_COUNT BFG_OPEN_RULES_RESTRICTED_2
-#define BFG_VAR_TEAM_RESTRICTED_COUNT  0   // Used to set how many restricteds should be allowed
+#define BFG_TEAM_RESTRICTED_COUNT BFG_OPEN_RULES_RESTRICTED_VARIABLE
+#define BFG_VAR_TEAM_RESTRICTED_COUNT  VAR_FRONTIER_RESTRICTED_COUNT   // Used to set how many restricteds should be allowed
 
 // If this variable is set, a random seed will be generated
 // and saved for generating consistent battle factory sets
