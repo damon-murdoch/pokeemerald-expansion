@@ -24,7 +24,7 @@ Politoed @ Leftovers
 Ability: Drizzle
 Tera Type: Grass  
 EVs: 220 HP / 196 Def / 4 SpA / 76 SpD / 12 Spe  
-Calm Nature  
+Calm nature  
 IVs: 0 Atk  
 - Protect  
 - Encore  
@@ -36,7 +36,7 @@ Ability: Download
 Tera Type: Flying
 EVs: 244 HP / 92 Def / 116 SpA / 52 SpD
 IVs: 0 Atk / 0 Spe
-Quiet Nature
+Quiet nature
 - Tera Blast
 - Ice Beam 
 - Trick Room
@@ -47,7 +47,7 @@ Ability: Download
 Tera Type: Flying
 EVs: 244 HP / 92 Def / 116 SpA / 52 SpD / 4 Spe
 IVs: 0 Atk
-Modest Nature
+Modest nature
 - Tera Blast
 - Ice Beam 
 - Trick Room
@@ -58,7 +58,7 @@ Ability: Drizzle
 Tera Type: Ghost
 EVs: 4 Def / 252 SpA / 252 Spe
 Note: Sash
-Modest Nature
+Modest nature
 - Protect
 - Wide Guard
 - Weather Ball
@@ -70,7 +70,7 @@ EVs: 204 HP / 196 SpA / 108 SpD
 IVs: 0 Atk / 0 Spe
 Tera Type: Fire
 Note: Specs
-Quiet Nature
+Quiet nature
 - Eruption
 - Heat Wave
 - Weather Ball
@@ -81,7 +81,7 @@ Ability: Drought
 EVs: 204 HP / 196 SpA / 108 SpD
 IVs: 0 Atk / 0 Spe
 Tera Type: Fire
-Quiet Nature
+Quiet nature
 - Protect
 - Eruption
 - Heat Wave
@@ -93,7 +93,7 @@ EVs: 252 HP / 172 Def / 4 SpA / 76 SpD / 4 Spe
 IVs: 0 Atk
 Tera Type: Fairy
 Note: Goggles
-Calm Nature
+Calm nature
 - Lunar Blessing
 - Trick Room
 - Helping Hand
@@ -105,7 +105,7 @@ EVs: 252 HP / 180 Def / 76 SpD
 IVs: 0 Atk / 0 Spe
 Tera Type: Fairy
 Note: Goggles
-Sassy Nature
+Sassy nature
 - Lunar Blessing
 - Trick Room
 - Helping Hand
@@ -117,7 +117,7 @@ EVs: 252 HP / 156 Def / 4 SpA / 76 SpD / 4 Spe
 IVs: 0 Atk
 Tera Type: Fairy
 Note: Helmet
-Bold Nature
+Bold nature
 - Lunar Blessing
 - Trick Room
 - Helping Hand
@@ -128,7 +128,7 @@ Ability: Flash Fire
 Tera Type: Grass  
 Note: Shuca
 EVs: 244 HP / 4 Def / 236 SpA / 4 SpD / 20 Spe  
-Modest Nature  
+Modest nature  
 IVs: 0 Atk  
 - Heat Wave  
 - Earth Power  
@@ -153,7 +153,7 @@ Tera Type: Water
 Note: Helmet
 EVs: 236 HP / 236 Def / 36 SpD
 IVs: 0 Atk / 0 Spe
-Relaxed Nature
+Relaxed nature
 - Protect
 - Pollen Puff
 - Rage Powder
@@ -165,7 +165,7 @@ Tera Type: Water
 Note: Sitrus
 EVs: 244 HP / 108 Def / 156 SpD
 IVs: 0 Atk / 0 Spe
-Sassy Nature
+Sassy nature
 - Protect
 - Pollen Puff
 - Rage Powder
@@ -177,7 +177,7 @@ Tera Type: Water
 Note: Sitrus
 EVs: 252 HP / 20 Def / 236 SpD
 IVs: 0 Atk / 0 Spe
-Sassy Nature
+Sassy nature
 - Protect
 - Pollen Puff
 - Rage Powder
@@ -188,7 +188,7 @@ Ability: Regenerator
 Tera Type: Water
 Note: Eject
 EVs: 252 HP / 180 Def / 76 SpD  
-Sassy Nature  
+Sassy nature  
 IVs: 0 Atk / 0 Spe  
 - Protect  
 - Pollen Puff  
@@ -201,7 +201,7 @@ Tera Type: Poison
 Note: Orb
 EVs: 132 HP / 4 Def / 116 SpA / 4 SpD / 252 Spe
 IVs: 0 Atk
-Modest Nature
+Modest nature
 - Protect
 - Sandsear Storm
 - Earth Power
@@ -213,7 +213,7 @@ Tera Type: Poison
 Note: Sash
 EVs: 4 HP / 252 SpA / 252 Spe
 IVs: 0 Atk
-Timid Nature
+Timid nature
 - Protect
 - Sandsear Storm
 - Earth Power
@@ -225,7 +225,7 @@ Tera Type: Flying
 Name: Lando-T
 Note: Scarf
 EVs: 12 HP / 196 Atk / 4 Def / 44 SpD / 252 Spe
-Adamant Nature
+Adamant nature
 - U-turn
 - Stomping Tantrum
 - Rock Slide
@@ -237,32 +237,8 @@ Tera Type: Water
 Name: Lando-T
 Note: Vest
 EVs: 12 HP / 196 Atk / 4 Def / 44 SpD / 252 Spe
-Adamant Nature
-- U-turn
-- Earthquake
-- Rock Slide
-- Superpower
-
-Landorus-Therian (M) @ Groundium Z
-Ability: Intimidate
-Tera Type: Water
-Name: Lando-T
-Note: Ground Z
-EVs: 156 HP / 116 Atk / 36 Def / 108 SpD / 92 Spe
-Adamant Nature
-- Protect
-- Swords Dance
-- Earthquake
-- Rock Slide
-
-Landorus-Therian (M) @ Groundium Z
-Ability: Intimidate
-Tera Type: Water
-Name: Lando-T
-Note: Ground Z
-EVs: 252 Spe / 4 Def / 164 Atk / 68 SpD / 20 HP
 Adamant nature
-- Protect
+- U-turn
 - Earthquake
 - Rock Slide
 - Superpower
@@ -273,7 +249,7 @@ Tera Type: Dark
 Note: Sash
 EVs: 4 HP / 252 SpA / 252 Spe
 IVs: 0 Atk
-Timid Nature
+Timid nature
 - Protect
 - Tailwind
 - Rain Dance
@@ -285,7 +261,7 @@ Tera Type: Dark
 Note: Cloak
 EVs: 196 HP / 228 Def / 4 SpA / 76 SpD / 4 Spe  
 IVs: 0 Atk  
-Bold Nature  
+Bold nature  
 - Taunt
 - Tailwind
 - Rain Dance
@@ -297,7 +273,7 @@ Tera Type: Dark
 Note: Helmet
 EVs: 196 HP / 228 Def / 4 SpA / 76 SpD / 4 Spe  
 IVs: 0 Atk  
-Bold Nature  
+Bold nature  
 - Protect
 - Tailwind
 - Rain Dance
@@ -309,7 +285,7 @@ Tera Type: Water
 Note: Leftys
 IVs: 0 Atk
 EVs: 20 Spe / 236 HP / 252 SpA
-
+Note: Leftys
 Modest nature
 - Shadow Ball
 - King's Shield
@@ -326,17 +302,6 @@ Quiet nature
 - Flash Cannon
 - Wide Guard
 - King's Shield
-
-Aegislash @ Ghostium Z
-Ability: Stance Change
-IVs: 0 Atk
-EVs: 116 Spe / 140 HP / 252 SpA
-Note: Ghost Z
-Modest nature
-- King's Shield
-- Substitute
-- Shadow Ball
-- Flash Cannon
 
 Talonflame @ Choice Band
 Ability: Gale Wings
@@ -360,12 +325,23 @@ Jolly nature
 - U-turn
 - Taunt
 
+Talonflame @ Life Orb
+Ability: Gale Wings
+Tera Type: Flying
+Note: Life Orb
+EVs: 252 Spe / 252 Atk / 4 HP
+Adamant nature
+- Quick Guard
+- Tailwind
+- Brave Bird
+- Flare Blitz
+
 Incineroar @ Sitrus Berry
 Ability: Intimidate
 Tera Type: Ghost
 Note: Sitrus
 EVs: 236 HP / 36 Atk / 4 Def / 204 SpD / 28 Spe
-Adamant Nature
+Adamant nature
 - Parting Shot
 - Flare Blitz
 - Knock Off
@@ -376,7 +352,7 @@ Ability: Intimidate
 Note: Goggles
 EVs: 244 HP / 36 Atk / 4 Def / 220 SpD / 4 Spe
 Tera Type: Ghost
-Adamant Nature
+Adamant nature
 - Parting Shot
 - Flare Blitz
 - Knock Off
@@ -387,7 +363,7 @@ Ability: Intimidate
 Tera Type: Ghost
 Note: Helmet
 EVs: 236 HP / 4 Atk / 236 Def / 28 SpD / 4 Spe
-Adamant Nature
+Adamant nature
 - Parting Shot
 - Will-o-Wisp
 - Knock Off
@@ -395,17 +371,42 @@ Adamant Nature
 
 Kartana @ Focus Sash
 Ability: Beast Boost
+Tera Type: Fire
 EVs: 252 Spe / 252 Atk / 4 HP
+Note: Focus Sash
 Jolly nature
 - Leaf Blade
 - Sacred Sword
 - Tailwind
 - Detect
 
+Kartana @ Assault Vest
+Ability: Beast Boost
+Tera Type: Fire
+EVs: 252 Spe / 4 Def / 4 Atk / 132 SpD / 116 HP
+Note: Vest
+Jolly nature
+- Smart Strike
+- Leaf Blade
+- Sacred Sword
+- Night Slash
+
 Basculegion @ Choice Band
 Ability: Swift Swim
 EVs: 164 HP / 220 Atk / 4 Def / 4 SpD / 116 Spe
 Tera Type: Water
+Note: Band
+Adamant nature
+- Flip Turn
+- Aqua Jet
+- Wave Crash
+- Last Respects
+
+Basculegion @ Choice Scarf
+Ability: Adaptability
+EVs: 4 HP / 244 Atk / 4 Def / 4 SpD / 252 Spe
+Tera Type: Water
+Note: Scarf
 Adamant nature
 - Flip Turn
 - Aqua Jet
@@ -418,18 +419,29 @@ EVs: 212 HP / 84 Def / 188 SpA / 20 SpD
 IVs: 0 Atk / 0 Spe
 Tera Type: Water
 Note: Orb
-Quiet Nature
+Quiet nature
 - Protect
 - Trick Room
 - Expanding Force
 - Dazzling Gleam
+
+Indeedee @ Focus Sash
+Ability: Psychic Surge
+Tera Type: Fighting
+Note: Sash
+EVs: 4 HP / 252 SpA / 252 Spe
+Timid nature
+- Protect
+- Hyper Voice
+- Expanding Force
+- Tera Blast
 
 Indeedee-F @ Psychic Seed
 Ability: Psychic Surge
 Tera Type: Water
 Note: Seed
 EVs: 252 HP / 204 Def / 4 SpA / 44 SpD / 4 Spe
-Calm Nature
+Calm nature
 - Follow Me
 - Helping Hand
 - Trick Room
@@ -440,7 +452,7 @@ Ability: Dragon's Maw
 EVs: 12 HP / 4 Def / 236 SpA / 4 SpD / 252 Spe
 IVs: 0 Atk
 Tera Type: Steel
-Modest Nature
+Modest nature
 - Protect
 - Dragon Energy
 - Draco Meteor
@@ -451,7 +463,7 @@ Ability: Grassy Surge
 Tera Type: Fire
 Note: Vest
 EVs: 140 HP / 116 Atk / 12 Def / 236 SpD / 4 Spe
-Adamant Nature
+Adamant nature
 - U-turn
 - Wood Hammer
 - Grassy Glide
@@ -462,7 +474,7 @@ Ability: Grassy Surge
 Tera Type: Fire
 Note: Vest
 EVs: 140 HP / 196 Atk / 12 Def / 156 SpD / 4 Spe
-Adamant Nature
+Adamant nature
 - U-turn
 - Wood Hammer
 - Grassy Glide
@@ -473,7 +485,7 @@ Ability: Guts
 Tera Type: Ghost
 EVs: 140 HP / 236 Atk / 132 SpD
 IVs: 0 Spe
-Brave Nature
+Brave nature
 - Protect
 - Facade
 - Earthquake
@@ -483,7 +495,7 @@ Ursaluna @ Flame Orb
 Ability: Guts
 Tera Type: Ghost
 EVs: 140 HP / 236 Atk / 4 Def / 116 SpD / 12 Spe
-Adamant Nature
+Adamant nature
 - Protect
 - Facade
 - Earthquake
@@ -495,7 +507,7 @@ Tera Type: Ghost
 Name: Urshifu-SS
 Note: Sash
 EVs: 252 Atk / 4 SpD / 252 Spe
-Adamant Nature
+Adamant nature
 - Protect
 - Wicked Blow 
 - Close Combat
@@ -507,7 +519,7 @@ Tera Type: Dark
 Name: Urshifu-SS
 Note: Band
 EVs: 236 Atk / 20 SpD / 252 Spe
-Adamant Nature
+Adamant nature
 - U-Turn
 - Wicked Blow 
 - Close Combat
@@ -519,7 +531,7 @@ Tera Type: Water
 Name: Urshifu-RS
 Note: Scarf
 EVs: 12 HP / 156 Atk / 4 Def / 84 SpD / 252 Spe  
-Adamant Nature  
+Adamant nature  
 - U-turn  
 - Aqua Jet  
 - Close Combat  
@@ -531,7 +543,7 @@ Tera Type: Water
 Name: Urshifu-RS
 Note: Mystic
 EVs: 12 HP / 156 Atk / 4 Def / 84 SpD / 252 Spe  
-Adamant Nature  
+Adamant nature  
 - Protect
 - Aqua Jet  
 - Close Combat  
@@ -543,7 +555,7 @@ Tera Type: Water
 Name: Urshifu-RS 
 Note: Sash
 EVs: 252 Atk / 4 SpD / 252 Spe
-Adamant Nature  
+Adamant nature  
 - Protect
 - Aqua Jet  
 - Close Combat  
@@ -554,7 +566,7 @@ Ability: Sturdy
 Tera Type: Electric
 Note: Herb
 EVs: 252 SpA / 4 SpD / 252 Spe
-Modest Nature
+Modest nature
 - Protect
 - Electro Shot
 - Flash Cannon
@@ -565,7 +577,7 @@ Ability: Stamina
 Tera Type: Grass
 EVs: 252 HP / 4 Def / 44 SpA / 204 SpD / 4 Spe
 Note: Vest
-Modest Nature
+Modest nature
 - Electro Shot
 - Flash Cannon
 - Dragon Pulse
@@ -576,7 +588,7 @@ Ability: Beads of Ruin
 Tera Type: Ghost
 Note: Sash
 EVs: 4 HP / 252 SpA / 252 Spe
-Timid Nature
+Timid nature
 - Protect
 - Heat Wave
 - Dark Pulse
@@ -587,7 +599,7 @@ Ability: Beads of Ruin
 Tera Type: Ghost
 Note: Sash
 EVs: 4 HP / 252 SpA / 252 Spe
-Timid Nature
+Timid nature
 - Protect
 - Heat Wave
 - Dark Pulse
@@ -598,7 +610,7 @@ Ability: Beads of Ruin
 Tera Type: Ghost
 Note: Scarf
 EVs: 52 HP / 4 Def / 196 SpA / 4 SpD / 252 Spe
-Modest Nature
+Modest nature
 - Heat Wave
 - Dark Pulse
 - Overheat
@@ -609,7 +621,7 @@ Ability: Sword of Ruin
 Tera Type: Ghost
 Note: Sash
 EVs: 252 Atk / 4 Def / 252 Spe
-Jolly Nature 
+Jolly nature 
 - Protect 
 - Icicle Crash
 - Sacred Sword
@@ -621,7 +633,7 @@ Tera Type: Water
 Note: Sitrus
 EVs: 228 HP / 116 Def / 4 SpA / 156 SpD / 4 Spe
 IVs: 0 Atk
-Calm Nature
+Calm nature
 - Trick Room 
 - Helping Hand
 - Hyper Voice
@@ -633,7 +645,7 @@ Tera Type: Fairy
 Note: Booster
 EVs: 228 HP / 204 Def / 4 SpA / 4 SpD / 68 Spe
 IVs: 0 Atk
-Timid Nature
+Timid nature
 - Protect
 - Icy Wind
 - Moonblast
@@ -645,7 +657,7 @@ Tera Type: Fairy
 Note: Specs
 EVs: 116 HP / 156 Def / 36 SpA / 4 SpD / 196 Spe
 IVs: 0 Atk
-Modest Nature
+Modest nature
 - Dazzling Gleam
 - Shadow Ball
 - Moonblast
@@ -657,7 +669,7 @@ Tera Type: Fairy
 Note: Sash
 EVs: 4 Def / 252 SpA / 252 Spe
 IVs: 0 Atk
-Timid Nature
+Timid nature
 - Protect
 - Icy Wind
 - Moonblast
@@ -736,7 +748,7 @@ Ability: Quark Drive
 Tera Type: Grass
 EVs: 60 HP / 156 Atk / 36 Def / 252 SpD / 4 Spe
 Note: Vest
-Adamant Nature
+Adamant nature
 - Drain Punch
 - Wild Charge
 - Heavy Slam
@@ -747,7 +759,7 @@ Ability: Quark Drive
 Tera Type: Grass
 EVs: 100 HP / 156 Atk / 252 SpD
 Note: Vest
-Brave Nature
+Brave nature
 - Drain Punch
 - Wild Charge
 - Heavy Slam
@@ -757,7 +769,7 @@ Kingambit @ Black Glasses
 Ability: Defiant
 Tera Type: Dark
 EVs: 204 HP / 196 Atk / 4 Def / 92 SpD / 12 Spe
-Adamant Nature
+Adamant nature
 - Protect
 - Swords Dance
 - Kowtow Cleave
@@ -768,7 +780,7 @@ Ability: Defiant
 Tera Type: Flying
 Note: Vest
 EVs: 204 HP / 196 Atk / 4 Def / 92 SpD / 12 Spe
-Adamant Nature
+Adamant nature
 - Kowtow Cleave
 - Sucker Punch
 - Tera Blast
@@ -779,7 +791,7 @@ Ability: Sturdy
 Tera Type: Rock
 Name: Ogerpon-CS
 EVs: 252 Atk / 4 Def / 252 Spe
-Jolly Nature
+Jolly nature
 - Spiky Shield
 - Follow Me
 - Power Whip
@@ -790,7 +802,7 @@ Ability: Mold Breaker
 Tera Type: Fire  
 Name: Ogerpon-HF
 EVs: 188 HP / 76 Atk / 52 Def / 4 SpD / 188 Spe  
-Adamant Nature  
+Adamant nature  
 - Spiky Shield  
 - Follow Me  
 - Wood Hammer  
@@ -801,7 +813,7 @@ Ability: Mold Breaker
 Tera Type: Fire  
 Name: Ogerpon-HF
 EVs: 28 HP / 220 Atk / 4 Def / 4 SpD / 252 Spe
-Jolly Nature  
+Jolly nature  
 - Spiky Shield  
 - Follow Me  
 - Wood Hammer  
@@ -812,7 +824,7 @@ Ability: Water Absorb
 Tera Type: Water
 Name: Ogerpon-WS
 EVs: 220 HP / 60 Atk / 44 Def / 4 SpD / 180 Spe
-Jolly Nature
+Jolly nature
 - Spiky Shield
 - Follow Me
 - Ivy Cudgel
@@ -824,7 +836,7 @@ Tera Type: Electric
 Note: Vest
 EVs: 244 HP / 124 Def / 100 SpA / 36 SpD / 4 Spe
 IVs: 0 Atk
-Modest Nature 
+Modest nature 
 - Snarl
 - Thunderbolt 
 - Draco Meteor 
@@ -836,7 +848,7 @@ Tera Type: Electric
 Note: Orb
 EVs: 148 HP / 36 Def / 100 SpA / 44 SpD / 180 Spe
 IVs: 0 Atk
-Modest Nature 
+Modest nature 
 - Protect
 - Thunderbolt 
 - Draco Meteor 
@@ -847,7 +859,7 @@ Ability: Protosynthesis
 Tera Type: Flying
 Note: Booster
 EVs: 4 HP / 220 Atk / 28 Def / 4 SpD / 252 Spe
-Jolly Nature
+Jolly nature
 - Protect
 - Tailwind
 - Acrobatics
@@ -858,7 +870,7 @@ Ability: Vessel of Ruin
 Tera Type: Poison
 Note: Helmet
 EVs: 52 HP / 4 Atk / 196 Def / 252 SpD / 4 Spe
-Impish Nature
+Impish nature
 - Protect
 - Sand Tomb
 - Ruination
@@ -869,7 +881,7 @@ Ability: Vessel of Ruin
 Tera Type: Poison
 Note: Helmet
 EVs: 52 HP / 4 Atk / 196 Def / 252 SpD / 4 Spe
-Impish Nature
+Impish nature
 - Sand Tomb
 - Ruination
 - Body Press
@@ -891,7 +903,7 @@ Tera Type: Normal
 Note: Orb
 EVs: 244 HP / 196 SpA / 68 SpD 
 IVs: 0 Atk / 0 Spe
-Quiet Nature
+Quiet nature
 - Protect
 - Earth Power 
 - Hyper Voice 
@@ -903,7 +915,7 @@ Tera Type: Normal
 Note: Orb
 EVs: 244 HP / 4 Def / 196 SpA / 52 SpD / 12 Spe
 IVs: 0 Atk
-Modest Nature
+Modest nature
 - Protect
 - Earth Power 
 - Hyper Voice 
@@ -915,8 +927,548 @@ Tera Type: Normal
 Note: Orb
 EVs: 4 HP / 4 Def / 196 SpA / 52 SpD / 252 Spe
 IVs: 0 Atk
-Modest Nature
+Modest nature
 - Protect
 - Earth Power 
 - Hyper Voice 
 - Blood Moon
+
+Whimsicott @ Focus Sash
+Ability: Prankster
+Tera Type: Ghost
+Note: Sash
+EVs: 4 HP / 252 SpA / 252 Spe
+Timid nature
+- Protect
+- Tailwind
+- Encore
+- Moonblast
+
+Whimsicott @ Covert Cloak
+Ability: Prankster
+Tera Type: Dark
+Note: Cloak
+EVs: 252 HP / 4 Def / 252 Spe
+Timid nature
+- Fake Tears
+- Tailwind
+- Encore
+- Moonblast
+
+Grimmsnarl @ Light Clay
+Ability: Prankster
+Tera Type: Ghost
+Note: Light Clay
+EVs: 244 HP / 4 Atk / 196 Def / 60 SpD / 4 Spe
+Impish nature
+- Light Screen
+- Reflect
+- Thunder Wave
+- Spirit Break
+
+Grimmsnarl @ Light Clay
+Ability: Prankster
+Tera Type: Ghost
+Note: Light Clay
+EVs: 236 HP / 156 Def / 116 SpD 
+Calm nature
+- Light Screen
+- Reflect
+- Thunder Wave
+- Foul Play
+
+Garchomp @ Focus Sash
+Ability: Rough Skin
+Tera Type: Ground
+Note: Sash
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
+- Protect
+- Earthquake
+- Dragon Claw
+- Stomping Tantrum
+
+Garchomp @ Assault Vest
+Ability: Rough Skin
+Tera Type: Fire
+Note: Vest
+EVs: 252 Spe / 4 Def / 156 Atk / 92 SpD / 4 HP
+Jolly nature
+- Earthquake
+- Rock Slide
+- Poison Jab
+- Dragon Claw
+
+Tyranitar @ Choice Scarf
+Ability: Sand Stream
+Tera Type: Ghost
+Note: Scarf
+EVs: 4 HP / 244 Atk / 4 Def / 4 SpD / 252 Spe
+Jolly nature
+- Rock Slide
+- Low Kick
+- Assurance
+- Ice Punch
+
+Tyranitar @ Lum Berry
+Ability: Sand Stream
+Tera Type: Ghost
+Note: Lum Berry
+EVs: 252 HP / 204 Atk / 4 Def / 44 SpD / 4 Spe
+Adamant nature
+- Protect
+- Rock Slide
+- Low Kick
+- Crunch
+
+Tyranitar @ Life Orb
+Ability: Sand Stream
+Tera Type: Ghost
+Note: Life Orb
+EVs: 188 HP / 204 Atk / 4 Def / 108 SpD / 4 Spe
+Adamant nature
+- Protect
+- Rock Slide
+- Low Kick
+- Crunch
+
+Tyranitar @ Lum Berry
+Ability: Sand Stream
+Tera Type: Ghost
+Note: Lum Berry
+EVs: 252 HP / 204 Atk / 52 SpD
+IVs: 0 Spe
+Brave nature
+- Protect
+- Rock Slide
+- Low Kick
+- Crunch
+
+Tyranitar @ Life Orb
+Ability: Sand Stream
+Tera Type: Ghost
+Note: Life Orb
+EVs: 188 HP / 204 Atk / 116 SpD
+IVs: 0 Spe
+Brave nature
+- Protect
+- Rock Slide
+- Low Kick
+- Crunch
+
+Tapu Fini @ Leftovers
+Ability: Misty Surge
+Tera Type: Steel
+Note: Calm Mind
+EVs: 252 HP / 172 Def / 4 SpA / 76 SpD / 4 Spe
+IVs: 0 Atk
+Calm nature
+- Protect
+- Calm Mind
+- Muddy Water
+- Moonblast
+
+Tapu Fini @ Choice Specs
+Ability: Misty Surge
+Tera Type: Steel
+Note: Specs
+EVs: 252 HP / 4 Def / 196 SpA / 4 SpD / 52 Spe
+IVs: 0 Atk
+Modest nature
+- Trick
+- Moonblast
+- Muddy Water
+- Dazzling Gleam
+
+Tapu Fini @ Choice Scarf  
+Ability: Misty Surge  
+Tera Type: Steel
+Note: Scarf
+EVs: 4 HP / 4 Def / 196 SpA / 52 SpD / 252 Spe  
+IVs: 0 Atk
+Modest nature  
+- Moonblast  
+- Scald  
+- Soak  
+- Ice Beam
+
+Tapu Fini @ Misty Seed
+Ability: Misty Surge
+Tera Type: Steel
+Note: Support
+EVs: 252 HP / 12 Def / 4 SpA / 4 SpD / 236 Spe
+IVs: 0 Atk
+Timid nature
+- Taunt
+- Icy Wind
+- Nature's Madness
+- Heal Pulse
+
+Tapu Fini @ Misty Seed
+Ability: Misty Surge
+Tera Type: Steel
+Note: Support
+EVs: 252 HP / 100 Def / 4 SpA / 4 SpD / 148 Spe
+IVs: 0 Atk
+Calm nature
+- Taunt
+- Icy Wind
+- Nature's Madness
+- Heal Pulse
+
+Dragapult @ Choice Band
+Ability: Clear Body
+Tera Type: Dragon
+Note: Banded
+EVs: 4 HP / 244 Atk / 4 Def / 4 SpD / 252 Spe
+Jolly nature
+- U-Turn
+- Phantom Force
+- Dragon Darts
+- Outrage
+
+Dragapult @ Safety Goggles
+Ability: Clear Body
+Tera Type: Water
+Note: Support
+EVs: 164 Spe / 44 Def / 4 Atk / 44 SpD / 252 HP
+Jolly nature
+- Protect
+- Dragon Darts
+- Light Screen
+- Will-o-Wisp
+
+Dragonite @ Choice Band
+Ability: Inner Focus
+Tera Type: Normal
+Note: Banded
+EVs: 44 HP / 204 Atk / 4 Def / 4 SpD / 252 Spe
+Adamant nature
+- Extreme Speed
+- Dragon Claw
+- Aerial Ace
+- Stomping Tantrum
+
+Dragonite @ Loaded Dice
+Ability: Multiscale
+Tera Type: Fairy
+Note: Dice
+EVs: 44 HP / 204 Atk / 4 Def / 4 SpD / 252 Spe
+Adamant nature
+- Protect
+- Tailwind
+- Haze
+- Scale Shot
+
+Regieleki @ Magnet
+Ability: Transistor
+Tera Type: Electric
+Note: Magnet
+EVs: 4 SpD / 4 HP / 252 Spe / 244 SpA / 4 Def
+IVs: 0 Atk
+Timid nature
+- Protect
+- Volt Switch
+- Electroweb
+- Thunderbolt
+
+Gastrodon @ Sitrus Berry
+Ability: Storm Drain
+Tera Type: Fire
+Note: Sitrus
+EVs: 172 HP / 108 Def / 220 SpA / 4 SpD / 4 Spe
+IVs: 0 Atk
+Modest nature
+- Protect
+- Ice Beam
+- Earth Power
+- Muddy Water
+
+Gastrodon @ Sitrus Berry
+Ability: Storm Drain
+Tera Type: Fire
+Note: Sitrus
+EVs: 172 HP / 116 Def / 220 SpA
+IVs: 0 Atk / 0 Spe
+Quiet nature
+- Protect
+- Ice Beam
+- Earth Power
+- Muddy Water
+
+Thundurus @ Safety Goggles
+Ability: Prankster
+Tera Type: Dark
+EVs: 68 Spe / 28 Def / 172 SpD / 228 HP / 12 SpA
+IVs: 0 Atk
+Calm nature
+- Protect
+- Thunder Wave
+- Thunderbolt
+- Taunt
+
+Thundurus @ Focus Sash
+Ability: Prankster
+Tera Type: Dark
+Note: Sash
+IVs: 0 Atk
+EVs: 4 HP / 252 SpA / 252 Spe
+Timid nature
+- Protect
+- Thunder Wave
+- Thunderbolt
+- Taunt
+
+Thundurus @ Life Orb
+Ability: Prankster
+Tera Type: Dark
+Note: Orb
+IVs: 0 Atk / 30 Def
+EVs: 4 HP / 252 SpA / 252 Spe
+Timid nature
+- Thunderbolt
+- Hidden Power
+- Thunder Wave
+- Taunt
+
+Togekiss @ Babiri Berry
+Ability: Super Luck
+Tera Type: Water
+Note: Babiri
+EVs: 60 Spe / 196 Def / 12 SpD / 236 HP / 4 SpA
+IVs: 0 Atk
+Bold nature
+- Follow Me
+- Yawn
+- Air Slash
+- Dazzling Gleam
+
+Togekiss @ Scope Lens
+Ability: Super Luck
+Tera Type: Water
+Note: Lens
+EVs: 4 Spe / 196 Def / 76 SpD / 228 HP / 4 SpA
+IVs: 0 Atk
+Bold nature
+- Protect
+- Yawn
+- Follow Me
+- Dazzling Gleam
+
+Tapu Koko @ Focus Sash
+Ability: Electric Surge
+Tera Type: Electric
+Note: Sash
+EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
+Timid nature
+- Protect
+- Dazzling Gleam
+- Volt Switch
+- Thunderbolt
+
+Tapu Koko @ Assault Vest
+Ability: Electric Surge
+Tera Type: Water
+Note: Vest
+EVs: 92 Spe / 12 Def / 196 SpD / 172 HP / 36 SpA
+Timid nature
+- Thunderbolt
+- Dazzling Gleam
+- Sky Drop
+- Volt Switch
+
+Annihilape @ Choice Scarf
+Ability: Defiant
+Tera Type: Fighting
+Note: Scarf
+EVs: 252 HP / 4 Atk / 252 Spe
+Jolly nature
+- U-Turn
+- Close Combat
+- Rage Fist
+- Final Gambit
+
+Annihilape @ Sitrus Berry
+Ability: Defiant
+Tera Type: Fire
+Note: Sitrus
+EVs: 180 HP / 68 Atk / 4 Def / 4 SpD / 252 Spe
+Jolly nature
+- Protect
+- Bulk Up
+- Rage Fist
+- Drain Punch
+
+Sneasler @ Focus Sash  
+Ability: Unburden  
+Tera Type: Dark  
+Note: Sash
+EVs: 252 Atk / 4 Def / 252 Spe  
+Jolly nature  
+- Close Combat  
+- Throat Chop  
+- Dire Claw  
+- Fake Out
+
+Sneasler @ Focus Sash
+Ability: Unburden
+Tera Type: Ghost
+Note: Coaching
+EVs: 252 Atk / 4 Def / 252 Spe
+Jolly nature
+- Close Combat
+- Dire Claw
+- Coaching
+- Fake Out
+
+Sneasler @ White Herb  
+Ability: Unburden  
+Tera Type: Stellar
+Note: Herb
+EVs: 4 HP / 244 Atk / 4 Def / 4 SpD / 252 Spe
+Jolly Nature  
+- Protect  
+- Close Combat  
+- Dire Claw  
+- Fake Out
+
+Milotic @ Sitrus Berry
+Ability: Competitive
+Tera Type: Grass
+Note: Sitrus
+EVs: 244 HP / 220 Def / 4 SpA / 36 SpD / 4 Spe
+Calm nature
+- Protect
+- Recover
+- Icy Wind
+- Muddy Water
+
+Milotic @ Leftovers
+Ability: Competitive
+Tera Type: Grass
+Note: Coil
+EVs: 180 HP / 204 Def / 4 SpA / 116 SpD / 4 Spe
+Calm nature
+- Protect
+- Coil
+- Hypnosis
+- Muddy Water
+
+Venusaur @ Focus Sash
+Ability: Chlorophyll
+Tera Type: Ghost
+Note: Sash
+EVs: 4 HP / 252 SpA / 252 Spe
+Modest nature
+- Leaf Storm
+- Earth Power
+- Sludge Bomb
+- Sleep Powder
+
+Sinistcha @ Leftovers
+Ability: Hospitality
+Tera Type: Water
+Note: Leftys
+EVs: 244 HP / 188 Def / 4 SpA / 68 SpD / 4 Spe
+IVs: 0 Atk
+Bold nature
+- Matcha Gotcha  
+- Rage Powder  
+- Life Dew  
+- Trick Room
+
+Sinistcha @ Leftovers
+Ability: Hospitality
+Tera Type: Water
+Note: Leftys
+EVs: 244 HP / 188 Def / 76 SpD
+IVs: 0 Atk / 0 Spe
+Relaxed nature
+- Matcha Gotcha  
+- Rage Powder  
+- Life Dew  
+- Trick Room
+
+Sinistcha @ Sitrus Berry
+Ability: Hospitality
+Tera Type: Water
+Note: Sitrus
+EVs: 236 HP / 188 Def / 4 SpA / 76 SpD / 4 Spe
+IVs: 0 Atk
+Bold nature
+- Matcha Gotcha  
+- Rage Powder  
+- Life Dew  
+- Trick Room
+
+Sinistcha @ Sitrus Berry
+Ability: Hospitality
+Tera Type: Water
+Note: Sitrus
+EVs: 236 HP / 188 Def / 84 SpD
+IVs: 0 Atk / 0 Spe
+Relaxed nature
+- Matcha Gotcha  
+- Rage Powder  
+- Life Dew  
+- Trick Room
+
+Sylveon @ Choice Specs
+Ability: Pixilate
+Tera Type: Fairy
+Note: Specs
+EVs: 252 HP / 92 Def / 156 SpA / 4 SpD / 4 Spe
+IVs: 0 Atk
+Modest nature
+- Hyper Voice
+- Hyper Beam
+- Moonblast
+- Psyshock
+
+Sylveon @ Pixie Plate
+Ability: Pixilate
+Tera Type: Water
+Note: Plate
+EVs: 252 HP / 172 Def / 76 SpA / 4 SpD / 4 Spe
+IVs: 0 Atk
+Modest nature
+- Protect
+- Hyper Voice
+- Hyper Beam
+- Quick Attack
+
+Sylveon @ Leftovers
+Ability: Pixilate
+Tera Type: Water
+Note: Leftys
+EVs: 180 HP / 244 Def / 76 SpA / 4 SpD / 4 Spe
+IVs: 0 Atk
+Modest nature
+- Protect
+- Calm Mind
+- Hyper Voice
+- Moonblast
+
+Rotom-Wash @ Sitrus Berry
+Ability: Levitate
+Tera Type: Steel
+EVs: 4 Spe / 44 Def / 148 SpD / 252 HP / 60 SpA
+IVs: 0 Atk
+Calm nature
+- Protect
+- Will-o-Wisp
+- Thunderbolt
+- Hydro Pump
+
+Rotom-Wash @ Sitrus Berry
+Ability: Levitate
+Tera Type: Steel
+EVs: 252 HP / 4 Def / 116 SpA / 4 SpD / 132 Spe
+IVs: 0 Atk
+Modest nature
+- Protect
+- Nasty Plot
+- Hydro Pump
+- Thunderbolt
+

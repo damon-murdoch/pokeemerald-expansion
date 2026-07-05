@@ -65,6 +65,16 @@ Adamant Nature
 - Precipice Blades  
 - Fire Punch
 
+Rayquaza @ Focus Sash
+Ability: Air Lock
+Note: Mega
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly nature
+- Protect
+- Swords Dance
+- Dragon Ascent
+- Extreme Speed
+
 Xerneas @ Power Herb  
 Ability: Fairy Aura  
 EVs: 4 HP / 4 Def / 244 SpA / 4 SpD / 252 Spe  
@@ -143,7 +153,6 @@ Modest Nature
 
 Calyrex @ Clear Amulet  
 Ability: Unnerve
-  
 Tera Type: Fire  
 EVs: 252 HP / 116 Atk / 140 SpD  
 Note: Ice
@@ -155,7 +164,6 @@ IVs: 0 Spe
 
 Calyrex @ Clear Amulet  
 Ability: Unnerve
-  
 Tera Type: Fire  
 EVs: 252 HP / 116 Atk / 4 Def / 124 SpD / 12 Spe
 Note: Ice
@@ -177,7 +185,7 @@ Note: Shadow
 
 Calyrex @ Life Orb
 Ability: Unnerve
-Tera Type: Ghost  
+Tera Type: Dark  
 EVs: 20 HP / 4 Def / 220 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  

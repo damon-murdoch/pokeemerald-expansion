@@ -6,10 +6,6 @@
         "name": "Aegislash",
         "action": [
           {
-            "name": "140/0-/0/252+/0/116 (Ghost Z)",
-            "action": "givemon(SPECIES_AEGISLASH,65,ITEM_GHOSTIUM_Z,ITEM_POKE_BALL,NATURE_MODEST,0,0,140,0,0,116,252,0,31,0,31,31,31,31,MOVE_KINGS_SHIELD,MOVE_SUBSTITUTE,MOVE_SHADOW_BALL,MOVE_FLASH_CANNON,2,FALSE,FALSE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-          },
-          {
             "name": "236/0-/0/252+/0/20 (Leftys)",
             "action": "givemon(SPECIES_AEGISLASH,65,ITEM_LEFTOVERS,ITEM_POKE_BALL,NATURE_MODEST,0,1,236,0,0,20,252,0,31,0,31,31,31,31,MOVE_SHADOW_BALL,MOVE_KINGS_SHIELD,MOVE_FLASH_CANNON,MOVE_SUBSTITUTE,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
           },
@@ -37,6 +33,19 @@
           {
             "name": "252/0/20/0/236+/0- (Sitrus)",
             "action": "givemon(SPECIES_AMOONGUSS,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_SASSY,2,1,252,0,20,0,0,236,31,0,31,0,31,31,MOVE_PROTECT,MOVE_POLLEN_PUFF,MOVE_RAGE_POWDER,MOVE_SPORE,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          }
+        ]
+      },
+      {
+        "name": "Annihilape",
+        "action": [
+          {
+            "name": "180/68/4/0-/4/252+ (Sitrus)",
+            "action": "givemon(SPECIES_ANNIHILAPE,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_JOLLY,2,1,180,68,4,252,0,4,31,31,31,31,31,31,MOVE_PROTECT,MOVE_BULK_UP,MOVE_RAGE_FIST,MOVE_DRAIN_PUNCH,2,FALSE,TYPE_FIRE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "252/4/0/0-/0/252+ (Scarf)",
+            "action": "givemon(SPECIES_ANNIHILAPE,65,ITEM_CHOICE_SCARF,ITEM_POKE_BALL,NATURE_JOLLY,2,1,252,4,0,252,0,0,31,31,31,31,31,31,MOVE_U_TURN,MOVE_CLOSE_COMBAT,MOVE_RAGE_FIST,MOVE_FINAL_GAMBIT,2,FALSE,TYPE_FIGHTING,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
           }
         ]
       },
@@ -70,8 +79,12 @@
         "name": "Basculegion",
         "action": [
           {
-            "name": "164/220+/4/0-/4/116",
+            "name": "164/220+/4/0-/4/116 (Band)",
             "action": "givemon(SPECIES_BASCULEGION,65,ITEM_CHOICE_BAND,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,164,220,4,116,0,4,31,31,31,31,31,31,MOVE_FLIP_TURN,MOVE_AQUA_JET,MOVE_WAVE_CRASH,MOVE_LAST_RESPECTS,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "4/244+/4/0-/4/252 (Scarf)",
+            "action": "givemon(SPECIES_BASCULEGION,65,ITEM_CHOICE_SCARF,ITEM_POKE_BALL,NATURE_ADAMANT,1,0,4,244,4,252,0,4,31,31,31,31,31,31,MOVE_FLIP_TURN,MOVE_AQUA_JET,MOVE_WAVE_CRASH,MOVE_LAST_RESPECTS,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
           }
         ]
       },
@@ -115,6 +128,32 @@
         ]
       },
       {
+        "name": "Dragapult",
+        "action": [
+          {
+            "name": "252/4/44/0-/44/164+ (Support)",
+            "action": "givemon(SPECIES_DRAGAPULT,65,ITEM_SAFETY_GOGGLES,ITEM_POKE_BALL,NATURE_JOLLY,0,1,252,4,44,164,0,44,31,31,31,31,31,31,MOVE_PROTECT,MOVE_DRAGON_DARTS,MOVE_LIGHT_SCREEN,MOVE_WILL_O_WISP,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "4/244/4/0-/4/252+ (Banded)",
+            "action": "givemon(SPECIES_DRAGAPULT,65,ITEM_CHOICE_BAND,ITEM_POKE_BALL,NATURE_JOLLY,0,1,4,244,4,252,0,4,31,31,31,31,31,31,MOVE_U_TURN,MOVE_PHANTOM_FORCE,MOVE_DRAGON_DARTS,MOVE_OUTRAGE,2,FALSE,TYPE_DRAGON,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          }
+        ]
+      },
+      {
+        "name": "Dragonite",
+        "action": [
+          {
+            "name": "44/204+/4/0-/4/252 (Banded)",
+            "action": "givemon(SPECIES_DRAGONITE,65,ITEM_CHOICE_BAND,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,44,204,4,252,0,4,31,31,31,31,31,31,MOVE_EXTREME_SPEED,MOVE_DRAGON_CLAW,MOVE_AERIAL_ACE,MOVE_STOMPING_TANTRUM,2,FALSE,TYPE_NORMAL,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "44/204+/4/0-/4/252 (Dice)",
+            "action": "givemon(SPECIES_DRAGONITE,65,ITEM_LOADED_DICE,ITEM_POKE_BALL,NATURE_ADAMANT,2,1,44,204,4,252,0,4,31,31,31,31,31,31,MOVE_PROTECT,MOVE_TAILWIND,MOVE_HAZE,MOVE_SCALE_SHOT,2,FALSE,TYPE_FAIRY,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          }
+        ]
+      },
+      {
         "name": "Farigiraf",
         "action": [
           {
@@ -141,6 +180,19 @@
         ]
       },
       {
+        "name": "Garchomp",
+        "action": [
+          {
+            "name": "4/156/4/0-/92/252+ (Vest)",
+            "action": "givemon(SPECIES_GARCHOMP,65,ITEM_ASSAULT_VEST,ITEM_POKE_BALL,NATURE_JOLLY,2,0,4,156,4,252,0,92,31,31,31,31,31,31,MOVE_EARTHQUAKE,MOVE_ROCK_SLIDE,MOVE_POISON_JAB,MOVE_DRAGON_CLAW,2,FALSE,TYPE_FIRE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "4/252/0/0-/0/252+ (Sash)",
+            "action": "givemon(SPECIES_GARCHOMP,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_JOLLY,2,0,4,252,0,252,0,0,31,31,31,31,31,31,MOVE_PROTECT,MOVE_EARTHQUAKE,MOVE_DRAGON_CLAW,MOVE_STOMPING_TANTRUM,2,FALSE,TYPE_GROUND,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          }
+        ]
+      },
+      {
         "name": "Garganacl",
         "action": [
           {
@@ -150,6 +202,19 @@
           {
             "name": "252/4/12/0-/236+/4",
             "action": "givemon(SPECIES_GARGANACL,65,ITEM_LEFTOVERS,ITEM_POKE_BALL,NATURE_CAREFUL,0,1,252,4,12,4,0,236,31,31,31,31,31,31,MOVE_PROTECT,MOVE_WIDE_GUARD,MOVE_SALT_CURE,MOVE_RECOVER,2,FALSE,TYPE_GHOST,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          }
+        ]
+      },
+      {
+        "name": "Gastrodon",
+        "action": [
+          {
+            "name": "172/0-/108/220+/4/4 (Sitrus)",
+            "action": "givemon(SPECIES_GASTRODON,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_MODEST,1,1,172,0,108,4,220,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_ICE_BEAM,MOVE_EARTH_POWER,MOVE_MUDDY_WATER,2,FALSE,TYPE_FIRE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "172/0/116/220+/0/0- (Sitrus)",
+            "action": "givemon(SPECIES_GASTRODON,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_QUIET,1,0,172,0,116,0,220,0,31,0,31,0,31,31,MOVE_PROTECT,MOVE_ICE_BEAM,MOVE_EARTH_POWER,MOVE_MUDDY_WATER,2,FALSE,TYPE_FIRE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
           }
         ]
       },
@@ -167,6 +232,42 @@
           {
             "name": "36/0-/4/212+/4/252 (Specs)",
             "action": "givemon(SPECIES_GHOLDENGO,65,ITEM_CHOICE_SPECS,ITEM_POKE_BALL,NATURE_MODEST,0,0,36,0,4,252,212,4,31,0,31,31,31,31,MOVE_STEEL_BEAM,MOVE_SHADOW_BALL,MOVE_MAKE_IT_RAIN,MOVE_DAZZLING_GLEAM,2,FALSE,TYPE_STEEL,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          }
+        ]
+      },
+      {
+        "name": "Gigantamax",
+        "action": [
+          {
+            "name": "Charizard-Gmax",
+            "action": [
+              {
+                "name": "4/0-/4/244/0/252+",
+                "action": "givemon(SPECIES_CHARIZARD,65,ITEM_CHARTI_BERRY,ITEM_POKE_BALL,NATURE_TIMID,0,1,4,0,4,252,244,0,31,0,31,31,31,31,MOVE_PROTECT,MOVE_BLAST_BURN,MOVE_SOLAR_BEAM,MOVE_AIR_SLASH,2,TRUE,FALSE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
+          },
+          {
+            "name": "Venusaur-Gmax",
+            "action": [
+              {
+                "name": "156/0-/36/172+/20/116",
+                "action": "givemon(SPECIES_VENUSAUR,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_MODEST,2,0,156,0,36,116,172,20,31,0,31,31,31,31,MOVE_SLEEP_POWDER,MOVE_LEAF_STORM,MOVE_SLUDGE_BOMB,MOVE_EARTH_POWER,2,TRUE,FALSE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Grimmsnarl",
+        "action": [
+          {
+            "name": "236/0-/156/0/116+/0 (Light Clay)",
+            "action": "givemon(SPECIES_GRIMMSNARL,65,ITEM_LIGHT_CLAY,ITEM_POKE_BALL,NATURE_CALM,0,0,236,0,156,0,0,116,31,31,31,31,31,31,MOVE_LIGHT_SCREEN,MOVE_REFLECT,MOVE_THUNDER_WAVE,MOVE_FOUL_PLAY,2,FALSE,TYPE_GHOST,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "244/4/196+/0-/60/4 (Light Clay)",
+            "action": "givemon(SPECIES_GRIMMSNARL,65,ITEM_LIGHT_CLAY,ITEM_POKE_BALL,NATURE_IMPISH,0,0,244,4,196,4,0,60,31,31,31,31,31,31,MOVE_LIGHT_SCREEN,MOVE_REFLECT,MOVE_THUNDER_WAVE,MOVE_SPIRIT_BREAK,2,FALSE,TYPE_GHOST,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
           }
         ]
       },
@@ -210,6 +311,15 @@
         ]
       },
       {
+        "name": "Indeedee",
+        "action": [
+          {
+            "name": "4/0-/0/252/0/252+ (Sash)",
+            "action": "givemon(SPECIES_INDEEDEE,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_TIMID,2,0,4,0,0,252,252,0,31,31,31,31,31,31,MOVE_PROTECT,MOVE_HYPER_VOICE,MOVE_EXPANDING_FORCE,MOVE_TERA_BLAST,2,FALSE,TYPE_FIGHTING,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          }
+        ]
+      },
+      {
         "name": "Indeedee-F",
         "action": [
           {
@@ -244,8 +354,12 @@
         "name": "Kartana",
         "action": [
           {
-            "name": "4/252/0/0-/0/252+",
-            "action": "givemon(SPECIES_KARTANA,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_JOLLY,0,0,4,252,0,252,0,0,31,31,31,31,31,31,MOVE_LEAF_BLADE,MOVE_SACRED_SWORD,MOVE_TAILWIND,MOVE_DETECT,2,FALSE,FALSE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+            "name": "116/4/4/0-/132/252+ (Vest)",
+            "action": "givemon(SPECIES_KARTANA,65,ITEM_ASSAULT_VEST,ITEM_POKE_BALL,NATURE_JOLLY,0,0,116,4,4,252,0,132,31,31,31,31,31,31,MOVE_SMART_STRIKE,MOVE_LEAF_BLADE,MOVE_SACRED_SWORD,MOVE_NIGHT_SLASH,2,FALSE,TYPE_FIRE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "4/252/0/0-/0/252+ (Focus Sash)",
+            "action": "givemon(SPECIES_KARTANA,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_JOLLY,0,0,4,252,0,252,0,0,31,31,31,31,31,31,MOVE_LEAF_BLADE,MOVE_SACRED_SWORD,MOVE_TAILWIND,MOVE_DETECT,2,FALSE,TYPE_FIRE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
           }
         ]
       },
@@ -272,14 +386,6 @@
           {
             "name": "12/196+/4/0-/44/252 (Vest)",
             "action": "givemon(SPECIES_LANDORUS_THERIAN,65,ITEM_ASSAULT_VEST,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,12,196,4,252,0,44,31,31,31,31,31,31,MOVE_U_TURN,MOVE_EARTHQUAKE,MOVE_ROCK_SLIDE,MOVE_SUPERPOWER,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-          },
-          {
-            "name": "156/116+/36/0-/108/92 (Ground Z)",
-            "action": "givemon(SPECIES_LANDORUS_THERIAN,65,ITEM_GROUNDIUM_Z,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,156,116,36,92,0,108,31,31,31,31,31,31,MOVE_PROTECT,MOVE_SWORDS_DANCE,MOVE_EARTHQUAKE,MOVE_ROCK_SLIDE,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-          },
-          {
-            "name": "20/164+/4/0-/68/252 (Ground Z)",
-            "action": "givemon(SPECIES_LANDORUS_THERIAN,65,ITEM_GROUNDIUM_Z,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,20,164,4,252,0,68,31,31,31,31,31,31,MOVE_PROTECT,MOVE_EARTHQUAKE,MOVE_ROCK_SLIDE,MOVE_SUPERPOWER,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
           }
         ]
       },
@@ -300,119 +406,127 @@
         "name": "Mega",
         "action": [
           {
-            "name": "sets",
+            "name": "Charizard",
             "action": [
               {
-                "name": "Charizard",
-                "action": [
-                  {
-                    "name": "204/0-/108/4+/4/188 (Mega Y)",
-                    "action": "givemon(SPECIES_CHARIZARD,65,ITEM_CHARIZARDITE_Y,ITEM_POKE_BALL,NATURE_MODEST,0,1,204,0,108,188,4,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_SCORCHING_SANDS,MOVE_FLAMETHROWER,MOVE_SOLAR_BEAM,2,FALSE,TYPE_GRASS,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  },
-                  {
-                    "name": "236/44/4/0-/4/220+ (Mega X)",
-                    "action": "givemon(SPECIES_CHARIZARD,65,ITEM_CHARIZARDITE_X,ITEM_POKE_BALL,NATURE_JOLLY,0,0,236,44,4,220,0,4,31,31,31,31,31,31,MOVE_PROTECT,MOVE_FLARE_BLITZ,MOVE_WILL_O_WISP,MOVE_ROOST,2,FALSE,TYPE_GRASS,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  }
-                ]
+                "name": "204/0-/108/4+/4/188 (Mega Y)",
+                "action": "givemon(SPECIES_CHARIZARD,65,ITEM_CHARIZARDITE_Y,ITEM_POKE_BALL,NATURE_MODEST,0,1,204,0,108,188,4,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_SCORCHING_SANDS,MOVE_FLAMETHROWER,MOVE_SOLAR_BEAM,2,FALSE,TYPE_GRASS,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
               },
               {
-                "name": "Gardevoir",
-                "action": [
-                  {
-                    "name": "244/0-/196/36+/4/28 (Mega)",
-                    "action": "givemon(SPECIES_GARDEVOIR,65,ITEM_GARDEVOIRITE,ITEM_POKE_BALL,NATURE_MODEST,0,0,244,0,196,28,36,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_HYPER_VOICE,MOVE_TRICK_ROOM,MOVE_PSYCHIC,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  }
-                ]
-              },
-              {
-                "name": "Gengar",
-                "action": [
-                  {
-                    "name": "252/0-/68/4/4/180+ (Perish)",
-                    "action": "givemon(SPECIES_GENGAR,65,ITEM_GENGARITE,ITEM_POKE_BALL,NATURE_TIMID,0,0,252,0,68,180,4,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_SHADOW_BALL,MOVE_PERISH_SONG,MOVE_DISABLE,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  },
-                  {
-                    "name": "76/0-/28/220/4/180+ (Control)",
-                    "action": "givemon(SPECIES_GENGAR,65,ITEM_GENGARITE,ITEM_POKE_BALL,NATURE_TIMID,0,1,76,0,28,180,220,4,31,0,31,31,31,31,MOVE_SHADOW_BALL,MOVE_SLUDGE_BOMB,MOVE_DISABLE,MOVE_PROTECT,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  }
-                ]
-              },
-              {
-                "name": "Kangaskhan",
-                "action": [
-                  {
-                    "name": "36/196+/20/0-/236/20 (Mega)",
-                    "action": "givemon(SPECIES_KANGASKHAN,65,ITEM_KANGASKHANITE,ITEM_POKE_BALL,NATURE_ADAMANT,1,1,36,196,20,20,0,236,31,31,31,31,31,31,MOVE_RETURN,MOVE_LOW_KICK,MOVE_SUCKER_PUNCH,MOVE_FAKE_OUT,2,FALSE,TYPE_GHOST,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  }
-                ]
-              },
-              {
-                "name": "Latias",
-                "action": [
-                  {
-                    "name": "252/0-/60/76+/12/108",
-                    "action": "givemon(SPECIES_LATIAS,65,ITEM_LATIASITE,ITEM_POKE_BALL,NATURE_MODEST,0,1,252,0,60,108,76,12,31,0,31,31,31,31,MOVE_PSYSHOCK,MOVE_ICE_BEAM,MOVE_CALM_MIND,MOVE_RECOVER,2,FALSE,FALSE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  }
-                ]
-              },
-              {
-                "name": "Manectric",
-                "action": [
-                  {
-                    "name": "244/0-/4/36/4/220+ (Mega)",
-                    "action": "givemon(SPECIES_MANECTRIC,65,ITEM_MANECTITE,ITEM_POKE_BALL,NATURE_TIMID,1,1,244,0,4,220,36,4,31,31,31,31,31,31,MOVE_PROTECT,MOVE_VOLT_SWITCH,MOVE_OVERHEAT,MOVE_SNARL,2,FALSE,TYPE_GRASS,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  }
-                ]
-              },
-              {
-                "name": "Mawile",
-                "action": [
-                  {
-                    "name": "156/196+/0/0/156/0- (Mega)",
-                    "action": "givemon(SPECIES_MAWILE,65,ITEM_MAWILITE,ITEM_POKE_BALL,NATURE_BRAVE,1,1,156,196,0,0,0,156,31,31,31,0,31,31,MOVE_PROTECT,MOVE_IRON_HEAD,MOVE_PLAY_ROUGH,MOVE_SUCKER_PUNCH,2,FALSE,TYPE_FIRE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  },
-                  {
-                    "name": "156/196+/4/0-/148/4 (Mega)",
-                    "action": "givemon(SPECIES_MAWILE,65,ITEM_MAWILITE,ITEM_POKE_BALL,NATURE_ADAMANT,1,0,156,196,4,4,0,148,31,31,31,31,31,31,MOVE_PROTECT,MOVE_IRON_HEAD,MOVE_PLAY_ROUGH,MOVE_SUCKER_PUNCH,2,FALSE,TYPE_FIRE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  }
-                ]
-              },
-              {
-                "name": "Metagross",
-                "action": [
-                  {
-                    "name": "124/196+/12/0-/36/140 (Mega)",
-                    "action": "givemon(SPECIES_METAGROSS,65,ITEM_METAGROSSITE,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,124,196,12,140,0,36,31,31,31,31,31,31,MOVE_PROTECT,MOVE_IRON_HEAD,MOVE_ICE_PUNCH,MOVE_STOMPING_TANTRUM,2,FALSE,TYPE_FIRE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  }
-                ]
-              },
-              {
-                "name": "Salamence",
-                "action": [
-                  {
-                    "name": "0/44/0/252/0-/212+ (Mega)",
-                    "action": "givemon(SPECIES_SALAMENCE,65,ITEM_SALAMENCITE,ITEM_POKE_BALL,NATURE_NAIVE,0,0,0,44,0,212,252,0,31,31,31,31,31,31,MOVE_PROTECT,MOVE_TAILWIND,MOVE_HYPER_VOICE,MOVE_DOUBLE_EDGE,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  },
-                  {
-                    "name": "252/36+/4/0-/124/92 (Mega)",
-                    "action": "givemon(SPECIES_SALAMENCE,65,ITEM_SALAMENCITE,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,252,36,4,92,0,124,31,31,31,31,31,31,MOVE_PROTECT,MOVE_ROOST,MOVE_DOUBLE_EDGE,MOVE_DRAGON_DANCE,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  },
-                  {
-                    "name": "4/0-/4/244+/4/252",
-                    "action": "givemon(SPECIES_SALAMENCE,65,ITEM_SALAMENCITE,ITEM_POKE_BALL,NATURE_MODEST,0,1,4,0,4,252,244,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_TAILWIND,MOVE_HYPER_VOICE,MOVE_DRACO_METEOR,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  }
-                ]
-              },
-              {
-                "name": "Tyranitar",
-                "action": [
-                  {
-                    "name": "44/164/20/0-/28/252+",
-                    "action": "givemon(SPECIES_TYRANITAR,65,ITEM_TYRANITARITE,ITEM_POKE_BALL,NATURE_JOLLY,0,1,44,164,20,252,0,28,31,31,31,31,31,31,MOVE_ROCK_SLIDE,MOVE_CRUNCH,MOVE_DRAGON_DANCE,MOVE_PROTECT,2,FALSE,FALSE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  }
-                ]
+                "name": "236/44/4/0-/4/220+ (Mega X)",
+                "action": "givemon(SPECIES_CHARIZARD,65,ITEM_CHARIZARDITE_X,ITEM_POKE_BALL,NATURE_JOLLY,0,0,236,44,4,220,0,4,31,31,31,31,31,31,MOVE_PROTECT,MOVE_FLARE_BLITZ,MOVE_WILL_O_WISP,MOVE_ROOST,2,FALSE,TYPE_GRASS,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
               }
             ]
+          },
+          {
+            "name": "Gardevoir",
+            "action": [
+              {
+                "name": "244/0-/196/36+/4/28 (Mega)",
+                "action": "givemon(SPECIES_GARDEVOIR,65,ITEM_GARDEVOIRITE,ITEM_POKE_BALL,NATURE_MODEST,0,0,244,0,196,28,36,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_HYPER_VOICE,MOVE_TRICK_ROOM,MOVE_PSYCHIC,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
+          },
+          {
+            "name": "Gengar",
+            "action": [
+              {
+                "name": "252/0-/68/4/4/180+ (Perish)",
+                "action": "givemon(SPECIES_GENGAR,65,ITEM_GENGARITE,ITEM_POKE_BALL,NATURE_TIMID,0,0,252,0,68,180,4,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_SHADOW_BALL,MOVE_PERISH_SONG,MOVE_DISABLE,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              },
+              {
+                "name": "76/0-/28/220/4/180+ (Control)",
+                "action": "givemon(SPECIES_GENGAR,65,ITEM_GENGARITE,ITEM_POKE_BALL,NATURE_TIMID,0,1,76,0,28,180,220,4,31,0,31,31,31,31,MOVE_SHADOW_BALL,MOVE_SLUDGE_BOMB,MOVE_DISABLE,MOVE_PROTECT,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
+          },
+          {
+            "name": "Kangaskhan",
+            "action": [
+              {
+                "name": "36/196+/20/0-/236/20 (Mega)",
+                "action": "givemon(SPECIES_KANGASKHAN,65,ITEM_KANGASKHANITE,ITEM_POKE_BALL,NATURE_ADAMANT,1,1,36,196,20,20,0,236,31,31,31,31,31,31,MOVE_RETURN,MOVE_LOW_KICK,MOVE_SUCKER_PUNCH,MOVE_FAKE_OUT,2,FALSE,TYPE_GHOST,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
+          },
+          {
+            "name": "Latias",
+            "action": [
+              {
+                "name": "252/0-/60/76+/12/108",
+                "action": "givemon(SPECIES_LATIAS,65,ITEM_LATIASITE,ITEM_POKE_BALL,NATURE_MODEST,0,1,252,0,60,108,76,12,31,0,31,31,31,31,MOVE_PSYSHOCK,MOVE_ICE_BEAM,MOVE_CALM_MIND,MOVE_RECOVER,2,FALSE,FALSE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
+          },
+          {
+            "name": "Manectric",
+            "action": [
+              {
+                "name": "244/0-/4/36/4/220+ (Mega)",
+                "action": "givemon(SPECIES_MANECTRIC,65,ITEM_MANECTITE,ITEM_POKE_BALL,NATURE_TIMID,1,1,244,0,4,220,36,4,31,31,31,31,31,31,MOVE_PROTECT,MOVE_VOLT_SWITCH,MOVE_OVERHEAT,MOVE_SNARL,2,FALSE,TYPE_GRASS,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
+          },
+          {
+            "name": "Mawile",
+            "action": [
+              {
+                "name": "156/196+/0/0/156/0- (Mega)",
+                "action": "givemon(SPECIES_MAWILE,65,ITEM_MAWILITE,ITEM_POKE_BALL,NATURE_BRAVE,1,1,156,196,0,0,0,156,31,31,31,0,31,31,MOVE_PROTECT,MOVE_IRON_HEAD,MOVE_PLAY_ROUGH,MOVE_SUCKER_PUNCH,2,FALSE,TYPE_FIRE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              },
+              {
+                "name": "156/196+/4/0-/148/4 (Mega)",
+                "action": "givemon(SPECIES_MAWILE,65,ITEM_MAWILITE,ITEM_POKE_BALL,NATURE_ADAMANT,1,0,156,196,4,4,0,148,31,31,31,31,31,31,MOVE_PROTECT,MOVE_IRON_HEAD,MOVE_PLAY_ROUGH,MOVE_SUCKER_PUNCH,2,FALSE,TYPE_FIRE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
+          },
+          {
+            "name": "Metagross",
+            "action": [
+              {
+                "name": "124/196+/12/0-/36/140 (Mega)",
+                "action": "givemon(SPECIES_METAGROSS,65,ITEM_METAGROSSITE,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,124,196,12,140,0,36,31,31,31,31,31,31,MOVE_PROTECT,MOVE_IRON_HEAD,MOVE_ICE_PUNCH,MOVE_STOMPING_TANTRUM,2,FALSE,TYPE_FIRE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
+          },
+          {
+            "name": "Salamence",
+            "action": [
+              {
+                "name": "0/44/0/252/0-/212+ (Mega)",
+                "action": "givemon(SPECIES_SALAMENCE,65,ITEM_SALAMENCITE,ITEM_POKE_BALL,NATURE_NAIVE,0,0,0,44,0,212,252,0,31,31,31,31,31,31,MOVE_PROTECT,MOVE_TAILWIND,MOVE_HYPER_VOICE,MOVE_DOUBLE_EDGE,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              },
+              {
+                "name": "252/36+/4/0-/124/92 (Mega)",
+                "action": "givemon(SPECIES_SALAMENCE,65,ITEM_SALAMENCITE,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,252,36,4,92,0,124,31,31,31,31,31,31,MOVE_PROTECT,MOVE_ROOST,MOVE_DOUBLE_EDGE,MOVE_DRAGON_DANCE,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              },
+              {
+                "name": "4/0-/4/244+/4/252",
+                "action": "givemon(SPECIES_SALAMENCE,65,ITEM_SALAMENCITE,ITEM_POKE_BALL,NATURE_MODEST,0,1,4,0,4,252,244,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_TAILWIND,MOVE_HYPER_VOICE,MOVE_DRACO_METEOR,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
+          },
+          {
+            "name": "Tyranitar",
+            "action": [
+              {
+                "name": "44/164/20/0-/28/252+",
+                "action": "givemon(SPECIES_TYRANITAR,65,ITEM_TYRANITARITE,ITEM_POKE_BALL,NATURE_JOLLY,0,1,44,164,20,252,0,28,31,31,31,31,31,31,MOVE_ROCK_SLIDE,MOVE_CRUNCH,MOVE_DRAGON_DANCE,MOVE_PROTECT,2,FALSE,FALSE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Milotic",
+        "action": [
+          {
+            "name": "180/0-/204/4/116+/4 (Coil)",
+            "action": "givemon(SPECIES_MILOTIC,65,ITEM_LEFTOVERS,ITEM_POKE_BALL,NATURE_CALM,1,0,180,0,204,4,4,116,31,31,31,31,31,31,MOVE_PROTECT,MOVE_COIL,MOVE_HYPNOSIS,MOVE_MUDDY_WATER,2,FALSE,TYPE_GRASS,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "244/0-/220/4/36+/4 (Sitrus)",
+            "action": "givemon(SPECIES_MILOTIC,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_CALM,1,1,244,0,220,4,4,36,31,31,31,31,31,31,MOVE_PROTECT,MOVE_RECOVER,MOVE_ICY_WIND,MOVE_MUDDY_WATER,2,FALSE,TYPE_GRASS,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
           }
         ]
       },
@@ -501,131 +615,144 @@
         ]
       },
       {
+        "name": "Regieleki",
+        "action": [
+          {
+            "name": "4/0-/4/244/4/252+ (Magnet)",
+            "action": "givemon(SPECIES_REGIELEKI,65,ITEM_MAGNET,ITEM_POKE_BALL,NATURE_TIMID,0,0,4,0,4,252,244,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_VOLT_SWITCH,MOVE_ELECTROWEB,MOVE_THUNDERBOLT,2,FALSE,TYPE_ELECTRIC,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          }
+        ]
+      },
+      {
         "name": "Restricted",
         "action": [
           {
-            "name": "sets",
+            "name": "Calyrex",
             "action": [
               {
-                "name": "Calyrex",
-                "action": [
-                  {
-                    "name": "0/0-/4/252/0/252+ (Shadow)",
-                    "action": "givemon(SPECIES_CALYREX,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_TIMID,0,0,0,0,4,252,252,0,31,0,31,31,31,31,MOVE_PROTECT,MOVE_NASTY_PLOT,MOVE_PSYCHIC,MOVE_NONE,2,FALSE,TYPE_GHOST,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  },
-                  {
-                    "name": "20/0-/4/220/4/252+ (Shadow)",
-                    "action": "givemon(SPECIES_CALYREX,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_TIMID,0,0,20,0,4,252,220,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_NASTY_PLOT,MOVE_PSYCHIC,MOVE_NONE,2,FALSE,TYPE_GHOST,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  },
-                  {
-                    "name": "252/116+/0/0/140/0- (Ice)",
-                    "action": "givemon(SPECIES_CALYREX,65,ITEM_CLEAR_AMULET,ITEM_POKE_BALL,NATURE_BRAVE,0,0,252,116,0,0,0,140,31,31,31,0,31,31,MOVE_PROTECT,MOVE_TRICK_ROOM,MOVE_CLOSE_COMBAT,MOVE_NONE,2,FALSE,TYPE_FIRE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  },
-                  {
-                    "name": "252/116+/4/0-/124/12 (Ice)",
-                    "action": "givemon(SPECIES_CALYREX,65,ITEM_CLEAR_AMULET,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,252,116,4,12,0,124,31,31,31,31,31,31,MOVE_PROTECT,MOVE_TRICK_ROOM,MOVE_CLOSE_COMBAT,MOVE_NONE,2,FALSE,TYPE_FIRE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  }
-                ]
+                "name": "0/0-/4/252/0/252+ (Shadow)",
+                "action": "givemon(SPECIES_CALYREX,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_TIMID,0,0,0,0,4,252,252,0,31,0,31,31,31,31,MOVE_PROTECT,MOVE_NASTY_PLOT,MOVE_PSYCHIC,MOVE_NONE,2,FALSE,TYPE_GHOST,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
               },
               {
-                "name": "Groudon",
-                "action": [
-                  {
-                    "name": "252/156+/4/0-/84/12 (Amulet)",
-                    "action": "givemon(SPECIES_GROUDON,65,ITEM_CLEAR_AMULET,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,252,156,4,12,0,84,31,31,31,31,31,31,MOVE_PROTECT,MOVE_BULK_UP,MOVE_PRECIPICE_BLADES,MOVE_HEAT_CRASH,2,FALSE,TYPE_FIRE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  },
-                  {
-                    "name": "252/156+/4/0-/84/12 (Primal)",
-                    "action": "givemon(SPECIES_GROUDON,65,ITEM_RED_ORB,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,252,156,4,12,0,84,31,31,31,31,31,31,MOVE_PROTECT,MOVE_SWORDS_DANCE,MOVE_PRECIPICE_BLADES,MOVE_FIRE_PUNCH,2,FALSE,FALSE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  },
-                  {
-                    "name": "4/0-/4/244/4/252+ (Primal)",
-                    "action": "givemon(SPECIES_GROUDON,65,ITEM_RED_ORB,ITEM_POKE_BALL,NATURE_TIMID,0,0,4,0,4,252,244,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_EARTH_POWER,MOVE_ERUPTION,MOVE_ROAR,2,FALSE,FALSE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  }
-                ]
+                "name": "20/0-/4/220/4/252+ (Shadow)",
+                "action": "givemon(SPECIES_CALYREX,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_TIMID,0,0,20,0,4,252,220,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_NASTY_PLOT,MOVE_PSYCHIC,MOVE_NONE,2,FALSE,TYPE_DARK,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
               },
               {
-                "name": "Koraidon",
-                "action": [
-                  {
-                    "name": "108/116+/4/0-/68/212 (Orb)",
-                    "action": "givemon(SPECIES_KORAIDON,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,108,116,4,212,0,68,31,31,31,31,31,31,MOVE_PROTECT,MOVE_FLAME_CHARGE,MOVE_CLOSE_COMBAT,MOVE_FLARE_BLITZ,2,FALSE,TYPE_FIRE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  },
-                  {
-                    "name": "28/220/4/0-/4/252+ (Orb)",
-                    "action": "givemon(SPECIES_KORAIDON,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_JOLLY,0,0,28,220,4,252,0,4,31,31,31,31,31,31,MOVE_PROTECT,MOVE_FLAME_CHARGE,MOVE_CLOSE_COMBAT,MOVE_FLARE_BLITZ,2,FALSE,TYPE_FIRE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  }
-                ]
+                "name": "252/116+/0/0/140/0- (Ice)",
+                "action": "givemon(SPECIES_CALYREX,65,ITEM_CLEAR_AMULET,ITEM_POKE_BALL,NATURE_BRAVE,0,0,252,116,0,0,0,140,31,31,31,0,31,31,MOVE_PROTECT,MOVE_TRICK_ROOM,MOVE_CLOSE_COMBAT,MOVE_NONE,2,FALSE,TYPE_FIRE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
               },
               {
-                "name": "Kyogre",
-                "action": [
-                  {
-                    "name": "252/0-/132/76+/4/44 (Mystic)",
-                    "action": "givemon(SPECIES_KYOGRE,65,ITEM_MYSTIC_WATER,ITEM_POKE_BALL,NATURE_MODEST,0,0,252,0,132,44,76,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_WATER_SPOUT,MOVE_ORIGIN_PULSE,MOVE_ICE_BEAM,2,FALSE,TYPE_GRASS,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  },
-                  {
-                    "name": "252/0-/164/76+/4/12 (Primal)",
-                    "action": "givemon(SPECIES_KYOGRE,65,ITEM_BLUE_ORB,ITEM_POKE_BALL,NATURE_MODEST,0,0,252,0,164,12,76,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_WATER_SPOUT,MOVE_ORIGIN_PULSE,MOVE_ICE_BEAM,2,FALSE,TYPE_GRASS,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  },
-                  {
-                    "name": "4/0-/4/244+/4/252 (Scarf)",
-                    "action": "givemon(SPECIES_KYOGRE,65,ITEM_CHOICE_SCARF,ITEM_POKE_BALL,NATURE_MODEST,0,0,4,0,4,252,244,4,31,0,31,31,31,31,MOVE_WATER_SPOUT,MOVE_ORIGIN_PULSE,MOVE_SCALD,MOVE_THUNDER,2,FALSE,FALSE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  }
-                ]
+                "name": "252/116+/4/0-/124/12 (Ice)",
+                "action": "givemon(SPECIES_CALYREX,65,ITEM_CLEAR_AMULET,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,252,116,4,12,0,124,31,31,31,31,31,31,MOVE_PROTECT,MOVE_TRICK_ROOM,MOVE_CLOSE_COMBAT,MOVE_NONE,2,FALSE,TYPE_FIRE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
+          },
+          {
+            "name": "Groudon",
+            "action": [
+              {
+                "name": "252/156+/4/0-/84/12 (Amulet)",
+                "action": "givemon(SPECIES_GROUDON,65,ITEM_CLEAR_AMULET,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,252,156,4,12,0,84,31,31,31,31,31,31,MOVE_PROTECT,MOVE_BULK_UP,MOVE_PRECIPICE_BLADES,MOVE_HEAT_CRASH,2,FALSE,TYPE_FIRE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
               },
               {
-                "name": "Lunala",
-                "action": [
-                  {
-                    "name": "140/0-/132/180+/4/52 (Herb)",
-                    "action": "givemon(SPECIES_LUNALA,65,ITEM_POWER_HERB,ITEM_POKE_BALL,NATURE_MODEST,0,0,140,0,132,52,180,4,31,0,31,31,31,31,MOVE_WIDE_GUARD,MOVE_MOONGEIST_BEAM,MOVE_METEOR_BEAM,MOVE_TRICK_ROOM,2,FALSE,TYPE_DARK,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  }
-                ]
+                "name": "252/156+/4/0-/84/12 (Primal)",
+                "action": "givemon(SPECIES_GROUDON,65,ITEM_RED_ORB,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,252,156,4,12,0,84,31,31,31,31,31,31,MOVE_PROTECT,MOVE_SWORDS_DANCE,MOVE_PRECIPICE_BLADES,MOVE_FIRE_PUNCH,2,FALSE,FALSE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
               },
               {
-                "name": "Miraidon",
-                "action": [
-                  {
-                    "name": "92/0-/4/196+/4/212 (Specs)",
-                    "action": "givemon(SPECIES_MIRAIDON,65,ITEM_CHOICE_SPECS,ITEM_POKE_BALL,NATURE_MODEST,0,0,92,0,4,212,196,4,31,31,31,31,31,31,MOVE_VOLT_SWITCH,MOVE_ELECTRO_DRIFT,MOVE_DRACO_METEOR,MOVE_DAZZLING_GLEAM,2,FALSE,TYPE_FAIRY,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  }
-                ]
+                "name": "4/0-/4/244/4/252+ (Primal)",
+                "action": "givemon(SPECIES_GROUDON,65,ITEM_RED_ORB,ITEM_POKE_BALL,NATURE_TIMID,0,0,4,0,4,252,244,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_EARTH_POWER,MOVE_ERUPTION,MOVE_ROAR,2,FALSE,FALSE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
+          },
+          {
+            "name": "Koraidon",
+            "action": [
+              {
+                "name": "108/116+/4/0-/68/212 (Orb)",
+                "action": "givemon(SPECIES_KORAIDON,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,108,116,4,212,0,68,31,31,31,31,31,31,MOVE_PROTECT,MOVE_FLAME_CHARGE,MOVE_CLOSE_COMBAT,MOVE_FLARE_BLITZ,2,FALSE,TYPE_FIRE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
               },
               {
-                "name": "Xerneas",
-                "action": [
-                  {
-                    "name": "4/0-/4/244/4/252+",
-                    "action": "givemon(SPECIES_XERNEAS,65,ITEM_POWER_HERB,ITEM_POKE_BALL,NATURE_TIMID,0,0,4,0,4,252,244,4,31,0,31,31,31,31,MOVE_MOONBLAST,MOVE_DAZZLING_GLEAM,MOVE_GEOMANCY,MOVE_PROTECT,2,FALSE,FALSE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  },
-                  {
-                    "name": "44/0-/20/188/4/252+",
-                    "action": "givemon(SPECIES_XERNEAS,65,ITEM_POWER_HERB,ITEM_POKE_BALL,NATURE_TIMID,0,0,44,0,20,252,188,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_GEOMANCY,MOVE_DAZZLING_GLEAM,MOVE_MOONBLAST,2,FALSE,FALSE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  }
-                ]
+                "name": "28/220/4/0-/4/252+ (Orb)",
+                "action": "givemon(SPECIES_KORAIDON,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_JOLLY,0,0,28,220,4,252,0,4,31,31,31,31,31,31,MOVE_PROTECT,MOVE_FLAME_CHARGE,MOVE_CLOSE_COMBAT,MOVE_FLARE_BLITZ,2,FALSE,TYPE_FIRE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
+          },
+          {
+            "name": "Kyogre",
+            "action": [
+              {
+                "name": "252/0-/132/76+/4/44 (Mystic)",
+                "action": "givemon(SPECIES_KYOGRE,65,ITEM_MYSTIC_WATER,ITEM_POKE_BALL,NATURE_MODEST,0,0,252,0,132,44,76,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_WATER_SPOUT,MOVE_ORIGIN_PULSE,MOVE_ICE_BEAM,2,FALSE,TYPE_GRASS,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
               },
               {
-                "name": "Zacian",
-                "action": [
-                  {
-                    "name": "252/76+/4/0-/12/164 (Ground)",
-                    "action": "givemon(SPECIES_ZACIAN,65,ITEM_RUSTED_SWORD,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,252,76,4,164,0,12,31,31,31,31,31,31,MOVE_PROTECT,MOVE_BEHEMOTH_BLADE,MOVE_PLAY_ROUGH,MOVE_TERA_BLAST,2,FALSE,TYPE_GROUND,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  },
-                  {
-                    "name": "252/76+/4/0-/12/164 (Stellar)",
-                    "action": "givemon(SPECIES_ZACIAN,65,ITEM_RUSTED_SWORD,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,252,76,4,164,0,12,31,31,31,31,31,31,MOVE_PROTECT,MOVE_IRON_HEAD,MOVE_SACRED_SWORD,MOVE_PLAY_ROUGH,2,FALSE,TYPE_STELLAR,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  }
-                ]
+                "name": "252/0-/164/76+/4/12 (Primal)",
+                "action": "givemon(SPECIES_KYOGRE,65,ITEM_BLUE_ORB,ITEM_POKE_BALL,NATURE_MODEST,0,0,252,0,164,12,76,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_WATER_SPOUT,MOVE_ORIGIN_PULSE,MOVE_ICE_BEAM,2,FALSE,TYPE_GRASS,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
               },
               {
-                "name": "Zamazenta",
-                "action": [
-                  {
-                    "name": "76/0/244+/0-/0/188",
-                    "action": "givemon(SPECIES_ZAMAZENTA,65,ITEM_RUSTED_SHIELD,ITEM_POKE_BALL,NATURE_IMPISH,0,0,76,0,244,188,0,0,31,31,31,31,31,31,MOVE_PROTECT,MOVE_WIDE_GUARD,MOVE_HEAVY_SLAM,MOVE_BODY_PRESS,2,FALSE,TYPE_DRAGON,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
-                  }
-                ]
+                "name": "4/0-/4/244+/4/252 (Scarf)",
+                "action": "givemon(SPECIES_KYOGRE,65,ITEM_CHOICE_SCARF,ITEM_POKE_BALL,NATURE_MODEST,0,0,4,0,4,252,244,4,31,0,31,31,31,31,MOVE_WATER_SPOUT,MOVE_ORIGIN_PULSE,MOVE_SCALD,MOVE_THUNDER,2,FALSE,FALSE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
+          },
+          {
+            "name": "Lunala",
+            "action": [
+              {
+                "name": "140/0-/132/180+/4/52 (Herb)",
+                "action": "givemon(SPECIES_LUNALA,65,ITEM_POWER_HERB,ITEM_POKE_BALL,NATURE_MODEST,0,0,140,0,132,52,180,4,31,0,31,31,31,31,MOVE_WIDE_GUARD,MOVE_MOONGEIST_BEAM,MOVE_METEOR_BEAM,MOVE_TRICK_ROOM,2,FALSE,TYPE_DARK,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
+          },
+          {
+            "name": "Miraidon",
+            "action": [
+              {
+                "name": "92/0-/4/196+/4/212 (Specs)",
+                "action": "givemon(SPECIES_MIRAIDON,65,ITEM_CHOICE_SPECS,ITEM_POKE_BALL,NATURE_MODEST,0,0,92,0,4,212,196,4,31,31,31,31,31,31,MOVE_VOLT_SWITCH,MOVE_ELECTRO_DRIFT,MOVE_DRACO_METEOR,MOVE_DAZZLING_GLEAM,2,FALSE,TYPE_FAIRY,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
+          },
+          {
+            "name": "Rayquaza",
+            "action": [
+              {
+                "name": "4/252/0/0-/0/252+ (Mega)",
+                "action": "givemon(SPECIES_RAYQUAZA,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_JOLLY,0,0,4,252,0,252,0,0,31,31,31,31,31,31,MOVE_PROTECT,MOVE_SWORDS_DANCE,MOVE_DRAGON_ASCENT,MOVE_EXTREME_SPEED,2,FALSE,FALSE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
+          },
+          {
+            "name": "Xerneas",
+            "action": [
+              {
+                "name": "4/0-/4/244/4/252+",
+                "action": "givemon(SPECIES_XERNEAS,65,ITEM_POWER_HERB,ITEM_POKE_BALL,NATURE_TIMID,0,0,4,0,4,252,244,4,31,0,31,31,31,31,MOVE_MOONBLAST,MOVE_DAZZLING_GLEAM,MOVE_GEOMANCY,MOVE_PROTECT,2,FALSE,FALSE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              },
+              {
+                "name": "44/0-/20/188/4/252+",
+                "action": "givemon(SPECIES_XERNEAS,65,ITEM_POWER_HERB,ITEM_POKE_BALL,NATURE_TIMID,0,0,44,0,20,252,188,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_GEOMANCY,MOVE_DAZZLING_GLEAM,MOVE_MOONBLAST,2,FALSE,FALSE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
+          },
+          {
+            "name": "Zacian",
+            "action": [
+              {
+                "name": "252/76+/4/0-/12/164 (Ground)",
+                "action": "givemon(SPECIES_ZACIAN,65,ITEM_RUSTED_SWORD,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,252,76,4,164,0,12,31,31,31,31,31,31,MOVE_PROTECT,MOVE_BEHEMOTH_BLADE,MOVE_PLAY_ROUGH,MOVE_TERA_BLAST,2,FALSE,TYPE_GROUND,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              },
+              {
+                "name": "252/76+/4/0-/12/164 (Stellar)",
+                "action": "givemon(SPECIES_ZACIAN,65,ITEM_RUSTED_SWORD,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,252,76,4,164,0,12,31,31,31,31,31,31,MOVE_PROTECT,MOVE_IRON_HEAD,MOVE_SACRED_SWORD,MOVE_PLAY_ROUGH,2,FALSE,TYPE_STELLAR,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
+          },
+          {
+            "name": "Zamazenta",
+            "action": [
+              {
+                "name": "76/0/244+/0-/0/188",
+                "action": "givemon(SPECIES_ZAMAZENTA,65,ITEM_RUSTED_SHIELD,ITEM_POKE_BALL,NATURE_IMPISH,0,0,76,0,244,188,0,0,31,31,31,31,31,31,MOVE_PROTECT,MOVE_WIDE_GUARD,MOVE_HEAVY_SLAM,MOVE_BODY_PRESS,2,FALSE,TYPE_DRAGON,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
               }
             ]
           }
@@ -654,6 +781,74 @@
         ]
       },
       {
+        "name": "Rotom-Wash",
+        "action": [
+          {
+            "name": "252/0-/4/116+/4/132",
+            "action": "givemon(SPECIES_ROTOM_WASH,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_MODEST,0,0,252,0,4,132,116,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_NASTY_PLOT,MOVE_HYDRO_PUMP,MOVE_THUNDERBOLT,2,FALSE,TYPE_STEEL,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "252/0-/44/60/148+/4",
+            "action": "givemon(SPECIES_ROTOM_WASH,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_CALM,0,0,252,0,44,4,60,148,31,0,31,31,31,31,MOVE_PROTECT,MOVE_WILL_O_WISP,MOVE_THUNDERBOLT,MOVE_HYDRO_PUMP,2,FALSE,TYPE_STEEL,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          }
+        ]
+      },
+      {
+        "name": "Sinistcha",
+        "action": [
+          {
+            "name": "236/0-/188+/4/76/4 (Sitrus)",
+            "action": "givemon(SPECIES_SINISTCHA,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_BOLD,0,0,236,0,188,4,4,76,31,0,31,31,31,31,MOVE_MATCHA_GOTCHA,MOVE_RAGE_POWDER,MOVE_LIFE_DEW,MOVE_TRICK_ROOM,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "236/0/188+/0/84/0- (Sitrus)",
+            "action": "givemon(SPECIES_SINISTCHA,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_RELAXED,0,0,236,0,188,0,0,84,31,0,31,0,31,31,MOVE_MATCHA_GOTCHA,MOVE_RAGE_POWDER,MOVE_LIFE_DEW,MOVE_TRICK_ROOM,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "244/0-/188+/4/68/4 (Leftys)",
+            "action": "givemon(SPECIES_SINISTCHA,65,ITEM_LEFTOVERS,ITEM_POKE_BALL,NATURE_BOLD,0,0,244,0,188,4,4,68,31,0,31,31,31,31,MOVE_MATCHA_GOTCHA,MOVE_RAGE_POWDER,MOVE_LIFE_DEW,MOVE_TRICK_ROOM,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "244/0/188+/0/76/0- (Leftys)",
+            "action": "givemon(SPECIES_SINISTCHA,65,ITEM_LEFTOVERS,ITEM_POKE_BALL,NATURE_RELAXED,0,0,244,0,188,0,0,76,31,0,31,0,31,31,MOVE_MATCHA_GOTCHA,MOVE_RAGE_POWDER,MOVE_LIFE_DEW,MOVE_TRICK_ROOM,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          }
+        ]
+      },
+      {
+        "name": "Sneasler",
+        "action": [
+          {
+            "name": "0/252/4/0-/0/252+ (Coaching)",
+            "action": "givemon(SPECIES_SNEASLER,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_JOLLY,1,1,0,252,4,252,0,0,31,31,31,31,31,31,MOVE_CLOSE_COMBAT,MOVE_DIRE_CLAW,MOVE_COACHING,MOVE_FAKE_OUT,2,FALSE,TYPE_GHOST,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "0/252/4/0-/0/252+ (Sash)",
+            "action": "givemon(SPECIES_SNEASLER,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_JOLLY,1,0,0,252,4,252,0,0,31,31,31,31,31,31,MOVE_CLOSE_COMBAT,MOVE_THROAT_CHOP,MOVE_DIRE_CLAW,MOVE_FAKE_OUT,2,FALSE,TYPE_DARK,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "4/244/4/0-/4/252+ (Herb)",
+            "action": "givemon(SPECIES_SNEASLER,65,ITEM_WHITE_HERB,ITEM_POKE_BALL,NATURE_JOLLY,1,0,4,244,4,252,0,4,31,31,31,31,31,31,MOVE_PROTECT,MOVE_CLOSE_COMBAT,MOVE_DIRE_CLAW,MOVE_FAKE_OUT,2,FALSE,TYPE_STELLAR,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          }
+        ]
+      },
+      {
+        "name": "Sylveon",
+        "action": [
+          {
+            "name": "180/0-/244/76+/4/4 (Leftys)",
+            "action": "givemon(SPECIES_SYLVEON,65,ITEM_LEFTOVERS,ITEM_POKE_BALL,NATURE_MODEST,2,0,180,0,244,4,76,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_CALM_MIND,MOVE_HYPER_VOICE,MOVE_MOONBLAST,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "252/0-/172/76+/4/4 (Plate)",
+            "action": "givemon(SPECIES_SYLVEON,65,ITEM_PIXIE_PLATE,ITEM_POKE_BALL,NATURE_MODEST,2,1,252,0,172,4,76,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_HYPER_VOICE,MOVE_HYPER_BEAM,MOVE_QUICK_ATTACK,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "252/0-/92/156+/4/4 (Specs)",
+            "action": "givemon(SPECIES_SYLVEON,65,ITEM_CHOICE_SPECS,ITEM_POKE_BALL,NATURE_MODEST,2,1,252,0,92,4,156,4,31,0,31,31,31,31,MOVE_HYPER_VOICE,MOVE_HYPER_BEAM,MOVE_MOONBLAST,MOVE_PSYSHOCK,2,FALSE,TYPE_FAIRY,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          }
+        ]
+      },
+      {
         "name": "Talonflame",
         "action": [
           {
@@ -661,8 +856,67 @@
             "action": "givemon(SPECIES_TALONFLAME,65,ITEM_CHOICE_BAND,ITEM_POKE_BALL,NATURE_ADAMANT,2,1,4,252,0,252,0,0,31,31,31,31,31,31,MOVE_BRAVE_BIRD,MOVE_FLARE_BLITZ,MOVE_SLEEP_TALK,MOVE_U_TURN,2,FALSE,TYPE_FLYING,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
           },
           {
+            "name": "4/252+/0/0-/0/252 (Life Orb)",
+            "action": "givemon(SPECIES_TALONFLAME,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_ADAMANT,2,0,4,252,0,252,0,0,31,31,31,31,31,31,MOVE_QUICK_GUARD,MOVE_TAILWIND,MOVE_BRAVE_BIRD,MOVE_FLARE_BLITZ,2,FALSE,TYPE_FLYING,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
             "name": "4/252/0/0-/0/252+ (Banded)",
             "action": "givemon(SPECIES_TALONFLAME,65,ITEM_CHOICE_BAND,ITEM_POKE_BALL,NATURE_JOLLY,2,0,4,252,0,252,0,0,31,31,31,31,31,31,MOVE_BRAVE_BIRD,MOVE_FLARE_BLITZ,MOVE_U_TURN,MOVE_TAUNT,2,FALSE,TYPE_FLYING,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          }
+        ]
+      },
+      {
+        "name": "Tapu Fini",
+        "action": [
+          {
+            "name": "252/0-/100/4/4+/148 (Support)",
+            "action": "givemon(SPECIES_TAPU_FINI,65,ITEM_MISTY_SEED,ITEM_POKE_BALL,NATURE_CALM,0,0,252,0,100,148,4,4,31,0,31,31,31,31,MOVE_TAUNT,MOVE_ICY_WIND,MOVE_NATURES_MADNESS,MOVE_HEAL_PULSE,2,FALSE,TYPE_STEEL,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "252/0-/12/4/4/236+ (Support)",
+            "action": "givemon(SPECIES_TAPU_FINI,65,ITEM_MISTY_SEED,ITEM_POKE_BALL,NATURE_TIMID,0,0,252,0,12,236,4,4,31,0,31,31,31,31,MOVE_TAUNT,MOVE_ICY_WIND,MOVE_NATURES_MADNESS,MOVE_HEAL_PULSE,2,FALSE,TYPE_STEEL,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "252/0-/172/4/76+/4 (Calm Mind)",
+            "action": "givemon(SPECIES_TAPU_FINI,65,ITEM_LEFTOVERS,ITEM_POKE_BALL,NATURE_CALM,0,0,252,0,172,4,4,76,31,0,31,31,31,31,MOVE_PROTECT,MOVE_CALM_MIND,MOVE_MUDDY_WATER,MOVE_MOONBLAST,2,FALSE,TYPE_STEEL,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "252/0-/4/196+/4/52 (Specs)",
+            "action": "givemon(SPECIES_TAPU_FINI,65,ITEM_CHOICE_SPECS,ITEM_POKE_BALL,NATURE_MODEST,0,0,252,0,4,52,196,4,31,0,31,31,31,31,MOVE_TRICK,MOVE_MOONBLAST,MOVE_MUDDY_WATER,MOVE_DAZZLING_GLEAM,2,FALSE,TYPE_STEEL,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "4/0-/4/196+/52/252 (Scarf)",
+            "action": "givemon(SPECIES_TAPU_FINI,65,ITEM_CHOICE_SCARF,ITEM_POKE_BALL,NATURE_MODEST,0,0,4,0,4,252,196,52,31,0,31,31,31,31,MOVE_MOONBLAST,MOVE_SCALD,MOVE_SOAK,MOVE_ICE_BEAM,2,FALSE,TYPE_STEEL,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          }
+        ]
+      },
+      {
+        "name": "Tapu Koko",
+        "action": [
+          {
+            "name": "172/0-/12/36/196/92+ (Vest)",
+            "action": "givemon(SPECIES_TAPU_KOKO,65,ITEM_ASSAULT_VEST,ITEM_POKE_BALL,NATURE_TIMID,0,0,172,0,12,92,36,196,31,31,31,31,31,31,MOVE_THUNDERBOLT,MOVE_DAZZLING_GLEAM,MOVE_SKY_DROP,MOVE_VOLT_SWITCH,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "4/0-/0/252/0/252+ (Sash)",
+            "action": "givemon(SPECIES_TAPU_KOKO,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_TIMID,0,0,4,0,0,252,252,0,31,0,31,31,31,31,MOVE_PROTECT,MOVE_DAZZLING_GLEAM,MOVE_VOLT_SWITCH,MOVE_THUNDERBOLT,2,FALSE,TYPE_ELECTRIC,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          }
+        ]
+      },
+      {
+        "name": "Thundurus",
+        "action": [
+          {
+            "name": "228/0-/28/12/172+/68",
+            "action": "givemon(SPECIES_THUNDURUS,65,ITEM_SAFETY_GOGGLES,ITEM_POKE_BALL,NATURE_CALM,0,0,228,0,28,68,12,172,31,0,31,31,31,31,MOVE_PROTECT,MOVE_THUNDER_WAVE,MOVE_THUNDERBOLT,MOVE_TAUNT,2,FALSE,TYPE_DARK,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "4/0-/0/252/0/252+ (Orb)",
+            "action": "givemon(SPECIES_THUNDURUS,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_TIMID,0,0,4,0,0,252,252,0,31,0,30,31,31,31,MOVE_THUNDERBOLT,MOVE_HIDDEN_POWER,MOVE_THUNDER_WAVE,MOVE_TAUNT,2,FALSE,TYPE_DARK,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "4/0-/0/252/0/252+ (Sash)",
+            "action": "givemon(SPECIES_THUNDURUS,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_TIMID,0,0,4,0,0,252,252,0,31,0,31,31,31,31,MOVE_PROTECT,MOVE_THUNDER_WAVE,MOVE_THUNDERBOLT,MOVE_TAUNT,2,FALSE,TYPE_DARK,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
           }
         ]
       },
@@ -681,6 +935,19 @@
           {
             "name": "180/172/100/0-/44+/12",
             "action": "givemon(SPECIES_TINKATON,65,ITEM_ASSAULT_VEST,ITEM_POKE_BALL,NATURE_CAREFUL,0,1,180,172,100,12,0,44,31,31,31,31,31,31,MOVE_GIGATON_HAMMER,MOVE_PLAY_ROUGH,MOVE_FEINT,MOVE_FAKE_OUT,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          }
+        ]
+      },
+      {
+        "name": "Togekiss",
+        "action": [
+          {
+            "name": "228/0-/196+/4/76/4 (Lens)",
+            "action": "givemon(SPECIES_TOGEKISS,65,ITEM_SCOPE_LENS,ITEM_POKE_BALL,NATURE_BOLD,2,1,228,0,196,4,4,76,31,0,31,31,31,31,MOVE_PROTECT,MOVE_YAWN,MOVE_FOLLOW_ME,MOVE_DAZZLING_GLEAM,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "236/0-/196+/4/12/60 (Babiri)",
+            "action": "givemon(SPECIES_TOGEKISS,65,ITEM_BABIRI_BERRY,ITEM_POKE_BALL,NATURE_BOLD,2,0,236,0,196,60,4,12,31,0,31,31,31,31,MOVE_FOLLOW_ME,MOVE_YAWN,MOVE_AIR_SLASH,MOVE_DAZZLING_GLEAM,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
           }
         ]
       },
@@ -711,6 +978,31 @@
           {
             "name": "4/0-/0/252/0/252+ (Sash)",
             "action": "givemon(SPECIES_TORNADUS,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_TIMID,0,0,4,0,0,252,252,0,31,0,31,31,31,31,MOVE_PROTECT,MOVE_TAILWIND,MOVE_RAIN_DANCE,MOVE_BLEAKWIND_STORM,2,FALSE,TYPE_DARK,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          }
+        ]
+      },
+      {
+        "name": "Tyranitar",
+        "action": [
+          {
+            "name": "188/204+/0/0/116/0- (Life Orb)",
+            "action": "givemon(SPECIES_TYRANITAR,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_BRAVE,0,1,188,204,0,0,0,116,31,31,31,0,31,31,MOVE_PROTECT,MOVE_ROCK_SLIDE,MOVE_LOW_KICK,MOVE_CRUNCH,2,FALSE,TYPE_GHOST,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "188/204+/4/0-/108/4 (Life Orb)",
+            "action": "givemon(SPECIES_TYRANITAR,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_ADAMANT,0,1,188,204,4,4,0,108,31,31,31,31,31,31,MOVE_PROTECT,MOVE_ROCK_SLIDE,MOVE_LOW_KICK,MOVE_CRUNCH,2,FALSE,TYPE_GHOST,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "252/204+/0/0/52/0- (Lum Berry)",
+            "action": "givemon(SPECIES_TYRANITAR,65,ITEM_LUM_BERRY,ITEM_POKE_BALL,NATURE_BRAVE,0,0,252,204,0,0,0,52,31,31,31,0,31,31,MOVE_PROTECT,MOVE_ROCK_SLIDE,MOVE_LOW_KICK,MOVE_CRUNCH,2,FALSE,TYPE_GHOST,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "252/204+/4/0-/44/4 (Lum Berry)",
+            "action": "givemon(SPECIES_TYRANITAR,65,ITEM_LUM_BERRY,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,252,204,4,4,0,44,31,31,31,31,31,31,MOVE_PROTECT,MOVE_ROCK_SLIDE,MOVE_LOW_KICK,MOVE_CRUNCH,2,FALSE,TYPE_GHOST,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "4/244/4/0-/4/252+ (Scarf)",
+            "action": "givemon(SPECIES_TYRANITAR,65,ITEM_CHOICE_SCARF,ITEM_POKE_BALL,NATURE_JOLLY,0,0,4,244,4,252,0,4,31,31,31,31,31,31,MOVE_ROCK_SLIDE,MOVE_LOW_KICK,MOVE_ASSURANCE,MOVE_ICE_PUNCH,2,FALSE,TYPE_GHOST,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
           }
         ]
       },
@@ -771,6 +1063,86 @@
           {
             "name": "0/252+/0/0-/4/252 (Sash)",
             "action": "givemon(SPECIES_URSHIFU,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,0,252,0,252,0,4,31,31,31,31,31,31,MOVE_PROTECT,MOVE_WICKED_BLOW,MOVE_CLOSE_COMBAT,MOVE_SUCKER_PUNCH,2,FALSE,TYPE_GHOST,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          }
+        ]
+      },
+      {
+        "name": "Venusaur",
+        "action": [
+          {
+            "name": "4/0-/0/252+/0/252 (Sash)",
+            "action": "givemon(SPECIES_VENUSAUR,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_MODEST,2,1,4,0,0,252,252,0,31,31,31,31,31,31,MOVE_LEAF_STORM,MOVE_EARTH_POWER,MOVE_SLUDGE_BOMB,MOVE_SLEEP_POWDER,2,FALSE,TYPE_GHOST,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          }
+        ]
+      },
+      {
+        "name": "Whimsicott",
+        "action": [
+          {
+            "name": "252/0-/4/0/0/252+ (Cloak)",
+            "action": "givemon(SPECIES_WHIMSICOTT,65,ITEM_COVERT_CLOAK,ITEM_POKE_BALL,NATURE_TIMID,0,1,252,0,4,252,0,0,31,31,31,31,31,31,MOVE_FAKE_TEARS,MOVE_TAILWIND,MOVE_ENCORE,MOVE_MOONBLAST,2,FALSE,TYPE_DARK,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          },
+          {
+            "name": "4/0-/0/252/0/252+ (Sash)",
+            "action": "givemon(SPECIES_WHIMSICOTT,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_TIMID,0,0,4,0,0,252,252,0,31,31,31,31,31,31,MOVE_PROTECT,MOVE_TAILWIND,MOVE_ENCORE,MOVE_MOONBLAST,2,FALSE,TYPE_GHOST,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+          }
+        ]
+      },
+      {
+        "name": "Z Moves",
+        "action": [
+          {
+            "name": "Aegislash",
+            "action": [
+              {
+                "name": "140/0-/0/252+/0/116 (Ghost Z)",
+                "action": "givemon(SPECIES_AEGISLASH,65,ITEM_GHOSTIUM_Z,ITEM_POKE_BALL,NATURE_MODEST,0,0,140,0,0,116,252,0,31,0,31,31,31,31,MOVE_KINGS_SHIELD,MOVE_SUBSTITUTE,MOVE_SHADOW_BALL,MOVE_FLASH_CANNON,2,FALSE,FALSE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
+          },
+          {
+            "name": "Garchomp",
+            "action": [
+              {
+                "name": "108/172+/4/0-/4/220 (Ground Z)",
+                "action": "givemon(SPECIES_GARCHOMP,65,ITEM_GROUNDIUM_Z,ITEM_POKE_BALL,NATURE_ADAMANT,2,1,108,172,4,220,0,4,31,31,31,31,31,31,MOVE_PROTECT,MOVE_SWORDS_DANCE,MOVE_EARTHQUAKE,MOVE_ROCK_SLIDE,2,FALSE,TYPE_FIRE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
+          },
+          {
+            "name": "Kartana",
+            "action": [
+              {
+                "name": "84/84/4/0-/84/252+ (Grass Z)",
+                "action": "givemon(SPECIES_KARTANA,65,ITEM_GRASSIUM_Z,ITEM_POKE_BALL,NATURE_JOLLY,0,0,84,84,4,252,0,84,31,31,31,31,31,31,MOVE_DETECT,MOVE_SUBSTITUTE,MOVE_SACRED_SWORD,MOVE_LEAF_BLADE,2,FALSE,TYPE_FIRE,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
+          },
+          {
+            "name": "Lando-T",
+            "action": [
+              {
+                "name": "156/116+/36/0-/108/92 (Ground Z)",
+                "action": "givemon(SPECIES_LANDORUS_THERIAN,65,ITEM_GROUNDIUM_Z,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,156,116,36,92,0,108,31,31,31,31,31,31,MOVE_PROTECT,MOVE_SWORDS_DANCE,MOVE_EARTHQUAKE,MOVE_ROCK_SLIDE,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              },
+              {
+                "name": "20/164+/4/0-/68/252 (Ground Z)",
+                "action": "givemon(SPECIES_LANDORUS_THERIAN,65,ITEM_GROUNDIUM_Z,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,20,164,4,252,0,68,31,31,31,31,31,31,MOVE_PROTECT,MOVE_EARTHQUAKE,MOVE_ROCK_SLIDE,MOVE_SUPERPOWER,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
+          },
+          {
+            "name": "Tapu Koko",
+            "action": [
+              {
+                "name": "28/0-/4/196+/28/252 (Elec Z)",
+                "action": "givemon(SPECIES_TAPU_KOKO,65,ITEM_ELECTRIUM_Z,ITEM_POKE_BALL,NATURE_MODEST,0,0,28,0,4,252,196,28,31,0,31,31,31,31,MOVE_PROTECT,MOVE_DAZZLING_GLEAM,MOVE_VOLT_SWITCH,MOVE_THUNDERBOLT,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              },
+              {
+                "name": "4/0-/4/244/4/252+ (Elec Z)",
+                "action": "givemon(SPECIES_TAPU_KOKO,65,ITEM_ELECTRIUM_Z,ITEM_POKE_BALL,NATURE_TIMID,0,0,4,0,4,252,244,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_DAZZLING_GLEAM,MOVE_VOLT_SWITCH,MOVE_THUNDERBOLT,2,FALSE,TYPE_WATER,10);goto(Common_EventScript_Sample_Sets_CheckPurchase)"
+              }
+            ]
           }
         ]
       }
