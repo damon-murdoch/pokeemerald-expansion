@@ -10,6 +10,7 @@ Timid nature
 
 Venusaur-Gmax @ Life Orb
 Ability: Chlorophyll
+Note: Orb
 EVs: 156 HP / 36 Def / 172 SpA / 20 SpD / 116 Spe
 IVs: 0 Atk
 Modest nature
@@ -17,3 +18,15 @@ Modest nature
 - Leaf Storm
 - Sludge Bomb
 - Earth Power
+
+Lapras-Gmax @ Light Clay
+Ability: Shell Armor
+Note: Clay
+EVs: 108 HP / 172 Def / 196 SpA / 4 SpD / 28 Spe
+IVs: 0 Atk
+Modest Nature
+- Protect
+- Perish Song
+- Hydro Pump
+- Freeze Dry
+
