@@ -3,6 +3,12 @@
 Please see below for the Emerald Battle Revolution project changelog. For changes related to
 the PokeEmerald Expanded project, please see the [PokeEmerald Changelog](./CHANGELOG.md).
 
+## Ver. 3.6.1
+
+Improved ability selection system, some common competitive abilities will now always be selected (e.g. Intimidate), as well as 
+weather/terrain summoning abilities such as drought and drizzle. Added a lot of new sample sets, and restructured the sample
+set display menu. 
+
 ## Ver. 3.6.0
 
 Massively increased the tutor movepool for most Pokemon, which can be accessed from the party menu and 
