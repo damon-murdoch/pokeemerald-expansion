@@ -82,7 +82,6 @@ bool8 GetStrictSpeciesChecks(u16 speciesId, struct GeneratorProperties * propert
 
 #define IS_TERRAIN_ABILITY(a) (IS_MISTY_ABILITY(a) || IS_GRASSY_ABILITY(a) || IS_PSYCHIC_ABILITY(a) || IS_ELECTRIC_ABILITY(a))
 
-
 #define IS_STAT_DROP_ABILITY(a) (((a) == ABILITY_DEFIANT) || ((a) == ABILITY_COMPETITIVE))
 #define IS_END_OF_TURN_ABILITY(a) (((a) == ABILITY_MOODY) || ((a) == ABILITY_POISON_HEAL) || ((a) == ABILITY_SPEED_BOOST))
 #define IS_INTIMIDATE_IMMUNE_ABILITY(a) (((a) == ABILITY_OBLIVIOUS) || ((a) == ABILITY_OWN_TEMPO) || ((a) == ABILITY_INNER_FOCUS) || ((a) == ABILITY_SCRAPPY))
@@ -2433,6 +2432,86 @@ bool8 HasPhysicalMove(struct Pokemon * mon)
     return FALSE;
 }
 
+#if BFG_IV_ABILITY_ALWAYS_SELECT_ENABLED == TRUE
+
+const u16 customAlwaysSelectAbilityList[] = {
+    BFG_IV_ABILITY_ALWAYS_SELECT_CUSTOM_LIST, 
+    ABILITY_NONE
+};
+
+u8 GetSpeciesAbilityNumber(u16 speciesId, struct GeneratorProperties * properties)
+{
+    u8 i, j, abilityNum;
+    u16 abilityId;
+
+    bool8 customSelected; 
+
+    // First ability slot
+    abilityNum = 0;
+
+    // Loop over abilities
+    for(i=0; i < 3; i++) {
+        // Get the abilityId for the ability index
+        abilityId = GetSpeciesAbility(speciesId, i);
+
+        // If no ability, skip
+        if (abilityId == ABILITY_NONE)
+            continue;
+
+        // Always select terrain ability is set, and the current ability is a terrain ability
+        if ((properties->fixedIV >= BFG_IV_ABILITY_ALWAYS_SELECT_TERRAIN) && IS_TERRAIN_ABILITY(abilityId)) {
+            abilityNum = i;
+            break;
+        }
+
+        // Always select weather ability is set, and the current ability is a weather ability
+        if ((properties->fixedIV >= BFG_IV_ABILITY_ALWAYS_SELECT_WEATHER) && IS_WEATHER_ABILITY(abilityId)) {
+            abilityNum = i;
+            break;
+        }
+
+        // Always select weather bonus ability is set, and current ability is a weather bonus ability
+        if ((properties->fixedIV >= BFG_IV_ABILITY_ALWAYS_SELECT_WEATHER_BONUS) && IS_WEATHER_BONUS_ABILITY(abilityId)) {
+            abilityNum = i;
+            break;
+        }
+
+        customSelected = FALSE;
+
+        // Otherwise, loop over the custom 'always select' ability list
+        for(j=0; customAlwaysSelectAbilityList[j] != ABILITY_NONE; j++) {
+            // If the current ability is on the list, select it
+            if (customAlwaysSelectAbilityList[j] == abilityId) {
+                customSelected = TRUE;
+                abilityNum = i;
+                break;
+            }
+        }
+
+        // If custom selected, break
+        if (customSelected == TRUE) 
+            break;
+
+        // Backup: Random chance to switch to 2nd ability / hidden ability
+
+        switch(i) {
+            case 1: // Second Ability
+                if (RANDOM_CHANCE(2))
+                    abilityNum = i;
+                break;
+            case 2: // Hidden Ability
+                if (RANDOM_CHANCE(fixedIVHiddenAbilityLookup[properties->fixedIV]))
+                    abilityNum = i;
+                break;
+        }
+
+        // Will still continue to next ability check after this switch :)
+    }
+
+    return abilityNum;
+}
+#endif
+
 bool32 GenerateTrainerPokemon(struct Pokemon * mon, u16 speciesId, u8 formeIndex, u16 move, u16 item, struct GeneratorProperties * properties)
 {
     const struct SpeciesInfo * species = &(gSpeciesInfo[speciesId]);
@@ -2489,9 +2568,23 @@ bool32 GenerateTrainerPokemon(struct Pokemon * mon, u16 speciesId, u8 formeIndex
     SetMonEVs(mon, properties); // Generate ev spread
     #endif
 
-    // Species has hidden ability, and random selection chance is triggered
+    // Ability Num
+    // 0-2 will be set, 3 will be left as-is
+    abilityNum = 3;
+
+    #if BFG_IV_ABILITY_ALWAYS_SELECT_ENABLED == TRUE
+    // Check for always-select abilities, otherwise select randomly
+    abilityNum = GetSpeciesAbilityNumber(speciesId, properties);
+    #else
+    // Ability not selected, species has hidden ability, and random selection chance is triggered
     if (HAS_HIDDEN_ABILITY(species) && RANDOM_CHANCE(fixedIVHiddenAbilityLookup[properties->fixedIV])) {
         abilityNum = 2; // Hidden ability index
+    }
+    #endif
+
+    // Ability is selected
+    if (abilityNum < 3) {
+        // Update the ability index for the mon
         SetMonData(mon, MON_DATA_ABILITY_NUM, &abilityNum);
     }
 

@@ -176,6 +176,22 @@
 #define BFG_IV_HA_CHANCE_21 4 // 1/4
 #define BFG_IV_HA_CHANCE_MAX 2 // 1/2
 
+// Always select abilities above iv 'iv' (set to 32 to disable)
+
+#define BFG_IV_ABILITY_ALWAYS_SELECT_ENABLED TRUE
+
+#define BFG_IV_ABILITY_ALWAYS_SELECT_TERRAIN 21
+#define BFG_IV_ABILITY_ALWAYS_SELECT_WEATHER 21
+
+#define BFG_IV_ABILITY_ALWAYS_SELECT_WEATHER_BONUS 32 // Disabled
+
+// Custom list of abilities to auto-select
+#define BFG_IV_ABILITY_ALWAYS_SELECT_CUSTOM 31
+#define BFG_IV_ABILITY_ALWAYS_SELECT_CUSTOM_LIST \
+    ABILITY_NEUTRALIZING_GAS, \
+    ABILITY_INTIMIDATE, \
+    ABILITY_IMPOSTER
+
 // *** SPECIES ***
 
 #define BFG_TEAM_GENERATOR_MON_SELECT_SET_FAILURE_LIMIT 10  // Number of times mon selection can fail consecutively before loosening restrictions

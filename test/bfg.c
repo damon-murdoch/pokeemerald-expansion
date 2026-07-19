@@ -162,6 +162,27 @@ BFG_RandomPokemonGenerator_Test("Generate Random Amoonguss (D,LVL50,31IV)",SPECI
 BFG_RandomPokemonGenerator_Test("Generate Random Clefairy (D,LVL50,31IV)",SPECIES_CLEFAIRY, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
 BFG_RandomPokemonGenerator_Test("Generate Random Omastar (D,LVL50,31IV)",SPECIES_OMASTAR, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
 
+// Weather Abilities
+
+BFG_RandomPokemonGenerator_Test("Generate Random Tyranitar (D,LVL50,31IV)",SPECIES_TYRANITAR, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Pelipper (D,LVL50,31IV)",SPECIES_PELIPPER, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Abomasnow (D,LVL50,31IV)",SPECIES_ABOMASNOW, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Torkoal (D,LVL50,31IV)",SPECIES_TORKOAL, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+
+// Terrain Abilities
+
+BFG_RandomPokemonGenerator_Test("Generate Random Tapu Lele (D,LVL50,31IV)",SPECIES_TAPU_LELE, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Tapu Koko (D,LVL50,31IV)",SPECIES_TAPU_KOKO, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Rillaboom (D,LVL50,31IV)",SPECIES_RILLABOOM, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Tapu Fini (D,LVL50,31IV)",SPECIES_TAPU_FINI, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+
+// Other Always-Select Abilities
+
+BFG_RandomPokemonGenerator_Test("Generate Random Arcanine-Hisui (D,LVL50,31IV)",SPECIES_ARCANINE_HISUI, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Weezing-Galar (D,LVL50,31IV)",SPECIES_WEEZING_GALAR, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Arcanine (D,LVL50,31IV)",SPECIES_ARCANINE, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Ditto (D,LVL50,31IV)",SPECIES_DITTO, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+
 // Legendaries
 
 BFG_RandomPokemonGenerator_Test("Generate Random Cresselia (D,LVL50,31IV)",SPECIES_CRESSELIA, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
