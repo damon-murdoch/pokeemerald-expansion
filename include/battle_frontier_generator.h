@@ -73,4 +73,7 @@ bool8 FrontierBattlerShouldTerastal(struct Pokemon * mon);
 bool8 FrontierBattlerCanDynamax(struct Pokemon * mon);
 bool8 FrontierBattlerShouldDynamax(struct Pokemon * mon);
 
+void GetFrontierOpponentTypeCounts(u8 * typeCounts);
+u8 GetFrontierOpponentBattleStyle();
+
 #endif // GUARD_BATTLE_FRONTIER_GENERATOR_H

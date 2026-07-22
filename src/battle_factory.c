@@ -586,12 +586,24 @@ static void GetOpponentMostCommonMonType(void)
 
     #if BFG_FLAG_FRONTIER_GENERATOR != 0
     if (FlagGet(BFG_FLAG_FRONTIER_GENERATOR)) {
-        // TODO: Generate actual type-checking system
-        gSpecialVar_Result = NUMBER_OF_MON_TYPES;
-        return;
-    }
-    #endif
+        // Update 'typeCounts' using 'gFrontierTempParty' directly
+        GetFrontierOpponentTypeCounts(typeCounts); 
+    } else {
+        // Update 'typeCounts' using gFacilityTrainerMons
+        gFacilityTrainerMons = gBattleFrontierMons;
 
+        // Count the number of times each type occurs in the opponent's party.
+        for (i = TYPE_NORMAL; i < NUMBER_OF_MON_TYPES; i++)
+            typeCounts[i] = 0;
+        for (i = 0; i < FRONTIER_PARTY_SIZE; i++)
+        {
+            u32 species = gFacilityTrainerMons[gFrontierTempParty[i]].species;
+            typeCounts[GetSpeciesType(species, 0)]++;
+            if (GetSpeciesType(species, 0) != GetSpeciesType(species, 1))
+                typeCounts[GetSpeciesType(species, 1)]++;
+        }
+    }
+    #else
     gFacilityTrainerMons = gBattleFrontierMons;
 
     // Count the number of times each type occurs in the opponent's party.
@@ -604,6 +616,7 @@ static void GetOpponentMostCommonMonType(void)
         if (GetSpeciesType(species, 0) != GetSpeciesType(species, 1))
             typeCounts[GetSpeciesType(species, 1)]++;
     }
+    #endif
 
     // Determine which are the two most-common types.
     // The second most-common type is only updated if
@@ -643,8 +656,8 @@ static void GetOpponentBattleStyle(void)
 
     #if BFG_FLAG_FRONTIER_GENERATOR != 0
     if (FlagGet(BFG_FLAG_FRONTIER_GENERATOR)) {
-        // TODO: Generate actual style-checking system
-        gSpecialVar_Result = FACTORY_NUM_STYLES;
+        // Update 'gSpecialVar_Result' to custom battle style
+        gSpecialVar_Result = GetFrontierOpponentBattleStyle();
         return;
     }
     #endif

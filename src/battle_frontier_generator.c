@@ -17,6 +17,7 @@
 #include "constants/battle_move_effects.h"
 #include "constants/form_change_types.h"
 #include "constants/battle_frontier.h"
+#include "constants/battle_factory.h"
 #include "constants/battle_tent.h"
 #include "constants/abilities.h"
 
@@ -81,7 +82,6 @@ bool8 GetStrictSpeciesChecks(u16 speciesId, struct GeneratorProperties * propert
 #define IS_ELECTRIC_ABILITY(a) ((a == ABILITY_ELECTRIC_SURGE) || (a == ABILITY_HADRON_ENGINE))
 
 #define IS_TERRAIN_ABILITY(a) (IS_MISTY_ABILITY(a) || IS_GRASSY_ABILITY(a) || IS_PSYCHIC_ABILITY(a) || IS_ELECTRIC_ABILITY(a))
-
 
 #define IS_STAT_DROP_ABILITY(a) (((a) == ABILITY_DEFIANT) || ((a) == ABILITY_COMPETITIVE))
 #define IS_END_OF_TURN_ABILITY(a) (((a) == ABILITY_MOODY) || ((a) == ABILITY_POISON_HEAL) || ((a) == ABILITY_SPEED_BOOST))
@@ -2433,9 +2433,89 @@ bool8 HasPhysicalMove(struct Pokemon * mon)
     return FALSE;
 }
 
+#if BFG_IV_ABILITY_ALWAYS_SELECT_ENABLED == TRUE
+
+const u16 customAlwaysSelectAbilityList[] = {
+    BFG_IV_ABILITY_ALWAYS_SELECT_CUSTOM_LIST, 
+    ABILITY_NONE
+};
+
+u8 GetSpeciesAbilityNumber(u16 speciesId, struct GeneratorProperties * properties)
+{
+    u8 i, j, abilityNum;
+    u16 abilityId;
+
+    bool8 customSelected; 
+
+    // First ability slot
+    abilityNum = 0;
+
+    // Loop over abilities
+    for(i=0; i < 3; i++) {
+        // Get the abilityId for the ability index
+        abilityId = GetSpeciesAbility(speciesId, i);
+
+        // If no ability, skip
+        if (abilityId == ABILITY_NONE)
+            continue;
+
+        // Always select terrain ability is set, and the current ability is a terrain ability
+        if ((properties->fixedIV >= BFG_IV_ABILITY_ALWAYS_SELECT_TERRAIN) && IS_TERRAIN_ABILITY(abilityId)) {
+            abilityNum = i;
+            break;
+        }
+
+        // Always select weather ability is set, and the current ability is a weather ability
+        if ((properties->fixedIV >= BFG_IV_ABILITY_ALWAYS_SELECT_WEATHER) && IS_WEATHER_ABILITY(abilityId)) {
+            abilityNum = i;
+            break;
+        }
+
+        // Always select weather bonus ability is set, and current ability is a weather bonus ability
+        if ((properties->fixedIV >= BFG_IV_ABILITY_ALWAYS_SELECT_WEATHER_BONUS) && IS_WEATHER_BONUS_ABILITY(abilityId)) {
+            abilityNum = i;
+            break;
+        }
+
+        customSelected = FALSE;
+
+        // Otherwise, loop over the custom 'always select' ability list
+        for(j=0; customAlwaysSelectAbilityList[j] != ABILITY_NONE; j++) {
+            // If the current ability is on the list, select it
+            if (customAlwaysSelectAbilityList[j] == abilityId) {
+                customSelected = TRUE;
+                abilityNum = i;
+                break;
+            }
+        }
+
+        // If custom selected, break
+        if (customSelected == TRUE) 
+            break;
+
+        // Backup: Random chance to switch to 2nd ability / hidden ability
+
+        switch(i) {
+            case 1: // Second Ability
+                if (RANDOM_CHANCE(2))
+                    abilityNum = i;
+                break;
+            case 2: // Hidden Ability
+                if (RANDOM_CHANCE(fixedIVHiddenAbilityLookup[properties->fixedIV]))
+                    abilityNum = i;
+                break;
+        }
+
+        // Will still continue to next ability check after this switch :)
+    }
+
+    return abilityNum;
+}
+#endif
+
 bool32 GenerateTrainerPokemon(struct Pokemon * mon, u16 speciesId, u8 formeIndex, u16 move, u16 item, struct GeneratorProperties * properties)
 {
-    const struct SpeciesInfo * species = &(gSpeciesInfo[speciesId]);
+    // const struct SpeciesInfo * species = &(gSpeciesInfo[speciesId]);
     const struct FormChange * formChanges;
 
     // Gigantamax true/false
@@ -2489,9 +2569,23 @@ bool32 GenerateTrainerPokemon(struct Pokemon * mon, u16 speciesId, u8 formeIndex
     SetMonEVs(mon, properties); // Generate ev spread
     #endif
 
-    // Species has hidden ability, and random selection chance is triggered
+    // Ability Num
+    // 0-2 will be set, 3 will be left as-is
+    abilityNum = 3;
+
+    #if BFG_IV_ABILITY_ALWAYS_SELECT_ENABLED == TRUE
+    // Check for always-select abilities, otherwise select randomly
+    abilityNum = GetSpeciesAbilityNumber(speciesId, properties);
+    #else
+    // Ability not selected, species has hidden ability, and random selection chance is triggered
     if (HAS_HIDDEN_ABILITY(species) && RANDOM_CHANCE(fixedIVHiddenAbilityLookup[properties->fixedIV])) {
         abilityNum = 2; // Hidden ability index
+    }
+    #endif
+
+    // Ability is selected
+    if (abilityNum < 3) {
+        // Update the ability index for the mon
         SetMonData(mon, MON_DATA_ABILITY_NUM, &abilityNum);
     }
 
@@ -4087,4 +4181,72 @@ bool8 FrontierBattlerShouldDynamax(struct Pokemon * mon)
         return RANDOM_CHANCE(BFG_RANDOM_GIGANTAMAX_CHANCE);
     else // No gigantamax factor
         return RANDOM_CHANCE(BFG_RANDOM_DYNAMAX_CHANCE);
+}
+
+void GetFrontierOpponentTypeCounts(u8 * typeCounts) {
+    u8 i;
+
+    // Set all type counts to '0' by default
+    for(i = TYPE_NORMAL; i < NUMBER_OF_MON_TYPES; i++)
+        typeCounts[i] = 0;
+
+    for(i=0; i < FRONTIER_PARTY_SIZE; i++) 
+    {
+        // Get the species for the mon
+        u32 species = gFrontierTempParty[i];
+
+        // Add primary (& secondary) type to types list
+        typeCounts[GetSpeciesType(species, 0)]++;
+        if (GetSpeciesType(species, 0) != GetSpeciesType(species, 1))
+            typeCounts[GetSpeciesType(species, 1)]++;
+    }
+}
+
+u8 GetFrontierOpponentBattleStyle() {
+    u8 i, s;
+    u16 bst;
+
+    u16 stats[NUM_STATS];
+
+    for(i=0; i<5; i++)
+        stats[i]=0;
+
+    for(i=0; i<FRONTIER_PARTY_SIZE; i++) {
+        u16 speciesId = gFrontierTempParty[i];
+        
+        bst = 0;
+        for(i=0; i<NUM_STATS; i++) {
+            // Dereference stat, add to stats/bst
+            s = GetSpeciesBaseStat(speciesId, i);
+            stats[i] += s;
+            bst += s;
+        }
+    }
+
+    // Total Preparation = High BST (Default = 1560 Combined)
+    if (bst >= BFG_FACTORY_BATTLE_STYLE_PREPARATION_BST)
+        return FACTORY_STYLE_PREPARATION;
+
+    // Slow & Steady = Low Speed (Default = 180 Combined)
+    if (stats[STAT_SPEED] >= BFG_FACTORY_BATTLE_STYLE_SLOW_AND_STEADY_SPE)
+        return FACTORY_STYLE_SLOW_STEADY;
+
+    // Weakening the Foe = Low Atk + Spatk (360 Combined)
+    if ((stats[STAT_ATK] + stats[STAT_SPATK]) >= BFG_FACTORY_BATTLE_STYLE_WEAKENING_ATK_SPATK)
+        return FACTORY_STYLE_WEAKENING;
+
+    // Combine hp/def/spdef & atk/spatk/speed stats
+    u16 hpdefspd = stats[STAT_HP] + stats[STAT_DEF] + stats[STAT_SPDEF];
+    u16 atkspaspe = stats[STAT_ATK] + stats[STAT_SPATK] + stats[STAT_SPEED];
+
+    // Atk/Spa/Spe greater than Hp/Def/Spdef + comparison threshold
+    if (atkspaspe > (hpdefspd + BFG_FACTORY_BATTLE_STYLE_COMPARE_THRESHOLD))
+        return FACTORY_STYLE_HIGH_RISK;
+
+    // Hp/Def/Spdef greater than Atk/Spa/Spe + comparison threshold
+    if (hpdefspd > (atkspaspe + BFG_FACTORY_BATTLE_STYLE_COMPARE_THRESHOLD))
+        return FACTORY_STYLE_ENDURANCE;
+
+    // Fallback: Unpredictable, Go-With-The-Flow, or Multiple Styles
+    return RANDOM_RANGE(FACTORY_STYLE_UNPREDICTABLE, FACTORY_NUM_STYLES);
 }

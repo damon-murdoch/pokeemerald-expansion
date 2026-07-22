@@ -122,6 +122,16 @@
 
 #define BFG_FACTORY_EXPERT_CHALLENGE_NUM 7
 
+// Battle Factory Battle Styles
+
+#define BFG_FACTORY_BATTLE_STYLE_PREPARATION_BST 1440 // 500x3
+#define BFG_FACTORY_BATTLE_STYLE_SLOW_AND_STEADY_SPE 210 // 60x3
+#define BFG_FACTORY_BATTLE_STYLE_WEAKENING_ATK_SPATK 420 // 140X3
+
+// If hp/def/spdef and atk/spa/spe are within this threshold, 
+// will use one of the more generic battle style predictions
+#define BFG_FACTORY_BATTLE_STYLE_COMPARE_THRESHOLD 60
+
 // *** BASE STATS ***
 
 #define BFG_IV_FIXED 31 // Fixed IVs when 'FLAG_BATTLE_FRONTIER_FIXED_IV' is set
@@ -179,6 +189,22 @@
 #define BFG_IV_HA_CHANCE_18 8 // 1/8
 #define BFG_IV_HA_CHANCE_21 4 // 1/4
 #define BFG_IV_HA_CHANCE_MAX 2 // 1/2
+
+// Always select abilities above iv 'iv' (set to 32 to disable)
+
+#define BFG_IV_ABILITY_ALWAYS_SELECT_ENABLED TRUE
+
+#define BFG_IV_ABILITY_ALWAYS_SELECT_TERRAIN 21
+#define BFG_IV_ABILITY_ALWAYS_SELECT_WEATHER 21
+
+#define BFG_IV_ABILITY_ALWAYS_SELECT_WEATHER_BONUS 32 // Disabled
+
+// Custom list of abilities to auto-select
+#define BFG_IV_ABILITY_ALWAYS_SELECT_CUSTOM 31
+#define BFG_IV_ABILITY_ALWAYS_SELECT_CUSTOM_LIST \
+    ABILITY_NEUTRALIZING_GAS, \
+    ABILITY_INTIMIDATE, \
+    ABILITY_IMPOSTER
 
 // *** SPECIES ***
 
@@ -318,7 +344,7 @@
                                     // i.e. attack and speed ivs will be set
                                     // to 0 if a reducing nature is used
 
-                                    #define BFG_OPTIMISE_IVS_NO_ATTACKS TRUE    // If set to true, the attack stat will
+#define BFG_OPTIMISE_IVS_NO_ATTACKS TRUE    // If set to true, the attack stat will
                                             // be set to 0 if the mon does not have
                                             // any physical attacks (and has not 
                                             // previously been set to 0.)
@@ -424,7 +450,7 @@
 #define BFG_ITEM_BLUNDER_POLICY_SELECTION_CHANCE    16  // numInaccurate
 #define BFG_ITEM_PUNCHING_GLOVE_SELECTION_CHANCE    16  // numPunch
 #define BFG_ITEM_ROOM_SERVICE_SELECTION_CHANCE      8   // hasTrickRoom
-#define  BFG_ITEM_CHESTO_BERRY_SELECTION_CHANCE      1   // hasRest
+#define BFG_ITEM_CHESTO_BERRY_SELECTION_CHANCE      1   // hasRest
 #define BFG_ITEM_THROAT_SPRAY_SELECTION_CHANCE      4   // numSound
 #define BFG_ITEM_LOADED_DICE_SELECTION_CHANCE       4   // numMultiHit
 #define BFG_ITEM_LIGHT_CLAY_SELECTION_CHANCE        4   // numScreens
