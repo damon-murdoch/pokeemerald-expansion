@@ -17,6 +17,7 @@
 #include "constants/battle_move_effects.h"
 #include "constants/form_change_types.h"
 #include "constants/battle_frontier.h"
+#include "constants/battle_factory.h"
 #include "constants/battle_tent.h"
 #include "constants/abilities.h"
 
@@ -2514,7 +2515,7 @@ u8 GetSpeciesAbilityNumber(u16 speciesId, struct GeneratorProperties * propertie
 
 bool32 GenerateTrainerPokemon(struct Pokemon * mon, u16 speciesId, u8 formeIndex, u16 move, u16 item, struct GeneratorProperties * properties)
 {
-    const struct SpeciesInfo * species = &(gSpeciesInfo[speciesId]);
+    // const struct SpeciesInfo * species = &(gSpeciesInfo[speciesId]);
     const struct FormChange * formChanges;
 
     // Gigantamax true/false
@@ -4180,4 +4181,72 @@ bool8 FrontierBattlerShouldDynamax(struct Pokemon * mon)
         return RANDOM_CHANCE(BFG_RANDOM_GIGANTAMAX_CHANCE);
     else // No gigantamax factor
         return RANDOM_CHANCE(BFG_RANDOM_DYNAMAX_CHANCE);
+}
+
+void GetFrontierOpponentTypeCounts(u8 * typeCounts) {
+    u8 i;
+
+    // Set all type counts to '0' by default
+    for(i = TYPE_NORMAL; i < NUMBER_OF_MON_TYPES; i++)
+        typeCounts[i] = 0;
+
+    for(i=0; i < FRONTIER_PARTY_SIZE; i++) 
+    {
+        // Get the species for the mon
+        u32 species = gFrontierTempParty[i];
+
+        // Add primary (& secondary) type to types list
+        typeCounts[GetSpeciesType(species, 0)]++;
+        if (GetSpeciesType(species, 0) != GetSpeciesType(species, 1))
+            typeCounts[GetSpeciesType(species, 1)]++;
+    }
+}
+
+u8 GetFrontierOpponentBattleStyle() {
+    u8 i, s;
+    u16 bst;
+
+    u16 stats[NUM_STATS];
+
+    for(i=0; i<5; i++)
+        stats[i]=0;
+
+    for(i=0; i<FRONTIER_PARTY_SIZE; i++) {
+        u16 speciesId = gFrontierTempParty[i];
+        
+        bst = 0;
+        for(i=0; i<NUM_STATS; i++) {
+            // Dereference stat, add to stats/bst
+            s = GetSpeciesBaseStat(speciesId, i);
+            stats[i] += s;
+            bst += s;
+        }
+    }
+
+    // Total Preparation = High BST (Default = 1560 Combined)
+    if (bst >= BFG_FACTORY_BATTLE_STYLE_PREPARATION_BST)
+        return FACTORY_STYLE_PREPARATION;
+
+    // Slow & Steady = Low Speed (Default = 180 Combined)
+    if (stats[STAT_SPEED] >= BFG_FACTORY_BATTLE_STYLE_SLOW_AND_STEADY_SPE)
+        return FACTORY_STYLE_SLOW_STEADY;
+
+    // Weakening the Foe = Low Atk + Spatk (360 Combined)
+    if ((stats[STAT_ATK] + stats[STAT_SPATK]) >= BFG_FACTORY_BATTLE_STYLE_WEAKENING_ATK_SPATK)
+        return FACTORY_STYLE_WEAKENING;
+
+    // Combine hp/def/spdef & atk/spatk/speed stats
+    u16 hpdefspd = stats[STAT_HP] + stats[STAT_DEF] + stats[STAT_SPDEF];
+    u16 atkspaspe = stats[STAT_ATK] + stats[STAT_SPATK] + stats[STAT_SPEED];
+
+    // Atk/Spa/Spe greater than Hp/Def/Spdef + comparison threshold
+    if (atkspaspe > (hpdefspd + BFG_FACTORY_BATTLE_STYLE_COMPARE_THRESHOLD))
+        return FACTORY_STYLE_HIGH_RISK;
+
+    // Hp/Def/Spdef greater than Atk/Spa/Spe + comparison threshold
+    if (hpdefspd > (atkspaspe + BFG_FACTORY_BATTLE_STYLE_COMPARE_THRESHOLD))
+        return FACTORY_STYLE_ENDURANCE;
+
+    // Fallback: Unpredictable, Go-With-The-Flow, or Multiple Styles
+    return RANDOM_RANGE(FACTORY_STYLE_UNPREDICTABLE, FACTORY_NUM_STYLES);
 }
