@@ -35,7 +35,7 @@
 #include "test/test.h"
 #include "item.h"
 
-u16 GetGeneratorSpeciesOrRestricted(u8 index, u8 attempts, u8 lvlMode, struct GeneratorSpecies * species, struct GeneratorProperties * properties);
+u16 GetGeneratorSpeciesOrRestricted(u8 index, u8 attempts, u8 lvlMode, struct GeneratorSpecies * species, struct GeneratorProperties * properties, u8 restrictedCount);
 bool8 GetStrictSpeciesChecks(u16 speciesId, struct GeneratorProperties * properties);
 
 // *** STATS ***
@@ -3438,13 +3438,10 @@ void UpdateGeneratorForLvlMode(struct GeneratorProperties * properties, u8 lvlMo
     }
 }
 
-u16 GetGeneratorSpeciesOrRestricted(u8 index, u8 attempts, u8 lvlMode, struct GeneratorSpecies * species, struct GeneratorProperties * properties) {
-
-    // Get the number of team restricteds
-    u8 count = GetTeamRestrictedCount();
+u16 GetGeneratorSpeciesOrRestricted(u8 index, u8 attempts, u8 lvlMode, struct GeneratorSpecies * species, struct GeneratorProperties * properties, u8 restrictedCount) {
 
     // If banned species are allowed, and we have less than the maximum number of restricteds (or all restricteds are set)
-    if (((BFG_LVL_50_ALLOW_BANNED_SPECIES && lvlMode == FRONTIER_LVL_50) || (BFG_LVL_OPEN_ALLOW_BANNED_SPECIES && lvlMode == FRONTIER_LVL_OPEN) || (BFG_LVL_TENT_ALLOW_BANNED_SPECIES && lvlMode == FRONTIER_LVL_TENT)) && ((count == BFG_OPEN_RULES_RESTRICTED_ALL) || (index < count)))
+    if (((BFG_LVL_50_ALLOW_BANNED_SPECIES && lvlMode == FRONTIER_LVL_50) || (BFG_LVL_OPEN_ALLOW_BANNED_SPECIES && lvlMode == FRONTIER_LVL_OPEN) || (BFG_LVL_TENT_ALLOW_BANNED_SPECIES && lvlMode == FRONTIER_LVL_TENT)) && ((restrictedCount == BFG_OPEN_RULES_RESTRICTED_ALL) || (index < restrictedCount)))
     {
         DebugPrintf("Selecting restricted Pokemon ...");
 
@@ -3525,6 +3522,9 @@ void GenerateTrainerParty(u16 trainerId, u8 firstMonId, u8 monCount, u8 level)
     u16 speciesId;
     u8 i,j,attempts;
 
+    // Get the number of team restricteds
+    u8 restrictedCount = GetTeamRestrictedCount();
+
     struct GeneratorProperties properties;
     InitGeneratorProperties(&properties, level, 0);
 
@@ -3603,7 +3603,7 @@ void GenerateTrainerParty(u16 trainerId, u8 firstMonId, u8 monCount, u8 level)
         UpdateGeneratorForLvlMode(&properties, lvlMode);
 
         // Sample a species or restricted Pokemon depending on index, attempts, etc.
-        speciesId = GetGeneratorSpeciesOrRestricted(i, attempts, lvlMode, &species, &properties);
+        speciesId = GetGeneratorSpeciesOrRestricted(i, attempts, lvlMode, &species, &properties, restrictedCount);
 
         // If we are below the failure limit, and the strict species check failed, skip to next species
         if ((attempts < BFG_TEAM_GENERATOR_MON_SELECT_STRICT_FAILURE_LIMIT) && (GetStrictSpeciesChecks(speciesId, &properties) == FALSE))
@@ -3678,6 +3678,9 @@ void GenerateFacilityInitialRentalMons(u8 firstMonId, u8 challengeNum, u8 rental
         properties.allowZMove = BFG_BST_TENT_ALLOW_ZMOVE;
     }
 
+    // Get the number of team restricteds
+    u8 restrictedCount = GetTeamRestrictedCount();
+
     i = 0; 
     attempts = 0;
     while(i != PARTY_SIZE)
@@ -3709,7 +3712,7 @@ void GenerateFacilityInitialRentalMons(u8 firstMonId, u8 challengeNum, u8 rental
         }
 
         // Sample a species or restricted Pokemon depending on index, attempts, etc.
-        speciesId = GetGeneratorSpeciesOrRestricted(i, attempts, lvlMode, &species, &properties);
+        speciesId = GetGeneratorSpeciesOrRestricted(i, attempts, lvlMode, &species, &properties, restrictedCount);
 
         // If we are below the failure limit, and the strict species check failed, skip to next species
         if ((attempts < BFG_TEAM_GENERATOR_MON_SELECT_STRICT_FAILURE_LIMIT) && (GetStrictSpeciesChecks(speciesId, &properties) == FALSE))
@@ -3743,6 +3746,25 @@ void GenerateFacilityOpponentMons(u16 trainerId, u8 firstMonId, u8 challengeNum,
 {
     u8 i, j, attempts;
     u16 speciesId;
+
+    // Get the number of restricted Pokemon allowed
+    u8 restrictedCount = GetTeamRestrictedCount(); 
+
+    // If any restricteds are allowed
+    if (restrictedCount > 0) {
+
+        // Get the number of team restricteds (Will always be at *most* set to 'FRONTIER_PARTY_SIZE')
+        // This is done to allow for the fact that the player is not prevented from selecting a new 
+        // restricted from each opponent, so if the opponent's number of legendaries does not scale 
+        // with the player it becomes quite easy.
+        
+        // Number of battles we are into the current challenge
+        // 0 = first, 6 = last
+        u8 battleNo = winStreak % FRONTIER_STAGES_PER_CHALLENGE;
+
+        // Add 'battleNo' to the restricted count, or a maximum of 3 (all)
+        restrictedCount = MIN(restrictedCount + battleNo, FRONTIER_PARTY_SIZE);
+    }
 
     struct GeneratorProperties properties;
     InitGeneratorProperties(&properties, 0, 0);
@@ -3797,7 +3819,7 @@ void GenerateFacilityOpponentMons(u16 trainerId, u8 firstMonId, u8 challengeNum,
         UpdateGeneratorForLvlMode(&properties, lvlMode);
 
         // Sample a species or restricted Pokemon depending on index, attempts, etc.
-        speciesId = GetGeneratorSpeciesOrRestricted(i, attempts, lvlMode, &species, &properties);
+        speciesId = GetGeneratorSpeciesOrRestricted(i, attempts, lvlMode, &species, &properties, restrictedCount);
 
         // If we are below the failure limit, and the strict species check failed, skip to next species
         if ((attempts < BFG_TEAM_GENERATOR_MON_SELECT_STRICT_FAILURE_LIMIT) && (GetStrictSpeciesChecks(speciesId, &properties) == FALSE))
