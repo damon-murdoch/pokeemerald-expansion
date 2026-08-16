@@ -44,6 +44,7 @@ bool8 GetStrictSpeciesChecks(u16 speciesId, struct GeneratorProperties * propert
 // *** MOVES ***
 
 #define CATEGORY(m) (gMovesInfo[SanitizeMoveId(m)].category)
+#define PRIORITY(m) (gMovesInfo[SanitizeMoveId(m)].priority)
 #define POWER(m) (gMovesInfo[SanitizeMoveId(m)].power)
 #define TYPE(m) (gMovesInfo[SanitizeMoveId(m)].type)
 #define HITS(m) (gMovesInfo[SanitizeMoveId(m)].strikeCount)
@@ -787,6 +788,10 @@ static bool32 CheckMovePower(u32 moveId, struct GeneratorProperties * properties
     // Move is not a status move
     if (CATEGORY(moveId) != DAMAGE_CATEGORY_STATUS)
     {
+        // Auto-accept priority moves
+        if (PRIORITY(moveId) > 0)
+            return TRUE;
+
         // Get the move power
         u8 power = POWER(moveId);
         if (power == 1)
@@ -935,6 +940,11 @@ static u16 GetAttackRating(u16 speciesId, u32 moveId, u16 abilityId, u8 type)
         case ABILITY_GALVANIZE:
             if (move->type == TYPE_NORMAL)
                 rating += BFG_MOVE_ABILITY_MODIFIER;
+        case ABILITY_COMPOUND_EYES:
+            // Increase selection chance for moves with 70-100 accuracy
+            // TODO: Maybe make this a config variable? 
+            if ((move->accuracy >= 70) && (move->accuracy <= 100))
+                rating += BFG_MOVE_ABILITY_MODIFIER;
         break;
     }
 
@@ -945,12 +955,12 @@ static u16 GetAttackRating(u16 speciesId, u32 moveId, u16 abilityId, u8 type)
         case MOVE_TARGET_ALL_BATTLERS:
         case MOVE_TARGET_ALLY:
         case MOVE_TARGET_BOTH:
-        case MOVE_TARGET_FOES_AND_ALLY:
         case MOVE_TARGET_OPPONENTS_FIELD:
             // Add doubles rating modifier
             rating += BFG_MOVE_DOUBLES_MODIFIER;
         break;
         // Doubles Negative Bonuses
+        case MOVE_TARGET_FOES_AND_ALLY:
         case MOVE_TARGET_RANDOM: 
             // Subtract doubles rating modifier
             rating -= BFG_MOVE_DOUBLES_MODIFIER;
@@ -1179,6 +1189,37 @@ static bool8 HandleMove(struct Pokemon * mon, u16 moveId, struct GeneratorProper
                 if (((GetSpreadType(mon) == BFG_SPREAD_TYPE_DEFENSIVE) || (GetMonData(mon, MON_DATA_HP_EV) >= 244)) && (!(CheckMoveRecovery(options))) && RANDOM_CHANCE(BFG_MOVE_RECOVER_SELECTION_CHANCE))
                     return TryAddMove(mon, moveId, options);
             }; break;
+            // Terrain-Reliant Moves
+            case MOVE_GRASSY_GLIDE: {
+                u16 ability = GetMonAbility(mon);
+
+                // Get spread Physical/Special focus
+                u8 spreadCategory = GetSpreadCategory(mon);
+
+                // If the mon has grassy terrain, the spread category is physical, and the terrain attack selection chance is met
+                if ((IS_GRASSY_ABILITY(ability)) && (spreadCategory == BFG_SPREAD_CATEGORY_PHYSICAL) && RANDOM_CHANCE(BFG_MOVE_TERRAIN_ATTACK_SELECTION_CHANCE))
+                    return TryAddMove(mon, moveId, options);
+            }; break;
+            case MOVE_EXPANDING_FORCE: {
+                u16 ability = GetMonAbility(mon);
+
+                // Get spread Physical/Special focus
+                u8 spreadCategory = GetSpreadCategory(mon);
+
+                // If the mon has grassy terrain, the spread category is physical, and the terrain attack selection chance is met
+                if ((IS_PSYCHIC_ABILITY(ability)) && (spreadCategory == BFG_SPREAD_CATEGORY_SPECIAL) && RANDOM_CHANCE(BFG_MOVE_TERRAIN_ATTACK_SELECTION_CHANCE))
+                    return TryAddMove(mon, moveId, options);
+            }; break;
+            case MOVE_RISING_VOLTAGE: {
+                u16 ability = GetMonAbility(mon);
+
+                // Get spread Physical/Special focus
+                u8 spreadCategory = GetSpreadCategory(mon);
+
+                // If the mon has grassy terrain, the spread category is physical, and the terrain attack selection chance is met
+                if ((IS_ELECTRIC_ABILITY(ability)) && (spreadCategory == BFG_SPREAD_CATEGORY_SPECIAL) && RANDOM_CHANCE(BFG_MOVE_TERRAIN_ATTACK_SELECTION_CHANCE))
+                    return TryAddMove(mon, moveId, options);
+            }; break;
             // Weather-Reliant Moves
             case MOVE_WEATHER_BALL: {
                 u16 ability = GetMonAbility(mon);
@@ -1186,8 +1227,39 @@ static bool8 HandleMove(struct Pokemon * mon, u16 moveId, struct GeneratorProper
                 // Get spread Physical / Special focus
                 u8 spreadCategory = GetSpreadCategory(mon);
 
-                // If the mon has a weather (or weather bonus) ability, the spread category is special, and the weather ball selection chance is met
-                if ((IS_WEATHER_ABILITY(ability) || IS_WEATHER_BONUS_ABILITY(ability)) && (spreadCategory == BFG_SPREAD_CATEGORY_SPECIAL) && RANDOM_CHANCE(BFG_MOVE_WEATHER_BALL_SELECTION_CHANCE))
+                // If the mon has a weather ability, the spread category is special, and the weather attack selection chance is met
+                if ((IS_WEATHER_ABILITY(ability)) && (spreadCategory == BFG_SPREAD_CATEGORY_SPECIAL) && RANDOM_CHANCE(BFG_MOVE_WEATHER_ATTACK_SELECTION_CHANCE))
+                    return TryAddMove(mon, moveId, options);
+            }; break;
+            case MOVE_SOLAR_BEAM: {
+                u16 ability = GetMonAbility(mon);
+
+                // Get spread Physical / Special focus
+                u8 spreadCategory = GetSpreadCategory(mon);
+
+                // If the mon has a rain ability, the spread category is special, and the weather attack selection chance is met
+                if ((IS_SUN_ABILITY(ability)) && (spreadCategory == BFG_SPREAD_CATEGORY_SPECIAL) && RANDOM_CHANCE(BFG_MOVE_WEATHER_ATTACK_SELECTION_CHANCE))
+                    return TryAddMove(mon, moveId, options);
+            }; break;
+            case MOVE_BLIZZARD: {
+                u16 ability = GetMonAbility(mon);
+
+                // Get spread Physical / Special focus
+                u8 spreadCategory = GetSpreadCategory(mon);
+
+                // If the mon has a rain ability, the spread category is special, and the weather attack selection chance is met
+                if ((IS_HAIL_ABILITY(ability)) && (spreadCategory == BFG_SPREAD_CATEGORY_SPECIAL) && RANDOM_CHANCE(BFG_MOVE_WEATHER_ATTACK_SELECTION_CHANCE))
+                    return TryAddMove(mon, moveId, options);
+            }; break;
+            case MOVE_HURRICANE:
+            case MOVE_THUNDER: {
+                u16 ability = GetMonAbility(mon);
+
+                // Get spread Physical / Special focus
+                u8 spreadCategory = GetSpreadCategory(mon);
+
+                // If the mon has a rain ability, the spread category is special, and the weather attack selection chance is met
+                if ((IS_RAIN_ABILITY(ability)) && (spreadCategory == BFG_SPREAD_CATEGORY_SPECIAL) && RANDOM_CHANCE(BFG_MOVE_WEATHER_ATTACK_SELECTION_CHANCE))
                     return TryAddMove(mon, moveId, options);
             }; break;
             // Setup Moves (Special)
@@ -1431,15 +1503,15 @@ static u8 GetSpeciesMoves(struct Pokemon * mon, u16 speciesId, u16 requiredMove,
                 // STAGE 1: Add always-select moves and build lists
 
                 // Check level-up moves
-                for(i=0; i < levelUpMoves; i++)
+                for(i = 0; i < levelUpMoves; i++)
                     HandleMove(mon, levelUpLearnset[i].move, properties, &options);
 
                 // Check teachable moves
-                for(i=0; i<teachableMoves; i++)
+                for(i = 0; i < teachableMoves; i++)
                     HandleMove(mon, teachableLearnset[i], properties, &options);
 
                 // Check egg moves
-                for(i=0; i<eggMoves; i++)
+                for(i = 0; i < eggMoves; i++)
                     HandleMove(mon, eggMoveLearnset[i], properties, &options);
 
                 // *** STAGE 2: ADD OTHER MOVES ***

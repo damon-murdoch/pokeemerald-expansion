@@ -11,7 +11,7 @@ import src.common as common
 import src.config as config
 
 # Built-in libs
-import math, os, re
+import math, os
 
 # Constants file containing moves
 MOVES_H = "include/constants/moves.h"
@@ -28,15 +28,16 @@ EFFECT_RATING_DEFAULT = 0
 # If this is set to 0, it will be ignored
 MOVE_RATING_MAXIMUM = 0xFF
 
-# Rating Modifiers
-MOVE_ACCURACY_MODIFIER = 1.6
-
+# 0-3 Priority Modifier range
 MOVE_PRIORITY_MIN = 0
-MOVE_PRIORITY_MAX = 3
-MOVE_PRIORITY_MODIFIER = 10
+MOVE_PRIORITY_MAX = 1
+
+# 0-1.5x Modifier Range
+MOVE_PRIORITY_MODIFIER = 1
+
 MOVE_CRIT_RATIO_MODIFIER = 10
 
-SECONDARY_EFFECT_CHANCE_MODIFIER = 0.1
+SECONDARY_EFFECT_CHANCE_MODIFIER = 0
 SECONDARY_EFFECT_BOOST_MODIFIER = 1  # Stat Boosts/Drops
 
 # Status/Volatile Status Effect Modifiers
@@ -117,10 +118,6 @@ MOVE_POWER_MODIFIER = 1
 # Power Modifiers
 MOVE_OHKO_POWER = 127
 MOVE_HALF_POWER = 63
-
-# Negative Effect Modifiers
-MOVE_SELF_KO_MODIFIER = 0
-
 
 def get_secondary_effect_rating(effect, self=False):
     effect_rating = EFFECT_RATING_DEFAULT
@@ -205,6 +202,7 @@ def get_move_ratings(MOVES):
 
         # Highest rating
         highest_rating = 0
+        lowest_rating = MOVE_RATING_MAXIMUM
 
         # Loop over filtered moves
         for moveId in moves:
@@ -214,25 +212,27 @@ def get_move_ratings(MOVES):
             # Dereference move data
             move = MOVES[moveId]
 
-            # Process Accuracy
-            accuracy = move["accuracy"]
-            if accuracy == True:
-                accuracy = 100  # Cannot miss
+            # Process Power
+            power = move["basePower"]
+            if "multihit" in move:
+                hits = move["multihit"]
+                if type(hits) != int:
+                    hits = math.ceil(
+                        (hits[0] + hits[1]) / 2
+                    )  # Average number of hits, rounded up
+                power *= hits
+            if power == 0:  # Special case
+                if moveId in ["fissure", "guillotine", "horndrill", "sheercold"]:
+                    power = MOVE_OHKO_POWER
+                elif moveId in ["naturesmadness", "ruination", "superfang"]:
+                    power = MOVE_HALF_POWER
+                elif moveId in ["return", "frustration"]:
+                    power = 102
+                else:
+                    power = 80
 
-            # Apply accuracy modifier
-            rating += math.floor(accuracy * MOVE_ACCURACY_MODIFIER)
-
-            # Process Priority
-            priority = move["priority"]
-            priority = min(
-                MOVE_PRIORITY_MAX, priority
-            )  # Ensure less than MOVE_PRIORITY_MAX
-            priority = max(
-                MOVE_PRIORITY_MIN, priority
-            )  # Ensure greater than MOVE_PRIORITY_MIN
-
-            # Apply priority modifier
-            rating += math.floor(priority * MOVE_PRIORITY_MODIFIER)
+            # Apply power modifier
+            rating += math.floor(power * MOVE_POWER_MODIFIER)
 
             # Process Crit Ratio
             if "critRatio" in move:
@@ -264,27 +264,25 @@ def get_move_ratings(MOVES):
                         * MOVE_FLAG_MODIFIER
                     )
 
-            # Process Power
-            power = move["basePower"]
-            if "multihit" in move:
-                hits = move["multihit"]
-                if type(hits) != int:
-                    hits = math.ceil(
-                        (hits[0] + hits[1]) / 2
-                    )  # Average number of hits, rounded up
-                power *= hits
-            if power == 0:  # Special case
-                if moveId in ["fissure", "guillotine", "horndrill", "sheercold"]:
-                    power = MOVE_OHKO_POWER
-                elif moveId in ["naturesmadness", "ruination", "superfang"]:
-                    power = MOVE_HALF_POWER
-                elif moveId in ["return", "frustration"]:
-                    power = 102
-                else:
-                    power = 80
+            # Process Priority
+            priority = move["priority"]
+            priority = min(
+                MOVE_PRIORITY_MAX, priority
+            )  # Ensure less than MOVE_PRIORITY_MAX
+            priority = max(
+                MOVE_PRIORITY_MIN, priority
+            )  # Ensure greater than MOVE_PRIORITY_MIN
 
-            # Apply power modifier
-            rating += math.floor(power * MOVE_POWER_MODIFIER)
+            # Apply priority modifier
+            rating *= (1 + (priority * MOVE_PRIORITY_MODIFIER))
+
+            # Process Accuracy
+            accuracy = move["accuracy"]
+            if accuracy == True:
+                accuracy = 100  # Cannot miss
+
+            # Apply accuracy modifier
+            rating *= math.floor(accuracy)
 
             # Add move rating to table (round down)
             ratings[moveId] = math.floor(rating)
@@ -293,7 +291,11 @@ def get_move_ratings(MOVES):
             if rating > highest_rating:
                 highest_rating = rating
 
-        return ratings, highest_rating
+            # Update lowest rating
+            if rating < lowest_rating:
+                lowest_rating = rating
+
+        return ratings, highest_rating, lowest_rating
 
 
 # Main Process
@@ -312,7 +314,22 @@ if __name__ == "__main__":
         ]
 
         # Get the ratings, highest rating for the moves
-        ratings, highest_rating = get_move_ratings(MOVES)
+        ratings, highest_rating, lowest_rating = get_move_ratings(MOVES)
+
+        # Offset to ensure all ratings are at least 0
+        offset = 0
+
+        # Lowest rating is less than 0
+        if lowest_rating < 0:
+            # Add lowest rating to all ratings
+            offset = abs(lowest_rating)
+
+            # Update ratings
+            for move in ratings:
+                ratings[move] += offset
+
+            # Update highest rating
+            highest_rating += offset
 
         # Sort ratings from highest to lowest
         ratings_sorted = sorted(ratings.items(), key=lambda x: x[1], reverse=True)
