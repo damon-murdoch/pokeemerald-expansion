@@ -85,6 +85,7 @@ bool8 GetStrictSpeciesChecks(u16 speciesId, struct GeneratorProperties * propert
 #define IS_TERRAIN_ABILITY(a) (IS_MISTY_ABILITY(a) || IS_GRASSY_ABILITY(a) || IS_PSYCHIC_ABILITY(a) || IS_ELECTRIC_ABILITY(a))
 
 #define IS_STAT_DROP_ABILITY(a) (((a) == ABILITY_DEFIANT) || ((a) == ABILITY_COMPETITIVE))
+#define IS_STAT_REDUCING_ABILITY(a) (((a) == ABILITY_INTIMIDATE) || ((a) == ABILITY_COTTON_DOWN) || ((a) == ABILITY_GOOEY) || ((a) == ABILITY_SUPERSWEET_SYRUP) || ((a) == ABILITY_TANGLING_HAIR))
 #define IS_END_OF_TURN_ABILITY(a) (((a) == ABILITY_MOODY) || ((a) == ABILITY_POISON_HEAL) || ((a) == ABILITY_SPEED_BOOST))
 #define IS_INTIMIDATE_IMMUNE_ABILITY(a) (((a) == ABILITY_OBLIVIOUS) || ((a) == ABILITY_OWN_TEMPO) || ((a) == ABILITY_INNER_FOCUS) || ((a) == ABILITY_SCRAPPY))
 
@@ -617,8 +618,10 @@ static void SetMonEVs(struct Pokemon * mon, struct GeneratorProperties * propert
         }
     }
 
+    #if BFG_EV_INVEST_NUM_STATS == BFG_EV_INVEST_FIVE_STATS
     // Last stat EVs
     u8 evsLast = 0;
+    #endif
 
     // Loop over the stats to invest into
     for(i=0; i<BFG_EV_INVEST_NUM_STATS; i++) {
@@ -664,8 +667,10 @@ static void SetMonEVs(struct Pokemon * mon, struct GeneratorProperties * propert
         // Update mon evs
         SetMonData(mon, field, &evs);
 
+        #if BFG_EV_INVEST_NUM_STATS == BFG_EV_INVEST_FIVE_STATS
         // Update last evs
         evsLast = evs;
+        #endif
     }
 }
 #endif
@@ -809,10 +814,33 @@ static bool32 CheckMovePower(u32 moveId, struct GeneratorProperties * properties
     return TRUE; // In range
 }
 
+static u8 GetWeatherBallType(u16 abilityId) {
+
+    u8 type = TYPE_NORMAL; 
+
+    switch(abilityId) {
+        case ABILITY_DROUGHT:
+        case ABILITY_DESOLATE_LAND:
+        case ABILITY_ORICHALCUM_PULSE:
+            type = TYPE_FIRE;
+        break;
+        case ABILITY_DRIZZLE:
+        case ABILITY_PRIMORDIAL_SEA:
+            type = TYPE_WATER;
+        break;
+        case ABILITY_SAND_STREAM:
+        case ABILITY_SAND_SPIT:
+            type = TYPE_ROCK;
+        break;
+        case ABILITY_SNOW_WARNING:
+            type = TYPE_ICE;
+    }
+
+    return type;
+}
+
 static u8 GetFrontierMoveType(struct Pokemon * mon, u16 moveId)
 {
-    u8 type = TYPE(moveId);
-
     // Ivy Cudgel Type Change
     if (moveId == MOVE_IVY_CUDGEL) {
         
@@ -820,14 +848,11 @@ static u8 GetFrontierMoveType(struct Pokemon * mon, u16 moveId)
 
         switch(species) {
             case SPECIES_OGERPON_CORNERSTONE:
-                type = TYPE_ROCK;
-            break;
+                return TYPE_ROCK;
             case SPECIES_OGERPON_HEARTHFLAME:
-                type = TYPE_FIRE;
-            break;
+                return TYPE_FIRE;
             case SPECIES_OGERPON_WELLSPRING:
-                type = TYPE_WATER;
-            break;
+                return TYPE_WATER;
         }
     }
 
@@ -839,28 +864,27 @@ static u8 GetFrontierMoveType(struct Pokemon * mon, u16 moveId)
         case ABILITY_NORMALIZE: 
             return TYPE_NORMAL;
         case ABILITY_AERILATE: 
-            if (type == TYPE_NORMAL)
-                type = TYPE_FLYING;
-            break;
+            if (TYPE(moveId) == TYPE_NORMAL)
+                return TYPE_FLYING;
         case ABILITY_PIXILATE: 
-            if (type == TYPE_NORMAL)  
-                type = TYPE_FAIRY;
-            break;
+            if (TYPE(moveId) == TYPE_NORMAL)  
+                return TYPE_FAIRY;
         case ABILITY_REFRIGERATE: 
-            if (type == TYPE_NORMAL) 
-                type = TYPE_ICE;
-            break;
+            if (TYPE(moveId) == TYPE_NORMAL) 
+                return TYPE_ICE;
         case ABILITY_GALVANIZE: 
-            if (type == TYPE_NORMAL) 
-                type = TYPE_ELECTRIC;
-            break;
+            if (TYPE(moveId) == TYPE_NORMAL) 
+                return TYPE_ELECTRIC;
         case ABILITY_LIQUID_VOICE: 
             if ((gMovesInfo[SanitizeMoveId(moveId)].soundMove) == TRUE) 
-                type = TYPE_WATER;
-            break;
+                return TYPE_WATER;
     }
 
-    return type;
+    // Special case: Weather ball
+    if (moveId == MOVE_WEATHER_BALL)
+        return GetWeatherBallType(abilityId);
+
+    return TYPE(moveId);
 }
 
 static u16 GetAttackRating(u16 speciesId, u32 moveId, u16 abilityId, u8 type)
@@ -870,13 +894,7 @@ static u16 GetAttackRating(u16 speciesId, u32 moveId, u16 abilityId, u8 type)
     // Baseline move rating
     u16 rating = gBattleFrontierAttackRatings[moveId];
 
-    // No rating for move
-    if (rating == 0)
-    {
-        DebugPrintf("Warning: No rating for attack %d ...", moveId);
-        rating = BFG_MOVE_DEFAULT_RATING;
-    }
-
+    // Check if the move has same-type-attack bonus
     bool8 isStab = IS_STAB(speciesId, type);
 
     // Abilities
@@ -970,6 +988,10 @@ static u16 GetAttackRating(u16 speciesId, u32 moveId, u16 abilityId, u8 type)
     if (isStab)
         // Apply stab boost modifier
         rating += BFG_MOVE_STAB_MODIFIER;
+    // Non-STAB normal type move
+    else if (type == TYPE_NORMAL)
+        // Discourage non-STAB normal type moves
+        rating -= BFG_MOVE_STAB_MODIFIER;
 
     return rating;
 }
@@ -1134,6 +1156,17 @@ static bool8 HandleMove(struct Pokemon * mon, u16 moveId, struct GeneratorProper
                         return TryAddMove(mon, moveId, options);
                 }
             }; break;
+            // Fling
+            case MOVE_FLING: {
+                u8 nature = GetNature(mon);
+                u8 spe = GetMonData(mon, MON_DATA_SPEED_EV);
+
+                u8 item = GetMonData(mon, MON_DATA_HELD_ITEM); 
+
+                // Speed boosting nature, or 244+ speed evs
+                if ((item == ITEM_NONE) && ((gNatureInfo[nature].posStat == STAT_SPEED) || (spe >= 244)) && RANDOM_CHANCE(BFG_MOVE_FLING_SELECTION_CHANCE))
+                    return TryAddMove(mon, moveId, options);
+            }; break;
             // Protect / Detect
             case MOVE_DETECT: 
             case MOVE_PROTECT: {
@@ -1171,6 +1204,17 @@ static bool8 HandleMove(struct Pokemon * mon, u16 moveId, struct GeneratorProper
                 if (IS_HAIL_BONUS_ABILITY(ability) && RANDOM_CHANCE(BFG_MOVE_WEATHER_SELECTION_CHANCE))
                     return TryAddMove(mon, moveId, options);
             }; break;
+            case MOVE_REST: {
+                u16 ability = GetMonAbility(mon);
+
+                // If the move is 'Rest', and the mon cannot sleep
+                if ((moveId == MOVE_REST) && IS_SLEEP_IMMUNE(ability))
+                    break;
+
+                // Mon has a defensive spread, (near) max hp evs, and does not already have a recovery move
+                if (((GetSpreadType(mon) == BFG_SPREAD_TYPE_DEFENSIVE) || (GetMonData(mon, MON_DATA_HP_EV) >= 244)) && (!(CheckMoveRecovery(options))) && RANDOM_CHANCE(BFG_MOVE_REST_SELECTION_CHANCE))
+                    return TryAddMove(mon, moveId, options);
+            }; break;
             // Doubles-Specific Recovery Moves
             ALLOWED_RECOVERY_MOVES_DOUBLES {
                 // Break if not doubles
@@ -1180,11 +1224,6 @@ static bool8 HandleMove(struct Pokemon * mon, u16 moveId, struct GeneratorProper
             }; 
             // Recovery Moves
             ALLOWED_RECOVERY_MOVES {
-                u16 ability = GetMonAbility(mon);
-                // If the move is 'Rest', and the mon cannot sleep
-                if ((moveId == MOVE_REST) && IS_SLEEP_IMMUNE(ability))
-                    break;
-
                 // Mon has a defensive spread, (near) max hp evs, and does not already have a recovery move
                 if (((GetSpreadType(mon) == BFG_SPREAD_TYPE_DEFENSIVE) || (GetMonData(mon, MON_DATA_HP_EV) >= 244)) && (!(CheckMoveRecovery(options))) && RANDOM_CHANCE(BFG_MOVE_RECOVER_SELECTION_CHANCE))
                     return TryAddMove(mon, moveId, options);
@@ -1247,7 +1286,7 @@ static bool8 HandleMove(struct Pokemon * mon, u16 moveId, struct GeneratorProper
                 // Get spread Physical / Special focus
                 u8 spreadCategory = GetSpreadCategory(mon);
 
-                // If the mon has a rain ability, the spread category is special, and the weather attack selection chance is met
+                // If the mon has a hail ability, the spread category is special, and the weather attack selection chance is met
                 if ((IS_HAIL_ABILITY(ability)) && (spreadCategory == BFG_SPREAD_CATEGORY_SPECIAL) && RANDOM_CHANCE(BFG_MOVE_WEATHER_ATTACK_SELECTION_CHANCE))
                     return TryAddMove(mon, moveId, options);
             }; break;
@@ -1743,7 +1782,6 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
     // Move flags
     bool8 hasTrickRoom = FALSE;
     bool8 hasEvolution = FALSE;
-    bool8 hasTerrain = FALSE;
     bool8 hasTwoTurn = FALSE; 
     bool8 hasRecycle = FALSE;
     bool8 hasSwagger = FALSE;
@@ -1754,16 +1792,9 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
 
     // Move Counters
     u8 numCritModifier = 0;
-    u8 numInaccurate = 0;
     u8 numMultiHit = 0;
     u8 numStatDrop = 0;
-    u8 numScreens = 0;
-    u8 numContact = 0;
-    u8 numPunch = 0;
     u8 numSound = 0;
-
-    // Weather effect placeholder
-    u16 hasWeather = MOVE_NONE;
 
     // Check for species evolutions
     const struct Evolution * evolutions = GetSpeciesEvolutions(speciesId);
@@ -1797,12 +1828,6 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
         moveId = GetMonData(mon, (MON_DATA_MOVE1 + i));
         move = &(gMovesInfo[SanitizeMoveId(moveId)]);
 
-        // Set move flags (offensive and status)
-
-        // Move accuracy
-        if (move->accuracy != 0 && move->accuracy < 100)
-            numInaccurate++;
-
         // Move forces a switch (no choice items)
         if (moveId == MOVE_FAKE_OUT || moveId == MOVE_FIRST_IMPRESSION || moveId == MOVE_LAST_RESORT)
             hasSingleUseMove = TRUE;
@@ -1819,11 +1844,6 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
             case EFFECT_TWO_TURNS_ATTACK: 
             case EFFECT_SEMI_INVULNERABLE:
                 hasTwoTurn = TRUE;
-            break;
-            case EFFECT_LIGHT_SCREEN:
-            case EFFECT_REFLECT:
-            case EFFECT_AURORA_VEIL:
-                numScreens++;
             break;
             case EFFECT_FOCUS_ENERGY:
                 numCritModifier++;
@@ -1851,34 +1871,13 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
         if (move->category == DAMAGE_CATEGORY_STATUS)
         {
             // Increment status counter
-            numStatus++; 
-
-            // Weather effects
-            if IS_RAIN_EFFECT(move->effect)
-                hasWeather = MOVE_RAIN_DANCE;
-            else if IS_SUN_EFFECT(move->effect)
-                hasWeather = MOVE_SUNNY_DAY;
-            else if IS_SAND_EFFECT(move->effect)
-                hasWeather = MOVE_SANDSTORM;
-            else if IS_HAIL_EFFECT(move->effect)
-                hasWeather = MOVE_HAIL;
-            // Terrain
-            else if (IS_TERRAIN_EFFECT(move->effect))
-                hasTerrain = TRUE; 
+            numStatus++;
         } 
         else // Non-Status Move
         {
             // Stat-dropping moves
             if (IS_STAT_REDUCING_EFFECT(move->effect))
                 numStatDrop++;
-
-            // Punching moves
-            if (move->punchingMove == TRUE)
-                numPunch++;
-
-            // Contact moves
-            if (move->makesContact == TRUE)
-                numContact++;
 
             // High-crit ratio moves
             if (move->criticalHitStage > 0)
@@ -1907,20 +1906,6 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
 
     // Get total number of offensive moves
     numOffensive = numPhysical + numSpecial + numDynamic;
-
-    // No weather moves found
-    if (hasWeather != MOVE_NONE)
-    {
-        // Check weather ability
-        if (IS_RAIN_ABILITY(abilityId))
-            hasWeather = MOVE_RAIN_DANCE;
-        else if (IS_SUN_ABILITY(abilityId))
-            hasWeather = MOVE_SUNNY_DAY;
-        else if (IS_SAND_ABILITY(abilityId))
-            hasWeather = MOVE_SANDSTORM;
-        else if (IS_HAIL_ABILITY(abilityId))
-            hasWeather = MOVE_HAIL;
-    }
 
     // Loop over the custom items list
     for(i=0; customItemsList[i] != ITEM_NONE; i++)
@@ -1981,27 +1966,15 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
             RETURN_IF_UNIQUE(ITEM_TOXIC_ORB);
         #endif
 
-        #if BFG_ITEM_MIRROR_HERB_SELECTION_CHANCE
-        if ((((hasFlatter == TRUE) && (numSpecial >= BFG_ITEM_MIRROR_HERB_OFFENSIVE_MOVES_REQUIRED)) || ((hasSwagger == TRUE) && ((numPhysical + numDynamic) >= BFG_ITEM_MIRROR_HERB_OFFENSIVE_MOVES_REQUIRED))) && RANDOM_CHANCE(BFG_ITEM_MIRROR_HERB_SELECTION_CHANCE))
-            RETURN_IF_UNIQUE(ITEM_MIRROR_HERB);
+        #if BFG_ITEM_EVIOLITE_SELECTION_CHANCE
+        if (hasEvolution && (GetMonData(mon, MON_DATA_HP_IV) >= BFG_ITEM_IV_ALLOW_EVIOLITE) && RANDOM_CHANCE(BFG_ITEM_EVIOLITE_SELECTION_CHANCE))
+            RETURN_IF_UNIQUE(ITEM_EVIOLITE);
         #endif
 
         #if BFG_ITEM_LOADED_DICE_SELECTION_CHANCE
         for(i=0; i < numMultiHit; i++)
             if (RANDOM_CHANCE(BFG_ITEM_LOADED_DICE_SELECTION_CHANCE))
                 RETURN_IF_UNIQUE(ITEM_LOADED_DICE);
-        #endif
-
-        #if BFG_ITEM_LIGHT_CLAY_SELECTION_CHANCE
-        for(i=0; i < numScreens; i++)
-            if (RANDOM_CHANCE(BFG_ITEM_LIGHT_CLAY_SELECTION_CHANCE))
-                RETURN_IF_UNIQUE(ITEM_LIGHT_CLAY);
-        #endif
-
-        #if BFG_ITEM_WIDE_LENS_SELECTION_CHANCE
-        for(i=0; i < numInaccurate; i++)
-            if ((hasRecycle == FALSE) && (RANDOM_CHANCE(BFG_ITEM_WIDE_LENS_SELECTION_CHANCE)))
-                RETURN_IF_UNIQUE(ITEM_WIDE_LENS);
         #endif
 
         #if BFG_ITEM_SCOPE_LENS_SELECTION_CHANCE || BFG_ITEM_RAZOR_CLAW_SELECTION_CHANCE
@@ -2013,20 +1986,6 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
                 RETURN_IF_UNIQUE(ITEM_RAZOR_CLAW);
         }
         #endif
-        
-        #if BFG_ITEM_PROTECTIVE_PADS_SELECTION_CHANCE
-        // Ensure ability does not affect contact moves
-        if ((abilityId != ABILITY_UNSEEN_FIST) && (abilityId != ABILITY_LONG_REACH) && (abilityId != ABILITY_TOUGH_CLAWS))
-            for(i=0; i<numContact; i++)
-                if (RANDOM_CHANCE(BFG_ITEM_PROTECTIVE_PADS_SELECTION_CHANCE))
-                    RETURN_IF_UNIQUE(ITEM_PROTECTIVE_PADS)
-        #endif
-
-        #if BFG_ITEM_PUNCHING_GLOVE_SELECTION_CHANCE
-        for(i=0; i < numPunch; i++)
-            if (RANDOM_CHANCE(BFG_ITEM_PUNCHING_GLOVE_SELECTION_CHANCE))
-                RETURN_IF_UNIQUE(ITEM_PUNCHING_GLOVE);
-        #endif
 
         #if BFG_ITEM_IRON_BALL_SELECTION_CHANCE
         if (hasTrickRoom && RANDOM_CHANCE(BFG_ITEM_IRON_BALL_SELECTION_CHANCE))
@@ -2037,41 +1996,19 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
         if (IS_TYPE(species, TYPE_POISON) && RANDOM_CHANCE(BFG_ITEM_BLACK_SLUDGE_SELECTION_CHANCE))
             RETURN_IF_UNIQUE(ITEM_BLACK_SLUDGE);
         #endif
-
-        #if BFG_ITEM_TERRAIN_EXTENDER_SELECTION_CHANCE
-        if ((hasTerrain == TRUE || IS_TERRAIN_ABILITY(abilityId)) && RANDOM_CHANCE(BFG_ITEM_TERRAIN_EXTENDER_SELECTION_CHANCE))
-            RETURN_IF_UNIQUE(ITEM_TERRAIN_EXTENDER);
-        #endif
-
-        #if BFG_ITEM_WEATHER_EXTENDER_SELECTION_CHANCE
-        if ((hasWeather != MOVE_NONE) && RANDOM_CHANCE(BFG_ITEM_WEATHER_EXTENDER_SELECTION_CHANCE)) 
-        {
-            // Default item id
-            itemId = ITEM_NONE;
-
-            switch(hasWeather)
-            {
-                case MOVE_RAIN_DANCE:
-                    itemId = ITEM_DAMP_ROCK; 
-                break; 
-                case MOVE_SUNNY_DAY:
-                    itemId = ITEM_HEAT_ROCK;
-                break;
-                case MOVE_SANDSTORM:
-                    itemId = ITEM_SMOOTH_ROCK;
-                break;
-                case MOVE_HAIL:
-                    itemId = ITEM_ICY_ROCK;
-                break;
-            }
-
-            // Return if not duplicate
-            RETURN_IF_UNIQUE(itemId);
-        }
-        #endif
     }
 
     // Recyleable items
+
+    #if BFG_ITEM_MIRROR_HERB_ABILITY_SELECTION_CHANCE
+    if (IS_STAT_REDUCING_ABILITY(abilityId) && ((numSpecial >= BFG_ITEM_MIRROR_HERB_OFFENSIVE_MOVES_REQUIRED) || ((numPhysical + numDynamic) >= BFG_ITEM_MIRROR_HERB_OFFENSIVE_MOVES_REQUIRED)) && RANDOM_CHANCE(BFG_ITEM_MIRROR_HERB_ABILITY_SELECTION_CHANCE))
+        RETURN_IF_UNIQUE(ITEM_MIRROR_HERB);
+    #endif
+    
+    #if BFG_ITEM_MIRROR_HERB_MOVE_SELECTION_CHANCE
+    if ((((hasFlatter == TRUE) && (numSpecial >= BFG_ITEM_MIRROR_HERB_OFFENSIVE_MOVES_REQUIRED)) || ((hasSwagger == TRUE) && ((numPhysical + numDynamic) >= BFG_ITEM_MIRROR_HERB_OFFENSIVE_MOVES_REQUIRED))) && RANDOM_CHANCE(BFG_ITEM_MIRROR_HERB_MOVE_SELECTION_CHANCE))
+        RETURN_IF_UNIQUE(ITEM_MIRROR_HERB);
+    #endif
 
     #if BFG_ITEM_ADRENALINE_ORB_SELECTION_CHANCE
     if (IS_STAT_DROP_ABILITY(abilityId) && RANDOM_CHANCE(BFG_ITEM_ADRENALINE_ORB_SELECTION_CHANCE))
@@ -2081,12 +2018,6 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
     #if BFG_ITEM_ROOM_SERVICE_SELECTION_CHANCE
     if (hasTrickRoom && RANDOM_CHANCE(BFG_ITEM_ROOM_SERVICE_SELECTION_CHANCE))
         RETURN_IF_UNIQUE(ITEM_ROOM_SERVICE);
-    #endif
-
-    #if BFG_ITEM_BLUNDER_POLICY_SELECTION_CHANCE
-    for(i=0; i < numInaccurate; i++)
-        if ((hasRecycle == FALSE) && (RANDOM_CHANCE(BFG_ITEM_BLUNDER_POLICY_SELECTION_CHANCE)))
-            RETURN_IF_UNIQUE(ITEM_BLUNDER_POLICY);
     #endif
 
     #if BFG_ITEM_WHITE_HERB_SELECTION_CHANCE || BFG_ITEM_EJECT_PACK_SELECTION_CHANCE
@@ -2304,37 +2235,6 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
     }
     #endif
 
-    #if BFG_ITEM_STAT_BOOST_BERRY_SELECTION_CHANCE
-    if (RANDOM_CHANCE(BFG_ITEM_STAT_BOOST_BERRY_SELECTION_CHANCE)) {
-
-        // Default item id
-        itemId = ITEM_NONE;
-
-        // Get the stat boosting berry for the nature-boosted stat
-        switch(nature->posStat) 
-        {
-            case STAT_ATK: 
-                itemId = ITEM_LIECHI_BERRY; 
-            break;
-            case STAT_DEF: 
-                itemId = ITEM_GANLON_BERRY;
-            break;
-            case STAT_SPATK:
-                itemId = ITEM_PETAYA_BERRY;
-            break;
-            case STAT_SPDEF: 
-                itemId = ITEM_APICOT_BERRY;
-            break;
-            case STAT_SPEED: 
-                itemId = ITEM_SALAC_BERRY;
-            break;
-        }
-
-        // Return if not duplicate
-        RETURN_IF_UNIQUE(itemId);
-    }
-    #endif
-
     // *** Competitive items with specific use cases ***
 
     #if BFG_ITEM_BOOSTER_ENERGY_SELECTION_CHANCE
@@ -2342,21 +2242,16 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
         RETURN_IF_UNIQUE(ITEM_BOOSTER_ENERGY);
     #endif
 
-    #if BFG_ITEM_LUM_BERRY_PHYSICAL_SELECTION_CHANCE || BFG_ITEM_RAWST_BERRY_PHYSICAL_SELECTION_CHANCE
+    #if BFG_ITEM_LUM_BERRY_SELECTION_CHANCE || BFG_ITEM_RAWST_BERRY_SELECTION_CHANCE
     // Better chance to select lum berry (or rawst berry as backup) for physical Pokemon
     if ((!IS_TYPE(species, TYPE_FIRE)) && ((abilityId != ABILITY_WATER_VEIL) || (abilityId != ABILITY_WATER_BUBBLE) || (abilityId != ABILITY_COMATOSE) || (abilityId != ABILITY_THERMAL_EXCHANGE) || (abilityId != ABILITY_PURIFYING_SALT)  || (abilityId != ABILITY_GOOD_AS_GOLD) || (abilityId != ABILITY_GUTS) || (abilityId != ABILITY_FLARE_BOOST))) {
         for(i=0; i<numPhysical; i++) {
-            if (RANDOM_CHANCE(BFG_ITEM_LUM_BERRY_PHYSICAL_SELECTION_CHANCE))
+            if (RANDOM_CHANCE(BFG_ITEM_LUM_BERRY_SELECTION_CHANCE))
                 RETURN_IF_UNIQUE(ITEM_LUM_BERRY)
-            if (RANDOM_CHANCE(BFG_ITEM_RAWST_BERRY_PHYSICAL_SELECTION_CHANCE))
+            if (RANDOM_CHANCE(BFG_ITEM_RAWST_BERRY_SELECTION_CHANCE))
                 RETURN_IF_UNIQUE(ITEM_RAWST_BERRY)
         }
     }
-    #endif
-
-    #if BFG_ITEM_LUM_BERRY_SELECTION_CHANCE    
-    if (RANDOM_CHANCE(BFG_ITEM_LUM_BERRY_SELECTION_CHANCE))
-        RETURN_IF_UNIQUE(ITEM_LUM_BERRY);
     #endif
 
     #if BFG_ITEM_AIR_BALLOON_2X_SELECTION_CHANCE || BFG_ITEM_AIR_BALLOON_4X_SELECTION_CHANCE
@@ -2367,59 +2262,35 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
         RETURN_IF_UNIQUE(ITEM_AIR_BALLOON);
     #endif
 
-    #if BFG_ITEM_ABILITY_SHIELD_SELECTION_CHANCE
-    if (RANDOM_CHANCE(BFG_ITEM_ABILITY_SHIELD_SELECTION_CHANCE))
-        RETURN_IF_UNIQUE(ITEM_ABILITY_SHIELD);
-    #endif
-
-    #if BFG_ITEM_EJECT_BUTTON_SELECTION_CHANCE
-    if (RANDOM_CHANCE(BFG_ITEM_EJECT_BUTTON_SELECTION_CHANCE))
-        RETURN_IF_UNIQUE(ITEM_EJECT_BUTTON);
-    #endif
-
-    #if BFG_ITEM_RED_CARD_SELECTION_CHANCE
-    if (RANDOM_CHANCE(BFG_ITEM_RED_CARD_SELECTION_CHANCE))
-        RETURN_IF_UNIQUE(ITEM_RED_CARD);
-    #endif
-
     // *** Competitive items for bulky Pokemon ***
 
-    // If Pokemon has *at least* 244 invested in HP
-    if (GetMonData(mon, MON_DATA_HP_IV) >= 244) {
-
-        // Non-recycleable items
-        if (hasRecycle == FALSE) {
-            #if BFG_ITEM_EVIOLITE_SELECTION_CHANCE
-            if (hasEvolution && RANDOM_CHANCE(BFG_ITEM_EVIOLITE_SELECTION_CHANCE))
-                RETURN_IF_UNIQUE(ITEM_EVIOLITE);
-            #endif
-
-            #if BFG_ITEM_ASSAULT_VEST_SELECTION_CHANCE
-            if ((numOffensive == 4) && RANDOM_CHANCE(BFG_ITEM_ASSAULT_VEST_SELECTION_CHANCE))
-                RETURN_IF_UNIQUE(ITEM_ASSAULT_VEST);
-            #endif
-
-            #if BFG_ITEM_ROCKY_HELMET_SELECTION_CHANCE
-            if (RANDOM_CHANCE(BFG_ITEM_ROCKY_HELMET_SELECTION_CHANCE))
-                RETURN_IF_UNIQUE(ITEM_ROCKY_HELMET);
-            #endif
-        }
-
-        #if BFG_ITEM_WEAKNESS_POLICY_SELECTION_CHANCE
-        if ((numOffensive >= BFG_ITEM_WEAKNESS_POLICY_OFFENSIVE_MOVES_REQUIRED) && RANDOM_CHANCE(BFG_ITEM_WEAKNESS_POLICY_SELECTION_CHANCE))
-            RETURN_IF_UNIQUE(ITEM_WEAKNESS_POLICY);
+    // Non-recycleable items
+    if (hasRecycle == FALSE) {
+        #if BFG_ITEM_ASSAULT_VEST_SELECTION_CHANCE
+        if ((numOffensive == 4) && RANDOM_CHANCE(BFG_ITEM_ASSAULT_VEST_SELECTION_CHANCE))
+            RETURN_IF_UNIQUE(ITEM_ASSAULT_VEST);
         #endif
 
-        #if BFG_ITEM_SITRUS_BERRY_SELECTION_CHANCE
-        if (RANDOM_CHANCE(BFG_ITEM_SITRUS_BERRY_SELECTION_CHANCE))
-            RETURN_IF_UNIQUE(ITEM_SITRUS_BERRY);
-        #endif
-
-        #if BFG_ITEM_FIWAM_BERRY_SELECTION_CHANCE
-        if (RANDOM_CHANCE(BFG_ITEM_FIWAM_BERRY_SELECTION_CHANCE))
-            RETURN_IF_UNIQUE(gFiwamConfuseLookup[nature->negStat]);
+        #if BFG_ITEM_ROCKY_HELMET_SELECTION_CHANCE
+        if (RANDOM_CHANCE(BFG_ITEM_ROCKY_HELMET_SELECTION_CHANCE))
+            RETURN_IF_UNIQUE(ITEM_ROCKY_HELMET);
         #endif
     }
+
+    #if BFG_ITEM_WEAKNESS_POLICY_SELECTION_CHANCE
+    if ((numOffensive >= BFG_ITEM_WEAKNESS_POLICY_OFFENSIVE_MOVES_REQUIRED) && RANDOM_CHANCE(BFG_ITEM_WEAKNESS_POLICY_SELECTION_CHANCE))
+        RETURN_IF_UNIQUE(ITEM_WEAKNESS_POLICY);
+    #endif
+
+    #if BFG_ITEM_SITRUS_BERRY_SELECTION_CHANCE
+    if (RANDOM_CHANCE(BFG_ITEM_SITRUS_BERRY_SELECTION_CHANCE))
+        RETURN_IF_UNIQUE(ITEM_SITRUS_BERRY);
+    #endif
+
+    #if BFG_ITEM_FIWAM_BERRY_SELECTION_CHANCE
+    if (RANDOM_CHANCE(BFG_ITEM_FIWAM_BERRY_SELECTION_CHANCE))
+        RETURN_IF_UNIQUE(gFiwamConfuseLookup[nature->negStat]);
+    #endif
 
     // *** Competitive items with generic use cases ***
 
@@ -2428,11 +2299,6 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
         #if BFG_ITEM_SAFETY_GOGGLES_SELECTION_CHANCE
         if (!((IS_TYPE(species, TYPE_GRASS)) || (IS_SLEEP_IMMUNE(abilityId)) || (abilityId == ABILITY_OVERCOAT) || (abilityId == ABILITY_SWEET_VEIL)) && RANDOM_CHANCE(BFG_ITEM_SAFETY_GOGGLES_SELECTION_CHANCE))
             RETURN_IF_UNIQUE(ITEM_SAFETY_GOGGLES);
-        #endif
-            
-        #if BFG_ITEM_LIFE_ORB_SELECTION_CHANCE
-        if ((numOffensive >= BFG_ITEM_LIFE_ORB_OFFENSIVE_MOVES_REQUIRED) && RANDOM_CHANCE(BFG_ITEM_LIFE_ORB_SELECTION_CHANCE))
-            RETURN_IF_UNIQUE(ITEM_LIFE_ORB);
         #endif
 
         #if BFG_ITEM_CLEAR_AMULET_SELECTION_CHANCE
@@ -2446,21 +2312,26 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
         if ((!(IS_TYPE(species, TYPE_GHOST))) && (abilityId != ABILITY_INNER_FOCUS) && (abilityId != ABILITY_SHIELD_DUST) && (abilityId != ABILITY_STEADFAST) && RANDOM_CHANCE(BFG_ITEM_COVERT_CLOAK_SELECTION_CHANCE))
             RETURN_IF_UNIQUE(ITEM_COVERT_CLOAK);
         #endif
+            
+        #if BFG_ITEM_LIFE_ORB_SELECTION_CHANCE
+        if ((numOffensive >= BFG_ITEM_LIFE_ORB_OFFENSIVE_MOVES_REQUIRED) && RANDOM_CHANCE(BFG_ITEM_LIFE_ORB_SELECTION_CHANCE))
+            RETURN_IF_UNIQUE(ITEM_LIFE_ORB);
+        #endif
 
         // Choice Items
 
         #if BFG_ITEM_CHOICE_BAND_SELECTION_CHANCE
-        if ((hasSingleUseMove == FALSE) && (hasRecycle == FALSE) && ((numPhysical + numDynamic) >= BFG_ITEM_CHOICE_OFFENSIVE_MOVES_REQUIRED) && RANDOM_CHANCE(BFG_ITEM_CHOICE_BAND_SELECTION_CHANCE))
+        if ((hasSingleUseMove == FALSE) && ((numPhysical + numDynamic) >= BFG_ITEM_CHOICE_OFFENSIVE_MOVES_REQUIRED) && RANDOM_CHANCE(BFG_ITEM_CHOICE_BAND_SELECTION_CHANCE))
             RETURN_IF_UNIQUE(ITEM_CHOICE_BAND);
         #endif
 
         #if BFG_ITEM_CHOICE_SPECS_SELECTION_CHANCE
-        if ((hasSingleUseMove == FALSE) && (hasRecycle == FALSE) && ((numSpecial + numDynamic) >= BFG_ITEM_CHOICE_OFFENSIVE_MOVES_REQUIRED) && RANDOM_CHANCE(BFG_ITEM_CHOICE_SPECS_SELECTION_CHANCE))
+        if ((hasSingleUseMove == FALSE) && ((numSpecial + numDynamic) >= BFG_ITEM_CHOICE_OFFENSIVE_MOVES_REQUIRED) && RANDOM_CHANCE(BFG_ITEM_CHOICE_SPECS_SELECTION_CHANCE))
             RETURN_IF_UNIQUE(ITEM_CHOICE_SPECS);
         #endif
 
         #if BFG_ITEM_CHOICE_SCARF_SELECTION_CHANCE
-        if ((hasSingleUseMove == FALSE) && (hasRecycle == FALSE) && (numOffensive >= BFG_ITEM_CHOICE_OFFENSIVE_MOVES_REQUIRED) && RANDOM_CHANCE(BFG_ITEM_CHOICE_SCARF_SELECTION_CHANCE))
+        if ((hasSingleUseMove == FALSE) && (numOffensive >= BFG_ITEM_CHOICE_OFFENSIVE_MOVES_REQUIRED) && RANDOM_CHANCE(BFG_ITEM_CHOICE_SCARF_SELECTION_CHANCE))
             RETURN_IF_UNIQUE(ITEM_CHOICE_SCARF);
         #endif
     }

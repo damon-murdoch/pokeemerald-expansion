@@ -332,9 +332,9 @@
 #define BFG_EV_INVEST_NO_STATS      0   // No EVs at all
 #define BFG_EV_INVEST_TWO_STATS     2   // 255/255 will be invested in 2 stats
 #define BFG_EV_INVEST_THREE_STATS   3   // 252/252/4 will be invested across 3 stats
-#define BFG_EV_INVEST_FIVE_STATS    5   // 252/244/4/4/4 will be invested across 5 stats (wip)
+#define BFG_EV_INVEST_FIVE_STATS    5   // 252/244/4/4/4 will be invested across 5 stats
 
-#define BFG_EV_INVEST_NUM_STATS     BFG_EV_INVEST_FIVE_STATS
+#define BFG_EV_INVEST_NUM_STATS     BFG_EV_INVEST_THREE_STATS
 
 #define BFG_OPTIMIZE_IVS    TRUE    // If set to true, ivs will be optimised
                                     // i.e. attack and speed ivs will be set
@@ -365,14 +365,13 @@
 #define BFG_MOVE_ALLOW_EGG_MOVES TRUE   // Allow egg moves to be used
 
 #define BFG_MOVE_IGNORE_TYPE_COUNT FALSE    // Ignore 1-per-type limit for moves
-#define BFG_MOVE_DEFAULT_RATING     60      // Default rating for moves which do not have one
 #define BFG_MOVE_QUICK_REPLACE      FALSE
 // If this is set to true, the move lookup table
 // 'gBattleFrontierMoveStatusAllowSelect' will be used
 #define BFG_MOVE_USE_STATUS_ALLOW_LIST TRUE
 
 #define BFG_MOVE_RATING_DEFAULT 0    // Default Rating
-#define BFG_MOVE_STAB_MODIFIER 60    // +x to rating for same-type-attack-bonus
+#define BFG_MOVE_STAB_MODIFIER 60    // +x to rating for same-type-attack-bonus (also -x for non-stab normal attacks)
 #define BFG_MOVE_ABILITY_MODIFIER 60 // +x to rating for ability synergy moves
 #define BFG_MOVE_DOUBLES_MODIFIER 30 // +x to rating for spread moves in doubles
 
@@ -387,13 +386,14 @@
 #define BFG_MOVE_SPECIAL_PROTECT_SELECTION_CHANCE   1   // Protect Selection Chance (Speed Boost / Moody)
 #define BFG_MOVE_PROTECT_SELECTION_CHANCE           0   // Protect Selection Chance (Speed Boost / Moody)
 #define BFG_MOVE_RECOVER_SELECTION_CHANCE           4   // Recovery Selection Chance (Per-Move)
-#define BFG_MOVE_WEATHER_ATTACK_SELECTION_CHANCE    1   // Weather Ball Selection Chance (Weather abilities)
-#define BFG_MOVE_TERRAIN_ATTACK_SELECTION_CHANCE    1   // Grassy Glide Selection Chance (Grassy abilities)
+#define BFG_MOVE_WEATHER_ATTACK_SELECTION_CHANCE    1   // Weather Attack Selection Chance (w/ Weather abilities)
+#define BFG_MOVE_TERRAIN_ATTACK_SELECTION_CHANCE    1   // Terrain Attack Selection Chance (w/ Terrain abilities)
 #define BFG_MOVE_FOUL_PLAY_SELECTION_CHANCE         4   // Foul Play Selection Chance (Non-Physical Set)
-#define BFG_MOVE_WEATHER_SELECTION_CHANCE           1   // Weather Selection Chance (for relevant ability mons)
-#define BFG_MOVE_EXPLODE_SELECTION_CHANCE           28  // Explosion Selection Chance (Per-Move)
-#define BFG_MOVE_OHKO_SELECTION_CHANCE              28  // OHKO Move Selection Chance (Bulky mons)
-#define BFG_MOVE_REST_SELECTION_CHANCE              14  // Rest selection chance (Bulky mons)
+#define BFG_MOVE_WEATHER_SELECTION_CHANCE           4   // Weather Selection Chance (for relevant ability mons)
+#define BFG_MOVE_EXPLODE_SELECTION_CHANCE           16  // Explosion Selection Chance (Per-Move)
+#define BFG_MOVE_FLING_SELECTION_CHANCE             16  // Fling Selection Chance (+spe/spe invested mons)
+#define BFG_MOVE_OHKO_SELECTION_CHANCE              16  // OHKO Move Selection Chance (Bulky mons)
+#define BFG_MOVE_REST_SELECTION_CHANCE              16  // Rest selection chance (Bulky mons)
 
 // *** ITEMS ***
 
@@ -402,6 +402,8 @@
 #define BFG_ITEM_IV_ALLOW_MEGA      21  // Min. IVs required for Mega Evolution
 #define BFG_ITEM_IV_ALLOW_ZMOVE     21  // Min. IVs required for Z-Moves
 #define BFG_ITEM_IV_ALLOW_GMAX      21  // Min. IVs required for Gigantamax
+
+#define BFG_ITEM_IV_ALLOW_EVIOLITE  21  // Min. IVs required for Eviolite
 
 // Allow items in different Battle Facilities
 // Please note, Megas/Zmoves/Gmax ignore these flags
@@ -420,51 +422,46 @@
 #define BFG_ITEM_FLAME_ORB_MOVES_REQUIRED                   3
 
 // Common Items
-#define BFG_ITEM_WEAKNESS_POLICY_SELECTION_CHANCE   4
-#define BFG_ITEM_SAFETY_GOGGLES_SELECTION_CHANCE    4
-#define BFG_ITEM_ASSAULT_VEST_SELECTION_CHANCE      4
-#define BFG_ITEM_ROCKY_HELMET_SELECTION_CHANCE      4
+#define BFG_ITEM_SAFETY_GOGGLES_SELECTION_CHANCE    8
+#define BFG_ITEM_WEAKNESS_POLICY_SELECTION_CHANCE   8
+#define BFG_ITEM_ASSAULT_VEST_SELECTION_CHANCE      8
+#define BFG_ITEM_ROCKY_HELMET_SELECTION_CHANCE      8
 #define BFG_ITEM_CLEAR_AMULET_SELECTION_CHANCE      4
 #define BFG_ITEM_COVERT_CLOAK_SELECTION_CHANCE      4
-#define BFG_ITEM_FOCUS_SASH_SELECTION_CHANCE        4
 #define BFG_ITEM_LIFE_ORB_SELECTION_CHANCE          4
+#define BFG_ITEM_FOCUS_SASH_SELECTION_CHANCE        2
 #define BFG_ITEM_EVIOLITE_SELECTION_CHANCE          1
 
 // Choice Items
+#define BFG_ITEM_CHOICE_SCARF_SELECTION_CHANCE      4 
 #define BFG_ITEM_CHOICE_SPECS_SELECTION_CHANCE      8
-#define BFG_ITEM_CHOICE_SCARF_SELECTION_CHANCE      8
 #define BFG_ITEM_CHOICE_BAND_SELECTION_CHANCE       8
 
 // Ability-Specific Items
-#define BFG_ITEM_TERRAIN_EXTENDER_SELECTION_CHANCE  16
-#define BFG_ITEM_WEATHER_EXTENDER_SELECTION_CHANCE  16
-#define BFG_ITEM_ADRENALINE_ORB_SELECTION_CHANCE    8
-#define BFG_ITEM_BOOSTER_ENERGY_SELECTION_CHANCE    4
-#define BFG_ITEM_FLAME_ORB_SELECTION_CHANCE         1
-#define BFG_ITEM_TOXIC_ORB_SELECTION_CHANCE         1
+#define BFG_ITEM_ADRENALINE_ORB_SELECTION_CHANCE    8 // competitive / defiant / etc.
+#define BFG_ITEM_BOOSTER_ENERGY_SELECTION_CHANCE    4 // proto / quark drive
+#define BFG_ITEM_FLAME_ORB_SELECTION_CHANCE         1 // flare boost / etc.
+#define BFG_ITEM_TOXIC_ORB_SELECTION_CHANCE         1 // toxic heal / etc.
+
+// Mirror Herb (Two Use Cases)
+#define BFG_ITEM_MIRROR_HERB_ABILITY_SELECTION_CHANCE 8 // intimidate
+#define BFG_ITEM_MIRROR_HERB_MOVE_SELECTION_CHANCE    2 // hasFlatter & hasSwagger
 
 // Move-Specific Items
 
-#define BFG_ITEM_BLUNDER_POLICY_SELECTION_CHANCE    16  // numInaccurate
-#define BFG_ITEM_PUNCHING_GLOVE_SELECTION_CHANCE    16  // numPunch
 #define BFG_ITEM_ROOM_SERVICE_SELECTION_CHANCE      8   // hasTrickRoom
 #define BFG_ITEM_CHESTO_BERRY_SELECTION_CHANCE      1   // hasRest
 #define BFG_ITEM_THROAT_SPRAY_SELECTION_CHANCE      4   // numSound
 #define BFG_ITEM_LOADED_DICE_SELECTION_CHANCE       4   // numMultiHit
-#define BFG_ITEM_LIGHT_CLAY_SELECTION_CHANCE        4   // numScreens
-#define BFG_ITEM_SCOPE_LENS_SELECTION_CHANCE        8   // numCritModifier
-#define BFG_ITEM_RAZOR_CLAW_SELECTION_CHANCE        8   // numCritModifier
-#define BFG_ITEM_MENTAL_HERB_SELECTION_CHANCE       8   // numStatus
-#define BFG_ITEM_MIRROR_HERB_SELECTION_CHANCE       8   // hasFlatter & hasSwagger
+#define BFG_ITEM_SCOPE_LENS_SELECTION_CHANCE        16  // numCritModifier
+#define BFG_ITEM_RAZOR_CLAW_SELECTION_CHANCE        16  // numCritModifier
+#define BFG_ITEM_MENTAL_HERB_SELECTION_CHANCE       16  // numStatus
 #define BFG_ITEM_WHITE_HERB_SELECTION_CHANCE        8   // numStatDrop
 #define BFG_ITEM_EJECT_PACK_SELECTION_CHANCE        8   // numStatDrop
 #define BFG_ITEM_RAZOR_FANG_SELECTION_CHANCE        1   // hasFling
 #define BFG_ITEM_KINGS_ROCK_SELECTION_CHANCE        1   // hasFling
 #define BFG_ITEM_POWER_HERB_SELECTION_CHANCE        1   // hasMultiTurn
-#define BFG_ITEM_WIDE_LENS_SELECTION_CHANCE         16  // numInaccurate
-#define BFG_ITEM_IRON_BALL_SELECTION_CHANCE         16  // hasTrickRoom
-
-#define BFG_ITEM_PROTECTIVE_PADS_SELECTION_CHANCE   32  // numContact
+#define BFG_ITEM_IRON_BALL_SELECTION_CHANCE         8   // hasTrickRoom
 
 // Species-specific items
 #define BFG_ITEM_LIGHT_BALL_SELECTION_CHANCE        1       // Pikachu
@@ -481,32 +478,25 @@
 #define BFG_ITEM_AIR_BALLOON_2X_SELECTION_CHANCE    8
 #define BFG_ITEM_BLACK_SLUDGE_SELECTION_CHANCE      8
 
-#define BFG_ITEM_ABILITY_SHIELD_SELECTION_CHANCE    8
-#define BFG_ITEM_EJECT_BUTTON_SELECTION_CHANCE      16
-#define BFG_ITEM_RED_CARD_SELECTION_CHANCE          16
-
 // Type-Specific Items
 #define BFG_ITEM_STAB_GEM_SELECTION_CHANCE      8
 #define BFG_ITEM_GEM_SELECTION_CHANCE           0
 
-#define BFG_ITEM_STAB_TYPE_SELECTION_CHANCE     8
+#define BFG_ITEM_STAB_TYPE_SELECTION_CHANCE     0
 #define BFG_ITEM_TYPE_SELECTION_CHANCE          0
 
 #define BFG_ITEM_STAB_ZMOVE_SELECTION_CHANCE    8 // Excludes signature Z-Moves
 #define BFG_ITEM_ZMOVE_SELECTION_CHANCE         0 // Excludes signature Z-Moves
 
 // Common Berries
-#define BFG_ITEM_SITRUS_BERRY_SELECTION_CHANCE          4
-#define BFG_ITEM_LUM_BERRY_SELECTION_CHANCE             8
-#define BFG_ITEM_LUM_BERRY_PHYSICAL_SELECTION_CHANCE    8   // Physical Attacker (Per Physical Move)
-#define BFG_ITEM_RAWST_BERRY_PHYSICAL_SELECTION_CHANCE  8   // Physical Attacker (Per Physical Move)
+#define BFG_ITEM_SITRUS_BERRY_SELECTION_CHANCE  4
+#define BFG_ITEM_FIWAM_BERRY_SELECTION_CHANCE   4
+#define BFG_ITEM_LUM_BERRY_SELECTION_CHANCE     8   // Physical Attacker (Per Physical Move)
+#define BFG_ITEM_RAWST_BERRY_SELECTION_CHANCE   8   // Physical Attacker (Per Physical Move)
 
 // Resist / Weakness Berries
 #define BFG_ITEM_RESIST_BERRY_4X_SELECTION_CHANCE   4
-#define BFG_ITEM_RESIST_BERRY_2X_SELECTION_CHANCE   16
-
-#define BFG_ITEM_STAT_BOOST_BERRY_SELECTION_CHANCE  16
-#define BFG_ITEM_FIWAM_BERRY_SELECTION_CHANCE       8
+#define BFG_ITEM_RESIST_BERRY_2X_SELECTION_CHANCE   8
 
 // Custom list of items which can be selected, in
 // the event that the pokemon has the move 'recycle'.
@@ -522,7 +512,11 @@
     ITEM_MICLE_BERRY, \
     ITEM_ROWAP_BERRY, \
     ITEM_CHILAN_BERRY, \
-    ITEM_SITRUS_BERRY, \
+    ITEM_LIECHI_BERRY, \
+    ITEM_GANLON_BERRY, \
+    ITEM_PETAYA_BERRY, \
+    ITEM_APICOT_BERRY, \
+    ITEM_SALAC_BERRY, \
     ITEM_LUM_BERRY, \
     ITEM_KEE_BERRY, \
     ITEM_RED_CARD
@@ -533,16 +527,13 @@
 // above flags are matched.
 #define BFG_CUSTOM_ITEMS_LIST \
     BFG_RECYCLE_ITEMS_LIST, \
-    ITEM_ABILITY_SHIELD, \
     ITEM_BRIGHT_POWDER, \
-    ITEM_ROCKY_HELMET, \
-    ITEM_CLEAR_AMULET, \
-    ITEM_COVERT_CLOAK, \
+    ITEM_LAX_INCENSE, \
+    ITEM_RAZOR_FANG, \
     ITEM_FOCUS_BAND, \
     ITEM_QUICK_CLAW, \
     ITEM_KINGS_ROCK, \
-    ITEM_SHELL_BELL, \
-    ITEM_LEFTOVERS
+    ITEM_SHELL_BELL
 
 #endif // BFG_NO_ITEM_SELECTION_CHANCE != 1
 #endif // GUARD_CONFIG_BATTLE_FRONTIER_GENERATOR_H

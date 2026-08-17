@@ -46,6 +46,7 @@ const bool8 gBattleFrontierMoveAlwaysSelectDoubles[MOVES_COUNT] =
 
 #define NEVER_SELECT_COMMON \
 	[MOVE_SNORE] = TRUE, \
+	[MOVE_FLING] = TRUE, \
 	[MOVE_ROUND] = TRUE, \
 	[MOVE_UPROAR] = TRUE, \
 	[MOVE_SPIT_UP] = TRUE, \
