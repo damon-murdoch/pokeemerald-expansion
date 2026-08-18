@@ -125,7 +125,7 @@ bool8 TestRandomPokemonGenerator(struct Pokemon * mon, u16 speciesId, u8 level, 
         EXPECT_EQ(GetMonData(mon, MON_DATA_SPATK_IV), fixedIV);
         EXPECT_EQ(GetMonData(mon, MON_DATA_SPDEF_IV), fixedIV);
 
-        #if BFG_OPTIMIZE_IVS
+        #if BFG_OPTIMIZE_ATK_IV
         // Optimised IVs
         u8 nature = GetNature(mon);
         // Attack stat should be 0, if reducing
@@ -157,52 +157,54 @@ bool8 TestRandomPokemonGenerator(struct Pokemon * mon, u16 speciesId, u8 level, 
 
 // Standard
 
-BFG_RandomPokemonGenerator_Test("Generate Random Incineroar (D,LVL50,31IV)",SPECIES_INCINEROAR, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
-BFG_RandomPokemonGenerator_Test("Generate Random Amoonguss (D,LVL50,31IV)",SPECIES_AMOONGUSS, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
-BFG_RandomPokemonGenerator_Test("Generate Random Clefairy (D,LVL50,31IV)",SPECIES_CLEFAIRY, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
-BFG_RandomPokemonGenerator_Test("Generate Random Omastar (D,LVL50,31IV)",SPECIES_OMASTAR, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Incineroar (D,LVL50,31IV)",SPECIES_INCINEROAR, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
+BFG_RandomPokemonGenerator_Test("Generate Random Amoonguss (D,LVL50,31IV)",SPECIES_AMOONGUSS, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
+BFG_RandomPokemonGenerator_Test("Generate Random Omastar (D,LVL50,31IV)",SPECIES_OMASTAR, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
 
 // Weather Abilities
 
-BFG_RandomPokemonGenerator_Test("Generate Random Tyranitar (D,LVL50,31IV)",SPECIES_TYRANITAR, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
-BFG_RandomPokemonGenerator_Test("Generate Random Pelipper (D,LVL50,31IV)",SPECIES_PELIPPER, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
-BFG_RandomPokemonGenerator_Test("Generate Random Abomasnow (D,LVL50,31IV)",SPECIES_ABOMASNOW, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
-BFG_RandomPokemonGenerator_Test("Generate Random Torkoal (D,LVL50,31IV)",SPECIES_TORKOAL, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Tyranitar (D,LVL50,31IV)",SPECIES_TYRANITAR, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
+BFG_RandomPokemonGenerator_Test("Generate Random Pelipper (D,LVL50,31IV)",SPECIES_PELIPPER, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
+BFG_RandomPokemonGenerator_Test("Generate Random Ninetales-Alola (D,LVL50,31IV)",SPECIES_NINETALES_ALOLA, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
+BFG_RandomPokemonGenerator_Test("Generate Random Abomasnow (D,LVL50,31IV)",SPECIES_ABOMASNOW, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
+BFG_RandomPokemonGenerator_Test("Generate Random Ninetales (D,LVL50,31IV)",SPECIES_NINETALES, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
+BFG_RandomPokemonGenerator_Test("Generate Random Torkoal (D,LVL50,31IV)",SPECIES_TORKOAL, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
 
 // Terrain Abilities
 
-BFG_RandomPokemonGenerator_Test("Generate Random Tapu Lele (D,LVL50,31IV)",SPECIES_TAPU_LELE, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
-BFG_RandomPokemonGenerator_Test("Generate Random Tapu Koko (D,LVL50,31IV)",SPECIES_TAPU_KOKO, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
-BFG_RandomPokemonGenerator_Test("Generate Random Rillaboom (D,LVL50,31IV)",SPECIES_RILLABOOM, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
-BFG_RandomPokemonGenerator_Test("Generate Random Tapu Fini (D,LVL50,31IV)",SPECIES_TAPU_FINI, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Tapu Lele (D,LVL50,31IV)",SPECIES_TAPU_LELE, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
+BFG_RandomPokemonGenerator_Test("Generate Random Tapu Koko (D,LVL50,31IV)",SPECIES_TAPU_KOKO, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
+BFG_RandomPokemonGenerator_Test("Generate Random Rillaboom (D,LVL50,31IV)",SPECIES_RILLABOOM, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
+BFG_RandomPokemonGenerator_Test("Generate Random Tapu Fini (D,LVL50,31IV)",SPECIES_TAPU_FINI, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
 
 // Other Always-Select Abilities
 
-BFG_RandomPokemonGenerator_Test("Generate Random Arcanine-Hisui (D,LVL50,31IV)",SPECIES_ARCANINE_HISUI, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
-BFG_RandomPokemonGenerator_Test("Generate Random Weezing-Galar (D,LVL50,31IV)",SPECIES_WEEZING_GALAR, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
-BFG_RandomPokemonGenerator_Test("Generate Random Arcanine (D,LVL50,31IV)",SPECIES_ARCANINE, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
-BFG_RandomPokemonGenerator_Test("Generate Random Ditto (D,LVL50,31IV)",SPECIES_DITTO, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Arcanine-Hisui (D,LVL50,31IV)",SPECIES_ARCANINE_HISUI, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
+BFG_RandomPokemonGenerator_Test("Generate Random Weezing-Galar (D,LVL50,31IV)",SPECIES_WEEZING_GALAR, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
+BFG_RandomPokemonGenerator_Test("Generate Random Arcanine (D,LVL50,31IV)",SPECIES_ARCANINE, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
+BFG_RandomPokemonGenerator_Test("Generate Random Ditto (D,LVL50,31IV)",SPECIES_DITTO, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
 
 // Legendaries
 
-BFG_RandomPokemonGenerator_Test("Generate Random Cresselia (D,LVL50,31IV)",SPECIES_CRESSELIA, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
-BFG_RandomPokemonGenerator_Test("Generate Random Chien-Pao (D,LVL50,31IV)",SPECIES_CHIEN_PAO, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
-BFG_RandomPokemonGenerator_Test("Generate Random Ogerpon (D,LVL50,31IV)",SPECIES_OGERPON, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
-BFG_RandomPokemonGenerator_Test("Generate Random Nihilego (D,LVL50,31IV)",SPECIES_NIHILEGO, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Cresselia (D,LVL50,31IV)",SPECIES_CRESSELIA, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
+BFG_RandomPokemonGenerator_Test("Generate Random Chien-Pao (D,LVL50,31IV)",SPECIES_CHIEN_PAO, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
+BFG_RandomPokemonGenerator_Test("Generate Random Ogerpon (D,LVL50,31IV)",SPECIES_OGERPON, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
+BFG_RandomPokemonGenerator_Test("Generate Random Nihilego (D,LVL50,31IV)",SPECIES_NIHILEGO, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
 
 // Forme Changes
 
-BFG_RandomPokemonGenerator_Test("Generate Random Zamazenta (D,LVL50,31IV)",SPECIES_ZAMAZENTA, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES,1);
-BFG_RandomPokemonGenerator_Test("Generate Random Zacian (D,LVL50,31IV)",SPECIES_ZACIAN, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Zamazenta (D,LVL50,31IV)",SPECIES_ZAMAZENTA, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES,4);
+BFG_RandomPokemonGenerator_Test("Generate Random Zacian (D,LVL50,31IV)",SPECIES_ZACIAN, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES,4);
 
-BFG_RandomPokemonGenerator_Test("Generate Random Kangaskhan (D,LVL50,31IV)",SPECIES_KANGASKHAN, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES,1);
-BFG_RandomPokemonGenerator_Test("Generate Random Greninja (No Mega) (D,LVL50,31IV)",SPECIES_GRENINJA, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Charizard (D,LVL50,31IV)",SPECIES_CHARIZARD, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES,4);
+BFG_RandomPokemonGenerator_Test("Generate Random Kangaskhan (D,LVL50,31IV)",SPECIES_KANGASKHAN, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES,4);
+BFG_RandomPokemonGenerator_Test("Generate Random Greninja (No Mega) (D,LVL50,31IV)",SPECIES_GRENINJA, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES,4);
 
-BFG_RandomPokemonGenerator_Test("Generate Random Ogerpon (Any) (D,LVL50,31IV)",SPECIES_OGERPON, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES,1);
-BFG_RandomPokemonGenerator_Test("Generate Random Ludicolo (Any) (D,LVL50,31IV)",SPECIES_LUDICOLO, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
-BFG_RandomPokemonGenerator_Test("Generate Random Flutter Mane (Any) (D,LVL50,31IV)",SPECIES_FLUTTER_MANE, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
-BFG_RandomPokemonGenerator_Test("Generate Random Iron Hands (Any) (D,LVL50,31IV)",SPECIES_IRON_HANDS, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
-BFG_RandomPokemonGenerator_Test("Generate Random Chi-Yu (Any) (D,LVL50,31IV)",SPECIES_CHI_YU, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
-BFG_RandomPokemonGenerator_Test("Generate Random Landorus-Therian (Any) (D,LVL50,31IV)",SPECIES_LANDORUS_THERIAN, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Ogerpon (Any) (D,LVL50,31IV)",SPECIES_OGERPON, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES,4);
+BFG_RandomPokemonGenerator_Test("Generate Random Ludicolo (Any) (D,LVL50,31IV)",SPECIES_LUDICOLO, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
+BFG_RandomPokemonGenerator_Test("Generate Random Flutter Mane (Any) (D,LVL50,31IV)",SPECIES_FLUTTER_MANE, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
+BFG_RandomPokemonGenerator_Test("Generate Random Iron Hands (Any) (D,LVL50,31IV)",SPECIES_IRON_HANDS, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
+BFG_RandomPokemonGenerator_Test("Generate Random Chi-Yu (Any) (D,LVL50,31IV)",SPECIES_CHI_YU, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
+BFG_RandomPokemonGenerator_Test("Generate Random Landorus-Therian (Any) (D,LVL50,31IV)",SPECIES_LANDORUS_THERIAN, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,4);
 #endif // BFG_TEST_SET_GENERATION == TRUE
 #endif // BFG_FLAG_FRONTIER_GENERATOR != 0
