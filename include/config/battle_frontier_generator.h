@@ -317,26 +317,13 @@
 #define BFG_STAT_SELECT_RANDOM FALSE
 #if BFG_STAT_SELECT_RANDOM == FALSE
 
-#define BFG_PRIORITISE_ATK_SPA_OVER_DEF_SPD     FALSE   // Prioritise atk/spatk attack over def/spdef
-#define BFG_PRIORITISE_ATK_SPA_OVER_SPE         TRUE    // Prioritise atk/spatk over speed
-
-#define BFG_NATURE_NEG_SPE_BASE     50  // Any mons below this base speed stat will be given 0spe, reducing natures (set to 0 to ignore this value)
-
-#define BFG_EV_METHOD_SIMPLE        0   // Invest in nature-boosted stat, then hp (if def avg. is higher) or speed (if speed is higher than def avg.)
-#define BFG_EV_METHOD_HIGHEST_FIRST 1   // Loop over each stat, investing in the highest base stats first (including nature-boosted stat)
-#define BFG_EV_METHOD               BFG_EV_METHOD_SIMPLE
-
-#define BFG_EV_HP_OFFSET 13   //  HP selection chance is multiplied by (n * mod) / 10;
-                                //  e.g. (80 * 13) / 10 = 104
-
 #define BFG_EV_INVEST_NO_STATS      0   // No EVs at all
 #define BFG_EV_INVEST_TWO_STATS     2   // 255/255 will be invested in 2 stats
 #define BFG_EV_INVEST_THREE_STATS   3   // 252/252/4 will be invested across 3 stats
-#define BFG_EV_INVEST_FIVE_STATS    5   // 252/244/4/4/4 will be invested across 5 stats
 
 #define BFG_EV_INVEST_NUM_STATS     BFG_EV_INVEST_THREE_STATS
 
-#define BFG_OPTIMIZE_IVS    TRUE    // If set to true, ivs will be optimised
+#define BFG_OPTIMIZE_ATK_IV    TRUE    // If set to true, ivs will be optimised
                                     // i.e. attack and speed ivs will be set
                                     // to 0 if a reducing nature is used
 
@@ -426,10 +413,10 @@
 #define BFG_ITEM_WEAKNESS_POLICY_SELECTION_CHANCE   8
 #define BFG_ITEM_ASSAULT_VEST_SELECTION_CHANCE      8
 #define BFG_ITEM_ROCKY_HELMET_SELECTION_CHANCE      8
-#define BFG_ITEM_CLEAR_AMULET_SELECTION_CHANCE      4
-#define BFG_ITEM_COVERT_CLOAK_SELECTION_CHANCE      4
-#define BFG_ITEM_LIFE_ORB_SELECTION_CHANCE          4
-#define BFG_ITEM_FOCUS_SASH_SELECTION_CHANCE        2
+#define BFG_ITEM_CLEAR_AMULET_SELECTION_CHANCE      8
+#define BFG_ITEM_COVERT_CLOAK_SELECTION_CHANCE      8
+#define BFG_ITEM_LIFE_ORB_SELECTION_CHANCE          8
+#define BFG_ITEM_FOCUS_SASH_SELECTION_CHANCE        4
 #define BFG_ITEM_EVIOLITE_SELECTION_CHANCE          1
 
 // Choice Items
@@ -474,8 +461,8 @@
 #define BFG_ITEM_SOUL_DEW_SELECTION_CHANCE          8       // Latias/Latios
 
 // Other Items
-#define BFG_ITEM_AIR_BALLOON_4X_SELECTION_CHANCE    4
-#define BFG_ITEM_AIR_BALLOON_2X_SELECTION_CHANCE    8
+#define BFG_ITEM_AIR_BALLOON_4X_SELECTION_CHANCE    8
+#define BFG_ITEM_AIR_BALLOON_2X_SELECTION_CHANCE    16
 #define BFG_ITEM_BLACK_SLUDGE_SELECTION_CHANCE      8
 
 // Type-Specific Items
@@ -491,8 +478,7 @@
 // Common Berries
 #define BFG_ITEM_SITRUS_BERRY_SELECTION_CHANCE  4
 #define BFG_ITEM_FIWAM_BERRY_SELECTION_CHANCE   4
-#define BFG_ITEM_LUM_BERRY_SELECTION_CHANCE     8   // Physical Attacker (Per Physical Move)
-#define BFG_ITEM_RAWST_BERRY_SELECTION_CHANCE   8   // Physical Attacker (Per Physical Move)
+#define BFG_ITEM_LUM_BERRY_SELECTION_CHANCE     8
 
 // Resist / Weakness Berries
 #define BFG_ITEM_RESIST_BERRY_4X_SELECTION_CHANCE   4

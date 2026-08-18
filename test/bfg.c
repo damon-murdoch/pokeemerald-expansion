@@ -125,7 +125,7 @@ bool8 TestRandomPokemonGenerator(struct Pokemon * mon, u16 speciesId, u8 level, 
         EXPECT_EQ(GetMonData(mon, MON_DATA_SPATK_IV), fixedIV);
         EXPECT_EQ(GetMonData(mon, MON_DATA_SPDEF_IV), fixedIV);
 
-        #if BFG_OPTIMIZE_IVS
+        #if BFG_OPTIMIZE_ATK_IV
         // Optimised IVs
         u8 nature = GetNature(mon);
         // Attack stat should be 0, if reducing
