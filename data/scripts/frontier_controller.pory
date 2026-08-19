@@ -295,7 +295,7 @@ script BattleFrontierController_EventScript_ControllerChangeMusicPage1 {
 		case 0:
 			setvar(VAR_FRONTIER_BGM, 0)
 		case 1:
-			setvar(VAR_FRONTIER_BGM, 20)
+			setvar(VAR_FRONTIER_BGM, 17)
 		case 2:
 			setvar(VAR_FRONTIER_BGM, 1)
 		case 3:
@@ -305,7 +305,7 @@ script BattleFrontierController_EventScript_ControllerChangeMusicPage1 {
 		case 5:
 			setvar(VAR_FRONTIER_BGM, 4)
 		case MULTI_L_PRESSED:
-			goto(BattleFrontierController_EventScript_ControllerChangeMusicPage4)
+			goto(BattleFrontierController_EventScript_ControllerChangeMusicPage3)
 		case MULTI_R_PRESSED:
 			goto(BattleFrontierController_EventScript_ControllerChangeMusicPage2)
 		default: 
@@ -356,25 +356,6 @@ script BattleFrontierController_EventScript_ControllerChangeMusicPage3 {
 			setvar(VAR_FRONTIER_BGM, 16)
 		case MULTI_L_PRESSED:
 			goto(BattleFrontierController_EventScript_ControllerChangeMusicPage2)
-		case MULTI_R_PRESSED:
-			goto(BattleFrontierController_EventScript_ControllerChangeMusicPage4)
-		default: 
-			goto(BattleFrontierController_EventScript_ControllerOptions)
-	}
-	goto(BattleFrontierController_EventScript_ControllerChangeMusicSuccess)
-}
-
-script BattleFrontierController_EventScript_ControllerChangeMusicPage4 {
-	multichoice2(0,0,BattleFrontierController_Text_ControllerMusicSelectPage4)
-	switch(var(VAR_RESULT)){
-		case 0:
-			setvar(VAR_FRONTIER_BGM, 17)
-		case 1:
-			setvar(VAR_FRONTIER_BGM, 18)
-		case 2:
-			setvar(VAR_FRONTIER_BGM, 19)
-		case MULTI_L_PRESSED:
-			goto(BattleFrontierController_EventScript_ControllerChangeMusicPage3)
 		case MULTI_R_PRESSED:
 			goto(BattleFrontierController_EventScript_ControllerChangeMusicPage1)
 		default: 
@@ -472,12 +453,5 @@ text BattleFrontierController_Text_ControllerMusicSelectPage3 {
 	"VS.Trainer (FRLG)$"
 	"VS.Wild Pokemon (FRLG)$"
 	"VS.Champion (FRLG)$"
-	""
-}
-
-text BattleFrontierController_Text_ControllerMusicSelectPage4 {
-	"VS.Deoxys (FRLG)$"
-	"VS.Mewtwo (FRLG)$"
-	"VS.Legend (FRLG)$"
 	""
 }
