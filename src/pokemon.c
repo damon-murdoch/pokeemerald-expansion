@@ -121,9 +121,7 @@ static const struct CombinedMove sCombinedMoves[2] =
 };
 
 
-#define FRONTIER_BGM_COUNT 19
-#define FRONTIER_BGM_RANDOM FRONTIER_BGM_COUNT + 1
-
+#define FRONTIER_BGM_COUNT 16
 // Songs which can be selected by the player
 // to play during matches at the Battle Frontier
 static const u16 customFrontierSongs[FRONTIER_BGM_COUNT] = {
@@ -145,9 +143,9 @@ static const u16 customFrontierSongs[FRONTIER_BGM_COUNT] = {
     MUS_RG_VS_TRAINER,
     MUS_RG_VS_WILD,
     MUS_RG_VS_CHAMPION,
-    MUS_RG_VS_DEOXYS,
-    MUS_RG_VS_MEWTWO,
-    MUS_RG_VS_LEGEND,
+    // MUS_RG_VS_DEOXYS, // Same as MUS_RG_VS_WILD
+    // MUS_RG_VS_MEWTWO, // Same as MUS_RG_VS_WILD
+    // MUS_RG_VS_LEGEND, // Same as MUS_RG_VS_WILD
 };
 
 // NOTE: The order of the elements in the array below is irrelevant.
@@ -6152,17 +6150,17 @@ u16 GetBattleBGM(void)
     if ((frontierBGM > 0) && (gBattleTypeFlags & BATTLE_TYPE_FRONTIER || gBattleTypeFlags & BATTLE_TYPE_TRAINER_HILL))
     {
         // Dereference index
-        u8 index = (u8)(frontierBGM);
+        u8 index = ((u8)(frontierBGM)) - 1;
 
         // Random music selection
-        if (index == FRONTIER_BGM_RANDOM) {
+        if (index == FRONTIER_BGM_COUNT) {
 
             //  Select random song within the limit
             index = Random() % FRONTIER_BGM_COUNT;
-        } 
+        }
 
         // Return the selected song
-        return customFrontierSongs[index - 1];
+        return customFrontierSongs[index];
     }
     else if (gBattleTypeFlags & BATTLE_TYPE_LEGENDARY)
     {

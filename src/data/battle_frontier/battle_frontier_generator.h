@@ -7,14 +7,11 @@
 	case MOVE_POLLEN_PUFF:
 
 #define ALLOWED_RECOVERY_MOVES \
-	case MOVE_AQUA_RING: \
-	case MOVE_INGRAIN: \
 	case MOVE_LEECH_SEED: \
 	case MOVE_PAIN_SPLIT: \
 	case MOVE_HEAL_ORDER: \
 	case MOVE_MILK_DRINK: \
 	case MOVE_RECOVER: \
-	case MOVE_REST: \
 	case MOVE_ROOST: \
 	case MOVE_SHORE_UP: \
 	case MOVE_SLACK_OFF: \
@@ -49,6 +46,7 @@ const bool8 gBattleFrontierMoveAlwaysSelectDoubles[MOVES_COUNT] =
 
 #define NEVER_SELECT_COMMON \
 	[MOVE_SNORE] = TRUE, \
+	[MOVE_FLING] = TRUE, \
 	[MOVE_ROUND] = TRUE, \
 	[MOVE_UPROAR] = TRUE, \
 	[MOVE_SPIT_UP] = TRUE, \
@@ -100,7 +98,8 @@ const bool8 gBattleFrontierMoveAlwaysSelectDoubles[MOVES_COUNT] =
 	[MOVE_COMEUPPANCE] = TRUE, \
 	[MOVE_COUNTER] = TRUE, \
 	[MOVE_METAL_BURST] = TRUE, \
-	[MOVE_MIRROR_COAT] = TRUE
+	[MOVE_MIRROR_COAT] = TRUE, \
+	[MOVE_BLIZZARD] = TRUE
 
 const bool8 gBattleFrontierMoveNeverSelectSingles[MOVES_COUNT] =
 {
@@ -116,7 +115,7 @@ const bool8 gBattleFrontierMoveNeverSelectSingles[MOVES_COUNT] =
 
 const bool8 gBattleFrontierMoveNeverSelectDoubles[MOVES_COUNT] =
 {
-	NEVER_SELECT_COMMON, 
+	NEVER_SELECT_COMMON,
 };
 
 // Status moves which are allowed to be selected,
@@ -216,6 +215,9 @@ const bool8 gBattleFrontierMoveIgnoreTypeCount[MOVES_COUNT] =
 	[MOVE_THUNDERCLAP] = TRUE,
 	[MOVE_VACUUM_WAVE] = TRUE,
 	[MOVE_WATER_SHURIKEN] = TRUE,
+	// Damage-Reducing
+	[MOVE_WATER_SPOUT] = TRUE, 
+	[MOVE_ERUPTION] = TRUE, 
 	// Counters
 	[MOVE_BIDE] = TRUE,
 	[MOVE_COMEUPPANCE] = TRUE,
@@ -224,4 +226,7 @@ const bool8 gBattleFrontierMoveIgnoreTypeCount[MOVES_COUNT] =
 	[MOVE_MIRROR_COAT] = TRUE,
 	// Speed Control
 	[MOVE_ICY_WIND] = TRUE,
+	[MOVE_BULLDOZE] = TRUE, 
+	// Other
+	[MOVE_WEATHER_BALL] = TRUE, 
 };
