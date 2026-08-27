@@ -2778,7 +2778,8 @@ Ability: Levitate
 Tera ype: Ghost
 EVs: 52 HP / 4 Def / 196 SpA / 4 SpD / 252 Spe
 IVs: 0 Atk
-- Volt Sitch
+Modest nature
+- Volt Switch
 - Blizzard
 - Thunderbolt
 - Trick
@@ -2788,7 +2789,8 @@ Ability: Levitate
 Tera ype: Ghost
 EVs: 52 HP / 4 Def / 196 SpA / 4 SpD / 252 Spe
 IVs: 0 Atk
-- Volt Sitch
+Modest nature
+- Volt Switch
 - Overheat
 - Thunderbolt
 - Trick
@@ -2834,7 +2836,8 @@ Ability: Levitate
 Tera ype: Ghost
 EVs: 52 HP / 4 Def / 196 SpA / 4 SpD / 252 Spe
 IVs: 0 Atk
-- Volt Sitch
+Modest nature
+- Volt Switch
 - Hydro Pump
 - Thunderbolt
 - Trick
