@@ -710,6 +710,41 @@ Sassy nature
 - Helping Hand
 - Moonblast
 
+Darkrai @ Focus Sash
+Ability: Bad Dreams
+Tera Type: Ghost
+Note: Sash
+EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
+Timid nature
+- Protect
+- Nasty Plot
+- Dark Pulse
+- Sludge Bomb
+
+Darkrai @ Life Orb
+Ability: Bad Dreams
+Tera Type: Ghost
+Note: Orb
+EVs: 28 HP / 4 Def / 220 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
+Timid nature
+- Protect
+- Nasty Plot
+- Dark Pulse
+- Sludge Bomb
+
+Dondozo @ Leftovers  
+Ability: Unaware  
+Tera Type: Grass
+Note: Leftys
+EVs: 252 HP / 4 Atk / 36 Def / 212 SpD / 4 Spe  
+Impish Nature  
+- Protect  
+- Yawn  
+- Wave Crash  
+- Body Press
+
 Dracovish @ Choice Band
 Ability: Strong Jaw
 Tera Type: Water
@@ -786,6 +821,40 @@ Adamant nature
 - Tailwind
 - Haze
 - Scale Shot
+
+Drifblim @ Electric Seed  
+Ability: Unburden  
+Tera Type: Dark
+Note: Seed
+EVs: 4 HP / 244 Atk / 4 Def / 4 SpD / 252 Spe  
+Jolly Nature  
+- Tailwind  
+- Acrobatics
+- Will-o-Wisp  
+- Haze  
+
+Drifblim @ Electric Seed  
+Ability: Unburden  
+Tera Type: Dark
+Note: Seed
+EVs: 4 HP / 4 Def / 244 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Tailwind  
+- Shadow Ball  
+- Will-O-Wisp  
+- Haze  
+
+Drifblim @ Weakness Policy
+Ability: Unburden  
+Tera Type: Dark
+Note: Policy
+EVs: 4 HP / 244 Atk / 4 Def / 4 SpD / 252 Spe  
+Jolly Nature  
+- Tailwind  
+- Phantom Force
+- Acrobatics  
+- Fly  
 
 Dusclops @ Eviolite
 Ability: Frisk
@@ -889,6 +958,17 @@ Relaxed nature
 - Leech Seed
 - Gyro Ball
 - Power Whip
+
+Flamigo @ Focus Sash
+Ability: Scrappy
+Tera Type: Ghost
+Note: Sash
+EVs: 252 Atk / 4 SpD / 252 Spe
+Jolly nature
+- Protect
+- Tailwind
+- Brave Bird
+- Close Combat
 
 Flutter Mane @ Booster Energy
 Ability: Protosynthesis
@@ -1051,6 +1131,17 @@ Quiet nature
 - Ice Beam
 - Earth Power
 - Muddy Water
+
+Genesect @ Choice Scarf  
+Ability: Download  
+Tera Type: Ghost
+Note: Scarf
+EVs: 12 HP / 236 Atk / 4 Def / 4 SpD / 252 Spe  
+Adamant Nature  
+- U-turn  
+- Iron Head  
+- Extreme Speed  
+- Explosion
 
 Gengar @ Focus Sash
 Ability: Cursed Body
@@ -1622,6 +1713,18 @@ IVs: 0 Atk
 - Hydro Pump  
 - Icy Wind
 
+Kilowattrel @ Focus Sash
+Ability: Competitive
+Tera Type: Ghost
+Note: Sash
+EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
+Timid nature
+- Protect
+- Tailwind
+- Air Slash
+- Thunderbolt
+
 Kingambit @ Assault Vest
 Ability: Defiant
 Tera Type: Flying
@@ -1735,6 +1838,30 @@ Modest Nature
 - Protect  
 - Water Spout  
 - Origin Pulse  
+- Ice Beam
+
+Kyurem-White @ Choice Scarf
+Ability: Turboblaze
+Tera Type: Ghost
+Note: Scarf
+EVs: 12 HP / 4 Def / 236 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
+Modest nature
+- Blizzard
+- Draco Meteor
+- Fusion Flare
+- Ice Beam
+
+Kyurem-White @ Life Orb
+Ability: Turboblaze
+Tera Type: Ghost
+Note: Orb
+EVs: 68 HP / 4 Def / 180 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
+Timid nature
+- Protect
+- Draco Meteor
+- Fusion Flare
 - Ice Beam
 
 Landorus @ Focus Sash
@@ -2027,14 +2154,58 @@ Jolly nature
 
 Metagross @ Metagrossite
 Ability: Clear Body
+Tera Type: Fighting
+Note: Mega
+EVs: 204 HP / 4 Atk / 156 Def / 4 SpD / 140 Spe
+Impish nature
+- Protect
+- Iron Defense
+- Body Press
+- Heavy Slam
+
+Metagross @ Metagrossite
+Ability: Clear Body
+Tera Type: Fire
+Note: Mega
+EVs: 124 HP / 116 Atk / 4 Def / 12 SpD / 252 Spe
+Adamant nature
+- Protect
+- Heavy Slam
+- Ice Punch
+- Stomping Tantrum
+
+Metagross @ Metagrossite
+Ability: Clear Body
 Tera Type: Fire
 Note: Mega
 EVs: 124 HP / 196 Atk / 12 Def / 36 SpD / 140 Spe
 Adamant Nature
 - Protect
-- Iron Head
+- Heavy Slam
 - Ice Punch
 - Stomping Tantrum
+
+Metagross @ Metagrossite
+Ability: Clear Body
+Tera Type: Fire
+Note: Mega
+EVs: 4 HP / 244 Atk / 4 Def / 4 SpD / 252 Spe
+Jolly nature
+- Protect
+- Heavy Slam
+- Ice Punch
+- Stomping Tantrum
+
+Mienshao @ Focus Sash  
+Ability: Inner Focus  
+Tera Type: Fighting
+Note: Sash
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Close Combat  
+- Helping Hand  
+- Wide Guard  
+- Fake Out
 
 Milotic @ Leftovers
 Ability: Competitive
@@ -2192,6 +2363,63 @@ Bold nature
 - Tailwind
 - Thunder Wave
 - Foul Play
+
+Necrozma-Dawn-Wings @ Lunalium Z
+Ability: Prism Armor
+Tera Type: Dark
+Note: Luna Z
+EVs: 252 HP / 156 Def / 100 SpA
+IVs: 0 Spe
+Quiet nature
+- Protect
+- Trick Room
+- Moongeist Beam
+- Expanding Force
+
+Necrozma-Dawn-Wings @ Ultranecrozium Z
+Ability: Prism Armor
+Tera Type: Dark
+Note: Necro Z
+EVs: 60 HP / 4 Def / 180 SpA / 4 SpD / 252 Spe
+Modest nature
+- Protect
+- Photon Geyser
+- Moongeist Beam
+- Draco Meteor
+
+Necrozma-Dusk-Mane @ Clear Amulet
+Ability: Prism Armor
+Tera Type: Fire
+Note: Amulet
+EVs: 252 HP / 20 Atk / 236 SpD
+IVs: 0 Spe
+Brave nature
+- Protect
+- Trick Room
+- Sunsteel Strike
+- Photon Geyser
+
+Necrozma-Dusk-Mane @ Clear Amulet
+Ability: Prism Armor
+Tera Type: Fire
+Note: Amulet
+EVs: 252 HP / 20 Atk / 4 Def / 228 SpD / 4 Spe
+Adamant nature
+- Protect
+- Trick Room
+- Sunsteel Strike
+- Photon Geyser
+
+Necrozma-Dusk-Mane @ Ultranecrozium Z
+Ability: Prism Armor
+Tera Type: Dark
+Note: Necro Z
+EVs: 60 HP / 4 Def / 180 SpA / 4 SpD / 252 Spe
+Modest nature
+- Protect
+- Photon Geyser
+- Draco Meteor
+- Expanding Force
 
 Nihilego @ Choice Scarf
 Ability: Beast Boost
@@ -2545,6 +2773,72 @@ Jolly nature
 - Acrobatics
 - Knock Off
 
+Rotom-Frost @ Choice Scarf
+Ability: Levitate
+Tera ype: Ghost
+EVs: 52 HP / 4 Def / 196 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
+- Volt Sitch
+- Blizzard
+- Thunderbolt
+- Trick
+
+Rotom-Heat @ Choice Scarf
+Ability: Levitate
+Tera ype: Ghost
+EVs: 52 HP / 4 Def / 196 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
+- Volt Sitch
+- Overheat
+- Thunderbolt
+- Trick
+
+Rotom-Heat @ Sitrus Berry
+Ability: Levitate
+Tera Type: Steel
+Note: Sitrus
+EVs: 252 HP / 4 Def / 116 SpA / 4 SpD / 132 Spe
+IVs: 0 Atk
+Modest nature
+- Protect
+- Nasty Plot
+- Leaf Storm
+- Overheat
+
+Rotom-Heat @ Sitrus Berry
+Ability: Levitate
+Tera Type: Steel
+Note: Sitrus
+EVs: 4 Spe / 44 Def / 148 SpD / 252 HP / 60 SpA
+IVs: 0 Atk
+Calm nature
+- Protect
+- Will-o-Wisp
+- Thunderbolt
+- Overheat
+
+Rotom-Mow @ Sitrus Berry
+Ability: Levitate
+Tera Type: Steel
+Note: Sitrus
+EVs: 252 HP / 4 Def / 116 SpA / 4 SpD / 132 Spe
+IVs: 0 Atk
+Modest nature
+- Protect
+- Nasty Plot
+- Leaf Storm
+- Thunderbolt
+
+Rotom-Wash @ Choice Scarf
+Ability: Levitate
+Tera ype: Ghost
+EVs: 52 HP / 4 Def / 196 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
+- Volt Sitch
+- Hydro Pump
+- Thunderbolt
+- Trick
+
 Rotom-Wash @ Sitrus Berry
 Ability: Levitate
 Tera Type: Steel
@@ -2675,6 +2969,28 @@ Adamant nature
 - Bug Bite
 - Bullet Punch
 
+Scream Tail @ Booster Energy
+Ability: Protosynthesis
+Tera Type: Dark
+Note: Booster
+EVs: 228 HP / 20 Def / 4 SpA / 4 SpD / 252 Spe
+Timid nature
+- Protect
+- Encore
+- Disable
+- Dazzling Gleam
+
+Scream Tail @ Booster Energy
+Ability: Protosynthesis
+Tera Type: Dark
+Note: Booster
+EVs: 228 HP / 4 Atk / 20 Def / 4 SpD / 252 Spe
+Jolly nature
+- Protect
+- Encore
+- Disable
+- Play Rough
+
 Sinistcha @ Leftovers
 Ability: Hospitality
 Tera Type: Water
@@ -2722,6 +3038,30 @@ Relaxed nature
 - Rage Powder  
 - Life Dew  
 - Trick Room
+
+Skeledirge @ Leftovers
+Ability: Unaware
+Tera Type: Grass
+Note: Leftys
+EVs: 236 HP / 60 Def / 12 SpA / 196 SpD / 4 Spe
+IVs: 0 Atk
+Calm nature
+- Protect
+- Slack Off
+- Shadow Ball
+- Torch Song
+
+Skeledirge @ Throat Spray
+Ability: Unaware
+Tera Type: Grass
+Note: Spray
+EVs: 252 HP / 4 Def / 156 SpA / 92 SpD / 4 Spe
+IVs: 0 Atk
+Modest nature
+- Protect
+- Slack Off
+- Shadow Ball
+- Torch Song
 
 Sneasler @ Focus Sash
 Ability: Unburden
@@ -3112,7 +3452,6 @@ Ability: Defiant
 Tera Type: Fire
 Note: Vest
 EVs: 252 Spe / 4 Def / 236 Atk / 12 SpD / 4 HP
-Level: 50
 Jolly nature
 - Wild Charge
 - Superpower
@@ -3280,6 +3619,42 @@ Bold nature
 - Rain Dance
 - Bleakwind Storm
 
+Toxtricity @ Choice Scarf
+Ability: Punk Rock  
+Tera Type: Ghost  
+Note: Scarf
+EVs: 44 HP / 4 Def / 204 SpA / 4 SpD / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Snarl  
+- Overdrive  
+- Boomburst  
+- Sludge Bomb
+
+Toxtricity @ Choice Specs
+Ability: Punk Rock  
+Tera Type: Ghost  
+Note: Specs
+EVs: 44 HP / 4 Def / 204 SpA / 4 SpD / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Snarl  
+- Overdrive  
+- Boomburst  
+- Sludge Bomb
+
+Toxtricity @ Throat Spray  
+Ability: Punk Rock  
+Tera Type: Ghost  
+Note: Spray
+EVs: 44 HP / 4 Def / 204 SpA / 4 SpD / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Protect  
+- Overdrive  
+- Boomburst  
+- Sludge Bomb
+
 Tsareena @ Assault Vest
 Ability: Queenly Majesty
 Tera Type: Water
@@ -3334,7 +3709,7 @@ Brave nature
 - Protect
 - Rock Slide
 - Low Kick
-- Crunch
+- Knock Off
 
 Tyranitar @ Life Orb
 Ability: Sand Stream
@@ -3345,7 +3720,7 @@ Adamant nature
 - Protect
 - Rock Slide
 - Low Kick
-- Crunch
+- Knock Off
 
 Tyranitar @ Lum Berry
 Ability: Sand Stream
@@ -3356,7 +3731,7 @@ Adamant nature
 - Protect
 - Rock Slide
 - Low Kick
-- Crunch
+- Knock Off
 
 Tyranitar @ Lum Berry
 Ability: Sand Stream
@@ -3368,7 +3743,30 @@ Brave nature
 - Protect
 - Rock Slide
 - Low Kick
-- Crunch
+- Knock Off
+
+Tyranitar @ Tyranitarite
+Ability: Sand Stream
+Tera Type: Ghost
+Note: Mega
+EVs: 252 HP / 204 Atk / 4 Def / 44 SpD / 4 Spe
+Adamant nature
+- Protect
+- Low Kick
+- Knock Off
+- Rock Slide
+
+Tyranitar @ Tyranitarite
+Ability: Sand Stream
+Tera Type: Ghost
+Note: Mega
+EVs: 252 HP / 204 Atk / 52 SpD
+IVs: 0 Spe
+Brave nature
+- Protect
+- Low Kick
+- Knock Off
+- Rock Slide
 
 Tyranitar @ Tyranitarite
 Ability: Sand Stream
