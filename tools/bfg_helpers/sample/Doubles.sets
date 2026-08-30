@@ -1076,7 +1076,7 @@ Modest nature
 - Trick
 
 Gardevoir @ Gardevoirite
-Ability: Pixilate
+Ability: Trace
 Tera Type: Water
 Note: Mega
 EVs: 244 HP / 196 Def / 36 SpA / 4 SpD / 28 Spe
@@ -1085,6 +1085,17 @@ IVs: 0 Atk
 - Protect
 - Hyper Voice
 - Trick Room
+- Psychic
+
+Gardevoir @ Gardevoirite
+Ability: Trace
+Tera Type: Water
+Note: Mega
+EVs: 4 HP / 4 Def / 244 SpA / 4 SpD / 252 Spe
+Timid nature
+- Protect
+- Expanding Force
+- Hyper Voice
 - Psychic
 
 Garganacl @ Leftovers
@@ -1994,6 +2005,30 @@ IVs: 0 Atk
 - Meteor Beam  
 - Trick Room
 
+Magnezone @ Wiki Berry
+Ability: Analytic
+Tera Type: Water
+Note: Wiki
+EVs: 252 HP / 236 SpA / 20 SpD
+IVs: 0 Atk / 0 Spe
+Quiet nature
+- Protect
+- Substitute
+- Thunderbolt
+- Flash Cannon
+
+Magnezone @ Wiki Berry
+Ability: Magnet Pull
+Tera Type: Water
+Note: Wiki
+EVs: 252 HP / 4 Def / 236 SpA / 12 SpD / 4 Spe
+IVs: 0 Atk
+Modest nature
+- Protect
+- Substitute
+- Thunderbolt
+- Flash Cannon
+
 Manaphy @ Sitrus Berry
 Ability: Hydration
 Tera Type: Fairy
@@ -2128,6 +2163,29 @@ Adamant Nature
 - Protect
 - Iron Head
 - Play Rough
+- Sucker Punch
+
+Mawile @ Mawilite
+Ability: Intimidate
+Tera Type: Fire
+Note: Mega
+EVs: 252 HP / 116 Atk / 140 SpD
+IVs: 0 Spe
+Brave nature
+- Protect
+- Play Rough
+- Iron Head
+- Sucker Punch
+
+Mawile @ Mawilite
+Ability: Intimidate
+Tera Type: Fire
+Note: Mega
+EVs: 252 HP / 116 Atk / 4 Def / 132 SpD / 4 Spe
+Adamant nature
+- Protect
+- Play Rough
+- Iron Head
 - Sucker Punch
 
 Meowscarada @ Choice Band
@@ -2468,6 +2526,18 @@ Timid nature
 - Power Gem
 - Sludge Bomb
 - Meteor Beam
+
+Ninetales @ Choice Specs  
+Ability: Drought  
+Tera Type: Fire  
+Note: Specs
+EVs: 4 HP / 252 SpA / 252 Spe  
+IVs: 0 Atk  
+Timid Nature  
+- Heat Wave  
+- Weather Ball  
+- Solar Beam  
+- Scorching Sands
 
 Ninetales-Alola @ Focus Sash
 Ability: Snow Warning
@@ -3539,6 +3609,28 @@ Careful nature
 - Feint
 - Fake Out
 
+Togedemaru @ Assault Vest
+Ability: Lightning Rod
+Tera Type: Water
+Note: Vest
+EVs: 252 HP / 4 Atk / 100 Def / 4 SpD / 148 Spe
+Jolly nature
+- U-Turn
+- Iron Head
+- Zing Zap
+- Fake Out
+
+Togedemaru @ Focus Sash  
+Ability: Lightning Rod  
+Tera Type: Ghost
+Note: Sash
+EVs: 252 Atk / 4 Def / 252 Spe
+Jolly nature
+- Zing Zap  
+- Fake Out  
+- Spiky Shield  
+- Encore
+
 Togekiss @ Babiri Berry
 Ability: Super Luck
 Tera Type: Water
@@ -4132,3 +4224,51 @@ Modest nature
 - Tailwind
 - Heat Wave
 - Thunderbolt
+
+Zoroark @ Focus Sash  
+Ability: Illusion  
+Tera Type: Ghost
+Note: Sash
+EVs: 4 HP / 252 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Protect  
+- Nasty Plot  
+- Dark Pulse  
+- Sludge Bomb
+
+Zoroark-Hisui @ Choice Specs
+Ability: Illusion
+Tera Type: Normal
+Note: Specs
+EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
+Timid nature
+- Hyper Voice
+- Shadow Ball
+- Hyper Beam
+- Icy Wind
+
+Zoroark-Hisui @ Focus Sash
+Ability: Illusion
+Tera Type: Normal
+Note: Sash
+EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
+Timid nature
+- Protect
+- Nasty Plot
+- Shadow Ball
+- Hyper Voice
+
+Zoroark-Hisui @ Life Orb
+Ability: Illusion
+Tera Type: Normal
+Note: Orb
+EVs: 68 HP / 4 Def / 180 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
+Timid nature
+- Protect
+- Tera Blast
+- Shadow Ball
+- Hyper Voice
