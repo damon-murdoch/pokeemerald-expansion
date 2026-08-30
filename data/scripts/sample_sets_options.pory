@@ -38,7 +38,7 @@ script Auto_EventScript_Sample_Sets_Doubles_Page1
         case 4: # ARAQUANID
             goto(Auto_EventScript_Sample_Sets_Doubles_Araquanid_Page1)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page32)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page33)
         case MULTI_R_PRESSED:
             goto(Auto_EventScript_Sample_Sets_Doubles_Page2)
         default:
@@ -413,14 +413,14 @@ script Auto_EventScript_Sample_Sets_Doubles_Page17
     {
         case 0: # LUNALA
             goto(Auto_EventScript_Sample_Sets_Doubles_Lunala_Page1)
-        case 1: # MANAPHY
+        case 1: # MAGNEZONE
+            goto(Auto_EventScript_Sample_Sets_Doubles_Magnezone_Page1)
+        case 2: # MANAPHY
             goto(Auto_EventScript_Sample_Sets_Doubles_Manaphy_Page1)
-        case 2: # MANECTRIC
+        case 3: # MANECTRIC
             goto(Auto_EventScript_Sample_Sets_Doubles_Manectric_Page1)
-        case 3: # MAROWAK-ALOLA
+        case 4: # MAROWAK-ALOLA
             goto(Auto_EventScript_Sample_Sets_Doubles_Marowak_Alola_Page1)
-        case 4: # MAUSHOLD
-            goto(Auto_EventScript_Sample_Sets_Doubles_Maushold_Page1)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Sample_Sets_Doubles_Page16)
         case MULTI_R_PRESSED:
@@ -435,16 +435,16 @@ script Auto_EventScript_Sample_Sets_Doubles_Page18
     multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Page18)
     switch(var(VAR_RESULT))
     {
-        case 0: # MAWILE
+        case 0: # MAUSHOLD
+            goto(Auto_EventScript_Sample_Sets_Doubles_Maushold_Page1)
+        case 1: # MAWILE
             goto(Auto_EventScript_Sample_Sets_Doubles_Mawile_Page1)
-        case 1: # MEOWSCARADA
+        case 2: # MEOWSCARADA
             goto(Auto_EventScript_Sample_Sets_Doubles_Meowscarada_Page1)
-        case 2: # METAGROSS
+        case 3: # METAGROSS
             goto(Auto_EventScript_Sample_Sets_Doubles_Metagross_Page1)
-        case 3: # MIENSHAO
+        case 4: # MIENSHAO
             goto(Auto_EventScript_Sample_Sets_Doubles_Mienshao_Page1)
-        case 4: # MILOTIC
-            goto(Auto_EventScript_Sample_Sets_Doubles_Milotic_Page1)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Sample_Sets_Doubles_Page17)
         case MULTI_R_PRESSED:
@@ -459,16 +459,16 @@ script Auto_EventScript_Sample_Sets_Doubles_Page19
     multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Page19)
     switch(var(VAR_RESULT))
     {
-        case 0: # MIMIKYU
+        case 0: # MILOTIC
+            goto(Auto_EventScript_Sample_Sets_Doubles_Milotic_Page1)
+        case 1: # MIMIKYU
             goto(Auto_EventScript_Sample_Sets_Doubles_Mimikyu_Page1)
-        case 1: # MIRAIDON
+        case 2: # MIRAIDON
             goto(Auto_EventScript_Sample_Sets_Doubles_Miraidon_Page1)
-        case 2: # MOLTRES-GALAR
+        case 3: # MOLTRES-GALAR
             goto(Auto_EventScript_Sample_Sets_Doubles_Moltres_Galar_Page1)
-        case 3: # MUK-ALOLA
+        case 4: # MUK-ALOLA
             goto(Auto_EventScript_Sample_Sets_Doubles_Muk_Alola_Page1)
-        case 4: # MURKROW
-            goto(Auto_EventScript_Sample_Sets_Doubles_Murkrow_Page1)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Sample_Sets_Doubles_Page18)
         case MULTI_R_PRESSED:
@@ -483,16 +483,16 @@ script Auto_EventScript_Sample_Sets_Doubles_Page20
     multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Page20)
     switch(var(VAR_RESULT))
     {
-        case 0: # NECROZMA-DAWN-WINGS
+        case 0: # MURKROW
+            goto(Auto_EventScript_Sample_Sets_Doubles_Murkrow_Page1)
+        case 1: # NECROZMA-DAWN-WINGS
             goto(Auto_EventScript_Sample_Sets_Doubles_Necrozma_Dawn_Wings_Page1)
-        case 1: # NECROZMA-DUSK-MANE
+        case 2: # NECROZMA-DUSK-MANE
             goto(Auto_EventScript_Sample_Sets_Doubles_Necrozma_Dusk_Mane_Page1)
-        case 2: # NIHILEGO
+        case 3: # NIHILEGO
             goto(Auto_EventScript_Sample_Sets_Doubles_Nihilego_Page1)
-        case 3: # NINETALES-ALOLA
-            goto(Auto_EventScript_Sample_Sets_Doubles_Ninetales_Alola_Page1)
-        case 4: # OGERPON-CS
-            goto(Auto_EventScript_Sample_Sets_Doubles_Ogerpon_Cs_Page1)
+        case 4: # NINETALES
+            goto(Auto_EventScript_Sample_Sets_Doubles_Ninetales_Page1)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Sample_Sets_Doubles_Page19)
         case MULTI_R_PRESSED:
@@ -507,16 +507,16 @@ script Auto_EventScript_Sample_Sets_Doubles_Page21
     multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Page21)
     switch(var(VAR_RESULT))
     {
-        case 0: # OGERPON-HF
+        case 0: # NINETALES-ALOLA
+            goto(Auto_EventScript_Sample_Sets_Doubles_Ninetales_Alola_Page1)
+        case 1: # OGERPON-CS
+            goto(Auto_EventScript_Sample_Sets_Doubles_Ogerpon_Cs_Page1)
+        case 2: # OGERPON-HF
             goto(Auto_EventScript_Sample_Sets_Doubles_Ogerpon_Hf_Page1)
-        case 1: # OGERPON-WS
+        case 3: # OGERPON-WS
             goto(Auto_EventScript_Sample_Sets_Doubles_Ogerpon_Ws_Page1)
-        case 2: # ORANGURU
+        case 4: # ORANGURU
             goto(Auto_EventScript_Sample_Sets_Doubles_Oranguru_Page1)
-        case 3: # PALAFIN
-            goto(Auto_EventScript_Sample_Sets_Doubles_Palafin_Page1)
-        case 4: # PELIPPER
-            goto(Auto_EventScript_Sample_Sets_Doubles_Pelipper_Page1)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Sample_Sets_Doubles_Page20)
         case MULTI_R_PRESSED:
@@ -531,16 +531,16 @@ script Auto_EventScript_Sample_Sets_Doubles_Page22
     multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Page22)
     switch(var(VAR_RESULT))
     {
-        case 0: # POLITOED
+        case 0: # PALAFIN
+            goto(Auto_EventScript_Sample_Sets_Doubles_Palafin_Page1)
+        case 1: # PELIPPER
+            goto(Auto_EventScript_Sample_Sets_Doubles_Pelipper_Page1)
+        case 2: # POLITOED
             goto(Auto_EventScript_Sample_Sets_Doubles_Politoed_Page1)
-        case 1: # PORYGON2
+        case 3: # PORYGON2
             goto(Auto_EventScript_Sample_Sets_Doubles_Porygon2_Page1)
-        case 2: # PRIMARINA
+        case 4: # PRIMARINA
             goto(Auto_EventScript_Sample_Sets_Doubles_Primarina_Page1)
-        case 3: # RAGING BOLT
-            goto(Auto_EventScript_Sample_Sets_Doubles_Raging_Bolt_Page1)
-        case 4: # RAICHU
-            goto(Auto_EventScript_Sample_Sets_Doubles_Raichu_Page1)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Sample_Sets_Doubles_Page21)
         case MULTI_R_PRESSED:
@@ -555,16 +555,16 @@ script Auto_EventScript_Sample_Sets_Doubles_Page23
     multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Page23)
     switch(var(VAR_RESULT))
     {
-        case 0: # RAYQUAZA
+        case 0: # RAGING BOLT
+            goto(Auto_EventScript_Sample_Sets_Doubles_Raging_Bolt_Page1)
+        case 1: # RAICHU
+            goto(Auto_EventScript_Sample_Sets_Doubles_Raichu_Page1)
+        case 2: # RAYQUAZA
             goto(Auto_EventScript_Sample_Sets_Doubles_Rayquaza_Page1)
-        case 1: # REGIDRAGO
+        case 3: # REGIDRAGO
             goto(Auto_EventScript_Sample_Sets_Doubles_Regidrago_Page1)
-        case 2: # REGIELEKI
+        case 4: # REGIELEKI
             goto(Auto_EventScript_Sample_Sets_Doubles_Regieleki_Page1)
-        case 3: # RHYPERIOR
-            goto(Auto_EventScript_Sample_Sets_Doubles_Rhyperior_Page1)
-        case 4: # RILLABOOM
-            goto(Auto_EventScript_Sample_Sets_Doubles_Rillaboom_Page1)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Sample_Sets_Doubles_Page22)
         case MULTI_R_PRESSED:
@@ -579,16 +579,16 @@ script Auto_EventScript_Sample_Sets_Doubles_Page24
     multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Page24)
     switch(var(VAR_RESULT))
     {
-        case 0: # ROARING MOON
+        case 0: # RHYPERIOR
+            goto(Auto_EventScript_Sample_Sets_Doubles_Rhyperior_Page1)
+        case 1: # RILLABOOM
+            goto(Auto_EventScript_Sample_Sets_Doubles_Rillaboom_Page1)
+        case 2: # ROARING MOON
             goto(Auto_EventScript_Sample_Sets_Doubles_Roaring_Moon_Page1)
-        case 1: # ROTOM-FROST
+        case 3: # ROTOM-FROST
             goto(Auto_EventScript_Sample_Sets_Doubles_Rotom_Frost_Page1)
-        case 2: # ROTOM-HEAT
+        case 4: # ROTOM-HEAT
             goto(Auto_EventScript_Sample_Sets_Doubles_Rotom_Heat_Page1)
-        case 3: # ROTOM-MOW
-            goto(Auto_EventScript_Sample_Sets_Doubles_Rotom_Mow_Page1)
-        case 4: # ROTOM-WASH
-            goto(Auto_EventScript_Sample_Sets_Doubles_Rotom_Wash_Page1)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Sample_Sets_Doubles_Page23)
         case MULTI_R_PRESSED:
@@ -603,16 +603,16 @@ script Auto_EventScript_Sample_Sets_Doubles_Page25
     multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Page25)
     switch(var(VAR_RESULT))
     {
-        case 0: # SABLEYE
+        case 0: # ROTOM-MOW
+            goto(Auto_EventScript_Sample_Sets_Doubles_Rotom_Mow_Page1)
+        case 1: # ROTOM-WASH
+            goto(Auto_EventScript_Sample_Sets_Doubles_Rotom_Wash_Page1)
+        case 2: # SABLEYE
             goto(Auto_EventScript_Sample_Sets_Doubles_Sableye_Page1)
-        case 1: # SALAMENCE
+        case 3: # SALAMENCE
             goto(Auto_EventScript_Sample_Sets_Doubles_Salamence_Page1)
-        case 2: # SCIZOR
+        case 4: # SCIZOR
             goto(Auto_EventScript_Sample_Sets_Doubles_Scizor_Page1)
-        case 3: # SCREAM TAIL
-            goto(Auto_EventScript_Sample_Sets_Doubles_Scream_Tail_Page1)
-        case 4: # SINISTCHA
-            goto(Auto_EventScript_Sample_Sets_Doubles_Sinistcha_Page1)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Sample_Sets_Doubles_Page24)
         case MULTI_R_PRESSED:
@@ -627,16 +627,16 @@ script Auto_EventScript_Sample_Sets_Doubles_Page26
     multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Page26)
     switch(var(VAR_RESULT))
     {
-        case 0: # SKELEDIRGE
+        case 0: # SCREAM TAIL
+            goto(Auto_EventScript_Sample_Sets_Doubles_Scream_Tail_Page1)
+        case 1: # SINISTCHA
+            goto(Auto_EventScript_Sample_Sets_Doubles_Sinistcha_Page1)
+        case 2: # SKELEDIRGE
             goto(Auto_EventScript_Sample_Sets_Doubles_Skeledirge_Page1)
-        case 1: # SNEASLER
+        case 3: # SNEASLER
             goto(Auto_EventScript_Sample_Sets_Doubles_Sneasler_Page1)
-        case 2: # SNORLAX
+        case 4: # SNORLAX
             goto(Auto_EventScript_Sample_Sets_Doubles_Snorlax_Page1)
-        case 3: # STAKATAKA
-            goto(Auto_EventScript_Sample_Sets_Doubles_Stakataka_Page1)
-        case 4: # SYLVEON
-            goto(Auto_EventScript_Sample_Sets_Doubles_Sylveon_Page1)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Sample_Sets_Doubles_Page25)
         case MULTI_R_PRESSED:
@@ -651,16 +651,16 @@ script Auto_EventScript_Sample_Sets_Doubles_Page27
     multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Page27)
     switch(var(VAR_RESULT))
     {
-        case 0: # TALONFLAME
+        case 0: # STAKATAKA
+            goto(Auto_EventScript_Sample_Sets_Doubles_Stakataka_Page1)
+        case 1: # SYLVEON
+            goto(Auto_EventScript_Sample_Sets_Doubles_Sylveon_Page1)
+        case 2: # TALONFLAME
             goto(Auto_EventScript_Sample_Sets_Doubles_Talonflame_Page1)
-        case 1: # TAPU BULU
+        case 3: # TAPU BULU
             goto(Auto_EventScript_Sample_Sets_Doubles_Tapu_Bulu_Page1)
-        case 2: # TAPU FINI
+        case 4: # TAPU FINI
             goto(Auto_EventScript_Sample_Sets_Doubles_Tapu_Fini_Page1)
-        case 3: # TAPU KOKO
-            goto(Auto_EventScript_Sample_Sets_Doubles_Tapu_Koko_Page1)
-        case 4: # TAPU LELE
-            goto(Auto_EventScript_Sample_Sets_Doubles_Tapu_Lele_Page1)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Sample_Sets_Doubles_Page26)
         case MULTI_R_PRESSED:
@@ -675,16 +675,16 @@ script Auto_EventScript_Sample_Sets_Doubles_Page28
     multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Page28)
     switch(var(VAR_RESULT))
     {
-        case 0: # TATSUGIRI
+        case 0: # TAPU KOKO
+            goto(Auto_EventScript_Sample_Sets_Doubles_Tapu_Koko_Page1)
+        case 1: # TAPU LELE
+            goto(Auto_EventScript_Sample_Sets_Doubles_Tapu_Lele_Page1)
+        case 2: # TATSUGIRI
             goto(Auto_EventScript_Sample_Sets_Doubles_Tatsugiri_Page1)
-        case 1: # THUNDURUS
+        case 3: # THUNDURUS
             goto(Auto_EventScript_Sample_Sets_Doubles_Thundurus_Page1)
-        case 2: # TING-LU
+        case 4: # TING-LU
             goto(Auto_EventScript_Sample_Sets_Doubles_Ting_Lu_Page1)
-        case 3: # TINKATON
-            goto(Auto_EventScript_Sample_Sets_Doubles_Tinkaton_Page1)
-        case 4: # TOGEKISS
-            goto(Auto_EventScript_Sample_Sets_Doubles_Togekiss_Page1)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Sample_Sets_Doubles_Page27)
         case MULTI_R_PRESSED:
@@ -699,16 +699,16 @@ script Auto_EventScript_Sample_Sets_Doubles_Page29
     multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Page29)
     switch(var(VAR_RESULT))
     {
-        case 0: # TORKOAL
+        case 0: # TINKATON
+            goto(Auto_EventScript_Sample_Sets_Doubles_Tinkaton_Page1)
+        case 1: # TOGEDEMARU
+            goto(Auto_EventScript_Sample_Sets_Doubles_Togedemaru_Page1)
+        case 2: # TOGEKISS
+            goto(Auto_EventScript_Sample_Sets_Doubles_Togekiss_Page1)
+        case 3: # TORKOAL
             goto(Auto_EventScript_Sample_Sets_Doubles_Torkoal_Page1)
-        case 1: # TORNADUS
+        case 4: # TORNADUS
             goto(Auto_EventScript_Sample_Sets_Doubles_Tornadus_Page1)
-        case 2: # TOXTRICITY
-            goto(Auto_EventScript_Sample_Sets_Doubles_Toxtricity_Page1)
-        case 3: # TSAREENA
-            goto(Auto_EventScript_Sample_Sets_Doubles_Tsareena_Page1)
-        case 4: # TYRANITAR
-            goto(Auto_EventScript_Sample_Sets_Doubles_Tyranitar_Page1)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Sample_Sets_Doubles_Page28)
         case MULTI_R_PRESSED:
@@ -723,16 +723,16 @@ script Auto_EventScript_Sample_Sets_Doubles_Page30
     multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Page30)
     switch(var(VAR_RESULT))
     {
-        case 0: # URSALUNA
+        case 0: # TOXTRICITY
+            goto(Auto_EventScript_Sample_Sets_Doubles_Toxtricity_Page1)
+        case 1: # TSAREENA
+            goto(Auto_EventScript_Sample_Sets_Doubles_Tsareena_Page1)
+        case 2: # TYRANITAR
+            goto(Auto_EventScript_Sample_Sets_Doubles_Tyranitar_Page1)
+        case 3: # URSALUNA
             goto(Auto_EventScript_Sample_Sets_Doubles_Ursaluna_Page1)
-        case 1: # URSALUNA-BLOODMOON
+        case 4: # URSALUNA-BLOODMOON
             goto(Auto_EventScript_Sample_Sets_Doubles_Ursaluna_Bloodmoon_Page1)
-        case 2: # URSHIFU-RS
-            goto(Auto_EventScript_Sample_Sets_Doubles_Urshifu_Rs_Page1)
-        case 3: # URSHIFU-SS
-            goto(Auto_EventScript_Sample_Sets_Doubles_Urshifu_Ss_Page1)
-        case 4: # VENUSAUR
-            goto(Auto_EventScript_Sample_Sets_Doubles_Venusaur_Page1)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Sample_Sets_Doubles_Page29)
         case MULTI_R_PRESSED:
@@ -747,16 +747,16 @@ script Auto_EventScript_Sample_Sets_Doubles_Page31
     multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Page31)
     switch(var(VAR_RESULT))
     {
-        case 0: # VENUSAUR-GMAX
+        case 0: # URSHIFU-RS
+            goto(Auto_EventScript_Sample_Sets_Doubles_Urshifu_Rs_Page1)
+        case 1: # URSHIFU-SS
+            goto(Auto_EventScript_Sample_Sets_Doubles_Urshifu_Ss_Page1)
+        case 2: # VENUSAUR
+            goto(Auto_EventScript_Sample_Sets_Doubles_Venusaur_Page1)
+        case 3: # VENUSAUR-GMAX
             goto(Auto_EventScript_Sample_Sets_Doubles_Venusaur_Gmax_Page1)
-        case 1: # VOLCARONA
+        case 4: # VOLCARONA
             goto(Auto_EventScript_Sample_Sets_Doubles_Volcarona_Page1)
-        case 2: # WEAVILE
-            goto(Auto_EventScript_Sample_Sets_Doubles_Weavile_Page1)
-        case 3: # WEEZING-GALAR
-            goto(Auto_EventScript_Sample_Sets_Doubles_Weezing_Galar_Page1)
-        case 4: # WHIMSICOTT
-            goto(Auto_EventScript_Sample_Sets_Doubles_Whimsicott_Page1)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Sample_Sets_Doubles_Page30)
         case MULTI_R_PRESSED:
@@ -771,22 +771,206 @@ script Auto_EventScript_Sample_Sets_Doubles_Page32
     multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Page32)
     switch(var(VAR_RESULT))
     {
-        case 0: # XERNEAS
+        case 0: # WEAVILE
+            goto(Auto_EventScript_Sample_Sets_Doubles_Weavile_Page1)
+        case 1: # WEEZING-GALAR
+            goto(Auto_EventScript_Sample_Sets_Doubles_Weezing_Galar_Page1)
+        case 2: # WHIMSICOTT
+            goto(Auto_EventScript_Sample_Sets_Doubles_Whimsicott_Page1)
+        case 3: # XERNEAS
             goto(Auto_EventScript_Sample_Sets_Doubles_Xerneas_Page1)
-        case 1: # YVELTAL
+        case 4: # YVELTAL
             goto(Auto_EventScript_Sample_Sets_Doubles_Yveltal_Page1)
-        case 2: # ZACIAN
-            goto(Auto_EventScript_Sample_Sets_Doubles_Zacian_Page1)
-        case 3: # ZAMAZENTA
-            goto(Auto_EventScript_Sample_Sets_Doubles_Zamazenta_Page1)
-        case 4: # ZAPDOS
-            goto(Auto_EventScript_Sample_Sets_Doubles_Zapdos_Page1)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Sample_Sets_Doubles_Page31)
+        case MULTI_R_PRESSED:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page33)
+        default:
+            goto(Auto_EventScript_Sample_Sets_Page1)
+    }
+}
+
+script Auto_EventScript_Sample_Sets_Doubles_Page33
+{
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Page33)
+    switch(var(VAR_RESULT))
+    {
+        case 0: # ZACIAN
+            goto(Auto_EventScript_Sample_Sets_Doubles_Zacian_Page1)
+        case 1: # ZAMAZENTA
+            goto(Auto_EventScript_Sample_Sets_Doubles_Zamazenta_Page1)
+        case 2: # ZAPDOS
+            goto(Auto_EventScript_Sample_Sets_Doubles_Zapdos_Page1)
+        case 3: # ZOROARK
+            goto(Auto_EventScript_Sample_Sets_Doubles_Zoroark_Page1)
+        case 4: # ZOROARK-HISUI
+            goto(Auto_EventScript_Sample_Sets_Doubles_Zoroark_Hisui_Page1)
+        case MULTI_L_PRESSED:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page32)
         case MULTI_R_PRESSED:
             goto(Auto_EventScript_Sample_Sets_Doubles_Page1)
         default:
             goto(Auto_EventScript_Sample_Sets_Page1)
+    }
+}
+
+script Auto_EventScript_Sample_Sets_Doubles_Zacian_Page1
+{
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Zacian_Page1)
+    switch(var(VAR_RESULT))
+    {
+        case 0: # 252/76+/4/0-/12/164 (GROUND)
+            givemon(SPECIES_ZACIAN,65,ITEM_RUSTED_SWORD,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,252,76,4,164,0,12,31,31,31,31,31,31,MOVE_PROTECT,MOVE_BEHEMOTH_BLADE,MOVE_PLAY_ROUGH,MOVE_TERA_BLAST,2,FALSE,TYPE_GROUND,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 1: # 252/76+/4/0-/12/164 (STELLAR)
+            givemon(SPECIES_ZACIAN,65,ITEM_RUSTED_SWORD,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,252,76,4,164,0,12,31,31,31,31,31,31,MOVE_PROTECT,MOVE_IRON_HEAD,MOVE_SACRED_SWORD,MOVE_PLAY_ROUGH,2,FALSE,TYPE_STELLAR,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case MULTI_L_PRESSED:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Zacian_Page1)
+        case MULTI_R_PRESSED:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Zacian_Page1)
+        default:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page33)
+    }
+}
+
+script Auto_EventScript_Sample_Sets_Doubles_Zamazenta_Page1
+{
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Zamazenta_Page1)
+    switch(var(VAR_RESULT))
+    {
+        case 0: # 76/0/244+/0-/0/188
+            givemon(SPECIES_ZAMAZENTA,65,ITEM_RUSTED_SHIELD,ITEM_POKE_BALL,NATURE_IMPISH,0,0,76,0,244,188,0,0,31,31,31,31,31,31,MOVE_PROTECT,MOVE_WIDE_GUARD,MOVE_HEAVY_SLAM,MOVE_BODY_PRESS,2,FALSE,TYPE_DRAGON,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case MULTI_L_PRESSED:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Zamazenta_Page1)
+        case MULTI_R_PRESSED:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Zamazenta_Page1)
+        default:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page33)
+    }
+}
+
+script Auto_EventScript_Sample_Sets_Doubles_Zapdos_Page1
+{
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Zapdos_Page1)
+    switch(var(VAR_RESULT))
+    {
+        case 0: # 244/0-/84/116+/36/28 (SITRUS)
+            givemon(SPECIES_ZAPDOS,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_MODEST,0,0,244,0,84,28,116,36,31,0,31,31,31,31,MOVE_PROTECT,MOVE_TAILWIND,MOVE_HEAT_WAVE,MOVE_THUNDERBOLT,2,FALSE,TYPE_GRASS,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 1: # 252/0-/76/116+/36/28 (GOGGLES)
+            givemon(SPECIES_ZAPDOS,65,ITEM_SAFETY_GOGGLES,ITEM_POKE_BALL,NATURE_MODEST,0,0,252,0,76,28,116,36,31,0,31,31,31,31,MOVE_PROTECT,MOVE_TAILWIND,MOVE_HEAT_WAVE,MOVE_THUNDERBOLT,2,FALSE,TYPE_WATER,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 2: # 28/0-/0/228/0/252+ (ORB)
+            givemon(SPECIES_ZAPDOS,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_TIMID,0,0,28,0,0,252,228,0,31,0,30,31,31,31,MOVE_PROTECT,MOVE_HIDDEN_POWER,MOVE_HEAT_WAVE,MOVE_THUNDERBOLT,2,FALSE,TYPE_GHOST,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case MULTI_L_PRESSED:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Zapdos_Page1)
+        case MULTI_R_PRESSED:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Zapdos_Page1)
+        default:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page33)
+    }
+}
+
+script Auto_EventScript_Sample_Sets_Doubles_Zoroark_Page1
+{
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Zoroark_Page1)
+    switch(var(VAR_RESULT))
+    {
+        case 0: # 4/0-/0/252/0/252+ (SASH)
+            givemon(SPECIES_ZOROARK,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_TIMID,0,0,4,0,0,252,252,0,31,0,31,31,31,31,MOVE_PROTECT,MOVE_NASTY_PLOT,MOVE_DARK_PULSE,MOVE_SLUDGE_BOMB,2,FALSE,TYPE_GHOST,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case MULTI_L_PRESSED:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Zoroark_Page1)
+        case MULTI_R_PRESSED:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Zoroark_Page1)
+        default:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page33)
+    }
+}
+
+script Auto_EventScript_Sample_Sets_Doubles_Zoroark_Hisui_Page1
+{
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Zoroark_Hisui_Page1)
+    switch(var(VAR_RESULT))
+    {
+        case 0: # 4/0-/0/252/0/252+ (SASH)
+            givemon(SPECIES_ZOROARK_HISUI,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_TIMID,0,1,4,0,0,252,252,0,31,0,31,31,31,31,MOVE_PROTECT,MOVE_NASTY_PLOT,MOVE_SHADOW_BALL,MOVE_HYPER_VOICE,2,FALSE,TYPE_NORMAL,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 1: # 4/0-/0/252/0/252+ (SPECS)
+            givemon(SPECIES_ZOROARK_HISUI,65,ITEM_CHOICE_SPECS,ITEM_POKE_BALL,NATURE_TIMID,0,0,4,0,0,252,252,0,31,0,31,31,31,31,MOVE_HYPER_VOICE,MOVE_SHADOW_BALL,MOVE_HYPER_BEAM,MOVE_ICY_WIND,2,FALSE,TYPE_NORMAL,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 2: # 68/0-/4/180/4/252+ (ORB)
+            givemon(SPECIES_ZOROARK_HISUI,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_TIMID,0,1,68,0,4,252,180,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_TERA_BLAST,MOVE_SHADOW_BALL,MOVE_HYPER_VOICE,2,FALSE,TYPE_NORMAL,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case MULTI_L_PRESSED:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Zoroark_Hisui_Page1)
+        case MULTI_R_PRESSED:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Zoroark_Hisui_Page1)
+        default:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page33)
+    }
+}
+
+script Auto_EventScript_Sample_Sets_Doubles_Weavile_Page1
+{
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Weavile_Page1)
+    switch(var(VAR_RESULT))
+    {
+        case 0: # 0/252/4/0-/0/252+ (SASH)
+            givemon(SPECIES_WEAVILE,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_JOLLY,2,1,0,252,4,252,0,0,31,31,31,31,31,31,MOVE_ICICLE_CRASH,MOVE_KNOCK_OFF,MOVE_TAUNT,MOVE_FAKE_OUT,2,FALSE,TYPE_GHOST,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 1: # 28/220/4/0-/4/252+ (ORB)
+            givemon(SPECIES_WEAVILE,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_JOLLY,0,0,28,220,4,252,0,4,31,31,31,31,31,31,MOVE_ICICLE_CRASH,MOVE_KNOCK_OFF,MOVE_LOW_KICK,MOVE_FAKE_OUT,2,FALSE,TYPE_GHOST,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case MULTI_L_PRESSED:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Weavile_Page1)
+        case MULTI_R_PRESSED:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Weavile_Page1)
+        default:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page32)
+    }
+}
+
+script Auto_EventScript_Sample_Sets_Doubles_Weezing_Galar_Page1
+{
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Weezing_Galar_Page1)
+    switch(var(VAR_RESULT))
+    {
+        case 0: # 252/0-/4/196+/52/4 (SPECS)
+            givemon(SPECIES_WEEZING_GALAR,65,ITEM_CHOICE_SPECS,ITEM_POKE_BALL,NATURE_MODEST,1,1,252,0,4,4,196,52,31,0,31,31,31,31,MOVE_DAZZLING_GLEAM,MOVE_SLUDGE_BOMB,MOVE_STRANGE_STEAM,MOVE_FLAMETHROWER,2,FALSE,TYPE_WATER,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 1: # 252/0-/76+/4/172/4 (SITRUS)
+            givemon(SPECIES_WEEZING_GALAR,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_BOLD,1,0,252,0,76,4,4,172,31,0,31,31,31,31,MOVE_PROTECT,MOVE_WILL_O_WISP,MOVE_SLUDGE_BOMB,MOVE_STRANGE_STEAM,2,FALSE,TYPE_WATER,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case MULTI_L_PRESSED:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Weezing_Galar_Page1)
+        case MULTI_R_PRESSED:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Weezing_Galar_Page1)
+        default:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page32)
+    }
+}
+
+script Auto_EventScript_Sample_Sets_Doubles_Whimsicott_Page1
+{
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Whimsicott_Page1)
+    switch(var(VAR_RESULT))
+    {
+        case 0: # 252/0-/4/0/0/252+ (CLOAK)
+            givemon(SPECIES_WHIMSICOTT,65,ITEM_COVERT_CLOAK,ITEM_POKE_BALL,NATURE_TIMID,0,1,252,0,4,252,0,0,31,31,31,31,31,31,MOVE_FAKE_TEARS,MOVE_TAILWIND,MOVE_ENCORE,MOVE_MOONBLAST,2,FALSE,TYPE_DARK,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 1: # 4/0-/0/252/0/252+ (SASH)
+            givemon(SPECIES_WHIMSICOTT,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_TIMID,0,0,4,0,0,252,252,0,31,31,31,31,31,31,MOVE_PROTECT,MOVE_TAILWIND,MOVE_ENCORE,MOVE_MOONBLAST,2,FALSE,TYPE_GHOST,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case MULTI_L_PRESSED:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Whimsicott_Page1)
+        case MULTI_R_PRESSED:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Whimsicott_Page1)
+        default:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page32)
     }
 }
 
@@ -833,63 +1017,63 @@ script Auto_EventScript_Sample_Sets_Doubles_Yveltal_Page1
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Zacian_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Urshifu_Rs_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Zacian_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Urshifu_Rs_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 252/76+/4/0-/12/164 (GROUND)
-            givemon(SPECIES_ZACIAN,65,ITEM_RUSTED_SWORD,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,252,76,4,164,0,12,31,31,31,31,31,31,MOVE_PROTECT,MOVE_BEHEMOTH_BLADE,MOVE_PLAY_ROUGH,MOVE_TERA_BLAST,2,FALSE,TYPE_GROUND,10)
+        case 0: # 0/252+/0/0-/4/252 (SASH)
+            givemon(SPECIES_URSHIFU_RAPID_STRIKE,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_ADAMANT,0,1,0,252,0,252,0,4,31,31,31,31,31,31,MOVE_PROTECT,MOVE_AQUA_JET,MOVE_CLOSE_COMBAT,MOVE_SURGING_STRIKES,2,FALSE,TYPE_WATER,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 252/76+/4/0-/12/164 (STELLAR)
-            givemon(SPECIES_ZACIAN,65,ITEM_RUSTED_SWORD,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,252,76,4,164,0,12,31,31,31,31,31,31,MOVE_PROTECT,MOVE_IRON_HEAD,MOVE_SACRED_SWORD,MOVE_PLAY_ROUGH,2,FALSE,TYPE_STELLAR,10)
+        case 1: # 12/156+/4/0-/84/252 (MYSTIC)
+            givemon(SPECIES_URSHIFU_RAPID_STRIKE,65,ITEM_MYSTIC_WATER,ITEM_POKE_BALL,NATURE_ADAMANT,0,1,12,156,4,252,0,84,31,31,31,31,31,31,MOVE_PROTECT,MOVE_AQUA_JET,MOVE_CLOSE_COMBAT,MOVE_SURGING_STRIKES,2,FALSE,TYPE_WATER,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 2: # 12/156+/4/0-/84/252 (SCARF)
+            givemon(SPECIES_URSHIFU_RAPID_STRIKE,65,ITEM_CHOICE_SCARF,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,12,156,4,252,0,84,31,31,31,31,31,31,MOVE_U_TURN,MOVE_AQUA_JET,MOVE_CLOSE_COMBAT,MOVE_SURGING_STRIKES,2,FALSE,TYPE_WATER,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Zacian_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Urshifu_Rs_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Zacian_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Urshifu_Rs_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page32)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page31)
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Zamazenta_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Urshifu_Ss_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Zamazenta_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Urshifu_Ss_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 76/0/244+/0-/0/188
-            givemon(SPECIES_ZAMAZENTA,65,ITEM_RUSTED_SHIELD,ITEM_POKE_BALL,NATURE_IMPISH,0,0,76,0,244,188,0,0,31,31,31,31,31,31,MOVE_PROTECT,MOVE_WIDE_GUARD,MOVE_HEAVY_SLAM,MOVE_BODY_PRESS,2,FALSE,TYPE_DRAGON,10)
+        case 0: # 0/236+/0/0-/20/252 (BAND)
+            givemon(SPECIES_URSHIFU,65,ITEM_CHOICE_BAND,ITEM_POKE_BALL,NATURE_ADAMANT,0,1,0,236,0,252,0,20,31,31,31,31,31,31,MOVE_U_TURN,MOVE_WICKED_BLOW,MOVE_CLOSE_COMBAT,MOVE_SUCKER_PUNCH,2,FALSE,TYPE_DARK,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 1: # 0/252+/0/0-/4/252 (SASH)
+            givemon(SPECIES_URSHIFU,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,0,252,0,252,0,4,31,31,31,31,31,31,MOVE_PROTECT,MOVE_WICKED_BLOW,MOVE_CLOSE_COMBAT,MOVE_SUCKER_PUNCH,2,FALSE,TYPE_GHOST,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Zamazenta_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Urshifu_Ss_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Zamazenta_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Urshifu_Ss_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page32)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page31)
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Zapdos_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Venusaur_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Zapdos_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Venusaur_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 244/0-/84/116+/36/28 (SITRUS)
-            givemon(SPECIES_ZAPDOS,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_MODEST,0,0,244,0,84,28,116,36,31,0,31,31,31,31,MOVE_PROTECT,MOVE_TAILWIND,MOVE_HEAT_WAVE,MOVE_THUNDERBOLT,2,FALSE,TYPE_GRASS,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 252/0-/76/116+/36/28 (GOGGLES)
-            givemon(SPECIES_ZAPDOS,65,ITEM_SAFETY_GOGGLES,ITEM_POKE_BALL,NATURE_MODEST,0,0,252,0,76,28,116,36,31,0,31,31,31,31,MOVE_PROTECT,MOVE_TAILWIND,MOVE_HEAT_WAVE,MOVE_THUNDERBOLT,2,FALSE,TYPE_WATER,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 2: # 28/0-/0/228/0/252+ (ORB)
-            givemon(SPECIES_ZAPDOS,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_TIMID,0,0,28,0,0,252,228,0,31,0,30,31,31,31,MOVE_PROTECT,MOVE_HIDDEN_POWER,MOVE_HEAT_WAVE,MOVE_THUNDERBOLT,2,FALSE,TYPE_GHOST,10)
+        case 0: # 4/0-/0/252+/0/252 (SASH)
+            givemon(SPECIES_VENUSAUR,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_MODEST,2,1,4,0,0,252,252,0,31,31,31,31,31,31,MOVE_LEAF_STORM,MOVE_EARTH_POWER,MOVE_SLUDGE_BOMB,MOVE_SLEEP_POWDER,2,FALSE,TYPE_GHOST,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Zapdos_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Venusaur_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Zapdos_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Venusaur_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page32)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page31)
     }
 }
 
@@ -930,63 +1114,101 @@ script Auto_EventScript_Sample_Sets_Doubles_Volcarona_Page1
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Weavile_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Toxtricity_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Weavile_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Toxtricity_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 0/252/4/0-/0/252+ (SASH)
-            givemon(SPECIES_WEAVILE,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_JOLLY,2,1,0,252,4,252,0,0,31,31,31,31,31,31,MOVE_ICICLE_CRASH,MOVE_KNOCK_OFF,MOVE_TAUNT,MOVE_FAKE_OUT,2,FALSE,TYPE_GHOST,10)
+        case 0: # 44/0-/4/204+/4/252 (SCARF)
+            givemon(SPECIES_TOXTRICITY,65,ITEM_CHOICE_SCARF,ITEM_POKE_BALL,NATURE_MODEST,0,1,44,0,4,252,204,4,31,0,31,31,31,31,MOVE_SNARL,MOVE_OVERDRIVE,MOVE_BOOMBURST,MOVE_SLUDGE_BOMB,2,FALSE,TYPE_GHOST,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 28/220/4/0-/4/252+ (ORB)
-            givemon(SPECIES_WEAVILE,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_JOLLY,0,0,28,220,4,252,0,4,31,31,31,31,31,31,MOVE_ICICLE_CRASH,MOVE_KNOCK_OFF,MOVE_LOW_KICK,MOVE_FAKE_OUT,2,FALSE,TYPE_GHOST,10)
+        case 1: # 44/0-/4/204+/4/252 (SPECS)
+            givemon(SPECIES_TOXTRICITY,65,ITEM_CHOICE_SPECS,ITEM_POKE_BALL,NATURE_MODEST,0,0,44,0,4,252,204,4,31,0,31,31,31,31,MOVE_SNARL,MOVE_OVERDRIVE,MOVE_BOOMBURST,MOVE_SLUDGE_BOMB,2,FALSE,TYPE_GHOST,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 2: # 44/0-/4/204+/4/252 (SPRAY)
+            givemon(SPECIES_TOXTRICITY,65,ITEM_THROAT_SPRAY,ITEM_POKE_BALL,NATURE_MODEST,0,0,44,0,4,252,204,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_OVERDRIVE,MOVE_BOOMBURST,MOVE_SLUDGE_BOMB,2,FALSE,TYPE_GHOST,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Weavile_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Toxtricity_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Weavile_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Toxtricity_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page31)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page30)
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Weezing_Galar_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Tsareena_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Weezing_Galar_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Tsareena_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 252/0-/4/196+/52/4 (SPECS)
-            givemon(SPECIES_WEEZING_GALAR,65,ITEM_CHOICE_SPECS,ITEM_POKE_BALL,NATURE_MODEST,1,1,252,0,4,4,196,52,31,0,31,31,31,31,MOVE_DAZZLING_GLEAM,MOVE_SLUDGE_BOMB,MOVE_STRANGE_STEAM,MOVE_FLAMETHROWER,2,FALSE,TYPE_WATER,10)
+        case 0: # 228/236+/4/0-/36/4 (SITRUS)
+            givemon(SPECIES_TSAREENA,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_ADAMANT,1,1,228,236,4,4,0,36,31,31,31,31,31,31,MOVE_PROTECT,MOVE_HELPING_HAND,MOVE_TROP_KICK,MOVE_LOW_KICK,2,FALSE,TYPE_WATER,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 252/0-/76+/4/172/4 (SITRUS)
-            givemon(SPECIES_WEEZING_GALAR,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_BOLD,1,0,252,0,76,4,4,172,31,0,31,31,31,31,MOVE_PROTECT,MOVE_WILL_O_WISP,MOVE_SLUDGE_BOMB,MOVE_STRANGE_STEAM,2,FALSE,TYPE_WATER,10)
+        case 1: # 252/236+/4/0-/12/4 (VEST)
+            givemon(SPECIES_TSAREENA,65,ITEM_ASSAULT_VEST,ITEM_POKE_BALL,NATURE_ADAMANT,1,1,252,236,4,4,0,12,31,31,31,31,31,31,MOVE_TROP_KICK,MOVE_LOW_KICK,MOVE_U_TURN,MOVE_KNOCK_OFF,2,FALSE,TYPE_WATER,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 2: # 4/252+/0/0-/0/252 (SASH)
+            givemon(SPECIES_TSAREENA,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_ADAMANT,1,1,4,252,0,252,0,0,31,31,31,31,31,31,MOVE_PROTECT,MOVE_HELPING_HAND,MOVE_POWER_WHIP,MOVE_HIGH_JUMP_KICK,2,FALSE,TYPE_GRASS,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Weezing_Galar_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Tsareena_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Weezing_Galar_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Tsareena_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page31)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page30)
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Whimsicott_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Tyranitar_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Whimsicott_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Tyranitar_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 252/0-/4/0/0/252+ (CLOAK)
-            givemon(SPECIES_WHIMSICOTT,65,ITEM_COVERT_CLOAK,ITEM_POKE_BALL,NATURE_TIMID,0,1,252,0,4,252,0,0,31,31,31,31,31,31,MOVE_FAKE_TEARS,MOVE_TAILWIND,MOVE_ENCORE,MOVE_MOONBLAST,2,FALSE,TYPE_DARK,10)
+        case 0: # 188/204+/0/0/116/0- (LIFE ORB)
+            givemon(SPECIES_TYRANITAR,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_BRAVE,0,0,188,204,0,0,0,116,31,31,31,0,31,31,MOVE_PROTECT,MOVE_ROCK_SLIDE,MOVE_LOW_KICK,MOVE_KNOCK_OFF,2,FALSE,TYPE_GHOST,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 4/0-/0/252/0/252+ (SASH)
-            givemon(SPECIES_WHIMSICOTT,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_TIMID,0,0,4,0,0,252,252,0,31,31,31,31,31,31,MOVE_PROTECT,MOVE_TAILWIND,MOVE_ENCORE,MOVE_MOONBLAST,2,FALSE,TYPE_GHOST,10)
+        case 1: # 188/204+/4/0-/108/4 (LIFE ORB)
+            givemon(SPECIES_TYRANITAR,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_ADAMANT,0,1,188,204,4,4,0,108,31,31,31,31,31,31,MOVE_PROTECT,MOVE_ROCK_SLIDE,MOVE_LOW_KICK,MOVE_KNOCK_OFF,2,FALSE,TYPE_GHOST,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 2: # 252/204+/0/0/52/0- (LUM BERRY)
+            givemon(SPECIES_TYRANITAR,65,ITEM_LUM_BERRY,ITEM_POKE_BALL,NATURE_BRAVE,0,1,252,204,0,0,0,52,31,31,31,0,31,31,MOVE_PROTECT,MOVE_ROCK_SLIDE,MOVE_LOW_KICK,MOVE_KNOCK_OFF,2,FALSE,TYPE_GHOST,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 3: # 252/204+/0/0/52/0- (MEGA)
+            givemon(SPECIES_TYRANITAR,65,ITEM_TYRANITARITE,ITEM_POKE_BALL,NATURE_BRAVE,0,0,252,204,0,0,0,52,31,31,31,0,31,31,MOVE_PROTECT,MOVE_LOW_KICK,MOVE_KNOCK_OFF,MOVE_ROCK_SLIDE,2,FALSE,TYPE_GHOST,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 4: # 252/204+/4/0-/44/4 (LUM BERRY)
+            givemon(SPECIES_TYRANITAR,65,ITEM_LUM_BERRY,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,252,204,4,4,0,44,31,31,31,31,31,31,MOVE_PROTECT,MOVE_ROCK_SLIDE,MOVE_LOW_KICK,MOVE_KNOCK_OFF,2,FALSE,TYPE_GHOST,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Whimsicott_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Tyranitar_Page2)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Whimsicott_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Tyranitar_Page2)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page31)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page30)
+    }
+}
+
+script Auto_EventScript_Sample_Sets_Doubles_Tyranitar_Page2
+{
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Tyranitar_Page2)
+    switch(var(VAR_RESULT))
+    {
+        case 0: # 252/204+/4/0-/44/4 (MEGA)
+            givemon(SPECIES_TYRANITAR,65,ITEM_TYRANITARITE,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,252,204,4,4,0,44,31,31,31,31,31,31,MOVE_PROTECT,MOVE_LOW_KICK,MOVE_KNOCK_OFF,MOVE_ROCK_SLIDE,2,FALSE,TYPE_GHOST,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 1: # 4/244/4/0-/4/252+ (SCARF)
+            givemon(SPECIES_TYRANITAR,65,ITEM_CHOICE_SCARF,ITEM_POKE_BALL,NATURE_JOLLY,0,0,4,244,4,252,0,4,31,31,31,31,31,31,MOVE_ROCK_SLIDE,MOVE_LOW_KICK,MOVE_ASSURANCE,MOVE_ICE_PUNCH,2,FALSE,TYPE_GHOST,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 2: # 44/164/20/0-/28/252+ (MEGA)
+            givemon(SPECIES_TYRANITAR,65,ITEM_TYRANITARITE,ITEM_POKE_BALL,NATURE_JOLLY,0,1,44,164,20,252,0,28,31,31,31,31,31,31,MOVE_ROCK_SLIDE,MOVE_CRUNCH,MOVE_DRAGON_DANCE,MOVE_PROTECT,2,FALSE,TYPE_GHOST,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case MULTI_L_PRESSED:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Tyranitar_Page1)
+        case MULTI_R_PRESSED:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Tyranitar_Page1)
+        default:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page30)
     }
 }
 
@@ -1033,63 +1255,60 @@ script Auto_EventScript_Sample_Sets_Doubles_Ursaluna_Bloodmoon_Page1
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Urshifu_Rs_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Tinkaton_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Urshifu_Rs_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Tinkaton_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 0/252+/0/0-/4/252 (SASH)
-            givemon(SPECIES_URSHIFU_RAPID_STRIKE,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_ADAMANT,0,1,0,252,0,252,0,4,31,31,31,31,31,31,MOVE_PROTECT,MOVE_AQUA_JET,MOVE_CLOSE_COMBAT,MOVE_SURGING_STRIKES,2,FALSE,TYPE_WATER,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 12/156+/4/0-/84/252 (MYSTIC)
-            givemon(SPECIES_URSHIFU_RAPID_STRIKE,65,ITEM_MYSTIC_WATER,ITEM_POKE_BALL,NATURE_ADAMANT,0,1,12,156,4,252,0,84,31,31,31,31,31,31,MOVE_PROTECT,MOVE_AQUA_JET,MOVE_CLOSE_COMBAT,MOVE_SURGING_STRIKES,2,FALSE,TYPE_WATER,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 2: # 12/156+/4/0-/84/252 (SCARF)
-            givemon(SPECIES_URSHIFU_RAPID_STRIKE,65,ITEM_CHOICE_SCARF,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,12,156,4,252,0,84,31,31,31,31,31,31,MOVE_U_TURN,MOVE_AQUA_JET,MOVE_CLOSE_COMBAT,MOVE_SURGING_STRIKES,2,FALSE,TYPE_WATER,10)
+        case 0: # 180/172/100/0-/44+/12
+            givemon(SPECIES_TINKATON,65,ITEM_ASSAULT_VEST,ITEM_POKE_BALL,NATURE_CAREFUL,0,1,180,172,100,12,0,44,31,31,31,31,31,31,MOVE_GIGATON_HAMMER,MOVE_PLAY_ROUGH,MOVE_FEINT,MOVE_FAKE_OUT,2,FALSE,TYPE_WATER,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Urshifu_Rs_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Tinkaton_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Urshifu_Rs_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Tinkaton_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page30)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page29)
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Urshifu_Ss_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Togedemaru_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Urshifu_Ss_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Togedemaru_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 0/236+/0/0-/20/252 (BAND)
-            givemon(SPECIES_URSHIFU,65,ITEM_CHOICE_BAND,ITEM_POKE_BALL,NATURE_ADAMANT,0,1,0,236,0,252,0,20,31,31,31,31,31,31,MOVE_U_TURN,MOVE_WICKED_BLOW,MOVE_CLOSE_COMBAT,MOVE_SUCKER_PUNCH,2,FALSE,TYPE_DARK,10)
+        case 0: # 0/252/4/0-/0/252+ (SASH)
+            givemon(SPECIES_TOGEDEMARU,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_JOLLY,1,0,0,252,4,252,0,0,31,31,31,31,31,31,MOVE_ZING_ZAP,MOVE_FAKE_OUT,MOVE_SPIKY_SHIELD,MOVE_ENCORE,2,FALSE,TYPE_GHOST,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 0/252+/0/0-/4/252 (SASH)
-            givemon(SPECIES_URSHIFU,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,0,252,0,252,0,4,31,31,31,31,31,31,MOVE_PROTECT,MOVE_WICKED_BLOW,MOVE_CLOSE_COMBAT,MOVE_SUCKER_PUNCH,2,FALSE,TYPE_GHOST,10)
+        case 1: # 252/4/100/0-/4/148+ (VEST)
+            givemon(SPECIES_TOGEDEMARU,65,ITEM_ASSAULT_VEST,ITEM_POKE_BALL,NATURE_JOLLY,1,1,252,4,100,148,0,4,31,31,31,31,31,31,MOVE_U_TURN,MOVE_IRON_HEAD,MOVE_ZING_ZAP,MOVE_FAKE_OUT,2,FALSE,TYPE_WATER,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Urshifu_Ss_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Togedemaru_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Urshifu_Ss_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Togedemaru_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page30)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page29)
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Venusaur_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Togekiss_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Venusaur_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Togekiss_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 4/0-/0/252+/0/252 (SASH)
-            givemon(SPECIES_VENUSAUR,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_MODEST,2,1,4,0,0,252,252,0,31,31,31,31,31,31,MOVE_LEAF_STORM,MOVE_EARTH_POWER,MOVE_SLUDGE_BOMB,MOVE_SLEEP_POWDER,2,FALSE,TYPE_GHOST,10)
+        case 0: # 228/0-/196+/4/76/4 (LENS)
+            givemon(SPECIES_TOGEKISS,65,ITEM_SCOPE_LENS,ITEM_POKE_BALL,NATURE_BOLD,2,1,228,0,196,4,4,76,31,0,31,31,31,31,MOVE_PROTECT,MOVE_YAWN,MOVE_FOLLOW_ME,MOVE_DAZZLING_GLEAM,2,FALSE,TYPE_WATER,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 1: # 236/0-/196+/4/12/60 (BABIRI)
+            givemon(SPECIES_TOGEKISS,65,ITEM_BABIRI_BERRY,ITEM_POKE_BALL,NATURE_BOLD,2,0,236,0,196,60,4,12,31,0,31,31,31,31,MOVE_FOLLOW_ME,MOVE_YAWN,MOVE_AIR_SLASH,MOVE_DAZZLING_GLEAM,2,FALSE,TYPE_WATER,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Venusaur_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Togekiss_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Venusaur_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Togekiss_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page30)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page29)
     }
 }
 
@@ -1136,101 +1355,55 @@ script Auto_EventScript_Sample_Sets_Doubles_Tornadus_Page1
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Toxtricity_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Tapu_Koko_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Toxtricity_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Tapu_Koko_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 44/0-/4/204+/4/252 (SCARF)
-            givemon(SPECIES_TOXTRICITY,65,ITEM_CHOICE_SCARF,ITEM_POKE_BALL,NATURE_MODEST,0,1,44,0,4,252,204,4,31,0,31,31,31,31,MOVE_SNARL,MOVE_OVERDRIVE,MOVE_BOOMBURST,MOVE_SLUDGE_BOMB,2,FALSE,TYPE_GHOST,10)
+        case 0: # 172/0-/12/36/196/92+ (VEST)
+            givemon(SPECIES_TAPU_KOKO,65,ITEM_ASSAULT_VEST,ITEM_POKE_BALL,NATURE_TIMID,0,0,172,0,12,92,36,196,31,31,31,31,31,31,MOVE_THUNDERBOLT,MOVE_DAZZLING_GLEAM,MOVE_SKY_DROP,MOVE_VOLT_SWITCH,2,FALSE,TYPE_WATER,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 44/0-/4/204+/4/252 (SPECS)
-            givemon(SPECIES_TOXTRICITY,65,ITEM_CHOICE_SPECS,ITEM_POKE_BALL,NATURE_MODEST,0,0,44,0,4,252,204,4,31,0,31,31,31,31,MOVE_SNARL,MOVE_OVERDRIVE,MOVE_BOOMBURST,MOVE_SLUDGE_BOMB,2,FALSE,TYPE_GHOST,10)
+        case 1: # 28/0-/4/196+/28/252 (ELEC Z)
+            givemon(SPECIES_TAPU_KOKO,65,ITEM_ELECTRIUM_Z,ITEM_POKE_BALL,NATURE_MODEST,0,0,28,0,4,252,196,28,31,0,31,31,31,31,MOVE_PROTECT,MOVE_DAZZLING_GLEAM,MOVE_VOLT_SWITCH,MOVE_THUNDERBOLT,2,FALSE,TYPE_WATER,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 2: # 44/0-/4/204+/4/252 (SPRAY)
-            givemon(SPECIES_TOXTRICITY,65,ITEM_THROAT_SPRAY,ITEM_POKE_BALL,NATURE_MODEST,0,0,44,0,4,252,204,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_OVERDRIVE,MOVE_BOOMBURST,MOVE_SLUDGE_BOMB,2,FALSE,TYPE_GHOST,10)
+        case 2: # 4/0-/0/252/0/252+ (SASH)
+            givemon(SPECIES_TAPU_KOKO,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_TIMID,0,0,4,0,0,252,252,0,31,0,31,31,31,31,MOVE_PROTECT,MOVE_DAZZLING_GLEAM,MOVE_VOLT_SWITCH,MOVE_THUNDERBOLT,2,FALSE,TYPE_ELECTRIC,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 3: # 4/0-/4/244/4/252+ (ELEC Z)
+            givemon(SPECIES_TAPU_KOKO,65,ITEM_ELECTRIUM_Z,ITEM_POKE_BALL,NATURE_TIMID,0,0,4,0,4,252,244,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_DAZZLING_GLEAM,MOVE_VOLT_SWITCH,MOVE_THUNDERBOLT,2,FALSE,TYPE_WATER,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Toxtricity_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Tapu_Koko_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Toxtricity_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Tapu_Koko_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page29)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page28)
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Tsareena_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Tapu_Lele_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Tsareena_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Tapu_Lele_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 228/236+/4/0-/36/4 (SITRUS)
-            givemon(SPECIES_TSAREENA,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_ADAMANT,1,1,228,236,4,4,0,36,31,31,31,31,31,31,MOVE_PROTECT,MOVE_HELPING_HAND,MOVE_TROP_KICK,MOVE_LOW_KICK,2,FALSE,TYPE_WATER,10)
+        case 0: # 0/0-/4/252/0/252+ (SASH)
+            givemon(SPECIES_TAPU_LELE,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_TIMID,0,0,0,0,4,252,252,0,31,0,31,31,31,31,MOVE_PROTECT,MOVE_TAUNT,MOVE_MOONBLAST,MOVE_PSYCHIC,2,FALSE,TYPE_PSYCHIC,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 252/236+/4/0-/12/4 (VEST)
-            givemon(SPECIES_TSAREENA,65,ITEM_ASSAULT_VEST,ITEM_POKE_BALL,NATURE_ADAMANT,1,1,252,236,4,4,0,12,31,31,31,31,31,31,MOVE_TROP_KICK,MOVE_LOW_KICK,MOVE_U_TURN,MOVE_KNOCK_OFF,2,FALSE,TYPE_WATER,10)
+        case 1: # 12/0-/4/236+/4/252 (PSYCH Z)
+            givemon(SPECIES_TAPU_LELE,65,ITEM_PSYCHIUM_Z,ITEM_POKE_BALL,NATURE_MODEST,0,0,12,0,4,252,236,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_DAZZLING_GLEAM,MOVE_MOONBLAST,MOVE_PSYCHIC,2,FALSE,TYPE_WATER,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 2: # 4/252+/0/0-/0/252 (SASH)
-            givemon(SPECIES_TSAREENA,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_ADAMANT,1,1,4,252,0,252,0,0,31,31,31,31,31,31,MOVE_PROTECT,MOVE_HELPING_HAND,MOVE_POWER_WHIP,MOVE_HIGH_JUMP_KICK,2,FALSE,TYPE_GRASS,10)
+        case 2: # 12/0-/4/236+/4/252 (SCARF)
+            givemon(SPECIES_TAPU_LELE,65,ITEM_CHOICE_SCARF,ITEM_POKE_BALL,NATURE_MODEST,0,0,12,0,4,252,236,4,31,0,31,31,31,31,MOVE_DAZZLING_GLEAM,MOVE_MOONBLAST,MOVE_PSYCHIC,MOVE_MAGIC_ROOM,2,FALSE,TYPE_WATER,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Tsareena_Page1)
-        case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Tsareena_Page1)
-        default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page29)
-    }
-}
-
-script Auto_EventScript_Sample_Sets_Doubles_Tyranitar_Page1
-{
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Tyranitar_Page1)
-    switch(var(VAR_RESULT))
-    {
-        case 0: # 188/204+/0/0/116/0- (LIFE ORB)
-            givemon(SPECIES_TYRANITAR,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_BRAVE,0,0,188,204,0,0,0,116,31,31,31,0,31,31,MOVE_PROTECT,MOVE_ROCK_SLIDE,MOVE_LOW_KICK,MOVE_KNOCK_OFF,2,FALSE,TYPE_GHOST,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 188/204+/4/0-/108/4 (LIFE ORB)
-            givemon(SPECIES_TYRANITAR,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_ADAMANT,0,1,188,204,4,4,0,108,31,31,31,31,31,31,MOVE_PROTECT,MOVE_ROCK_SLIDE,MOVE_LOW_KICK,MOVE_KNOCK_OFF,2,FALSE,TYPE_GHOST,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 2: # 252/204+/0/0/52/0- (LUM BERRY)
-            givemon(SPECIES_TYRANITAR,65,ITEM_LUM_BERRY,ITEM_POKE_BALL,NATURE_BRAVE,0,1,252,204,0,0,0,52,31,31,31,0,31,31,MOVE_PROTECT,MOVE_ROCK_SLIDE,MOVE_LOW_KICK,MOVE_KNOCK_OFF,2,FALSE,TYPE_GHOST,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 3: # 252/204+/0/0/52/0- (MEGA)
-            givemon(SPECIES_TYRANITAR,65,ITEM_TYRANITARITE,ITEM_POKE_BALL,NATURE_BRAVE,0,0,252,204,0,0,0,52,31,31,31,0,31,31,MOVE_PROTECT,MOVE_LOW_KICK,MOVE_KNOCK_OFF,MOVE_ROCK_SLIDE,2,FALSE,TYPE_GHOST,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 4: # 252/204+/4/0-/44/4 (LUM BERRY)
-            givemon(SPECIES_TYRANITAR,65,ITEM_LUM_BERRY,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,252,204,4,4,0,44,31,31,31,31,31,31,MOVE_PROTECT,MOVE_ROCK_SLIDE,MOVE_LOW_KICK,MOVE_KNOCK_OFF,2,FALSE,TYPE_GHOST,10)
+        case 3: # 252/0-/108/76+/4/68 (SPECS)
+            givemon(SPECIES_TAPU_LELE,65,ITEM_CHOICE_SPECS,ITEM_POKE_BALL,NATURE_MODEST,0,0,252,0,108,68,76,4,31,0,31,31,31,31,MOVE_DAZZLING_GLEAM,MOVE_THUNDERBOLT,MOVE_MOONBLAST,MOVE_PSYCHIC,2,FALSE,TYPE_WATER,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Tyranitar_Page2)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Tapu_Lele_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Tyranitar_Page2)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Tapu_Lele_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page29)
-    }
-}
-
-script Auto_EventScript_Sample_Sets_Doubles_Tyranitar_Page2
-{
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Tyranitar_Page2)
-    switch(var(VAR_RESULT))
-    {
-        case 0: # 252/204+/4/0-/44/4 (MEGA)
-            givemon(SPECIES_TYRANITAR,65,ITEM_TYRANITARITE,ITEM_POKE_BALL,NATURE_ADAMANT,0,0,252,204,4,4,0,44,31,31,31,31,31,31,MOVE_PROTECT,MOVE_LOW_KICK,MOVE_KNOCK_OFF,MOVE_ROCK_SLIDE,2,FALSE,TYPE_GHOST,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 4/244/4/0-/4/252+ (SCARF)
-            givemon(SPECIES_TYRANITAR,65,ITEM_CHOICE_SCARF,ITEM_POKE_BALL,NATURE_JOLLY,0,0,4,244,4,252,0,4,31,31,31,31,31,31,MOVE_ROCK_SLIDE,MOVE_LOW_KICK,MOVE_ASSURANCE,MOVE_ICE_PUNCH,2,FALSE,TYPE_GHOST,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 2: # 44/164/20/0-/28/252+ (MEGA)
-            givemon(SPECIES_TYRANITAR,65,ITEM_TYRANITARITE,ITEM_POKE_BALL,NATURE_JOLLY,0,1,44,164,20,252,0,28,31,31,31,31,31,31,MOVE_ROCK_SLIDE,MOVE_CRUNCH,MOVE_DRAGON_DANCE,MOVE_PROTECT,2,FALSE,TYPE_GHOST,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Tyranitar_Page1)
-        case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Tyranitar_Page1)
-        default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page29)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page28)
     }
 }
 
@@ -1300,40 +1473,49 @@ script Auto_EventScript_Sample_Sets_Doubles_Ting_Lu_Page1
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Tinkaton_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Stakataka_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Tinkaton_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Stakataka_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 180/172/100/0-/44+/12
-            givemon(SPECIES_TINKATON,65,ITEM_ASSAULT_VEST,ITEM_POKE_BALL,NATURE_CAREFUL,0,1,180,172,100,12,0,44,31,31,31,31,31,31,MOVE_GIGATON_HAMMER,MOVE_PLAY_ROUGH,MOVE_FEINT,MOVE_FAKE_OUT,2,FALSE,TYPE_WATER,10)
+        case 0: # 252/0/68+/0/188/0- (HERB)
+            givemon(SPECIES_STAKATAKA,65,ITEM_MENTAL_HERB,ITEM_POKE_BALL,NATURE_RELAXED,0,0,252,0,68,0,0,188,31,31,31,0,31,31,MOVE_WIDE_GUARD,MOVE_TRICK_ROOM,MOVE_BODY_PRESS,MOVE_GYRO_BALL,2,FALSE,TYPE_GRASS,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 1: # 252/252+/0-/0/4/0 (ORB)
+            givemon(SPECIES_STAKATAKA,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_LONELY,0,0,252,252,0,0,0,4,31,31,17,0,31,31,MOVE_PROTECT,MOVE_TRICK_ROOM,MOVE_ROCK_SLIDE,MOVE_GYRO_BALL,2,FALSE,TYPE_WATER,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 2: # 252/68+/0/0/188/0- (ROCK Z)
+            givemon(SPECIES_STAKATAKA,65,ITEM_ROCKIUM_Z,ITEM_POKE_BALL,NATURE_BRAVE,0,0,252,68,0,0,0,188,31,31,31,0,31,31,MOVE_PROTECT,MOVE_TRICK_ROOM,MOVE_ROCK_SLIDE,MOVE_GYRO_BALL,2,FALSE,TYPE_GRASS,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Tinkaton_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Stakataka_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Tinkaton_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Stakataka_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page28)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page27)
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Togekiss_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Sylveon_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Togekiss_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Sylveon_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 228/0-/196+/4/76/4 (LENS)
-            givemon(SPECIES_TOGEKISS,65,ITEM_SCOPE_LENS,ITEM_POKE_BALL,NATURE_BOLD,2,1,228,0,196,4,4,76,31,0,31,31,31,31,MOVE_PROTECT,MOVE_YAWN,MOVE_FOLLOW_ME,MOVE_DAZZLING_GLEAM,2,FALSE,TYPE_WATER,10)
+        case 0: # 180/0-/244/76+/4/4 (LEFTYS)
+            givemon(SPECIES_SYLVEON,65,ITEM_LEFTOVERS,ITEM_POKE_BALL,NATURE_MODEST,2,0,180,0,244,4,76,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_CALM_MIND,MOVE_HYPER_VOICE,MOVE_MOONBLAST,2,FALSE,TYPE_WATER,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 236/0-/196+/4/12/60 (BABIRI)
-            givemon(SPECIES_TOGEKISS,65,ITEM_BABIRI_BERRY,ITEM_POKE_BALL,NATURE_BOLD,2,0,236,0,196,60,4,12,31,0,31,31,31,31,MOVE_FOLLOW_ME,MOVE_YAWN,MOVE_AIR_SLASH,MOVE_DAZZLING_GLEAM,2,FALSE,TYPE_WATER,10)
+        case 1: # 252/0-/172/76+/4/4 (PLATE)
+            givemon(SPECIES_SYLVEON,65,ITEM_PIXIE_PLATE,ITEM_POKE_BALL,NATURE_MODEST,2,1,252,0,172,4,76,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_HYPER_VOICE,MOVE_HYPER_BEAM,MOVE_QUICK_ATTACK,2,FALSE,TYPE_WATER,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 2: # 252/0-/92/156+/4/4 (SPECS)
+            givemon(SPECIES_SYLVEON,65,ITEM_CHOICE_SPECS,ITEM_POKE_BALL,NATURE_MODEST,2,1,252,0,92,4,156,4,31,0,31,31,31,31,MOVE_HYPER_VOICE,MOVE_HYPER_BEAM,MOVE_MOONBLAST,MOVE_PSYSHOCK,2,FALSE,TYPE_FAIRY,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Togekiss_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Sylveon_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Togekiss_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Sylveon_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page28)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page27)
     }
 }
 
@@ -1415,55 +1597,49 @@ script Auto_EventScript_Sample_Sets_Doubles_Tapu_Fini_Page1
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Tapu_Koko_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Scream_Tail_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Tapu_Koko_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Scream_Tail_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 172/0-/12/36/196/92+ (VEST)
-            givemon(SPECIES_TAPU_KOKO,65,ITEM_ASSAULT_VEST,ITEM_POKE_BALL,NATURE_TIMID,0,0,172,0,12,92,36,196,31,31,31,31,31,31,MOVE_THUNDERBOLT,MOVE_DAZZLING_GLEAM,MOVE_SKY_DROP,MOVE_VOLT_SWITCH,2,FALSE,TYPE_WATER,10)
+        case 0: # 228/0-/20/4/4/252+ (BOOSTER)
+            givemon(SPECIES_SCREAM_TAIL,65,ITEM_BOOSTER_ENERGY,ITEM_POKE_BALL,NATURE_TIMID,0,0,228,0,20,252,4,4,31,31,31,31,31,31,MOVE_PROTECT,MOVE_ENCORE,MOVE_DISABLE,MOVE_DAZZLING_GLEAM,2,FALSE,TYPE_DARK,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 28/0-/4/196+/28/252 (ELEC Z)
-            givemon(SPECIES_TAPU_KOKO,65,ITEM_ELECTRIUM_Z,ITEM_POKE_BALL,NATURE_MODEST,0,0,28,0,4,252,196,28,31,0,31,31,31,31,MOVE_PROTECT,MOVE_DAZZLING_GLEAM,MOVE_VOLT_SWITCH,MOVE_THUNDERBOLT,2,FALSE,TYPE_WATER,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 2: # 4/0-/0/252/0/252+ (SASH)
-            givemon(SPECIES_TAPU_KOKO,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_TIMID,0,0,4,0,0,252,252,0,31,0,31,31,31,31,MOVE_PROTECT,MOVE_DAZZLING_GLEAM,MOVE_VOLT_SWITCH,MOVE_THUNDERBOLT,2,FALSE,TYPE_ELECTRIC,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 3: # 4/0-/4/244/4/252+ (ELEC Z)
-            givemon(SPECIES_TAPU_KOKO,65,ITEM_ELECTRIUM_Z,ITEM_POKE_BALL,NATURE_TIMID,0,0,4,0,4,252,244,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_DAZZLING_GLEAM,MOVE_VOLT_SWITCH,MOVE_THUNDERBOLT,2,FALSE,TYPE_WATER,10)
+        case 1: # 228/4/20/0-/4/252+ (BOOSTER)
+            givemon(SPECIES_SCREAM_TAIL,65,ITEM_BOOSTER_ENERGY,ITEM_POKE_BALL,NATURE_JOLLY,0,0,228,4,20,252,0,4,31,31,31,31,31,31,MOVE_PROTECT,MOVE_ENCORE,MOVE_DISABLE,MOVE_PLAY_ROUGH,2,FALSE,TYPE_DARK,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Tapu_Koko_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Scream_Tail_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Tapu_Koko_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Scream_Tail_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page27)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page26)
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Tapu_Lele_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Sinistcha_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Tapu_Lele_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Sinistcha_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 0/0-/4/252/0/252+ (SASH)
-            givemon(SPECIES_TAPU_LELE,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_TIMID,0,0,0,0,4,252,252,0,31,0,31,31,31,31,MOVE_PROTECT,MOVE_TAUNT,MOVE_MOONBLAST,MOVE_PSYCHIC,2,FALSE,TYPE_PSYCHIC,10)
+        case 0: # 236/0-/188+/4/76/4 (SITRUS)
+            givemon(SPECIES_SINISTCHA,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_BOLD,0,0,236,0,188,4,4,76,31,0,31,31,31,31,MOVE_MATCHA_GOTCHA,MOVE_RAGE_POWDER,MOVE_LIFE_DEW,MOVE_TRICK_ROOM,2,FALSE,TYPE_WATER,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 12/0-/4/236+/4/252 (PSYCH Z)
-            givemon(SPECIES_TAPU_LELE,65,ITEM_PSYCHIUM_Z,ITEM_POKE_BALL,NATURE_MODEST,0,0,12,0,4,252,236,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_DAZZLING_GLEAM,MOVE_MOONBLAST,MOVE_PSYCHIC,2,FALSE,TYPE_WATER,10)
+        case 1: # 236/0/188+/0/84/0- (SITRUS)
+            givemon(SPECIES_SINISTCHA,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_RELAXED,0,0,236,0,188,0,0,84,31,0,31,0,31,31,MOVE_MATCHA_GOTCHA,MOVE_RAGE_POWDER,MOVE_LIFE_DEW,MOVE_TRICK_ROOM,2,FALSE,TYPE_WATER,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 2: # 12/0-/4/236+/4/252 (SCARF)
-            givemon(SPECIES_TAPU_LELE,65,ITEM_CHOICE_SCARF,ITEM_POKE_BALL,NATURE_MODEST,0,0,12,0,4,252,236,4,31,0,31,31,31,31,MOVE_DAZZLING_GLEAM,MOVE_MOONBLAST,MOVE_PSYCHIC,MOVE_MAGIC_ROOM,2,FALSE,TYPE_WATER,10)
+        case 2: # 244/0-/188+/4/68/4 (LEFTYS)
+            givemon(SPECIES_SINISTCHA,65,ITEM_LEFTOVERS,ITEM_POKE_BALL,NATURE_BOLD,0,0,244,0,188,4,4,68,31,0,31,31,31,31,MOVE_MATCHA_GOTCHA,MOVE_RAGE_POWDER,MOVE_LIFE_DEW,MOVE_TRICK_ROOM,2,FALSE,TYPE_WATER,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 3: # 252/0-/108/76+/4/68 (SPECS)
-            givemon(SPECIES_TAPU_LELE,65,ITEM_CHOICE_SPECS,ITEM_POKE_BALL,NATURE_MODEST,0,0,252,0,108,68,76,4,31,0,31,31,31,31,MOVE_DAZZLING_GLEAM,MOVE_THUNDERBOLT,MOVE_MOONBLAST,MOVE_PSYCHIC,2,FALSE,TYPE_WATER,10)
+        case 3: # 244/0/188+/0/76/0- (LEFTYS)
+            givemon(SPECIES_SINISTCHA,65,ITEM_LEFTOVERS,ITEM_POKE_BALL,NATURE_RELAXED,0,0,244,0,188,0,0,76,31,0,31,0,31,31,MOVE_MATCHA_GOTCHA,MOVE_RAGE_POWDER,MOVE_LIFE_DEW,MOVE_TRICK_ROOM,2,FALSE,TYPE_WATER,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Tapu_Lele_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Sinistcha_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Tapu_Lele_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Sinistcha_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page27)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page26)
     }
 }
 
@@ -1530,49 +1706,43 @@ script Auto_EventScript_Sample_Sets_Doubles_Snorlax_Page1
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Stakataka_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Rotom_Mow_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Stakataka_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Rotom_Mow_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 252/0/68+/0/188/0- (HERB)
-            givemon(SPECIES_STAKATAKA,65,ITEM_MENTAL_HERB,ITEM_POKE_BALL,NATURE_RELAXED,0,0,252,0,68,0,0,188,31,31,31,0,31,31,MOVE_WIDE_GUARD,MOVE_TRICK_ROOM,MOVE_BODY_PRESS,MOVE_GYRO_BALL,2,FALSE,TYPE_GRASS,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 252/252+/0-/0/4/0 (ORB)
-            givemon(SPECIES_STAKATAKA,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_LONELY,0,0,252,252,0,0,0,4,31,31,17,0,31,31,MOVE_PROTECT,MOVE_TRICK_ROOM,MOVE_ROCK_SLIDE,MOVE_GYRO_BALL,2,FALSE,TYPE_WATER,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 2: # 252/68+/0/0/188/0- (ROCK Z)
-            givemon(SPECIES_STAKATAKA,65,ITEM_ROCKIUM_Z,ITEM_POKE_BALL,NATURE_BRAVE,0,0,252,68,0,0,0,188,31,31,31,0,31,31,MOVE_PROTECT,MOVE_TRICK_ROOM,MOVE_ROCK_SLIDE,MOVE_GYRO_BALL,2,FALSE,TYPE_GRASS,10)
+        case 0: # 252/0-/4/116+/4/132 (SITRUS)
+            givemon(SPECIES_ROTOM_MOW,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_MODEST,0,0,252,0,4,132,116,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_NASTY_PLOT,MOVE_LEAF_STORM,MOVE_THUNDERBOLT,2,FALSE,TYPE_STEEL,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Stakataka_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Rotom_Mow_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Stakataka_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Rotom_Mow_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page26)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page25)
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Sylveon_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Rotom_Wash_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Sylveon_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Rotom_Wash_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 180/0-/244/76+/4/4 (LEFTYS)
-            givemon(SPECIES_SYLVEON,65,ITEM_LEFTOVERS,ITEM_POKE_BALL,NATURE_MODEST,2,0,180,0,244,4,76,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_CALM_MIND,MOVE_HYPER_VOICE,MOVE_MOONBLAST,2,FALSE,TYPE_WATER,10)
+        case 0: # 252/0-/4/116+/4/132 (SITRUS)
+            givemon(SPECIES_ROTOM_WASH,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_MODEST,0,0,252,0,4,132,116,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_NASTY_PLOT,MOVE_HYDRO_PUMP,MOVE_THUNDERBOLT,2,FALSE,TYPE_STEEL,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 252/0-/172/76+/4/4 (PLATE)
-            givemon(SPECIES_SYLVEON,65,ITEM_PIXIE_PLATE,ITEM_POKE_BALL,NATURE_MODEST,2,1,252,0,172,4,76,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_HYPER_VOICE,MOVE_HYPER_BEAM,MOVE_QUICK_ATTACK,2,FALSE,TYPE_WATER,10)
+        case 1: # 252/0-/44/60/148+/4 (SITRUS)
+            givemon(SPECIES_ROTOM_WASH,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_CALM,0,0,252,0,44,4,60,148,31,0,31,31,31,31,MOVE_PROTECT,MOVE_WILL_O_WISP,MOVE_THUNDERBOLT,MOVE_HYDRO_PUMP,2,FALSE,TYPE_STEEL,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 2: # 252/0-/92/156+/4/4 (SPECS)
-            givemon(SPECIES_SYLVEON,65,ITEM_CHOICE_SPECS,ITEM_POKE_BALL,NATURE_MODEST,2,1,252,0,92,4,156,4,31,0,31,31,31,31,MOVE_HYPER_VOICE,MOVE_HYPER_BEAM,MOVE_MOONBLAST,MOVE_PSYSHOCK,2,FALSE,TYPE_FAIRY,10)
+        case 2: # 52/0-/4/196+/4/252
+            givemon(SPECIES_ROTOM_WASH,65,ITEM_CHOICE_SCARF,ITEM_POKE_BALL,NATURE_MODEST,0,0,52,0,4,252,196,4,31,0,31,31,31,31,MOVE_VOLT_SWITCH,MOVE_HYDRO_PUMP,MOVE_THUNDERBOLT,MOVE_TRICK,2,FALSE,FALSE,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Sylveon_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Rotom_Wash_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Sylveon_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Rotom_Wash_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page26)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page25)
     }
 }
 
@@ -1659,49 +1829,43 @@ script Auto_EventScript_Sample_Sets_Doubles_Scizor_Page1
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Scream_Tail_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Rhyperior_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Scream_Tail_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Rhyperior_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 228/0-/20/4/4/252+ (BOOSTER)
-            givemon(SPECIES_SCREAM_TAIL,65,ITEM_BOOSTER_ENERGY,ITEM_POKE_BALL,NATURE_TIMID,0,0,228,0,20,252,4,4,31,31,31,31,31,31,MOVE_PROTECT,MOVE_ENCORE,MOVE_DISABLE,MOVE_DAZZLING_GLEAM,2,FALSE,TYPE_DARK,10)
+        case 0: # 12/236+/4/0-/252/4 (POLICY)
+            givemon(SPECIES_RHYPERIOR,65,ITEM_WEAKNESS_POLICY,ITEM_POKE_BALL,NATURE_ADAMANT,1,0,12,236,4,4,0,252,31,31,31,31,31,31,MOVE_PROTECT,MOVE_ICE_PUNCH,MOVE_ROCK_SLIDE,MOVE_EARTHQUAKE,2,FALSE,TYPE_WATER,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 228/4/20/0-/4/252+ (BOOSTER)
-            givemon(SPECIES_SCREAM_TAIL,65,ITEM_BOOSTER_ENERGY,ITEM_POKE_BALL,NATURE_JOLLY,0,0,228,4,20,252,0,4,31,31,31,31,31,31,MOVE_PROTECT,MOVE_ENCORE,MOVE_DISABLE,MOVE_PLAY_ROUGH,2,FALSE,TYPE_DARK,10)
+        case 1: # 20/236+/0/0/252/0- (POLICY)
+            givemon(SPECIES_RHYPERIOR,65,ITEM_WEAKNESS_POLICY,ITEM_POKE_BALL,NATURE_BRAVE,1,0,20,236,0,0,0,252,31,31,31,0,31,31,MOVE_PROTECT,MOVE_ICE_PUNCH,MOVE_ROCK_SLIDE,MOVE_EARTHQUAKE,2,FALSE,TYPE_WATER,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Scream_Tail_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Rhyperior_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Scream_Tail_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Rhyperior_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page25)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page24)
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Sinistcha_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Rillaboom_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Sinistcha_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Rillaboom_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 236/0-/188+/4/76/4 (SITRUS)
-            givemon(SPECIES_SINISTCHA,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_BOLD,0,0,236,0,188,4,4,76,31,0,31,31,31,31,MOVE_MATCHA_GOTCHA,MOVE_RAGE_POWDER,MOVE_LIFE_DEW,MOVE_TRICK_ROOM,2,FALSE,TYPE_WATER,10)
+        case 0: # 140/116+/12/0-/236/4 (VEST)
+            givemon(SPECIES_RILLABOOM,65,ITEM_ASSAULT_VEST,ITEM_POKE_BALL,NATURE_ADAMANT,2,1,140,116,12,4,0,236,31,31,31,31,31,31,MOVE_U_TURN,MOVE_WOOD_HAMMER,MOVE_GRASSY_GLIDE,MOVE_FAKE_OUT,2,FALSE,TYPE_FIRE,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 236/0/188+/0/84/0- (SITRUS)
-            givemon(SPECIES_SINISTCHA,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_RELAXED,0,0,236,0,188,0,0,84,31,0,31,0,31,31,MOVE_MATCHA_GOTCHA,MOVE_RAGE_POWDER,MOVE_LIFE_DEW,MOVE_TRICK_ROOM,2,FALSE,TYPE_WATER,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 2: # 244/0-/188+/4/68/4 (LEFTYS)
-            givemon(SPECIES_SINISTCHA,65,ITEM_LEFTOVERS,ITEM_POKE_BALL,NATURE_BOLD,0,0,244,0,188,4,4,68,31,0,31,31,31,31,MOVE_MATCHA_GOTCHA,MOVE_RAGE_POWDER,MOVE_LIFE_DEW,MOVE_TRICK_ROOM,2,FALSE,TYPE_WATER,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 3: # 244/0/188+/0/76/0- (LEFTYS)
-            givemon(SPECIES_SINISTCHA,65,ITEM_LEFTOVERS,ITEM_POKE_BALL,NATURE_RELAXED,0,0,244,0,188,0,0,76,31,0,31,0,31,31,MOVE_MATCHA_GOTCHA,MOVE_RAGE_POWDER,MOVE_LIFE_DEW,MOVE_TRICK_ROOM,2,FALSE,TYPE_WATER,10)
+        case 1: # 140/196+/12/0-/156/4 (VEST)
+            givemon(SPECIES_RILLABOOM,65,ITEM_ASSAULT_VEST,ITEM_POKE_BALL,NATURE_ADAMANT,2,1,140,196,12,4,0,156,31,31,31,31,31,31,MOVE_U_TURN,MOVE_WOOD_HAMMER,MOVE_GRASSY_GLIDE,MOVE_FAKE_OUT,2,FALSE,TYPE_FIRE,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Sinistcha_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Rillaboom_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Sinistcha_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Rillaboom_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page25)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page24)
     }
 }
 
@@ -1762,43 +1926,46 @@ script Auto_EventScript_Sample_Sets_Doubles_Rotom_Heat_Page1
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Rotom_Mow_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Raging_Bolt_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Rotom_Mow_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Raging_Bolt_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 252/0-/4/116+/4/132 (SITRUS)
-            givemon(SPECIES_ROTOM_MOW,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_MODEST,0,0,252,0,4,132,116,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_NASTY_PLOT,MOVE_LEAF_STORM,MOVE_THUNDERBOLT,2,FALSE,TYPE_STEEL,10)
+        case 0: # 148/0-/36/100+/44/180 (ORB)
+            givemon(SPECIES_RAGING_BOLT,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_MODEST,0,0,148,0,36,180,100,44,31,0,31,31,31,31,MOVE_PROTECT,MOVE_THUNDERBOLT,MOVE_DRACO_METEOR,MOVE_THUNDERCLAP,2,FALSE,TYPE_ELECTRIC,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 1: # 244/0-/124/100+/36/4 (VEST)
+            givemon(SPECIES_RAGING_BOLT,65,ITEM_ASSAULT_VEST,ITEM_POKE_BALL,NATURE_MODEST,0,0,244,0,124,4,100,36,31,0,31,31,31,31,MOVE_SNARL,MOVE_THUNDERBOLT,MOVE_DRACO_METEOR,MOVE_THUNDERCLAP,2,FALSE,TYPE_ELECTRIC,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Rotom_Mow_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Raging_Bolt_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Rotom_Mow_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Raging_Bolt_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page24)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page23)
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Rotom_Wash_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Raichu_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Rotom_Wash_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Raichu_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 252/0-/4/116+/4/132 (SITRUS)
-            givemon(SPECIES_ROTOM_WASH,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_MODEST,0,0,252,0,4,132,116,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_NASTY_PLOT,MOVE_HYDRO_PUMP,MOVE_THUNDERBOLT,2,FALSE,TYPE_STEEL,10)
+        case 0: # 140/0-/188/0/0/180+ (VEST)
+            givemon(SPECIES_RAICHU,65,ITEM_ASSAULT_VEST,ITEM_POKE_BALL,NATURE_TIMID,2,0,140,0,188,180,0,0,31,31,31,31,31,31,MOVE_VOLT_SWITCH,MOVE_NUZZLE,MOVE_ENDEAVOR,MOVE_FAKE_OUT,2,FALSE,TYPE_GHOST,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 252/0-/44/60/148+/4 (SITRUS)
-            givemon(SPECIES_ROTOM_WASH,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_CALM,0,0,252,0,44,4,60,148,31,0,31,31,31,31,MOVE_PROTECT,MOVE_WILL_O_WISP,MOVE_THUNDERBOLT,MOVE_HYDRO_PUMP,2,FALSE,TYPE_STEEL,10)
+        case 1: # 28/220/4/0-/4/252+ (ORB)
+            givemon(SPECIES_RAICHU,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_JOLLY,2,1,28,220,4,252,0,4,31,31,31,31,31,31,MOVE_PROTECT,MOVE_VOLT_TACKLE,MOVE_KNOCK_OFF,MOVE_FAKE_OUT,2,FALSE,TYPE_GHOST,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 2: # 52/0-/4/196+/4/252
-            givemon(SPECIES_ROTOM_WASH,65,ITEM_CHOICE_SCARF,ITEM_POKE_BALL,NATURE_MODEST,0,0,52,0,4,252,196,4,31,0,31,31,31,31,MOVE_VOLT_SWITCH,MOVE_HYDRO_PUMP,MOVE_THUNDERBOLT,MOVE_TRICK,2,FALSE,FALSE,10)
+        case 2: # 4/0-/0/252/0/252+ (SASH)
+            givemon(SPECIES_RAICHU,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_TIMID,2,0,4,0,0,252,252,0,31,31,31,31,31,31,MOVE_PROTECT,MOVE_VOLT_SWITCH,MOVE_ENCORE,MOVE_FAKE_OUT,2,FALSE,TYPE_GHOST,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Rotom_Wash_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Raichu_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Rotom_Wash_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Raichu_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page24)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page23)
     }
 }
 
@@ -1853,43 +2020,37 @@ script Auto_EventScript_Sample_Sets_Doubles_Regieleki_Page1
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Rhyperior_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Palafin_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Rhyperior_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Palafin_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 12/236+/4/0-/252/4 (POLICY)
-            givemon(SPECIES_RHYPERIOR,65,ITEM_WEAKNESS_POLICY,ITEM_POKE_BALL,NATURE_ADAMANT,1,0,12,236,4,4,0,252,31,31,31,31,31,31,MOVE_PROTECT,MOVE_ICE_PUNCH,MOVE_ROCK_SLIDE,MOVE_EARTHQUAKE,2,FALSE,TYPE_WATER,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 20/236+/0/0/252/0- (POLICY)
-            givemon(SPECIES_RHYPERIOR,65,ITEM_WEAKNESS_POLICY,ITEM_POKE_BALL,NATURE_BRAVE,1,0,20,236,0,0,0,252,31,31,31,0,31,31,MOVE_PROTECT,MOVE_ICE_PUNCH,MOVE_ROCK_SLIDE,MOVE_EARTHQUAKE,2,FALSE,TYPE_WATER,10)
+        case 0: # 252/156+/4/0-/92/4
+            givemon(SPECIES_PALAFIN,65,ITEM_MYSTIC_WATER,ITEM_POKE_BALL,NATURE_ADAMANT,0,1,252,156,4,4,0,92,31,31,31,31,31,31,MOVE_PROTECT,MOVE_SUBSTITUTE,MOVE_JET_PUNCH,MOVE_WAVE_CRASH,2,FALSE,TYPE_WATER,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Rhyperior_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Palafin_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Rhyperior_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Palafin_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page23)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page22)
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Rillaboom_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Pelipper_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Rillaboom_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Pelipper_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 140/116+/12/0-/236/4 (VEST)
-            givemon(SPECIES_RILLABOOM,65,ITEM_ASSAULT_VEST,ITEM_POKE_BALL,NATURE_ADAMANT,2,1,140,116,12,4,0,236,31,31,31,31,31,31,MOVE_U_TURN,MOVE_WOOD_HAMMER,MOVE_GRASSY_GLIDE,MOVE_FAKE_OUT,2,FALSE,TYPE_FIRE,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 140/196+/12/0-/156/4 (VEST)
-            givemon(SPECIES_RILLABOOM,65,ITEM_ASSAULT_VEST,ITEM_POKE_BALL,NATURE_ADAMANT,2,1,140,196,12,4,0,156,31,31,31,31,31,31,MOVE_U_TURN,MOVE_WOOD_HAMMER,MOVE_GRASSY_GLIDE,MOVE_FAKE_OUT,2,FALSE,TYPE_FIRE,10)
+        case 0: # 0/0-/4/252+/0/252 (SASH)
+            givemon(SPECIES_PELIPPER,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_MODEST,1,0,0,0,4,252,252,0,31,31,31,31,31,31,MOVE_PROTECT,MOVE_WIDE_GUARD,MOVE_WEATHER_BALL,MOVE_HURRICANE,2,FALSE,TYPE_GHOST,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Rillaboom_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Pelipper_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Rillaboom_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Pelipper_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page23)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page22)
     }
 }
 
@@ -1950,46 +2111,40 @@ script Auto_EventScript_Sample_Sets_Doubles_Primarina_Page1
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Raging_Bolt_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Ninetales_Alola_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Raging_Bolt_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Ninetales_Alola_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 148/0-/36/100+/44/180 (ORB)
-            givemon(SPECIES_RAGING_BOLT,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_MODEST,0,0,148,0,36,180,100,44,31,0,31,31,31,31,MOVE_PROTECT,MOVE_THUNDERBOLT,MOVE_DRACO_METEOR,MOVE_THUNDERCLAP,2,FALSE,TYPE_ELECTRIC,10)
+        case 0: # 212/0-/100/4/4/188+ (CLAY)
+            givemon(SPECIES_NINETALES_ALOLA,65,ITEM_LIGHT_CLAY,ITEM_POKE_BALL,NATURE_TIMID,2,1,212,0,100,188,4,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_AURORA_VEIL,MOVE_MOONBLAST,MOVE_BLIZZARD,2,FALSE,TYPE_WATER,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 244/0-/124/100+/36/4 (VEST)
-            givemon(SPECIES_RAGING_BOLT,65,ITEM_ASSAULT_VEST,ITEM_POKE_BALL,NATURE_MODEST,0,0,244,0,124,4,100,36,31,0,31,31,31,31,MOVE_SNARL,MOVE_THUNDERBOLT,MOVE_DRACO_METEOR,MOVE_THUNDERCLAP,2,FALSE,TYPE_ELECTRIC,10)
+        case 1: # 4/0-/0/252/0/252+ (SASH)
+            givemon(SPECIES_NINETALES_ALOLA,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_TIMID,2,0,4,0,0,252,252,0,31,0,31,31,31,31,MOVE_PROTECT,MOVE_AURORA_VEIL,MOVE_MOONBLAST,MOVE_BLIZZARD,2,FALSE,TYPE_GHOST,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Raging_Bolt_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Ninetales_Alola_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Raging_Bolt_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Ninetales_Alola_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page22)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page21)
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Raichu_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Ogerpon_Cs_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Raichu_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Ogerpon_Cs_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 140/0-/188/0/0/180+ (VEST)
-            givemon(SPECIES_RAICHU,65,ITEM_ASSAULT_VEST,ITEM_POKE_BALL,NATURE_TIMID,2,0,140,0,188,180,0,0,31,31,31,31,31,31,MOVE_VOLT_SWITCH,MOVE_NUZZLE,MOVE_ENDEAVOR,MOVE_FAKE_OUT,2,FALSE,TYPE_GHOST,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 28/220/4/0-/4/252+ (ORB)
-            givemon(SPECIES_RAICHU,65,ITEM_LIFE_ORB,ITEM_POKE_BALL,NATURE_JOLLY,2,1,28,220,4,252,0,4,31,31,31,31,31,31,MOVE_PROTECT,MOVE_VOLT_TACKLE,MOVE_KNOCK_OFF,MOVE_FAKE_OUT,2,FALSE,TYPE_GHOST,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 2: # 4/0-/0/252/0/252+ (SASH)
-            givemon(SPECIES_RAICHU,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_TIMID,2,0,4,0,0,252,252,0,31,31,31,31,31,31,MOVE_PROTECT,MOVE_VOLT_SWITCH,MOVE_ENCORE,MOVE_FAKE_OUT,2,FALSE,TYPE_GHOST,10)
+        case 0: # 0/252/4/0-/0/252+
+            givemon(SPECIES_OGERPON_CORNERSTONE,65,ITEM_CORNERSTONE_MASK,ITEM_POKE_BALL,NATURE_JOLLY,0,1,0,252,4,252,0,0,31,31,31,31,31,31,MOVE_SPIKY_SHIELD,MOVE_FOLLOW_ME,MOVE_POWER_WHIP,MOVE_IVY_CUDGEL,2,FALSE,TYPE_ROCK,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Raichu_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Ogerpon_Cs_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Raichu_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Ogerpon_Cs_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page22)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page21)
     }
 }
 
@@ -2047,37 +2202,23 @@ script Auto_EventScript_Sample_Sets_Doubles_Oranguru_Page1
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Palafin_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Murkrow_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Palafin_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Murkrow_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 252/156+/4/0-/92/4
-            givemon(SPECIES_PALAFIN,65,ITEM_MYSTIC_WATER,ITEM_POKE_BALL,NATURE_ADAMANT,0,1,252,156,4,4,0,92,31,31,31,31,31,31,MOVE_PROTECT,MOVE_SUBSTITUTE,MOVE_JET_PUNCH,MOVE_WAVE_CRASH,2,FALSE,TYPE_WATER,10)
+        case 0: # 252/0-/116/0/140+/0
+            givemon(SPECIES_MURKROW,65,ITEM_EVIOLITE,ITEM_POKE_BALL,NATURE_CALM,2,0,252,0,116,0,0,140,31,0,31,31,31,31,MOVE_PROTECT,MOVE_TAILWIND,MOVE_THUNDER_WAVE,MOVE_FOUL_PLAY,2,FALSE,TYPE_GHOST,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 1: # 252/0-/140+/0/116/0
+            givemon(SPECIES_MURKROW,65,ITEM_EVIOLITE,ITEM_POKE_BALL,NATURE_BOLD,2,1,252,0,140,0,0,116,31,0,31,31,31,31,MOVE_PROTECT,MOVE_TAILWIND,MOVE_THUNDER_WAVE,MOVE_FOUL_PLAY,2,FALSE,TYPE_GHOST,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Palafin_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Murkrow_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Palafin_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Murkrow_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page21)
-    }
-}
-
-script Auto_EventScript_Sample_Sets_Doubles_Pelipper_Page1
-{
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Pelipper_Page1)
-    switch(var(VAR_RESULT))
-    {
-        case 0: # 0/0-/4/252+/0/252 (SASH)
-            givemon(SPECIES_PELIPPER,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_MODEST,1,0,0,0,4,252,252,0,31,31,31,31,31,31,MOVE_PROTECT,MOVE_WIDE_GUARD,MOVE_WEATHER_BALL,MOVE_HURRICANE,2,FALSE,TYPE_GHOST,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Pelipper_Page1)
-        case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Pelipper_Page1)
-        default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page21)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page20)
     }
 }
 
@@ -2150,40 +2291,40 @@ script Auto_EventScript_Sample_Sets_Doubles_Nihilego_Page1
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Ninetales_Alola_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Ninetales_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Ninetales_Alola_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Ninetales_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 212/0-/100/4/4/188+ (CLAY)
-            givemon(SPECIES_NINETALES_ALOLA,65,ITEM_LIGHT_CLAY,ITEM_POKE_BALL,NATURE_TIMID,2,1,212,0,100,188,4,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_AURORA_VEIL,MOVE_MOONBLAST,MOVE_BLIZZARD,2,FALSE,TYPE_WATER,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 4/0-/0/252/0/252+ (SASH)
-            givemon(SPECIES_NINETALES_ALOLA,65,ITEM_FOCUS_SASH,ITEM_POKE_BALL,NATURE_TIMID,2,0,4,0,0,252,252,0,31,0,31,31,31,31,MOVE_PROTECT,MOVE_AURORA_VEIL,MOVE_MOONBLAST,MOVE_BLIZZARD,2,FALSE,TYPE_GHOST,10)
+        case 0: # 4/0-/0/252/0/252+ (SPECS)
+            givemon(SPECIES_NINETALES,65,ITEM_CHOICE_SPECS,ITEM_POKE_BALL,NATURE_TIMID,2,1,4,0,0,252,252,0,31,0,31,31,31,31,MOVE_HEAT_WAVE,MOVE_WEATHER_BALL,MOVE_SOLAR_BEAM,MOVE_SCORCHING_SANDS,2,FALSE,TYPE_FIRE,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Ninetales_Alola_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Ninetales_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Ninetales_Alola_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Ninetales_Page1)
         default:
             goto(Auto_EventScript_Sample_Sets_Doubles_Page20)
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Ogerpon_Cs_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Milotic_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Ogerpon_Cs_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Milotic_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 0/252/4/0-/0/252+
-            givemon(SPECIES_OGERPON_CORNERSTONE,65,ITEM_CORNERSTONE_MASK,ITEM_POKE_BALL,NATURE_JOLLY,0,1,0,252,4,252,0,0,31,31,31,31,31,31,MOVE_SPIKY_SHIELD,MOVE_FOLLOW_ME,MOVE_POWER_WHIP,MOVE_IVY_CUDGEL,2,FALSE,TYPE_ROCK,10)
+        case 0: # 180/0-/204/4/116+/4 (COIL)
+            givemon(SPECIES_MILOTIC,65,ITEM_LEFTOVERS,ITEM_POKE_BALL,NATURE_CALM,1,0,180,0,204,4,4,116,31,31,31,31,31,31,MOVE_PROTECT,MOVE_COIL,MOVE_HYPNOSIS,MOVE_MUDDY_WATER,2,FALSE,TYPE_GRASS,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 1: # 244/0-/220/4/36+/4 (SITRUS)
+            givemon(SPECIES_MILOTIC,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_CALM,1,1,244,0,220,4,4,36,31,31,31,31,31,31,MOVE_PROTECT,MOVE_RECOVER,MOVE_ICY_WIND,MOVE_MUDDY_WATER,2,FALSE,TYPE_GRASS,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Ogerpon_Cs_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Milotic_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Ogerpon_Cs_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Milotic_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page20)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page19)
     }
 }
 
@@ -2270,23 +2411,26 @@ script Auto_EventScript_Sample_Sets_Doubles_Muk_Alola_Page1
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Murkrow_Page1
+script Auto_EventScript_Sample_Sets_Doubles_Maushold_Page1
 {
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Murkrow_Page1)
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Maushold_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # 252/0-/116/0/140+/0
-            givemon(SPECIES_MURKROW,65,ITEM_EVIOLITE,ITEM_POKE_BALL,NATURE_CALM,2,0,252,0,116,0,0,140,31,0,31,31,31,31,MOVE_PROTECT,MOVE_TAILWIND,MOVE_THUNDER_WAVE,MOVE_FOUL_PLAY,2,FALSE,TYPE_GHOST,10)
+        case 0: # 252/0-/156/0/0/100+ (BEAT UP)
+            givemon(SPECIES_MAUSHOLD,65,ITEM_SAFETY_GOGGLES,ITEM_POKE_BALL,NATURE_TIMID,0,0,252,0,156,100,0,0,31,31,31,31,31,31,MOVE_PROTECT,MOVE_BEAT_UP,MOVE_FOLLOW_ME,MOVE_SUPER_FANG,2,FALSE,TYPE_GHOST,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 252/0-/140+/0/116/0
-            givemon(SPECIES_MURKROW,65,ITEM_EVIOLITE,ITEM_POKE_BALL,NATURE_BOLD,2,1,252,0,140,0,0,116,31,0,31,31,31,31,MOVE_PROTECT,MOVE_TAILWIND,MOVE_THUNDER_WAVE,MOVE_FOUL_PLAY,2,FALSE,TYPE_GHOST,10)
+        case 1: # 252/0-/236+/0/20/0 (GOGGLES)
+            givemon(SPECIES_MAUSHOLD,65,ITEM_SAFETY_GOGGLES,ITEM_POKE_BALL,NATURE_BOLD,0,0,252,0,236,0,0,20,31,31,31,31,31,31,MOVE_PROTECT,MOVE_FOLLOW_ME,MOVE_HELPING_HAND,MOVE_SUPER_FANG,2,FALSE,TYPE_GHOST,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 2: # 4/244/4/0-/4/252+ (LENS)
+            givemon(SPECIES_MAUSHOLD,65,ITEM_WIDE_LENS,ITEM_POKE_BALL,NATURE_JOLLY,2,0,4,244,4,252,0,4,31,31,31,31,31,31,MOVE_PROTECT,MOVE_FOLLOW_ME,MOVE_BITE,MOVE_POPULATION_BOMB,2,FALSE,TYPE_NORMAL,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Murkrow_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Maushold_Page1)
         case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Murkrow_Page1)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Maushold_Page1)
         default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page19)
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page18)
     }
 }
 
@@ -2300,6 +2444,12 @@ script Auto_EventScript_Sample_Sets_Doubles_Mawile_Page1
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case 1: # 156/196+/4/0-/148/4 (MEGA)
             givemon(SPECIES_MAWILE,65,ITEM_MAWILITE,ITEM_POKE_BALL,NATURE_ADAMANT,1,0,156,196,4,4,0,148,31,31,31,31,31,31,MOVE_PROTECT,MOVE_IRON_HEAD,MOVE_PLAY_ROUGH,MOVE_SUCKER_PUNCH,2,FALSE,TYPE_FIRE,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 2: # 252/116+/0/0/140/0- (MEGA)
+            givemon(SPECIES_MAWILE,65,ITEM_MAWILITE,ITEM_POKE_BALL,NATURE_BRAVE,1,0,252,116,0,0,0,140,31,31,31,0,31,31,MOVE_PROTECT,MOVE_PLAY_ROUGH,MOVE_IRON_HEAD,MOVE_SUCKER_PUNCH,2,FALSE,TYPE_FIRE,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 3: # 252/116+/4/0-/132/4 (MEGA)
+            givemon(SPECIES_MAWILE,65,ITEM_MAWILITE,ITEM_POKE_BALL,NATURE_ADAMANT,1,1,252,116,4,4,0,132,31,31,31,31,31,31,MOVE_PROTECT,MOVE_PLAY_ROUGH,MOVE_IRON_HEAD,MOVE_SUCKER_PUNCH,2,FALSE,TYPE_FIRE,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Sample_Sets_Doubles_Mawile_Page1)
@@ -2373,26 +2523,6 @@ script Auto_EventScript_Sample_Sets_Doubles_Mienshao_Page1
     }
 }
 
-script Auto_EventScript_Sample_Sets_Doubles_Milotic_Page1
-{
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Milotic_Page1)
-    switch(var(VAR_RESULT))
-    {
-        case 0: # 180/0-/204/4/116+/4 (COIL)
-            givemon(SPECIES_MILOTIC,65,ITEM_LEFTOVERS,ITEM_POKE_BALL,NATURE_CALM,1,0,180,0,204,4,4,116,31,31,31,31,31,31,MOVE_PROTECT,MOVE_COIL,MOVE_HYPNOSIS,MOVE_MUDDY_WATER,2,FALSE,TYPE_GRASS,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 244/0-/220/4/36+/4 (SITRUS)
-            givemon(SPECIES_MILOTIC,65,ITEM_SITRUS_BERRY,ITEM_POKE_BALL,NATURE_CALM,1,1,244,0,220,4,4,36,31,31,31,31,31,31,MOVE_PROTECT,MOVE_RECOVER,MOVE_ICY_WIND,MOVE_MUDDY_WATER,2,FALSE,TYPE_GRASS,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Milotic_Page1)
-        case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Milotic_Page1)
-        default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page18)
-    }
-}
-
 script Auto_EventScript_Sample_Sets_Doubles_Lunala_Page1
 {
     multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Lunala_Page1)
@@ -2405,6 +2535,26 @@ script Auto_EventScript_Sample_Sets_Doubles_Lunala_Page1
             goto(Auto_EventScript_Sample_Sets_Doubles_Lunala_Page1)
         case MULTI_R_PRESSED:
             goto(Auto_EventScript_Sample_Sets_Doubles_Lunala_Page1)
+        default:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Page17)
+    }
+}
+
+script Auto_EventScript_Sample_Sets_Doubles_Magnezone_Page1
+{
+    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Magnezone_Page1)
+    switch(var(VAR_RESULT))
+    {
+        case 0: # 252/0-/4/236+/12/4 (WIKI)
+            givemon(SPECIES_MAGNEZONE,65,ITEM_WIKI_BERRY,ITEM_POKE_BALL,NATURE_MODEST,0,0,252,0,4,4,236,12,31,0,31,31,31,31,MOVE_PROTECT,MOVE_SUBSTITUTE,MOVE_THUNDERBOLT,MOVE_FLASH_CANNON,2,FALSE,TYPE_WATER,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 1: # 252/0/0/236+/20/0- (WIKI)
+            givemon(SPECIES_MAGNEZONE,65,ITEM_WIKI_BERRY,ITEM_POKE_BALL,NATURE_QUIET,2,0,252,0,0,0,236,20,31,0,31,0,31,31,MOVE_PROTECT,MOVE_SUBSTITUTE,MOVE_THUNDERBOLT,MOVE_FLASH_CANNON,2,FALSE,TYPE_WATER,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case MULTI_L_PRESSED:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Magnezone_Page1)
+        case MULTI_R_PRESSED:
+            goto(Auto_EventScript_Sample_Sets_Doubles_Magnezone_Page1)
         default:
             goto(Auto_EventScript_Sample_Sets_Doubles_Page17)
     }
@@ -2462,29 +2612,6 @@ script Auto_EventScript_Sample_Sets_Doubles_Marowak_Alola_Page1
             goto(Auto_EventScript_Sample_Sets_Doubles_Marowak_Alola_Page1)
         case MULTI_R_PRESSED:
             goto(Auto_EventScript_Sample_Sets_Doubles_Marowak_Alola_Page1)
-        default:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Page17)
-    }
-}
-
-script Auto_EventScript_Sample_Sets_Doubles_Maushold_Page1
-{
-    multichoice2(0,0,Auto_Text_Sample_Sets_Doubles_Maushold_Page1)
-    switch(var(VAR_RESULT))
-    {
-        case 0: # 252/0-/156/0/0/100+ (BEAT UP)
-            givemon(SPECIES_MAUSHOLD,65,ITEM_SAFETY_GOGGLES,ITEM_POKE_BALL,NATURE_TIMID,0,0,252,0,156,100,0,0,31,31,31,31,31,31,MOVE_PROTECT,MOVE_BEAT_UP,MOVE_FOLLOW_ME,MOVE_SUPER_FANG,2,FALSE,TYPE_GHOST,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 252/0-/236+/0/20/0 (GOGGLES)
-            givemon(SPECIES_MAUSHOLD,65,ITEM_SAFETY_GOGGLES,ITEM_POKE_BALL,NATURE_BOLD,0,0,252,0,236,0,0,20,31,31,31,31,31,31,MOVE_PROTECT,MOVE_FOLLOW_ME,MOVE_HELPING_HAND,MOVE_SUPER_FANG,2,FALSE,TYPE_GHOST,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 2: # 4/244/4/0-/4/252+ (LENS)
-            givemon(SPECIES_MAUSHOLD,65,ITEM_WIDE_LENS,ITEM_POKE_BALL,NATURE_JOLLY,2,0,4,244,4,252,0,4,31,31,31,31,31,31,MOVE_PROTECT,MOVE_FOLLOW_ME,MOVE_BITE,MOVE_POPULATION_BOMB,2,FALSE,TYPE_NORMAL,10)
-            goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Maushold_Page1)
-        case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Sample_Sets_Doubles_Maushold_Page1)
         default:
             goto(Auto_EventScript_Sample_Sets_Doubles_Page17)
     }
@@ -3303,9 +3430,12 @@ script Auto_EventScript_Sample_Sets_Doubles_Gardevoir_Page1
     switch(var(VAR_RESULT))
     {
         case 0: # 244/0-/196/36+/4/28 (MEGA)
-            givemon(SPECIES_GARDEVOIR,65,ITEM_GARDEVOIRITE,ITEM_POKE_BALL,NATURE_MODEST,0,0,244,0,196,28,36,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_HYPER_VOICE,MOVE_TRICK_ROOM,MOVE_PSYCHIC,2,FALSE,TYPE_WATER,10)
+            givemon(SPECIES_GARDEVOIR,65,ITEM_GARDEVOIRITE,ITEM_POKE_BALL,NATURE_MODEST,1,1,244,0,196,28,36,4,31,0,31,31,31,31,MOVE_PROTECT,MOVE_HYPER_VOICE,MOVE_TRICK_ROOM,MOVE_PSYCHIC,2,FALSE,TYPE_WATER,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
-        case 1: # 4/0-/52/196+/4/252 (SCARF)
+        case 1: # 4/0-/4/244/4/252+ (MEGA)
+            givemon(SPECIES_GARDEVOIR,65,ITEM_GARDEVOIRITE,ITEM_POKE_BALL,NATURE_TIMID,1,0,4,0,4,252,244,4,31,31,31,31,31,31,MOVE_PROTECT,MOVE_EXPANDING_FORCE,MOVE_HYPER_VOICE,MOVE_PSYCHIC,2,FALSE,TYPE_WATER,10)
+            goto(Common_EventScript_Sample_Sets_CheckPurchase)
+        case 2: # 4/0-/52/196+/4/252 (SCARF)
             givemon(SPECIES_GARDEVOIR,65,ITEM_CHOICE_SCARF,ITEM_POKE_BALL,NATURE_MODEST,2,0,4,0,52,252,196,4,31,0,31,31,31,31,MOVE_MOONBLAST,MOVE_DAZZLING_GLEAM,MOVE_PSYCHIC,MOVE_TRICK,2,FALSE,TYPE_GHOST,10)
             goto(Common_EventScript_Sample_Sets_CheckPurchase)
         case MULTI_L_PRESSED:
@@ -4312,192 +4442,186 @@ text Auto_Text_Sample_Sets_Doubles_Page16
 text Auto_Text_Sample_Sets_Doubles_Page17
 {
     "LUNALA$"
+    "MAGNEZONE$"
     "MANAPHY$"
     "MANECTRIC$"
     "MAROWAK-ALOLA$"
-    "MAUSHOLD$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Sample_Sets_Doubles_Page18
 {
+    "MAUSHOLD$"
     "MAWILE$"
     "MEOWSCARADA$"
     "METAGROSS$"
     "MIENSHAO$"
-    "MILOTIC$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Sample_Sets_Doubles_Page19
 {
+    "MILOTIC$"
     "MIMIKYU$"
     "MIRAIDON$"
     "MOLTRES-GALAR$"
     "MUK-ALOLA$"
-    "MURKROW$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Sample_Sets_Doubles_Page20
 {
+    "MURKROW$"
     "NECROZMA-DAWN-WINGS$"
     "NECROZMA-DUSK-MANE$"
     "NIHILEGO$"
-    "NINETALES-ALOLA$"
-    "OGERPON-CS$"
+    "NINETALES$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Sample_Sets_Doubles_Page21
 {
+    "NINETALES-ALOLA$"
+    "OGERPON-CS$"
     "OGERPON-HF$"
     "OGERPON-WS$"
     "ORANGURU$"
-    "PALAFIN$"
-    "PELIPPER$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Sample_Sets_Doubles_Page22
 {
+    "PALAFIN$"
+    "PELIPPER$"
     "POLITOED$"
     "PORYGON2$"
     "PRIMARINA$"
-    "RAGING BOLT$"
-    "RAICHU$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Sample_Sets_Doubles_Page23
 {
+    "RAGING BOLT$"
+    "RAICHU$"
     "RAYQUAZA$"
     "REGIDRAGO$"
     "REGIELEKI$"
-    "RHYPERIOR$"
-    "RILLABOOM$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Sample_Sets_Doubles_Page24
 {
+    "RHYPERIOR$"
+    "RILLABOOM$"
     "ROARING MOON$"
     "ROTOM-FROST$"
     "ROTOM-HEAT$"
-    "ROTOM-MOW$"
-    "ROTOM-WASH$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Sample_Sets_Doubles_Page25
 {
+    "ROTOM-MOW$"
+    "ROTOM-WASH$"
     "SABLEYE$"
     "SALAMENCE$"
     "SCIZOR$"
-    "SCREAM TAIL$"
-    "SINISTCHA$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Sample_Sets_Doubles_Page26
 {
+    "SCREAM TAIL$"
+    "SINISTCHA$"
     "SKELEDIRGE$"
     "SNEASLER$"
     "SNORLAX$"
-    "STAKATAKA$"
-    "SYLVEON$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Sample_Sets_Doubles_Page27
 {
+    "STAKATAKA$"
+    "SYLVEON$"
     "TALONFLAME$"
     "TAPU BULU$"
     "TAPU FINI$"
-    "TAPU KOKO$"
-    "TAPU LELE$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Sample_Sets_Doubles_Page28
 {
+    "TAPU KOKO$"
+    "TAPU LELE$"
     "TATSUGIRI$"
     "THUNDURUS$"
     "TING-LU$"
-    "TINKATON$"
-    "TOGEKISS$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Sample_Sets_Doubles_Page29
 {
+    "TINKATON$"
+    "TOGEDEMARU$"
+    "TOGEKISS$"
     "TORKOAL$"
     "TORNADUS$"
-    "TOXTRICITY$"
-    "TSAREENA$"
-    "TYRANITAR$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Sample_Sets_Doubles_Page30
 {
+    "TOXTRICITY$"
+    "TSAREENA$"
+    "TYRANITAR$"
     "URSALUNA$"
     "URSALUNA-BLOODMOON$"
-    "URSHIFU-RS$"
-    "URSHIFU-SS$"
-    "VENUSAUR$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Sample_Sets_Doubles_Page31
 {
+    "URSHIFU-RS$"
+    "URSHIFU-SS$"
+    "VENUSAUR$"
     "VENUSAUR-GMAX$"
     "VOLCARONA$"
-    "WEAVILE$"
-    "WEEZING-GALAR$"
-    "WHIMSICOTT$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Sample_Sets_Doubles_Page32
 {
+    "WEAVILE$"
+    "WEEZING-GALAR$"
+    "WHIMSICOTT$"
     "XERNEAS$"
     "YVELTAL$"
+    "Go Back$"
+    ""
+}
+
+text Auto_Text_Sample_Sets_Doubles_Page33
+{
     "ZACIAN$"
     "ZAMAZENTA$"
     "ZAPDOS$"
-    "Go Back$"
-    ""
-}
-
-text Auto_Text_Sample_Sets_Doubles_Xerneas_Page1
-{
-    "4/0-/4/244/4/252+$"
-    "44/0-/20/188/4/252+$"
-    "Go Back$"
-    ""
-}
-
-text Auto_Text_Sample_Sets_Doubles_Yveltal_Page1
-{
-    "4/0-/4/244/4/252+ (ORB)$"
-    "4/244/4/0-/4/252+ (DARK Z)$"
-    "4/244/4/0-/4/252+ (ORB)$"
+    "ZOROARK$"
+    "ZOROARK-HISUI$"
     "Go Back$"
     ""
 }
@@ -4526,17 +4650,18 @@ text Auto_Text_Sample_Sets_Doubles_Zapdos_Page1
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Venusaur_Gmax_Page1
+text Auto_Text_Sample_Sets_Doubles_Zoroark_Page1
 {
-    "156/0-/36/172+/20/116 (GMAX)$"
+    "4/0-/0/252/0/252+ (SASH)$"
     "Go Back$"
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Volcarona_Page1
+text Auto_Text_Sample_Sets_Doubles_Zoroark_Hisui_Page1
 {
-    "252/0-/108/36+/4/108 (TERA)$"
-    "252/0-/188/36+/4/28 (SUPPORT)$"
+    "4/0-/0/252/0/252+ (SASH)$"
+    "4/0-/0/252/0/252+ (SPECS)$"
+    "68/0-/4/180/4/252+ (ORB)$"
     "Go Back$"
     ""
 }
@@ -4565,19 +4690,19 @@ text Auto_Text_Sample_Sets_Doubles_Whimsicott_Page1
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Ursaluna_Page1
+text Auto_Text_Sample_Sets_Doubles_Xerneas_Page1
 {
-    "140/236+/0/0/132/0-$"
-    "140/236+/4/0-/116/12$"
+    "4/0-/4/244/4/252+$"
+    "44/0-/20/188/4/252+$"
     "Go Back$"
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Ursaluna_Bloodmoon_Page1
+text Auto_Text_Sample_Sets_Doubles_Yveltal_Page1
 {
-    "244/0-/4/196+/52/12 (ORB)$"
-    "244/0/0/196+/68/0- (ORB)$"
-    "4/0-/4/196+/52/252 (ORB)$"
+    "4/0-/4/244/4/252+ (ORB)$"
+    "4/244/4/0-/4/252+ (DARK Z)$"
+    "4/244/4/0-/4/252+ (ORB)$"
     "Go Back$"
     ""
 }
@@ -4606,19 +4731,17 @@ text Auto_Text_Sample_Sets_Doubles_Venusaur_Page1
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Torkoal_Page1
+text Auto_Text_Sample_Sets_Doubles_Venusaur_Gmax_Page1
 {
-    "204/0/0/196+/108/0-$"
-    "204/0/0/196+/108/0- (SPECS)$"
+    "156/0-/36/172+/20/116 (GMAX)$"
     "Go Back$"
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Tornadus_Page1
+text Auto_Text_Sample_Sets_Doubles_Volcarona_Page1
 {
-    "196/0-/228+/4/76/4 (CLOAK)$"
-    "196/0-/228+/4/76/4 (HELMET)$"
-    "4/0-/0/252/0/252+ (SASH)$"
+    "252/0-/108/36+/4/108 (TERA)$"
+    "252/0-/188/36+/4/28 (SUPPORT)$"
     "Go Back$"
     ""
 }
@@ -4661,6 +4784,83 @@ text Auto_Text_Sample_Sets_Doubles_Tyranitar_Page2
     ""
 }
 
+text Auto_Text_Sample_Sets_Doubles_Ursaluna_Page1
+{
+    "140/236+/0/0/132/0-$"
+    "140/236+/4/0-/116/12$"
+    "Go Back$"
+    ""
+}
+
+text Auto_Text_Sample_Sets_Doubles_Ursaluna_Bloodmoon_Page1
+{
+    "244/0-/4/196+/52/12 (ORB)$"
+    "244/0/0/196+/68/0- (ORB)$"
+    "4/0-/4/196+/52/252 (ORB)$"
+    "Go Back$"
+    ""
+}
+
+text Auto_Text_Sample_Sets_Doubles_Tinkaton_Page1
+{
+    "180/172/100/0-/44+/12$"
+    "Go Back$"
+    ""
+}
+
+text Auto_Text_Sample_Sets_Doubles_Togedemaru_Page1
+{
+    "0/252/4/0-/0/252+ (SASH)$"
+    "252/4/100/0-/4/148+ (VEST)$"
+    "Go Back$"
+    ""
+}
+
+text Auto_Text_Sample_Sets_Doubles_Togekiss_Page1
+{
+    "228/0-/196+/4/76/4 (LENS)$"
+    "236/0-/196+/4/12/60 (BABIRI)$"
+    "Go Back$"
+    ""
+}
+
+text Auto_Text_Sample_Sets_Doubles_Torkoal_Page1
+{
+    "204/0/0/196+/108/0-$"
+    "204/0/0/196+/108/0- (SPECS)$"
+    "Go Back$"
+    ""
+}
+
+text Auto_Text_Sample_Sets_Doubles_Tornadus_Page1
+{
+    "196/0-/228+/4/76/4 (CLOAK)$"
+    "196/0-/228+/4/76/4 (HELMET)$"
+    "4/0-/0/252/0/252+ (SASH)$"
+    "Go Back$"
+    ""
+}
+
+text Auto_Text_Sample_Sets_Doubles_Tapu_Koko_Page1
+{
+    "172/0-/12/36/196/92+ (VEST)$"
+    "28/0-/4/196+/28/252 (ELEC Z)$"
+    "4/0-/0/252/0/252+ (SASH)$"
+    "4/0-/4/244/4/252+ (ELEC Z)$"
+    "Go Back$"
+    ""
+}
+
+text Auto_Text_Sample_Sets_Doubles_Tapu_Lele_Page1
+{
+    "0/0-/4/252/0/252+ (SASH)$"
+    "12/0-/4/236+/4/252 (PSYCH Z)$"
+    "12/0-/4/236+/4/252 (SCARF)$"
+    "252/0-/108/76+/4/68 (SPECS)$"
+    "Go Back$"
+    ""
+}
+
 text Auto_Text_Sample_Sets_Doubles_Tatsugiri_Page1
 {
     "12/0-/4/236+/4/252 (SCARF)$"
@@ -4687,17 +4887,20 @@ text Auto_Text_Sample_Sets_Doubles_Ting_Lu_Page1
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Tinkaton_Page1
+text Auto_Text_Sample_Sets_Doubles_Stakataka_Page1
 {
-    "180/172/100/0-/44+/12$"
+    "252/0/68+/0/188/0- (HERB)$"
+    "252/252+/0-/0/4/0 (ORB)$"
+    "252/68+/0/0/188/0- (ROCK Z)$"
     "Go Back$"
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Togekiss_Page1
+text Auto_Text_Sample_Sets_Doubles_Sylveon_Page1
 {
-    "228/0-/196+/4/76/4 (LENS)$"
-    "236/0-/196+/4/12/60 (BABIRI)$"
+    "180/0-/244/76+/4/4 (LEFTYS)$"
+    "252/0-/172/76+/4/4 (PLATE)$"
+    "252/0-/92/156+/4/4 (SPECS)$"
     "Go Back$"
     ""
 }
@@ -4732,22 +4935,20 @@ text Auto_Text_Sample_Sets_Doubles_Tapu_Fini_Page1
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Tapu_Koko_Page1
+text Auto_Text_Sample_Sets_Doubles_Scream_Tail_Page1
 {
-    "172/0-/12/36/196/92+ (VEST)$"
-    "28/0-/4/196+/28/252 (ELEC Z)$"
-    "4/0-/0/252/0/252+ (SASH)$"
-    "4/0-/4/244/4/252+ (ELEC Z)$"
+    "228/0-/20/4/4/252+ (BOOSTER)$"
+    "228/4/20/0-/4/252+ (BOOSTER)$"
     "Go Back$"
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Tapu_Lele_Page1
+text Auto_Text_Sample_Sets_Doubles_Sinistcha_Page1
 {
-    "0/0-/4/252/0/252+ (SASH)$"
-    "12/0-/4/236+/4/252 (PSYCH Z)$"
-    "12/0-/4/236+/4/252 (SCARF)$"
-    "252/0-/108/76+/4/68 (SPECS)$"
+    "236/0-/188+/4/76/4 (SITRUS)$"
+    "236/0/188+/0/84/0- (SITRUS)$"
+    "244/0-/188+/4/68/4 (LEFTYS)$"
+    "244/0/188+/0/76/0- (LEFTYS)$"
     "Go Back$"
     ""
 }
@@ -4777,20 +4978,18 @@ text Auto_Text_Sample_Sets_Doubles_Snorlax_Page1
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Stakataka_Page1
+text Auto_Text_Sample_Sets_Doubles_Rotom_Mow_Page1
 {
-    "252/0/68+/0/188/0- (HERB)$"
-    "252/252+/0-/0/4/0 (ORB)$"
-    "252/68+/0/0/188/0- (ROCK Z)$"
+    "252/0-/4/116+/4/132 (SITRUS)$"
     "Go Back$"
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Sylveon_Page1
+text Auto_Text_Sample_Sets_Doubles_Rotom_Wash_Page1
 {
-    "180/0-/244/76+/4/4 (LEFTYS)$"
-    "252/0-/172/76+/4/4 (PLATE)$"
-    "252/0-/92/156+/4/4 (SPECS)$"
+    "252/0-/4/116+/4/132 (SITRUS)$"
+    "252/0-/44/60/148+/4 (SITRUS)$"
+    "52/0-/4/196+/4/252$"
     "Go Back$"
     ""
 }
@@ -4828,20 +5027,18 @@ text Auto_Text_Sample_Sets_Doubles_Scizor_Page1
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Scream_Tail_Page1
+text Auto_Text_Sample_Sets_Doubles_Rhyperior_Page1
 {
-    "228/0-/20/4/4/252+ (BOOSTER)$"
-    "228/4/20/0-/4/252+ (BOOSTER)$"
+    "12/236+/4/0-/252/4 (POLICY)$"
+    "20/236+/0/0/252/0- (POLICY)$"
     "Go Back$"
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Sinistcha_Page1
+text Auto_Text_Sample_Sets_Doubles_Rillaboom_Page1
 {
-    "236/0-/188+/4/76/4 (SITRUS)$"
-    "236/0/188+/0/84/0- (SITRUS)$"
-    "244/0-/188+/4/68/4 (LEFTYS)$"
-    "244/0/188+/0/76/0- (LEFTYS)$"
+    "140/116+/12/0-/236/4 (VEST)$"
+    "140/196+/12/0-/156/4 (VEST)$"
     "Go Back$"
     ""
 }
@@ -4869,18 +5066,19 @@ text Auto_Text_Sample_Sets_Doubles_Rotom_Heat_Page1
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Rotom_Mow_Page1
+text Auto_Text_Sample_Sets_Doubles_Raging_Bolt_Page1
 {
-    "252/0-/4/116+/4/132 (SITRUS)$"
+    "148/0-/36/100+/44/180 (ORB)$"
+    "244/0-/124/100+/36/4 (VEST)$"
     "Go Back$"
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Rotom_Wash_Page1
+text Auto_Text_Sample_Sets_Doubles_Raichu_Page1
 {
-    "252/0-/4/116+/4/132 (SITRUS)$"
-    "252/0-/44/60/148+/4 (SITRUS)$"
-    "52/0-/4/196+/4/252$"
+    "140/0-/188/0/0/180+ (VEST)$"
+    "28/220/4/0-/4/252+ (ORB)$"
+    "4/0-/0/252/0/252+ (SASH)$"
     "Go Back$"
     ""
 }
@@ -4906,18 +5104,16 @@ text Auto_Text_Sample_Sets_Doubles_Regieleki_Page1
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Rhyperior_Page1
+text Auto_Text_Sample_Sets_Doubles_Palafin_Page1
 {
-    "12/236+/4/0-/252/4 (POLICY)$"
-    "20/236+/0/0/252/0- (POLICY)$"
+    "252/156+/4/0-/92/4$"
     "Go Back$"
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Rillaboom_Page1
+text Auto_Text_Sample_Sets_Doubles_Pelipper_Page1
 {
-    "140/116+/12/0-/236/4 (VEST)$"
-    "140/196+/12/0-/156/4 (VEST)$"
+    "0/0-/4/252+/0/252 (SASH)$"
     "Go Back$"
     ""
 }
@@ -4945,19 +5141,17 @@ text Auto_Text_Sample_Sets_Doubles_Primarina_Page1
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Raging_Bolt_Page1
+text Auto_Text_Sample_Sets_Doubles_Ninetales_Alola_Page1
 {
-    "148/0-/36/100+/44/180 (ORB)$"
-    "244/0-/124/100+/36/4 (VEST)$"
+    "212/0-/100/4/4/188+ (CLAY)$"
+    "4/0-/0/252/0/252+ (SASH)$"
     "Go Back$"
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Raichu_Page1
+text Auto_Text_Sample_Sets_Doubles_Ogerpon_Cs_Page1
 {
-    "140/0-/188/0/0/180+ (VEST)$"
-    "28/220/4/0-/4/252+ (ORB)$"
-    "4/0-/0/252/0/252+ (SASH)$"
+    "0/252/4/0-/0/252+$"
     "Go Back$"
     ""
 }
@@ -4984,16 +5178,10 @@ text Auto_Text_Sample_Sets_Doubles_Oranguru_Page1
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Palafin_Page1
+text Auto_Text_Sample_Sets_Doubles_Murkrow_Page1
 {
-    "252/156+/4/0-/92/4$"
-    "Go Back$"
-    ""
-}
-
-text Auto_Text_Sample_Sets_Doubles_Pelipper_Page1
-{
-    "0/0-/4/252+/0/252 (SASH)$"
+    "252/0-/116/0/140+/0$"
+    "252/0-/140+/0/116/0$"
     "Go Back$"
     ""
 }
@@ -5025,17 +5213,17 @@ text Auto_Text_Sample_Sets_Doubles_Nihilego_Page1
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Ninetales_Alola_Page1
+text Auto_Text_Sample_Sets_Doubles_Ninetales_Page1
 {
-    "212/0-/100/4/4/188+ (CLAY)$"
-    "4/0-/0/252/0/252+ (SASH)$"
+    "4/0-/0/252/0/252+ (SPECS)$"
     "Go Back$"
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Ogerpon_Cs_Page1
+text Auto_Text_Sample_Sets_Doubles_Milotic_Page1
 {
-    "0/252/4/0-/0/252+$"
+    "180/0-/204/4/116+/4 (COIL)$"
+    "244/0-/220/4/36+/4 (SITRUS)$"
     "Go Back$"
     ""
 }
@@ -5073,10 +5261,11 @@ text Auto_Text_Sample_Sets_Doubles_Muk_Alola_Page1
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Murkrow_Page1
+text Auto_Text_Sample_Sets_Doubles_Maushold_Page1
 {
-    "252/0-/116/0/140+/0$"
-    "252/0-/140+/0/116/0$"
+    "252/0-/156/0/0/100+ (BEAT UP)$"
+    "252/0-/236+/0/20/0 (GOGGLES)$"
+    "4/244/4/0-/4/252+ (LENS)$"
     "Go Back$"
     ""
 }
@@ -5085,6 +5274,8 @@ text Auto_Text_Sample_Sets_Doubles_Mawile_Page1
 {
     "156/196+/0/0/156/0- (MEGA)$"
     "156/196+/4/0-/148/4 (MEGA)$"
+    "252/116+/0/0/140/0- (MEGA)$"
+    "252/116+/4/0-/132/4 (MEGA)$"
     "Go Back$"
     ""
 }
@@ -5114,17 +5305,17 @@ text Auto_Text_Sample_Sets_Doubles_Mienshao_Page1
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Milotic_Page1
+text Auto_Text_Sample_Sets_Doubles_Lunala_Page1
 {
-    "180/0-/204/4/116+/4 (COIL)$"
-    "244/0-/220/4/36+/4 (SITRUS)$"
+    "140/0-/132/180+/4/52 (HERB)$"
     "Go Back$"
     ""
 }
 
-text Auto_Text_Sample_Sets_Doubles_Lunala_Page1
+text Auto_Text_Sample_Sets_Doubles_Magnezone_Page1
 {
-    "140/0-/132/180+/4/52 (HERB)$"
+    "252/0-/4/236+/12/4 (WIKI)$"
+    "252/0/0/236+/20/0- (WIKI)$"
     "Go Back$"
     ""
 }
@@ -5148,15 +5339,6 @@ text Auto_Text_Sample_Sets_Doubles_Marowak_Alola_Page1
 {
     "252/156+/0/0/100/0-$"
     "252/156+/4/0-/0/0$"
-    "Go Back$"
-    ""
-}
-
-text Auto_Text_Sample_Sets_Doubles_Maushold_Page1
-{
-    "252/0-/156/0/0/100+ (BEAT UP)$"
-    "252/0-/236+/0/20/0 (GOGGLES)$"
-    "4/244/4/0-/4/252+ (LENS)$"
     "Go Back$"
     ""
 }
@@ -5485,6 +5667,7 @@ text Auto_Text_Sample_Sets_Doubles_Garchomp_Page1
 text Auto_Text_Sample_Sets_Doubles_Gardevoir_Page1
 {
     "244/0-/196/36+/4/28 (MEGA)$"
+    "4/0-/4/244/4/252+ (MEGA)$"
     "4/0-/52/196+/4/252 (SCARF)$"
     "Go Back$"
     ""
