@@ -3291,10 +3291,9 @@ Modest nature
 - Ice Beam
 - Hurricane
 
-=== Current Progress ===
-
 Kingler @ Life Orb
 Ability: Sheer Force
+Tera Type: Water
 EVs: 4 HP / 252 Atk / 252 Spe
 Adamant nature
 - Crabhammer
@@ -3314,7 +3313,7 @@ Adamant nature
 
 Kleavor @ Focus Sash
 Ability: Sharpness
-Tera Type: Bug
+Tera Type: Stellar
 EVs: 252 Atk / 4 SpD / 252 Spe
 Jolly nature
 - Stone Axe
@@ -3324,7 +3323,7 @@ Jolly nature
 
 Klefki @ Light Clay
 Ability: Prankster
-Tera Type: Steel
+Tera Type: Dark
 EVs: 252 HP / 252 Def / 4 SpD
 Bold nature
 - Thunder Wave
@@ -3334,21 +3333,13 @@ Bold nature
 
 Klinklang @ Steelium Z
 Ability: Clear Body
+Tera Type: Water
 EVs: 124 HP / 252 Atk / 132 Spe
 Adamant nature
 - Gear Grind
 - Shift Gear
 - Wild Charge
 - Substitute
-
-Koffing @ Eviolite
-Ability: Levitate
-EVs: 252 HP / 252 Def / 4 SpD
-Bold nature
-- Pain Split
-- Clear Smog
-- Toxic
-- Flamethrower
 
 Komala @ Choice Band
 Ability: Comatose
@@ -3369,15 +3360,6 @@ Modest nature
 - Flamethrower
 - Clangorous Soul
 - Substitute
-
-Kommo-o-Totem @ Kommonium Z
-Ability: Overcoat
-EVs: 4 HP / 12 Atk / 252 SpA / 4 SpD / 236 Spe
-Mild nature
-- Clanging Scales
-- Flamethrower
-- Close Combat
-- Taunt
 
 Koraidon @ Loaded Dice
 Ability: Orichalcum Pulse
@@ -3409,15 +3391,6 @@ Jolly nature
 - Stealth Rock
 - Taunt
 
-Kubfu @ Eviolite
-Ability: Inner Focus
-EVs: 252 HP / 252 Def / 4 SpD
-Relaxed nature
-- U-turn
-- Low Sweep
-- Iron Head
-- Ice Punch
-
 Kyogre @ Choice Scarf
 Ability: Drizzle
 Tera Type: Water
@@ -3436,7 +3409,7 @@ Jolly nature
 - Icicle Spear
 - Fusion Bolt
 - Dragon Dance
-- Substitute
+- Scale Shot
 
 Kyurem-White @ Assault Vest
 Ability: Turboblaze
@@ -3447,15 +3420,6 @@ Timid nature
 - Fusion Flare
 - Draco Meteor
 - Earth Power
-
-Lampent @ Eviolite
-Ability: Flame Body
-EVs: 252 HP / 252 Def / 4 SpD
-Bold nature
-- Will-O-Wisp
-- Trick Room
-- Pain Split
-- Curse
 
 Landorus @ Life Orb
 Ability: Sheer Force
@@ -3497,15 +3461,6 @@ Quiet nature
 - Surf
 - Thunder
 
-Larvitar @ Flame Orb
-Ability: Guts
-EVs: 252 HP / 252 Atk / 4 SpD
-Adamant nature
-- Stone Edge
-- Earthquake
-- Iron Head
-- Outrage
-
 Latias @ Choice Specs
 Ability: Levitate
 Tera Type: Poison
@@ -3516,8 +3471,10 @@ Timid nature
 - Thunderbolt
 - Shadow Ball
 
-Latias-Mega @ Latiasite
+Latias @ Latiasite
 Ability: Levitate
+Tera Type: Poison
+Note: Mega
 EVs: 252 HP / 4 Def / 252 Spe
 Timid nature
 - Calm Mind
@@ -3535,8 +3492,10 @@ Timid nature
 - Surf
 - Thunderbolt
 
-Latios-Mega @ Latiosite
+Latios @ Latiosite
 Ability: Levitate
+Tera Type: Steel
+Note: Mega
 EVs: 252 SpA / 4 SpD / 252 Spe
 Timid nature
 - Draco Meteor
@@ -3564,16 +3523,9 @@ Jolly nature
 - Leaf Blade
 - Pounce
 
-Ledian @ Leftovers
-Ability: Iron Fist
-EVs: 66 HP / 252 Atk / 190 SpD
-Adamant nature
-- Roost
-- Drain Punch
-- Knock Off
-
 Lickilicky @ Assault Vest
 Ability: Cloud Nine
+Tera Type: Normal
 EVs: 252 HP / 252 Atk / 4 SpD
 Adamant nature
 - Knock Off
@@ -3583,6 +3535,7 @@ Adamant nature
 
 Liepard @ Leftovers
 Ability: Prankster
+Tera Type: Ghost
 EVs: 172 HP / 84 Def / 252 Spe
 Timid nature
 - Substitute
@@ -3609,6 +3562,8 @@ Adamant nature
 - Victory Dance
 - Solar Blade
 - Triple Axel
+
+=== PROGRESS ===
 
 Linoone @ Sitrus Berry
 Ability: Gluttony
