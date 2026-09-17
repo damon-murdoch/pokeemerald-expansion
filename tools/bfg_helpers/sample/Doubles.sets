@@ -2,6 +2,7 @@ Abomasnow @ Focus Sash
 Ability: Snow Warning
 Tera Type: Water
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Spe
 Quiet nature
 - Blizzard
 - Protect
@@ -13,6 +14,7 @@ Ability: Snow Warning
 Tera Type: Water
 Note: Mega
 EVs: 252 HP / 4 Atk / 252 SpA
+IVs: 0 Spe
 Quiet nature
 - Protect
 - Blizzard
@@ -44,6 +46,7 @@ Accelgor @ Psychic Seed
 Ability: Unburden
 Tera Type: Poison
 EVs: 252 HP / 4 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Final Gambit
 - Acid Spray
@@ -54,8 +57,9 @@ Aegislash @ Leftovers
 Ability: Stance Change
 Tera Type: Ghost
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
-- King's Shield
+- Kings Shield
 - Shadow Ball
 - Wide Guard
 - Flash Cannon
@@ -86,6 +90,7 @@ Ability: Sturdy
 Tera Type: Ghost
 Note: Mega
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Protect
 - Heavy Slam
@@ -96,6 +101,7 @@ Alakazam @ Focus Sash
 Ability: Inner Focus
 Tera Type: Fairy
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Psychic
 - Protect
@@ -106,6 +112,7 @@ Alakazam @ Alakazite
 Ability: Inner Focus
 Tera Type: Fairy
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Protect
 - Psychic
@@ -116,6 +123,7 @@ Alcremie @ Focus Sash
 Ability: Sweet Veil
 Tera Type: Steel
 EVs: 252 HP / 252 Def / 4 SpD
+IVs: 0 Atk / 0 Spe
 Relaxed nature
 - Decorate
 - Dazzling Gleam
@@ -126,6 +134,7 @@ Alomomola @ Leftovers
 Ability: Regenerator
 Tera Type: Water
 EVs: 252 HP / 252 Def / 4 SpD
+IVs: 0 Atk
 Bold nature
 - Wide Guard
 - Protect
@@ -137,6 +146,7 @@ Ability: Cloud Nine
 Tera Type: Steel
 Note: Mega
 EVs: 252 HP / 4 Def / 252 SpA
+IVs: 0 Atk
 Modest nature
 - Protect
 - Hyper Voice
@@ -147,6 +157,7 @@ Amoonguss @ Rocky Helmet
 Ability: Regenerator
 Tera Type: Water
 EVs: 236 HP / 236 Def / 36 SpD
+IVs: 0 Atk
 Bold nature
 - Spore
 - Rage Powder
@@ -158,6 +169,7 @@ Ability: Static
 Tera Type: Electric
 Note: Mega
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Protect
 - Dragon Pulse
@@ -172,12 +184,13 @@ Jolly nature
 - Rage Fist
 - Close Combat
 - U-turn
-- Earthquake
+- Final Gambit
 
 Appletun @ Leftovers
 Ability: Thick Fat
 Tera Type: Steel
 EVs: 252 HP / 4 SpA / 252 SpD
+IVs: 0 Atk
 Calm nature
 - Apple Acid
 - Protect
@@ -188,6 +201,7 @@ Araquanid @ Mystic Water
 Ability: Water Bubble
 Tera Type: Water
 EVs: 252 HP / 252 Atk / 4 Def
+IVs: 0 Spe
 Brave nature
 - Liquidation
 - Protect
@@ -198,6 +212,7 @@ Arboliva @ Sitrus Berry
 Ability: Seed Sower
 Tera Type: Fairy
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk
 Modest nature
 - Protect
 - Giga Drain
@@ -224,10 +239,21 @@ Jolly nature
 - Rock Slide
 - Close Combat
 
+Arceus @ Life Orb
+Ability: Multitype
+Tera Type: Normal
+EVs: 220 HP / 252 Atk / 4 Def / 4 SpD / 28 Spe
+Adamant nature
+- Protect
+- Swords Dance
+- Extreme Speed
+- Shadow Claw
+
 Archaludon @ Assault Vest
 Ability: Stamina
 Tera Type: Grass
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Electro Shot
 - Flash Cannon
@@ -248,6 +274,7 @@ Arctovish @ Light Clay
 Ability: Slush Rush
 Tera Type: Water
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Fishious Rend
 - Protect
@@ -268,6 +295,7 @@ Ariados @ Focus Sash
 Ability: Insomnia
 Tera Type: Dark
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Rage Powder
 - Protect
@@ -280,7 +308,7 @@ Tera Type: Water
 EVs: 4 HP / 252 Atk / 252 Spe
 Adamant nature
 - Rock Slide
-- X-Scissor
+- X Scissor
 - Knock Off
 - Aqua Jet
 
@@ -288,6 +316,7 @@ Armarouge @ Life Orb
 Ability: Flash Fire
 Tera Type: Grass
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Expanding Force
 - Trick Room
@@ -298,6 +327,7 @@ Aromatisse @ Sitrus Berry
 Ability: Aroma Veil
 Tera Type: Steel
 EVs: 252 HP / 252 Def / 4 SpD
+IVs: 0 Atk / 0 Spe
 Relaxed nature
 - Trick Room
 - Moonblast
@@ -308,8 +338,9 @@ Articuno @ Choice Specs
 Ability: Snow Cloak
 Tera Type: Ice
 EVs: 252 HP / 44 Def / 196 SpA / 4 SpD / 12 Spe
+IVs: 0 Atk
 Modest nature
-- Freeze-Dry
+- Freeze Dry
 - Hurricane
 - Ancient Power
 - Tera Blast
@@ -318,6 +349,7 @@ Articuno-Galar @ Safety Goggles
 Ability: Competitive
 Tera Type: Ground
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Freezing Glare
 - Trick Room
@@ -328,6 +360,7 @@ Audino @ Sitrus Berry
 Ability: Regenerator
 Tera Type: Fairy
 EVs: 252 HP / 100 Def / 156 SpD
+IVs: 0 Atk / 0 Spe
 Relaxed nature
 - Trick Room
 - Heal Pulse
@@ -339,6 +372,7 @@ Ability: Regenerator
 Tera Type: Fairy
 Note: Mega
 EVs: 252 HP / 124 Def / 128 SpD
+IVs: 0 Atk / 0 Spe
 Relaxed nature
 - Trick Room
 - Hyper Voice
@@ -349,16 +383,18 @@ Aurorus @ Life Orb
 Ability: Refrigerate
 Tera Type: Ghost
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Protect
 - Earth Power
-- Freeze-Dry
+- Freeze Dry
 - Hyper Voice
 
 Avalugg @ Leftovers
 Ability: Sturdy
 Tera Type: Fighting
 EVs: 4 HP / 252 Atk / 252 Def
+IVs: 0 Spe
 Brave nature
 - Body Press
 - Wide Guard
@@ -369,6 +405,7 @@ Avalugg-Hisui @ Loaded Dice
 Ability: Sturdy
 Tera Type: Ice
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Rock Slide
 - Protect
@@ -395,7 +432,7 @@ Adamant nature
 - Protect
 - Belly Drum
 
-Banette-Mega @ Banettite
+Banette @ Banettite
 Ability: Frisk
 Tera Type: Ghost
 Note: Mega
@@ -440,6 +477,7 @@ Basculegion-F @ Choice Specs
 Ability: Swift Swim
 Tera Type: Water
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Shadow Ball
 - Muddy Water
@@ -501,6 +539,7 @@ Beheeyem @ Life Orb
 Ability: Analytic
 Tera Type: Grass
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Trick Room
 - Psychic
@@ -511,6 +550,7 @@ Bellibolt @ Assault Vest
 Ability: Electromorphosis
 Tera Type: Electric
 EVs: 244 HP / 252 SpA / 12 SpD
+IVs: 0 Atk
 Modest nature
 - Parabolic Charge
 - Muddy Water
@@ -521,6 +561,7 @@ Bellossom @ Wide Lens
 Ability: Chlorophyll
 Tera Type: Fire
 EVs: 252 HP / 36 Def / 220 Spe
+IVs: 0 Atk
 Timid nature
 - Sleep Powder
 - After You
@@ -547,20 +588,12 @@ Adamant nature
 - Swords Dance
 - Protect
 
-Bisharp @ Focus Sash
-Ability: Defiant
-Tera Type: Dark
-EVs: 4 HP / 252 Atk / 252 Spe
-Adamant nature
-- Iron Head
-- Sucker Punch
-- Protect
-- Knock Off
 
 Blacephalon @ Choice Scarf
 Ability: Beast Boost
 Tera Type: Fire
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Shadow Ball
 - Heat Wave
@@ -571,6 +604,7 @@ Blastoise @ Sitrus Berry
 Ability: Torrent
 Tera Type: Water
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Water Spout
 - Protect
@@ -582,6 +616,7 @@ Ability: Torrent
 Tera Type: Dark
 Note: Mega
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Water Spout
 - Ice Beam
@@ -613,6 +648,7 @@ Blissey @ Leftovers
 Ability: Serene Grace
 Tera Type: Ghost
 EVs: 252 HP / 252 Def / 4 SpD
+IVs: 0 Atk
 Bold nature
 - Soft-Boiled
 - Minimize
@@ -623,6 +659,7 @@ Boltund @ Focus Sash
 Ability: Competitive
 Tera Type: Dark
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Electrify
 - Thunderbolt
@@ -673,6 +710,7 @@ Braviary-Hisui @ Life Orb
 Ability: Tinted Lens
 Tera Type: Psychic
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk
 Modest nature
 - Protect
 - Expanding Force
@@ -693,6 +731,7 @@ Bronzong @ Leftovers
 Ability: Levitate
 Tera Type: Fire
 EVs: 252 HP / 252 Def / 4 SpD
+IVs: 0 Spe
 Relaxed nature
 - Trick Room
 - Gyro Ball
@@ -723,6 +762,7 @@ Butterfree @ Focus Sash
 Ability: Compound Eyes
 Tera Type: Ghost
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Sleep Powder
 - Rage Powder
@@ -739,51 +779,12 @@ Adamant nature
 - Leech Life
 - Superpower
 
-Cacturne @ Life Orb
-Ability: Water Absorb
-Tera Type: Ghost
-EVs: 252 HP / 252 Atk / 4 Def
-Brave nature
-- Sucker Punch
-- Spiky Shield
-- Seed Bomb
-- Dark Pulse
-
-Calyrex @ Focus Sash
-Ability: Unnerve
-Tera Type: Dark
-EVs: 252 HP / 252 SpA / 4 SpD
-Quiet nature
-- Ally Switch
-- Trick Room
-- Expanding Force
-- Helping Hand
-
-Calyrex-Ice @ Clear Amulet
-Ability: As One (Glastrier)
-Tera Type: Water
-EVs: 252 HP / 252 Atk / 4 SpD
-Brave nature
-- Glacial Lance
-- Trick Room
-- High Horsepower
-- Protect
-
-Calyrex-Shadow @ Focus Sash
-Ability: As One (Spectrier)
-Tera Type: Dark
-EVs: 4 HP / 252 SpA / 252 Spe
-Timid nature
-- Astral Barrage
-- Protect
-- Psychic
-- Nasty Plot
-
 Camerupt @ Cameruptite
 Ability: Solid Rock
 Tera Type: Fire
 Note: Mega
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Earth Power
 - Protect
@@ -794,6 +795,7 @@ Carbink @ Mental Herb
 Ability: Sturdy
 Tera Type: Grass
 EVs: 252 HP / 252 Def / 4 SpD
+IVs: 0 Atk / 0 Spe
 Relaxed nature
 - Trick Room
 - Protect
@@ -804,6 +806,7 @@ Carnivine @ Leftovers
 Ability: Levitate
 Tera Type: Fire
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Rage Powder
 - Protect
@@ -824,6 +827,7 @@ Castform @ Focus Sash
 Ability: Forecast
 Tera Type: Stellar
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Weather Ball
 - Thunder
@@ -874,6 +878,7 @@ Chandelure @ Focus Sash
 Ability: Flash Fire
 Tera Type: Grass
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Shadow Ball
 - Heat Wave
@@ -884,6 +889,7 @@ Chansey @ Eviolite
 Ability: Healer
 Tera Type: Ghost
 EVs: 252 HP / 252 Def / 4 SpD
+IVs: 0 Atk
 Bold nature
 - Soft-Boiled
 - Minimize
@@ -894,6 +900,7 @@ Charizard @ Life Orb
 Ability: Solar Power
 Tera Type: Fire
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Heat Wave
 - Protect
@@ -916,6 +923,7 @@ Ability: Blaze
 Tera Type: Water
 Note: Mega Y
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Protect
 - Heat Wave
@@ -926,6 +934,7 @@ Charjabug @ Eviolite
 Ability: Battery
 Tera Type: Water
 EVs: 244 HP / 60 Def / 204 SpD
+IVs: 0 Atk / 0 Spe
 Sassy nature
 - Protect
 - String Shot
@@ -936,6 +945,7 @@ Chatot @ Focus Sash
 Ability: Keen Eye
 Tera Type: Normal
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Chatter
 - Protect
@@ -946,6 +956,7 @@ Cherrim @ Focus Sash
 Ability: Flower Gift
 Tera Type: Dark
 EVs: 252 HP / 4 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Protect
 - Helping Hand
@@ -966,6 +977,7 @@ Chi-Yu @ Choice Scarf
 Ability: Beads of Ruin
 Tera Type: Ghost
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Heat Wave
 - Dark Pulse
@@ -986,6 +998,7 @@ Chimecho @ Sitrus Berry
 Ability: Levitate
 Tera Type: Steel
 EVs: 252 HP / 148 Def / 108 SpD
+IVs: 0 Atk / 0 Spe
 Relaxed nature
 - Trick Room
 - Psychic
@@ -1016,6 +1029,7 @@ Clamperl @ Deep Sea Tooth
 Ability: Shell Armor
 Tera Type: Grass
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Protect
 - Ice Beam
@@ -1026,6 +1040,7 @@ Clawitzer @ Life Orb
 Ability: Mega Launcher
 Tera Type: Stellar
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Water Pulse
 - Aura Sphere
@@ -1036,6 +1051,7 @@ Claydol @ Weakness Policy
 Ability: Levitate
 Tera Type: Steel
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Trick Room
 - Earth Power
@@ -1046,6 +1062,7 @@ Clefable @ Sitrus Berry
 Ability: Unaware
 Tera Type: Water
 EVs: 252 HP / 252 Def / 4 SpD
+IVs: 0 Atk
 Bold nature
 - Follow Me
 - Moonblast
@@ -1056,6 +1073,7 @@ Clefairy @ Eviolite
 Ability: Friend Guard
 Tera Type: Grass
 EVs: 252 HP / 252 Def / 4 SpD
+IVs: 0 Atk / 0 Spe
 Relaxed nature
 - Follow Me
 - Protect
@@ -1086,6 +1104,7 @@ Coalossal @ Weakness Policy
 Ability: Steam Engine
 Tera Type: Grass
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Protect
 - Heat Wave
@@ -1106,6 +1125,7 @@ Cofagrigus @ Mental Herb
 Ability: Mummy
 Tera Type: Dark
 EVs: 252 HP / 252 Def / 4 SpD
+IVs: 0 Atk / 0 Spe
 Relaxed nature
 - Trick Room
 - Will-O-Wisp
@@ -1116,6 +1136,7 @@ Comfey @ Sitrus Berry
 Ability: Triage
 Tera Type: Steel
 EVs: 252 HP / 252 Def / 4 SpD
+IVs: 0 Atk
 Bold nature
 - Floral Healing
 - Draining Kiss
@@ -1126,6 +1147,7 @@ Conkeldurr @ Flame Orb
 Ability: Guts
 Tera Type: Fighting
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Drain Punch
 - Mach Punch
@@ -1136,6 +1158,7 @@ Copperajah @ Life Orb
 Ability: Sheer Force
 Tera Type: Steel
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Iron Head
 - Play Rough
@@ -1156,6 +1179,7 @@ Crabominable @ Life Orb
 Ability: Hyper Cutter
 Tera Type: Water
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Ice Hammer
 - Close Combat
@@ -1166,6 +1190,7 @@ Cradily @ Leftovers
 Ability: Storm Drain
 Tera Type: Fire
 EVs: 252 HP / 4 Def / 252 SpA
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Protect
 - Giga Drain
@@ -1176,6 +1201,7 @@ Cramorant @ Focus Sash
 Ability: Gulp Missile
 Tera Type: Ghost
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Surf
 - Protect
@@ -1186,6 +1212,7 @@ Crawdaunt @ Life Orb
 Ability: Adaptability
 Tera Type: Water
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Aqua Jet
 - Knock Off
@@ -1196,6 +1223,7 @@ Cresselia @ Mental Herb
 Ability: Levitate
 Tera Type: Fairy
 EVs: 252 HP / 4 SpA / 252 SpD
+IVs: 0 Atk / 0 Spe
 Sassy nature
 - Trick Room
 - Helping Hand
@@ -1218,7 +1246,7 @@ Tera Type: Stellar
 EVs: 252 HP / 252 Atk / 4 SpD
 Adamant nature
 - Rock Slide
-- X-Scissor
+- X Scissor
 - Earthquake
 - Shell Smash
 
@@ -1226,8 +1254,9 @@ Cryogonal @ Focus Sash
 Ability: Levitate
 Tera Type: Ghost
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
-- Freeze-Dry
+- Freeze Dry
 - Protect
 - Haze
 - Flash Cannon
@@ -1236,6 +1265,7 @@ Cursola @ Life Orb
 Ability: Perish Body
 Tera Type: Dark
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Shadow Ball
 - Earth Power
@@ -1261,6 +1291,16 @@ Careful nature
 - Protect
 - Yawn
 - Play Rough
+
+Darkrai @ Focus Sash
+Ability: Bad Dreams
+Tera Type: Ghost
+EVs: 4 HP / 252 SpA / 252 Spe
+Timid nature
+- Dark Pulse
+- Sludge Bomb
+- Nasty Plot
+- Protect
 
 Darmanitan @ Choice Scarf
 Ability: Sheer Force
@@ -1296,6 +1336,7 @@ Decidueye-Hisui @ Scope Lens
 Ability: Scrappy
 Tera Type: Fire
 EVs: 252 HP / 252 Atk / 4 Def
+IVs: 0 Spe
 Brave nature
 - Triple Arrows
 - Leaf Blade
@@ -1306,6 +1347,7 @@ Dedenne @ Sitrus Berry
 Ability: Cheek Pouch
 Tera Type: Electric
 EVs: 252 HP / 4 Def / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Protect
 - Helping Hand
@@ -1326,16 +1368,49 @@ Delphox @ Life Orb
 Ability: Blaze
 Tera Type: Fighting
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Protect
 - Heat Wave
 - Expanding Force
 - Dazzling Gleam
 
+Deoxys-Attack @ Focus Sash
+Ability: Pressure
+Tera Type: Normal
+EVs: 252 Atk / 4 SpA / 252 Spe
+Naive nature
+- Psycho Boost
+- Knock Off
+- Extreme Speed
+- Protect
+
+Deoxys-Defense @ Leftovers
+Ability: Pressure
+Tera Type: Fairy
+EVs: 252 HP / 156 Def / 4 SpA / 68 SpD / 28 Spe
+IVs: 0 Atk
+Bold nature
+- Cosmic Power
+- Recover
+- Stored Power
+- Protect
+
+Deoxys-Speed @ Focus Sash
+Ability: Pressure
+Tera Type: Dark
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly nature
+- Knock Off
+- Taunt
+- Pain Split
+- Counter
+
 Dewgong @ Sitrus Berry
 Ability: Thick Fat
 Tera Type: Grass
 EVs: 252 HP / 252 Def / 4 SpD
+IVs: 0 Spe
 Sassy nature
 - Fake Out
 - Perish Song
@@ -1346,6 +1421,7 @@ Dhelmise @ Life Orb
 Ability: Steelworker
 Tera Type: Fire
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Power Whip
 - Anchor Shot
@@ -1356,6 +1432,7 @@ Dialga @ Life Orb
 Ability: Pressure
 Tera Type: Fairy
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Flash Cannon
 - Trick Room
@@ -1366,11 +1443,32 @@ Dialga-Origin @ Adamant Crystal
 Ability: Telepathy
 Tera Type: Fairy
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Flash Cannon
 - Trick Room
 - Protect
 - Draco Meteor
+
+Diancie @ Leftovers
+Ability: Clear Body
+Tera Type: Fighting
+EVs: 252 HP / 252 Def / 4 SpD
+Impish nature
+- Diamond Storm
+- Body Press
+- Trick Room
+- Protect
+
+Diancie @ Diancite
+Ability: Clear Body
+Tera Type: Steel
+EVs: 4 Atk / 252 SpA / 252 Spe
+Naive nature
+- Diamond Storm
+- Earth Power
+- Moonblast
+- Protect
 
 Diggersby @ Life Orb
 Ability: Huge Power
@@ -1443,6 +1541,7 @@ Dragalge @ Life Orb
 Ability: Adaptability
 Tera Type: Water
 EVs: 252 HP / 4 Def / 252 SpA
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Sludge Bomb
 - Draco Meteor
@@ -1473,6 +1572,7 @@ Drampa @ Assault Vest
 Ability: Cloud Nine
 Tera Type: Stellar
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Hyper Voice
 - Flamethrower
@@ -1503,6 +1603,7 @@ Drifblim @ Psychic Seed
 Ability: Unburden
 Tera Type: Dark
 EVs: 4 HP / 156 Def / 44 SpA / 132 SpD / 172 Spe
+IVs: 0 Atk
 Modest nature
 - Tailwind
 - Shadow Ball
@@ -1533,6 +1634,7 @@ Dudunsparce @ Weakness Policy
 Ability: Serene Grace
 Tera Type: Ghost
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Protect
 - Boomburst
@@ -1566,13 +1668,14 @@ EVs: 4 HP / 252 Atk / 252 Spe
 Jolly nature
 - Iron Head
 - Rock Slide
-- X-Scissor
+- X Scissor
 - Protect
 
 Dusclops @ Eviolite
 Ability: Frisk
 Tera Type: Dark
 EVs: 252 HP / 4 Def / 252 SpD
+IVs: 0 Atk / 0 Spe
 Sassy nature
 - Trick Room
 - Night Shade
@@ -1583,6 +1686,7 @@ Dusknoir @ Mental Herb
 Ability: Frisk
 Tera Type: Dark
 EVs: 244 HP / 252 Atk / 12 SpD
+IVs: 0 Spe
 Brave nature
 - Trick Room
 - Will-O-Wisp
@@ -1593,6 +1697,7 @@ Eelektross @ Assault Vest
 Ability: Levitate
 Tera Type: Electric
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk
 Modest nature
 - Flamethrower
 - Thunderbolt
@@ -1623,6 +1728,7 @@ Eldegoss @ Coba Berry
 Ability: Cotton Down
 Tera Type: Water
 EVs: 252 HP / 4 SpA / 252 SpD
+IVs: 0 Atk
 Calm nature
 - Sleep Powder
 - Pollen Puff
@@ -1633,6 +1739,7 @@ Electabuzz @ Eviolite
 Ability: Vital Spirit
 Tera Type: Ghost
 EVs: 252 HP / 180 Def / 76 SpD
+IVs: 0 Atk
 Bold nature
 - Follow Me
 - Taunt
@@ -1653,6 +1760,7 @@ Electrode @ Focus Sash
 Ability: Soundproof
 Tera Type: Electric
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Taunt
 - Thunder Wave
@@ -1663,6 +1771,7 @@ Electrode-Hisui @ Focus Sash
 Ability: Soundproof
 Tera Type: Ghost
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Electroweb
 - Taunt
@@ -1673,6 +1782,7 @@ Emboar @ Life Orb
 Ability: Reckless
 Tera Type: Fire
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Flare Blitz
 - Wild Charge
@@ -1693,6 +1803,7 @@ Empoleon @ Assault Vest
 Ability: Competitive
 Tera Type: Grass
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk
 Modest nature
 - Flash Cannon
 - Ice Beam
@@ -1703,6 +1814,7 @@ Enamorus @ Life Orb
 Ability: Contrary
 Tera Type: Flying
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Protect
 - Earth Power
@@ -1713,6 +1825,7 @@ Enamorus-Therian @ Choice Specs
 Ability: Overcoat
 Tera Type: Fairy
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Earth Power
 - Moonblast
@@ -1733,6 +1846,7 @@ Escavalier @ Assault Vest
 Ability: Overcoat
 Tera Type: Fire
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Iron Head
 - Megahorn
@@ -1743,6 +1857,7 @@ Espathra @ Focus Sash
 Ability: Speed Boost
 Tera Type: Psychic
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Protect
 - Lumina Crash
@@ -1753,6 +1868,7 @@ Espeon @ Focus Sash
 Ability: Magic Bounce
 Tera Type: Psychic
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Dazzling Gleam
 - Psychic
@@ -1763,6 +1879,7 @@ Eternatus @ Life Orb
 Ability: Pressure
 Tera Type: Fairy
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Sludge Bomb
 - Dynamax Cannon
@@ -1783,6 +1900,7 @@ Exeggutor @ Sitrus Berry
 Ability: Chlorophyll
 Tera Type: Psychic
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Protect
 - Sleep Powder
@@ -1793,6 +1911,7 @@ Exeggutor-Alola @ Sitrus Berry
 Ability: Harvest
 Tera Type: Fire
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Trick Room
 - Draco Meteor
@@ -1803,6 +1922,7 @@ Exploud @ Choice Specs
 Ability: Scrappy
 Tera Type: Normal
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk
 Modest nature
 - Boomburst
 - Ice Beam
@@ -1823,6 +1943,7 @@ Farigiraf @ Throat Spray
 Ability: Armor Tail
 Tera Type: Water
 EVs: 204 HP / 164 Def / 4 SpA / 108 SpD / 28 Spe
+IVs: 0 Atk
 Bold nature
 - Trick Room
 - Psychic
@@ -1853,6 +1974,7 @@ Ferrothorn @ Leftovers
 Ability: Iron Barbs
 Tera Type: Fire
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Protect
 - Leech Seed
@@ -1863,6 +1985,7 @@ Fezandipiti @ Covert Cloak
 Ability: Toxic Chain
 Tera Type: Water
 EVs: 252 HP / 4 Def / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Icy Wind
 - Dazzling Gleam
@@ -1913,6 +2036,7 @@ Florges @ Leftovers
 Ability: Flower Veil
 Tera Type: Steel
 EVs: 252 HP / 252 Def / 4 SpA
+IVs: 0 Atk
 Bold nature
 - Moonblast
 - Protect
@@ -1923,6 +2047,7 @@ Flutter Mane @ Booster Energy
 Ability: Protosynthesis
 Tera Type: Fairy
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Moonblast
 - Shadow Ball
@@ -1943,6 +2068,7 @@ Forretress @ Leftovers
 Ability: Overcoat
 Tera Type: Water
 EVs: 252 HP / 4 Atk / 252 Def
+IVs: 0 Spe
 Relaxed nature
 - Gyro Ball
 - Body Press
@@ -1953,6 +2079,7 @@ Froslass @ Focus Sash
 Ability: Cursed Body
 Tera Type: Dark
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Shadow Ball
 - Icy Wind
@@ -1963,6 +2090,7 @@ Frosmoth @ Leftovers
 Ability: Ice Scales
 Tera Type: Water
 EVs: 244 HP / 252 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 0 Atk
 Bold nature
 - Quiver Dance
 - Ice Beam
@@ -1993,6 +2121,7 @@ Gallade @ Clear Amulet
 Ability: Sharpness
 Tera Type: Grass
 EVs: 252 HP / 252 Atk / 4 Def
+IVs: 0 Spe
 Brave nature
 - Psycho Cut
 - Sacred Sword
@@ -2014,6 +2143,7 @@ Galvantula @ Focus Sash
 Ability: Compound Eyes
 Tera Type: Bug
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Bug Buzz
 - Thunder
@@ -2055,6 +2185,7 @@ Gardevoir @ Choice Scarf
 Ability: Telepathy
 Tera Type: Psychic
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Moonblast
 - Psychic
@@ -2066,6 +2197,7 @@ Ability: Trace
 Tera Type: Steel
 Note: Mega
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Hyper Voice
 - Protect
@@ -2086,16 +2218,20 @@ Gastrodon @ Leftovers
 Ability: Storm Drain
 Tera Type: Fire
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Earth Power
 - Protect
 - Ice Beam
 - Yawn
 
+
+
 Gengar @ Focus Sash
 Ability: Cursed Body
 Tera Type: Stellar
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Shadow Ball
 - Sludge Bomb
@@ -2107,6 +2243,7 @@ Ability: Cursed Body
 Tera Type: Stellar
 Note: Mega
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Protect
 - Sludge Bomb
@@ -2117,6 +2254,7 @@ Gholdengo @ Choice Specs
 Ability: Good as Gold
 Tera Type: Steel
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Make It Rain
 - Shadow Ball
@@ -2127,6 +2265,7 @@ Gigalith @ Weakness Policy
 Ability: Sand Stream
 Tera Type: Ground
 EVs: 244 HP / 252 Atk / 12 SpD
+IVs: 0 Spe
 Brave nature
 - Rock Slide
 - Protect
@@ -2137,6 +2276,7 @@ Giratina @ Leftovers
 Ability: Pressure
 Tera Type: Fairy
 EVs: 252 HP / 68 Def / 92 SpA / 84 SpD / 12 Spe
+IVs: 0 Atk
 Calm nature
 - Protect
 - Shadow Ball
@@ -2157,11 +2297,12 @@ Glaceon @ Choice Specs
 Ability: Snow Cloak
 Tera Type: Water
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk
 Modest nature
 - Blizzard
 - Shadow Ball
 - Tera Blast
-- Hidden Power Ground
+- Ice Beam
 
 Glalie @ Leftovers
 Ability: Moody
@@ -2188,6 +2329,7 @@ Glastrier @ Clear Amulet
 Ability: Chilling Neigh
 Tera Type: Water
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Icicle Crash
 - High Horsepower
@@ -2198,6 +2340,7 @@ Glimmora @ Power Herb
 Ability: Toxic Debris
 Tera Type: Grass
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Spiky Shield
 - Sludge Bomb
@@ -2228,6 +2371,7 @@ Golduck @ Choice Scarf
 Ability: Cloud Nine
 Tera Type: Ghost
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Ice Beam
 - Scald
@@ -2248,6 +2392,7 @@ Golem-Alola @ Life Orb
 Ability: Galvanize
 Tera Type: Electric
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Explosion
 - Rock Slide
@@ -2278,6 +2423,7 @@ Goodra @ Assault Vest
 Ability: Sap Sipper
 Tera Type: Water
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk
 Modest nature
 - Flamethrower
 - Sludge Bomb
@@ -2298,6 +2444,7 @@ Gorebyss @ Waterium Z
 Ability: Swift Swim
 Tera Type: Water
 EVs: 212 HP / 20 Def / 4 SpA / 20 SpD / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Ice Beam
 - Protect
@@ -2308,6 +2455,7 @@ Gothitelle @ Sitrus Berry
 Ability: Shadow Tag
 Tera Type: Water
 EVs: 252 HP / 12 Def / 244 SpD
+IVs: 0 Atk / 0 Spe
 Sassy nature
 - Protect
 - Fake Out
@@ -2348,21 +2496,12 @@ Gourgeist-Super @ Mental Herb
 Ability: Frisk
 Tera Type: Dark
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Trick Room
 - Will-O-Wisp
 - Seed Bomb
-- Trick-or-Treat
-
-Grafaiai @ Covert Cloak
-Ability: Prankster
-Tera Type: Dark
-EVs: 252 HP / 4 Def / 252 SpD
-Calm nature
-- Encore
-- Parting Shot
-- Doodle
-- Taunt
+- Trick or Treat
 
 Granbull @ Assault Vest
 Ability: Intimidate
@@ -2378,10 +2517,11 @@ Grapploct @ Aguav Berry
 Ability: Limber
 Tera Type: Water
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Octolock
 - Drain Punch
-- Topsy-Turvy
+- Topsy Turvy
 - Soak
 
 Great Tusk @ Choice Scarf
@@ -2398,6 +2538,7 @@ Greedent @ Sitrus Berry
 Ability: Cheek Pouch
 Tera Type: Ghost
 EVs: 244 HP / 252 Atk / 12 SpD
+IVs: 0 Spe
 Brave nature
 - Belly Drum
 - Earthquake
@@ -2408,11 +2549,24 @@ Greninja @ Life Orb
 Ability: Protean
 Tera Type: Ghost
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Dark Pulse
 - Ice Beam
 - Protect
 - Water Shuriken
+
+
+Greninja-Ash @ Life Orb
+Ability: Battle Bond
+Tera Type: Water
+EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
+Timid nature
+- Protect
+- Dark Pulse
+- Water Shuriken
+- Hydro Pump
 
 Grimmsnarl @ Light Clay
 Ability: Prankster
@@ -2439,6 +2593,7 @@ Ability: Drought
 Tera Type: Fire
 Note: Primal
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Protect
 - Eruption
@@ -2449,6 +2604,7 @@ Grumpig @ Assault Vest
 Ability: Thick Fat
 Tera Type: Dark
 EVs: 252 HP / 76 Def / 156 SpA / 4 SpD / 20 Spe
+IVs: 0 Atk
 Modest nature
 - Power Gem
 - Psyshock
@@ -2459,6 +2615,7 @@ Gumshoos @ Normalium Z
 Ability: Adaptability
 Tera Type: Normal
 EVs: 112 HP / 252 Atk / 144 SpD
+IVs: 0 Spe
 Brave nature
 - Protect
 - Last Resort
@@ -2469,6 +2626,7 @@ Guzzlord @ Weakness Policy
 Ability: Beast Boost
 Tera Type: Water
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Dark Pulse
 - Draco Meteor
@@ -2500,6 +2658,7 @@ Hariyama @ Flame Orb
 Ability: Guts
 Tera Type: Steel
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Fake Out
 - Close Combat
@@ -2510,6 +2669,7 @@ Hatterene @ Life Orb
 Ability: Magic Bounce
 Tera Type: Water
 EVs: 252 HP / 4 Def / 252 SpA
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Trick Room
 - Dazzling Gleam
@@ -2540,6 +2700,7 @@ Heatmor @ Choice Scarf
 Ability: Flash Fire
 Tera Type: Fire
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Heat Wave
 - Focus Blast
@@ -2550,6 +2711,7 @@ Heatran @ Shuca Berry
 Ability: Flash Fire
 Tera Type: Fairy
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk
 Modest nature
 - Protect
 - Earth Power
@@ -2560,6 +2722,7 @@ Heliolisk @ Life Orb
 Ability: Dry Skin
 Tera Type: Ghost
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Thunderbolt
 - Protect
@@ -2576,7 +2739,7 @@ Jolly nature
 - Megahorn
 - Rock Slide
 
-Heracross-Mega @ Heracronite
+Heracross @ Heracronite
 Ability: Guts
 Tera Type: Fire
 Note: Mega
@@ -2601,6 +2764,7 @@ Hitmonchan @ Assault Vest
 Ability: Inner Focus
 Tera Type: Grass
 EVs: 252 HP / 252 Atk / 4 Def
+IVs: 0 Spe
 Brave nature
 - Fake Out
 - Close Combat
@@ -2647,11 +2811,12 @@ Adamant nature
 - Protect
 - Night Slash
 
-Houndoom-Mega @ Houndoominite
+Houndoom @ Houndoominite
 Ability: Flash Fire
 Tera Type: Grass
 Note: Mega
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Protect
 - Dark Pulse
@@ -2672,6 +2837,7 @@ Hydrapple @ Assault Vest
 Ability: Regenerator
 Tera Type: Steel
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Fickle Beam
 - Earth Power
@@ -2682,6 +2848,7 @@ Hydreigon @ Life Orb
 Ability: Levitate
 Tera Type: Fire
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Draco Meteor
 - Dark Pulse
@@ -2692,6 +2859,7 @@ Hypno @ Mental Herb
 Ability: Inner Focus
 Tera Type: Fairy
 EVs: 252 HP / 252 Def / 4 SpD
+IVs: 0 Atk / 0 Spe
 Relaxed nature
 - Trick Room
 - Hypnosis
@@ -2702,6 +2870,7 @@ Illumise @ Covert Cloak
 Ability: Prankster
 Tera Type: Dark
 EVs: 244 HP / 12 Def / 252 SpD
+IVs: 0 Atk
 Calm nature
 - Tailwind
 - Encore
@@ -2722,6 +2891,7 @@ Indeedee @ Focus Sash
 Ability: Psychic Surge
 Tera Type: Psychic
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Expanding Force
 - Trick Room
@@ -2732,6 +2902,7 @@ Indeedee-F @ Psychic Seed
 Ability: Psychic Surge
 Tera Type: Fairy
 EVs: 252 HP / 252 Def / 4 SpD
+IVs: 0 Atk
 Bold nature
 - Follow Me
 - Helping Hand
@@ -2752,6 +2923,7 @@ Inteleon @ Scope Lens
 Ability: Sniper
 Tera Type: Water
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Snipe Shot
 - Protect
@@ -2772,8 +2944,9 @@ Iron Bundle @ Booster Energy
 Ability: Quark Drive
 Tera Type: Ghost
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
-- Freeze-Dry
+- Freeze Dry
 - Protect
 - Hydro Pump
 - Encore
@@ -2782,6 +2955,7 @@ Iron Crown @ Booster Energy
 Ability: Quark Drive
 Tera Type: Water
 EVs: 76 HP / 4 Def / 172 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Tachyon Cutter
 - Protect
@@ -2792,6 +2966,7 @@ Iron Hands @ Assault Vest
 Ability: Quark Drive
 Tera Type: Water
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Fake Out
 - Wild Charge
@@ -2802,6 +2977,7 @@ Iron Jugulis @ Booster Energy
 Ability: Quark Drive
 Tera Type: Steel
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Tailwind
 - Snarl
@@ -2822,6 +2998,7 @@ Iron Moth @ Booster Energy
 Ability: Quark Drive
 Tera Type: Grass
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Protect
 - Heat Wave
@@ -2862,26 +3039,39 @@ Jellicent @ Sitrus Berry
 Ability: Water Absorb
 Tera Type: Grass
 EVs: 252 HP / 4 Def / 252 SpA
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Trick Room
 - Water Spout
 - Will-O-Wisp
 - Shadow Ball
 
+Jirachi @ Sitrus Berry
+Ability: Serene Grace
+Tera Type: Steel
+EVs: 252 HP / 4 Def / 252 Spe
+Jolly nature
+- Iron Head
+- Zen Headbutt
+- Follow Me
+- Protect
+
 Jolteon @ Life Orb
 Ability: Volt Absorb
 Tera Type: Electric
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Thunderbolt
 - Shadow Ball
 - Protect
-- Hidden Power Ice
+- Volt Switch
 
 Jumpluff @ Covert Cloak
 Ability: Chlorophyll
 Tera Type: Dark
 EVs: 252 HP / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Sleep Powder
 - Tailwind
@@ -2892,6 +3082,7 @@ Jynx @ Focus Sash
 Ability: Dry Skin
 Tera Type: Ghost
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Lovely Kiss
 - Ice Beam
@@ -2918,7 +3109,7 @@ Jolly nature
 - Double-Edge
 - Circle Throw
 
-Kangaskhan-Mega @ Kangaskhanite
+Kangaskhan @ Kangaskhanite
 Ability: Scrappy
 Tera Type: Ghost
 Note: Mega
@@ -2953,6 +3144,7 @@ Kilowattrel @ Focus Sash
 Ability: Competitive
 Tera Type: Ghost
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Tailwind
 - Air Slash
@@ -2973,6 +3165,7 @@ Kingdra @ Life Orb
 Ability: Swift Swim
 Tera Type: Stellar
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Draco Meteor
 - Protect
@@ -3005,7 +3198,7 @@ Tera Type: Ghost
 EVs: 252 Atk / 4 SpD / 252 Spe
 Jolly nature
 - Stone Axe
-- X-Scissor
+- X Scissor
 - Protect
 - Close Combat
 
@@ -3013,6 +3206,7 @@ Klefki @ Light Clay
 Ability: Prankster
 Tera Type: Ghost
 EVs: 252 HP / 252 Def / 4 SpD
+IVs: 0 Atk
 Bold nature
 - Light Screen
 - Reflect
@@ -3033,6 +3227,7 @@ Komala @ Life Orb
 Ability: Comatose
 Tera Type: Ghost
 EVs: 252 HP / 252 Atk / 4 Def
+IVs: 0 Spe
 Brave nature
 - Wood Hammer
 - U-turn
@@ -3083,6 +3278,7 @@ Kyogre @ Choice Scarf
 Ability: Drizzle
 Tera Type: Grass
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Water Spout
 - Ice Beam
@@ -3091,52 +3287,25 @@ Modest nature
 
 Kyogre @ Blue Orb
 Ability: Drizzle
+Tera Type: Grass
 EVs: 252 HP / 204 Def / 52 SpA
+IVs: 0 Atk
 Modest nature
 - Protect
 - Ice Beam
 - Water Spout
 - Thunder
 
-Kyurem @ Assault Vest
-Ability: Pressure
-Tera Type: Steel
-EVs: 4 HP / 252 SpA / 252 Spe
-Timid nature
-- Earth Power
-- Glaciate
-- Dragon Pulse
-- Flash Cannon
-
-Kyurem-Black @ Loaded Dice
-Ability: Teravolt
-Tera Type: Electric
-EVs: 4 HP / 252 Atk / 252 Spe
-Jolly nature
-- Fusion Bolt
-- Protect
-- Icicle Spear
-- Scale Shot
-
-Kyurem-White @ Life Orb
-Ability: Turboblaze
-Tera Type: Ice
-EVs: 4 HP / 252 SpA / 252 Spe
-Timid nature
-- Earth Power
-- Blizzard
-- Draco Meteor
-- Fusion Flare
-
 Landorus @ Life Orb
 Ability: Sheer Force
 Tera Type: Poison
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Earth Power
 - Protect
 - Sludge Bomb
-- Hidden Power Ice
+- Sandsear Storm
 
 Landorus-Therian @ Choice Scarf
 Ability: Intimidate
@@ -3152,6 +3321,7 @@ Lanturn @ Leftovers
 Ability: Volt Absorb
 Tera Type: Water
 EVs: 252 HP / 252 Def / 4 SpD
+IVs: 0 Atk
 Calm nature
 - Scald
 - Ice Beam
@@ -3162,8 +3332,9 @@ Lapras @ Assault Vest
 Ability: Water Absorb
 Tera Type: Ghost
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk
 Modest nature
-- Freeze-Dry
+- Freeze Dry
 - Hydro Pump
 - Thunder
 - Ancient Power
@@ -3172,6 +3343,7 @@ Latias @ Rocky Helmet
 Ability: Levitate
 Tera Type: Steel
 EVs: 252 HP / 4 Def / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Tailwind
 - Mist Ball
@@ -3183,6 +3355,7 @@ Ability: Levitate
 Tera Type: Steel
 Note: Mega
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Ice Beam
 - Psyshock
@@ -3193,6 +3366,7 @@ Latios @ Soul Dew
 Ability: Levitate
 Tera Type: Steel
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Draco Meteor
 - Protect
@@ -3204,6 +3378,7 @@ Ability: Levitate
 Tera Type: Steel
 Note: Mega
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Protect
 - Psychic
@@ -3218,7 +3393,7 @@ Adamant nature
 - Leaf Blade
 - Protect
 - Knock Off
-- X-Scissor
+- X Scissor
 
 Leavanny @ Focus Sash
 Ability: Chlorophyll
@@ -3227,7 +3402,7 @@ EVs: 252 Atk / 4 SpD / 252 Spe
 Adamant nature
 - Protect
 - Leaf Blade
-- X-Scissor
+- X Scissor
 - Knock Off
 
 Lickilicky @ Assault Vest
@@ -3254,6 +3429,7 @@ Lilligant @ Focus Sash
 Ability: Chlorophyll
 Tera Type: Ghost
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Sleep Powder
 - After You
@@ -3274,6 +3450,7 @@ Linoone @ Focus Sash
 Ability: Gluttony
 Tera Type: Normal
 EVs: 252 HP / 252 Atk / 4 Spe
+IVs: 0 Atk
 Timid nature
 - Protect
 - Belly Drum
@@ -3326,6 +3503,7 @@ Ludicolo @ Assault Vest
 Ability: Swift Swim
 Tera Type: Water
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Ice Beam
 - Giga Drain
@@ -3336,6 +3514,7 @@ Lugia @ Weakness Policy
 Ability: Multiscale
 Tera Type: Fairy
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Aeroblast
 - Earth Power
@@ -3346,6 +3525,7 @@ Lumineon @ Covert Cloak
 Ability: Storm Drain
 Tera Type: Grass
 EVs: 252 HP / 4 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Tailwind
 - Encore
@@ -3356,6 +3536,7 @@ Lunala @ Power Herb
 Ability: Shadow Shield
 Tera Type: Fairy
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Moongeist Beam
 - Trick Room
@@ -3366,6 +3547,7 @@ Lunatone @ Focus Sash
 Ability: Levitate
 Tera Type: Grass
 EVs: 252 HP / 4 Def / 252 SpA
+IVs: 0 Atk
 Modest nature
 - Power Gem
 - Trick Room
@@ -3376,6 +3558,7 @@ Lurantis @ Assault Vest
 Ability: Contrary
 Tera Type: Fire
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Superpower
 - Leaf Blade
@@ -3386,6 +3569,7 @@ Luvdisc @ Focus Sash
 Ability: Swift Swim
 Tera Type: Ghost
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Entrainment
 - Protect
@@ -3456,6 +3640,7 @@ Magcargo @ Weakness Policy
 Ability: Flame Body
 Tera Type: Water
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Heat Wave
 - Protect
@@ -3466,6 +3651,7 @@ Magmar @ Eviolite
 Ability: Flame Body
 Tera Type: Ghost
 EVs: 252 HP / 252 Def / 4 SpD
+IVs: 0 Atk
 Bold nature
 - Follow Me
 - Protect
@@ -3476,36 +3662,29 @@ Magmortar @ Sitrus Berry
 Ability: Vital Spirit
 Tera Type: Grass
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Protect
 - Follow Me
 - Heat Wave
 - Thunderbolt
 
-Magneton @ Eviolite
-Ability: Magnet Pull
-Tera Type: Fairy
-EVs: 252 HP / 252 Def / 4 SpA
-Bold nature
-- Flash Cannon
-- Protect
-- Thunderbolt
-- Hidden Power Fire
-
 Magnezone @ Choice Specs
 Ability: Sturdy
 Tera Type: Flying
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk
 Modest nature
 - Flash Cannon
 - Thunderbolt
 - Tera Blast
-- Hidden Power Ice
+- Volt Switch
 
 Malamar @ Sitrus Berry
 Ability: Contrary
 Tera Type: Fire
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Superpower
 - Trick Room
@@ -3526,6 +3705,7 @@ Mandibuzz @ Covert Cloak
 Ability: Overcoat
 Tera Type: Steel
 EVs: 212 HP / 116 Def / 180 SpD
+IVs: 0 Atk
 Bold nature
 - Tailwind
 - Roost
@@ -3537,16 +3717,18 @@ Ability: Lightning Rod
 Tera Type: Water
 Note: Mega
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Protect
 - Volt Switch
 - Snarl
-- Hidden Power Ice
+- Overheat
 
 Mantine @ Life Orb
 Ability: Water Absorb
 Tera Type: Grass
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Tailwind
 - Scald
@@ -3557,6 +3739,7 @@ Maractus @ Focus Sash
 Ability: Storm Drain
 Tera Type: Fire
 EVs: 252 HP / 4 SpA / 252 SpD
+IVs: 0 Atk
 Calm nature
 - Spiky Shield
 - Giga Drain
@@ -3567,6 +3750,7 @@ Marowak @ Thick Club
 Ability: Lightning Rod
 Tera Type: Water
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Bonemerang
 - Rock Slide
@@ -3577,6 +3761,7 @@ Marowak-Alola @ Thick Club
 Ability: Lightning Rod
 Tera Type: Water
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Flare Blitz
 - Shadow Bone
@@ -3587,6 +3772,7 @@ Masquerain @ Focus Sash
 Ability: Intimidate
 Tera Type: Water
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Bug Buzz
 - Protect
@@ -3603,20 +3789,12 @@ Jolly nature
 - Population Bomb
 - Taunt
 
-== WIP ==
-
 Mawile @ Mawilite
 Ability: Intimidate
+Tera Type: Fire
+Note: Mega
 EVs: 252 HP / 252 Atk / 4 SpD
-Brave nature
-- Play Rough
-- Iron Head
-- Sucker Punch
-- Protect
-
-Mawile-Mega @ Mawilite
-Ability: Huge Power
-EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Protect
 - Sucker Punch
@@ -3633,8 +3811,10 @@ Jolly nature
 - Skill Swap
 - Zen Headbutt
 
-Medicham-Mega @ Medichamite
+Medicham @ Medichamite
 Ability: Pure Power
+Tera Type: Fire
+Note: Mega
 EVs: 252 Atk / 4 SpD / 252 Spe
 Jolly nature
 - Fake Out
@@ -3646,6 +3826,7 @@ Meganium @ Sitrus Berry
 Ability: Overgrow
 Tera Type: Fire
 EVs: 252 HP / 76 Def / 4 SpA / 84 SpD / 92 Spe
+IVs: 0 Atk
 Calm nature
 - Protect
 - Heal Pulse
@@ -3666,25 +3847,18 @@ Meowstic @ Light Clay
 Ability: Prankster
 Tera Type: Dark
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Light Screen
 - Reflect
 - Thunder Wave
 - Trick Room
 
-Meowth @ Focus Sash
-Ability: Unnerve
-Tera Type: Ghost
-EVs: 252 Atk / 252 Spe
-Jolly nature
-- Fake Out
-- Feint
-- Endeavor
-
 Mesprit @ Safety Goggles
 Ability: Levitate
 Tera Type: Water
 EVs: 244 HP / 4 Def / 196 SpA / 4 SpD / 60 Spe
+IVs: 0 Atk
 Modest nature
 - Trick Room
 - Ice Beam
@@ -3701,8 +3875,10 @@ Adamant nature
 - Zen Headbutt
 - Stomping Tantrum
 
-Metagross-Mega @ Metagrossite
-Ability: Tough Claws
+Metagross @ Metagrossite
+Ability: Clear Body
+Tera Type: Fire
+Note: Mega
 EVs: 4 HP / 252 Atk / 252 Spe
 Jolly nature
 - Protect
@@ -3710,27 +3886,21 @@ Jolly nature
 - Stomping Tantrum
 - Bullet Punch
 
-Metapod @ Eviolite
-Ability: Shed Skin
-EVs: 
-Hardy nature
-- String Shot
-- Harden
-- Electroweb
-- Iron Defense
-
 Mewtwo @ Life Orb
 Ability: Pressure
 Tera Type: Dark
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Psystrike
 - Protect
 - Aura Sphere
 - Shadow Ball
 
-Mewtwo-Mega-X @ Mewtwonite X
-Ability: Steadfast
+Mewtwo @ Mewtwonite X
+Ability: Pressure
+Tera Type: Dark
+Note: Mega X
 EVs: 252 Atk / 4 SpD / 252 Spe
 Jolly nature
 - Protect
@@ -3738,9 +3908,12 @@ Jolly nature
 - Me First
 - Snatch
 
-Mewtwo-Mega-Y @ Mewtwonite Y
-Ability: Insomnia
+Mewtwo @ Mewtwonite Y
+Ability: Pressure
+Tera Type: Dark
+Note: Mega Y
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Psystrike
 - Protect
@@ -3759,6 +3932,7 @@ Jolly nature
 
 Mightyena @ Life Orb
 Ability: Intimidate
+Tera Type: Dark
 EVs: 4 HP / 252 Atk / 252 Spe
 Adamant nature
 - Protect
@@ -3770,6 +3944,7 @@ Milotic @ Leftovers
 Ability: Competitive
 Tera Type: Grass
 EVs: 252 HP / 252 Def / 4 SpA
+IVs: 0 Atk
 Bold nature
 - Scald
 - Protect
@@ -3778,21 +3953,13 @@ Bold nature
 
 Miltank @ Leftovers
 Ability: Sap Sipper
+Tera Type: Fighting
 EVs: 252 HP / 252 Atk / 4 SpD
 Adamant nature
 - Milk Drink
 - Body Slam
 - Protect
 - Seismic Toss
-
-Mime Jr. @ Focus Sash
-Ability: Soundproof
-EVs: 252 HP / 4 Def / 252 SpD
-Sassy nature
-- Skill Swap
-- Trick Room
-- Protect
-- Taunt
 
 Mimikyu @ Mental Herb
 Ability: Disguise
@@ -3804,15 +3971,6 @@ Jolly nature
 - Shadow Sneak
 - Taunt
 
-Mimikyu-Totem @ Mimikium Z
-Ability: Disguise
-EVs: 4 HP / 252 Atk / 252 Spe
-Adamant nature
-- Play Rough
-- Trick Room
-- Shadow Claw
-- Swords Dance
-
 Minior @ White Herb
 Ability: Shields Down
 Tera Type: Rock
@@ -3823,39 +3981,22 @@ Adamant nature
 - Rock Slide
 - Protect
 
-Minun @ Focus Sash
-Ability: Minus
-EVs: 252 HP / 4 Atk / 252 Spe
-Jolly nature
-- Helping Hand
-- Protect
-- Nuzzle
-- Encore
-
 Miraidon @ Choice Specs
 Ability: Hadron Engine
 Tera Type: Fairy
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Electro Drift
 - Draco Meteor
 - Dazzling Gleam
 - Snarl
 
-Misdreavus @ Eviolite
-Ability: Levitate
-Tera Type: Dark
-EVs: 252 HP / 252 Def / 4 SpD
-Bold nature
-- Trick Room
-- Will-O-Wisp
-- Pain Split
-- Shadow Ball
-
 Mismagius @ Ghostium Z
 Ability: Levitate
 Tera Type: Fairy
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Shadow Ball
 - Protect
@@ -3866,6 +4007,7 @@ Moltres @ Rocky Helmet
 Ability: Flame Body
 Tera Type: Grass
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Protect
 - Heat Wave
@@ -3876,39 +4018,12 @@ Moltres-Galar @ Sitrus Berry
 Ability: Berserk
 Tera Type: Dark
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Fiery Wrath
 - Protect
 - Air Slash
 - Nasty Plot
-
-Monferno @ Eviolite
-Ability: Iron Fist
-EVs: 252 HP / 252 SpD / 4 Spe
-Calm nature
-- Quick Guard
-- Protect
-- Will-O-Wisp
-- Flamethrower
-
-Morelull @ Eviolite
-Ability: Effect Spore
-EVs: 252 HP / 4 Def / 252 SpA
-Quiet nature
-- Spore
-- Pollen Puff
-- Protect
-- Strength Sap
-
-Morgrem @ Light Clay
-Ability: Prankster
-Tera Type: Ghost
-EVs: 252 HP / 4 Def / 252 SpD
-Calm nature
-- Reflect
-- Light Screen
-- Parting Shot
-- Fake Tears
 
 Morpeko @ Focus Sash
 Ability: Hunger Switch
@@ -3922,54 +4037,43 @@ Jolly nature
 
 Mr. Mime @ Focus Sash
 Ability: Soundproof
+Tera Type: Ghost
+Name: Mr Mime
 EVs: 252 HP / 252 Def / 4 SpD
+IVs: 0 Atk / 0 Spe
 Relaxed nature
 - Fake Out
 - Wide Guard
 - Dazzling Gleam
 - Protect
 
-Mr. Mime-Galar @ Eviolite
-Ability: Screen Cleaner
-EVs: 252 HP / 4 Def / 252 Spe
-Timid nature
-- Icy Wind
-- Ally Switch
-- Trick Room
-- Psyshock
-
 Mr. Rime @ Focus Sash
 Ability: Screen Cleaner
+Tera Type: Dark
+Name: Mr Rime
 EVs: 4 Atk / 252 SpA / 252 Spe
 Rash nature
-- Freeze-Dry
+- Freeze Dry
 - Fake Out
 - Trick Room
 - Ice Shard
-
-Mudkip @ Focus Sash
-Ability: Torrent
-Tera Type: Water
-EVs: 252 SpA
-Quiet nature
-- Yawn
-- Icy Wind
-- Wide Guard
-- Endeavor
 
 Mudsdale @ Assault Vest
 Ability: Stamina
 Tera Type: Grass
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - High Horsepower
 - Heavy Slam
 - Rock Slide
 - Close Combat
 
-Muk @ Black Sludge
+Muk @ Leftovers
 Ability: Sticky Hold
+Tera Type: Dark
 EVs: 252 HP / 164 Def / 92 SpD
+IVs: 0 Spe
 Relaxed nature
 - Minimize
 - Poison Jab
@@ -3986,43 +4090,27 @@ Impish nature
 - Minimize
 - Poison Jab
 
-Munchlax @ Eviolite
-Ability: Thick Fat
-EVs: 252 HP / 252 Def / 4 SpD
-Brave nature
-- Protect
-- Stomping Tantrum
-- Facade
-- Curse
-
 Munkidori @ Focus Sash
 Ability: Toxic Chain
 Tera Type: Poison
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Sludge Bomb
 - Psychic
 - Parting Shot
-- Protect
+- Fake Out
 
 Murkrow @ Eviolite
 Ability: Prankster
 Tera Type: Ghost
 EVs: 252 HP / 4 Def / 252 SpD
+IVs: 0 Atk
 Calm nature
 - Tailwind
 - Haze
 - Taunt
-- Quash
-
-Musharna @ Mental Herb
-Ability: Telepathy
-EVs: 252 HP / 4 SpA / 252 SpD
-Sassy nature
-- Trick Room
-- Psychic
-- Hypnosis
-- Gravity
+- Foul Play
 
 Naclstack @ Eviolite
 Ability: Purifying Salt
@@ -4036,35 +4124,32 @@ Impish nature
 
 Naganadel @ Life Orb
 Ability: Beast Boost
+Tera Type: Stellar
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Sludge Bomb
 - Draco Meteor
 - Protect
 - Flamethrower
 
-Natu @ Focus Sash
-Ability: Magic Bounce
-EVs: 252 HP / 252 Def
-Relaxed nature
-- Ally Switch
-- Trick Room
-- Protect
-- Simple Beam
-
 Necrozma @ Power Herb
 Ability: Prism Armor
+Tera Type: Dark
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Photon Geyser
-- Heat Wave
+- Meteor Beam
 - Calm Mind
 - Protect
 
 Necrozma-Dawn-Wings @ Power Herb
 Ability: Prism Armor
 Tera Type: Water
+Name: Necrozma-DW
 EVs: 252 HP / 4 Def / 252 SpA
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Moongeist Beam
 - Trick Room
@@ -4074,7 +4159,9 @@ Quiet nature
 Necrozma-Dusk-Mane @ Weakness Policy
 Ability: Prism Armor
 Tera Type: Dragon
+Name: Necrozma-DM
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Sunsteel Strike
 - Photon Geyser
@@ -4083,7 +4170,9 @@ Brave nature
 
 Nidoking @ Life Orb
 Ability: Sheer Force
+Tera Type: Stellar
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Earth Power
 - Ice Beam
@@ -4092,7 +4181,9 @@ Timid nature
 
 Nidoqueen @ Life Orb
 Ability: Sheer Force
+Tera Type: Stellar
 EVs: 12 HP / 4 Def / 252 SpA / 4 SpD / 236 Spe
+IVs: 0 Atk
 Timid nature
 - Earth Power
 - Sludge Bomb
@@ -4101,7 +4192,9 @@ Timid nature
 
 Nihilego @ Focus Sash
 Ability: Beast Boost
+Tera Type: Ghost
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Sludge Bomb
 - Protect
@@ -4112,16 +4205,18 @@ Ninetales @ Eject Pack
 Ability: Drought
 Tera Type: Grass
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Heat Wave
 - Protect
 - Solar Beam
-- Will-O-Wisp
+- Overheat
 
 Ninetales-Alola @ Light Clay
 Ability: Snow Warning
 Tera Type: Ghost
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Aurora Veil
 - Blizzard
@@ -4130,6 +4225,7 @@ Timid nature
 
 Ninjask @ Focus Sash
 Ability: Speed Boost
+Tera Type: Ghost
 EVs: 252 HP / 72 Atk / 180 Spe
 Jolly nature
 - Dual Wingbeat
@@ -4141,6 +4237,7 @@ Noctowl @ Life Orb
 Ability: Tinted Lens
 Tera Type: Normal
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Hurricane
 - Roost
@@ -4151,33 +4248,28 @@ Noivern @ Focus Sash
 Ability: Frisk
 Tera Type: Steel
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Draco Meteor
 - Tailwind
 - Protect
 - Hurricane
 
-Nosepass @ Custap Berry
-Ability: Sturdy
-EVs: 252 Atk / 4 Def / 252 Spe
-Adamant nature
-- Wide Guard
-- Taunt
-- Pain Split
-- Head Smash
-
 Obstagoon @ Adrenaline Orb
 Ability: Defiant
+Tera Type: Ghost
 EVs: 4 HP / 252 Atk / 252 Spe
 Jolly nature
 - Knock Off
 - Obstruct
 - Close Combat
-- Facade
+- Return
 
 Octillery @ Choice Specs
 Ability: Sniper
+Tera Type: Stellar
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Water Spout
 - Energy Ball
@@ -4197,32 +4289,35 @@ Adamant nature
 Ogerpon-Cornerstone @ Cornerstone Mask
 Ability: Sturdy
 Tera Type: Rock
+Name: Ogerpon-CS
 EVs: 4 HP / 252 Atk / 252 Spe
 Jolly nature
 - Ivy Cudgel
 - Follow Me
 - Spiky Shield
-- Taunt
+- Power Whip
 
 Ogerpon-Hearthflame @ Hearthflame Mask
 Ability: Mold Breaker
 Tera Type: Fire
+Name: Ogerpon-HF
 EVs: 4 HP / 252 Atk / 252 Spe
 Jolly nature
 - Ivy Cudgel
 - Spiky Shield
 - Follow Me
-- Swords Dance
+- Wood Hammer
 
 Ogerpon-Wellspring @ Wellspring Mask
 Ability: Water Absorb
 Tera Type: Water
+Name: Ogerpon-WS
 EVs: 252 Atk / 4 SpD / 252 Spe
 Jolly nature
 - Ivy Cudgel
 - Spiky Shield
 - Follow Me
-- Taunt
+- Wood Hammer
 
 Oinkologne @ Sitrus Berry
 Ability: Lingering Aroma
@@ -4256,7 +4351,9 @@ Adamant nature
 
 Omastar @ Life Orb
 Ability: Swift Swim
+Tera Type: Stellar
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Protect
 - Ice Beam
@@ -4267,6 +4364,7 @@ Oranguru @ Mental Herb
 Ability: Inner Focus
 Tera Type: Dark
 EVs: 252 HP / 252 Def / 4 SpD
+IVs: 0 Atk / 0 Spe
 Relaxed nature
 - Instruct
 - Trick Room
@@ -4275,7 +4373,9 @@ Relaxed nature
 
 Orbeetle @ Weakness Policy
 Ability: Frisk
+Tera Type: Dark
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Bug Buzz
 - Trick Room
@@ -4286,15 +4386,18 @@ Oricorio @ Focus Sash
 Ability: Dancer
 Tera Type: Steel
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Revelation Dance
 - Protect
 - Air Slash
 - Tailwind
 
-Oricorio-Pa'u @ Focus Sash
+Oricorio-Pau @ Focus Sash
 Ability: Dancer
+Tera Type: Fairy
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Revelation Dance
 - Protect
@@ -4305,6 +4408,7 @@ Oricorio-Pom-Pom @ Flyinium Z
 Ability: Dancer
 Tera Type: Fairy
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Revelation Dance
 - Protect
@@ -4315,6 +4419,7 @@ Oricorio-Sensu @ Focus Sash
 Ability: Dancer
 Tera Type: Fairy
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Revelation Dance
 - Protect
@@ -4365,6 +4470,7 @@ Palkia @ Lustrous Orb
 Ability: Pressure
 Tera Type: Fairy
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Spacial Rend
 - Hydro Pump
@@ -4375,6 +4481,7 @@ Palkia-Origin @ Lustrous Globe
 Ability: Telepathy
 Tera Type: Water
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Spacial Rend
 - Protect
@@ -4385,6 +4492,7 @@ Palossand @ Weakness Policy
 Ability: Water Compaction
 Tera Type: Grass
 EVs: 244 HP / 20 SpA / 244 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Shadow Ball
 - Earth Power
@@ -4393,25 +4501,20 @@ Quiet nature
 
 Pangoro @ Life Orb
 Ability: Iron Fist
+Tera Type: Poison
 EVs: 252 HP / 252 Atk / 4 Def
+IVs: 0 Spe
 Brave nature
 - Protect
 - Ice Punch
 - Hammer Arm
 - Knock Off
 
-Paras @ Focus Sash
-Ability: Effect Spore
-EVs: 252 HP / 4 Atk / 20 Def / 4 SpA / 228 SpD
-Sassy nature
-- Rage Powder
-- Spore
-- Wide Guard
-- Hidden Power Fire
-
 Parasect @ Focus Sash
 Ability: Dry Skin
+Tera Type: Water
 EVs: 252 HP / 4 Def / 252 SpD
+IVs: 0 Atk / 0 Spe
 Sassy nature
 - Spore
 - Rage Powder
@@ -4428,11 +4531,6 @@ Jolly nature
 - Iron Head
 - Rock Slide
 
-Pawmo @ Choice Scarf
-Ability: Volt Absorb
-EVs: 252 Def / 252 Spe
-Hardy nature
-
 Pawmot @ Focus Sash
 Ability: Volt Absorb
 Tera Type: Electric
@@ -4443,10 +4541,22 @@ Jolly nature
 - Fake Out
 - Revival Blessing
 
+Pecharunt @ Rocky Helmet
+Ability: Poison Puppeteer
+Tera Type: Dark
+EVs: 252 HP / 228 Def / 28 SpD
+IVs: 0 Atk
+Bold nature
+- Protect
+- Malignant Chain
+- Hex
+- Parting Shot
+
 Pelipper @ Focus Sash
 Ability: Drizzle
 Tera Type: Ghost
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Hurricane
 - Tailwind
@@ -4457,6 +4567,7 @@ Perrserker @ Assault Vest
 Ability: Steely Spirit
 Tera Type: Steel
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Fake Out
 - Iron Head
@@ -4477,14 +4588,16 @@ Persian-Alola @ Focus Sash
 Ability: Fur Coat
 Tera Type: Poison
 EVs: 252 HP / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Parting Shot
 - Taunt
 - Snarl
-- Icy Wind
+- Fake Out
 
 Pheromosa @ Focus Sash
 Ability: Beast Boost
+Tera Type: Ghost
 EVs: 4 HP / 252 Atk / 252 Spe
 Jolly nature
 - Protect
@@ -4492,27 +4605,12 @@ Jolly nature
 - Poison Jab
 - U-turn
 
-Pichu @ Focus Sash
-Ability: Lightning Rod
-EVs: 252 HP / 4 SpD / 252 Spe
-Jolly nature
-- Nuzzle
-- Fake Out
-- Encore
-- Attract
-
 Pidgeot @ Pidgeotite
 Ability: Keen Eye
-EVs: 4 HP / 252 SpA / 252 Spe
-Timid nature
-- Hurricane
-- Protect
-- Heat Wave
-- Tailwind
-
-Pidgeot-Mega @ Pidgeotite
-Ability: No Guard
+Tera Type: Flying
+Note: Mega
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Hurricane
 - Protect
@@ -4523,26 +4621,18 @@ Pikachu @ Light Ball
 Ability: Lightning Rod
 Tera Type: Grass
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Protect
 - Helping Hand
 - Thunder
 - Grass Knot
 
-Piloswine @ Eviolite
-Ability: Thick Fat
-Tera Type: Grass
-EVs: 4 HP / 244 Atk / 12 Def / 44 SpD / 204 Spe
-Adamant nature
-- Protect
-- Ice Shard
-- Earthquake
-- Icicle Crash
-
 Pincurchin @ Life Orb
 Ability: Electric Surge
 Tera Type: Electric
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Spe
 Quiet nature
 - Sucker Punch
 - Protect
@@ -4551,69 +4641,25 @@ Quiet nature
 
 Pinsir @ Pinsirite
 Ability: Hyper Cutter
-EVs: 4 HP / 252 Atk / 252 Spe
-Jolly nature
-- Close Combat
-- Protect
-- Return
-- Feint
-
-Pinsir-Mega @ Pinsirite
-Ability: Aerilate
+Tera Type: Fire
+Note: Mega
 EVs: 4 HP / 252 Atk / 252 Spe
 Jolly nature
 - Protect
 - Feint
 - Return
 - Close Combat
-
-Piplup @ Eviolite
-Ability: Defiant
-EVs: 244 HP / 124 Def / 140 SpD
-Bold nature
-- Icy Wind
-- Swagger
-- Protect
-- Hydro Pump
-
-Plusle @ Focus Sash
-Ability: Plus
-EVs: 252 HP / 4 SpD / 252 Spe
-Timid nature
-- Protect
-- Electroweb
-- Hidden Power Ice
-- Skill Swap
 
 Politoed @ Sitrus Berry
 Ability: Drizzle
 Tera Type: Grass
 EVs: 252 HP / 4 SpA / 252 SpD
+IVs: 0 Atk
 Calm nature
 - Protect
 - Scald
 - Perish Song
 - Helping Hand
-
-Poliwag @ Focus Sash
-Ability: Swift Swim
-Tera Type: Ghost
-EVs: 252 SpA / 4 SpD / 252 Spe
-Modest nature
-- Protect
-- Icy Wind
-- Haze
-- Hydro Pump
-
-Poliwhirl @ Focus Sash
-Ability: Swift Swim
-Tera Type: Ghost
-EVs: 4 Def / 252 SpA / 252 Spe
-Timid nature
-- Protect
-- Icy Wind
-- Encore
-- Hypnosis
 
 Poliwrath @ Sitrus Berry
 Ability: Swift Swim
@@ -4625,46 +4671,22 @@ Adamant nature
 - Liquidation
 - Drain Punch
 
-Poltchageist @ Eviolite
-Ability: Hospitality
-EVs: 252 HP / 172 Def / 84 SpD
-Bold nature
-- Rage Powder
-- Trick Room
-- Protect
-
 Polteageist @ Weakness Policy
 Ability: Weak Armor
 Tera Type: Ghost
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Shadow Ball
 - Protect
 - Shell Smash
 - Giga Drain
 
-Ponyta @ Eviolite
-Ability: Flash Fire
-EVs: 196 HP / 36 Def / 24 SpD / 252 Spe
-Timid nature
-- Ally Switch
-- Will-O-Wisp
-- Heat Wave
-- Protect
-
-Porygon @ Wiki Berry
-Ability: Download
-EVs: 244 HP / 204 Def / 60 SpD
-Relaxed nature
-- Ice Beam
-- Trick Room
-- Return
-- Swagger
-
 Porygon-Z @ Life Orb
 Ability: Adaptability
-Tera Type: Ice
+Tera Type: Stellar
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Hyper Beam
 - Protect
@@ -4675,6 +4697,7 @@ Porygon2 @ Eviolite
 Ability: Download
 Tera Type: Flying
 EVs: 252 HP / 4 Atk / 124 Def / 92 SpA / 36 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Trick Room
 - Recover
@@ -4685,6 +4708,7 @@ Primarina @ Life Orb
 Ability: Liquid Voice
 Tera Type: Grass
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk
 Modest nature
 - Moonblast
 - Hyper Voice
@@ -4701,47 +4725,20 @@ Jolly nature
 - Poison Jab
 - Rage Fist
 
-Prinplup @ Eviolite
-Ability: Competitive
-Tera Type: Fairy
-EVs: 252 HP / 52 Def / 36 SpA / 4 SpD / 164 Spe
-Bold nature
-- Tera Blast
-- Helping Hand
-- Haze
-- Water Pledge
-
 Probopass @ Leftovers
 Ability: Sturdy
 Tera Type: Water
 EVs: 252 HP / 252 Def / 4 SpD
+IVs: 0 Atk / 0 Spe
 Relaxed nature
 - Wide Guard
 - Protect
 - Earth Power
 - Flash Cannon
 
-Psyduck @ Eviolite
-Ability: Cloud Nine
-Tera Type: Ghost
-EVs: 36 HP / 252 SpA / 220 Spe
-Modest nature
-- Protect
-- Encore
-- Icy Wind
-- Scald
-
-Purrloin @ Eviolite
-Ability: Prankster
-EVs: 252 HP / 4 Def / 252 Spe
-Timid nature
-- Protect
-- Assist
-- Encore
-- Snatch
-
 Purugly @ Focus Sash
 Ability: Defiant
+Tera Type: Normal
 EVs: 4 HP / 252 Atk / 252 Spe
 Jolly nature
 - Fake Out
@@ -4751,17 +4748,20 @@ Jolly nature
 
 Pyroar @ Life Orb
 Ability: Unnerve
-Tera Type: Normal
+Tera Type: Fire
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Hyper Voice
 - Protect
 - Heat Wave
-- Hidden Power Ice
+- Overheat
 
 Pyukumuku @ Leftovers
 Ability: Unaware
+Tera Type: Grass
 EVs: 228 HP / 252 Def / 28 SpD
+IVs: 0 Atk / 0 Spe
 Relaxed nature
 - Recover
 - Toxic
@@ -4772,6 +4772,7 @@ Quagsire @ Leftovers
 Ability: Unaware
 Tera Type: Fire
 EVs: 252 HP / 252 Def / 4 SpA
+IVs: 0 Atk
 Bold nature
 - Recover
 - Scald
@@ -4788,24 +4789,6 @@ Jolly nature
 - Protect
 - Aqua Jet
 
-Quilava @ Focus Sash
-Ability: Flash Fire
-EVs: 252 Atk / 4 Def / 252 SpD
-Brave nature
-- Protect
-- Will-O-Wisp
-- Quick Attack
-- Endeavor
-
-Quilladin @ Eviolite
-Ability: Bulletproof
-EVs: 252 HP / 116 Def / 140 SpD
-Relaxed nature
-- Leech Seed
-- Protect
-- Wide Guard
-- Super Fang
-
 Qwilfish @ Focus Sash
 Ability: Intimidate
 Tera Type: Grass
@@ -4816,29 +4799,11 @@ Adamant nature
 - Liquidation
 - Aqua Jet
 
-Qwilfish-Hisui @ Eviolite
-Ability: Intimidate
-Tera Type: Flying
-EVs: 252 HP / 36 Def / 196 SpD / 24 Spe
-Careful nature
-- Taunt
-- Haze
-- Barb Barrage
-- Protect
-
-Raboot @ Eviolite
-Ability: Blaze
-EVs: 252 HP / 4 Atk / 4 Def / 12 SpD / 236 Spe
-Jolly nature
-- Sucker Punch
-- Flare Blitz
-- Ally Switch
-- Super Fang
-
 Rabsca @ Leppa Berry
 Ability: Telepathy
 Tera Type: Water
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Trick Room
 - Revival Blessing
@@ -4849,6 +4814,7 @@ Raging Bolt @ Assault Vest
 Ability: Protosynthesis
 Tera Type: Electric
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Thunderclap
 - Thunderbolt
@@ -4859,6 +4825,7 @@ Raichu @ Focus Sash
 Ability: Lightning Rod
 Tera Type: Fairy
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Volt Switch
 - Encore
@@ -4869,6 +4836,7 @@ Raichu-Alola @ Focus Sash
 Ability: Surge Surfer
 Tera Type: Ghost
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Thunderbolt
 - Psychic
@@ -4879,16 +4847,18 @@ Raikou @ Assault Vest
 Ability: Pressure
 Tera Type: Water
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Thunderbolt
 - Snarl
-- Hidden Power Ice
+- Volt Switch
 - Scald
 
 Rampardos @ Life Orb
 Ability: Sheer Force
 Tera Type: Rock
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Rock Slide
 - Protect
@@ -4897,6 +4867,7 @@ Brave nature
 
 Rapidash @ Life Orb
 Ability: Flash Fire
+Tera Type: Ground
 EVs: 4 HP / 252 Atk / 252 Spe
 Jolly nature
 - Flare Blitz
@@ -4906,6 +4877,7 @@ Jolly nature
 
 Rapidash-Galar @ Focus Sash
 Ability: Pastel Veil
+Tera Type: Ghost
 EVs: 252 Atk / 4 SpD / 252 Spe
 Jolly nature
 - Play Rough
@@ -4913,36 +4885,20 @@ Jolly nature
 - High Horsepower
 - Zen Headbutt
 
-Raticate-Alola @ Choice Scarf
-Ability: Thick Fat
-EVs: 252 HP / 4 SpD / 252 Spe
-Timid nature
-- Final Gambit
-- Snarl
-- Uproar
-- Hidden Power Fire
-
-Rattata @ Focus Sash
-Ability: Run Away
-EVs: 228 Atk / 100 Spe
-Adamant nature
-- Endeavor
-- Quick Attack
-- Substitute
-- Protect
-
-Rayquaza @ Clear Amulet
+Rayquaza @ Life Orb
 Ability: Air Lock
-Tera Type: Normal
+Tera Type: Stellar
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Protect
-- Swords Dance
 - Draco Meteor
 - Earth Power
+- Overheat
 
-Rayquaza-Mega @ Focus Sash
-Ability: Delta Stream
+Rayquaza @ Focus Sash
+Ability: Air Lock
+Tera Type: Normal
 EVs: 4 HP / 252 Atk / 252 Spe
 Jolly nature
 - Dragon Ascent
@@ -4954,6 +4910,7 @@ Regice @ Choice Specs
 Ability: Clear Body
 Tera Type: Fire
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk
 Modest nature
 - Thunderbolt
 - Ice Beam
@@ -4961,9 +4918,10 @@ Modest nature
 - Tera Blast
 
 Regidrago @ Dragon Fang
-Ability: Dragon's Maw
+Ability: Dragons Maw
 Tera Type: Ghost
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Dragon Energy
 - Protect
@@ -4974,6 +4932,7 @@ Regieleki @ Focus Sash
 Ability: Transistor
 Tera Type: Electric
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Electroweb
 - Protect
@@ -4987,7 +4946,7 @@ EVs: 4 HP / 252 Atk / 252 Spe
 Jolly nature
 - High Horsepower
 - Protect
-- Wide Guard
+- Double-Edge
 - Knock Off
 
 Regirock @ Weakness Policy
@@ -5012,6 +4971,7 @@ Adamant nature
 
 Relicanth @ Choice Band
 Ability: Swift Swim
+Tera Type: Ghost
 EVs: 4 HP / 252 Atk / 252 Spe
 Adamant nature
 - Head Smash
@@ -5023,6 +4983,7 @@ Reshiram @ Life Orb
 Ability: Turboblaze
 Tera Type: Fire
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Blue Flare
 - Draco Meteor
@@ -5033,6 +4994,7 @@ Reuniclus @ Life Orb
 Ability: Magic Guard
 Tera Type: Fighting
 EVs: 252 HP / 4 Def / 252 SpA
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Trick Room
 - Psychic
@@ -5053,6 +5015,7 @@ Rhydon @ Eviolite
 Ability: Lightning Rod
 Tera Type: Fairy
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Protect
 - Rock Slide
@@ -5063,6 +5026,7 @@ Rhyperior @ Weakness Policy
 Ability: Solid Rock
 Tera Type: Fairy
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Rock Slide
 - Protect
@@ -5073,6 +5037,7 @@ Ribombee @ Focus Sash
 Ability: Shield Dust
 Tera Type: Fairy
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Pollen Puff
 - Moonblast
@@ -5111,26 +5076,20 @@ Jolly nature
 
 Roserade @ Focus Sash
 Ability: Technician
+Tera Type: Ghost
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Sludge Bomb
 - Protect
 - Leaf Storm
 - Sleep Powder
 
-Rotom @ Kasib Berry
-Ability: Levitate
-EVs: 252 HP / 4 Def / 252 SpD
-Calm nature
-- Shadow Ball
-- Light Screen
-- Volt Switch
-- Will-O-Wisp
-
 Rotom-Fan @ Sitrus Berry
 Ability: Levitate
 Tera Type: Electric
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Air Slash
 - Thunderbolt
@@ -5141,16 +5100,18 @@ Rotom-Frost @ Choice Scarf
 Ability: Levitate
 Tera Type: Electric
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Blizzard
 - Thunderbolt
 - Dark Pulse
-- Tera Blast
+- Volt Switch
 
 Rotom-Heat @ Safety Goggles
 Ability: Levitate
 Tera Type: Electric
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Overheat
 - Thunderbolt
@@ -5161,6 +5122,7 @@ Rotom-Mow @ Sitrus Berry
 Ability: Levitate
 Tera Type: Electric
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Leaf Storm
 - Thunderbolt
@@ -5171,33 +5133,18 @@ Rotom-Wash @ Sitrus Berry
 Ability: Levitate
 Tera Type: Electric
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Hydro Pump
 - Thunderbolt
 - Protect
 - Will-O-Wisp
 
-Rowlet @ Custap Berry
-Ability: Long Reach
-EVs: 252 HP / 252 Atk / 4 Def
-Brave nature
-- Leaf Blade
-- Haze
-- Toxic
-- Brave Bird
-
-Rufflet @ Life Orb
-Ability: Hustle
-EVs: 4 HP / 252 Atk / 252 Spe
-Adamant nature
-- Brave Bird
-- Tailwind
-- Close Combat
-- Rock Slide
-
 Runerigus @ Leftovers
 Ability: Wandering Spirit
+Tera Type: Fighting
 EVs: 252 HP / 252 Def / 4 SpD
+IVs: 0 Spe
 Relaxed nature
 - Trick Room
 - Body Press
@@ -5208,15 +5155,19 @@ Sableye @ Light Clay
 Ability: Prankster
 Tera Type: Grass
 EVs: 252 HP / 4 Def / 252 SpD
+IVs: 0 Atk
 Calm nature
-- Quash
-- Will-O-Wisp
+- Light Screen
+- Reflect
+- Will-o-Wisp
 - Taunt
-- Encore
 
-Sableye-Mega @ Sablenite
-Ability: Magic Bounce
+Sableye @ Sablenite
+Ability: Prankster
+Tera Type: Normal
+Note: Mega
 EVs: 252 HP / 4 Def / 252 SpD
+IVs: 0 Spe
 Sassy nature
 - Will-O-Wisp
 - Fake Out
@@ -5227,14 +5178,17 @@ Salamence @ Life Orb
 Ability: Intimidate
 Tera Type: Steel
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Draco Meteor
 - Protect
 - Tailwind
 - Air Slash
 
-Salamence-Mega @ Salamencite
-Ability: Aerilate
+Salamence @ Salamencite
+Ability: Intimidate
+Tera Type: Steel
+Note: Mega
 EVs: 4 Atk / 252 SpA / 252 Spe
 Naive nature
 - Protect
@@ -5246,6 +5200,7 @@ Salazzle @ Focus Sash
 Ability: Corrosion
 Tera Type: Ghost
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Sludge Bomb
 - Overheat
@@ -5254,6 +5209,7 @@ Timid nature
 
 Samurott @ Expert Belt
 Ability: Shell Armor
+Tera Type: Dark
 EVs: 244 HP / 252 Atk / 12 Def
 Adamant nature
 - Aqua Jet
@@ -5293,7 +5249,7 @@ Adamant nature
 
 Sandslash-Alola @ Life Orb
 Ability: Slush Rush
-Tera Type: Ice
+Tera Type: Ghost
 EVs: 4 HP / 252 Atk / 252 Spe
 Adamant nature
 - Iron Head
@@ -5305,6 +5261,7 @@ Sandy Shocks @ Booster Energy
 Ability: Protosynthesis
 Tera Type: Water
 EVs: 52 HP / 204 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Earth Power
 - Protect
@@ -5313,6 +5270,7 @@ Timid nature
 
 Sawk @ Choice Scarf
 Ability: Inner Focus
+Tera Type: Ghost
 EVs: 4 HP / 252 Atk / 252 Spe
 Adamant nature
 - Close Combat
@@ -5330,28 +5288,23 @@ Adamant nature
 - Megahorn
 - Double-Edge
 
-Scatterbug @ Eviolite
-Ability: Friend Guard
-EVs: 4 HP / 252 Def / 252 SpD
-Relaxed nature
-- Pounce
-- String Shot
-- Struggle Bug
-- Rage Powder
-
 Sceptile @ Focus Sash
 Ability: Unburden
 Tera Type: Ghost
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Grass Pledge
 - Protect
 - Quick Guard
 - Shed Tail
 
-Sceptile-Mega @ Sceptilite
-Ability: Lightning Rod
+Sceptile @ Sceptilite
+Ability: Overgrow
+Tera Type: Ground
+Note: Mega
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Dragon Pulse
 - Protect
@@ -5368,8 +5321,10 @@ Adamant nature
 - Close Combat
 - Dual Wingbeat
 
-Scizor-Mega @ Scizorite
+Scizor @ Scizorite
 Ability: Technician
+Tera Type: Fire
+Note: Mega
 EVs: 252 HP / 252 Atk / 4 SpD
 Adamant nature
 - Bullet Punch
@@ -5379,6 +5334,7 @@ Adamant nature
 
 Scolipede @ Focus Sash
 Ability: Speed Boost
+Tera Type: Ghost
 EVs: 252 Atk / 4 SpD / 252 Spe
 Adamant nature
 - Protect
@@ -5386,19 +5342,11 @@ Adamant nature
 - Megahorn
 - Swords Dance
 
-Scorbunny @ Choice Band
-Ability: Libero
-EVs: 4 HP / 252 Atk / 252 Spe
-Adamant nature
-- High Jump Kick
-- Sucker Punch
-- Blaze Kick
-- Gunk Shot
-
 Scovillain @ Focus Sash
 Ability: Chlorophyll
 Tera Type: Ghost
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Rage Powder
 - Protect
@@ -5415,20 +5363,11 @@ Adamant nature
 - Drain Punch
 - Super Fang
 
-Scraggy @ Eviolite
-Ability: Intimidate
-Tera Type: Poison
-EVs: 4 HP / 252 Def / 252 SpD
-Sassy nature
-- Fake Out
-- Foul Play
-- Coaching
-- Endeavor
-
 Scream Tail @ Booster Energy
 Ability: Protosynthesis
 Tera Type: Dark
 EVs: 252 HP / 4 Def / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Encore
 - Disable
@@ -5447,132 +5386,68 @@ Jolly nature
 
 Seaking @ Rindo Berry
 Ability: Lightning Rod
+Tera Type: Grass
 EVs: 172 HP / 180 Def / 156 SpD
+IVs: 0 Atk
 Calm nature
 - Protect
 - Scald
 - Ice Beam
 - Soak
 
-Sealeo @ Eviolite
-Ability: Thick Fat
-EVs: 252 HP / 140 Def / 4 SpA / 108 SpD
-Calm nature
-- Sheer Cold
-- Encore
-- Yawn
-- Brine
-
-Seedot @ Focus Sash
-Ability: Pickpocket
-Tera Type: Ghost
-EVs: 252 Atk
-Brave nature
-- Endeavor
-- Foul Play
-- Endure
-- Quick Attack
-
-Seel @ Eviolite
-Ability: Thick Fat
-EVs: 252 HP / 252 Def / 4 SpD
-Relaxed nature
-- Perish Song
-- Protect
-- Fake Out
-- Horn Drill
-
 Seismitoad @ Life Orb
 Ability: Swift Swim
+Tera Type: Stellar
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Earth Power
 - Protect
 - Muddy Water
 - Sludge Bomb
 
-Sentret @ Focus Sash
-Ability: Frisk
-Tera Type: Grass
-EVs: 252 Atk / 172 Def
-Brave nature
-- Follow Me
-- Endeavor
-- Knock Off
-- Protect
-
 Serperior @ Wide Lens
 Ability: Contrary
 Tera Type: Stellar
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Leaf Storm
 - Protect
 - Glare
-- Tera Blast
-
-Servine @ Eviolite
-Ability: Contrary
-EVs: 252 HP / 132 Def / 124 SpD
-Calm nature
-- Leaf Storm
-- Protect
-- Glare
-- Synthesis
-
-Sewaddle @ Choice Scarf
-Ability: Chlorophyll
-Tera Type: Ghost
-EVs: 4 HP / 252 SpA / 252 Spe
-Timid nature
-- Electroweb
-- Struggle Bug
 - Tera Blast
 
 Sharpedo @ Sharpedonite
 Ability: Speed Boost
+Tera Type: Ghost
+Note: Mega
 EVs: 252 Atk / 4 SpD / 252 Spe
 Adamant nature
 - Protect
-- Waterfall
 - Crunch
 - Ice Fang
+- Waterfall
 
-Sharpedo-Mega @ Sharpedonite
-Ability: Strong Jaw
-EVs: 252 Atk / 4 SpD / 252 Spe
-Adamant nature
+Shaymin-Sky @ Focus Sash
+Ability: Serene Grace
+Tera Type: Ghost
+EVs: 4 Def / 252 SpA / 252 Spe
+IVs: 0 Atk
+Timid nature
+- Air Slash
+- Seed Flare
+- Earth Power
 - Protect
-- Crunch
-- Ice Fang
-- Waterfall
 
 Shedinja @ Focus Sash
 Ability: Wonder Guard
+Tera Type: Electric
 EVs: 252 Atk / 4 Def / 252 Spe
 Adamant nature
 - Shadow Sneak
 - Protect
 - Ally Switch
 - Will-O-Wisp
-
-Shellos @ Eviolite
-Ability: Storm Drain
-EVs: 4 HP / 252 Def / 252 SpD
-Relaxed nature
-- Recover
-- Scald
-- Clear Smog
-- Stockpile
-
-Shieldon @ Eviolite
-Ability: Sturdy
-EVs: 252 HP / 28 Def / 228 SpD
-Sassy nature
-- Protect
-- Fissure
-- Counter
-- Wide Guard
 
 Shiftry @ Focus Sash
 Ability: Chlorophyll
@@ -5586,25 +5461,20 @@ Adamant nature
 
 Shiinotic @ Leftovers
 Ability: Effect Spore
+Tera Type: Water
 EVs: 252 HP / 4 SpA / 252 SpD
+IVs: 0 Atk
 Calm nature
 - Spore
 - Strength Sap
 - Moonblast
 - Protect
 
-Shroomish @ Eviolite
-Ability: Effect Spore
-EVs: 252 HP / 4 Def / 252 SpD
-Calm nature
-- Leech Seed
-- Spore
-- Helping Hand
-- Synthesis
-
 Shuckle @ Mental Herb
 Ability: Sturdy
+Tera Type: Water
 EVs: 4 HP / 252 Def / 252 SpD
+IVs: 0 Atk / 0 Spe
 Relaxed nature
 - Guard Split
 - Power Split
@@ -5613,7 +5483,9 @@ Relaxed nature
 
 Sigilyph @ Focus Sash
 Ability: Magic Guard
+Tera Type: Dark
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Tailwind
 - Gravity
@@ -5622,6 +5494,7 @@ Timid nature
 
 Silvally @ Choice Band
 Ability: RKS System
+Tera Type: Normal
 EVs: 4 HP / 252 Atk / 252 Spe
 Adamant nature
 - Explosion
@@ -5631,7 +5504,9 @@ Adamant nature
 
 Silvally-Dark @ Dark Memory
 Ability: RKS System
+Tera Type: Dark
 EVs: 4 HP / 68 Def / 12 SpA / 204 SpD / 220 Spe
+IVs: 0 Atk
 Timid nature
 - Snarl
 - Protect
@@ -5640,7 +5515,9 @@ Timid nature
 
 Silvally-Electric @ Electric Memory
 Ability: RKS System
+Tera Type: Electric
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Protect
 - Parting Shot
@@ -5649,7 +5526,9 @@ Timid nature
 
 Silvally-Fairy @ Fairy Memory
 Ability: RKS System
+Tera Type: Fairy
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Protect
 - Parting Shot
@@ -5658,16 +5537,19 @@ Timid nature
 
 Silvally-Fighting @ Fighting Memory
 Ability: RKS System
+Tera Type: Fighting
 EVs: 4 HP / 252 Atk / 252 Spe
 Jolly nature
-- Multi-Attack
+- Multi Attack
 - Protect
 - Thunder Fang
 - Iron Head
 
 Silvally-Fire @ Fire Memory
 Ability: RKS System
+Tera Type: Fire
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Parting Shot
 - Swords Dance
@@ -5676,7 +5558,9 @@ Timid nature
 
 Silvally-Flying @ Flying Memory
 Ability: RKS System
+Tera Type: Flying
 EVs: 244 HP / 4 Def / 212 SpA / 12 SpD / 36 Spe
+IVs: 0 Atk
 Modest nature
 - Protect
 - Ice Beam
@@ -5685,7 +5569,9 @@ Modest nature
 
 Silvally-Ghost @ Ghost Memory
 Ability: RKS System
+Tera Type: Ghost
 EVs: 252 HP / 4 Def / 252 SpA
+IVs: 0 Atk
 Modest nature
 - Shadow Ball
 - Parting Shot
@@ -5694,60 +5580,67 @@ Modest nature
 
 Silvally-Grass @ Grass Memory
 Ability: RKS System
+Tera Type: Grass
 EVs: 4 HP / 252 Atk / 252 Spe
 Jolly nature
-- Multi-Attack
+- Multi Attack
 - Protect
 - Parting Shot
 - Rock Slide
 
 Silvally-Ground @ Ground Memory
 Ability: RKS System
+Tera Type: Ground
 EVs: 252 Atk / 4 SpD / 252 Spe
 Jolly nature
-- Multi-Attack
+- Multi Attack
 - Protect
 - Swords Dance
 - Parting Shot
 
 Silvally-Ice @ Ice Memory
 Ability: RKS System
+Tera Type: Ice
 EVs: 252 Atk / 4 SpA / 252 Spe
 Hasty nature
-- Multi-Attack
+- Multi Attack
 - Parting Shot
 - Icy Wind
 - Protect
 
 Silvally-Poison @ Poison Memory
 Ability: RKS System
+Tera Type: Poison
 EVs: 252 Atk / 4 SpD / 252 Spe
 Jolly nature
-- Multi-Attack
+- Multi Attack
 - Protect
 - Fire Fang
 - Ice Fang
 
 Silvally-Steel @ Steel Memory
 Ability: RKS System
+Tera Type: Steel
 EVs: 172 HP / 252 Atk / 4 Def / 12 SpD / 68 Spe
 Adamant nature
 - Protect
-- Multi-Attack
+- Multi Attack
 - Parting Shot
 - Tailwind
 
 Silvally-Water @ Water Memory
 Ability: RKS System
+Tera Type: Water
 EVs: 252 HP / 252 Atk / 4 Spe
 Adamant nature
-- Multi-Attack
+- Multi Attack
 - Parting Shot
 - Tailwind
 - Psychic Fangs
 
 Simisage @ Grassium Z
 Ability: Overgrow
+Tera Type: Fighting
 EVs: 4 HP / 252 Atk / 252 Spe
 Jolly nature
 - Seed Bomb
@@ -5759,14 +5652,16 @@ Sinistcha @ Rocky Helmet
 Ability: Hospitality
 Tera Type: Water
 EVs: 252 HP / 188 Def / 68 SpD
+IVs: 0 Atk
 Bold nature
 - Rage Powder
 - Matcha Gotcha
 - Trick Room
 - Life Dew
 
-Sirfetch’d @ Leek
+Sirfetchd @ Leek
 Ability: Scrappy
+Tera Type: Flying
 EVs: 252 HP / 252 Atk / 4 SpD
 Adamant nature
 - Close Combat
@@ -5788,20 +5683,12 @@ Skeledirge @ Leftovers
 Ability: Unaware
 Tera Type: Fairy
 EVs: 228 HP / 76 Def / 76 SpA / 124 SpD / 4 Spe
+IVs: 0 Atk
 Modest nature
 - Torch Song
 - Shadow Ball
 - Slack Off
 - Protect
-
-Skrelp @ Choice Specs
-Ability: Adaptability
-EVs: 252 HP / 252 SpA / 4 SpD
-Quiet nature
-- Sludge Bomb
-- Thunderbolt
-- Dragon Pulse
-- Hydro Pump
 
 Skuntank @ Assault Vest
 Ability: Aftermath
@@ -5813,14 +5700,6 @@ Impish nature
 - Poison Jab
 - Feint
 
-Skwovet @ Sitrus Berry
-Ability: Cheek Pouch
-Tera Type: Ghost
-EVs: 244 HP / 252 Atk / 12 SpD
-Brave nature
-- Belly Drum
-- Last Resort
-
 Slaking @ Life Orb
 Ability: Truant
 Tera Type: Ghost
@@ -5830,15 +5709,6 @@ Jolly nature
 - Protect
 - High Horsepower
 - Sucker Punch
-
-Sliggoo @ Eviolite
-Ability: Sap Sipper
-EVs: 132 HP / 68 Def / 56 SpA / 252 SpD
-Calm nature
-- Protect
-- Life Dew
-- Muddy Water
-- Draco Meteor
 
 Slither Wing @ Life Orb
 Ability: Protosynthesis
@@ -5854,6 +5724,7 @@ Slowbro @ Leftovers
 Ability: Oblivious
 Tera Type: Grass
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Trick Room
 - Scald
@@ -5864,15 +5735,19 @@ Slowbro-Galar @ Quick Claw
 Ability: Quick Draw
 Tera Type: Poison
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Shell Side Arm
 - Trick Room
 - Expanding Force
 - Protect
 
-Slowbro-Mega @ Slowbronite
-Ability: Shell Armor
+Slowbro @ Slowbronite
+Ability: Regenerator
+Tera Type: Fairy
+Note: Mega
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Scald
 - Trick Room
@@ -5883,6 +5758,7 @@ Slowking @ Sitrus Berry
 Ability: Oblivious
 Tera Type: Grass
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Trick Room
 - Scald
@@ -5893,33 +5769,16 @@ Slowking-Galar @ Mental Herb
 Ability: Regenerator
 Tera Type: Water
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Trick Room
 - Sludge Bomb
 - Chilly Reception
 - Expanding Force
 
-Slowpoke @ Eviolite
-Ability: Oblivious
-Tera Type: Grass
-EVs: 252 HP / 4 Def / 252 SpD
-Sassy nature
-- Trick Room
-- Heal Pulse
-- Surf
-- Sunny Day
-
-Slowpoke-Galar @ Eviolite
-Ability: Own Tempo
-EVs: 212 HP / 44 Def / 252 SpD
-Impish nature
-- Trick Room
-- Yawn
-- Heal Pulse
-- Foul Play
-
 Slurpuff @ Sitrus Berry
 Ability: Unburden
+Tera Type: Fighting
 EVs: 4 HP / 252 Atk / 252 Spe
 Adamant nature
 - Protect
@@ -5937,54 +5796,21 @@ Jolly nature
 - Fake Out
 - Wide Guard
 
-Sneasel @ Focus Sash
-Ability: Inner Focus
-Tera Type: Ghost
-EVs: 4 HP / 252 Atk / 252 Spe
-Jolly nature
-- Fake Out
-- Triple Axel
-- Taunt
-- Foul Play
-
-Sneasel-Hisui @ Eviolite
-Ability: Inner Focus
-Tera Type: Fighting
-EVs: 100 HP / 148 Atk / 4 Def / 4 SpD / 252 Spe
-Jolly nature
-- Close Combat
-- Fake Out
-- Taunt
-- Gunk Shot
-
-Sneasler @ Psychic Seed
+Sneasler @ White Herb
 Ability: Unburden
-Tera Type: Dark
+Tera Type: Ghost
 EVs: 252 Atk / 4 SpD / 252 Spe
-Adamant nature
+Jolly nature
 - Close Combat
 - Dire Claw
 - Fake Out
 - Protect
 
-Snivy @ Choice Scarf
-Ability: Contrary
-EVs: 252 SpA / 252 Spe
-Timid nature
-- Leaf Storm
-
-Snom @ Eviolite
-Ability: Ice Scales
-EVs: 252 HP / 4 Def / 252 SpD
-Sassy nature
-- Icy Wind
-- Protect
-- Struggle Bug
-
 Snorlax @ Figy Berry
 Ability: Gluttony
 Tera Type: Fairy
 EVs: 244 HP / 252 Atk / 12 SpD
+IVs: 0 Spe
 Brave nature
 - Belly Drum
 - Protect
@@ -6001,19 +5827,11 @@ Jolly nature
 - Psychic Fangs
 - Earthquake
 
-Solosis @ Focus Sash
-Ability: Overcoat
-Tera Type: Fire
-EVs: 252 HP / 252 SpA / 4 SpD
-Quiet nature
-- Trick Room
-- Protect
-- Endeavor
-- Imprison
-
 Solrock @ Focus Sash
 Ability: Levitate
+Tera Type: Fire
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Rock Slide
 - Trick Room
@@ -6024,6 +5842,7 @@ Spectrier @ Focus Sash
 Ability: Grim Neigh
 Tera Type: Fairy
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Shadow Ball
 - Will-O-Wisp
@@ -6034,23 +5853,16 @@ Spidops @ Covert Cloak
 Ability: Stakeout
 Tera Type: Bug
 EVs: 252 HP / 252 Atk / 4 Def
+IVs: 0 Spe
 Brave nature
 - Upper Hand
 - Silk Trap
 - Circle Throw
 - Taunt
 
-Spinarak @ Eviolite
-Ability: Insomnia
-EVs: 180 HP / 212 Def / 116 SpD
-Relaxed nature
-- Rage Powder
-- Acid Spray
-- Lunge
-- Disable
-
 Spinda @ Choice Scarf
 Ability: Contrary
+Tera Type: Stellar
 EVs: 252 HP / 4 Def / 252 Spe
 Jolly nature
 - Sucker Punch
@@ -6062,26 +5874,12 @@ Spiritomb @ Leftovers
 Ability: Infiltrator
 Tera Type: Water
 EVs: 252 HP / 4 Def / 252 SpD
+IVs: 0 Atk / 0 Spe
 Sassy nature
 - Trick Room
 - Will-O-Wisp
 - Foul Play
 - Snarl
-
-Spoink
-Ability: Thick Fat
-EVs: 
-Hardy nature
-- Protect
-
-Spritzee @ Focus Sash
-Ability: Aroma Veil
-EVs: 244 HP / 180 Def / 84 SpD
-Relaxed nature
-- Trick Room
-- Protect
-- Endeavor
-- After You
 
 Squawkabilly @ Choice Scarf
 Ability: Intimidate
@@ -6095,22 +5893,13 @@ Jolly nature
 
 Stakataka @ Life Orb
 Ability: Beast Boost
+Tera Type: Ghost
 EVs: 252 HP / 252 Atk / 4 SpD
 Lonely nature
 - Gyro Ball
 - Trick Room
 - Rock Slide
 - Protect
-
-Stantler @ Eviolite
-Ability: Intimidate
-Tera Type: Ghost
-EVs: 252 HP / 4 Def / 252 SpD
-Sassy nature
-- Trick Room
-- Skill Swap
-- Hypnosis
-- Gravity
 
 Staraptor @ Choice Scarf
 Ability: Intimidate
@@ -6124,7 +5913,9 @@ Jolly nature
 
 Starmie @ Life Orb
 Ability: Natural Cure
+Tera Type: Stellar
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Ice Beam
 - Scald
@@ -6133,16 +5924,10 @@ Timid nature
 
 Steelix @ Steelixite
 Ability: Sturdy
+Tera Type: Water
+Note: Mega
 EVs: 252 HP / 252 Atk / 4 SpD
-Brave nature
-- Protect
-- Earthquake
-- Body Press
-- Iron Head
-
-Steelix-Mega @ Steelixite
-Ability: Sand Force
-EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Protect
 - Earthquake
@@ -6161,6 +5946,7 @@ Adamant nature
 
 Stoutland @ Life Orb
 Ability: Sand Rush
+Tera Type: Ghost
 EVs: 4 HP / 252 Atk / 252 Spe
 Adamant nature
 - Protect
@@ -6170,7 +5956,9 @@ Adamant nature
 
 Stunfisk @ Life Orb
 Ability: Static
+Tera Type: Stellar
 EVs: 252 HP / 4 Def / 252 SpA
+IVs: 0 Atk
 Modest nature
 - Earth Power
 - Protect
@@ -6179,7 +5967,9 @@ Modest nature
 
 Stunfisk-Galar @ Binding Band
 Ability: Mimicry
+Tera Type: Water
 EVs: 252 HP / 244 Def / 12 SpD
+IVs: 0 Spe
 Relaxed nature
 - Yawn
 - Thunder Wave
@@ -6190,6 +5980,7 @@ Sudowoodo @ Weakness Policy
 Ability: Rock Head
 Tera Type: Grass
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Head Smash
 - Wood Hammer
@@ -6200,6 +5991,7 @@ Suicune @ Leftovers
 Ability: Inner Focus
 Tera Type: Grass
 EVs: 244 HP / 60 Def / 52 SpA / 100 SpD / 52 Spe
+IVs: 0 Atk
 Calm nature
 - Scald
 - Tailwind
@@ -6210,41 +6002,18 @@ Sunflora @ Life Orb
 Ability: Solar Power
 Tera Type: Stellar
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Earth Power
 - Protect
 - Solar Beam
 - Weather Ball
 
-Sunkern @ Choice Specs
-Ability: Solar Power
-EVs: 28 HP / 252 SpA / 228 Spe
-Modest nature
-- Earth Power
-- Sludge Bomb
-- Hidden Power Ice
-- Grass Knot
-
-Swablu @ Eviolite
-Ability: Cloud Nine
-EVs: 252 HP / 4 Def / 252 SpD
-Calm nature
-- Tailwind
-- Haze
-- Protect
-- Perish Song
-
-Swadloon @ Choice Scarf
-Ability: Chlorophyll
-Tera Type: Ghost
-EVs: 252 HP / 4 SpD / 252 Spe
-Timid nature
-- Struggle Bug
-
 Swalot @ Leftovers
 Ability: Liquid Ooze
 Tera Type: Water
 EVs: 252 HP / 212 Def / 44 SpD
+IVs: 0 Atk
 Bold nature
 - Acid Armor
 - Protect
@@ -6261,8 +6030,10 @@ Adamant nature
 - Protect
 - Liquidation
 
-Swampert-Mega @ Swampertite
-Ability: Swift Swim
+Swampert @ Swampertite
+Ability: Torrent
+Tera Type: Steel
+Note: Mega
 EVs: 252 Atk / 4 SpD / 252 Spe
 Adamant nature
 - Waterfall
@@ -6272,7 +6043,9 @@ Adamant nature
 
 Swanna @ Focus Sash
 Ability: Hydration
+Tera Type: Grass
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Tailwind
 - Hurricane
@@ -6281,6 +6054,7 @@ Timid nature
 
 Swellow @ Flame Orb
 Ability: Guts
+Tera Type: Stellar
 EVs: 252 Atk / 4 SpD / 252 Spe
 Jolly nature
 - Brave Bird
@@ -6290,7 +6064,9 @@ Jolly nature
 
 Swoobat @ Focus Sash
 Ability: Simple
+Tera Type: Dark
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Protect
 - Stored Power
@@ -6301,6 +6077,7 @@ Sylveon @ Choice Specs
 Ability: Pixilate
 Tera Type: Fire
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk
 Modest nature
 - Hyper Voice
 - Shadow Ball
@@ -6319,7 +6096,9 @@ Jolly nature
 
 Tangela @ Eviolite
 Ability: Regenerator
+Tera Type: Water
 EVs: 252 HP / 4 Def / 252 SpD
+IVs: 0 Atk
 Calm nature
 - Rage Powder
 - Protect
@@ -6328,7 +6107,9 @@ Calm nature
 
 Tangrowth @ Focus Sash
 Ability: Regenerator
+Tera Type: Water
 EVs: 252 HP / 4 Def / 252 SpD
+IVs: 0 Atk / 0 Spe
 Sassy nature
 - Rage Powder
 - Protect
@@ -6337,6 +6118,7 @@ Sassy nature
 
 Tapu Bulu @ Assault Vest
 Ability: Grassy Surge
+Tera Type: Fire
 EVs: 252 HP / 252 Atk / 4 SpD
 Adamant nature
 - Horn Leech
@@ -6346,7 +6128,9 @@ Adamant nature
 
 Tapu Fini @ Leftovers
 Ability: Misty Surge
+Tera Type: Steel
 EVs: 108 Def / 188 SpA / 212 SpD
+IVs: 0 Atk
 Bold nature
 - Moonblast
 - Muddy Water
@@ -6355,16 +6139,20 @@ Bold nature
 
 Tapu Koko @ Electrium Z
 Ability: Electric Surge
+Tera Type: Electric
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Volt Switch
 - Dazzling Gleam
 - Protect
-- Light Screen
+- Thunderbolt
 
 Tapu Lele @ Choice Scarf
 Ability: Psychic Surge
+Tera Type: Psychic
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Moonblast
 - Psychic
@@ -6375,6 +6163,7 @@ Tatsugiri @ Choice Scarf
 Ability: Commander
 Tera Type: Steel
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Draco Meteor
 - Muddy Water
@@ -6383,6 +6172,7 @@ Timid nature
 
 Tauros @ Assault Vest
 Ability: Anger Point
+Tera Type: Stellar
 EVs: 4 HP / 252 Atk / 252 Spe
 Jolly nature
 - Rock Slide
@@ -6412,6 +6202,7 @@ Jolly nature
 
 Tauros-Paldea-Combat @ Assault Vest
 Ability: Intimidate
+Tera Type: Fire
 EVs: 252 HP / 252 Atk / 4 SpD
 Adamant nature
 - Raging Bull
@@ -6422,6 +6213,7 @@ Tentacruel @ Black Sludge
 Ability: Clear Body
 Tera Type: Ground
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Sludge Bomb
 - Protect
@@ -6432,6 +6224,7 @@ Terapagos @ Leftovers
 Ability: Tera Shift
 Tera Type: Stellar
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Tera Starstorm
 - Protect
@@ -6450,7 +6243,9 @@ Jolly nature
 
 Thievul @ Psychic Seed
 Ability: Unburden
+Tera Type: Poison
 EVs: 252 HP / 4 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Snarl
 - Fake Tears
@@ -6459,6 +6254,7 @@ Timid nature
 
 Throh @ Flame Orb
 Ability: Inner Focus
+Tera Type: Poison
 EVs: 252 HP / 4 Def / 252 SpD
 Careful nature
 - Storm Throw
@@ -6470,6 +6266,7 @@ Thundurus @ Covert Cloak
 Ability: Prankster
 Tera Type: Dark
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Thunder Wave
 - Taunt
@@ -6480,21 +6277,12 @@ Thundurus-Therian @ Life Orb
 Ability: Volt Absorb
 Tera Type: Fairy
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Thunderbolt
 - Protect
 - Sludge Bomb
 - Grass Knot
-
-Thwackey @ Eviolite
-Ability: Grassy Surge
-Tera Type: Fire
-EVs: 252 HP / 164 Def / 92 SpD
-Impish nature
-- Fake Out
-- Grassy Glide
-- U-turn
-- Protect
 
 Ting-Lu @ Assault Vest
 Ability: Vessel of Ruin
@@ -6516,19 +6304,11 @@ Jolly nature
 - Play Rough
 - Feint
 
-Toedscool @ Eviolite
-Ability: Mycelium Might
-EVs: 252 HP / 4 Def / 252 SpD
-Calm nature
-- Rage Powder
-- Spore
-- Protect
-- Mirror Coat
-
 Toedscruel @ Covert Cloak
 Ability: Mycelium Might
 Tera Type: Water
 EVs: 196 HP / 60 Def / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Spore
 - Earth Power
@@ -6537,6 +6317,7 @@ Timid nature
 
 Togedemaru @ Focus Sash
 Ability: Lightning Rod
+Tera Type: Ghost
 EVs: 4 HP / 252 Atk / 252 Spe
 Jolly nature
 - Fake Out
@@ -6546,25 +6327,20 @@ Jolly nature
 
 Togekiss @ Sitrus Berry
 Ability: Serene Grace
+Tera Type: Poison
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Follow Me
 - Air Slash
 - Protect
 - Dazzling Gleam
 
-Togepi @ Focus Sash
-Ability: Serene Grace
-EVs: 252 Def / 252 SpD
-Sassy nature
-- Endeavor
-- Light Screen
-- Follow Me
-- Encore
-
 Togetic @ Eviolite
 Ability: Serene Grace
+Tera Type: Poison
 EVs: 228 HP / 252 Def / 28 SpD
+IVs: 0 Atk
 Bold nature
 - Follow Me
 - Dazzling Gleam
@@ -6575,6 +6351,7 @@ Torkoal @ Charcoal
 Ability: Drought
 Tera Type: Fire
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Eruption
 - Protect
@@ -6585,18 +6362,20 @@ Tornadus @ Focus Sash
 Ability: Prankster
 Tera Type: Dark
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Tailwind
 - Taunt
 - Protect
-- Hurricane
+- Bleakwind Storm
 
 Tornadus-Therian @ Assault Vest
 Ability: Regenerator
-Tera Type: Flying
+Tera Type: Stellar
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
-- Hurricane
+- Bleakwind Storm
 - Heat Wave
 - Icy Wind
 - Dark Pulse
@@ -6605,6 +6384,7 @@ Torracat @ Eviolite
 Ability: Intimidate
 Tera Type: Grass
 EVs: 204 HP / 12 Def / 44 SpA / 4 SpD / 244 Spe
+IVs: 0 Atk
 Timid nature
 - Parting Shot
 - Taunt
@@ -6621,20 +6401,11 @@ Adamant nature
 - Wide Guard
 - Headlong Rush
 
-Totodile @ Life Orb
-Ability: Sheer Force
-Tera Type: Water
-EVs: 248 Atk / 4 SpD / 252 Spe
-Adamant nature
-- Protect
-- Waterfall
-- Ice Punch
-- Rain Dance
-
 Toucannon @ Life Orb
 Ability: Skill Link
 Tera Type: Grass
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Bullet Seed
 - Rock Blast
@@ -6645,6 +6416,7 @@ Toxapex @ Black Sludge
 Ability: Regenerator
 Tera Type: Grass
 EVs: 252 HP / 252 Def / 4 SpD
+IVs: 0 Atk
 Bold nature
 - Baneful Bunker
 - Recover
@@ -6665,44 +6437,18 @@ Toxtricity @ Choice Specs
 Ability: Punk Rock
 Tera Type: Normal
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Overdrive
 - Sludge Bomb
 - Boomburst
 - Snarl
 
-Tranquill @ Scope Lens
-Ability: Super Luck
-EVs: 252 HP / 4 SpA / 252 Spe
-Timid nature
-- Taunt
-- Hypnosis
-- Air Slash
-
-Trapinch @ Eviolite
-Ability: Arena Trap
-Tera Type: Ground
-EVs: 252 HP / 252 Atk / 4 SpD
-Brave nature
-- Earthquake
-- Protect
-- Feint
-- Rock Slide
-
-Treecko @ Focus Sash
-Ability: Unburden
-Tera Type: Ghost
-EVs: 252 HP / 4 Def / 252 Spe
-Timid nature
-- Helping Hand
-- Protect
-- Endure
-- Leaf Storm
-
 Trevenant @ Sitrus Berry
 Ability: Harvest
 Tera Type: Water
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Trick Room
 - Horn Leech
@@ -6713,6 +6459,7 @@ Tropius @ Sitrus Berry
 Ability: Harvest
 Tera Type: Water
 EVs: 252 HP / 212 Def / 44 SpD
+IVs: 0 Atk
 Bold nature
 - Leech Seed
 - Wide Guard
@@ -6721,7 +6468,7 @@ Bold nature
 
 Tsareena @ Wide Lens
 Ability: Queenly Majesty
-Tera Type: Ice
+Tera Type: Stellar
 EVs: 252 HP / 252 Atk / 4 SpD
 Adamant nature
 - Power Whip
@@ -6731,23 +6478,18 @@ Adamant nature
 
 Turtonator @ Leftovers
 Ability: Shell Armor
+Tera Type: Fighting
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Protect
 - Draco Meteor
 - Body Press
 - Iron Defense
 
-Tympole @ Focus Sash
-Ability: Swift Swim
-EVs: 236 Def / 28 SpA / 4 SpD / 240 Spe
-Timid nature
-- Protect
-- Icy Wind
-- After You
-
-Type: Null @ Eviolite
+Type Null @ Eviolite
 Ability: Battle Armor
+Tera Type: Fire
 EVs: 252 HP / 148 Atk / 4 Def / 20 SpD / 84 Spe
 Careful nature
 - Swords Dance
@@ -6759,6 +6501,7 @@ Typhlosion @ Choice Scarf
 Ability: Flash Fire
 Tera Type: Fire
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Eruption
 - Focus Blast
@@ -6769,6 +6512,7 @@ Typhlosion-Hisui @ Choice Scarf
 Ability: Blaze
 Tera Type: Fire
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Eruption
 - Shadow Ball
@@ -6783,12 +6527,14 @@ Adamant nature
 - Rock Slide
 - Knock Off
 - Low Kick
-- Ice Punch
+- Tera Blast
 
-Tyranitar-Mega @ Tyranitarite
+Tyranitar @ Tyranitarite
 Ability: Sand Stream
+Tera Type: Fairy
+Note: Mega
 EVs: 4 HP / 252 Atk / 252 Spe
-Adamant nature
+Jolly nature
 - Rock Slide
 - Protect
 - Crunch
@@ -6796,6 +6542,7 @@ Adamant nature
 
 Tyrantrum @ Life Orb
 Ability: Rock Head
+Tera Type: Stellar
 EVs: 252 Atk / 4 SpD / 252 Spe
 Adamant nature
 - Head Smash
@@ -6807,6 +6554,7 @@ Umbreon @ Leftovers
 Ability: Inner Focus
 Tera Type: Poison
 EVs: 252 HP / 156 Def / 100 SpD
+IVs: 0 Atk
 Bold nature
 - Snarl
 - Moonlight
@@ -6815,6 +6563,7 @@ Bold nature
 
 Unfezant @ Razor Claw
 Ability: Super Luck
+Tera Type: Dark
 EVs: 252 Atk / 4 SpD / 252 Spe
 Jolly nature
 - Tailwind
@@ -6822,16 +6571,11 @@ Jolly nature
 - Brave Bird
 - Detect
 
-Unown @ Choice Specs
-Ability: Levitate
-EVs: 252 HP / 248 SpA / 4 SpD / 4 Spe
-Modest nature
-- Hidden Power Water
-
 Ursaluna @ Flame Orb
 Ability: Guts
 Tera Type: Ghost
 EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
 Brave nature
 - Facade
 - Protect
@@ -6839,28 +6583,20 @@ Brave nature
 - Swords Dance
 
 Ursaluna-Bloodmoon @ Life Orb
-Ability: Mind's Eye
+Ability: Minds Eye
 Tera Type: Normal
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Blood Moon
 - Earth Power
 - Protect
 - Vacuum Wave
 
-Ursaring @ Flame Orb
-Ability: Guts
-Tera Type: Ghost
-EVs: 252 HP / 252 Atk / 4 SpD
-Brave nature
-- Facade
-- Protect
-- Close Combat
-- Crunch
-
 Urshifu @ Focus Sash
 Ability: Unseen Fist
 Tera Type: Dark
+Name: Urshifu-SS
 EVs: 4 HP / 252 Atk / 252 Spe
 Adamant nature
 - Wicked Blow
@@ -6871,6 +6607,7 @@ Adamant nature
 Urshifu-Rapid-Strike @ Focus Sash
 Ability: Unseen Fist
 Tera Type: Water
+Name: Urshifu-RS
 EVs: 4 HP / 252 Atk / 252 Spe
 Adamant nature
 - Surging Strikes
@@ -6882,31 +6619,29 @@ Uxie @ Mental Herb
 Ability: Levitate
 Tera Type: Dark
 EVs: 252 HP / 252 Def / 4 SpD
+IVs: 0 Atk
 Bold nature
 - Trick Room
 - Yawn
 - Psychic
 - Protect
 
-Vanillite @ Choice Scarf
-Ability: Snow Cloak
-EVs: 4 HP / 252 SpA / 252 Spe
-Timid nature
-- Icy Wind
-
 Vanilluxe @ Choice Scarf
 Ability: Snow Warning
+Tera Type: Steel
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Blizzard
 - Flash Cannon
 - Weather Ball
-- Hidden Power Fire
+- Aurora Veil
 
 Vaporeon @ Leftovers
 Ability: Water Absorb
 Tera Type: Grass
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk
 Modest nature
 - Protect
 - Scald
@@ -6915,6 +6650,7 @@ Modest nature
 
 Veluza @ Sitrus Berry
 Ability: Sharpness
+Tera Type: Water
 EVs: 252 HP / 4 Atk / 252 Spe
 Jolly nature
 - Aqua Cutter
@@ -6924,28 +6660,20 @@ Jolly nature
 
 Venomoth @ Focus Sash
 Ability: Shield Dust
-Tera Type: Rock
+Tera Type: Ghost
 EVs: 252 HP / 4 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Rage Powder
 - Tailwind
 - Sleep Powder
 - Protect
 
-Venonat @ Eviolite
-Ability: Compound Eyes
-Tera Type: Water
-EVs: 236 HP / 172 Def / 100 SpD
-Bold nature
-- Rage Powder
-- Sleep Powder
-- Acid Spray
-- Protect
-
 Venusaur @ Focus Sash
 Ability: Chlorophyll
-Tera Type: Fire
+Tera Type: Ghost
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Sludge Bomb
 - Sleep Powder
@@ -6954,16 +6682,22 @@ Modest nature
 
 Venusaur-Gmax @ Life Orb
 Ability: Chlorophyll
+Tera Type: Water
+Note: Gmax
 EVs: 140 HP / 4 Def / 252 SpA / 4 SpD / 108 Spe
+IVs: 0 Atk
 Modest nature
 - Sludge Bomb
 - Leaf Storm
 - Earth Power
 - Protect
 
-Venusaur-Mega @ Venusaurite
-Ability: Thick Fat
+Venusaur @ Venusaurite
+Ability: Chlorophyll
+Tera Type: Water
+Note: Mega
 EVs: 156 HP / 68 Def / 12 SpA / 36 SpD / 236 Spe
+IVs: 0 Atk
 Bold nature
 - Sludge Bomb
 - Protect
@@ -6980,49 +6714,43 @@ Adamant nature
 - Defend Order
 - Roost
 
+Victini @ Choice Scarf
+Ability: Victory Star
+Tera Type: Ghost
+EVs: 252 HP / 4 Atk / 252 Spe
+Jolly nature
+- V Create
+- U-turn
+- Wild Charge
+- Final Gambit
+
 Victreebel @ Life Orb
 Ability: Chlorophyll
 Tera Type: Fire
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Protect
 - Sludge Bomb
 - Weather Ball
 - Sleep Powder
 
-Vigoroth @ Eviolite
-Ability: Vital Spirit
-Tera Type: Ghost
-EVs: 116 HP / 4 Atk / 124 Def / 244 SpD / 20 Spe
-Careful nature
-- Taunt
-- Knock Off
-- Thunder Wave
-- Roar
-
 Vikavolt @ Assault Vest
 Ability: Levitate
 Tera Type: Electric
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Bug Buzz
 - Thunderbolt
 - Energy Ball
 - Flash Cannon
 
-Vikavolt-Totem @ Life Orb
-Ability: Levitate
-EVs: 252 SpA / 252 Spe
-Modest nature
-- Thunderbolt
-- Bug Buzz
-- Energy Ball
-- Air Slash
-
 Vileplume @ Focus Sash
 Ability: Chlorophyll
 Tera Type: Ghost
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Sludge Bomb
 - Sleep Powder
@@ -7031,7 +6759,7 @@ Timid nature
 
 Virizion @ Life Orb
 Ability: Justified
-Tera Type: Grass
+Tera Type: Stellar
 EVs: 4 HP / 252 Atk / 252 Spe
 Jolly nature
 - Leaf Blade
@@ -7043,6 +6771,7 @@ Vivillon @ Focus Sash
 Ability: Compound Eyes
 Tera Type: Ghost
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Sleep Powder
 - Protect
@@ -7053,15 +6782,18 @@ Volbeat @ Focus Sash
 Ability: Prankster
 Tera Type: Dark
 EVs: 252 HP / 60 Def / 196 SpD
+IVs: 0 Atk
 Calm nature
 - Tailwind
 - Encore
 - Rain Dance
-- Tail Glow
+- Struggle Bug
 
 Volcanion @ Life Orb
 Ability: Water Absorb
+Tera Type: Stellar
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk
 Modest nature
 - Steam Eruption
 - Flamethrower
@@ -7072,57 +6804,29 @@ Volcarona @ Leftovers
 Ability: Flame Body
 Tera Type: Grass
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Protect
 - Quiver Dance
-- Rage Powder
+- Giga Drain
 - Heat Wave
-
-Voltorb @ Eviolite
-Ability: Soundproof
-EVs: 64 HP / 76 Def / 116 SpD / 252 Spe
-Timid nature
-- Taunt
-- Protect
-- Eerie Impulse
-
-Vulpix @ Eviolite
-Ability: Flash Fire
-EVs: 252 HP / 100 Def / 40 SpA / 116 SpD
-Bold nature
-- Protect
-- Overheat
-- Disable
-- Will-O-Wisp
-
-Vulpix-Alola @ Choice Scarf
-Ability: Snow Warning
-Tera Type: Ice
-EVs: 252 HP / 4 SpD / 252 Spe
-Timid nature
-- Icy Wind
-
-Wailmer @ Choice Specs
-Ability: Water Veil
-EVs: 4 HP / 252 SpA / 252 Spe
-Modest nature
-- Ice Beam
-- Water Spout
-- Hyper Voice
 
 Wailord @ Choice Specs
 Ability: Water Veil
+Tera Type: Water
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Modest nature
 - Water Spout
 - Ice Beam
-- Hidden Power Grass
+- Scald
 - Clear Smog
 
 Walking Wake @ Life Orb
 Ability: Protosynthesis
-Tera Type: Fire
+Tera Type: Stellar
 EVs: 4 HP / 4 Def / 244 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Hydro Steam
 - Draco Meteor
@@ -7131,22 +6835,14 @@ Timid nature
 
 Walrein @ Assault Vest
 Ability: Thick Fat
+Tera Type: Grass
 EVs: 252 HP / 4 SpA / 252 SpD
+IVs: 0 Atk
 Calm nature
 - Icy Wind
 - Brine
 - Signal Beam
-- Hidden Power Fire
-
-Wartortle @ Eviolite
-Ability: Rain Dish
-Tera Type: Dragon
-EVs: 252 HP / 180 Def / 76 SpD
-Sassy nature
-- Yawn
-- Fake Out
-- Helping Hand
-- Aqua Jet
+- Sheer Cold
 
 Weavile @ Focus Sash
 Ability: Pressure
@@ -7162,6 +6858,7 @@ Weezing @ Sitrus Berry
 Ability: Neutralizing Gas
 Tera Type: Dark
 EVs: 252 HP / 4 SpA / 252 SpD
+IVs: 0 Atk
 Calm nature
 - Protect
 - Will-O-Wisp
@@ -7172,6 +6869,7 @@ Weezing-Galar @ Sitrus Berry
 Ability: Neutralizing Gas
 Tera Type: Water
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Protect
 - Strange Steam
@@ -7182,6 +6880,7 @@ Whimsicott @ Focus Sash
 Ability: Prankster
 Tera Type: Ghost
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Tailwind
 - Moonblast
@@ -7189,7 +6888,8 @@ Timid nature
 - Protect
 
 Whiscash @ Life Orb
-Ability: Anticipation
+Ability: Oblivious
+Tera Type: Grass
 EVs: 244 HP / 252 Atk / 12 Spe
 Adamant nature
 - Dragon Dance
@@ -7201,44 +6901,29 @@ Wigglytuff @ Assault Vest
 Ability: Competitive
 Tera Type: Fairy
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk
 Modest nature
 - Dazzling Gleam
 - Hyper Voice
 - Flamethrower
 - Thunderbolt
 
-Wiglett @ Focus Sash
-Ability: Gooey
-Tera Type: Water
-EVs: 4 HP / 252 Atk / 252 Spe
-Jolly nature
-- Aqua Jet
-- Sucker Punch
-- Foul Play
-- Memento
-
-Wingull @ Focus Sash
-Ability: Keen Eye
-EVs: 4 HP / 252 SpA / 252 Spe
-Modest nature
-- Scald
-- Soak
-- Protect
-- Hidden Power Fire
-
 Wishiwashi @ Choice Specs
 Ability: Schooling
+Tera Type: Water
 EVs: 252 HP / 252 SpA / 4 SpD
+IVs: 0 Atk / 0 Spe
 Quiet nature
 - Ice Beam
 - Muddy Water
 - Earthquake
-- Mud Shot
+- Hydro Pump
 
 Wo-Chien @ Leftovers
 Ability: Tablets of Ruin
 Tera Type: Poison
 EVs: 252 HP / 44 Def / 4 SpA / 20 SpD / 188 Spe
+IVs: 0 Atk
 Bold nature
 - Protect
 - Pollen Puff
@@ -7247,42 +6932,18 @@ Bold nature
 
 Wobbuffet @ Leftovers
 Ability: Shadow Tag
+Tera Type: Dark
 EVs: 252 HP / 4 Def / 252 SpD
+IVs: 0 Atk
 Calm nature
 - Mirror Coat
 - Encore
 - Destiny Bond
 - Safeguard
 
-Wooloo @ Eviolite
-Ability: Fluffy
-EVs: 252 HP / 252 Def / 4 SpD
-Bold nature
-- Thunder Wave
-- Substitute
-- Protect
-- Attract
-
-Wormadam @ Eviolite
-Ability: Overcoat
-EVs: 100 HP / 156 Def / 252 SpD
-Calm nature
-- Giga Drain
-- Quiver Dance
-- Bug Buzz
-- Substitute
-
-Wormadam-Sandy @ Rocky Helmet
-Ability: Overcoat
-EVs: 252 HP / 252 Def / 4 SpD
-Relaxed nature
-- Protect
-- Fissure
-- Skill Swap
-- Earth Power
-
 Wugtrio @ Safety Goggles
 Ability: Gooey
+Tera Type: Water
 EVs: 252 HP / 4 Def / 252 Spe
 Jolly nature
 - Aqua Jet
@@ -7290,19 +6951,11 @@ Jolly nature
 - Memento
 - Triple Dive
 
-Wynaut @ Eviolite
-Ability: Shadow Tag
-EVs: 252 HP / 76 Def / 180 SpD
-Sassy nature
-- Mirror Coat
-- Safeguard
-- Encore
-- Destiny Bond
-
 Wyrdeer @ Mental Herb
 Ability: Intimidate
 Tera Type: Dark
 EVs: 252 HP / 4 Def / 252 SpD
+IVs: 0 Atk / 0 Spe
 Relaxed nature
 - Trick Room
 - Skill Swap
@@ -7311,68 +6964,57 @@ Relaxed nature
 
 Xatu @ Focus Sash
 Ability: Magic Bounce
+Tera Type: Dark
 EVs: 252 HP / 252 Def / 4 SpD
+IVs: 0 Atk / 0 Spe
 Relaxed nature
-- Tailwind
+- Psychic
 - Ally Switch
 - Trick Room
 - Protect
 
 Xerneas @ Power Herb
 Ability: Fairy Aura
+Tera Type: Fairy
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Geomancy
 - Protect
 - Moonblast
-- Substitute
+- Dazzling Gleam
 
 Xurkitree @ Electrium Z
 Ability: Beast Boost
+Tera Type: Fairy
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Protect
 - Thunderbolt
 - Dazzling Gleam
 - Energy Ball
 
-Yanma @ Focus Sash
-Ability: Compound Eyes
-Tera Type: Ghost
-EVs: 4 HP / 252 SpD / 252 Spe
-Timid nature
-- Hypnosis
-- Tailwind
-- Detect
-- Protect
-
 Yanmega @ Focus Sash
 Ability: Speed Boost
 Tera Type: Ghost
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Bug Buzz
 - Tailwind
 - Air Slash
 - Protect
 
-Yungoos @ Iron Ball
-Ability: Adaptability
-EVs: 252 HP / 252 Atk / 4 SpD
-Brave nature
-- U-turn
-- Frustration
-- Taunt
-- Earthquake
-
-Yveltal @ Assault Vest
+Yveltal @ Life Orb
 Ability: Dark Aura
+Tera Type: Poison
 EVs: 4 HP / 252 Atk / 252 Spe
 Jolly nature
 - Foul Play
 - Sucker Punch
-- Dual Wingbeat
-- Rock Slide
+- Knock Off
+- Protect
 
 Zacian @ Clear Amulet
 Ability: Intrepid Sword
@@ -7384,9 +7026,10 @@ Jolly nature
 - Sacred Sword
 - Crunch
 
-Zacian-Crowned @ Rusted Sword
+Zacian @ Rusted Sword
 Ability: Intrepid Sword
 Tera Type: Fairy
+Name: Zacian-C
 EVs: 252 Atk / 4 SpD / 252 Spe
 Jolly nature
 - Protect
@@ -7404,9 +7047,10 @@ Jolly nature
 - Protect
 - Coaching
 
-Zamazenta-Crowned @ Rusted Shield
+Zamazenta @ Rusted Shield
 Ability: Dauntless Shield
 Tera Type: Dragon
+Name: Zamazenta-C
 EVs: 252 Atk / 4 SpD / 252 Spe
 Jolly nature
 - Wide Guard
@@ -7416,6 +7060,7 @@ Jolly nature
 
 Zangoose @ Toxic Orb
 Ability: Toxic Boost
+Tera Type: Normal
 EVs: 4 HP / 252 Atk / 252 Spe
 Adamant nature
 - Facade
@@ -7425,8 +7070,9 @@ Adamant nature
 
 Zapdos @ Sitrus Berry
 Ability: Static
-Tera Type: Electric
+Tera Type: Fire
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Thunderbolt
 - Tailwind
@@ -7443,10 +7089,21 @@ Jolly nature
 - U-turn
 - Knock Off
 
+Zarude @ Weakness Policy
+Ability: Leaf Guard
+Tera Type: Fire
+EVs: 164 HP / 236 Atk / 108 Spe
+Adamant nature
+- Power Whip
+- Knock Off
+- Rock Slide
+- Protect
+
 Zebstrika @ Focus Sash
 Ability: Lightning Rod
 Tera Type: Ghost
 EVs: 196 HP / 44 Def / 4 SpA / 12 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Protect
 - Electroweb
@@ -7463,18 +7120,21 @@ Jolly nature
 - Dragon Claw
 - Tailwind
 
-Zigzagoon @ Power Herb
-Ability: Pickup
-EVs: 4 HP / 252 Atk / 252 Def
-Serious nature
-- Attract
-- Extreme Speed
-- Grass Knot
+Zeraora @ Focus Sash
+Ability: Volt Absorb
+Tera Type: Ghost
+EVs: 252 Atk / 4 SpD / 252 Spe
+Jolly nature
+- Plasma Fists
+- Blaze Kick
+- Taunt
+- Fake Out
 
 Zoroark @ Focus Sash
 Ability: Illusion
 Tera Type: Dark
 EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Protect
 - Flamethrower
@@ -7485,44 +7145,9 @@ Zoroark-Hisui @ Focus Sash
 Ability: Illusion
 Tera Type: Normal
 EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 0 Atk
 Timid nature
 - Hyper Voice
 - Bitter Malice
 - Icy Wind
 - Protect
-
-Zorua-Hisui @ Eviolite
-Ability: Illusion
-EVs: 252 HP / 204 Def / 4 SpA / 44 SpD / 4 Spe
-Timid nature
-- Will-O-Wisp
-- Bitter Malice
-- Snarl
-- Taunt
-
-Zweilous @ Eviolite
-Ability: Hustle
-EVs: 252 HP / 252 Atk / 4 SpD
-Brave nature
-- Crunch
-- Protect
-- Outrage
-- Superpower
-
-Zygarde @ Misty Seed
-Ability: Power Construct
-EVs: 196 HP / 236 Atk / 4 Def / 4 SpD / 68 Spe
-Adamant nature
-- Protect
-- Thousand Arrows
-- Coil
-- Extreme Speed
-
-Zygarde-10% @ Focus Sash
-Ability: Power Construct
-EVs: 100 HP / 156 Atk / 252 Spe
-Jolly nature
-- Thousand Arrows
-- Protect
-- Dragon Dance
-- Glare
