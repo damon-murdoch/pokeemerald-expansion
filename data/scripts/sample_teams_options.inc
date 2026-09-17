@@ -73,7 +73,7 @@ Auto_EventScript_Sample_Teams_Doubles_Page1_3:
 # 35 "data/scripts/sample_teams_options.pory"
 	givemon SPECIES_CAMERUPT, 50, ITEM_CAMERUPTITE, ITEM_POKE_BALL, NATURE_QUIET, 0, 0, 252, 0, 60, 0, 196, 0, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_EARTH_POWER, MOVE_HEAT_WAVE, MOVE_ERUPTION, 2, FALSE, TYPE_WATER, 10
 # 36 "data/scripts/sample_teams_options.pory"
-	givemon SPECIES_BRUTE_BONNET, 50, ITEM_BOOSTER_ENERGY, ITEM_POKE_BALL, NATURE_RELAXED, 0, 0, 244, 0, 92, 0, 0, 172, 31, 31, 31, 0, 31, 31, MOVE_PROTECT, MOVE_SEED_BOMB, MOVE_LASH_OUT, MOVE_SPORE, 2, FALSE, TYPE_WATER, 10
+	givemon SPECIES_BRUTE_BONNET, 50, ITEM_BOOSTER_ENERGY, ITEM_POKE_BALL, NATURE_RELAXED, 0, 0, 244, 0, 92, 0, 0, 172, 31, 31, 31, 0, 31, 31, MOVE_SEED_BOMB, MOVE_LASH_OUT, MOVE_RAGE_POWDER, MOVE_SPORE, 2, FALSE, TYPE_WATER, 10
 # 37 "data/scripts/sample_teams_options.pory"
 	goto Common_EventScript_Sample_Team_CheckPurchase
 	return
