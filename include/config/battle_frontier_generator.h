@@ -394,8 +394,6 @@
 #define BFG_ITEM_IV_ALLOW_ZMOVE     21  // Min. IVs required for Z-Moves
 #define BFG_ITEM_IV_ALLOW_GMAX      21  // Min. IVs required for Gigantamax
 
-#define BFG_ITEM_IV_ALLOW_EVIOLITE  21  // Min. IVs required for Eviolite
-
 // Allow items in different Battle Facilities
 // Please note, Megas/Zmoves/Gmax ignore these flags
 #define BFG_FACTORY_ALLOW_ITEM TRUE
@@ -404,55 +402,27 @@
 #define BFG_NO_ITEM_SELECTION_CHANCE FALSE
 #if BFG_NO_ITEM_SELECTION_CHANCE != 1
 
-// Moves required for certain items to be eligible
-#define BFG_ITEM_WEAKNESS_POLICY_OFFENSIVE_MOVES_REQUIRED   3
-#define BFG_ITEM_MIRROR_HERB_OFFENSIVE_MOVES_REQUIRED       3
-#define BFG_ITEM_LIFE_ORB_OFFENSIVE_MOVES_REQUIRED          3
-#define BFG_ITEM_CHOICE_OFFENSIVE_MOVES_REQUIRED            4
-#define BFG_ITEM_TOXIC_ORB_MOVES_REQUIRED                   3
-#define BFG_ITEM_FLAME_ORB_MOVES_REQUIRED                   3
-
 // Common Items
 #define BFG_ITEM_SAFETY_GOGGLES_SELECTION_CHANCE    8
-#define BFG_ITEM_WEAKNESS_POLICY_SELECTION_CHANCE   8
-#define BFG_ITEM_ASSAULT_VEST_SELECTION_CHANCE      8
-#define BFG_ITEM_ROCKY_HELMET_SELECTION_CHANCE      8
-#define BFG_ITEM_CLEAR_AMULET_SELECTION_CHANCE      8
 #define BFG_ITEM_COVERT_CLOAK_SELECTION_CHANCE      8
-#define BFG_ITEM_LIFE_ORB_SELECTION_CHANCE          8
+#define BFG_ITEM_LIFE_ORB_SELECTION_CHANCE          4
+#define BFG_ITEM_WEAKNESS_POLICY_SELECTION_CHANCE   4
+#define BFG_ITEM_CHOICE_SCARF_SELECTION_CHANCE      4
 #define BFG_ITEM_FOCUS_SASH_SELECTION_CHANCE        4
-#define BFG_ITEM_EVIOLITE_SELECTION_CHANCE          1
-
-// Choice Items
-#define BFG_ITEM_CHOICE_SCARF_SELECTION_CHANCE      4 
-#define BFG_ITEM_CHOICE_SPECS_SELECTION_CHANCE      8
-#define BFG_ITEM_CHOICE_BAND_SELECTION_CHANCE       8
 
 // Ability-Specific Items
-#define BFG_ITEM_ADRENALINE_ORB_SELECTION_CHANCE    8 // competitive / defiant / etc.
-#define BFG_ITEM_BOOSTER_ENERGY_SELECTION_CHANCE    4 // proto / quark drive
+#define BFG_ITEM_BOOSTER_ENERGY_SELECTION_CHANCE    2 // proto / quark drive
 #define BFG_ITEM_FLAME_ORB_SELECTION_CHANCE         1 // flare boost / etc.
 #define BFG_ITEM_TOXIC_ORB_SELECTION_CHANCE         1 // toxic heal / etc.
 
-// Mirror Herb (Two Use Cases)
-#define BFG_ITEM_MIRROR_HERB_ABILITY_SELECTION_CHANCE 8 // intimidate
-#define BFG_ITEM_MIRROR_HERB_MOVE_SELECTION_CHANCE    2 // hasFlatter & hasSwagger
-
 // Move-Specific Items
-
-#define BFG_ITEM_ROOM_SERVICE_SELECTION_CHANCE      8   // hasTrickRoom
 #define BFG_ITEM_CHESTO_BERRY_SELECTION_CHANCE      1   // hasRest
+#define BFG_ITEM_POWER_HERB_SELECTION_CHANCE        1   // hasMultiTurn
+
 #define BFG_ITEM_THROAT_SPRAY_SELECTION_CHANCE      4   // numSound
 #define BFG_ITEM_LOADED_DICE_SELECTION_CHANCE       4   // numMultiHit
-#define BFG_ITEM_SCOPE_LENS_SELECTION_CHANCE        16  // numCritModifier
-#define BFG_ITEM_RAZOR_CLAW_SELECTION_CHANCE        16  // numCritModifier
-#define BFG_ITEM_MENTAL_HERB_SELECTION_CHANCE       16  // numStatus
-#define BFG_ITEM_WHITE_HERB_SELECTION_CHANCE        8   // numStatDrop
-#define BFG_ITEM_EJECT_PACK_SELECTION_CHANCE        8   // numStatDrop
-#define BFG_ITEM_RAZOR_FANG_SELECTION_CHANCE        1   // hasFling
-#define BFG_ITEM_KINGS_ROCK_SELECTION_CHANCE        1   // hasFling
-#define BFG_ITEM_POWER_HERB_SELECTION_CHANCE        1   // hasMultiTurn
-#define BFG_ITEM_IRON_BALL_SELECTION_CHANCE         8   // hasTrickRoom
+#define BFG_ITEM_WHITE_HERB_SELECTION_CHANCE        4   // numStatDrop
+#define BFG_ITEM_MENTAL_HERB_SELECTION_CHANCE       8  // numStatus
 
 // Species-specific items
 #define BFG_ITEM_LIGHT_BALL_SELECTION_CHANCE        1       // Pikachu
@@ -471,59 +441,43 @@
 
 // Type-Specific Items
 #define BFG_ITEM_STAB_GEM_SELECTION_CHANCE      8
-#define BFG_ITEM_GEM_SELECTION_CHANCE           0
+#define BFG_ITEM_GEM_SELECTION_CHANCE           16
 
 #define BFG_ITEM_STAB_TYPE_SELECTION_CHANCE     0
 #define BFG_ITEM_TYPE_SELECTION_CHANCE          0
 
 #define BFG_ITEM_STAB_ZMOVE_SELECTION_CHANCE    8 // Excludes signature Z-Moves
-#define BFG_ITEM_ZMOVE_SELECTION_CHANCE         0 // Excludes signature Z-Moves
+#define BFG_ITEM_ZMOVE_SELECTION_CHANCE         16 // Excludes signature Z-Moves
 
 // Common Berries
 #define BFG_ITEM_SITRUS_BERRY_SELECTION_CHANCE  4
 #define BFG_ITEM_FIWAM_BERRY_SELECTION_CHANCE   4
-#define BFG_ITEM_LUM_BERRY_SELECTION_CHANCE     8
 
 // Resist / Weakness Berries
 #define BFG_ITEM_RESIST_BERRY_4X_SELECTION_CHANCE   4
 #define BFG_ITEM_RESIST_BERRY_2X_SELECTION_CHANCE   8
-
-// Custom list of items which can be selected, in
-// the event that the pokemon has the move 'recycle'.
-// A random item from this list will be selected, if
-// none of the above berry flags are checked.
-#define BFG_RECYCLE_ITEMS_LIST \
-    ITEM_MARANGA_BERRY, \
-    ITEM_EJECT_BUTTON, \
-    ITEM_CUSTAP_BERRY, \
-    ITEM_JABOCA_BERRY, \
-    ITEM_LANSAT_BERRY, \
-    ITEM_STARF_BERRY, \
-    ITEM_MICLE_BERRY, \
-    ITEM_ROWAP_BERRY, \
-    ITEM_CHILAN_BERRY, \
-    ITEM_LIECHI_BERRY, \
-    ITEM_GANLON_BERRY, \
-    ITEM_PETAYA_BERRY, \
-    ITEM_APICOT_BERRY, \
-    ITEM_SALAC_BERRY, \
-    ITEM_LUM_BERRY, \
-    ITEM_KEE_BERRY, \
-    ITEM_RED_CARD
 
 // Custom list of items which can be selected, in 
 // addition to the flags set above. A random item 
 // from this list will be chosen if none of the 
 // above flags are matched.
 #define BFG_CUSTOM_ITEMS_LIST \
-    BFG_RECYCLE_ITEMS_LIST, \
+    ITEM_MARANGA_BERRY, \
     ITEM_BRIGHT_POWDER, \
+    ITEM_CLEAR_AMULET, \
+    ITEM_ROCKY_HELMET, \
+    ITEM_SITRUS_BERRY, \
     ITEM_LAX_INCENSE, \
     ITEM_RAZOR_FANG, \
     ITEM_FOCUS_BAND, \
     ITEM_QUICK_CLAW, \
     ITEM_KINGS_ROCK, \
-    ITEM_SHELL_BELL
+    ITEM_SHELL_BELL, \
+    ITEM_LEFTOVERS, \
+    ITEM_LUM_BERRY, \
+    ITEM_KEE_BERRY, \
+    ITEM_RED_CARD
+
 
 #endif // BFG_NO_ITEM_SELECTION_CHANCE != 1
 #endif // GUARD_CONFIG_BATTLE_FRONTIER_GENERATOR_H

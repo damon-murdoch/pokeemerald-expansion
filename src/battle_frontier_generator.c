@@ -84,10 +84,7 @@ bool8 GetStrictSpeciesChecks(u16 speciesId, struct GeneratorProperties * propert
 
 #define IS_TERRAIN_ABILITY(a) (IS_MISTY_ABILITY(a) || IS_GRASSY_ABILITY(a) || IS_PSYCHIC_ABILITY(a) || IS_ELECTRIC_ABILITY(a))
 
-#define IS_STAT_DROP_ABILITY(a) (((a) == ABILITY_DEFIANT) || ((a) == ABILITY_COMPETITIVE))
-#define IS_STAT_REDUCING_ABILITY(a) (((a) == ABILITY_INTIMIDATE) || ((a) == ABILITY_COTTON_DOWN) || ((a) == ABILITY_GOOEY) || ((a) == ABILITY_SUPERSWEET_SYRUP) || ((a) == ABILITY_TANGLING_HAIR))
 #define IS_END_OF_TURN_ABILITY(a) (((a) == ABILITY_MOODY) || ((a) == ABILITY_POISON_HEAL) || ((a) == ABILITY_SPEED_BOOST))
-#define IS_INTIMIDATE_IMMUNE_ABILITY(a) (((a) == ABILITY_OBLIVIOUS) || ((a) == ABILITY_OWN_TEMPO) || ((a) == ABILITY_INNER_FOCUS) || ((a) == ABILITY_SCRAPPY))
 
 #define HAS_HIDDEN_ABILITY(species) (species->abilities[2] != ABILITY_NONE)
 
@@ -151,11 +148,6 @@ const u16 customItemsList[] = {
     BFG_CUSTOM_ITEMS_LIST, 
     ITEM_NONE // End of list
 }; 
-
-const u16 recycleItemsList[] = {
-    BFG_RECYCLE_ITEMS_LIST, 
-    ITEM_NONE // End of list
-};
 
 // *** CONSTANTS ***
 #define SPECIES_END 0xFFFF
@@ -1660,6 +1652,189 @@ bool32 GetSpeciesItemCheckUnique(u16 itemId, u16 * items, u8 itemCount)
     if ((itemId != ITEM_NONE) && GetSpeciesItemCheckUnique(itemId, items, itemCount)) \
         return itemId; \
 
+u16 GetSpeciesResistBerry(u8 * typeModifier) {
+
+    // Placeholders
+    u8 currentType = TYPE_NONE;
+    u8 currentValue = 1;
+
+    // Default item id
+    u16 itemId = ITEM_NONE;
+
+    u8 i;
+
+    // Loop over the types
+    for(i = 0; i < NUMBER_OF_MON_TYPES; i++) 
+    {
+        // Switch on type modifier
+        switch(typeModifier[i])
+        {
+            case 2: // 2x Weakness
+                // Skip if we have already found a 4x weakness
+                if ((currentValue != 4) && (RANDOM_CHANCE(BFG_ITEM_RESIST_BERRY_2X_SELECTION_CHANCE)))
+                {
+                    // Update selected type, value
+                    currentValue = typeModifier[i];
+                    currentType = i;
+                }
+            break;
+            case 4: // 4x Weakness
+                if (RANDOM_CHANCE(BFG_ITEM_RESIST_BERRY_4X_SELECTION_CHANCE)) 
+                {
+                    // Update selected type, value
+                    currentValue = typeModifier[i];
+                    currentType = i;
+                }
+            break;
+        }
+    }
+
+    // Current type is not 'NONE'
+    if (currentType != TYPE_NONE) {
+        // Switch on type selected
+        switch(currentType) 
+        {
+            case TYPE_NORMAL: itemId = ITEM_CHILAN_BERRY; break;
+            case TYPE_FIRE: itemId = ITEM_OCCA_BERRY; break;
+            case TYPE_WATER: itemId = ITEM_PASSHO_BERRY; break;
+            case TYPE_ELECTRIC: itemId = ITEM_WACAN_BERRY; break;
+            case TYPE_GRASS: itemId = ITEM_RINDO_BERRY; break;
+            case TYPE_ICE: itemId = ITEM_YACHE_BERRY; break;
+            case TYPE_FIGHTING: itemId = ITEM_CHOPLE_BERRY; break;
+            case TYPE_POISON: itemId = ITEM_KEBIA_BERRY; break;
+            case TYPE_GROUND: itemId = ITEM_SHUCA_BERRY; break;
+            case TYPE_FLYING: itemId = ITEM_COBA_BERRY; break;
+            case TYPE_PSYCHIC: itemId = ITEM_PAYAPA_BERRY; break;
+            case TYPE_BUG: itemId = ITEM_TANGA_BERRY; break;
+            case TYPE_ROCK: itemId = ITEM_CHARTI_BERRY; break;
+            case TYPE_GHOST: itemId = ITEM_KASIB_BERRY; break;
+            case TYPE_DRAGON: itemId = ITEM_HABAN_BERRY; break;
+            case TYPE_DARK: itemId = ITEM_COLBUR_BERRY; break;
+            case TYPE_STEEL: itemId = ITEM_BABIRI_BERRY; break;
+            case TYPE_FAIRY: itemId = ITEM_ROSELI_BERRY; break;
+        }
+    }
+
+    return itemId; 
+}
+
+u16 GetSpeciesTypeItem(u16 speciesId, u8 * moveTypeCount) {
+
+    const struct SpeciesInfo * species = &(gSpeciesInfo[speciesId]);
+
+    // Default item id
+    u16 itemId = ITEM_NONE;
+
+    u8 i;
+
+    // Loop over the types
+    for(i = 0; i < NUMBER_OF_MON_TYPES; i++) 
+    {
+        // At least one move of this type
+        if (moveTypeCount[i] > 0) 
+        {
+            // Check if the move is the same type
+            bool8 isStabType = IS_TYPE(species, i);
+
+            // Type item (e.g. Silk Scarf, Charcoal)
+
+            // Is stab type and stab type chance passes, or is not stab type and non-stab type chance passes
+            if ((isStabType && RANDOM_CHANCE(BFG_ITEM_STAB_TYPE_SELECTION_CHANCE)) || (!isStabType && RANDOM_CHANCE(BFG_ITEM_TYPE_SELECTION_CHANCE))) 
+            {                       
+                // Switch on current type
+                switch(i)
+                {
+                    case TYPE_NORMAL: itemId = ITEM_SILK_SCARF; break;
+                    case TYPE_FIRE: itemId = ITEM_CHARCOAL; break;
+                    case TYPE_WATER: itemId = ITEM_MYSTIC_WATER; break;
+                    case TYPE_ELECTRIC: itemId = ITEM_MAGNET; break;
+                    case TYPE_GRASS: itemId = ITEM_MIRACLE_SEED; break;
+                    case TYPE_ICE: itemId = ITEM_NEVER_MELT_ICE; break;
+                    case TYPE_FIGHTING: itemId = ITEM_BLACK_BELT; break;
+                    case TYPE_POISON: itemId = ITEM_POISON_BARB; break;
+                    case TYPE_GROUND: itemId = ITEM_SOFT_SAND; break;
+                    case TYPE_FLYING: itemId = ITEM_SHARP_BEAK; break;
+                    case TYPE_PSYCHIC: itemId = ITEM_TWISTED_SPOON; break;
+                    case TYPE_BUG: itemId = ITEM_SILVER_POWDER; break;
+                    case TYPE_ROCK: itemId = ITEM_HARD_STONE; break;
+                    case TYPE_GHOST: itemId = ITEM_SPELL_TAG; break;
+                    case TYPE_DRAGON: itemId = ITEM_DRAGON_FANG; break;
+                    case TYPE_DARK: itemId = ITEM_BLACK_GLASSES; break;
+                    case TYPE_STEEL: itemId = ITEM_METAL_COAT; break;
+                    case TYPE_FAIRY: itemId = ITEM_FAIRY_FEATHER; break;
+                }
+
+                return itemId; 
+            }
+
+            // Z-move
+
+            // Z-moves are allowed, and stab type and stab type chance passes, or is not stab type and non-stab type chance passes
+            if (FrontierBattlerCanUseZMove() && ((isStabType && RANDOM_CHANCE(BFG_ITEM_STAB_ZMOVE_SELECTION_CHANCE)) || (!isStabType && RANDOM_CHANCE(BFG_ITEM_ZMOVE_SELECTION_CHANCE))))
+            {                       
+                // Switch on current type
+                switch(i)
+                {
+                    case TYPE_NORMAL: itemId = ITEM_NORMALIUM_Z; break;
+                    case TYPE_FIRE: itemId = ITEM_FIRIUM_Z; break;
+                    case TYPE_WATER: itemId = ITEM_WATERIUM_Z; break;
+                    case TYPE_ELECTRIC: itemId = ITEM_ELECTRIUM_Z; break;
+                    case TYPE_GRASS: itemId = ITEM_GRASSIUM_Z; break;
+                    case TYPE_ICE: itemId = ITEM_ICIUM_Z; break;
+                    case TYPE_FIGHTING: itemId = ITEM_FIGHTINIUM_Z; break;
+                    case TYPE_POISON: itemId = ITEM_POISONIUM_Z; break;
+                    case TYPE_GROUND: itemId = ITEM_GROUNDIUM_Z; break;
+                    case TYPE_FLYING: itemId = ITEM_FLYINIUM_Z; break;
+                    case TYPE_PSYCHIC: itemId = ITEM_PSYCHIUM_Z; break;
+                    case TYPE_BUG: itemId = ITEM_BUGINIUM_Z; break;
+                    case TYPE_ROCK: itemId = ITEM_ROCKIUM_Z; break;
+                    case TYPE_GHOST: itemId = ITEM_GHOSTIUM_Z; break;
+                    case TYPE_DRAGON: itemId = ITEM_DRAGONIUM_Z; break;
+                    case TYPE_DARK: itemId = ITEM_DARKINIUM_Z; break;
+                    case TYPE_STEEL: itemId = ITEM_STEELIUM_Z; break;
+                    case TYPE_FAIRY: itemId = ITEM_FAIRIUM_Z; break;
+                }
+
+                return itemId; 
+            }
+
+            // Can be recycled
+
+            // Gem (e.g. Fire Gem) Check
+            if ((isStabType && RANDOM_CHANCE(BFG_ITEM_STAB_GEM_SELECTION_CHANCE)) || (!isStabType && RANDOM_CHANCE(BFG_ITEM_GEM_SELECTION_CHANCE)))
+            {
+                // Switch on current type
+                switch(i)
+                {
+                    case TYPE_NORMAL: itemId = ITEM_NORMAL_GEM; break;
+                    case TYPE_FIRE: itemId = ITEM_FIRE_GEM; break;
+                    case TYPE_WATER: itemId = ITEM_WATER_GEM; break;
+                    case TYPE_ELECTRIC: itemId = ITEM_ELECTRIC_GEM; break;
+                    case TYPE_GRASS: itemId = ITEM_GRASS_GEM; break;
+                    case TYPE_ICE: itemId = ITEM_ICE_GEM; break;
+                    case TYPE_FIGHTING: itemId = ITEM_FIGHTING_GEM; break;
+                    case TYPE_POISON: itemId = ITEM_POISON_GEM; break;
+                    case TYPE_GROUND: itemId = ITEM_GROUND_GEM; break;
+                    case TYPE_FLYING: itemId = ITEM_FLYING_GEM; break;
+                    case TYPE_PSYCHIC: itemId = ITEM_PSYCHIC_GEM; break;
+                    case TYPE_BUG: itemId = ITEM_BUG_GEM; break;
+                    case TYPE_ROCK: itemId = ITEM_ROCK_GEM; break;
+                    case TYPE_GHOST: itemId = ITEM_GHOST_GEM; break;
+                    case TYPE_DRAGON: itemId = ITEM_DRAGON_GEM; break;
+                    case TYPE_DARK: itemId = ITEM_DARK_GEM; break;
+                    case TYPE_STEEL: itemId = ITEM_STEEL_GEM; break;
+                    case TYPE_FAIRY: itemId = ITEM_FAIRY_GEM; break;
+                }
+
+                return itemId; 
+            }
+        }
+    }
+
+    // No item selected
+    return ITEM_NONE; 
+}
+
 u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
 
     u16 speciesId = GetMonData(mon, MON_DATA_SPECIES);
@@ -1678,29 +1853,17 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
     u8 numSpecial = 0; 
     u8 numStatus = 0; 
     
-    u8 numOffensive, currentType;
+    u8 numOffensive;
 
     // Move flags
-    bool8 hasTrickRoom = FALSE;
-    bool8 hasEvolution = FALSE;
     bool8 hasTwoTurn = FALSE; 
-    bool8 hasRecycle = FALSE;
-    bool8 hasSwagger = FALSE;
-    bool8 hasFlatter = FALSE;
     bool8 hasSingleUseMove = FALSE;
-    bool8 hasFling = FALSE;
     bool8 hasRest = FALSE;
 
     // Move Counters
-    u8 numCritModifier = 0;
     u8 numMultiHit = 0;
     u8 numStatDrop = 0;
     u8 numSound = 0;
-
-    // Check for species evolutions
-    const struct Evolution * evolutions = GetSpeciesEvolutions(speciesId);
-    if (evolutions != NULL)
-        hasEvolution = TRUE;
 
     u8 moveTypeCount[NUMBER_OF_MON_TYPES];
 
@@ -1746,21 +1909,6 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
             case EFFECT_SEMI_INVULNERABLE:
                 hasTwoTurn = TRUE;
             break;
-            case EFFECT_FOCUS_ENERGY:
-                numCritModifier++;
-            break;
-            case EFFECT_TRICK_ROOM:
-                hasTrickRoom = TRUE;
-            break;
-            case EFFECT_RECYCLE:
-                hasRecycle = TRUE;
-            break;
-            case EFFECT_FLATTER:
-                hasFlatter = TRUE;
-            break;
-            case EFFECT_SWAGGER:
-                hasSwagger = TRUE;
-            break;
             case EFFECT_REST:
                 hasRest = TRUE;
             break;
@@ -1780,10 +1928,6 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
             if (IS_STAT_REDUCING_EFFECT(move->effect))
                 numStatDrop++;
 
-            // High-crit ratio moves
-            if (move->criticalHitStage > 0)
-                numCritModifier++; 
-
             // Offensive split-changing attacks
             if (IS_DYNAMIC_ATTACK(moveId))
                 numDynamic++; // Increment dynamic counter
@@ -1792,11 +1936,11 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
                 // Physical move
                 if (move->category == DAMAGE_CATEGORY_PHYSICAL)
                 {
-                    numPhysical++; // Increment physical counter
+                    numPhysical++;
                 }
                 else // move->category == DAMAGE_CATEGORY_SPECIAL
                 {
-                    numSpecial++; // Increment special counter
+                    numSpecial++;
                 }
             }
 
@@ -1814,13 +1958,6 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
 
     // Length of custom items
     u16 customItemsLength = i;
-
-    // Loop over the recycle items list
-    for(i=0; recycleItemsList[i] != ITEM_NONE; i++)
-        ;
-
-    // Length of recycle items
-    u16 recycleItemsLength = i;
 
     // Start with more obscure items, then common items at the bottom
     // This *should* result in better variance between item choices :)
@@ -1844,92 +1981,30 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
     }
     #endif
 
-    // Non-recyclable items
-    if (hasRecycle == FALSE)
-    {
-        // Select King's Rock / Razor Fang if mon has the attack 'Fling'
-        #if BFG_ITEM_RAZOR_FANG_SELECTION_CHANCE || BFG_ITEM_KINGS_ROCK_SELECTION_CHANCE
-        if (hasFling)
-        {
-            if (RANDOM_CHANCE(BFG_ITEM_RAZOR_FANG_SELECTION_CHANCE))
-                RETURN_IF_UNIQUE(ITEM_RAZOR_FANG);
-            if (RANDOM_CHANCE(BFG_ITEM_KINGS_ROCK_SELECTION_CHANCE))
-                RETURN_IF_UNIQUE(ITEM_KINGS_ROCK);
-        }
-        #endif
+    #if BFG_ITEM_FLAME_ORB_SELECTION_CHANCE
+    if (((abilityId == ABILITY_GUTS && (numPhysical + numDynamic) > 0) || (abilityId == ABILITY_FLARE_BOOST && (numSpecial + numDynamic) > 0)) && RANDOM_CHANCE(BFG_ITEM_FLAME_ORB_SELECTION_CHANCE))
+        RETURN_IF_UNIQUE(ITEM_FLAME_ORB);
+    #endif
 
-        #if BFG_ITEM_FLAME_ORB_SELECTION_CHANCE
-        if (((abilityId == ABILITY_GUTS && (numPhysical + numDynamic) >= BFG_ITEM_FLAME_ORB_MOVES_REQUIRED) || (abilityId == ABILITY_FLARE_BOOST && (numSpecial + numDynamic) >= BFG_ITEM_FLAME_ORB_MOVES_REQUIRED)) && RANDOM_CHANCE(BFG_ITEM_FLAME_ORB_SELECTION_CHANCE))
-            RETURN_IF_UNIQUE(ITEM_FLAME_ORB);
-        #endif
+    #if BFG_ITEM_TOXIC_ORB_SELECTION_CHANCE
+    if (((abilityId == ABILITY_TOXIC_BOOST && (numPhysical + numDynamic) > 0) || abilityId == ABILITY_POISON_HEAL) && RANDOM_CHANCE(BFG_ITEM_TOXIC_ORB_SELECTION_CHANCE))
+        RETURN_IF_UNIQUE(ITEM_TOXIC_ORB);
+    #endif
 
-        #if BFG_ITEM_TOXIC_ORB_SELECTION_CHANCE
-        if (((abilityId == ABILITY_TOXIC_BOOST && (numPhysical + numDynamic) >= BFG_ITEM_TOXIC_ORB_MOVES_REQUIRED) || abilityId == ABILITY_POISON_HEAL) && RANDOM_CHANCE(BFG_ITEM_TOXIC_ORB_SELECTION_CHANCE))
-            RETURN_IF_UNIQUE(ITEM_TOXIC_ORB);
-        #endif
-
-        #if BFG_ITEM_EVIOLITE_SELECTION_CHANCE
-        if (hasEvolution && (GetMonData(mon, MON_DATA_HP_IV) >= BFG_ITEM_IV_ALLOW_EVIOLITE) && RANDOM_CHANCE(BFG_ITEM_EVIOLITE_SELECTION_CHANCE))
-            RETURN_IF_UNIQUE(ITEM_EVIOLITE);
-        #endif
-
-        #if BFG_ITEM_LOADED_DICE_SELECTION_CHANCE
-        for(i=0; i < numMultiHit; i++)
-            if (RANDOM_CHANCE(BFG_ITEM_LOADED_DICE_SELECTION_CHANCE))
-                RETURN_IF_UNIQUE(ITEM_LOADED_DICE);
-        #endif
-
-        #if BFG_ITEM_SCOPE_LENS_SELECTION_CHANCE || BFG_ITEM_RAZOR_CLAW_SELECTION_CHANCE
-        for(i=0; i < numCritModifier; i++)
-        {
-            if (RANDOM_CHANCE(BFG_ITEM_SCOPE_LENS_SELECTION_CHANCE))
-                RETURN_IF_UNIQUE(ITEM_SCOPE_LENS);
-            if (RANDOM_CHANCE(BFG_ITEM_RAZOR_CLAW_SELECTION_CHANCE))
-                RETURN_IF_UNIQUE(ITEM_RAZOR_CLAW);
-        }
-        #endif
-
-        #if BFG_ITEM_IRON_BALL_SELECTION_CHANCE
-        if (hasTrickRoom && RANDOM_CHANCE(BFG_ITEM_IRON_BALL_SELECTION_CHANCE))
-            RETURN_IF_UNIQUE(ITEM_IRON_BALL);
-        #endif
-
-        #if BFG_ITEM_BLACK_SLUDGE_SELECTION_CHANCE
-        if (IS_TYPE(species, TYPE_POISON) && RANDOM_CHANCE(BFG_ITEM_BLACK_SLUDGE_SELECTION_CHANCE))
-            RETURN_IF_UNIQUE(ITEM_BLACK_SLUDGE);
-        #endif
-    }
-
-    // Recyleable items
-
-    #if BFG_ITEM_MIRROR_HERB_ABILITY_SELECTION_CHANCE
-    if (IS_STAT_REDUCING_ABILITY(abilityId) && ((numSpecial >= BFG_ITEM_MIRROR_HERB_OFFENSIVE_MOVES_REQUIRED) || ((numPhysical + numDynamic) >= BFG_ITEM_MIRROR_HERB_OFFENSIVE_MOVES_REQUIRED)) && RANDOM_CHANCE(BFG_ITEM_MIRROR_HERB_ABILITY_SELECTION_CHANCE))
-        RETURN_IF_UNIQUE(ITEM_MIRROR_HERB);
+    #if BFG_ITEM_BOOSTER_ENERGY_SELECTION_CHANCE
+    if (((abilityId == ABILITY_PROTOSYNTHESIS) && (abilityId == ABILITY_QUARK_DRIVE)) && RANDOM_CHANCE(BFG_ITEM_BOOSTER_ENERGY_SELECTION_CHANCE))
+        RETURN_IF_UNIQUE(ITEM_BOOSTER_ENERGY);
     #endif
     
-    #if BFG_ITEM_MIRROR_HERB_MOVE_SELECTION_CHANCE
-    if ((((hasFlatter == TRUE) && (numSpecial >= BFG_ITEM_MIRROR_HERB_OFFENSIVE_MOVES_REQUIRED)) || ((hasSwagger == TRUE) && ((numPhysical + numDynamic) >= BFG_ITEM_MIRROR_HERB_OFFENSIVE_MOVES_REQUIRED))) && RANDOM_CHANCE(BFG_ITEM_MIRROR_HERB_MOVE_SELECTION_CHANCE))
-        RETURN_IF_UNIQUE(ITEM_MIRROR_HERB);
+    #if BFG_ITEM_FOCUS_SASH_SELECTION_CHANCE
+    // Focus Sash (No/low investment in HP/Def/SpDef)
+    if ((GetMonData(mon, MON_DATA_HP_EV) <= 4) && (GetMonData(mon, MON_DATA_DEF_EV) <= 4) && (GetMonData(mon, MON_DATA_SPDEF_EV) <= 4) && RANDOM_CHANCE(BFG_ITEM_FOCUS_SASH_SELECTION_CHANCE))
+        RETURN_IF_UNIQUE(ITEM_FOCUS_SASH);
     #endif
 
-    #if BFG_ITEM_ADRENALINE_ORB_SELECTION_CHANCE
-    if (IS_STAT_DROP_ABILITY(abilityId) && RANDOM_CHANCE(BFG_ITEM_ADRENALINE_ORB_SELECTION_CHANCE))
-        RETURN_IF_UNIQUE(ITEM_ADRENALINE_ORB);
-    #endif
-
-    #if BFG_ITEM_ROOM_SERVICE_SELECTION_CHANCE
-    if (hasTrickRoom && RANDOM_CHANCE(BFG_ITEM_ROOM_SERVICE_SELECTION_CHANCE))
-        RETURN_IF_UNIQUE(ITEM_ROOM_SERVICE);
-    #endif
-
-    #if BFG_ITEM_WHITE_HERB_SELECTION_CHANCE || BFG_ITEM_EJECT_PACK_SELECTION_CHANCE
-    for(i=0; i < numStatDrop; i++)
-    {
-        if (RANDOM_CHANCE(BFG_ITEM_WHITE_HERB_SELECTION_CHANCE))
-            RETURN_IF_UNIQUE(ITEM_WHITE_HERB);
-        if (RANDOM_CHANCE(BFG_ITEM_EJECT_PACK_SELECTION_CHANCE))
-            RETURN_IF_UNIQUE(ITEM_EJECT_PACK);
-    }
+    #if BFG_ITEM_CHOICE_SCARF_SELECTION_CHANCE
+    if ((GetMonData(mon, MON_DATA_SPEED_EV) == 252) && (numOffensive == 4) && (hasSingleUseMove == FALSE) && RANDOM_CHANCE(BFG_ITEM_CHOICE_SCARF_SELECTION_CHANCE))
+        RETURN_IF_UNIQUE(ITEM_CHOICE_SCARF);
     #endif
 
     #if BFG_ITEM_THROAT_SPRAY_SELECTION_CHANCE
@@ -1938,310 +2013,84 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount) {
             RETURN_IF_UNIQUE(ITEM_THROAT_SPRAY);
     #endif
 
+    #if BFG_ITEM_LOADED_DICE_SELECTION_CHANCE
+    for(i=0; i < numMultiHit; i++)
+        if (RANDOM_CHANCE(BFG_ITEM_LOADED_DICE_SELECTION_CHANCE))
+            RETURN_IF_UNIQUE(ITEM_LOADED_DICE);
+    #endif
+    
     #if BFG_ITEM_MENTAL_HERB_SELECTION_CHANCE
     for(i=0; i < numStatus; i++)
         if (RANDOM_CHANCE(BFG_ITEM_MENTAL_HERB_SELECTION_CHANCE))
             RETURN_IF_UNIQUE(ITEM_MENTAL_HERB);
     #endif
 
-    #if BFG_ITEM_BOOSTER_ENERGY_SELECTION_CHANCE
-    if (((abilityId == ABILITY_PROTOSYNTHESIS) && (abilityId == ABILITY_QUARK_DRIVE)) && RANDOM_CHANCE(BFG_ITEM_BOOSTER_ENERGY_SELECTION_CHANCE))
-        RETURN_IF_UNIQUE(ITEM_BOOSTER_ENERGY);
+    #if BFG_ITEM_WHITE_HERB_SELECTION_CHANCE
+    for(i=0; i < numStatDrop; i++)
+        if (RANDOM_CHANCE(BFG_ITEM_WHITE_HERB_SELECTION_CHANCE))
+            RETURN_IF_UNIQUE(ITEM_WHITE_HERB);
     #endif
 
-    #if BFG_ITEM_LUM_BERRY_SELECTION_CHANCE
-    // Better chance to select lum berry (or rawst berry as backup) for physical Pokemon
-    if ((!IS_TYPE(species, TYPE_FIRE)) && ((abilityId != ABILITY_WATER_VEIL) || (abilityId != ABILITY_WATER_BUBBLE) || (abilityId != ABILITY_COMATOSE) || (abilityId != ABILITY_THERMAL_EXCHANGE) || (abilityId != ABILITY_PURIFYING_SALT)  || (abilityId != ABILITY_GOOD_AS_GOLD) || (abilityId != ABILITY_GUTS) || (abilityId != ABILITY_FLARE_BOOST))) {
-        for(i=0; i<numPhysical; i++) {
-            // Test for lum berry first, fallback to 
-            if (RANDOM_CHANCE(BFG_ITEM_LUM_BERRY_SELECTION_CHANCE))
-                RETURN_IF_UNIQUE(ITEM_LUM_BERRY);
-        }
-    }
+    #if BFG_ITEM_RESIST_BERRY_2X_SELECTION_CHANCE || BFG_ITEM_RESIST_BERRY_4X_SELECTION_CHANCE
+    itemId = GetSpeciesResistBerry(typeModifier);
+    RETURN_IF_UNIQUE(itemId);
     #endif
 
     #if BFG_ITEM_AIR_BALLOON_2X_SELECTION_CHANCE || BFG_ITEM_AIR_BALLOON_4X_SELECTION_CHANCE
-    if ((abilityId != ABILITY_LEVITATE) &&
+    if ((abilityId != ABILITY_LEVITATE) && (abilityId != ABILITY_EARTH_EATER) &&
         // Different odds for both 2x and 4x ground weaknesses, exclude levitating Pokemon
         ((typeModifier[TYPE_GROUND] == 2 && (RANDOM_CHANCE(BFG_ITEM_AIR_BALLOON_2X_SELECTION_CHANCE))) || 
         (typeModifier[TYPE_GROUND] == 4 && (RANDOM_CHANCE(BFG_ITEM_AIR_BALLOON_4X_SELECTION_CHANCE)))))
         RETURN_IF_UNIQUE(ITEM_AIR_BALLOON);
     #endif
 
-    #if BFG_ITEM_FOCUS_SASH_SELECTION_CHANCE
-    // Focus Sash (No/low investment in HP/Def/SpDef)
-    if ((GetMonData(mon, MON_DATA_HP_EV) <= 4) && (GetMonData(mon, MON_DATA_DEF_EV) <= 4) && (GetMonData(mon, MON_DATA_SPDEF_EV) <= 4) && RANDOM_CHANCE(BFG_ITEM_FOCUS_SASH_SELECTION_CHANCE))
-        RETURN_IF_UNIQUE(ITEM_FOCUS_SASH);
-    #endif
-
-    // *** Resist Berries *** 
-    #if BFG_ITEM_RESIST_BERRY_2X_SELECTION_CHANCE || BFG_ITEM_RESIST_BERRY_4X_SELECTION_CHANCE
-    // Placeholders
-    currentType = TYPE_NONE;
-    u8 currentValue = 1;
-
-    // Loop over the types
-    for(i = 0; i < NUMBER_OF_MON_TYPES; i++) 
-    {
-        // Switch on type modifier
-        switch(typeModifier[i])
-        {
-            case 2: // 2x Weakness
-                // Skip if we have already found a 4x weakness
-                if ((currentValue != 4) && (RANDOM_CHANCE(BFG_ITEM_RESIST_BERRY_2X_SELECTION_CHANCE)))
-                {
-                    // Update selected type, value
-                    currentValue = typeModifier[i];
-                    currentType = i;
-                }
-            break;
-            case 4: // 4x Weakness
-                if (RANDOM_CHANCE(BFG_ITEM_RESIST_BERRY_4X_SELECTION_CHANCE)) 
-                {
-                    // Update selected type, value
-                    currentValue = typeModifier[i];
-                    currentType = i;
-                }
-            break;
-        }
-    }
-
-    // Current type is not 'NONE'
-    if (currentType != TYPE_NONE) {
-        // Default item id
-        itemId = ITEM_NONE;
-
-        // Switch on type selected
-        switch(currentType) 
-        {
-            case TYPE_NORMAL: itemId = ITEM_CHILAN_BERRY; break;
-            case TYPE_FIRE: itemId = ITEM_OCCA_BERRY; break;
-            case TYPE_WATER: itemId = ITEM_PASSHO_BERRY; break;
-            case TYPE_ELECTRIC: itemId = ITEM_WACAN_BERRY; break;
-            case TYPE_GRASS: itemId = ITEM_RINDO_BERRY; break;
-            case TYPE_ICE: itemId = ITEM_YACHE_BERRY; break;
-            case TYPE_FIGHTING: itemId = ITEM_CHOPLE_BERRY; break;
-            case TYPE_POISON: itemId = ITEM_KEBIA_BERRY; break;
-            case TYPE_GROUND: itemId = ITEM_SHUCA_BERRY; break;
-            case TYPE_FLYING: itemId = ITEM_COBA_BERRY; break;
-            case TYPE_PSYCHIC: itemId = ITEM_PAYAPA_BERRY; break;
-            case TYPE_BUG: itemId = ITEM_TANGA_BERRY; break;
-            case TYPE_ROCK: itemId = ITEM_CHARTI_BERRY; break;
-            case TYPE_GHOST: itemId = ITEM_KASIB_BERRY; break;
-            case TYPE_DRAGON: itemId = ITEM_HABAN_BERRY; break;
-            case TYPE_DARK: itemId = ITEM_COLBUR_BERRY; break;
-            case TYPE_STEEL: itemId = ITEM_BABIRI_BERRY; break;
-            case TYPE_FAIRY: itemId = ITEM_ROSELI_BERRY; break;
-        }
-
-        // Return if not duplicate
-        RETURN_IF_UNIQUE(itemId);
-    }
-    #endif
-
-    // *** Type-Specific Items ***
     #if BFG_ITEM_STAB_GEM_SELECTION_CHANCE || BFG_ITEM_GEM_SELECTION_CHANCE || BFG_ITEM_STAB_TYPE_SELECTION_CHANCE || BFG_ITEM_TYPE_SELECTION_CHANCE || BFG_ITEM_STAB_ZMOVE_SELECTION_CHANCE || BFG_ITEM_ZMOVE_SELECTION_CHANCE
-    u8 spreadType = GetSpreadType(mon);
-    
-    // If the mon has an 'offensive' spread type
-    if (spreadType == BFG_SPREAD_TYPE_OFFENSIVE) {
-        // Loop over the types
-        for(i = 0; i < NUMBER_OF_MON_TYPES; i++) 
-        {
-            // At least one move of this type
-            if (moveTypeCount[i] > 0) 
-            {
-                // Check if the move is the same type
-                bool8 isStabType = IS_TYPE(species, i);
-
-                // Does not have recycle
-                if (hasRecycle == FALSE)
-                {
-                    // Type item (e.g. Silk Scarf, Charcoal)
-
-                    // Is stab type and stab type chance passes, or is not stab type and non-stab type chance passes
-                    if ((isStabType && RANDOM_CHANCE(BFG_ITEM_STAB_TYPE_SELECTION_CHANCE)) || (!isStabType && RANDOM_CHANCE(BFG_ITEM_TYPE_SELECTION_CHANCE))) 
-                    {                       
-                        // Default item id
-                        itemId = ITEM_NONE;
-
-                        // Switch on current type
-                        switch(i)
-                        {
-                            case TYPE_NORMAL: itemId = ITEM_SILK_SCARF; break;
-                            case TYPE_FIRE: itemId = ITEM_CHARCOAL; break;
-                            case TYPE_WATER: itemId = ITEM_MYSTIC_WATER; break;
-                            case TYPE_ELECTRIC: itemId = ITEM_MAGNET; break;
-                            case TYPE_GRASS: itemId = ITEM_MIRACLE_SEED; break;
-                            case TYPE_ICE: itemId = ITEM_NEVER_MELT_ICE; break;
-                            case TYPE_FIGHTING: itemId = ITEM_BLACK_BELT; break;
-                            case TYPE_POISON: itemId = ITEM_POISON_BARB; break;
-                            case TYPE_GROUND: itemId = ITEM_SOFT_SAND; break;
-                            case TYPE_FLYING: itemId = ITEM_SHARP_BEAK; break;
-                            case TYPE_PSYCHIC: itemId = ITEM_TWISTED_SPOON; break;
-                            case TYPE_BUG: itemId = ITEM_SILVER_POWDER; break;
-                            case TYPE_ROCK: itemId = ITEM_HARD_STONE; break;
-                            case TYPE_GHOST: itemId = ITEM_SPELL_TAG; break;
-                            case TYPE_DRAGON: itemId = ITEM_DRAGON_FANG; break;
-                            case TYPE_DARK: itemId = ITEM_BLACK_GLASSES; break;
-                            case TYPE_STEEL: itemId = ITEM_METAL_COAT; break;
-                            case TYPE_FAIRY: itemId = ITEM_FAIRY_FEATHER; break;
-                        }
-                        
-                        // Return if not duplicate
-                        RETURN_IF_UNIQUE(itemId);
-                    }
-
-                    // Z-move
-
-                    // Z-moves are allowed, and stab type and stab type chance passes, or is not stab type and non-stab type chance passes
-                    if (FrontierBattlerCanUseZMove() && ((isStabType && RANDOM_CHANCE(BFG_ITEM_STAB_ZMOVE_SELECTION_CHANCE)) || (!isStabType && RANDOM_CHANCE(BFG_ITEM_ZMOVE_SELECTION_CHANCE))))
-                    {                       
-                        // Default item id
-                        itemId = ITEM_NONE;
-
-                        // Switch on current type
-                        switch(i)
-                        {
-                            case TYPE_NORMAL: itemId = ITEM_NORMALIUM_Z; break;
-                            case TYPE_FIRE: itemId = ITEM_FIRIUM_Z; break;
-                            case TYPE_WATER: itemId = ITEM_WATERIUM_Z; break;
-                            case TYPE_ELECTRIC: itemId = ITEM_ELECTRIUM_Z; break;
-                            case TYPE_GRASS: itemId = ITEM_GRASSIUM_Z; break;
-                            case TYPE_ICE: itemId = ITEM_ICIUM_Z; break;
-                            case TYPE_FIGHTING: itemId = ITEM_FIGHTINIUM_Z; break;
-                            case TYPE_POISON: itemId = ITEM_POISONIUM_Z; break;
-                            case TYPE_GROUND: itemId = ITEM_GROUNDIUM_Z; break;
-                            case TYPE_FLYING: itemId = ITEM_FLYINIUM_Z; break;
-                            case TYPE_PSYCHIC: itemId = ITEM_PSYCHIUM_Z; break;
-                            case TYPE_BUG: itemId = ITEM_BUGINIUM_Z; break;
-                            case TYPE_ROCK: itemId = ITEM_ROCKIUM_Z; break;
-                            case TYPE_GHOST: itemId = ITEM_GHOSTIUM_Z; break;
-                            case TYPE_DRAGON: itemId = ITEM_DRAGONIUM_Z; break;
-                            case TYPE_DARK: itemId = ITEM_DARKINIUM_Z; break;
-                            case TYPE_STEEL: itemId = ITEM_STEELIUM_Z; break;
-                            case TYPE_FAIRY: itemId = ITEM_FAIRIUM_Z; break;
-                        }
-
-                        // Return if not duplicate
-                        RETURN_IF_UNIQUE(itemId);
-                    }
-                }
-
-                // Can be recycled
-
-                // Gem (e.g. Fire Gem) Check
-                if ((isStabType && RANDOM_CHANCE(BFG_ITEM_STAB_GEM_SELECTION_CHANCE)) || (!isStabType && RANDOM_CHANCE(BFG_ITEM_GEM_SELECTION_CHANCE)))
-                {
-                    // Default item id
-                    itemId = ITEM_NONE;
-
-                    // Switch on current type
-                    switch(i)
-                    {
-                        case TYPE_NORMAL: itemId = ITEM_NORMAL_GEM; break;
-                        case TYPE_FIRE: itemId = ITEM_FIRE_GEM; break;
-                        case TYPE_WATER: itemId = ITEM_WATER_GEM; break;
-                        case TYPE_ELECTRIC: itemId = ITEM_ELECTRIC_GEM; break;
-                        case TYPE_GRASS: itemId = ITEM_GRASS_GEM; break;
-                        case TYPE_ICE: itemId = ITEM_ICE_GEM; break;
-                        case TYPE_FIGHTING: itemId = ITEM_FIGHTING_GEM; break;
-                        case TYPE_POISON: itemId = ITEM_POISON_GEM; break;
-                        case TYPE_GROUND: itemId = ITEM_GROUND_GEM; break;
-                        case TYPE_FLYING: itemId = ITEM_FLYING_GEM; break;
-                        case TYPE_PSYCHIC: itemId = ITEM_PSYCHIC_GEM; break;
-                        case TYPE_BUG: itemId = ITEM_BUG_GEM; break;
-                        case TYPE_ROCK: itemId = ITEM_ROCK_GEM; break;
-                        case TYPE_GHOST: itemId = ITEM_GHOST_GEM; break;
-                        case TYPE_DRAGON: itemId = ITEM_DRAGON_GEM; break;
-                        case TYPE_DARK: itemId = ITEM_DARK_GEM; break;
-                        case TYPE_STEEL: itemId = ITEM_STEEL_GEM; break;
-                        case TYPE_FAIRY: itemId = ITEM_FAIRY_GEM; break;
-                    }
-
-                    // Return if not duplicate
-                    RETURN_IF_UNIQUE(itemId);
-                }
-            }
-        }
-    }
+    itemId = GetSpeciesTypeItem(speciesId, moveTypeCount);
+    RETURN_IF_UNIQUE(itemId);
     #endif
     
-    // *** Competitive items with generic use cases ***
-
-    // Non-recycleable items
-    if (hasRecycle == FALSE) {
-        #if BFG_ITEM_ASSAULT_VEST_SELECTION_CHANCE
-        if ((numOffensive == 4) && RANDOM_CHANCE(BFG_ITEM_ASSAULT_VEST_SELECTION_CHANCE))
-            RETURN_IF_UNIQUE(ITEM_ASSAULT_VEST);
+    if (numOffensive >= 3) {
+        #if BFG_ITEM_WEAKNESS_POLICY_SELECTION_CHANCE
+        if (RANDOM_CHANCE(BFG_ITEM_WEAKNESS_POLICY_SELECTION_CHANCE))
+            RETURN_IF_UNIQUE(ITEM_WEAKNESS_POLICY);
         #endif
 
-        #if BFG_ITEM_ROCKY_HELMET_SELECTION_CHANCE
-        if (RANDOM_CHANCE(BFG_ITEM_ROCKY_HELMET_SELECTION_CHANCE))
-            RETURN_IF_UNIQUE(ITEM_ROCKY_HELMET);
-        #endif
-
-        #if BFG_ITEM_SAFETY_GOGGLES_SELECTION_CHANCE
-        if (!((IS_TYPE(species, TYPE_GRASS)) || (IS_SLEEP_IMMUNE(abilityId)) || (abilityId == ABILITY_OVERCOAT) || (abilityId == ABILITY_SWEET_VEIL)) && RANDOM_CHANCE(BFG_ITEM_SAFETY_GOGGLES_SELECTION_CHANCE))
-            RETURN_IF_UNIQUE(ITEM_SAFETY_GOGGLES);
-        #endif
-
-        #if BFG_ITEM_CLEAR_AMULET_SELECTION_CHANCE
-        // If the mon is a physical attacker, and does not have an ability that benefits from stat drops (i.e. Defiant, Guard Dog, etc.)
-        if ((numPhysical > 0) && (abilityId != ABILITY_GUARD_DOG) && (!(IS_STAT_DROP_ABILITY(abilityId))) && (!(IS_INTIMIDATE_IMMUNE_ABILITY(abilityId))) && RANDOM_CHANCE(BFG_ITEM_CLEAR_AMULET_SELECTION_CHANCE))
-            RETURN_IF_UNIQUE(ITEM_CLEAR_AMULET);
-        #endif
-
-        #if BFG_ITEM_COVERT_CLOAK_SELECTION_CHANCE
-        // If the mon is not a ghost type, or otherwise already immune to flinching (Fake Out)
-        if ((!(IS_TYPE(species, TYPE_GHOST))) && (abilityId != ABILITY_INNER_FOCUS) && (abilityId != ABILITY_SHIELD_DUST) && (abilityId != ABILITY_STEADFAST) && RANDOM_CHANCE(BFG_ITEM_COVERT_CLOAK_SELECTION_CHANCE))
-            RETURN_IF_UNIQUE(ITEM_COVERT_CLOAK);
-        #endif
-            
         #if BFG_ITEM_LIFE_ORB_SELECTION_CHANCE
-        if ((numOffensive >= BFG_ITEM_LIFE_ORB_OFFENSIVE_MOVES_REQUIRED) && RANDOM_CHANCE(BFG_ITEM_LIFE_ORB_SELECTION_CHANCE))
+        if (RANDOM_CHANCE(BFG_ITEM_LIFE_ORB_SELECTION_CHANCE))
             RETURN_IF_UNIQUE(ITEM_LIFE_ORB);
         #endif
-
-        // Choice Items
-
-        #if BFG_ITEM_CHOICE_BAND_SELECTION_CHANCE
-        if ((hasSingleUseMove == FALSE) && ((numPhysical + numDynamic) >= BFG_ITEM_CHOICE_OFFENSIVE_MOVES_REQUIRED) && RANDOM_CHANCE(BFG_ITEM_CHOICE_BAND_SELECTION_CHANCE))
-            RETURN_IF_UNIQUE(ITEM_CHOICE_BAND);
-        #endif
-
-        #if BFG_ITEM_CHOICE_SPECS_SELECTION_CHANCE
-        if ((hasSingleUseMove == FALSE) && ((numSpecial + numDynamic) >= BFG_ITEM_CHOICE_OFFENSIVE_MOVES_REQUIRED) && RANDOM_CHANCE(BFG_ITEM_CHOICE_SPECS_SELECTION_CHANCE))
-            RETURN_IF_UNIQUE(ITEM_CHOICE_SPECS);
-        #endif
-
-        #if BFG_ITEM_CHOICE_SCARF_SELECTION_CHANCE
-        if ((hasSingleUseMove == FALSE) && (numOffensive >= BFG_ITEM_CHOICE_OFFENSIVE_MOVES_REQUIRED) && RANDOM_CHANCE(BFG_ITEM_CHOICE_SCARF_SELECTION_CHANCE))
-            RETURN_IF_UNIQUE(ITEM_CHOICE_SCARF);
-        #endif
     }
 
-    #if BFG_ITEM_WEAKNESS_POLICY_SELECTION_CHANCE
-    if ((numOffensive >= BFG_ITEM_WEAKNESS_POLICY_OFFENSIVE_MOVES_REQUIRED) && RANDOM_CHANCE(BFG_ITEM_WEAKNESS_POLICY_SELECTION_CHANCE))
-        RETURN_IF_UNIQUE(ITEM_WEAKNESS_POLICY);
+    // Leftover items
+
+    #if BFG_ITEM_SAFETY_GOGGLES_SELECTION_CHANCE
+    if (!((IS_TYPE(species, TYPE_GRASS)) || (IS_SLEEP_IMMUNE(abilityId)) || (abilityId == ABILITY_OVERCOAT) || (abilityId == ABILITY_SWEET_VEIL)) && RANDOM_CHANCE(BFG_ITEM_SAFETY_GOGGLES_SELECTION_CHANCE))
+        RETURN_IF_UNIQUE(ITEM_SAFETY_GOGGLES);
     #endif
 
-    #if BFG_ITEM_SITRUS_BERRY_SELECTION_CHANCE
-    if (RANDOM_CHANCE(BFG_ITEM_SITRUS_BERRY_SELECTION_CHANCE))
-        RETURN_IF_UNIQUE(ITEM_SITRUS_BERRY);
+    #if BFG_ITEM_COVERT_CLOAK_SELECTION_CHANCE
+    // If the mon is not a ghost type, or otherwise already immune to flinching (Fake Out)
+    if ((!(IS_TYPE(species, TYPE_GHOST))) && (abilityId != ABILITY_INNER_FOCUS) && (abilityId != ABILITY_SHIELD_DUST) && (abilityId != ABILITY_STEADFAST) && RANDOM_CHANCE(BFG_ITEM_COVERT_CLOAK_SELECTION_CHANCE))
+        RETURN_IF_UNIQUE(ITEM_COVERT_CLOAK);
+    #endif
+    
+    #if BFG_ITEM_BLACK_SLUDGE_SELECTION_CHANCE
+    if (IS_TYPE(species, TYPE_POISON) && RANDOM_CHANCE(BFG_ITEM_BLACK_SLUDGE_SELECTION_CHANCE))
+        RETURN_IF_UNIQUE(ITEM_BLACK_SLUDGE);
     #endif
 
     #if BFG_ITEM_FIWAM_BERRY_SELECTION_CHANCE
     if (RANDOM_CHANCE(BFG_ITEM_FIWAM_BERRY_SELECTION_CHANCE))
         RETURN_IF_UNIQUE(gFiwamConfuseLookup[nature->negStat]);
     #endif
+    
+    #if BFG_ITEM_SITRUS_BERRY_SELECTION_CHANCE
+    if (RANDOM_CHANCE(BFG_ITEM_SITRUS_BERRY_SELECTION_CHANCE))
+        RETURN_IF_UNIQUE(ITEM_SITRUS_BERRY);
+    #endif
 
     // *** Fallback (Custom Items List) ***
-
-    if (hasRecycle) // Use recyclable list if has recycle is true
-        itemId = recycleItemsList[Random2() % recycleItemsLength];
-    else // Otherwise use normal custom items list
-        itemId = customItemsList[Random2() % customItemsLength];
+    itemId = customItemsList[Random2() % customItemsLength];
 
     // Return if not duplicate
     RETURN_IF_UNIQUE(itemId);
